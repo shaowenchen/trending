@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-10-22T16:16:00.037Z",
+ "fetchedAt": "2026-10-22T18:31:02.984Z",
  "payload": {
   "data": [
    {
@@ -3127,7 +3127,7 @@
     },
     "top_provider": {
      "context_length": null,
-     "max_completion_tokens": null,
+     "max_completion_tokens": 65536,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -4848,6 +4848,7 @@
      "logprobs",
      "max_tokens",
      "min_p",
+     "parallel_tool_calls",
      "presence_penalty",
      "reasoning",
      "repetition_penalty",
@@ -6189,6 +6190,7 @@
      "logprobs",
      "max_tokens",
      "min_p",
+     "parallel_tool_calls",
      "presence_penalty",
      "reasoning",
      "reasoning_effort",
@@ -7998,9 +8000,11 @@
      "frequency_penalty",
      "include_reasoning",
      "logit_bias",
+     "logprobs",
      "max_completion_tokens",
      "max_tokens",
      "min_p",
+     "parallel_tool_calls",
      "presence_penalty",
      "reasoning",
      "reasoning_effort",
@@ -8013,6 +8017,7 @@
      "tool_choice",
      "tools",
      "top_k",
+     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {},
@@ -20212,7 +20217,7 @@
     },
     "pricing": {
      "prompt": "0.000000238",
-     "completion": "0.000016",
+     "completion": "0.000024",
      "input_cache_read": "0.000000228"
     },
     "top_provider": {
@@ -23504,7 +23509,7 @@
     },
     "supported_voices": null,
     "knowledge_cutoff": null,
-    "expiration_date": null,
+    "expiration_date": "2026-10-26",
     "links": {
      "details": "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
     },
@@ -26202,8 +26207,8 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000026",
-     "completion": "0.00000208"
+     "prompt": "0.0000004",
+     "completion": "0.0000032"
     },
     "top_provider": {
      "context_length": 262144,
