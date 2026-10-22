@@ -1,8 +1,130 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-22T20:46:05.993Z",
+ "fetchedAt": "2026-10-22T23:00:59.122Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.28441",
+    "authors": [
+     {
+      "_id": "6ad961503f2bb52eb8d6e8e5",
+      "name": "Sahil Joshi",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8e6",
+      "user": {
+       "_id": "685c3bc166fca32c0a1f0e06",
+       "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
+       "isPro": false,
+       "fullname": "Prithvi",
+       "user": "Pd172944",
+       "type": "user",
+       "name": "Pd172944"
+      },
+      "name": "Prithvi Dixit",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:05:58.244Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8e7",
+      "name": "Aryan Katiyar",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8e8",
+      "name": "Agniva Chowdhury",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8e9",
+      "name": "Joseph E. Gonzalez",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8ea",
+      "name": "Anshumali Shrivastava",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8eb",
+      "name": "Aditya Desai",
+      "hidden": false
+     },
+     {
+      "_id": "6ad961503f2bb52eb8d6e8ec",
+      "name": "Kumar Krishna Agrawal",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/685c3bc166fca32c0a1f0e06/TAf_7DhiF53GNxC49kwy0.gif"
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+    "submittedOnDailyBy": {
+     "_id": "685c3bc166fca32c0a1f0e06",
+     "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
+     "isPro": false,
+     "fullname": "Prithvi",
+     "user": "Pd172944",
+     "type": "user",
+     "name": "Pd172944"
+    },
+    "summary": "Large Language Model inference over long contexts is increasingly bottlenecked by the cost of attending to a growing Key-Value (KV) cache. Sparse attention reduces this cost by accessing only a fraction of the cache, but existing methods face a trade-off between deterministic retrieval, which captures high-scoring tokens but discards residual attention mass, and sampling, which improves coverage at the cost of higher variance. Hybrid methods combine top-k retrieval with uniform sampling, yet still exhibit a substantial gap from dense attention at aggressive sparsity. We introduce Stratified Sparse Attention (SSA), a unified framework combining deterministic retrieval with score-guided sampling. SSA deterministically attends to high-scoring tokens while sampling the residual using proxy attention scores and correcting for their inclusion probabilities, thereby recovering attention mass beyond the retrieval set. SSA encompasses top-k, top-p, and hybrid top-k+sampling as special cases. Across RULER, LongBench, LOFT, and AIME, and five models ranging from 3B to 27B parameters, SSA consistently improves over the baselines at matched sparsity. On RULER-HARD with Ministral-3-8B, SSA improves accuracy over the strongest practical baseline from 81.8\\% to 84.2\\% at 32K and from 63.8\\% to 69.3\\% at 128K under 50times attention sparsity, recovering 94\\% and 85\\% of dense-attention performance, respectively. With optimized CUDA kernels, SSA achieves up to 2.96times decode speedup over FlashInfer at 1M context, demonstrating that its accuracy gains translate into practical long-context inference acceleration. We open-source our code at https://github.com/skylight-org/SSA-Paper-Code.",
+    "upvotes": 0,
+    "discussionId": "6ad961503f2bb52eb8d6e8ed",
+    "githubRepo": "https://github.com/skylight-org/SSA-Paper-Code",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Stratified Sparse Attention unifies deterministic retrieval and score-guided sampling to recover attention mass, improving long-context inference accuracy and speed across multiple benchmarks.",
+    "ai_keywords": [
+     "Stratified Sparse Attention",
+     "sparse attention",
+     "Key-Value cache",
+     "top-k retrieval",
+     "score-guided sampling",
+     "attention mass",
+     "long-context inference"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6ad95f86d542c106e386b8e5",
+     "name": "Skylight1",
+     "fullname": "Skylight",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/685c3bc166fca32c0a1f0e06/54hwCFKlF2VQT-AWtXlYS.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+   "summary": "Large Language Model inference over long contexts is increasingly bottlenecked by the cost of attending to a growing Key-Value (KV) cache. Sparse attention reduces this cost by accessing only a fraction of the cache, but existing methods face a trade-off between deterministic retrieval, which captures high-scoring tokens but discards residual attention mass, and sampling, which improves coverage at the cost of higher variance. Hybrid methods combine top-k retrieval with uniform sampling, yet still exhibit a substantial gap from dense attention at aggressive sparsity. We introduce Stratified Sparse Attention (SSA), a unified framework combining deterministic retrieval with score-guided sampling. SSA deterministically attends to high-scoring tokens while sampling the residual using proxy attention scores and correcting for their inclusion probabilities, thereby recovering attention mass beyond the retrieval set. SSA encompasses top-k, top-p, and hybrid top-k+sampling as special cases. Across RULER, LongBench, LOFT, and AIME, and five models ranging from 3B to 27B parameters, SSA consistently improves over the baselines at matched sparsity. On RULER-HARD with Ministral-3-8B, SSA improves accuracy over the strongest practical baseline from 81.8\\% to 84.2\\% at 32K and from 63.8\\% to 69.3\\% at 128K under 50times attention sparsity, recovering 94\\% and 85\\% of dense-attention performance, respectively. With optimized CUDA kernels, SSA achieves up to 2.96times decode speedup over FlashInfer at 1M context, demonstrating that its accuracy gains translate into practical long-context inference acceleration. We open-source our code at https://github.com/skylight-org/SSA-Paper-Code.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/685c3bc166fca32c0a1f0e06/TAf_7DhiF53GNxC49kwy0.gif"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28441.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "685c3bc166fca32c0a1f0e06",
+    "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
+    "fullname": "Prithvi",
+    "name": "Pd172944",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6ad95f86d542c106e386b8e5",
+    "name": "Skylight1",
+    "fullname": "Skylight",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/685c3bc166fca32c0a1f0e06/54hwCFKlF2VQT-AWtXlYS.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.28940",
@@ -39,7 +161,7 @@
      "name": "nicholaslee"
     },
     "summary": "Voice style conversion (VSC) aims to transform a source utterance to match the timbre, accent, and emotion of a target voice while preserving linguistic content. StyleStream 1.0 introduced the first streamable zero-shot VSC system with state-of-the-art conversion quality, but remained limited in two ways: approximately 1s end-to-end latency on consumer hardware, and the lack of a text-based interface for designing or editing target voices. We present StyleStream 2.0, a fast and controllable streaming VSC framework that addresses these limitations. To reduce latency, we train a few-step pixel MeanFlow model and further fine-tune it with autoregressive feedback inspired by Self Forcing, improving robustness under streaming inference. This reduces end-to-end latency to 520~ms on a consumer GPU, a 2x speedup over StyleStream 1.0, while maintaining conversion quality. To enable controllable style manipulation, we remove the mel-spectrogram context and instead route target style information through a compact style embedding. In this embedding space, we train a unified text-conditioned flow matching model that supports both text-based voice design, which maps natural language prompts to voice styles, and instruction-based voice editing, which modifies a specific attribute of a source utterance while preserving the rest. Experiments show that StyleStream 2.0 achieves the strongest target style fidelity on VSC, voice design, and voice editing, while remaining competitive on intelligibility and non-edited attribute preservation.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ada62ac55db1e682e582b8e",
     "projectPage": "https://berkeley-speech-group.github.io/StyleStream2.0/",
     "githubRepo": "https://github.com/Berkeley-Speech-Group/StyleStream2.0",
@@ -1774,7 +1896,7 @@
      "stateful NPCs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 21
+    "githubStars": 22
    },
    "publishedAt": "2026-10-19T20:00:00.000Z",
    "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
@@ -2215,7 +2337,7 @@
      "name": "fyzzzzzz"
     },
     "summary": "A login screen that appears after a tap on Sign in is expected; the same screen after a tap on View order is an attack. For GUI agents, safety is therefore a property of the transition rather than of the screen, and a monitor that inspects only screens can be defeated by reusing a legitimate one. Judging a transition requires an expectation of what should have followed the action. Existing GUI world models provide one, but they output it as text, code, or images, so checking it against the observed screen requires a second model to judge the two. We argue that a world model meant for verification should instead predict in the space in which observations are encoded, and present LGWM, a decoder-free, action-conditioned world model that predicts the representation of the next screen directly, trained without semantic annotation on 1.85M real GUI transitions. Verification reduces to a vector comparison, and the same signal reveals whether a mismatch is harmful. We evaluate on RSWT-BENCH, a diagnostic where each credential screen appears under both a legitimate and a hijacked transition, so detectors that see only the screen are at chance by construction. The training-free score reaches 0.987 AUC at 17 ms per decision, on par with the strongest closed-source VLMs and about ten AUC points above generative GUI world models at over three orders of magnitude lower latency. The residual direction reaches 0.953 AUC at separating harmful from benign violations, where prompted VLMs are near chance. Further analyses show that the prediction is a usable future state rather than an anomaly score. World models have mostly served as simulators or planners; our results point to a third role, verification, for which predicting in representation space is the natural design.",
-    "upvotes": 78,
+    "upvotes": 81,
     "discussionId": "6aca20d90ee6ff34004fd5fa",
     "projectPage": "https://jiamingzhang.netlify.app/lgwm/",
     "githubRepo": "https://github.com/jiamingzhang94/lgwm",
@@ -2299,7 +2421,7 @@
      "name": "PatrickHaller"
     },
     "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
-    "upvotes": 17,
+    "upvotes": 19,
     "discussionId": "6ad9ac083f2bb52eb8d6ed6f",
     "ai_summary": "PACE is a post-hoc four-bit quantizer for linear-attention recurrent states that rounds less frequently and uses column-wise scales to reduce error, enabling lower memory usage without fine-tuning.",
     "ai_keywords": [
@@ -2326,7 +2448,7 @@
    "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
    "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29545.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "623b4dbdae0ec315881a5b43",
     "avatarUrl": "/avatars/f383357c28a6221d62f49a07eecced03.svg",
@@ -2608,7 +2730,7 @@
      "name": "QiushiSun"
     },
     "summary": "Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pushed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the two, since a sample must be correct as a program, well built, and above all visually right once rendered. No existing signal covers all three. Execution often returns just a pass or fail, code similarity does not map to the visual output, and task-specific verifiers do not generalize. To push open progress further, we start from the data side with PrismaForge, a hierarchical data pipeline centered on a synthesized rubric that decomposes these factors into checkable criteria. The same rubric serves as both filter and reward: it curates the supervised corpus, then drives reinforcement learning on visual-coding tasks. Leveraging PrismaForge for data synthesis and filtering, we build PrismaCoder-2M, the most diverse open dataset for multimodal code intelligence and the largest to date. On the model side, we train PrismaCoder-9B and PrismaCoder-35B on this data and release both. They lead the open state of the art by a wide margin and rival leading proprietary systems. Our analyses further show that the proposed rubric-based pipeline improves multimodal coding performance across model backbones. We release our code and data at https://qiushisun.github.io/PrismaCoder-Home/.",
-    "upvotes": 48,
+    "upvotes": 49,
     "discussionId": "6ad99ae63f2bb52eb8d6eca2",
     "projectPage": "https://qiushisun.github.io/PrismaCoder-Home/",
     "githubRepo": "https://github.com/QiushiSun/PrismaCoder",
@@ -2812,7 +2934,7 @@
      "name": "MingZhong"
     },
     "summary": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.4% to 20.1% and Codex from 4.4% to 8.1%, while yielding more diverse, domain-relevant interventions. Agent4Sci gives the community a way to track and push frontier agents from ML engineering toward domain insight on real-world ML-for-science problems. Code and data are available on GitHub (https://github.com/maszhongming/agent4sci) and Hugging Face (https://huggingface.co/datasets/MingZhong/agent4sci).",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6ad98d813f2bb52eb8d6ec1d",
     "githubRepo": "https://github.com/maszhongming/agent4sci",
     "githubRepoAddedBy": "user",
@@ -3459,7 +3581,7 @@
      "name": "iTheresaApocalypse"
     },
     "summary": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
-    "upvotes": 46,
+    "upvotes": 47,
     "discussionId": "6ad97e373f2bb52eb8d6eb1a",
     "projectPage": "https://gamescaling.github.io",
     "githubRepo": "https://github.com/THUSI-Lab/GameScaling",
@@ -3653,7 +3775,7 @@
      "name": "libertywing"
     },
     "summary": "Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasoning trace behind it. That is a little ironic: they were themselves built on distilling human knowledge, and distilling an open-source model is still entirely routine; the restriction applies to their own outputs alone. Recent work recovers the hidden reasoning by replaying encrypted blocks across models. It somehow works, but it breaks the providers' terms of service, so it is not something a product can be built on long-term.\n  We built the alternative. We take the context and the teacher's answer as input, and generate the reasoning trace ourselves, in the style of the student's own model family. Training is two-stage, supervised and then adversarial: a generator learns to regenerate the family's own reasoning traces from their context and answer, and a critic learns how real a reasoning trace looks. Applied to a teacher's answer, the generator writes one in the family's style. An independent judge rates how likely traces are to be genuine on a scale from 0 to 1: ours average 0.68, real traces 0.66, and traces selected by the critic from four candidates 0.82. These are authenticity scores, not correctness rates.\n  We test the idea on five benchmarks with everything else held fixed. On general tasks the five training corpora are about the same; on coding, the generated reasoning beats Fable 5's own thinking content. With the same 5,000 questions and the same teacher answers, HumanEval+ improves by 3.7 points and MBPP+ by 7.1 at the final checkpoint, and the MBPP+ lead holds at every checkpoint. We suspect that reasoning written in the student's family style is easier for it to learn from.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ad97bdd3f2bb52eb8d6eb09",
     "projectPage": "https://alleai.cloud/cot/",
     "ai_summary": "The study proposes a two-stage supervised and adversarial method to synthesize reasoning traces matching a student model's style from teacher answers, improving coding benchmarks without relying on hidden outputs.",
@@ -3956,7 +4078,7 @@
      "name": "ChilleD"
     },
     "summary": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, model context protocol services, and command-line interfaces, allowing agents to flexibly combine visual interaction, tool use, and code execution. WildAWM is entirely powered by open-source models, demonstrating that high-quality computer-use environments can be generated without proprietary frontier models. Beyond environments, we address three recurring challenges in task synthesis: ensuring solvability, maintaining sufficient difficulty, and producing reliable verifiers, by introducing execution-based quality gates that combine heterogeneous agent rollouts, cross-judge consistency checks, and counterfactual probes of judgment robustness. The resulting pipeline synthesizes 341 long-horizon environment-task pairs that can require over 100 agent steps to solve and remain challenging even for frontier models, with GPT-6-Astra solving only 60% of them. We train two Qwen models of different sizes exclusively in these synthetic worlds. Both models achieve substantial gains across 8 out-of-distribution benchmarks spanning web, claw, and computer-use agents, demonstrating that learning in WildAWM's synthesized worlds generalizes broadly to unseen computer-use tasks. The code is publicly available at https://github.com/MSR-Orchard/WildAWM.",
-    "upvotes": 64,
+    "upvotes": 65,
     "discussionId": "6ad6d7c3774b2a8cb5c7d8b8",
     "projectPage": "https://msr-orchard.github.io/WildAWM/",
     "githubRepo": "https://github.com/MSR-Orchard/WildAWM",
@@ -4568,7 +4690,7 @@
      "Owen-style hierarchical accounting"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 11
+    "githubStars": 14
    },
    "publishedAt": "2026-10-14T20:00:00.000Z",
    "title": "Spectral-Spatial Interpretation",
@@ -5585,7 +5707,7 @@
      "name": "JuliaKreutzerCohere"
     },
     "summary": "As LLMs expand their language coverage, evaluating how well they understand and represent diverse cultures becomes increasingly important. However, many benchmarks remain English-centric, with limited cultural coverage and a focus on factual knowledge over its application in real-world cultural contexts. We propose CulturalRiddles, a benchmark of original, culturally grounded riddles created entirely by humans through a participatory community effort, spanning 62 cultures (45 countries, 51 languages). These riddles are deeply rooted in their respective cultures and require abductive and compositional reasoning, alongside detailed factual and social knowledge, language skills, and an understanding of culturally specific associations. We benchmark 28 LLM configurations using both automatic and large-scale human evaluation. Even frontier models achieve at most 22% accuracy in some communities. We publicly release all artifacts alongside an open contribution process to expand the benchmark's linguistic and cultural coverage.",
-    "upvotes": 11,
+    "upvotes": 14,
     "discussionId": "6ad977283f2bb52eb8d6ea5e",
     "projectPage": "https://culturalriddles.ai/",
     "githubRepo": "https://github.com/Cohere-Labs-Community/CulturalRiddles",
@@ -5616,7 +5738,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 25,
+    "followerCount": 27,
     "isUserFollowing": false
    },
    "organization": {
@@ -5754,7 +5876,7 @@
      "name": "Jungang"
     },
     "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-    "upvotes": 313,
+    "upvotes": 343,
     "discussionId": "6ad83548efdc4c3bd8229f2d",
     "projectPage": "https://streameval.ai/",
     "githubRepo": "https://github.com/StreamEval/StreamEval",
@@ -6651,7 +6773,7 @@
      "name": "HELLORPG"
     },
     "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-    "upvotes": 105,
+    "upvotes": 108,
     "discussionId": "6ad96cfa3f2bb52eb8d6e95b",
     "projectPage": "https://hellorpg.github.io/looking-ahead/",
     "githubRepo": "https://github.com/TencentARC/Looking-Ahead",
@@ -6912,7 +7034,7 @@
      "name": "fuvty"
     },
     "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-    "upvotes": 109,
+    "upvotes": 111,
     "discussionId": "6ad96d683f2bb52eb8d6e967",
     "projectPage": "https://fuvty.github.io/thinking_yard_project_page/projects/akv/",
     "githubRepo": "https://github.com/thu-nics/AKV",
@@ -6967,131 +7089,6 @@
     "name": "nics-efc",
     "fullname": "Tsinghua-NICS-EFC",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641031b1a78453b8d96b8420/vmgxct2WsyHcKT2x2NAYT.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30120",
-    "authors": [
-     {
-      "_id": "6ad968703f2bb52eb8d6e91f",
-      "user": {
-       "_id": "654a771a2d2fcd6bf27ff0de",
-       "avatarUrl": "/avatars/6312b23c642009f13c7993ce4658d06d.svg",
-       "isPro": false,
-       "fullname": "Liuyanqing",
-       "user": "Yanqing0327",
-       "type": "user",
-       "name": "Yanqing0327"
-      },
-      "name": "Yanqing Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.147Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e920",
-      "name": "Letian Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e921",
-      "name": "Chengzhi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e922",
-      "name": "Zijun Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e923",
-      "name": "Jieru Mei",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e924",
-      "name": "Hongliang Fei",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e925",
-      "name": "Yuyin Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ad968703f2bb52eb8d6e926",
-      "name": "Cihang Xie",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/654a771a2d2fcd6bf27ff0de/HaYo07_DUd4_AOZNL-SGL.mp4"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "ALPS: Visual State Encoders for World Models",
-    "submittedOnDailyBy": {
-     "_id": "654a771a2d2fcd6bf27ff0de",
-     "avatarUrl": "/avatars/6312b23c642009f13c7993ce4658d06d.svg",
-     "isPro": false,
-     "fullname": "Liuyanqing",
-     "user": "Yanqing0327",
-     "type": "user",
-     "name": "Yanqing0327"
-    },
-    "summary": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.",
-    "upvotes": 18,
-    "discussionId": "6ad968703f2bb52eb8d6e927",
-    "projectPage": "https://ucsc-vlaa.github.io/ALPS/",
-    "githubRepo": "https://github.com/UCSC-VLAA/ALPS",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "ALPS is a pretrained visual encoder that unifies physical-state prediction, language alignment, and pixel reconstruction to serve as a shared foundation for world models.",
-    "ai_keywords": [
-     "world models",
-     "visual state encoder",
-     "patch tokens",
-     "ViT-B/16",
-     "cross-view self-distillation",
-     "LIBERO",
-     "spatial correspondence",
-     "self-distillation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 6,
-    "organization": {
-     "_id": "65346047b3852ed1cec0c2f4",
-     "name": "UCSC-VLAA",
-     "fullname": "UCSC-VLAA",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/645eb61da3c5cd8a16efffff/E7m3g_fFhz32pGsnK0eqX.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "ALPS: Visual State Encoders for World Models",
-   "summary": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/654a771a2d2fcd6bf27ff0de/HaYo07_DUd4_AOZNL-SGL.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30120.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "654a771a2d2fcd6bf27ff0de",
-    "avatarUrl": "/avatars/6312b23c642009f13c7993ce4658d06d.svg",
-    "fullname": "Liuyanqing",
-    "name": "Yanqing0327",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "65346047b3852ed1cec0c2f4",
-    "name": "UCSC-VLAA",
-    "fullname": "UCSC-VLAA",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/645eb61da3c5cd8a16efffff/E7m3g_fFhz32pGsnK0eqX.png"
    },
    "isAuthorParticipating": true
   }
