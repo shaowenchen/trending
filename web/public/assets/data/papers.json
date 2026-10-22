@@ -1,8 +1,438 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-22T04:30:43.415Z",
+ "fetchedAt": "2026-10-22T06:34:15.168Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.29545",
+    "authors": [
+     {
+      "_id": "6ad9ac083f2bb52eb8d6ed6c",
+      "name": "Patrick Haller",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9ac083f2bb52eb8d6ed6d",
+      "name": "Filipe Laitenberger",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9ac083f2bb52eb8d6ed6e",
+      "name": "Alan Akbik",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
+    "submittedOnDailyBy": {
+     "_id": "623b4dbdae0ec315881a5b43",
+     "avatarUrl": "/avatars/f383357c28a6221d62f49a07eecced03.svg",
+     "isPro": true,
+     "fullname": "Patrick Haller",
+     "user": "PatrickHaller",
+     "type": "user",
+     "name": "PatrickHaller"
+    },
+    "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
+    "upvotes": 2,
+    "discussionId": "6ad9ac083f2bb52eb8d6ed6f",
+    "ai_summary": "PACE is a post-hoc four-bit quantizer for linear-attention recurrent states that rounds less frequently and uses column-wise scales to reduce error, enabling lower memory usage without fine-tuning.",
+    "ai_keywords": [
+     "linear-attention",
+     "recurrent state",
+     "state quantizer",
+     "PACE",
+     "chunked kernels",
+     "gated-delta state",
+     "quantization scale",
+     "mixed four- and eight-bit heads",
+     "DAMP",
+     "Q-Mamba"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "671f503fbc8e45af4187107d",
+     "name": "huberlin",
+     "fullname": "Humboldt Universität zu Berlin",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/-77OShpGOa1MGu9k5Oiwp.png"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
+   "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29545.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "623b4dbdae0ec315881a5b43",
+    "avatarUrl": "/avatars/f383357c28a6221d62f49a07eecced03.svg",
+    "fullname": "Patrick Haller",
+    "name": "PatrickHaller",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 14,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "671f503fbc8e45af4187107d",
+    "name": "huberlin",
+    "fullname": "Humboldt Universität zu Berlin",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/-77OShpGOa1MGu9k5Oiwp.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.30023",
+    "authors": [
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec20",
+      "name": "Chenxu Zhou",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec21",
+      "name": "Zhiyuan Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec22",
+      "name": "Yudong Jin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec23",
+      "name": "Yinji Shentu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec24",
+      "name": "Yu Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec25",
+      "name": "Jiaming Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98dc83f2bb52eb8d6ec26",
+      "name": "Xiaowei Zhou",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/649958942ca6f96c8b8c1076/DwROQgW66xyHLbDVxo8V2.mp4"
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "RealMe: Immersive Volumetric Video from Minimal Captures",
+    "submittedOnDailyBy": {
+     "_id": "649958942ca6f96c8b8c1076",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649958942ca6f96c8b8c1076/olfLIqNryaog1nAnQPwkN.jpeg",
+     "isPro": false,
+     "fullname": "Yudong Jin",
+     "user": "krahets",
+     "type": "user",
+     "name": "krahets"
+    },
+    "summary": "This paper addresses the problem of creating immersive volumetric videos from sparse and low-resolution capture resources. Conventional dense multi-view reconstruction methods can produce high-quality volumetric videos, but their reliance on costly capture setups makes them impractical in real-world scenarios. Recent approaches use generative models to relax capture requirements, but still suffer from limited resolution and 4D inconsistency. To overcome these constraints, we propose RealMe, a unified framework built around a high-resolution video diffusion model that enhances limited captures into high-resolution (2K), 4D-consistent videos for volumetric video reconstruction. Specifically, RealMe constructs auxiliary data from capture videos and encodes them into latents along with layout-aware positional embeddings. The video diffusion model adapts factorized spatio-temporal attention to the multi-view capture layout, denoises these latents across viewpoints and time, and decodes them into enhanced videos to refine the 4D representation. This adaptation helps the model capture temporal dynamics and multi-view relationships, leading to more 4D-consistent generation. To reduce the data gap between generated videos and real captures, we apply a latent frequency loss that provides frequency-domain supervision in latent space. Extensive experiments on the public DNA-Rendering benchmark and our self-captured RealVV dataset demonstrate that RealMe is able to create immersive volumetric videos and outperforms state-of-the-art methods in visual fidelity and 4D consistency.",
+    "upvotes": 4,
+    "discussionId": "6ad98dc83f2bb52eb8d6ec27",
+    "projectPage": "https://zju3dv.github.io/realme/",
+    "githubRepo": "https://github.com/zju3dv/RealMe",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "RealMe enhances sparse, low-resolution multi-view captures into high-resolution, 4D-consistent videos using a video diffusion model with layout-aware attention and frequency-domain latent supervision for volumetric reconstruction.",
+    "ai_keywords": [
+     "video diffusion model",
+     "factorized spatio-temporal attention",
+     "positional embeddings",
+     "latent frequency loss",
+     "4D consistency",
+     "volumetric video reconstruction"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "642673e52a423daad52d5b86",
+     "name": "zju3dv",
+     "fullname": "zju3dv",
+     "avatar": "https://www.gravatar.com/avatar/38d28859223ed13a997edb0e9911614a?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "RealMe: Immersive Volumetric Video from Minimal Captures",
+   "summary": "This paper addresses the problem of creating immersive volumetric videos from sparse and low-resolution capture resources. Conventional dense multi-view reconstruction methods can produce high-quality volumetric videos, but their reliance on costly capture setups makes them impractical in real-world scenarios. Recent approaches use generative models to relax capture requirements, but still suffer from limited resolution and 4D inconsistency. To overcome these constraints, we propose RealMe, a unified framework built around a high-resolution video diffusion model that enhances limited captures into high-resolution (2K), 4D-consistent videos for volumetric video reconstruction. Specifically, RealMe constructs auxiliary data from capture videos and encodes them into latents along with layout-aware positional embeddings. The video diffusion model adapts factorized spatio-temporal attention to the multi-view capture layout, denoises these latents across viewpoints and time, and decodes them into enhanced videos to refine the 4D representation. This adaptation helps the model capture temporal dynamics and multi-view relationships, leading to more 4D-consistent generation. To reduce the data gap between generated videos and real captures, we apply a latent frequency loss that provides frequency-domain supervision in latent space. Extensive experiments on the public DNA-Rendering benchmark and our self-captured RealVV dataset demonstrate that RealMe is able to create immersive volumetric videos and outperforms state-of-the-art methods in visual fidelity and 4D consistency.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/649958942ca6f96c8b8c1076/DwROQgW66xyHLbDVxo8V2.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30023.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "649958942ca6f96c8b8c1076",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649958942ca6f96c8b8c1076/olfLIqNryaog1nAnQPwkN.jpeg",
+    "fullname": "Yudong Jin",
+    "name": "krahets",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 8,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "642673e52a423daad52d5b86",
+    "name": "zju3dv",
+    "fullname": "zju3dv",
+    "avatar": "https://www.gravatar.com/avatar/38d28859223ed13a997edb0e9911614a?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.20538",
+    "authors": [
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec91",
+      "name": "Qiushi Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec92",
+      "name": "Jingyang Gong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec93",
+      "name": "Yang Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec94",
+      "name": "Qiaosheng Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec95",
+      "name": "Zhangyue Yin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec96",
+      "name": "Zixian Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec97",
+      "name": "Hanxu Hu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec98",
+      "name": "Jing Xiong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec99",
+      "name": "Fangzhi Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9a",
+      "name": "Haochen Tan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9b",
+      "name": "Haoli Bai",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9c",
+      "name": "Lifeng Shang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9d",
+      "name": "Xiaoguang Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9e",
+      "name": "Ben Kao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6ec9f",
+      "name": "Qipeng Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6eca0",
+      "name": "Lingpeng Kong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99ae53f2bb52eb8d6eca1",
+      "name": "Jiahui Gao",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/Z8uT52xZWNYodLIOo9m9g.gif",
+     "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/fLziq3cBl5_6y9JjlZFoU.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/kCo-86MfS-LNzzQC0O-oV.png"
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+    "submittedOnDailyBy": {
+     "_id": "6064a0eeb1703ddba0d458b9",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1617207525789-noauth.png",
+     "isPro": false,
+     "fullname": "Qiushi",
+     "user": "QiushiSun",
+     "type": "user",
+     "name": "QiushiSun"
+    },
+    "summary": "Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pushed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the two, since a sample must be correct as a program, well built, and above all visually right once rendered. No existing signal covers all three. Execution often returns just a pass or fail, code similarity does not map to the visual output, and task-specific verifiers do not generalize. To push open progress further, we start from the data side with PrismaForge, a hierarchical data pipeline centered on a synthesized rubric that decomposes these factors into checkable criteria. The same rubric serves as both filter and reward: it curates the supervised corpus, then drives reinforcement learning on visual-coding tasks. Leveraging PrismaForge for data synthesis and filtering, we build PrismaCoder-2M, the most diverse open dataset for multimodal code intelligence and the largest to date. On the model side, we train PrismaCoder-9B and PrismaCoder-35B on this data and release both. They lead the open state of the art by a wide margin and rival leading proprietary systems. Our analyses further show that the proposed rubric-based pipeline improves multimodal coding performance across model backbones. We release our code and data at https://qiushisun.github.io/PrismaCoder-Home/.",
+    "upvotes": 12,
+    "discussionId": "6ad99ae63f2bb52eb8d6eca2",
+    "projectPage": "https://qiushisun.github.io/PrismaCoder-Home/",
+    "githubRepo": "https://github.com/QiushiSun/PrismaCoder",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "PrismaForge uses a rubric-based pipeline to synthesize and filter high-quality multimodal code data, enabling open models that rival proprietary systems on visual coding tasks.",
+    "ai_keywords": [
+     "multimodal code intelligence",
+     "reinforcement learning",
+     "rubric-based pipeline",
+     "PrismaForge",
+     "PrismaCoder-2M",
+     "visual-coding tasks"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 6,
+    "organization": {
+     "_id": "61bb0986699d29d369eba1b2",
+     "name": "hkunlp",
+     "fullname": "NLP Group of The University of Hong Kong",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1639647572687-618767e4238063b4615d042b.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-13T20:00:00.000Z",
+   "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+   "summary": "Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pushed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the two, since a sample must be correct as a program, well built, and above all visually right once rendered. No existing signal covers all three. Execution often returns just a pass or fail, code similarity does not map to the visual output, and task-specific verifiers do not generalize. To push open progress further, we start from the data side with PrismaForge, a hierarchical data pipeline centered on a synthesized rubric that decomposes these factors into checkable criteria. The same rubric serves as both filter and reward: it curates the supervised corpus, then drives reinforcement learning on visual-coding tasks. Leveraging PrismaForge for data synthesis and filtering, we build PrismaCoder-2M, the most diverse open dataset for multimodal code intelligence and the largest to date. On the model side, we train PrismaCoder-9B and PrismaCoder-35B on this data and release both. They lead the open state of the art by a wide margin and rival leading proprietary systems. Our analyses further show that the proposed rubric-based pipeline improves multimodal coding performance across model backbones. We release our code and data at https://qiushisun.github.io/PrismaCoder-Home/.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/Z8uT52xZWNYodLIOo9m9g.gif",
+    "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/fLziq3cBl5_6y9JjlZFoU.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/6064a0eeb1703ddba0d458b9/kCo-86MfS-LNzzQC0O-oV.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20538.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6064a0eeb1703ddba0d458b9",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1617207525789-noauth.png",
+    "fullname": "Qiushi",
+    "name": "QiushiSun",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 22,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61bb0986699d29d369eba1b2",
+    "name": "hkunlp",
+    "fullname": "NLP Group of The University of Hong Kong",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1639647572687-618767e4238063b4615d042b.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.30128",
+    "authors": [
+     {
+      "_id": "6ad98f963f2bb52eb8d6ec64",
+      "name": "Zhanshuo Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98f963f2bb52eb8d6ec65",
+      "name": "Jiakai Tang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98f963f2bb52eb8d6ec66",
+      "name": "Yuqi Zhou",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98f963f2bb52eb8d6ec67",
+      "name": "Sunhao Dai",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98f963f2bb52eb8d6ec68",
+      "name": "Jun Xu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+    "submittedOnDailyBy": {
+     "_id": "65acfb3a14e6582c30b4ce76",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65acfb3a14e6582c30b4ce76/RhEhePggBtyM0RIIqXQen.jpeg",
+     "isPro": false,
+     "fullname": "TangJiakai",
+     "user": "TangJiakai5704",
+     "type": "user",
+     "name": "TangJiakai5704"
+    },
+    "summary": "Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computation they require. Most converge after shallow processing while a critical minority only stabilizes at full depth. (2) Suboptimality of fixed allocation: given oracle access to the target item, a non-uniform depth assignment consistently outranks the fixed one, indicating that existing uniform computation both wastes capacity on already-converged items and sacrifices overall recommendation quality. These observations motivate a shift from fixed-depth computation to item-level adaptive reasoning. To this end, we propose LoopRec. LoopRec recursively applies a single weight-shared block and introduces a lightweight gate at each recursion boundary that makes a binary exit-or-continue decision for every item independently. Items whose representations have sufficiently matured exit early, while those requiring deeper reasoning continue to subsequent recursions. This design converts the fixed global depth into a learned, per-item property without auxiliary depth labels, and is readily adaptable to diverse backbone architectures. Extensive experiments on public benchmarks with four backbone families demonstrate that LoopRec consistently outperforms matched fixed-depth counterparts. Further analysis reveals that LoopRec's learned allocation exhibits interpretable patterns aligned with our post-hoc oracle analysis: lower-frequency items and more recent interactions naturally receive deeper computation. Our code is available at https://github.com/Elpmis117/LoopRec.",
+    "upvotes": 4,
+    "discussionId": "6ad98f963f2bb52eb8d6ec69",
+    "githubRepo": "https://github.com/Elpmis117/LoopRec",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "LoopRec enables adaptive per-item computation depth in sequential recommendation by using recursive shared blocks with early-exit gates, improving efficiency and accuracy.",
+    "ai_keywords": [
+     "sequential recommenders",
+     "adaptive reasoning",
+     "weight-shared block",
+     "binary exit-or-continue gate",
+     "per-item depth",
+     "LoopRec"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+   "summary": "Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computation they require. Most converge after shallow processing while a critical minority only stabilizes at full depth. (2) Suboptimality of fixed allocation: given oracle access to the target item, a non-uniform depth assignment consistently outranks the fixed one, indicating that existing uniform computation both wastes capacity on already-converged items and sacrifices overall recommendation quality. These observations motivate a shift from fixed-depth computation to item-level adaptive reasoning. To this end, we propose LoopRec. LoopRec recursively applies a single weight-shared block and introduces a lightweight gate at each recursion boundary that makes a binary exit-or-continue decision for every item independently. Items whose representations have sufficiently matured exit early, while those requiring deeper reasoning continue to subsequent recursions. This design converts the fixed global depth into a learned, per-item property without auxiliary depth labels, and is readily adaptable to diverse backbone architectures. Extensive experiments on public benchmarks with four backbone families demonstrate that LoopRec consistently outperforms matched fixed-depth counterparts. Further analysis reveals that LoopRec's learned allocation exhibits interpretable patterns aligned with our post-hoc oracle analysis: lower-frequency items and more recent interactions naturally receive deeper computation. Our code is available at https://github.com/Elpmis117/LoopRec.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30128.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65acfb3a14e6582c30b4ce76",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65acfb3a14e6582c30b4ce76/RhEhePggBtyM0RIIqXQen.jpeg",
+    "fullname": "TangJiakai",
+    "name": "TangJiakai5704",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.28763",
@@ -41,7 +471,7 @@
      "name": "MingZhong"
     },
     "summary": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.4% to 20.1% and Codex from 4.4% to 8.1%, while yielding more diverse, domain-relevant interventions. Agent4Sci gives the community a way to track and push frontier agents from ML engineering toward domain insight on real-world ML-for-science problems. Code and data are available on GitHub (https://github.com/maszhongming/agent4sci) and Hugging Face (https://huggingface.co/datasets/MingZhong/agent4sci).",
-    "upvotes": 0,
+    "upvotes": 5,
     "discussionId": "6ad98d813f2bb52eb8d6ec1d",
     "githubRepo": "https://github.com/maszhongming/agent4sci",
     "githubRepoAddedBy": "user",
@@ -59,6 +489,7 @@
      "experiment management"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
     "organization": {
      "_id": "63924ab637e424786530c90e",
      "name": "Anthropic",
@@ -81,7 +512,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 9,
+    "followerCount": 10,
     "isUserFollowing": false
    },
    "organization": {
@@ -195,7 +626,7 @@
      "name": "YanzheChen"
     },
     "summary": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.",
-    "upvotes": 5,
+    "upvotes": 12,
     "discussionId": "6ad98e133f2bb52eb8d6ec53",
     "projectPage": "https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/",
     "githubRepo": "https://github.com/showlab/Awesome-Multimodal-Embodied-Agent",
@@ -214,6 +645,7 @@
      "capability-centric framework"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 137,
     "organization": {
      "_id": "63a553c4ce5763e06f78669c",
      "name": "showlab",
@@ -323,7 +755,7 @@
      "name": "Caoza"
     },
     "summary": "Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dexterous behaviors common in real life unaddressed. The scarcity of contact-rich bimanual manipulation data and the increased complexity of coordinating contacts make developing a generalist bimanual tracker particularly challenging. Therefore, we present 1) DONIC, the first generalist bimanual tracker jointly trained across operation categories and human-motion sources, together with 2) BiHOI, a multi-view dataset of 1,575 sequences spanning 229 objects and emphasizing sustained bimanual interaction, where reconstructed interactions are retargeted into robot references. DONIC combines proximal policy optimization with behavioral cloning in a feedback loop that recycles verified successful executions into training demonstrations. An object-centered per-hand reward maintains object-motion feedback while supervising each hand according to its reference contact role. Clip-Centered Advantages remove reference-dependent advantage offsets while preserving within-trajectory differences. Together, these designs enable one single policy to learn coordinated manipulation across heterogeneous references. Without finetuning, a single checkpoint achieves 86.79% success on unseen trajectories of training objects and 57.32% on held-out objects, surpassing the state-of-the-art bimanual tracking baselines by 77.36 and 45.73 percentage points.",
-    "upvotes": 10,
+    "upvotes": 16,
     "discussionId": "6ad981d43f2bb52eb8d6eb42",
     "projectPage": "https://ropedia.github.io/DONIC/",
     "githubRepo": "https://github.com/Ropedia/DONIC",
@@ -428,7 +860,7 @@
      "name": "alan1027"
     },
     "summary": "People adapt how they talk to the person in front of them. However, chat models tend to respond in Standard English regardless of the dialect used by the user. A uniform answer can hide whether training treats these users alike, and output audits cannot tell as well. We trace how each post-training stage, from supervised fine-tuning (SFT) to preference optimization (DPO) and reinforcement learning, changes a model's tendency to match the user, and read what each update prefers from two content-matched replies, one matching the user and one not. Across 10 open model lineages, post-training standardizes replies to every informal cue, yet after adjusting for how likely each reply already was, the DPO update still favours matching British and Australian spelling over AAE and Singlish on 10 lineages, and models still produce AAE features when asked. We then introduce calibrated accommodation pairs (CAP), preference data that reward matching users' dialect density while preserving Standard English for Standard-English users. On a fully open model, CAP raises convergence on features it was not trained on without a detectable increase in dialect for Standard-English users or a cost in instruction following. In contrast, one-sided pairs reach a similar gain only by overshooting the user and imposing dialect. Our findings show that uniform replies can hide selective updates and audits should read the update as well as the output. Code: https://github.com/kouzhizhuo/cap-accommodation.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ad9791b3f2bb52eb8d6eaa7",
     "githubRepo": "https://github.com/kouzhizhuo/cap-accommodation",
     "githubRepoAddedBy": "user",
@@ -507,7 +939,7 @@
      "name": "alan1027"
     },
     "summary": "When a speaker says ``some students passed'', listeners infer that not all of them did. Reasoning models now let users decide how long a model thinks before it answers, but we do not know what extra thinking does to such everyday inferences. We study this directly: we keep a model's weights fixed, change only how much it thinks, and record which reading it chooses. A second tool cuts the model's own reasoning at successive points and asks for an answer, showing where the reading changes. Thinking makes models read logical words as logic: it cancels the implicatures of some (not all) and or (not both) in most tested open reasoning models and in GPT-5, while context-driven inferences such as indirect answers improve. The trace shows why: models first entertain the enriched reading and cancel it later. Answering from that early reading, an exploratory inference-time remedy, recovers these implicatures without losing literal accuracy. Evaluations of reasoning models should measure how they interpret, not only how accurate they are.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ad984173f2bb52eb8d6eb63",
     "githubRepo": "https://github.com/kouzhizhuo/entertain-then-cancel",
     "githubRepoAddedBy": "user",
@@ -617,7 +1049,7 @@
      "name": "iTheresaApocalypse"
     },
     "summary": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
-    "upvotes": 8,
+    "upvotes": 16,
     "discussionId": "6ad97e373f2bb52eb8d6eb1a",
     "projectPage": "https://gamescaling.github.io",
     "githubRepo": "https://github.com/THUSI-Lab/GameScaling",
@@ -656,7 +1088,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 2,
+    "followerCount": 3,
     "isUserFollowing": false
    },
    "organization": {
@@ -725,7 +1157,7 @@
      "name": "yingmanji"
     },
     "summary": "Spatial reasoning requires more than access to geometric tools: a reasoner must decide when direct observation is sufficient and when to reconstruct, measure, or change reference frames. We present SpatialBrain, a framework that retains experience about these decisions while keeping its vision-language backbone fixed. The key distinction is between evidence about a scene and experience about how to reason with that evidence. 3DFusionMemory fuses current-scene observations into queryable spatial relations. A Spatial Skill Library provides reusable tool procedures, and Spatial Cognition associates task conditions with experience about when and how to use memory and skills. Completed trajectories are abstracted into process records and consolidated between task blocks, allowing later decisions to draw on earlier execution without transferring scene coordinates or reference answers. Across five spatial-reasoning benchmarks, SpatialBrain improves on direct answers from the same backbone on four and ties on the fifth. Component comparisons, experience-coverage curves, and traced resource decisions characterize how the framework accumulates and uses these resources.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ad981d63f2bb52eb8d6eb4d",
     "ai_summary": "SpatialBrain improves spatial reasoning by separating scene evidence from reasoning experience, using fused spatial memory, reusable skill procedures, and consolidated process records to guide tool use without altering the vision-language backbone.",
     "ai_keywords": [
@@ -797,7 +1229,7 @@
      "name": "libertywing"
     },
     "summary": "Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasoning trace behind it. That is a little ironic: they were themselves built on distilling human knowledge, and distilling an open-source model is still entirely routine; the restriction applies to their own outputs alone. Recent work recovers the hidden reasoning by replaying encrypted blocks across models. It somehow works, but it breaks the providers' terms of service, so it is not something a product can be built on long-term.\n  We built the alternative. We take the context and the teacher's answer as input, and generate the reasoning trace ourselves, in the style of the student's own model family. Training is two-stage, supervised and then adversarial: a generator learns to regenerate the family's own reasoning traces from their context and answer, and a critic learns how real a reasoning trace looks. Applied to a teacher's answer, the generator writes one in the family's style. An independent judge rates how likely traces are to be genuine on a scale from 0 to 1: ours average 0.68, real traces 0.66, and traces selected by the critic from four candidates 0.82. These are authenticity scores, not correctness rates.\n  We test the idea on five benchmarks with everything else held fixed. On general tasks the five training corpora are about the same; on coding, the generated reasoning beats Fable 5's own thinking content. With the same 5,000 questions and the same teacher answers, HumanEval+ improves by 3.7 points and MBPP+ by 7.1 at the final checkpoint, and the MBPP+ lead holds at every checkpoint. We suspect that reasoning written in the student's family style is easier for it to learn from.",
-    "upvotes": 10,
+    "upvotes": 13,
     "discussionId": "6ad97bdd3f2bb52eb8d6eb09",
     "projectPage": "https://alleai.cloud/cot/",
     "ai_summary": "The study proposes a two-stage supervised and adversarial method to synthesize reasoning traces matching a student model's style from teacher answers, improving coding benchmarks without relying on hidden outputs.",
@@ -922,7 +1354,7 @@
      "name": "Tianle"
     },
     "summary": "Language-model agents that run long tasks often redo work they have already done: they re-issue a tool call they made earlier and get back exactly the same observation, a step that adds no new information. We identify this failure as a loop. Loops appear natively in Qwen, Llama, and Gemini agents and become far more common once the agent's history is compressed to fit its context window. To reduce these loops, we propose DeLoop, a self-supervised training method. DeLoop builds on a simple observation: the agent's own rollout can provide the supervision needed to learn from its loops. We use a looping action as a negative example and the first later non-looping action in the same rollout as a positive example. DeLoop learns from these pairs through direct preference optimization and does not require task rewards, gold answers, or LLM judges. On CodeGym under compression, DeLoop reduces the share of Qwen3-8B tasks containing loops from 57.3% to 6.1%. It also uses about one third as many steps per task, with similar task success. On Qwen3-32B, DeLoop reduces loops and steps while raising task success from 37.7% to 44.8%.",
-    "upvotes": 2,
+    "upvotes": 6,
     "discussionId": "6ad97f403f2bb52eb8d6eb28",
     "projectPage": "https://cskyl.github.io/deloop/",
     "githubRepo": "https://github.com/cskyl/deloop",
@@ -1056,7 +1488,7 @@
      "name": "ChilleD"
     },
     "summary": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, model context protocol services, and command-line interfaces, allowing agents to flexibly combine visual interaction, tool use, and code execution. WildAWM is entirely powered by open-source models, demonstrating that high-quality computer-use environments can be generated without proprietary frontier models. Beyond environments, we address three recurring challenges in task synthesis: ensuring solvability, maintaining sufficient difficulty, and producing reliable verifiers, by introducing execution-based quality gates that combine heterogeneous agent rollouts, cross-judge consistency checks, and counterfactual probes of judgment robustness. The resulting pipeline synthesizes 341 long-horizon environment-task pairs that can require over 100 agent steps to solve and remain challenging even for frontier models, with GPT-6-Astra solving only 60% of them. We train two Qwen models of different sizes exclusively in these synthetic worlds. Both models achieve substantial gains across 8 out-of-distribution benchmarks spanning web, claw, and computer-use agents, demonstrating that learning in WildAWM's synthesized worlds generalizes broadly to unseen computer-use tasks. The code is publicly available at https://github.com/MSR-Orchard/WildAWM.",
-    "upvotes": 44,
+    "upvotes": 53,
     "discussionId": "6ad6d7c3774b2a8cb5c7d8b8",
     "projectPage": "https://msr-orchard.github.io/WildAWM/",
     "githubRepo": "https://github.com/MSR-Orchard/WildAWM",
@@ -1170,7 +1602,7 @@
      "name": "yujianll"
     },
     "summary": "Autonomous agents can increasingly propose ideas, modify code, and run experiments, creating an opportunity to accelerate scientific discovery using teams of collaborative AI researchers. To escape local minima in the discovery, we propose to encourage orthogonal exploration by constructing the team using agents with varying expertise. However, realizing this design requires more than diverse backgrounds. When experiments are costly, a team can test only a limited number of ideas, thereby creating the need to balance exploration and exploitation when selecting a subset of researchers to propose and execute new experiments. Furthermore, each result should shape what the team tries next. We therefore ask how AI researchers with different scientific backgrounds can build on one another's findings and sustain progress under a limited experimental budget. To address these challenges, we build a team of persistent AI researchers, each grounded in a different discipline, who keep private research histories, share experimental evidence, and receive research opportunities through adaptive allocation. We demonstrate the effectiveness of this design by deploying the team to search for linear attention architectures, where it outperforms GDN2 at 1.3B scale on language modeling, common-sense reasoning, and synthetic and real-world retrieval tasks. In controlled comparisons, removing any single organizational component from our design yields markedly weaker discoveries: without disciplinary backgrounds, the search plateaus early; without private histories, researchers make less progress despite identical shared evidence; and uniform selection falls short of adaptive allocation within the same budget. These results suggest that sustained autonomous discovery depends not only on stronger agents, but also on who explores, what they remember, and how research effort is allocated.",
-    "upvotes": 8,
+    "upvotes": 10,
     "discussionId": "6ad979943f2bb52eb8d6eab8",
     "organization": {
      "_id": "691d9d63284266ada1eb632a",
@@ -1194,6 +1626,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "organization": {
@@ -1462,7 +1895,7 @@
      "name": "taesiri"
     },
     "summary": "We present Qwen-Audio-3.1-ASR, a family of audio-language models that builds upon its predecesor Qwen-Audio-3.0-ASR with improved speech recognition and expanded capabilities in speaker-diarized transcription and general audio understanding. The family retains support for 30 languages and 16 Chinese dialects, together with instruction-controlled capabilities including historical-context conditioning, hierarchical hotword customization, and native transcription polishing. Speaker-diarized ASR produces structured outputs containing speaker labels, timestamps, and recognized text, maintaining consistent speaker labels across turns and the representation of overlapping speech. The general audio understanding capabilities cover audio-, speech-, and music-captioning, temporal grounding and sound event detection, as well as audio question answering and multiple-choice reasoning. These tasks broaden the application scope from recognizing spoken words to interpreting speakers, acoustic events, and their temporal relations. To accommodate different deployment requirements, the family includes variants for asynchronous file transcription, low-latency streaming, interactive voice input, and non-streaming recognition, with speaker-diarized transcription and general audio understanding available in certain variants. Evaluations span conventional ASR, multilingual and dialectal speech, speaker-diarized transcription, and general audio understanding, demonstrating the capabilities of the Qwen-Audio-3.1-ASR family across transcription and broader audio analysis tasks.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6ad97a1b3f2bb52eb8d6eaed"
    },
    "publishedAt": "2026-10-19T20:00:00.000Z",
@@ -1578,7 +2011,7 @@
      "name": "TimothyCzp"
     },
     "summary": "Most contemporary artificial intelligence (AI) systems are released with frozen parameters and improve through external updates, whereas an ideal system would keep improving from its own experience, a capacity we call recursive self-improvement (RSI). Yet studying RSI requires an environment that is continuously changing, objectively verifiable, and naturally grounded, posing a fundamental challenge for agent evolution. Here we introduce DeepEvolve, a sustainable evolution agent system grounded in future event prediction, in which agents continuously interact with a dynamically evolving environment and improve by internalizing and externalizing the experience gained through these interactions. A living environment synthesizes verifiable tasks, and a recursive-evolution engine turns the reasoning trajectory behind each prediction back into capability: decoupling search from prediction adapts parameter-level evolution to the contamination-prone live environment, while distilling reusable skills lets the agent evolve from the limited live trajectories such an environment affords. On the external FutureX leaderboard, which evaluates predictions against real-world outcomes and is updated weekly, our self-improved forecaster ranked first across all systems over three consecutive weeks, achieving up to a 195% improvement in rating. On our synthesized evaluation, it ranked among the top three across four base LLMs, outperforming the strongest baseline by up to 10.7 Bradley--Terry points. More broadly, these results suggest that a system built for self-improvement is best understood as an agent that co-evolves with a genuinely living, open-ended environment, pointing to a shift in AI from training static models on fixed data toward cultivating agents that grow stronger from their own experience, with such an open world as the indispensable basis of that growth.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6ad9791b3f2bb52eb8d6eaa5",
     "githubRepo": "https://github.com/RUCAIBox/DeepEvolve",
     "githubRepoAddedBy": "user",
@@ -1599,7 +2032,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
@@ -1651,7 +2084,7 @@
      "name": "Hunter26666666"
     },
     "summary": "Post-hoc image explanations usually show where a model looks using spatial heatmaps or indicate which channels matter using global channel scores. These separate views are limiting for multispectral data because channel relevance is often spatially localized and physically meaningful. We introduce Spectral-Spatial Interpretation (SSI), a full-grid attribution method over position-channel players (g,c). For each spatial position, SSI fixes the observed surrounding context, defines a conditional game over the channels at that position, and applies the Shapley value to this local game. The result is a full spectral-spatial attribution matrix rather than a single heatmap or a global channel ranking. SSI has a clear local interpretation. It satisfies Shapley fairness within each position, and aggregating its channel attributions exactly recovers the position-level contextual contrast obtained by replacing that position with the baseline. SSI also differs from context-averaged Owen-style hierarchical accounting, which uses the same position-channel grouping but averages over external spatial coalitions. On HLS Burn Scar, SSI outperforms an MC-Owen estimator across retained attribution metrics while using only about 6% of its evaluation budget. Across CUB-200, EuroSAT, and HLS Burn Scar under both per-channel mean and zero baselines, SSI achieves the best joint deletion and insertion AUC over dense, flat, and rank-1 baselines, yields the strongest spectral hit rates and channel deletion, and leads spatial localization on both annotated datasets. Code is available at https://github.com/AtheavenMa/Spectral-Spatial-Interpretation.",
-    "upvotes": 9,
+    "upvotes": 20,
     "discussionId": "6ad2830360556d9547d94612",
     "projectPage": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
     "githubRepo": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
@@ -1802,7 +2235,7 @@
      "name": "taesiri"
     },
     "summary": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architecture a code expert generates parameterized skill routines and control logic while video and action experts generate future visual states and low-level motor commands. Code serves two complementary roles: it structures multi-step prediction and control within the world model and represents skills as reusable programs for subsequent agentic execution. We further introduce an automated curation pipeline that labels robot and human video trajectories with aligned programs and consolidates recurring routines into reusable skill libraries. Evaluations on RoboTwin 2.0 and physical bimanual manipulation tasks show improved task performance over VLA and WAM baselines, alongside gains in language following, semantic reasoning and robustness, demonstrating that agentic code enables connection between planning, prediction and execution within WAMs.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6ad978a23f2bb52eb8d6ea8c",
     "projectPage": "https://agentic-wam.github.io/"
    },
@@ -2640,7 +3073,7 @@
      "name": "JuliaKreutzerCohere"
     },
     "summary": "As LLMs expand their language coverage, evaluating how well they understand and represent diverse cultures becomes increasingly important. However, many benchmarks remain English-centric, with limited cultural coverage and a focus on factual knowledge over its application in real-world cultural contexts. We propose CulturalRiddles, a benchmark of original, culturally grounded riddles created entirely by humans through a participatory community effort, spanning 62 cultures (45 countries, 51 languages). These riddles are deeply rooted in their respective cultures and require abductive and compositional reasoning, alongside detailed factual and social knowledge, language skills, and an understanding of culturally specific associations. We benchmark 28 LLM configurations using both automatic and large-scale human evaluation. Even frontier models achieve at most 22% accuracy in some communities. We publicly release all artifacts alongside an open contribution process to expand the benchmark's linguistic and cultural coverage.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ad977283f2bb52eb8d6ea5e",
     "projectPage": "https://culturalriddles.ai/",
     "githubRepo": "https://github.com/Cohere-Labs-Community/CulturalRiddles",
@@ -2725,7 +3158,7 @@
      "name": "Yesianrohn"
     },
     "summary": "Aiming to modify textual content while preserving the original style, Scene Text Editing (STE) has significant practical value in many applications. STE typically requires paired images before and after editing for training. However, recent approaches rely heavily on synthetic paired data and complex disentanglement strategies. They struggle to faithfully capture the diversity and complexity of natural scenes, often producing artifacts or hallucinations. In this work, we challenge the common practice and investigate whether STE can be driven by turning each real sample into its own paired supervision. Concretely, we explore multiple ways to disrupt the original image (e.g., Crop, Shuffle, Mask) to construct self-paired training data, and build a strong baseline (TextRIRO}) upon a conditional diffusion architecture. Our experiments show that combining character-column shuffling with image cropping (Shuffle&Crop) effectively destroys text semantics while preserving key style cues, enabling the model to learn editing behaviors directly from the real text image. With this concise yet real-oriented design, TextRIRO achieves promising performance in both accuracy and visual realism across real-world benchmarks, substantially mitigating the synthetic-to-real domain gap. Furthermore, we leverage TextRIRO to build TextRIRO-3M, a large-scale realistic dataset for long-text recognition by concatenating edited and original images. Experimental results show that training recognition models with TextRIRO-3M significantly improves recognition accuracy, demonstrating that TextRIRO provides highly useful training resources for downstream tasks. Overall, TextRIRO lifts STE to realistic, reliable, and widely applicable new levels. Code is available at https://github.com/YesianRohn/TextRIRO.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ad88186a5aba295281e9fea",
     "projectPage": "https://huggingface.co/spaces/Yesianrohn/TextRIRO-Demo",
     "githubRepo": "https://github.com/YesianRohn/TextRIRO",
@@ -2798,7 +3231,7 @@
      "name": "Jungang"
     },
     "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-    "upvotes": 4,
+    "upvotes": 6,
     "discussionId": "6ad83548efdc4c3bd8229f2d",
     "projectPage": "https://streameval.ai/",
     "githubRepo": "https://github.com/StreamEval/StreamEval",
@@ -2917,7 +3350,7 @@
      "name": "CheeryLJH"
     },
     "summary": "Agent Skills improve LLM agents by making task knowledge reusable across sessions. Learning transferable Skills requires evidence about a procedure and its conditions of use, which a successful task attempt can leave untested. We introduce Socratic Skill Learning (SSL), which interleaves expert teaching with Student practice. An Educator guides investigation while the Student remains the sole environment operator and Skill author, able to question, test, and adapt advice. To test reuse beyond the learning task, we construct SkillTransferBench, with 35 task families and 408 executable cases, pairing public variation specifications with held-out evaluation in fresh solver sessions. On the main 22-family, 155-case cohort, Fixed-Window SSL reaches 0.801 utility, versus 0.723 without a Skill, 0.761 for adapted Trace2Skill (trajectory distillation), and 0.751 for adapted SKILL-KD (contrastive distillation). Across three model pairs on shared families, interleaved guidance outperforms expert authoring and post-hoc teaching. Process analysis links guidance to Student writing and package revision; a case study shows the Student testing and refining a proposed procedure for later reuse. As demand for new lessons falls, the cost of fixed-window review grows. Issue-Guided SSL tracks unresolved questions across Skill revisions to select and focus review, reaching 0.805 utility with 61.7% fewer Educator tokens and 16.9% fewer total acquisition tokens than Fixed-Window SSL on the main cohort.",
-    "upvotes": 26,
+    "upvotes": 28,
     "discussionId": "6acf7b3190585ab8267eea16",
     "githubRepo": "https://github.com/NJU-LINK/Socratic-Skill-Learning",
     "githubRepoAddedBy": "user",
@@ -3020,7 +3453,7 @@
      "name": "limingcv"
     },
     "summary": "Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners' own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning. To accommodate different execution mechanisms, harness-specific adapters connect recorded planner interactions with task outcomes, enabling a common RL training pipeline while keeping execution components fixed. On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory. These results demonstrate post-training as an effective approach for improving robot planners. We will release the framework and trained planner checkpoints.",
-    "upvotes": 14,
+    "upvotes": 16,
     "discussionId": "6ad8fa4cf7563b9935e814ad",
     "projectPage": "https://xinxinliu-ai.github.io/AgenticRoboRL/",
     "githubRepo": "https://github.com/xinxinliu-ai/AgenticRoboRL",
@@ -3233,7 +3666,7 @@
      "name": "crazyofapple"
     },
     "summary": "Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term deployment. While external memory systems attempt to bridge this gap, they mostly act as passive retrieval caches, evaluated primarily by whether they can recall stored facts or past interactions. Whether memory can drive genuine continual learning remains an open question. In this paper, we introduce Memory-Centric Continual Learning (MCCL), arguing that memory should be judged by whether it improves future actions, not merely what it retrieves. MCCL has three main parts. First, a three-axis taxonomy organizes memory by where state is stored (substrates), what form it takes (assets), and how it is managed (policies). This defines a two-loop lifecycle that updates memory state in an inner loop while refining management policies in an outer loop based on task feedback. Second, an evaluation protocol measures retention under interference, adaptation to change, and task transfer to isolate genuine behavioral gains from simple context expansion. Third, a memory scaling framework models how agent performance scales with experience, storage capacity, and compute budgets across non-parametric and parametric memory. Together, these components reframe agent memory from passive lookup to continuous learning, offering a principled route toward self-improving autonomous agents.",
-    "upvotes": 12,
+    "upvotes": 15,
     "discussionId": "6ad971303f2bb52eb8d6e9a9",
     "ai_summary": "Memory-Centric Continual Learning reframes agent memory as an active driver of behavioral improvement through a taxonomy of storage substrates, assets, and policies, a two-loop lifecycle, and scaling frameworks evaluated by retention, adaptation, and transfer.",
     "ai_keywords": [
@@ -3493,7 +3926,7 @@
      "name": "Makayi"
     },
     "summary": "Full 3D attention is costly in video Diffusion Transformers. Block-sparse attention reduces this cost by computing only selected attention blocks. However, existing methods either overlook the potential to optimize sparsity allocation or rely on heuristic rules or local metrics to guide it. In this work, we observe that sparsifying attention in different layers and at different denoising steps affects final-video fidelity to substantially different degrees. Yet the identities of the most sensitive layer-step pairs remain nearly unchanged across inputs. Building on these findings, we propose Allocating Layer-step Latency by Output Tests (ALLOT), a training-free sparsity allocation method. Treating each layer-step pair as a cell, ALLOT estimates each cell's contribution to final-video error through (i) cell probing and (ii) trajectory calibration, then jointly optimizes cell densities under a measured-latency budget. It preserves existing selection strategies and kernels, replacing only the allocation component. At equal or shorter wall-clock time, ALLOT outperforms every compared allocation strategy with XAttention, with an 11.8 dB PSNR gain on HunyuanVideo. Extensive experiments across four additional published pipelines on Wan2.1, Wan2.2, and HunyuanVideo show that ALLOT outperforms or ties the default in all nine settings.",
-    "upvotes": 8,
+    "upvotes": 12,
     "discussionId": "6ad965563f2bb52eb8d6e918",
     "ai_summary": "ALLOT is a training-free method that allocates block-sparse attention densities across layer-step pairs in video diffusion transformers to maximize output fidelity under a latency budget.",
     "ai_keywords": [
@@ -3595,7 +4028,7 @@
      "name": "HELLORPG"
     },
     "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-    "upvotes": 18,
+    "upvotes": 46,
     "discussionId": "6ad96cfa3f2bb52eb8d6e95b",
     "projectPage": "https://hellorpg.github.io/looking-ahead/",
     "githubRepo": "https://github.com/TencentARC/Looking-Ahead",
@@ -3636,7 +4069,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -3685,7 +4118,7 @@
      "name": "Aratako"
     },
     "summary": "Neural speech codecs provide discrete tokens for speech generation. Lower frame rates shorten token sequences, but each token must then carry more linguistic and acoustic information. Variable-frame-rate codecs address this trade-off by adapting token allocation to speech content, but threshold-based allocation lets content determine the token count, so the sequence length a speech generator must produce varies across utterances and datasets at a fixed setting. We present RubatoCodec, a variable-frame-rate speech codec built on X-Codec-2 with an exact utterance-level event budget and streaming decoding. Its Adaptive Firing mechanism uses changes in codec features and waveform spectra to divide speech into variable-duration events without a learned boundary predictor. Discrete codes and an explicit duration represent each event, allowing a speech generator to predict and decode one event at a time. Controlled experiments show that adaptive allocation outperforms fixed-rate coding in reconstruction fidelity and intelligibility at low event rates. A model trained on large-scale multilingual speech achieves competitive reconstruction quality across English, Japanese, and Mandarin, with the best intelligibility preservation among the compared codecs on the evaluated English and Japanese benchmarks at comparable bitrates. In a matched text-to-speech comparison, the adaptive representation yields lower WER and higher UTMOS and UTMOSv2 with comparable speaker similarity. The speech generator also learns the codec's utterance-level event budget without an explicit generation-time rate constraint. These results demonstrate that budgeted adaptive speech representations support both high-quality reconstruction and streaming text-to-speech generation. Code and weights are available at https://github.com/third-intelligence/RubatoCodec and https://huggingface.co/third-intelligence/RubatoCodec.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ad96e503f2bb52eb8d6e97d",
     "githubRepo": "https://github.com/third-intelligence/RubatoCodec",
     "githubRepoAddedBy": "user",
@@ -3801,7 +4234,7 @@
      "name": "fuvty"
     },
     "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-    "upvotes": 33,
+    "upvotes": 49,
     "discussionId": "6ad96d683f2bb52eb8d6e967",
     "projectPage": "https://fuvty.github.io/thinking_yard_project_page/projects/akv/",
     "githubRepo": "https://github.com/thu-nics/AKV",
@@ -3920,7 +4353,7 @@
      "name": "Yanqing0327"
     },
     "summary": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.",
-    "upvotes": 3,
+    "upvotes": 10,
     "discussionId": "6ad968703f2bb52eb8d6e927",
     "projectPage": "https://ucsc-vlaa.github.io/ALPS/",
     "githubRepo": "https://github.com/UCSC-VLAA/ALPS",
@@ -4099,7 +4532,7 @@
      "name": "jsantillana"
     },
     "summary": "Perimeter triage faces a latency/semantics trade-off: signature engines are fast and format-safe but blind to unseen attacks, while generative models are semantic but slow and produce unparseable output. In late 2026 a class of commercial System One decision models (TypeSafe Jev; Microsoft-Decision-1) began selling typed decision primitives - binary gates, closed-set choices, ordinal scores - as product APIs, with no academic treatment. We present VX-One: a small multi-head network (100K-10M parameters) whose outputs are these primitives - a calibrated gate, a choice over a closed candidate set that always includes an explicit unknown option, and an ordinal score, trained multi-task, temperature-calibrated per head (~0.7-1.7 ms p50 on CPU). We evaluate it on UNSW-NB15, CIC-IDS2017, EMBER2024 against calibrated XGBoost, Random-Forest, MLP, Kitsune, and measure a two-phase cascade (Suricata with 52,674 Emerging-Threats rules -> VX-One) over five days of CIC-IDS2017. Findings: (i) VX-One wins detection (AUROC/FPR@95%TPR) on UNSW-NB15 and under temporal drift on CIC-IDS2017 (0.711 vs 0.637), but XGBoost wins multi-class attribution on all three benchmarks; (ii) leave-one-family-out gate detects never-seen families on 9/9 UNSW folds yet drops below chance on CIC recon family, and abstention threshold transfers poorly across benchmarks; (iii) on payload-less reconstructions signature engines resolve ~0.1% of flows - gray zone ~99.9% of traffic, recovered by Phase 2 (combined recall >=0.978); (iv) calibration collapses under temporal drift (ECE 0.04->0.40) for every method while ranking partially survives. We provide a measured account of where typed calibrated decisions help perimeter triage, and where they fail.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ad96c863f2bb52eb8d6e951",
     "projectPage": "https://vectrayx.com",
     "githubRepo": "https://github.com/vectrayx/vx-one",
@@ -4208,7 +4641,7 @@
      "name": "yananma"
     },
     "summary": "Cooperative language-model agents can improve without weight updates by revising reusable skills, but only if a shared team reward is traced to the responsible agent and skill. Existing methods credit the skills present in each trajectory, yet presence is not responsibility: a harmful skill active in successful runs still earns positive credit. We present GRSE, Group-Relative Skill Evolution, which assigns behavioral credit by comparison: inspired by GRPO, it executes each question several times under the same skill libraries and contrasts the executions to credit agent--skill pairs, with structured diagnosis of failures. On HotpotQA and LoCoMo with two open-weight actors, GRSE outperforms MASkills, the closest prior method, on HotpotQA and every LoCoMo category except open-domain, with the largest gains on multi-hop questions (+6.7 and +3.2 F1). Its gains rest on better-grounded retrieval rather than answers given without evidence, and its learned skills transfer between the multi-hop tasks. GRSE is robust to corrupted libraries: starting from planted harmful skills, it credits every planted skill with the correct sign and recovers the score of a clean library (+6.3 points), whereas MASkills misattributes two and falls below its starting point.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6ad963d23f2bb52eb8d6e904",
     "githubRepo": "https://github.com/yananma1029/GRSE-Skills",
     "githubRepoAddedBy": "user",
@@ -4446,7 +4879,7 @@
      "name": "gasolsun"
     },
     "summary": "On-policy distillation (OPD) can succeed with surprisingly few training questions, motivating a view of questions as carriers of distributional knowledge transfer. How can we assess whether a newly generated question is valuable for distillation, and learn to generate better questions---without access to its correct answer? We introduce Ask-to-Distill (\\method), a framework that treats synthetic questions as distribution elicitors and optimizes the teacher supervision they expose along student-generated trajectories. A student-initialized synthesizer is optimized using a distributional surrogate for question value, computed from a frozen student--teacher pair without reference answers, correctness rewards, or per-candidate student updates. The reward combines teacher--student disagreement with teacher probability mass on the student's candidate support, together with length and diversity controls. The generated questions are filtered and deduplicated into a prompt-only bank for standard OPD. Across mathematical reasoning, code generation, and agentic tasks, our method improves average performance and teacher-gap recovery over unoptimized student-generated prompts and KL-filtered real questions, while matching or exceeding real-bank OPD in the evaluated settings. Signal analyses further show that optimized questions can elicit denser supervision and more total signal from shorter student responses, supporting elicited distributional supervision as an objective for synthetic distillation data. Our code, data and models are publicly available at https://github.com/GasolSun36/Ask_to_Distill.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ad953103f2bb52eb8d6e89b",
     "ai_summary": "Ask-to-Distill optimizes synthetic questions to maximize teacher-student distributional supervision for on-policy distillation without requiring correct answers, improving reasoning, coding, and agentic task performance.",
     "ai_keywords": [
@@ -4851,7 +5284,7 @@
      "name": "itaowe"
     },
     "summary": "Training coding agents typically updates the policy while keeping the harness fixed. During training, trajectories reveal flawed repair strategies and interaction problems that vary across tasks and change as the policy learns. We introduce HarnessAdapt-RL, which trains the policy and adapts its harness during reinforcement learning. For flawed repair strategies, a frozen teacher generates task-specific mechanism-level skills. For interaction problems recurring across tasks, a separate teacher model evolves tools and hooks, keeping each change only if it improves the observed pass rate or the observed trainable rate without lowering either. The policy trains with the adapted harness, and its new trajectories guide further adaptation. With a 9B base model, HarnessAdapt-RL improves pass@1 over GRPO by 9.8, 12.6, and 6.4 percentage points on SWE-bench Verified, Multilingual, and Pro, and outperforms GRPO with the human-designed OpenHands harness. Gains from mechanism-level skills persist after their removal at evaluation. Re-evolving tools and hooks as the policy changes outperforms freezing early versions. Removing them at deployment, in contrast, costs up to 7.7 percentage points. Training therefore produces a model-harness pair: the trained policy and the evolved tools and hooks, with skills removed at deployment.",
-    "upvotes": 8,
+    "upvotes": 11,
     "discussionId": "6ad8ef74f7563b9935e81495",
     "githubRepo": "https://github.com/lingxiaotang/HarnessAdapt-RL",
     "githubRepoAddedBy": "user",
@@ -5801,438 +6234,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Yq_gbM7i78tR3nfEvcwSA.png"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.27190",
-    "authors": [
-     {
-      "_id": "6ad8792da5aba295281e9fc0",
-      "user": {
-       "_id": "60ae59710a7d7327a9ccf0bd",
-       "avatarUrl": "/avatars/a48195cc47cc2f732159af45b5d38751.svg",
-       "isPro": false,
-       "fullname": "Chenpan Li",
-       "user": "chenpanli",
-       "type": "user",
-       "name": "chenpanli"
-      },
-      "name": "Chenpan Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T16:45:05.033Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8792da5aba295281e9fc1",
-      "user": {
-       "_id": "6936eca11a8ec423087ba547",
-       "avatarUrl": "/avatars/31b933d052767402006c9accaaacb3f0.svg",
-       "isPro": false,
-       "fullname": "Thies Brockmoeller",
-       "user": "ThiesBrockmoeller",
-       "type": "user",
-       "name": "ThiesBrockmoeller"
-      },
-      "name": "Thies Brockmoeller",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T16:45:05.025Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8792da5aba295281e9fc2",
-      "name": "Stefanie Jegelka",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8792da5aba295281e9fc3",
-      "name": "Sharut Gupta",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8792da5aba295281e9fc4",
-      "name": "Nikolaos Karalias",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/60ae59710a7d7327a9ccf0bd/jO_0j4iRwLaAJXtQxZihH.png"
-    ],
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
-    "submittedOnDailyBy": {
-     "_id": "60ae59710a7d7327a9ccf0bd",
-     "avatarUrl": "/avatars/a48195cc47cc2f732159af45b5d38751.svg",
-     "isPro": false,
-     "fullname": "Chenpan Li",
-     "user": "chenpanli",
-     "type": "user",
-     "name": "chenpanli"
-    },
-    "summary": "Modern language models are increasingly asked to handle several tasks within a single prompt. Doing so requires solving each task correctly while integrating the resulting answers into a coherent response. In this paper, we identify a fundamental limitation in this process, where models make substantially more errors when tasks are composed, even when they can solve every constituent task reliably in isolation. This degradation cannot be fully explained by the accumulation of independent errors. Across both open-weight models and the frontier model Claude Opus 5, our findings instead point to an implicit thinking budget underlying this effect. In particular, under composition, models use substantially fewer tokens per task than in isolation, even when the full sequence remains well within the context window. Tasks that require longer solution traces in isolation are consequently more fragile under composition, i.e., models make more errors on prompts containing these tasks. In isolation, non-fragile tasks receive more reasoning than they need and waste compute. However, by grouping tasks according to their fragility, the implicit budgeting can be manipulated to reduce token usage by 43\\% across a range of math and linguistic tasks while also preserving accuracy.",
-    "upvotes": 8,
-    "discussionId": "6ad8792da5aba295281e9fc5",
-    "projectPage": "https://chenpanli.github.io/fragility/",
-    "githubRepo": "https://github.com/chenpanli/fragility",
-    "githubRepoAddedBy": "user",
-    "githubStars": 2,
-    "organization": {
-     "_id": "61fae781e68759322b9767be",
-     "name": "TUM",
-     "fullname": "Technical University of Munich",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-18T20:00:00.000Z",
-   "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
-   "summary": "Modern language models are increasingly asked to handle several tasks within a single prompt. Doing so requires solving each task correctly while integrating the resulting answers into a coherent response. In this paper, we identify a fundamental limitation in this process, where models make substantially more errors when tasks are composed, even when they can solve every constituent task reliably in isolation. This degradation cannot be fully explained by the accumulation of independent errors. Across both open-weight models and the frontier model Claude Opus 5, our findings instead point to an implicit thinking budget underlying this effect. In particular, under composition, models use substantially fewer tokens per task than in isolation, even when the full sequence remains well within the context window. Tasks that require longer solution traces in isolation are consequently more fragile under composition, i.e., models make more errors on prompts containing these tasks. In isolation, non-fragile tasks receive more reasoning than they need and waste compute. However, by grouping tasks according to their fragility, the implicit budgeting can be manipulated to reduce token usage by 43\\% across a range of math and linguistic tasks while also preserving accuracy.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/60ae59710a7d7327a9ccf0bd/jO_0j4iRwLaAJXtQxZihH.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27190.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "60ae59710a7d7327a9ccf0bd",
-    "avatarUrl": "/avatars/a48195cc47cc2f732159af45b5d38751.svg",
-    "fullname": "Chenpan Li",
-    "name": "chenpanli",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61fae781e68759322b9767be",
-    "name": "TUM",
-    "fullname": "Technical University of Munich",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.07609",
-    "authors": [
-     {
-      "_id": "6ad82f3defdc4c3bd8229ee1",
-      "user": {
-       "_id": "672a5081a86b3330935fe8c3",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/3q0okwtbU0mIx0i-su75A.png",
-       "isPro": false,
-       "fullname": "Yu Zhang",
-       "user": "YuCrazing",
-       "type": "user",
-       "name": "YuCrazing"
-      },
-      "name": "Yu Zhang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T08:45:05.290Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82f3defdc4c3bd8229ee2",
-      "name": "Xudong Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82f3defdc4c3bd8229ee3",
-      "name": "Xingang Pan",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/672a5081a86b3330935fe8c3/pPbJ34HhdIa-l5foHQh8H.png"
-    ],
-    "publishedAt": "2026-10-18T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
-    "submittedOnDailyBy": {
-     "_id": "672a5081a86b3330935fe8c3",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/3q0okwtbU0mIx0i-su75A.png",
-     "isPro": false,
-     "fullname": "Yu Zhang",
-     "user": "YuCrazing",
-     "type": "user",
-     "name": "YuCrazing"
-    },
-    "summary": "Neural simulation of high-fidelity deformable bodies is a foundational challenge in computer graphics and physical AI. Long-horizon prediction for high-resolution 3D volumetric meshes is hard: autoregressive methods are prone to error accumulation, while direct multi-frame prediction at native resolution is computationally prohibitive. This motivates a compact spatiotemporal latent representation, which is largely unexplored for mesh-based volumetric physics. Meanwhile, it remains unclear whether deterministic regression or generative diffusion is the more suitable predictive paradigm. To address these coupled challenges, we introduce PhysLDM, a unified latent-diffusion paradigm for one-shot deformable simulation. Its core is a holistic spatiotemporal VAE that avoids the \"staircase\" artifacts of standard temporal compression (e.g., video VAEs), achieving ~2.48 mm reconstruction precision on meter-scale scenes at up to 78x token compression. Based on this reliable latent space, we systematically compare regression and diffusion methods. Our experiments uncover a key modeling insight: complex deformable dynamics are often chaotic, and in this regime deterministic regression tends to produce non-physical averages, whereas diffusion better models their distribution. Accordingly, we employ a latent diffusion model that effectively learns from chaotic data to generate physically plausible trajectories. Trained purely kinematically on an Objaverse-scale dataset, a single PhysLDM generalizes zero-shot to unseen OOD datasets. Its differentiability further enables efficient solution of inverse problems and higher-order design optimization. To our knowledge, PhysLDM is the first high-fidelity spatiotemporal autoencoder and latent-diffusion paradigm for volumetric deformable dynamics, offering a scalable and robust approach to neural simulation. Project Page: https://yucrazing.github.io/physldm/",
-    "upvotes": 6,
-    "discussionId": "6ad82f3defdc4c3bd8229ee4",
-    "projectPage": "https://yucrazing.github.io/physldm/",
-    "ai_summary": "PhysLDM introduces a spatiotemporal latent diffusion framework for high-fidelity deformable body simulation, using a holistic VAE and diffusion to model chaotic dynamics and enable zero-shot generalization.",
-    "ai_keywords": [
-     "spatiotemporal VAE",
-     "latent diffusion model",
-     "deformable dynamics",
-     "chaotic dynamics",
-     "inverse problems",
-     "zero-shot generalization",
-     "volumetric meshes"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "62d55f243bf5e059f7ca25ba",
-     "name": "mmlab-ntu",
-     "fullname": "MMLab@NTU",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-    }
-   },
-   "publishedAt": "2026-10-17T20:00:00.000Z",
-   "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
-   "summary": "Neural simulation of high-fidelity deformable bodies is a foundational challenge in computer graphics and physical AI. Long-horizon prediction for high-resolution 3D volumetric meshes is hard: autoregressive methods are prone to error accumulation, while direct multi-frame prediction at native resolution is computationally prohibitive. This motivates a compact spatiotemporal latent representation, which is largely unexplored for mesh-based volumetric physics. Meanwhile, it remains unclear whether deterministic regression or generative diffusion is the more suitable predictive paradigm. To address these coupled challenges, we introduce PhysLDM, a unified latent-diffusion paradigm for one-shot deformable simulation. Its core is a holistic spatiotemporal VAE that avoids the \"staircase\" artifacts of standard temporal compression (e.g., video VAEs), achieving ~2.48 mm reconstruction precision on meter-scale scenes at up to 78x token compression. Based on this reliable latent space, we systematically compare regression and diffusion methods. Our experiments uncover a key modeling insight: complex deformable dynamics are often chaotic, and in this regime deterministic regression tends to produce non-physical averages, whereas diffusion better models their distribution. Accordingly, we employ a latent diffusion model that effectively learns from chaotic data to generate physically plausible trajectories. Trained purely kinematically on an Objaverse-scale dataset, a single PhysLDM generalizes zero-shot to unseen OOD datasets. Its differentiability further enables efficient solution of inverse problems and higher-order design optimization. To our knowledge, PhysLDM is the first high-fidelity spatiotemporal autoencoder and latent-diffusion paradigm for volumetric deformable dynamics, offering a scalable and robust approach to neural simulation. Project Page: https://yucrazing.github.io/physldm/",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/672a5081a86b3330935fe8c3/pPbJ34HhdIa-l5foHQh8H.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.07609.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "672a5081a86b3330935fe8c3",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/3q0okwtbU0mIx0i-su75A.png",
-    "fullname": "Yu Zhang",
-    "name": "YuCrazing",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "62d55f243bf5e059f7ca25ba",
-    "name": "mmlab-ntu",
-    "fullname": "MMLab@NTU",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.26711",
-    "authors": [
-     {
-      "_id": "6ad82ee2efdc4c3bd8229ed6",
-      "user": {
-       "_id": "6900b31a56d66d46a493ef8a",
-       "avatarUrl": "/avatars/bb6ee7c18e5d2bfd2e909a4ba81103d9.svg",
-       "isPro": false,
-       "fullname": "Chen Kaiwei",
-       "user": "KSZG",
-       "type": "user",
-       "name": "KSZG"
-      },
-      "name": "Kaiwei Chen",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T08:45:05.283Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229ed7",
-      "name": "Moran Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229ed8",
-      "name": "Zhenye Gan",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229ed9",
-      "name": "Yabiao Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229eda",
-      "name": "Chengjie Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229edb",
-      "name": "Kexin Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229edc",
-      "name": "Yong Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82ee2efdc4c3bd8229edd",
-      "name": "Jiangning Zhang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
-    "submittedOnDailyBy": {
-     "_id": "6900b31a56d66d46a493ef8a",
-     "avatarUrl": "/avatars/bb6ee7c18e5d2bfd2e909a4ba81103d9.svg",
-     "isPro": false,
-     "fullname": "Chen Kaiwei",
-     "user": "KSZG",
-     "type": "user",
-     "name": "KSZG"
-    },
-    "summary": "Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and mechanical plausibility with conservation laws. PVBench comprises 600 carefully crafted prompts, of which 30% involve physical embodied agents such as robot arms, humanoids, quadrupeds, and multi-agent systems. For challenging physically tractable dimensions, it pairs each with specialized vision models that derive verifiable, physically grounded measurements, such as object-level 6D pose, metric scale, surface normals, kinematics, and numerical conservation-law residuals. It thus avoids relying solely on subjective scoring, while supporting both text-to-video and image-to-video generation. Finally, we validate the agreement between automatic metrics and human judgments through human evaluation. Meanwhile, we evaluate mainstream open-source and closed-source models and present several insights. By releasing the benchmark, prompts, and calibration protocol, we aim to foster physically grounded video generation.",
-    "upvotes": 6,
-    "discussionId": "6ad82ee2efdc4c3bd8229ede",
-    "projectPage": "https://kszg-11.github.io/PVBench-Website/",
-    "githubRepo": "https://github.com/KSZG-11/PVBench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "PVBench introduces a quantitative benchmark with 46 physical dimensions to evaluate the plausibility of generated videos using specialized vision models and human-aligned metrics.",
-    "ai_keywords": [
-     "physical plausibility",
-     "video generation",
-     "PVBench",
-     "6D pose",
-     "metric scale",
-     "surface normals",
-     "kinematics",
-     "conservation laws",
-     "vision models",
-     "text-to-video",
-     "image-to-video"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 8
-   },
-   "publishedAt": "2026-10-18T20:00:00.000Z",
-   "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
-   "summary": "Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and mechanical plausibility with conservation laws. PVBench comprises 600 carefully crafted prompts, of which 30% involve physical embodied agents such as robot arms, humanoids, quadrupeds, and multi-agent systems. For challenging physically tractable dimensions, it pairs each with specialized vision models that derive verifiable, physically grounded measurements, such as object-level 6D pose, metric scale, surface normals, kinematics, and numerical conservation-law residuals. It thus avoids relying solely on subjective scoring, while supporting both text-to-video and image-to-video generation. Finally, we validate the agreement between automatic metrics and human judgments through human evaluation. Meanwhile, we evaluate mainstream open-source and closed-source models and present several insights. By releasing the benchmark, prompts, and calibration protocol, we aim to foster physically grounded video generation.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.26711.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6900b31a56d66d46a493ef8a",
-    "avatarUrl": "/avatars/bb6ee7c18e5d2bfd2e909a4ba81103d9.svg",
-    "fullname": "Chen Kaiwei",
-    "name": "KSZG",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2609.34565",
-    "authors": [
-     {
-      "_id": "6ad5db4560556d9547d95125",
-      "name": "Minghao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d95126",
-      "user": {
-       "_id": "65eeaccd306927c1250b41bb",
-       "avatarUrl": "/avatars/4e6cda0e7a3d7a71498eb246b59d29ff.svg",
-       "isPro": false,
-       "fullname": "bangyan li",
-       "user": "li-fly",
-       "type": "user",
-       "name": "li-fly"
-      },
-      "name": "Bangyan Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T08:45:05.024Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d95127",
-      "name": "Zifan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d95128",
-      "name": "Yulong Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d95129",
-      "name": "Hu Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d9512a",
-      "name": "Gan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d9512b",
-      "name": "Jingtong Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad5db4560556d9547d9512c",
-      "name": "Wenqiang Xu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-08T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "FlowState: Execution State as Memory for Long-Horizon LLM Agents",
-    "submittedOnDailyBy": {
-     "_id": "65eeaccd306927c1250b41bb",
-     "avatarUrl": "/avatars/4e6cda0e7a3d7a71498eb246b59d29ff.svg",
-     "isPro": false,
-     "fullname": "bangyan li",
-     "user": "li-fly",
-     "type": "user",
-     "name": "li-fly"
-    },
-    "summary": "Long-horizon tasks require LLM agents to continually draw on information from earlier interactions. However, retaining the full history increases context costs, while compressing it risks losing details needed later, and the relevance of historical information often becomes apparent as the task progresses. To address these challenges, we propose FlowState, which treats execution state as memory that can be retained and revisited across requests, unifying current decision-making with the reuse of historical information. FlowState preserves semantically typed state nodes, their relations, and references to raw tool observations, separating persistent retention from on-demand access. Within a single execution loop, Incremental State Update (ISU) maintains the current state based on new inputs and feedback, while Progressive State Access (PSA) progressively reveals historical states and supporting evidence as needed during reasoning. Together, these mechanisms enable agents to reassess prior decisions in light of new information and guide subsequent actions. Compared with a full-context baseline using the same DeepSeek-V4-Flash model, FlowState improves the average success rate on MemoryArena and the average pass rate on τ^3-Bench by 4.55 and 13.95 percentage points, respectively, while reducing total token consumption by 43.2% and 40.6%. These results demonstrate the performance and efficiency advantages of FlowState on long-horizon tasks.",
-    "upvotes": 16,
-    "discussionId": "6ad5db4560556d9547d9512d",
-    "ai_summary": "FlowState improves long-horizon agent performance by maintaining structured, revisitable execution memory with incremental updates and progressive access, reducing token use while increasing success rates.",
-    "ai_keywords": [
-     "LLM agents",
-     "FlowState",
-     "execution state",
-     "Incremental State Update",
-     "Progressive State Access",
-     "semantically typed state nodes",
-     "MemoryArena",
-     "τ³-Bench"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "68d4ae9941614425f8aa7490",
-     "name": "ant-intl",
-     "fullname": "ant-international",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e9c86d2551cb38000fa77c/qG2KcieHqYFuWXi2-weuP.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-07T20:00:00.000Z",
-   "title": "FlowState: Execution State as Memory for Long-Horizon LLM Agents",
-   "summary": "Long-horizon tasks require LLM agents to continually draw on information from earlier interactions. However, retaining the full history increases context costs, while compressing it risks losing details needed later, and the relevance of historical information often becomes apparent as the task progresses. To address these challenges, we propose FlowState, which treats execution state as memory that can be retained and revisited across requests, unifying current decision-making with the reuse of historical information. FlowState preserves semantically typed state nodes, their relations, and references to raw tool observations, separating persistent retention from on-demand access. Within a single execution loop, Incremental State Update (ISU) maintains the current state based on new inputs and feedback, while Progressive State Access (PSA) progressively reveals historical states and supporting evidence as needed during reasoning. Together, these mechanisms enable agents to reassess prior decisions in light of new information and guide subsequent actions. Compared with a full-context baseline using the same DeepSeek-V4-Flash model, FlowState improves the average success rate on MemoryArena and the average pass rate on τ^3-Bench by 4.55 and 13.95 percentage points, respectively, while reducing total token consumption by 43.2% and 40.6%. These results demonstrate the performance and efficiency advantages of FlowState on long-horizon tasks.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2609.34565.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "65eeaccd306927c1250b41bb",
-    "avatarUrl": "/avatars/4e6cda0e7a3d7a71498eb246b59d29ff.svg",
-    "fullname": "bangyan li",
-    "name": "li-fly",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68d4ae9941614425f8aa7490",
-    "name": "ant-intl",
-    "fullname": "ant-international",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e9c86d2551cb38000fa77c/qG2KcieHqYFuWXi2-weuP.jpeg"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
