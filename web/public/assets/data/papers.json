@@ -1,8 +1,460 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-22T18:31:01.121Z",
+ "fetchedAt": "2026-10-22T20:46:05.993Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.28940",
+    "authors": [
+     {
+      "_id": "6ada62ac55db1e682e582b8b",
+      "name": "Yisi Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ada62ac55db1e682e582b8c",
+      "name": "Nicholas Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6ada62ac55db1e682e582b8d",
+      "name": "Gopala K. Anumanchipalli",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/656a4547996819a82836852d/pUOrDKtIoXZGYdLSyupI2.mp4"
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
+    "submittedOnDailyBy": {
+     "_id": "656a4547996819a82836852d",
+     "avatarUrl": "/avatars/a5b522c18fced97140a156ff3e88d2e8.svg",
+     "isPro": false,
+     "fullname": "Nicholas Lee",
+     "user": "nicholaslee",
+     "type": "user",
+     "name": "nicholaslee"
+    },
+    "summary": "Voice style conversion (VSC) aims to transform a source utterance to match the timbre, accent, and emotion of a target voice while preserving linguistic content. StyleStream 1.0 introduced the first streamable zero-shot VSC system with state-of-the-art conversion quality, but remained limited in two ways: approximately 1s end-to-end latency on consumer hardware, and the lack of a text-based interface for designing or editing target voices. We present StyleStream 2.0, a fast and controllable streaming VSC framework that addresses these limitations. To reduce latency, we train a few-step pixel MeanFlow model and further fine-tune it with autoregressive feedback inspired by Self Forcing, improving robustness under streaming inference. This reduces end-to-end latency to 520~ms on a consumer GPU, a 2x speedup over StyleStream 1.0, while maintaining conversion quality. To enable controllable style manipulation, we remove the mel-spectrogram context and instead route target style information through a compact style embedding. In this embedding space, we train a unified text-conditioned flow matching model that supports both text-based voice design, which maps natural language prompts to voice styles, and instruction-based voice editing, which modifies a specific attribute of a source utterance while preserving the rest. Experiments show that StyleStream 2.0 achieves the strongest target style fidelity on VSC, voice design, and voice editing, while remaining competitive on intelligibility and non-edited attribute preservation.",
+    "upvotes": 8,
+    "discussionId": "6ada62ac55db1e682e582b8e",
+    "projectPage": "https://berkeley-speech-group.github.io/StyleStream2.0/",
+    "githubRepo": "https://github.com/Berkeley-Speech-Group/StyleStream2.0",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "StyleStream 2.0 improves streaming voice conversion with lower latency via a few-step MeanFlow model and enables text-based voice design and editing through a unified flow matching model.",
+    "ai_keywords": [
+     "zero-shot VSC",
+     "pixel MeanFlow",
+     "Self Forcing",
+     "autoregressive feedback",
+     "flow matching",
+     "text-conditioned flow matching",
+     "style embedding",
+     "voice design",
+     "instruction-based voice editing"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "61f20a9ce108f2cba2dc0730",
+     "name": "Berkeley",
+     "fullname": "UC Berkeley",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61ac8f8a00d01045fca0ad2f/0FjsTg2txEZZ4dEgmMnQL.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
+   "summary": "Voice style conversion (VSC) aims to transform a source utterance to match the timbre, accent, and emotion of a target voice while preserving linguistic content. StyleStream 1.0 introduced the first streamable zero-shot VSC system with state-of-the-art conversion quality, but remained limited in two ways: approximately 1s end-to-end latency on consumer hardware, and the lack of a text-based interface for designing or editing target voices. We present StyleStream 2.0, a fast and controllable streaming VSC framework that addresses these limitations. To reduce latency, we train a few-step pixel MeanFlow model and further fine-tune it with autoregressive feedback inspired by Self Forcing, improving robustness under streaming inference. This reduces end-to-end latency to 520~ms on a consumer GPU, a 2x speedup over StyleStream 1.0, while maintaining conversion quality. To enable controllable style manipulation, we remove the mel-spectrogram context and instead route target style information through a compact style embedding. In this embedding space, we train a unified text-conditioned flow matching model that supports both text-based voice design, which maps natural language prompts to voice styles, and instruction-based voice editing, which modifies a specific attribute of a source utterance while preserving the rest. Experiments show that StyleStream 2.0 achieves the strongest target style fidelity on VSC, voice design, and voice editing, while remaining competitive on intelligibility and non-edited attribute preservation.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/656a4547996819a82836852d/pUOrDKtIoXZGYdLSyupI2.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28940.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "656a4547996819a82836852d",
+    "avatarUrl": "/avatars/a5b522c18fced97140a156ff3e88d2e8.svg",
+    "fullname": "Nicholas Lee",
+    "name": "nicholaslee",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61f20a9ce108f2cba2dc0730",
+    "name": "Berkeley",
+    "fullname": "UC Berkeley",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61ac8f8a00d01045fca0ad2f/0FjsTg2txEZZ4dEgmMnQL.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.29932",
+    "authors": [
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebd9",
+      "name": "Qiuyang Mang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebda",
+      "name": "Wenhao Chai",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebdb",
+      "name": "Runyuan He",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebdc",
+      "name": "Dongruixuan Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebdd",
+      "name": "Zihan Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebde",
+      "name": "Yujun He",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebdf",
+      "name": "Xuanyi Zhou",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe0",
+      "name": "Hao Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe1",
+      "name": "Siddhant Ray",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe2",
+      "name": "Bo Peng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe3",
+      "name": "Ruyi Ji",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe4",
+      "name": "Shuo Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe5",
+      "name": "Haocheng Xi",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe6",
+      "name": "Boru Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe7",
+      "name": "Xinyang David Han",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe8",
+      "name": "Melissa Pan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebe9",
+      "name": "Mayank Mishra",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebea",
+      "name": "Boxi Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebeb",
+      "name": "Sijia Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebec",
+      "name": "Kerem Akillioglu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebed",
+      "name": "Yi Pan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebee",
+      "name": "Zirui Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebef",
+      "name": "Mert Cemri",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf0",
+      "name": "Diogo Antunes",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf1",
+      "name": "Yichuan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf2",
+      "name": "Aiwei Ivy Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf3",
+      "name": "Zhenyang Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf4",
+      "name": "Qizheng Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf5",
+      "name": "Kaiyuan Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf6",
+      "name": "Wenyuan Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf7",
+      "name": "Sherry Ruan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf8",
+      "name": "Shu Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebf9",
+      "name": "Dacheng Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebfa",
+      "name": "Zerui Cheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebfb",
+      "name": "Zeyu Shen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebfc",
+      "name": "Shang Zhou",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebfd",
+      "name": "Hanfei Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebfe",
+      "name": "Yuzhong Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ebff",
+      "name": "Bohan Lyu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec00",
+      "name": "Qu Ao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec01",
+      "name": "Han Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec02",
+      "name": "Chonghe Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec03",
+      "name": "Jingzhuo Hu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec04",
+      "name": "Xiaokun Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec05",
+      "name": "Kunjun Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec06",
+      "name": "Zhiqing Zhong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec07",
+      "name": "Haoye Tian",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec08",
+      "name": "Tong Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec09",
+      "name": "Yunzhong He",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0a",
+      "name": "Hanchen Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0b",
+      "name": "Ofir Press",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0c",
+      "name": "Jiantao Jiao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0d",
+      "name": "Kunle Olukotun",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0e",
+      "name": "Karthik R. Narasimhan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec0f",
+      "name": "Jingbo Shang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec10",
+      "name": "Koushik Sen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec11",
+      "name": "Matei Zaharia",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec12",
+      "name": "Alex Dimakis",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec13",
+      "name": "Ion Stoica",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec14",
+      "name": "Joseph E. Gonzalez",
+      "hidden": false
+     },
+     {
+      "_id": "6ad98c1e3f2bb52eb8d6ec15",
+      "name": "Alvin Cheung",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
+    "submittedOnDailyBy": {
+     "_id": "69446b15835f00df604cbc7a",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/203QH9qkSLhigPnPA2SZW.webp",
+     "isPro": false,
+     "fullname": "Qiuyang Mang",
+     "user": "qmang",
+     "type": "user",
+     "name": "qmang"
+    },
+    "summary": "Can LLM agents make contributions to frontier computer science R&D? We introduce FrontierCS 2, a benchmark of 48 open-ended tasks. We take a paper and the code its authors released and delete the paper's contribution. The deleted code becomes the human reference that sets the bar. Earlier open-ended benchmarks give each agent a problem statement and grade one program after the run. FrontierCS 2 places the agent inside a research environment. The agent inherits a working repository and may submit a patch at any point. For each patch, a judge returns a development-suite score but keeps the evaluator, the held-out final suite and the reference private, and grades the final submission on that suite against the reference. The tasks span 13 domains, from machine-learning systems and high-performance computing to databases, security and robotics. Beyond these 48 tasks, FrontierCS 2 keeps a private set of more than 100 tasks, to be announced in the future. We evaluate 12 agents. The best one is Claude Opus 5.5, passing 58% of its runs. No run passes on 16 tasks. A higher score is not the same as a pass: most runs that beat the reference on the combined final score still fall short on some metric or workload. On a shared capability scale for agents and tasks, the median task is roughly as difficult as what the strongest agent can handle.",
+    "upvotes": 2,
+    "discussionId": "6ad98c1e3f2bb52eb8d6ec16",
+    "projectPage": "https://frontier-cs.org",
+    "githubRepo": "https://github.com/FrontierCS/FrontierCS-2",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "FrontierCS 2 evaluates LLM agents on open-ended computer science R&D tasks using hidden evaluation suites and reveals that even the best agents pass only about half of tasks.",
+    "ai_keywords": [
+     "LLM agents",
+     "FrontierCS 2",
+     "open-ended benchmark",
+     "development-suite score",
+     "machine-learning systems",
+     "high-performance computing",
+     "hidden evaluation suite"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 27
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
+   "summary": "Can LLM agents make contributions to frontier computer science R&D? We introduce FrontierCS 2, a benchmark of 48 open-ended tasks. We take a paper and the code its authors released and delete the paper's contribution. The deleted code becomes the human reference that sets the bar. Earlier open-ended benchmarks give each agent a problem statement and grade one program after the run. FrontierCS 2 places the agent inside a research environment. The agent inherits a working repository and may submit a patch at any point. For each patch, a judge returns a development-suite score but keeps the evaluator, the held-out final suite and the reference private, and grades the final submission on that suite against the reference. The tasks span 13 domains, from machine-learning systems and high-performance computing to databases, security and robotics. Beyond these 48 tasks, FrontierCS 2 keeps a private set of more than 100 tasks, to be announced in the future. We evaluate 12 agents. The best one is Claude Opus 5.5, passing 58% of its runs. No run passes on 16 tasks. A higher score is not the same as a pass: most runs that beat the reference on the combined final score still fall short on some metric or workload. On a shared capability scale for agents and tasks, the median task is roughly as difficult as what the strongest agent can handle.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29932.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "69446b15835f00df604cbc7a",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/203QH9qkSLhigPnPA2SZW.webp",
+    "fullname": "Qiuyang Mang",
+    "name": "qmang",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 6,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.23344",
@@ -71,7 +523,7 @@
      "name": "ventr1c"
     },
     "summary": "Large language models (LLMs) are increasingly used to automate AI research, including language-model (LM) development, offering a potential path toward recursive self-improvement. However, turning experimental feedback into a learned ability to propose effective improvements across models faces two challenges. First, training such an ability with real feedback is expensive: reinforcement learning (RL) requires evaluating tens of thousands of proposals, each potentially requiring a full model-training run. Even at ten GPU-hours per run, reward collection alone would consume hundreds of thousands of GPU-hours, motivating a cheaper surrogate. Second, surrogate feedback can become unreliable as policy optimization favors overestimated proposals when the proposal distribution shifts. To address these challenges, we propose LM2LM, which trains LLMs with RL to generate effective LM improvement proposals. To provide scalable feedback, we use a research world model (RWM), a frozen LLM that predicts proposal gains from real experimental records provided in context, as the reward model for RL. To maintain feedback reliability, we periodically execute current-policy proposals ranked highly by the RWM and add their measured outcomes to its context. Across eight autoregressive and diffusion LM development environments, real-execution evaluations on held-out tasks show that LM2LM enables Qwen3.8-27B to outperform GPT-6-sol, even when GPT-6-sol is given 300 real experimental records in context, while requiring 33% lower data-generation cost. LM2LM also generalizes to a model family unseen during training.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ada442555db1e682e582b28",
     "ai_summary": "LM2LM uses a frozen research world model to provide scalable reinforcement learning rewards for generating language model improvements, maintaining reliability through periodic real execution and outperforming larger baselines at lower cost.",
     "ai_keywords": [
@@ -159,7 +611,7 @@
      "name": "DwanZhang"
     },
     "summary": "Agents need reliable ways to validate their outputs, both when completing tasks and when filtering synthetic training data. We study verifier generation: from the instruction and environment available for solving a task, an agent writes an executable verifier that must accept every valid solution and reject invalid ones. We introduce VerifierBench, a benchmark of 222 tasks from six agent benchmarks spanning tool-call, state-based, and code verification, with 4,993 hidden test cases that include alternative valid solutions and attacks; Verifier4Verifier (V4V), a six-check audit, screens its source verifiers and test suites. Across 19 models in a common agent harness, normalized balanced accuracy ranges from 10.6 to 62.1, with generated verifiers consistently rejecting invalid solutions more reliably than they accept valid ones. This apparent strength can mask overly restrictive verification: most false rejections in the analyzed records come from verifiers that accept no tested solution to a task. Case studies reveal unsupported assumptions about solution formats, tool use, and code changes that exclude valid solutions. These errors survive self-testing because agents test solutions that share the verifier's mistaken assumptions, or submit verifiers without confirming that any correct solution passes. These findings suggest testing both whether a verifier accepts a correct solution and whether it accepts other solutions permitted by the task. The project page and dataset are publicly available.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ada47f355db1e682e582b47",
     "projectPage": "https://verifierbench.github.io/",
     "githubRepo": "https://github.com/DwanZhang-AI/verifier-suite",
@@ -235,7 +687,7 @@
      "name": "saitejautpala"
     },
     "summary": "Uniform diffusion language models (UDLMs) generate text by iteratively denoising sequences of ordinary vocabulary tokens, any of which may be corrupted and subsequently revised. During training, UDLMs must denoise from a context that may itself be unreliable, whereas masked diffusion language models (MDLMs) always condition on a clean context. This challenging training objective makes UDLMs more FLOP-intensive to train than MDLMs, but it yields stronger downstream reasoning performance. Recently, selective looping, which recursively applies a few early Transformer layers within each denoising step, has been shown to improve training efficiency in MDLMs under an iso-FLOP budget. We investigate looping in UDLMs while keeping the training objective and sampler unchanged. We find that looping significantly improves training efficiency: looped UDLMs reach the validation NLL of a non-looped UDLM trained on about 0.5 trillion tokens with up to 2.8x fewer training FLOPs on OpenWebText and 3.3x fewer on FineWeb-Edu. We also find that, at a matched NFE budget, looped UDLMs reach up to 9.8% lower generation perplexity than the non-looped UDLM, with most gains achieved at moderate loop counts. Finally, we study different loop-count distributions and find that sampling smaller loop counts more frequently during training improves inference efficiency: on downstream tasks, this strategy uses 12% fewer loops than uniform loop-count sampling without degrading accuracy.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ada41dc55db1e682e582b1b",
     "ai_summary": "Looping early Transformer layers improves training and inference efficiency of uniform diffusion language models without altering their objective or sampler.",
     "ai_keywords": [
@@ -525,7 +977,7 @@
      "name": "RobotLearningLab"
     },
     "summary": "Diffusion language models form answers through a sequence of revisable continuous states, but multi-agent systems usually discard those states and make agents communicate only after decoding text. We ask whether one independent diffusion trajectory can pass a compact hidden message into another and, crucially, whether the receiver uses what that message means. In Hidden Messages, a sender compresses its denoising state into four signed dense vectors; the receiver consumes them while retaining its own context, canvas, and trajectory. Removing a message tests whether the channel matters; replacing it with a message from another example tests whether its content matters. Across controlled tasks, derangement removes a +63.6-point advantage on Tiny-A2D and a +100.0-point advantage on Dream-7B, while targeted substitutions steer the receiver toward the substituted fact. On QASC with the two supporting facts split across agents, matched communication reaches 80.8%, but a wrong-example message lowers accuracy to 46.8%, a content effect of +34.0 points. The surprising result is temporal: one late transfer reaches 87.8%, exceeding four recurrent exchanges by +7.0 points. These experiments provide causal evidence for continuous hidden communication between diffusion-LM agents and show that when information is transferred can matter more than how many times agents exchange it.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ad9d261d10c239d0da2cd83",
     "githubRepo": "https://github.com/alanrbtx/hidden-messages-diffusion-agents",
     "githubRepoAddedBy": "user",
@@ -624,7 +1076,7 @@
      "name": "RobotLearningLab"
     },
     "summary": "Deep research systems iteratively plan, gather evidence, synthesize, and revise, making end-to-end latency a key bottleneck for interactive use. Almost all production systems are built on autoregressive (AR) language models and inherit left-to-right decoding in planning and long-form writing. We present DiffResearch, an open multi-agent deep research framework that places a diffusion language model (dLLM) at the core of every stage, and measure how a diffusion backbone changes latency and report quality. Holding the agentic scaffold, retrieval code, prompts, and evaluation fixed, we swap the backbone between an open diffusion model and a comparable AR model. Across 100 Deep Research Bench tasks, the diffusion backbone is roughly 6 times faster end-to-end, driven by order-of-magnitude reductions in planning and writing. We further introduce dFast, a decomposition mode that reads intermediate denoising states and extracts subqueries before generation finishes, providing a 1.99 times median speedup for decomposition in isolation with no loss of report quality. On the benchmark's RACE rubric, dFast obtains the best overall score among the three configurations. Finally, in a public system-level leaderboard snapshot, an instance built on a stronger diffusion model ranks above several commercial systems. We release DiffResearch under an Apache-2.0 license.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6ad9d22fd10c239d0da2cd7c",
     "githubRepo": "https://github.com/alanrbtx/DiffResearch",
     "githubRepoAddedBy": "user",
@@ -764,7 +1216,7 @@
      "name": "Ashitemaru"
     },
     "summary": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6ad9e177d10c239d0da2cde8",
     "projectPage": "https://lab.einsia.ai/quant-arena",
     "ai_summary": "Quant-Arena benchmarks end-to-end quantitative research by evaluating whether language models can build trading strategies on historical A-share data that remain profitable in a sealed future year.",
@@ -850,7 +1302,7 @@
      "name": "nsivaku"
     },
     "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens are trained to abstract and match. At test-time, ToM tokens are generated by each agent and act as conditioners for that agent's thoughts and actions. Across several environments covering collaborative, competitive, and mixed-motive settings (Overcooked-AI, multiparty negotiation, Decrypto, Hanabi, and Collab Escape/Capture), we evaluate ToM2Vec's ability to support multi-agent interactions and collaboration, finding consistent improvements over the base model and a variety of competitive trained and prompted baselines. We show that latent reasoning is critical, with performance dropping when reasoning is expressed in text. Moreover, we show that ToM2Vec training generalizes to partner model families not seen at train-time, including a proprietary model (GPT-5.4). In our analysis, we provide evidence that the latent tokens encode a ToM, rather than task-specific information: ToM2Vec's tokens improve the agent's ability to directly answer questions about partner beliefs, desires, and next actions.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ada1ebf0ad32446d85315cd",
     "githubRepo": "https://github.com/nsivaku/tom2vec",
     "githubRepoAddedBy": "user",
@@ -1066,7 +1518,7 @@
      "name": "dolev31"
     },
     "summary": "Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, context compression, and agentic verification, yet these techniques are typically evaluated one at a time. It remains unclear whether their isolated gains survive composition, whether retrieval quality and answer faithfulness favor the same design choices, and whether conclusions from small corpora hold at large scale. We pre-declare three hypotheses and introduce LASAGNA, an open-source framework for controlled RAG evaluation. We test 450 configurations across eight benchmarks and corpora ranging from 5K to 200K documents. Three findings emerge. First, individually strong techniques from different phases of a RAG pipeline do not necessarily compose: three retrieval techniques predict a +47% combined improvement but deliver only +17% when used together. Second, component gains stack differently for retrieval and faithfulness, and optimizing one can hurt the other. Third, the best composition changes as the corpus grows: the combination that wins on a small corpus may not remain best at large scale. These findings show that gains measured in isolation are not reliable predictors of realistic performance, and that new RAG techniques should be tested with the full surrounding stack. We call on researchers to do so and supply LASAGNA to simplify these experiments.",
-    "upvotes": 24,
+    "upvotes": 26,
     "discussionId": "6ad9916a3f2bb52eb8d6ec7e",
     "projectPage": "https://dolev31.github.io/lasagna/",
     "githubRepo": "https://github.com/dolev31/lasagna",
@@ -1085,7 +1537,7 @@
      "LASAGNA"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
+    "githubStars": 9,
     "organization": {
      "_id": "616e7b1d75754a5d5fa455cf",
      "name": "ibm",
@@ -1414,7 +1866,7 @@
      "name": "lhpku20010120"
     },
     "summary": "Spatial intelligence requires agents to actively acquire visual evidence and integrate observations into a coherent representation of the three-dimensional world. Yet spatial question answering offers limited evidence of whether models can construct accurate metric maps through autonomous exploration. We introduce SpatialScout, a benchmark for evaluating vision-language model (VLM) agents on active object-level 3D mapping. SpatialScout comprises 80 diverse indoor scenes containing 3,140 target objects. Given an object inventory, RGB observations, camera calibration, and camera poses, agents control a camera to explore each scene and estimate object centers in a shared coordinate frame. The task requires coordinating viewpoint selection, cross-view association, geometric estimation, and map revision under bounded interaction budgets. Evaluation jointly measures localization accuracy and target coverage through object-scale overlap scores that penalize missing predictions. Experiments with frontier VLMs reveal substantial limitations: the strongest evaluated model, Claude Opus 5.5, achieves a mean overlap score of 41.71%, with 47.23% of targets exceeding an intersection-over-union (IoU) threshold of 0.5 and only 3.25% exceeding 0.9. These results reveal a substantial gap between recovering coarse object layouts and constructing complete, precise metric maps. SpatialScout provides a quantitative testbed for developing agents that build reliable 3D spatial representations through active perception. Code is available at https://github.com/JesseZZZZZ/SpatialScout.",
-    "upvotes": 128,
+    "upvotes": 129,
     "discussionId": "6ad6e08a774b2a8cb5c7d9b6",
     "projectPage": "https://spatialscout.osslab-pku.org",
     "githubRepo": "https://github.com/JesseZZZZZ/SpatialScout",
@@ -1430,7 +1882,7 @@
      "active perception"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 5,
     "organization": {
      "_id": "61dcd8e344f59573371b5cb6",
      "name": "PekingUniversity",
@@ -1578,7 +2030,7 @@
      "agentic planning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2
+    "githubStars": 3
    },
    "publishedAt": "2026-10-20T20:00:00.000Z",
    "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
@@ -1763,7 +2215,7 @@
      "name": "fyzzzzzz"
     },
     "summary": "A login screen that appears after a tap on Sign in is expected; the same screen after a tap on View order is an attack. For GUI agents, safety is therefore a property of the transition rather than of the screen, and a monitor that inspects only screens can be defeated by reusing a legitimate one. Judging a transition requires an expectation of what should have followed the action. Existing GUI world models provide one, but they output it as text, code, or images, so checking it against the observed screen requires a second model to judge the two. We argue that a world model meant for verification should instead predict in the space in which observations are encoded, and present LGWM, a decoder-free, action-conditioned world model that predicts the representation of the next screen directly, trained without semantic annotation on 1.85M real GUI transitions. Verification reduces to a vector comparison, and the same signal reveals whether a mismatch is harmful. We evaluate on RSWT-BENCH, a diagnostic where each credential screen appears under both a legitimate and a hijacked transition, so detectors that see only the screen are at chance by construction. The training-free score reaches 0.987 AUC at 17 ms per decision, on par with the strongest closed-source VLMs and about ten AUC points above generative GUI world models at over three orders of magnitude lower latency. The residual direction reaches 0.953 AUC at separating harmful from benign violations, where prompted VLMs are near chance. Further analyses show that the prediction is a usable future state rather than an anomaly score. World models have mostly served as simulators or planners; our results point to a third role, verification, for which predicting in representation space is the natural design.",
-    "upvotes": 50,
+    "upvotes": 78,
     "discussionId": "6aca20d90ee6ff34004fd5fa",
     "projectPage": "https://jiamingzhang.netlify.app/lgwm/",
     "githubRepo": "https://github.com/jiamingzhang94/lgwm",
@@ -1847,7 +2299,7 @@
      "name": "PatrickHaller"
     },
     "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6ad9ac083f2bb52eb8d6ed6f",
     "ai_summary": "PACE is a post-hoc four-bit quantizer for linear-attention recurrent states that rounds less frequently and uses column-wise scales to reduce error, enabling lower memory usage without fine-tuning.",
     "ai_keywords": [
@@ -3504,7 +3956,7 @@
      "name": "ChilleD"
     },
     "summary": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, model context protocol services, and command-line interfaces, allowing agents to flexibly combine visual interaction, tool use, and code execution. WildAWM is entirely powered by open-source models, demonstrating that high-quality computer-use environments can be generated without proprietary frontier models. Beyond environments, we address three recurring challenges in task synthesis: ensuring solvability, maintaining sufficient difficulty, and producing reliable verifiers, by introducing execution-based quality gates that combine heterogeneous agent rollouts, cross-judge consistency checks, and counterfactual probes of judgment robustness. The resulting pipeline synthesizes 341 long-horizon environment-task pairs that can require over 100 agent steps to solve and remain challenging even for frontier models, with GPT-6-Astra solving only 60% of them. We train two Qwen models of different sizes exclusively in these synthetic worlds. Both models achieve substantial gains across 8 out-of-distribution benchmarks spanning web, claw, and computer-use agents, demonstrating that learning in WildAWM's synthesized worlds generalizes broadly to unseen computer-use tasks. The code is publicly available at https://github.com/MSR-Orchard/WildAWM.",
-    "upvotes": 63,
+    "upvotes": 64,
     "discussionId": "6ad6d7c3774b2a8cb5c7d8b8",
     "projectPage": "https://msr-orchard.github.io/WildAWM/",
     "githubRepo": "https://github.com/MSR-Orchard/WildAWM",
@@ -5302,7 +5754,7 @@
      "name": "Jungang"
     },
     "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-    "upvotes": 286,
+    "upvotes": 313,
     "discussionId": "6ad83548efdc4c3bd8229f2d",
     "projectPage": "https://streameval.ai/",
     "githubRepo": "https://github.com/StreamEval/StreamEval",
@@ -6199,7 +6651,7 @@
      "name": "HELLORPG"
     },
     "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-    "upvotes": 100,
+    "upvotes": 105,
     "discussionId": "6ad96cfa3f2bb52eb8d6e95b",
     "projectPage": "https://hellorpg.github.io/looking-ahead/",
     "githubRepo": "https://github.com/TencentARC/Looking-Ahead",
@@ -6460,7 +6912,7 @@
      "name": "fuvty"
     },
     "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-    "upvotes": 107,
+    "upvotes": 109,
     "discussionId": "6ad96d683f2bb52eb8d6e967",
     "projectPage": "https://fuvty.github.io/thinking_yard_project_page/projects/akv/",
     "githubRepo": "https://github.com/thu-nics/AKV",
@@ -6590,7 +7042,7 @@
      "name": "Yanqing0327"
     },
     "summary": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.",
-    "upvotes": 16,
+    "upvotes": 18,
     "discussionId": "6ad968703f2bb52eb8d6e927",
     "projectPage": "https://ucsc-vlaa.github.io/ALPS/",
     "githubRepo": "https://github.com/UCSC-VLAA/ALPS",
@@ -6640,186 +7092,6 @@
     "name": "UCSC-VLAA",
     "fullname": "UCSC-VLAA",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/645eb61da3c5cd8a16efffff/E7m3g_fFhz32pGsnK0eqX.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.09861",
-    "authors": [
-     {
-      "_id": "6ad9352df7563b9935e81598",
-      "user": {
-       "_id": "65d5ebc4cff388f15593f703",
-       "avatarUrl": "/avatars/aa68dc4ca5c21cb40ffc6a215e695336.svg",
-       "isPro": false,
-       "fullname": "Hanyu Meng",
-       "user": "Hanyu-Meng",
-       "type": "user",
-       "name": "Hanyu-Meng"
-      },
-      "name": "Hanyu Meng",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T00:45:04.497Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9352df7563b9935e81599",
-      "name": "Zhanhong He",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9352df7563b9935e8159a",
-      "name": "Zixun Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9352df7563b9935e8159b",
-      "name": "Yaolong Ju",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-07T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "Toward Part-Aware Choral Transcription with singing voice assignment",
-    "submittedOnDailyBy": {
-     "_id": "65d5ebc4cff388f15593f703",
-     "avatarUrl": "/avatars/aa68dc4ca5c21cb40ffc6a215e695336.svg",
-     "isPro": false,
-     "fullname": "Hanyu Meng",
-     "user": "Hanyu-Meng",
-     "type": "user",
-     "name": "Hanyu-Meng"
-    },
-    "summary": "Single-instrument automatic music transcription (AMT) has advanced substantially, yet choral applications require soprano, alto, tenor, and bass (SATB) to be transcribed as separate parts. Recent note-level choral AMT instead produces a single merged note track, limiting rehearsal, education, and score reconstruction. To address this limitation, we introduce Part-aware Choral Transcription (PawCT), to our knowledge the first end-to-end neural framework that identifies active SATB parts from choral audio and transcribes each into a separate note-level track. PawCT combines part-specific onset, offset, and frame prediction with part-presence estimation, union-level supervision, and structured training targets using a range prior (RP) based on SATB pitch ranges and its ordered-continuity (OC) extension, which adds within-part melodic continuity and cross-part pitch ordering. On YouChorale, PawCT-RP-OC achieves a macro part-aware note F1 of 0.225 at a 50-ms onset tolerance, outperforming an adapted choral baseline (0.165) by 36.4% relative and a two-stage post-hoc assignment pipeline (0.175). Its part-agnostic variant, PagCT, achieves a 50-ms onset F1 of 0.382, compared with 0.237 for the previous state-of-the-art choral AMT model. Cross-dataset evaluations on CSD and Cantoria further assess performance under dataset shift. These results demonstrate the benefit of jointly modeling note transcription and vocal-part assignment. Code and demos are available at https://hanyu-meng.github.io/Paw_Choral_AMT_Demo/.",
-    "upvotes": 8,
-    "discussionId": "6ad9352ef7563b9935e8159c",
-    "projectPage": "https://hanyu-meng.github.io/Paw_Choral_AMT_Demo/",
-    "githubRepo": "https://github.com/Multimodal-Music-Research-Lab/Paw_Choral_AMT",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "PawCT is an end-to-end neural framework that jointly transcribes choral audio into separate SATB note tracks using part-specific predictions, range priors, and ordered-continuity constraints.",
-    "ai_keywords": [
-     "automatic music transcription",
-     "choral AMT",
-     "SATB",
-     "part-aware transcription",
-     "onset prediction",
-     "offset prediction",
-     "frame prediction",
-     "part-presence estimation",
-     "union-level supervision",
-     "range prior",
-     "ordered-continuity",
-     "cross-dataset evaluation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
-    "organization": {
-     "_id": "67f0bbd8b814154649ef8259",
-     "name": "unswnkg",
-     "fullname": "UNSW",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67c7bee047c2aa1353242e11/Ow-d_SWRBY3LU_elTqs2y.png"
-    }
-   },
-   "publishedAt": "2026-10-06T20:00:00.000Z",
-   "title": "Toward Part-Aware Choral Transcription with singing voice assignment",
-   "summary": "Single-instrument automatic music transcription (AMT) has advanced substantially, yet choral applications require soprano, alto, tenor, and bass (SATB) to be transcribed as separate parts. Recent note-level choral AMT instead produces a single merged note track, limiting rehearsal, education, and score reconstruction. To address this limitation, we introduce Part-aware Choral Transcription (PawCT), to our knowledge the first end-to-end neural framework that identifies active SATB parts from choral audio and transcribes each into a separate note-level track. PawCT combines part-specific onset, offset, and frame prediction with part-presence estimation, union-level supervision, and structured training targets using a range prior (RP) based on SATB pitch ranges and its ordered-continuity (OC) extension, which adds within-part melodic continuity and cross-part pitch ordering. On YouChorale, PawCT-RP-OC achieves a macro part-aware note F1 of 0.225 at a 50-ms onset tolerance, outperforming an adapted choral baseline (0.165) by 36.4% relative and a two-stage post-hoc assignment pipeline (0.175). Its part-agnostic variant, PagCT, achieves a 50-ms onset F1 of 0.382, compared with 0.237 for the previous state-of-the-art choral AMT model. Cross-dataset evaluations on CSD and Cantoria further assess performance under dataset shift. These results demonstrate the benefit of jointly modeling note transcription and vocal-part assignment. Code and demos are available at https://hanyu-meng.github.io/Paw_Choral_AMT_Demo/.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.09861.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "65d5ebc4cff388f15593f703",
-    "avatarUrl": "/avatars/aa68dc4ca5c21cb40ffc6a215e695336.svg",
-    "fullname": "Hanyu Meng",
-    "name": "Hanyu-Meng",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "67f0bbd8b814154649ef8259",
-    "name": "unswnkg",
-    "fullname": "UNSW",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67c7bee047c2aa1353242e11/Ow-d_SWRBY3LU_elTqs2y.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30090",
-    "authors": [
-     {
-      "_id": "6ad96c863f2bb52eb8d6e950",
-      "user": {
-       "_id": "69fde734cc8653a1423d4310",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69fde734cc8653a1423d4310/HKXpD3jG7r6lhptjJFFDc.png",
-       "isPro": false,
-       "fullname": "Juan Salas Santillana",
-       "user": "jsantillana",
-       "type": "user",
-       "name": "jsantillana"
-      },
-      "name": "Juan S. Santillana",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.170Z",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
-    "submittedOnDailyBy": {
-     "_id": "69fde734cc8653a1423d4310",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69fde734cc8653a1423d4310/HKXpD3jG7r6lhptjJFFDc.png",
-     "isPro": false,
-     "fullname": "Juan Salas Santillana",
-     "user": "jsantillana",
-     "type": "user",
-     "name": "jsantillana"
-    },
-    "summary": "Perimeter triage faces a latency/semantics trade-off: signature engines are fast and format-safe but blind to unseen attacks, while generative models are semantic but slow and produce unparseable output. In late 2026 a class of commercial System One decision models (TypeSafe Jev; Microsoft-Decision-1) began selling typed decision primitives - binary gates, closed-set choices, ordinal scores - as product APIs, with no academic treatment. We present VX-One: a small multi-head network (100K-10M parameters) whose outputs are these primitives - a calibrated gate, a choice over a closed candidate set that always includes an explicit unknown option, and an ordinal score, trained multi-task, temperature-calibrated per head (~0.7-1.7 ms p50 on CPU). We evaluate it on UNSW-NB15, CIC-IDS2017, EMBER2024 against calibrated XGBoost, Random-Forest, MLP, Kitsune, and measure a two-phase cascade (Suricata with 52,674 Emerging-Threats rules -> VX-One) over five days of CIC-IDS2017. Findings: (i) VX-One wins detection (AUROC/FPR@95%TPR) on UNSW-NB15 and under temporal drift on CIC-IDS2017 (0.711 vs 0.637), but XGBoost wins multi-class attribution on all three benchmarks; (ii) leave-one-family-out gate detects never-seen families on 9/9 UNSW folds yet drops below chance on CIC recon family, and abstention threshold transfers poorly across benchmarks; (iii) on payload-less reconstructions signature engines resolve ~0.1% of flows - gray zone ~99.9% of traffic, recovered by Phase 2 (combined recall >=0.978); (iv) calibration collapses under temporal drift (ECE 0.04->0.40) for every method while ranking partially survives. We provide a measured account of where typed calibrated decisions help perimeter triage, and where they fail.",
-    "upvotes": 9,
-    "discussionId": "6ad96c863f2bb52eb8d6e951",
-    "projectPage": "https://vectrayx.com",
-    "githubRepo": "https://github.com/vectrayx/vx-one",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "VX-One is a small multi-task neural network that outputs calibrated typed decision primitives for perimeter triage, evaluated in a two-phase cascade against signature engines and baseline classifiers across multiple intrusion detection benchmarks.",
-    "ai_keywords": [
-     "multi-head network",
-     "calibrated gate",
-     "closed-set choice",
-     "ordinal score",
-     "temperature calibration",
-     "AUROC",
-     "FPR@95%TPR",
-     "temporal drift",
-     "leave-one-family-out",
-     "abstention threshold",
-     "calibration",
-     "ECE"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
-   "summary": "Perimeter triage faces a latency/semantics trade-off: signature engines are fast and format-safe but blind to unseen attacks, while generative models are semantic but slow and produce unparseable output. In late 2026 a class of commercial System One decision models (TypeSafe Jev; Microsoft-Decision-1) began selling typed decision primitives - binary gates, closed-set choices, ordinal scores - as product APIs, with no academic treatment. We present VX-One: a small multi-head network (100K-10M parameters) whose outputs are these primitives - a calibrated gate, a choice over a closed candidate set that always includes an explicit unknown option, and an ordinal score, trained multi-task, temperature-calibrated per head (~0.7-1.7 ms p50 on CPU). We evaluate it on UNSW-NB15, CIC-IDS2017, EMBER2024 against calibrated XGBoost, Random-Forest, MLP, Kitsune, and measure a two-phase cascade (Suricata with 52,674 Emerging-Threats rules -> VX-One) over five days of CIC-IDS2017. Findings: (i) VX-One wins detection (AUROC/FPR@95%TPR) on UNSW-NB15 and under temporal drift on CIC-IDS2017 (0.711 vs 0.637), but XGBoost wins multi-class attribution on all three benchmarks; (ii) leave-one-family-out gate detects never-seen families on 9/9 UNSW folds yet drops below chance on CIC recon family, and abstention threshold transfers poorly across benchmarks; (iii) on payload-less reconstructions signature engines resolve ~0.1% of flows - gray zone ~99.9% of traffic, recovered by Phase 2 (combined recall >=0.978); (iv) calibration collapses under temporal drift (ECE 0.04->0.40) for every method while ranking partially survives. We provide a measured account of where typed calibrated decisions help perimeter triage, and where they fail.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30090.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "69fde734cc8653a1423d4310",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69fde734cc8653a1423d4310/HKXpD3jG7r6lhptjJFFDc.png",
-    "fullname": "Juan Salas Santillana",
-    "name": "jsantillana",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": true
   }
