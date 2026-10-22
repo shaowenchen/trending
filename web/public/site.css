@@ -399,7 +399,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
  */
 .home-layout {
   display: block; /* 窄屏：上下布局（索引条 = 那条可折叠的横条） */
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .home-main { min-width: 0; } /* 右列里的表格可以横向滚动，不被内容撑破网格 */
 
@@ -642,8 +642,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 12px;
-  font-size: 13px;
+  margin: 0 0 8px;
+  font-size: 12.5px;
   font-weight: 700;
   letter-spacing: .05em;
   color: var(--muted);
@@ -678,6 +678,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  /* 2026-10-22：单榜态只显示一个 topic，但它前面那些 hidden 的兄弟仍会触发
+     `.topic + .topic` 的 30px 上边距 —— 右侧顶部因此空出一大块，这里清零。 */
+  margin-top: 0;
 }
 #panels.is-single .topic-grid { columns: 1; column-gap: 0; }
 
@@ -702,7 +705,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* 标题下不画分隔线：面板头靠"标题比正文重"与下面的留白分层就够，
    一条通栏横线在 34 个面板密排时会让每条线都去跟相邻面板的标题抢注意力
    （momoyu.cc 的面板头下也是空的）。 */
-.panel-head { padding: 14px 16px 10px; }
+.panel-head { padding: 12px 16px 8px; }
 /* ★ `:is(h1, h2, h3)` 不是随手写的兜底：单面板页（`data-board`）用 `<h1>` 承担
  * 面板标题，扁平页用 `<h3>`（页面 h1 是站点名、主题段 h2）—— 两半必须同时认这几个
  * 标签，否则标题退回浏览器默认的 `2em` + 上下 margin，比它下面所有内容都大一截。
