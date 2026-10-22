@@ -1,0 +1,1495 @@
+/* trend 趋势站样式
+ *
+ * 只有一个页面类型（数据面板），所以刻意保持小：主题变量 + 布局 + 面板 + 表格 + 几处特例。
+ * 零依赖、无构建步骤 —— 与站点整体取向一致。
+ *
+ * ── 取向：momoyu.cc 那一版的观感（2026-10-12 起；同日第八轮改成扁平行列表）──
+ * **暗色是默认**，面板靠"比页面背景亮一档"浮起来（`--surface` #1f2025 压在 `--bg`
+ * #18191e 上），不是靠描边 —— 密集排布时描边会把版面切碎，所以面板**没有 border**，
+ * 圆角也单开一档（`--radius-panel` 20px，比 `--radius` 10px 大，见下）。
+ * 尺寸整体收紧一档，因为这一版要的是"一眼看到更多条"，不是每一行都占满视线。
+ * 强调色用 #409eff（蓝），与那一版的观感一致；中英文站共用。
+ *
+ * 榜单是**单列无框列表**（`.card-list` / `.li`）：一行 = 名次 / 标题 / 数值，
+ * 行距 12px，行高本身就是分隔（没有行分隔线、没有行底色）。
+ *
+ * ── 布局：主题分段内的**瀑布流多列**（2026-10-16 晚起）──
+ * 39 个面板单列纵排要滚十来屏，"大盘"该有的"一眼多榜"出不来 —— 改成每个
+ * 主题段内部用 CSS 多列（`columns`）铺：宽屏 3 列、中屏 2 列、窄屏自动 1 列。
+ * 面板 `break-inside: avoid` 保持整块不被劈开。列内顺序是"先纵向后横向"，
+ * 对扫读热榜（从上到下扫一列）反而比行优先更自然。
+ * 面板底色仍是 `--surface` 浮在 `--bg` 上，不靠描边 —— 密排时描边碎版。
+ *
+ * ── 主题：默认暗色，跟随系统，页头一个三态切换按钮（2026-10-16 起）──
+ * 2026-09-23 起曾经是"跟随系统 / 亮 / 暗"三态 + 页头一个切换按钮，后来按钮被去掉，
+ * 只剩"跟随系统"。**2026-10-16 按 owner 要求加了回来** —— 去掉的那段时间里，
+ * 系统偏亮的读者进来看到的是一整页深色，而他自己没有任何办法改。
+ *
+ * 现在的分工（这是不闪的关键）：
+ *   · **暗色写在 `:root` 上**（默认），**亮色由 `prefers-color-scheme: light` 覆盖**
+ *     —— 这一段仍是纯 CSS，没有 JS 参与；
+ *   · **手动选择**由 `<html data-theme>` 表达：`light` 走下面那条显式规则，
+ *     `dark` / 未设（跟随系统）都落在 `:root` 的暗色上，媒体查询靠 `:not()` 让位。
+ *   · ★ **"手动暗"不需要一条新规则** —— 它要做的只是"阻止媒体查询接管"，
+ *     而 `:root:not([data-theme])` 已经做到了。少写一条 `:root[data-theme='dark']`
+ *     就少一份将来会漂移的第二真值。
+ *   · 状态在首次绘制**之前**就落到 DOM 上：由 head 里一段同步内联脚本完成
+ *     （`src/site/theme-boot.js`，正文来自 `assets/theme.js` 的 `bootSnippet()`），
+ *     否则选了亮色的读者每次打开都会先看到一帧深色。
+ *     那段脚本**不能**是 `type="module"`（defer 语义 = 晚于绘制），
+ *     也**必须**摆在样式表之前 —— 两处注释都写在页面与 `theme-boot.js` 里了。
+ *
+ * ── 颜色为什么要两套完整定义，而不是一套加滤镜 ──
+ * 靠 `filter: invert()` 反色会把上游卡片里的颜色、徽标、图片一起反掉，
+ * 也会让"已访问链接"的紫与正文糊在一起。这里是显式重定义语义变量。
+ *
+ * ── 对比度（两套都按正文 ≥4.5:1 取的）──
+ * 暗色 `--ink` #e8e8ea 压 #18191e ≈ 14:1；`--muted` #9b9ba3 ≈ 5.6:1。
+ * 亮色 `--accent` 特意比暗色的 #409eff 深（#1667c8）：#409eff 在白底上
+ * 只有约 2.6:1，拿它当链接文字会读不清 —— 同一个色值在两套主题里
+ * 不能都成立，这正是要写两套的原因。
+ */
+
+:root {
+  /* ── 暗色（默认）── */
+  --ink: #e8e8ea;
+  --muted: #9b9ba3;
+  --line: #2a2d34;
+  --bg: #18191e;
+  --surface: #1f2025;
+  --accent: #409eff;
+  --accent-2: #6cb2ff;
+  --accent-soft: #16283c;
+  --ok: #4ad07a;
+  --warn: #f0b429;
+  --err: #ff6b6b;
+  --gold: #f0b429;
+  --silver: #9aa4b2;
+  --bronze: #c98a54;
+  /* 前三名的**文字色**（列表里的名次数字）。
+     ★ 为什么不直接用上面的 --gold/--silver/--bronze：那三个是"填充背景 + 深色字"
+     用的，当**文字**压在本主题的卡片底上，亮色那套会掉到 3.2:1（见下），读不清。
+     同一个色值当背景行、当文字不行 —— 这正是要分两套变量的原因。 */
+  --rank-1: #f0b429; /* 压 #1f2025 ≈ 8.7:1 */
+  --rank-2: #9aa4b2; /* ≈ 6.5:1 */
+  --rank-3: #c98a54; /* ≈ 5.6:1 */
+  /* 「鼠标压上去」这一档不能复用 --bg：暗色下 --bg 比卡片**暗**，
+     拿它当 hover 会让卡片"陷下去"，看起来像按下了而不是指到了。
+     所以单独一个变量，两套主题里都是"比卡片再亮/再深一档"。 */
+  --hover: #262932;
+  /* 面板 hover 的抬升档：比 --surface 亮一点点（与 --hover 不是同一处用的：
+     那个是行级 hover，这个是整块面板 hover）。 */
+  --surface-hover: #23252b;
+  --radius: 10px;
+  /* 面板圆角与 .btn-sm 那种小控件分家：面板是大块面，圆角大一圈才显得柔和
+     （momoyu.cc 的面板是 20px），而小控件用 10px 才不会显得胖。 */
+  --radius-panel: 20px;
+  /* 暗色下卡片靠背景差浮起来，不用阴影（阴影在深色里几乎看不见，
+     却会让边缘发灰） */
+  --shadow: none;
+  --skeleton: linear-gradient(90deg, #23252b 25%, #2b2e35 50%, #23252b 75%);
+  /* 让原生控件（滚动条、表单、时间选择器）跟随主题 */
+  color-scheme: dark;
+}
+
+/* 亮色 —— 手动指定（页头按钮切到"亮色"时落到这里） */
+:root[data-theme='light'] {
+  --ink: #1a1a1c;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --accent: #1667c8;
+  --accent-2: #4f46e5;
+  --accent-soft: #e8f1fd;
+  --ok: #15803d;
+  --warn: #b45309;
+  --err: #b91c1c;
+  --gold: #d97706;
+  --silver: #64748b;
+  --bronze: #92400e;
+  /* 亮色下前三名当文字用要更深：#d97706 压白底只有 3.2:1（当背景填充 + 深字才够） */
+  --rank-1: #b45309; /* 压 #ffffff ≈ 5.0:1 */
+  --rank-2: #64748b; /* ≈ 4.8:1 */
+  --rank-3: #92400e; /* ≈ 7.1:1 */
+  --hover: #f2f4f7;
+  --surface-hover: #fbfbfc;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .04);
+  --skeleton: linear-gradient(90deg, #ececef 25%, #f5f5f7 50%, #ececef 75%);
+  color-scheme: light;
+}
+
+/* 浅色系统偏好 → 亮色配色（**只在"跟随系统"时生效**：手动选过亮/暗就带上了
+   `data-theme`，这条被 `:not()` 挡掉 —— 这正是三态能成立的原因） */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --ink: #1a1a1c;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --accent: #1667c8;
+    --accent-2: #4f46e5;
+    --accent-soft: #e8f1fd;
+    --ok: #15803d;
+    --warn: #b45309;
+    --err: #b91c1c;
+    --gold: #d97706;
+    --silver: #64748b;
+    --bronze: #92400e;
+    --rank-1: #b45309;
+    --rank-2: #64748b;
+    --rank-3: #92400e;
+    --hover: #f2f4f7;
+    --surface-hover: #fbfbfc;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .04);
+    --skeleton: linear-gradient(90deg, #ececef 25%, #f5f5f7 50%, #ececef 75%);
+    color-scheme: light;
+  }
+}
+
+/* 卡片底色在亮色里是"白压灰"，在暗色里是"灰压黑" —— 两种都成立，
+   所以下面的组件一律用 `--surface` 当卡片底、`--bg` 当"卡内嵌块"底。 */
+
+* { box-sizing: border-box; }
+
+/* 图标兜底尺寸。
+ * icon() 产出的 svg 只有 viewBox、**不带 width/height**，所以在任何没有显式限尺的
+ * 上下文里都会退回默认的 300×150 —— 页面上表现为一个巨大的图形。
+ * 这条给所有图标一个合理默认；各处再用更具体的选择器覆盖成需要的尺寸。
+ * （2026-09-23：首页三卡的图标就踩了这个坑 —— 容器是 inline 元素，
+ *   宽高设了却不生效，于是 svg 撑成 300×150。） */
+svg {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  vertical-align: -0.15em; /* 让图标与相邻文字在视觉基线上对齐 */
+}
+
+/* 小字号上下文里的图标显式给尺寸 —— 那里 1.15em 只有 13px 左右，
+ * 会显得比周围文字还轻，看不出是个图标。 */
+th svg,
+.tag svg,
+.rank svg { width: 12px; height: 12px; }
+
+/* 锚点跳转刻意**不用**平滑滚动（2026-10-16 晚实测撤掉）：
+   `html { scroll-behavior: smooth }` 会让 scrollIntoView 变成动画 —— 而无头
+   （headless）渲染不产生动画帧，滚动永不推进、懒加载观察器等不到面板进视口，
+   本项目的验收手段（无头实测）因此整页失真。平滑滚动的收益（锚点跳转更好看）
+   抵不上"页面自己的懒加载在无头里死掉"的代价 —— 想要"跳过去有过程"的那一档
+   观感，等将来改成 JS 驱动的逐帧滚动再说。 */
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  /* 主题切换时给一个短过渡，避免生硬跳变；reduced-motion 下会被关掉（见文末） */
+  transition: background-color .18s ease, color .18s ease;
+}
+
+a { color: var(--accent); }
+.muted { color: var(--muted); }
+
+.wrap {
+  /* 1320：瀑布流要并排放下 3 列面板（3×~400 + 两条列距）。
+     整列**居中**（`margin: 0 auto`），而列内的面板与标题一律**左对齐** ——
+     宽屏下内容不贴左、也不被拉成整屏宽；面板不需要因为屏幕宽而变宽。 */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 max(20px, env(safe-area-inset-left)) 0 max(20px, env(safe-area-inset-right));
+}
+
+/* 视觉隐藏但可被读屏器读到（图标按钮的文本标签用它） */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------- 页头 / 页脚 ---------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface); /* 基础值：不支持毛玻璃的浏览器落在这里 */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* 移动端滚动时不要连页头一起弹跳 */
+  transition: background-color .18s ease, border-color .18s ease;
+}
+/* 页头与索引条同一种"浮层"语言：半透明 + 毛玻璃。级联在前面的实色是天然回落 ——
+   color-mix 解析失败或 blur 不支持时，上面那行照常生效，页头不会变透明。 */
+@supports (backdrop-filter: blur(8px)) and (background: color-mix(in srgb, red 50%, transparent)) {
+  .site-header {
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(10px) saturate(1.4);
+    -webkit-backdrop-filter: blur(10px) saturate(1.4);
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  /* 页头的两个元素各就各位：左边 h1.nav-home（品牌名）、右边 .site-nav。
+     它们都是 header-inner 的直接子元素，所以"左一个右一个"由这一行负责，
+     不需要在 CSS 里给语言切换写 `margin-left: auto` 这类补丁。 */
+  justify-content: space-between;
+  gap: 12px;
+  height: 52px;
+}
+
+/* ── 页头导航 ──────────────────────────────────────────────
+ * 由构建期生成（`src/site/nav.js` 的 `renderNav` 落到页面的导航占位符里），
+ * 不是手写在每个页面里。
+ *
+ * 两样：左边品牌名（`h1.nav-home`「趋势大盘」，也是页面唯一的 h1），右边切换
+ * 语言 —— 39 个榜单不进页头，它们就在首页上（左列分类栏），页头再列一遍就是
+ * 同一份目录的第二次出现。找榜由左列分类栏承担。
+ * 页头的两个子元素靠 `header-inner` 的 `space-between` 各就各位。
+ *
+ * 两块链接的高度统一用 `--nav-h`：高度不一致是"这一排没对齐"最常见的原因，
+ * 而定成一个变量之后，改一处就全跟着走。
+ */
+.site-nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 14px;
+  --nav-h: 36px;
+}
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  height: var(--nav-h);
+  padding: 0 11px;
+  border-radius: 9px;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .15s ease, background-color .15s ease, border-color .15s ease;
+}
+.site-nav a:hover { color: var(--ink); background: var(--hover); }
+
+/* 品牌名：页头左侧那一项（2026-10-20 晚起是 `<h1>`，**不是链接**——扁平站
+   每个页面都是首页，指向自己的跳转没有意义，内容区也不再重复标题）。
+   它是整页唯一的 h1，所以按 h1 的排版责任来写：压住浏览器默认的 2em/上下
+   margin，字号与页头一行齐平，字重最重 —— 它是这一排的主角。
+   渐变文字沿用原 `.home-title` 的视觉语言（clip:text 失败回落 ink 色）。 */
+.nav-home {
+  margin: 0;
+  font-size: 16.5px;
+  font-weight: 700;
+  letter-spacing: -.3px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .nav-home {
+    background: linear-gradient(100deg, var(--ink) 30%, var(--accent-2) 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ── 语言切换 ──────────────────────────────────────────────
+ * 它和「首页」是同一排、但**不是同一类控件**：首页在本站内跳转，
+ * 这一个会换语言、跳到另一个地址。样式上让它自己说话：
+ *
+ *   · 前面一条竖分隔线，视觉上断开"首页"与"切换"；
+ *   · 地球图标 —— 站点本来就有内联 SVG（ui.js），同一个视觉语言，
+ *     比写一个 "EN" 缩写更省空间，也不用为两种语言各想一个缩写；
+ *   · 收敛成"安静"的样子：不占满高度、hover 才抬起，不与首页争夺注意力。
+ *
+ * 分隔线用 ::before 画，而不是在 HTML 里写一个空 <span>：它纯粹是装饰，
+ * 不该出现在无障碍树里（读屏器念"竖线"没有意义）。
+ */
+.site-nav .lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  /* 高度比导航项小一圈：它更"安静"，但仍然大于 24px 的可点下限 */
+  height: 28px;
+  margin-left: 10px;
+  padding: 0 10px 0 12px;
+  position: relative;
+  white-space: nowrap;
+}
+.site-nav .lang::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background: var(--line);
+}
+.site-nav .lang .ic { display: inline-flex; color: currentColor; }
+.site-nav .lang .ic svg { width: 15px; height: 15px; display: block; }
+/* 「标签」那一项也带图标（与语言切换同一个视觉语言），尺寸同样收一档 */
+.site-nav .nav-tags .ic { display: inline-flex; color: currentColor; }
+.site-nav .nav-tags .ic svg { width: 15px; height: 15px; display: block; }
+
+/* 图标按钮（主题切换 / 刷新）：★ 触控目标不小于 44×44，手机上好点 */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+}
+.icon-btn:hover { color: var(--ink); border-color: var(--muted); background: var(--hover); }
+.icon-btn:active { transform: scale(.96); }
+.icon-btn svg { width: 19px; height: 19px; display: block; }
+/* 键盘可达性：只在键盘聚焦时显示焦点环 */
+.icon-btn:focus-visible,
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* 页头里的主题切换按钮 —— 收一档。
+ *
+ * `.icon-btn` 的 44×44 是**触控目标**的规格（手机上好点），但页头只有 52px 高
+ * （手机上 54px），44 的方框摆在那一排里会把行高顶满、也把旁边的语言切换挤开。
+ * 所以这里收成 36×36，与 `.site-nav` 的 `--nav-h` 对齐 —— 视觉上是一排里的
+ * 一员，而不是一颗突兀的大按钮。
+ *
+ * ★ 但**手机上仍要够大**：下面的 `@media (max-width: 720px)` 里把它放大到 40，
+ * 并且 `.icon-btn` 本身的 44 规格保留给"独立成块的图标按钮"（索引条里的刷新）。
+ * 36 在手机上偏小是真实的取舍 —— 所以那里补了一档，不靠"看着差不多"蒙过去。 */
+.site-nav .theme-btn {
+  width: var(--nav-h);
+  height: var(--nav-h);
+  border-color: transparent;
+  color: var(--muted);
+}
+.site-nav .theme-btn:hover { border-color: var(--line); }
+.site-nav .theme-btn svg { width: 18px; height: 18px; }
+
+/* 页面底部的来源行页脚已移除：品牌在页头，而"在榜单之间跳"由首页那条吸顶
+   索引条（`.board-index`）承担。留一段空规则会让人以为还有个页脚要维护。 */
+
+/* 首屏（`hero-compact`）与"面板页之间的链接"（`.board-links`）的样式都已删掉：
+   前者随大盘页一起去掉，后者随"一个面板一页"一起去掉（扁平站只有首页）。 */
+
+/* ---------------- 首页分类栏（左右分栏的左列）----------------
+ *
+ * 一页装下 39 个面板之后，"怎么找到某一个"必须先回答 —— 分类栏就是答案。
+ * 2026-10-20 按 owner 要求改成**左右分栏**：
+ *   · 宽屏（≥1024px）：左列固定、自身滚动、**不折叠**（分类常驻可见，
+ *     不需要"点开再选"）；右列是正文，一次只显示一个榜。
+ *     左列**不跟随页面滚动**：它 sticky 在页头下方，右列自己滚。
+ *   · 窄屏（<1024px）：退回原来的上下布局 —— 页头下方一条可折叠的
+ *     「当前榜 ▾」索引条（`trend.js` 的 `wireMobileIndex` 注入按钮）。
+ *
+ * 形态：六个主题组竖排，每组一个组名（左侧色条 + 主题名）加该组下的榜。
+ * 39 个片在 240px 宽的栏里是竖排的一列 —— 比原来六行横排更好扫。
+ */
+.home-layout {
+  display: block; /* 窄屏：上下布局（索引条 = 那条可折叠的横条） */
+  margin-top: 10px;
+}
+.home-main { min-width: 0; } /* 右列里的表格可以横向滚动，不被内容撑破网格 */
+
+.board-index {
+  position: sticky;
+  top: 52px; /* = 页头高度（窄屏 54px，见下）；宽屏是左列，见文件末尾的分栏块 */
+  z-index: 9;
+  margin: 12px 0 0;
+  padding: 7px 0 6px;
+  background: var(--bg); /* 基础值：不毛玻璃时是实色（可读性不降） */
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* 吸顶条下面就是滚动的面板：半透明 + 毛玻璃让它"浮"在内容上，
+   而不是一条实心色带压住内容。回落逻辑与页头同一条路（见那里）。 */
+@supports (backdrop-filter: blur(8px)) and (background: color-mix(in srgb, red 50%, transparent)) {
+  .board-index {
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(10px) saturate(1.4);
+    -webkit-backdrop-filter: blur(10px) saturate(1.4);
+  }
+}
+/* 39 个榜：**按主题分组的紧凑标签**（六行，组名在左、组内榜在右）。
+ *
+ * 为什么分组而不是一串平铺的片：39 个名字平铺时，读者要在一整块里找
+ * "中文热榜里的微博"，分组之后先扫左边六个主题名、再扫那一行，路径短得多。
+ * 组名用固定列宽（`--idx-label-w`），六行读下来左边是一条整齐的竖线。 */
+.idx-groups {
+  --idx-label-w: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.idx-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 1px 0;
+}
+/* 组名 + 榜单数（2026-10-20 晚，数字由 nav.js 推导落值）。
+   ★ 窄屏布局里这个包装层是 `display: contents`：组名仍按原几何直接参与
+   `.idx-group` 的 flex（62px 列宽的对齐线不变），计数不显示 —— 横滑条里
+   多一个数字纯属噪音。计数只在宽屏左列（≥1024）出现，见文件末尾。 */
+.idx-group-head { display: contents; }
+.idx-group-n { display: none; }
+.idx-group-label {
+  flex: none;
+  width: var(--idx-label-w);
+  padding-top: 3px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  opacity: .72;
+}
+.idx-group-n {
+  font-size: 10.5px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.idx-group-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px 2px;
+  min-width: 0;
+}
+
+/* 榜片：图标 + 名字。**无描边** —— 39 个框同时出现在吸顶条里，会把版面切得
+ * 比面板还碎，也与全站"扁平、去框"的取向相反（见文件顶部）。
+ * 名字单行省略（`title` 里有全名），长名不会把行高顶上去。 */
+.idx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  padding: 2px 7px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+  transition: color .15s ease, background-color .15s ease;
+}
+.idx-chip:hover { color: var(--ink); background: var(--hover); }
+/* 键盘可达性：片是按钮，键盘 Tab 过去要看得见 */
+.idx-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* 选中态：底色 + 强调色 + 加粗，不只靠颜色（色觉障碍的访客也能看出选的是哪一个） */
+.idx-chip.on {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+.idx-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.idx-ic {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  color: var(--src, var(--muted));
+}
+.idx-ic > svg { width: 100%; height: 100%; }
+
+/* 中窄屏（≤1023px）：**整条压成一行横滑**。
+ *
+ * 宽屏是左右分栏（左列固定分类栏，见文件末尾的 `min-width: 1024px` 块）；
+ * 这一档没有左列的余地，退回上下布局，索引条吸在页头下方。
+ * 六个主题各占一行时，768px 上换行折成 280px 高；整条还要**吸顶**
+ * （owner 要求顶部选择器一直可用），那就等于常驻占掉小半屏。所以这里把
+ * 六组合并成一排：组名夹在榜与榜之间当分隔（`::before` 的竖线），
+ * 高度约 45px —— 吸顶时只让出一条窄边，"换一个榜"随时可用。
+ * 右缘渐隐提示"右边还有"。 */
+@media (max-width: 1023px) {
+  .board-index {
+    top: 52px; /* 页头在这档仍是 52px（54px 只在 ≤560px，见下面那条） */
+    padding: 6px 0;
+  }
+  .idx-groups {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    gap: 4px;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent);
+  }
+  .idx-groups::-webkit-scrollbar { display: none; }
+  .idx-group {
+    flex: none;
+    padding: 0;
+    gap: 2px;
+  }
+  .idx-group + .idx-group .idx-group-label::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin-right: 6px;
+    vertical-align: -1px;
+    background: var(--line);
+  }
+  .idx-group-label {
+    width: auto;
+    padding-top: 0;
+    font-size: 10.5px;
+    color: var(--muted);
+  }
+  .idx-group-items {
+    flex-wrap: nowrap;
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .idx-chip { flex: none; font-size: 11.5px; padding: 6px 6px; }
+}
+
+/* 手机再收一档字号（★ 2026-10-19 移动端适配：不再往下压字号——小屏反而要放大到
+   可读下限。索引 chips / 单位 / 标签在 ≤560 升到 12px+，触摸目标保 28px+） */
+@media (max-width: 560px) {
+  .board-index { top: 54px; } /* 与 .header-inner 的手机断点对齐 */
+  .idx-group-label { font-size: 11px; }
+  .idx-chip { font-size: 12.5px; padding: 8px 8px; min-height: 28px; }
+  .idx-chip .idx-ic { width: 14px; height: 14px; }
+  /* 索引条右缘渐隐已有（900 档 mask）；小屏再补一条左缘对称渐隐 + 底部细滚动条提示，
+     让「可以横着滚」看得见（此前 scrollbar 隐藏 + 只右缘渐隐，用户不知道能滚） */
+  .idx-groups {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 20px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 20px), transparent 100%);
+  }
+  /* 列表行触摸目标：手机上行高别低于 44px（Apple HIG 下限） */
+  .card-list li { min-height: 44px; }
+}
+
+/* ---------------- 面板 ---------------- */
+
+/* 扁平页的外层容器：#panels 里装六个主题段（`.topic`），不再直接装面板。
+   面板之间的间距因此落在 `.topic-grid` 上（见下），主题段之间另给一档更大的间隔。 */
+#panels { margin-top: 18px; }
+
+/* 一个主题段（模型榜 / 评测榜 / …）：一个小标题 + 一组瀑布流列。
+   `scroll-margin-top` 让 `#panel-<id>` 锚点落下来时**别钻到吸顶索引条底下** ——
+   少了它，点索引跳过去会看到标题被索引条盖住。 */
+.topic { scroll-margin-top: 96px; }
+.topic + .topic { margin-top: 30px; }
+/* 标题行：只有段标题（每个主题标题右侧的「刷新」2026-10-20 按 owner 要求移除，
+   数据由定时任务每 2 小时刷站内快照，页面不需要重新拉取的入口）。 */
+/* 段标题：左侧一小节强调色竖条 —— 右列里切榜时，这个 3px 的色条与下面那块
+   面板的标题对齐，读者一眼知道"当前是这一类里的哪一个榜"。 */
+.topic-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.topic-head::before {
+  content: '';
+  width: 3px;
+  height: 13px;
+  border-radius: 2px;
+  background: var(--accent);
+  flex: none;
+}
+
+/* ── 段内瀑布流：CSS 多列（2026-10-16 晚）──
+ * `columns: 3 340px` = "想要 3 列，每列不窄于 340px"：宽屏 3 列，
+ * 中屏 2 列，窄屏自动 1 列，不需要写任何断点 —— 列数由**可用宽度**决定，
+ * 与 39 个面板各占多高无关。
+ * 面板 `break-inside: avoid` 保证整块不被劈到两列；列内间距用 `.panel`
+ * 的 margin-bottom（多列布局里 `gap` 只管列间，行间得自己给）。
+ * 已知取舍：列内顺序是"先纵后横"，同一列自上而下读 —— 对热榜扫读
+ * （前几名在列顶）反而顺；锚点跳转不受影响（scroll-margin 仍然有效）。
+ */
+.topic-grid { columns: 3 360px; column-gap: 16px; }
+
+/* ── 只看一个榜时（索引条点选后的常态，2026-10-19）──
+ * 多列瀑布流里只剩一块面板时，它会**贴在最左一列**：宽屏上一张窄卡片飘在
+ * 左边，右边空一大片，看起来像"没对齐"。单榜态于是把主题段整体收进一个
+ * 居中的定宽列 —— 标题行与面板左缘仍然对齐，面板也不被拉成整屏宽。
+ * （`trend.js` 的 `applyFilter` 往 `#panels` 上挂/摘 `is-single`。） */
+#panels.is-single .topic {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#panels.is-single .topic-grid { columns: 1; column-gap: 0; }
+
+/* 面板：**没有描边** —— 与页面 `--bg` 差一档亮度就分开（`--surface`）。
+   瀑布流里每块之间靠 margin-bottom 分行（多列里 gap 不管纵向）。
+   hover 抬一档亮度（`--surface-hover`），39 块面板密排时它是"这块可以看"
+   的最轻提示；不位移（多列里 transform 会引发重排抖动）。 */
+.panel {
+  background: var(--surface);
+  border: 0;
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  break-inside: avoid;      /* 瀑布流：整块不许被劈到两列 */
+  margin-bottom: 14px;      /* 列内纵向间距 */
+  transition: background-color .15s ease;
+  /* 锚点跳到这里时别贴住吸顶条 */
+  scroll-margin-top: 96px;
+}
+.panel:hover { background: var(--surface-hover); }
+
+/* 标题下不画分隔线：面板头靠"标题比正文重"与下面的留白分层就够，
+   一条通栏横线在 34 个面板密排时会让每条线都去跟相邻面板的标题抢注意力
+   （momoyu.cc 的面板头下也是空的）。 */
+.panel-head { padding: 14px 16px 10px; }
+/* ★ `:is(h1, h2, h3)` 不是随手写的兜底：单面板页（`data-board`）用 `<h1>` 承担
+ * 面板标题，扁平页用 `<h3>`（页面 h1 是站点名、主题段 h2）—— 两半必须同时认这几个
+ * 标签，否则标题退回浏览器默认的 `2em` + 上下 margin，比它下面所有内容都大一截。
+ * （`trend.js` 的 `panel()` 里那句 `SINGLE_BOARD ? 'h1' : 'h3'` 就是那一半真值。） */
+.panel-head :is(h1, h2, h3) {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 面板图标：SVG 而非 emoji（emoji 在 Windows/Android/iOS 上长得完全不同，
+ * 对"全端一致"来说是缺陷）。图标用 currentColor，自动跟随主题。 */
+.panel-icon {
+  color: var(--src, var(--accent));
+  width: 17px;
+  height: 17px;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel-icon svg { width: 100%; height: 100%; display: block; }
+
+/* ── 13 个中文热榜：各自一个来源色（2026-10-12）──
+ * momoyu.cc 那一版每个来源都戴自己的颜色（知乎蓝、微博红、豆瓣绿…），
+ * 一眼就能认出"这是哪个平台"，比统一的强调色信息量大。
+ *
+ * 颜色取自那一版站方给的 `icon_color` 字段（见 `scripts/fetch-momoyu-hot.mjs`
+ * 注释里的来源说明），不是我们自己挑的 —— 各平台的品牌色本来就是它们的身份。
+ *
+ * ## 为什么是把颜色写进 `--src`、而不是直接染 `.panel-icon` / `.idx-ic`
+ * 同一个榜有两处图标要染：**面板头**（`#panel-<id>`，由 `trend.js` 的 `panel()`
+ * 落在 section 上）与**索引条里的平铺片**（`button.idx-chip[data-jump="<id>"]` 里的
+ * `.idx-ic`，构建期由 `src/site/nav.js` 落下）。与其写两份规则、将来加一个榜
+ * 漏掉一处，不如**一条声明带两个选择器**，两处各自去取：
+ *      图标规则写 `color: var(--src, var(--accent))`（无色时回落到强调色）。
+ *
+ * ## 一处例外
+ * 爱范儿站方给的是 `#fff` —— 白图标在浅色主题里等于没有，改用可读的灰。
+ *
+ * 只染**图标**，不染标题与数值：一页里彩色的东西一多，就没人看正文了。 */
+#panel-zhihu, .idx-chip[data-jump="zhihu"] { --src: #0177d7; }
+#panel-douban, .idx-chip[data-jump="douban"] { --src: #2e963d; }
+#panel-weibo, .idx-chip[data-jump="weibo"] { --src: #e30e24; }
+#panel-toutiao, .idx-chip[data-jump="toutiao"] { --src: #ff2f49; }
+#panel-hupu, .idx-chip[data-jump="hupu"] { --src: #c50100; }
+#panel-bilibili, .idx-chip[data-jump="bilibili"] { --src: #0ea2e2; }
+#panel-itzhijia, .idx-chip[data-jump="itzhijia"] { --src: #d22222; }
+#panel-zhongguancun, .idx-chip[data-jump="zhongguancun"] { --src: #2764bd; }
+#panel-aifaner, .idx-chip[data-jump="aifaner"] { --src: #6c7a89; }
+#panel-csdn, .idx-chip[data-jump="csdn"] { --src: #fc5531; }
+#panel-huxiu, .idx-chip[data-jump="huxiu"] { --src: #a3a3a3; }
+#panel-zhidemai, .idx-chip[data-jump="zhidemai"] { --src: #f04848; }
+#panel-juejin, .idx-chip[data-jump="juejin"] { --src: #006cff; }
+/* 视频/生活方式热榜（2026-10-16）：抖音的品牌黑在两套主题里都等于"没有颜色"，
+   用它的抖音红 #FE2C55；小红书就是品牌红 #FF2442（压两套卡片底都够对比）。 */
+#panel-douyin, .idx-chip[data-jump="douyin"] { --src: #fe2c55; }
+#panel-xiaohongshu, .idx-chip[data-jump="xiaohongshu"] { --src: #ff2442; }
+
+.panel-hint { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+
+.panel-status {
+  margin: 0;
+  padding: 9px 16px;
+  font-size: 12.5px;
+  color: var(--muted);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel-status[hidden] { display: none; }
+/* 状态行里的 `\n` 要真的换行（见 err.unknownBoard：那条消息有两段，
+   第二段是给读者的"怎么办"）。不写 `white-space` 的话它们会挤成一行。 */
+.panel-status { white-space: pre-line; }
+.panel-status.ok { color: var(--ok); }
+.panel-status.warn { color: var(--warn); }
+.panel-status.err { color: var(--err); }
+/* 加载中：状态行前加一个旋转的圈，比纯文字更能说明"还在动" */
+.panel-status.loading::before {
+  content: '';
+  width: 12px; height: 12px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  flex: none;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------------- 表格（★ 全端适配的重点）----------------
+ * 评测榜有 9 列。窄屏下的做法不是把列压扁（数字会看不清），而是：
+ *   1. 允许横向滚动，2. **首列（模型名）与表头粘住** —— 否则向右滚两屏后
+ *   就不知道自己在看哪个模型了。这是移动端读多列表格的关键。
+ *   3. 窄屏收起次要列（`.col-2`，见文末断点），因为横向滚动手势
+ *   与页面纵向滚动在手机上体验割裂。
+ */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain; /* 滚到表尾不要把整个页面也带着动 */
+}
+
+table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+
+th, td {
+  padding: 7px 12px;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  font-weight: 600;
+  font-size: 11.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 3;
+}
+
+/* 首列粘在左侧（含表头那一格，所以要更高的 z） */
+th:first-child, td:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  z-index: 2;
+}
+th:first-child { z-index: 4; }
+/* 粘性首列右边加一条分隔阴影，滚动时能看出"这一列是浮在上面的" */
+td:first-child, th:first-child { box-shadow: 1px 0 0 var(--line); }
+
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tbody tr:hover td { background: var(--hover); }
+tbody tr:hover td:first-child { background: var(--hover); }
+tbody tr:last-child td { border-bottom: 0; }
+
+/* 名次徽章：前三名用奖牌色，其余是普通序号。
+ * 尺寸收到 20px、圆角回到 6px —— 密集排布下它只是"第几名"的标记，
+ * 不该比它右边的内容更抢眼。 */
+.rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: var(--bg);
+  color: var(--muted);
+}
+.rank.r1 { background: var(--gold); color: #241a02; }
+.rank.r2 { background: var(--silver); color: #10151c; }
+.rank.r3 { background: var(--bronze); color: #241206; }
+
+/* 迷你条形图：直观看出彼此差距。宽度相对**当前显示的这批行的最大值**，
+ * 所以它表达的是"相对高低"，不是一个绝对的分数刻度（这点在 README 里说明）。 */
+.bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 5px;
+  margin-right: 7px;
+  border-radius: 3px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.bar > i {
+  display: block;
+  height: 100%;
+  width: var(--w, 0%);
+  border-radius: 3px;
+  background: var(--accent);
+  /* 入场时从 0 长到目标宽度，让"比较"这件事被看见 */
+  animation: grow .5s cubic-bezier(.2, .8, .2, 1) both;
+}
+@keyframes grow { from { width: 0; } to { width: var(--w, 0%); } }
+
+/* 任务标签 */
+.tag {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 99px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* 方向箭头：涨/跌用颜色 + 图形双通道表达（不靠颜色单独承载信息，色盲可用） */
+.delta { font-size: 12px; margin-left: 5px; }
+.delta.up { color: var(--ok); }
+.delta.down { color: var(--err); }
+
+.empty { padding: 16px; color: var(--muted); font-size: 13.5px; margin: 0; }
+
+/* 骨架屏：加载期间先铺几行灰条，让人知道"这里将会有内容"以及大致结构 */
+.skeleton { padding: 6px 0; }
+.skeleton span {
+  display: block;
+  height: 12px;
+  margin: 10px 16px;
+  border-radius: 6px;
+  background: var(--skeleton);
+  background-size: 200% 100%;
+  animation: shimmer 1.3s linear infinite;
+}
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+/* ---------------- 广告与同意横幅：没有 ---------------- */
+
+/* ==================================================================
+ * 全端适配：断点
+ * ================================================================== */
+
+/* 平板/小笔记本：把评测榜的次要列收起来，优先保证"模型名 + 平均分"可读 */
+@media (max-width: 860px) {
+  .col-2 { display: none; }
+}
+
+/* 手机：进一步收列，并把内边距收紧（窄屏上 20px 的留白占比太高） */
+@media (max-width: 560px) {
+  .wrap { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); }
+  .header-inner { height: 54px; gap: 8px; }
+  .site-nav { gap: 0; font-size: 13.5px; --nav-h: 34px; }
+  .site-nav a { padding: 0 8px; }
+  /* 窄屏上分隔线的留白换成实在的空间 */
+  .site-nav .lang { margin-left: 6px; padding: 0 4px 0 9px; gap: 4px; }
+  /* 主题按钮：窄屏上也放大到 40 —— 触屏上是手指在点，36 偏小 */
+  .site-nav .theme-btn { width: 40px; height: 40px; }
+  .site-nav .theme-btn svg { width: 19px; height: 19px; }
+  th, td { padding: 8px 11px; font-size: 12.5px; }
+  .bar { width: 34px; }
+  .panel-head, .panel-status { padding-left: 14px; padding-right: 14px; }
+  .skeleton span { margin-left: 14px; margin-right: 14px; }
+}
+
+/* 触屏设备：hover 效果没有意义，还会"粘住"（点一下后样式一直留着） */
+@media (hover: none) {
+  tbody tr:hover td { background: transparent; }
+  tbody tr:hover td:first-child { background: var(--surface); }
+  .icon-btn:hover { color: var(--muted); border-color: var(--line); background: transparent; }
+  .site-nav a:hover { color: var(--muted); background: transparent; }
+  a.li:hover { background: transparent; }
+}
+
+/* ★ 尊重系统的"减弱动态效果"设置。
+ * 这不是可选项：前庭功能敏感的用户会因为持续动画而眩晕/恶心。
+ * 一个到处都在动的趋势页，对他们是不可用，而不是不好看。 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  /* 条形图不再"长大"，直接显示最终宽度 */
+  .bar > i { width: var(--w, 0%); }
+}
+
+/* 打印：去掉装饰与粘性定位，只留数据。
+   瀑布流在纸上没有意义（分栏会把一个榜劈到两页），打印时回单列。 */
+@media print {
+  .site-header, .ad, .icon-btn { display: none; }
+  /* 索引条是屏幕上的导航控件，纸上没有意义；而且横滑/吸顶在纸上都会截成一条 */
+  .board-index { display: none; }
+  .panel { break-inside: avoid; box-shadow: none; }
+  .topic-grid { columns: 1; }
+  /* 屏幕上整行链接是正文色、没有框（靠 hover 提示可点），纸上没有 hover ——
+     下划线是纸面上唯一还认得出"这是一条链接"的东西。 */
+  a.li { text-decoration: underline; }
+  th, td { position: static !important; }
+}
+
+/* ---------------- 动作按钮（`.btn-sm` / `.btn-ghost`） ----------------
+ * 刷新按钮现在住在榜单页页脚（trend.js 生成），不再是"首屏动作区"，
+   所以 `.hero-actions` 那个包裹层也没有调用方了。 */
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 9px 16px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* 小号动作按钮（首屏的"刷新数据"）。
+ * 它是个次要动作，不该和主标题抢视线 —— 尺寸收到接近正文，
+ * 但仍保留 40px 的最小触控高度（手机上仍然好点）。 */
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 12px;
+  min-height: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+}
+.btn-sm:hover { color: var(--ink); border-color: var(--muted); background: var(--surface); }
+.btn-sm:disabled { opacity: .55; cursor: default; }
+.btn-sm:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn-sm .ic { display: inline-flex; color: currentColor; }
+.btn-sm .ic svg { width: 14px; height: 14px; display: block; }
+/* 刷新中让图标转起来，给一个"正在做事"的反馈 */
+.btn-sm:disabled .ic svg { animation: spin .8s linear infinite; }
+.btn-ghost:hover { border-color: var(--muted); background: var(--surface); }
+.btn-ghost:disabled { opacity: .55; cursor: default; }
+.btn-ghost .ic { display: inline-flex; color: var(--accent); }
+.btn-ghost .ic svg { width: 16px; height: 16px; display: block; }
+/* 刷新中让图标转起来，给一个"正在做事"的反馈 */
+.btn-ghost:disabled .ic svg { animation: spin .8s linear infinite; }
+
+/* ==================================================================
+ * 榜单列表（前 20 行）
+ * ==================================================================
+ * 一行一条，照 momoyu.cc 的形态：**无行分隔线、无行底色、无每行卡片**，
+ * 只有"名次 / 标题 / 数值"三列与 12px 的行距 —— 行高本身就是分隔。
+ *
+ * 布局用 grid 而不是 flex：行内是两层（名次 + 标题/数值，标签行在下面通栏），
+ * 用 flex 行会把标签挤成右侧一条窄柱。名次跨两行（`rank` 同时占两个 row），
+ * 所以它跟标题首行对齐、而标签行不会缩进到名次右边。
+ *
+ * ## 行什么时候可点
+ * 有地址的榜整行是 `<a class="li">`（hover 提亮、键盘可聚焦），没地址的是
+ * `<span class="li">` —— 两者的**几何完全一样**，差别只在交互与光标。
+ * 屏幕上看起来一样很重要：不可点的行不该长成一个按钮样。
+ */
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 16px 14px;
+}
+.card-list li { margin-top: 12px; }
+.card-list li:first-child { margin-top: 0; }
+
+.li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  /* 标签行通栏在标题下面；行没有标签时第二行自然塌掉（不占高度） */
+  grid-template-areas:
+    'rank title value'
+    'rank meta meta';
+  column-gap: 9px;
+  align-items: start;
+  padding: 3px 7px;
+  /* 负外边距把内边距抵回去：hover 底色因此比文字宽出一圈，但整行的**位置**不变，
+     不会因为多了 padding 就让标题跟上面一行对不齐。 */
+  margin: -3px -7px;
+  border-radius: 8px;
+  color: inherit; /* 覆盖全局 a{color:var(--accent)} —— 整行链接不该是蓝的 */
+  text-decoration: none;
+}
+/* 已访问的行也保持正文色：紫色会让"看过的榜"整列变色，读起来像坏了
+   （与文件头"不用 filter 反色"同一个理由：链接的紫会和正文糊在一起） */
+a.li:visited { color: inherit; }
+a.li:hover { background: var(--hover); }
+a.li:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* 名次：列表里是**无底色**的染色数字（momoyu.cc 的形态）。
+   表格里（完整列表）的 `.rank` 仍是填充药丸 —— 那里的行挤在一起，填充比数字更好定位。 */
+.card-list .rank {
+  grid-area: rank;
+  background: transparent;
+  min-width: 0;
+  height: auto;
+  padding: 0 3px 0 0;
+  border-radius: 0;
+  font-size: 13.1px;
+  margin-top: 1px;
+}
+.card-list .rank.r1 { color: var(--rank-1); }
+.card-list .rank.r2 { color: var(--rank-2); }
+.card-list .rank.r3 { color: var(--rank-3); }
+
+/* 标题最多两行再截断。
+ * ★ 原来是一行 `white-space: nowrap` —— 在中文热榜上那是**看不见的损失**：
+ * 列表本来就是"扫一眼最靠前的是谁"，而中文标题一行只能装十来个字，
+ * 于是十条里有八条都是几乎一样的开头（"如何看待…"／"为什么…"），
+ * 读者反而分不出它们。放成两行，标题才真的有信息量。
+ * momoyu.cc 那一版也是两到三行。 */
+.li-title {
+  grid-area: title;
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 1.45;
+  min-width: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 数值 + 单位：右对齐、不换行（换行会让一行的数字跳来跳去，正是榜最难扫的样子） */
+.li-val {
+  grid-area: value;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding-left: 10px;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--muted);
+}
+.li-val .v-num {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.li-val .v-unit { font-size: 11.2px; }
+
+/* 标签行：去描边、去底色 —— 它是行的附注，不该再长成一颗颗小按钮。
+   （表格里的 `.tag` 仍是描边药丸，不动：那里每个标签是一个独立的可读单元。） */
+.li-meta {
+  grid-area: meta;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 3px;
+  min-width: 0;
+}
+.li-meta .tag {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.li-meta .tag svg { width: 11px; height: 11px; }
+
+/* 列表下方的一行小字：条数 + 快照口径。
+   折叠区（"完整列表"表格）2026-10-19 去掉之后，这一行是"这份榜有多全、
+   是什么时候的"唯一落点 —— 构建期快照的榜靠它说明自己是快照。 */
+.list-note {
+  margin: 0;
+  padding: 0 16px 12px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* 详情层（`<dialog>`）整段已随"卡片 → 列表"一起去掉：列表行直接去来源，
+   不再有"点开看详情"这一步（2026-10-12 第八轮）。可排序的完整表格也在
+   2026-10-19 随折叠区一起去掉 —— 每个面板固定给前 20 行（个别榜 30–60 行）。 */
+
+@media (max-width: 560px) {
+  .card-list { padding: 6px 14px 12px; }
+  .list-note { padding-left: 13px; padding-right: 13px; }
+}
+
+/* ═══ 2026-10-19 移动端可读性收尾（置于文件末尾以确保层叠优先）═══
+   基础 .li-val .v-unit / .li-meta .tag 定义在上方 1100+ 行，若把覆盖写进
+   早前的 560px 媒体块会被后文同特异性规则反超——所以手机档的字号修正统一放这里。 */
+@media (max-width: 560px) {
+  .li-val .v-unit { font-size: 12px; }
+  .li-meta .tag { font-size: 12px; }
+  .li-meta .tag svg { width: 12px; height: 12px; }
+  .tag { font-size: 12px; }
+}
+
+/* ═══ 2026-10-19 手机折叠索引（与 trend.js wireMobileIndex 配套）═══
+   39 个榜片在一屏宽里只能看见 2 个、要横滚约 13 屏 —— 横滚索引在手机上不可用。
+   ≤560px：索引条默认只剩一行「当前榜 ▾」按钮（.idx-current，JS 注入），
+   点开是全宽换行面板（按组分段、组内 chips 换行，最多 62vh 内部滚动）。
+   ≥561px：按钮 display:none，桌面/平板行为与原来完全一致。 */
+@media (max-width: 560px) {
+  .board-index { padding: 0; }
+  .board-index .idx-groups {
+    display: none;                 /* 默认收起（覆盖 900 档的横滚布局） */
+    -webkit-mask-image: none;
+    mask-image: none;
+    overflow-y: auto;
+    max-height: min(62vh, 520px);
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 14px 16px;
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, .42);
+  }
+  .board-index.idx-open .idx-groups { display: flex; }
+  .idx-group { flex: none; }
+  .idx-group-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow: visible;
+  }
+  .idx-chip { font-size: 13px; padding: 9px 12px; min-height: 36px; }
+  .idx-current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    padding: 13px 16px;
+    background: transparent;
+    border: 0;
+    color: var(--ink);
+    font: inherit;
+    font-size: 14.5px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .idx-current .cur-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .idx-current .cur-arrow { flex: none; color: var(--muted); transition: transform .2s ease; }
+  .board-index.idx-open .idx-current .cur-arrow { transform: rotate(180deg); }
+  /* 面板展开时吸顶条自身不再需要独立滚动锁（sticky 元素超出视口会自动收顶） */
+}
+/* 桌面（≥561px）也收进「当前榜 ▾」—— 这一档只在 561–1023px 生效（宽屏
+   ≥1024px 是左右分栏，分类栏常驻，见文件末尾；那里用更高优先级把按钮隐藏）。
+   注意：.idx-current 的核心样式原本只写在 ≤560 块里，这里复制一份并收紧。 */
+@media (min-width: 561px) and (max-width: 1023px) {
+  .idx-current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 11px 20px;
+    background: transparent;
+    border: 0;
+    color: var(--ink);
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .idx-current .cur-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .idx-current .cur-arrow { flex: none; color: var(--muted); transition: transform .2s ease; }
+  .board-index.idx-open .idx-current .cur-arrow { transform: rotate(180deg); }
+
+  .board-index { padding: 0; margin-top: 8px; }
+  /* 收起态隐藏六行平铺；展开 = 卡片化两列网格（高度约原来的 1/2.5），
+     宽度收在 1020px 居中，不再整行 1225px 全宽铺满。 */
+  .board-index .idx-groups {
+    display: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 6px 34px;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 14px 20px 18px;
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 22px 48px rgba(0, 0, 0, .34);
+    overflow: visible;
+    max-height: none;
+  }
+  .board-index.idx-open .idx-groups { display: flex; }
+  .idx-group { flex-direction: column; align-items: flex-start; gap: 6px; flex: 1 1 44%; min-width: 0; }
+  .idx-group-label { width: auto; padding-top: 0; font-size: 11.5px; }
+  .idx-group-items { gap: 4px 6px; }
+  .idx-chip { font-size: 12.5px; padding: 5px 9px; }
+}
+
+/* ═══ 2026-10-19 每日视图（#daily）：**取消选中**时的落点 ═══
+   （2026-10-20 起默认选中微博，所以它平时是 hidden 的。）
+   左缘与右列面板对齐（分栏之后它和面板同处 `.home-main`）：只给宽度上限，
+   **不**用 `margin: 0 auto` —— 居中会让它比左边那块面板往右缩一截。 */
+.daily {
+  max-width: 860px;
+  margin: 0 0 20px;
+}
+.daily-h2 {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+.daily-quote {
+  padding: 26px 26px 22px;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border-radius: 0 14px 14px 0;
+}
+.daily-quote-text {
+  margin: 0 0 14px;
+  font-size: clamp(19px, 2.6vw, 26px);
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.daily-quote-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.daily-quote-author { color: var(--muted); font-size: 14px; }
+.daily-next {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12.5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease;
+}
+.daily-next:hover { color: var(--ink); border-color: var(--muted); }
+.daily-history { margin-top: 30px; }
+.daily-history-note { margin: -8px 0 16px; color: var(--muted); font-size: 12.5px; }
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.daily-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  background: color-mix(in srgb, var(--ink) 3%, transparent);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.daily-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.daily-card-img {
+  width: 100%;
+  height: 128px;
+  object-fit: cover;
+  display: block;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+.daily-card-body { padding: 12px 14px 14px; }
+.daily-card-year { color: var(--accent); font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.daily-card-text {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 560px) {
+  .daily { margin: 22px auto 12px; padding: 0 16px; }
+  .daily-quote { padding: 20px 18px 16px; }
+  .daily-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .daily-card-img { height: 96px; }
+}
+
+/* ═══ 2026-10-20 左右分栏（PC）═══
+ * owner 定：**左边分类栏固定、不折叠、不跟随页面滚动；右边正文**。
+ * 这一块写在文件末尾，因为它要覆盖上面那些"吸顶索引条 / 折叠按钮 / 横向滚动"
+ * 的窄屏规则 —— 同特异性时后写的赢，宽屏只需把那一整套关掉、换成两列网格。
+ *
+ *   · `.home-layout`：两列。左列 240–280px（`clamp`，随屏宽微调），右列吃掉余下宽度。
+ *   · `.board-index`：`position: sticky; top: 页头高` —— 它**自己不滚**（不折叠、
+ *     不需要展开），左列高度超出视口时栏内滚动（`overflow:auto`），39 个榜一屏
+ *     放不下时滚的是这一栏，而不是整页。
+ *   · `.idx-current`（折叠按钮）整块 `display:none`：它是窄屏的交互，PC 上不要。
+ *   · 右列 `#panels` 收进定宽（`max-width: 860px`）：一页一个榜，不该被拉成整屏宽。
+ */
+@media (min-width: 1024px) {
+  .home-layout {
+    display: grid;
+    grid-template-columns: clamp(228px, 20vw, 272px) minmax(0, 1fr);
+    gap: 28px;
+    /* ★ 左右等高（2026-10-20 晚）：网格默认就是 stretch —— 左栏从"内容多高就多高"
+       变成与右列**通栏等高**，右侧那条分隔线一路画到内容底部，
+       不再是"左边一截、右边老长"的半截栏。 */
+    align-items: stretch;
+  }
+
+  /* ── 左列：常驻分类栏（通高等高）──
+   * 栏本体不再吸顶 —— 它现在与右列**等高**，右侧边线贯穿整页内容；
+   * 吸顶交给栏内的 `.idx-groups`：滚动时组列表钉在页头下方，栏内滚完为止。
+   * 这样"栏在视觉上一直到底"与"菜单始终可用"两件事同时成立。 */
+  .board-index {
+    position: static;                /* 不再自己吸顶（吸顶移到 .idx-groups） */
+    z-index: auto;
+    margin: 0;
+    padding: 2px 0 14px 4px;
+    max-height: none;
+    overflow: visible;
+    background: transparent;         /* 不再是一条压在内容上的横带 */
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  /* 栏内滚动 + 吸顶的是组列表：它自己比视口矮（超出才滚），
+     滚动条也是它的 —— 收窄（Chrome/Safari 不认 scrollbar-width）。
+     padding-right 给滚动条留位，不压住榜名。 */
+  .board-index .idx-groups {
+    display: flex;                   /* 常驻展开（覆盖 561–1023 的 display:none） */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 18px;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0 12px 0 0;
+    /* 吸顶 + 栏内滚动：滚动时组列表钉在页头下方，超出视口的部分栏内滚 */
+    position: sticky;
+    top: 52px;
+    max-height: calc(100vh - 52px - 24px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+  .board-index .idx-groups::-webkit-scrollbar { width: 6px; }
+  .board-index .idx-groups::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+  .board-index .idx-groups::-webkit-scrollbar-track { background: transparent; }
+  /* 覆盖 `.idx-groups` 在窄屏档上的毛玻璃（同类特异性的 @supports 规则会跟上来；
+     这里只用关掉效果，不引入新色值）。 */
+  @supports (backdrop-filter: blur(8px)) {
+    .board-index .idx-groups { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  }
+  /* 折叠按钮只在窄屏用得上；PC 分类栏本来就一直开着 */
+  .idx-current { display: none !important; }
+
+  /* 组头：组名 + 榜单数（数字只在宽屏出现，见基础块 display:none） */
+  .idx-group-head {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .idx-group-n {
+    display: inline;
+    font-size: 10.5px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .idx-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    flex: none;
+    min-width: 0;
+    padding: 0;
+  }
+  .idx-group-label {
+    width: auto;
+    padding: 0 6px;
+    font-size: 11px;
+    color: var(--muted);             /* 组名退一档：榜名列才是这一栏的主角 */
+    opacity: 1;
+  }
+  .idx-group + .idx-group .idx-group-label::before { content: none; }
+  .idx-group-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 1px;
+    overflow: visible;
+  }
+  .idx-chip {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    font-size: 13px;
+    padding: 6px 8px;
+    border-radius: 7px;
+    white-space: normal;             /* 分类栏里名字可以折行，不截断 */
+  }
+  .idx-chip.on { background: var(--accent-soft); }
+  .idx-name { overflow: visible; text-overflow: clip; }
+
+  /* ── 右列：正文 ── */
+  .home-main { min-width: 0; }
+  /* 一个榜也收在 860px：右列更宽时不该把表格/列表拉成整屏宽 */
+  #panels { margin-top: 0; max-width: 860px; }
+  #panels.is-single .topic { max-width: none; margin-left: 0; margin-right: 0; }
+  #panels.is-single .topic-grid { columns: 1; }
+  /* 每日视图（取消选中时）：与面板同一左缘、同一列宽（860px 见上方 `.daily`） */
+  .daily { margin: 0 0 20px; }
+}

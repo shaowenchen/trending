@@ -1,0 +1,109 @@
+# 部署与数据刷新（工作流住在 dev）
+#
+# 代码在 dev；构建产物发布到 pages 分支；GitHub Pages 从 pages 分支发布。
+# master 只有一份 README，没有任何工作流（2026-10-22 按 owner 要求）。
+#
+# 触发方式：
+#   · push 到 dev        —— 开发完成推送即构建发布
+#   · workflow_dispatch  —— 手动跑（ref: dev）
+#   · schedule           —— 15 分钟一档刷数据（★ 默认分支是 master 且无工作流，
+#                           GitHub 不会注册这条 cron；保留它只是为了默认分支若
+#                           改回 dev 时自动生效。当前的定时兜底是本机 crontab
+#                           的 scripts/dispatch-refresh.sh）
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+  schedule:
+    - cron: '13,28,43,58 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # trend-bot 的快照提交（push 到 dev）不再触发第二次构建部署 ——
+    # 新数据已在触发它的那次运行里构建过；agent 的代码提交照常部署。
+    if: github.event_name != 'push' || github.actor != 'trend-bot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ── 数据刷新：分组判龄（fast 10 分钟 / slow 120 分钟），够旧才刷 ──
+      - name: 热榜是否过期
+        id: snap-fast
+        run: node scripts/snapshot-age.mjs --group fast
+        continue-on-error: true
+
+      - name: 刷新热榜快照
+        if: steps.snap-fast.outputs.stale != 'false'
+        run: npm run snap:fast
+
+      - name: 全量是否过期
+        id: snap-slow
+        run: node scripts/snapshot-age.mjs --group slow
+        continue-on-error: true
+
+      - name: 刷新全量快照
+        if: steps.snap-slow.outputs.stale != 'false'
+        run: npm run snap:slow
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 快照有变化则提交回 dev
+        if: steps.snap-fast.outputs.stale != 'false' || steps.snap-slow.outputs.stale != 'false'
+        run: |
+          git config user.name  "trend-bot"
+          git config user.email "trend-bot@users.noreply.github.com"
+          git add web/public/assets/data/*.json
+          if git diff --cached --quiet; then
+            echo "快照无变化，跳过提交"
+          else
+            git commit -m "snap: scheduled refresh $(date -u +%FT%TZ)"
+            git pull --rebase origin dev
+            for i in 1 2 3; do
+              if git push; then break; fi
+              echo "::warning::推送 dev 失败（第 $i 次），${i}0 秒后重试"
+              sleep $((i * 10))
+            done
+          fi
+
+      - name: 跑测试（含站点门禁）
+        run: npm test
+
+      - name: 构建 dist/
+        run: npm run build
+
+      # ── 发布：dist/ → pages 分支（每次孤儿单提交强推 = 清空重建）──
+      - name: 发布到 pages 分支
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          cd dist
+          git init -q
+          git config user.name "trend-bot"
+          git config user.email "trend-bot@users.noreply.github.com"
+          # 孤儿单提交 + 强推：内容恰好是本轮 dist/，历史恒为 1 个提交。
+          # 不删除分支本身 —— 删除发布源分支会让 GitHub 自动停用 Pages。
+          git checkout -q --orphan pages
+          git add -A
+          git commit -qm "pages: ${GITHUB_SHA:0:7} $(date -u +%FT%TZ)"
+          for i in 1 2 3; do
+            if git push -f "$REMOTE" HEAD:pages; then break; fi
+            echo "::warning::推送 pages 失败（第 $i 次），10 秒后重试"
+            sleep 10
+          done
+          echo "已发布 $(git rev-parse --short HEAD) → pages"

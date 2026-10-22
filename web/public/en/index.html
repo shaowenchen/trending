@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ★ 2026-10-19 mobile tab adaptation: full favicon set + PWA manifest + dual-theme
+     color-scheme theme-color. Paths are relative with ../ (this page lives in en/). -->
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#18191e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<!-- ★ The title tag is skeleton copy (2026-10-20 evening, owner's final wording):
+     brand word + one-line site description. Same convention as the h1 and the
+     meta description — hand-written per language, not in the dictionary and not
+     a placeholder (the BRAND placeholder mechanism retired with this change: the brand
+     word differs per language, one placeholder cannot produce both). -->
+<title>Trend boards</title>
+<meta name="description" content="Trend boards: model rankings, open-source ecosystem and AI news on one page.">
+<!--
+  Single-page site: all 39 boards live on this page, grouped into six topic
+  sections. There are no second-level pages any more.
+
+  Same notes as the Chinese page: hand-written static file served straight by
+  GitHub Pages, relative paths only, `<base href="./">` pins them to this
+  directory. There is deliberately no canonical / og:url / site verification
+  here — those need an absolute URL and this site never hard-codes its domain.
+  GTM is different: the container id does not depend on where the site is
+  hosted, so it is here, resolved at build time (see `src/site/gtm.js`).
+
+  Two build-time placeholders (see `src/site/nav.js`):
+    - the sticky index bar (topic filter + board jumps + refresh)
+    - the six topic sections; trend.js mounts the panels into them
+  Both derive from `assets/boards.js` (board/topic list) and `assets/i18n.js` (text).
+  (The placeholder literals are deliberately not spelled out here: injection is a
+  plain string replace, so a mention inside a comment would be expanded too.)
+-->
+<base href="./">
+<!-- ★ Theme boot: must run BEFORE the stylesheet, as a plain synchronous
+     inline script (not a module). Place it after the stylesheet and the
+     browser paints one frame in the default dark theme first — that flash is
+     exactly why the toggle was removed in the first place. The body is
+     resolved at build time (src/site/theme-boot.js → assets/theme.js
+     bootSnippet()), so the localStorage key and the valid-value rule have a
+     single source. -->
+{{THEME_BOOT}}
+<link rel="stylesheet" href="../site.css">
+<!-- Data version stamp (build-site fills in the newest snapshot fetchedAt in ms):
+     trend.js appends ?v= to in-site assets/data/*.json URLs to bust browser/CDN
+     caches. Unchanged data keeps the version; any update changes the URL. -->
+<script>window.__TREND_DATA_V__="{{DATA_V}}";</script>
+<!-- Google Tag Manager: container id comes from src/site/gtm.js, resolved at build time -->
+{{GTM}}
+</head>
+<body>
+<!-- GTM noscript fallback — this position is the one Google requires -->
+{{GTM_NOSCRIPT}}
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    {{SITE_NAV}}
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- The h1 in the header (rendered by nav.js) is the site name; the content
+       starts straight with the split layout (the description line under the
+       title was removed on 2026-10-22, owner's request).
+       Levels stay three-deep: h1 site name (in the header) / h2 topic / h3 panel. -->
+
+  <!-- Two-column layout (2026-10-20): the left column is a fixed board picker
+       (39 boards grouped by topic, tap one to show only it; not collapsible and
+       it does not scroll with the page), the right column is the content
+       (the selected board, or the daily view when nothing is selected). Narrow
+       screens (<1024px) fall back to the stacked layout with the collapsible
+       index bar under the header (see the media queries in site.css). -->
+  <div class="home-layout">
+  {{BOARD_INDEX}}
+
+  <div class="home-main">
+  <!-- Daily view (2026-10-19): shown when no board is selected — one random
+       quote + illustrated "on this day" cards. "Weibo hot search" is selected by
+       default, so this stays hidden until you deselect that chip (tap it again).
+       Filled by mountDaily() in trend.js; this skeleton is just shape. -->
+  <section id="daily" class="daily" hidden>
+    <div class="daily-quote">
+      <h2 class="daily-h2" data-daily-quote-title></h2>
+      <blockquote class="daily-quote-text" data-daily-quote></blockquote>
+      <div class="daily-quote-meta"><span class="daily-quote-author" data-daily-author></span>
+        <button class="daily-next" type="button" data-daily-next></button></div>
+    </div>
+    <div class="daily-history">
+      <h2 class="daily-h2" data-daily-history-title></h2>
+      <p class="daily-history-note" data-daily-note></p>
+      <div class="daily-grid" data-daily-grid></div>
+    </div>
+  </section>
+
+  <!-- Six topic sections (Models / Benchmarks / Ecosystem / Platform / News /
+       Chinese hot lists). trend.js mounts each panel's skeleton at runtime and
+       lazy-loads it: data is only fetched when a panel scrolls near the
+       viewport, otherwise one visit would fire a dozen upstream requests at
+       once (three of them 4MB+ boards). -->
+  <div id="panels">
+  {{BOARD_TOPICS}}
+  </div>
+  </div>
+  </div>
+</main>
+<script src="../assets/trend.js" type="module"></script>
+<script src="../assets/ui.js" type="module"></script>
+<script src="../assets/theme.js" type="module"></script>
+</body>
+</html>

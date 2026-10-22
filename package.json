@@ -1,0 +1,39 @@
+{
+  "name": "trend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 趋势大盘 —— 纯静态站，浏览器直连上游榜单接口，部署在 GitHub Pages",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node web/public/assets/i18n.test.js && node web/public/assets/ui.test.js && node web/public/assets/theme.test.js && node web/public/assets/trend.test.js && node web/public/assets/ainews.test.js && node web/public/assets/newboards.test.js && node web/public/assets/site.test.js",
+    "test:site": "node web/public/assets/site.test.js",
+    "test:theme": "node web/public/assets/theme.test.js",
+    "test:newboards": "node web/public/assets/newboards.test.js",
+    "test:trend": "node web/public/assets/trend.test.js",
+    "test:ui": "node web/public/assets/ui.test.js",
+    "test:i18n": "node web/public/assets/i18n.test.js",
+    "test:live": "node scripts/live-check.mjs",
+    "snap:gh-trending": "node scripts/fetch-gh-trending.mjs",
+    "snap:ai-news": "node scripts/fetch-ai-news.mjs",
+    "snap:momoyu": "node scripts/fetch-momoyu-hot.mjs",
+    "snap:ai-press": "node scripts/fetch-ai-press.mjs",
+    "snap:hn": "node scripts/fetch-hn-top.mjs",
+    "snap:wiki": "node scripts/fetch-wiki-attention.mjs",
+    "snap:trends": "node scripts/fetch-google-trends.mjs",
+    "snap:video": "node scripts/fetch-video-boards.mjs",
+    "snap:all": "npm run snap:gh-trending && npm run snap:ai-news && npm run snap:ai-press && npm run snap:momoyu && npm run snap:hn && npm run snap:wiki && npm run snap:trends && npm run snap:video && npm run snap:onthisday && npm run snap:live",
+    "snap:onthisday": "node scripts/fetch-onthisday.mjs",
+    "snap:live": "node scripts/fetch-live-boards.mjs",
+    "snap:fast": "npm run snap:momoyu && npm run snap:video",
+    "snap:slow": "npm run snap:gh-trending && npm run snap:ai-news && npm run snap:ai-press && npm run snap:hn && npm run snap:wiki && npm run snap:trends && npm run snap:onthisday && npm run snap:live",
+    "snap:age": "node scripts/snapshot-age.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
