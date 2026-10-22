@@ -2,6 +2,20 @@
 
 > 约定：每个会话/回合把进度落到这里，重启后按文件接上，不依赖会话上下文。
 
+## 2026-10-22 · 新增 4 个中文榜 + 3 个中文 AI 资讯源（39 → 43）
+
+调研结论（实测）：uapis 镜像还能给百度/V2EX/腾讯新闻/快手（各 9–51 条）；
+量子位、InfoQ 中文、少数派 RSS 可用；Reddit 本机不可达、LMArena/Terminal-Bench/
+ARC-AGI 无公开 API 且页面 JS 硬化（暂不做）。
+
+- `fetch-video-boards.mjs` 的 BOARDS 扩到 6 个（抖音/小红书 + 百度/V2EX/腾讯/快手）；
+- `fetch-ai-news.mjs` 源从 8 增到 11（量子位/InfoQ 中文/少数派），并补浏览器 UA
+  —— 中文站对无 UA 请求返回 200 + 空体（会被误判成"这一源没内容"）；
+- boards.js / i18n / site.css 来源色 / 构建白名单 / BOARD_LOADERS 同步注册；
+- 测试：NEWS_SOURCES 8→11、BOARDS 2→6（并断言 key 都在 SOURCE_SLUGS 里）。
+
+版面：中文热榜 15 → 19；aiNews 11 源。
+
 ## 2026-10-22 · 收紧右侧顶部留白
 
 右侧从页头底到面板头原来是 127px（PC 1440），主要三处：

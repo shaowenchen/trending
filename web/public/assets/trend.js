@@ -3159,6 +3159,11 @@ const BOARD_LOADERS = {
   // 视频/生活方式热榜：与 13 个中文热榜同一个加载器，读独立镜像快照
   douyin: () => loadHotList('douyin', VIDEO_SNAP_URL, 'video-douyin'),
   xiaohongshu: () => loadHotList('xiaohongshu', VIDEO_SNAP_URL, 'video-xiaohongshu'),
+  // 2026-10-22：uapis 镜像的四家中文榜（同一份 video-boards.json）
+  baidu: () => loadHotList('baidu', VIDEO_SNAP_URL, 'video-baidu'),
+  v2ex: () => loadHotList('v2ex', VIDEO_SNAP_URL, 'video-v2ex'),
+  qqnews: () => loadHotList('qqnews', VIDEO_SNAP_URL, 'video-qqnews'),
+  kuaishou: () => loadHotList('kuaishou', VIDEO_SNAP_URL, 'video-kuaishou'),
 };
 
 /**

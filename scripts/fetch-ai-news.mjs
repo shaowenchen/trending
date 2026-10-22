@@ -32,6 +32,8 @@ const OUT_PATH = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   '../web/public/assets/data/ai-news.json'
 );
+const UA =
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 trend-snapshot/1.0';
 const FETCH_TIMEOUT_MS = 25000;
 const PER_SOURCE_GAP_MS = 600; // 不同主机也逐个来：快照是每天一次的事，不赶这几百毫秒
 const LIMIT = 20; // 每源最多保留条数（快照体积可控，页面信息量也够）
@@ -160,11 +162,26 @@ export const NEWS_SOURCES = [
     kind: 'atom',
   },
   { key: 'lobsters', name: 'lobste.rs · AI', url: 'https://lobste.rs/t/ai.json', kind: 'lobsters' },
+  // ── 中文 AI / 科技媒体（2026-10-22 增）──
+  // 前 8 个源全是英文（HN / dev.to / TechCrunch / Verge / 两个 Substack / arXiv /
+  // lobste.rs），中文读者在这张榜上看不到母语的一手报道 —— 补三家。
+  // 三家都用标准 RSS 2.0（`<item>`），共用 parseRssItems，无需新解析器。
+  { key: 'qbitai', name: '量子位', url: 'https://www.qbitai.com/feed', kind: 'rss' },
+  { key: 'infoq', name: 'InfoQ 中文', url: 'https://www.infoq.cn/feed', kind: 'rss' },
+  { key: 'sspai', name: '少数派', url: 'https://sspai.com/feed', kind: 'rss' },
 ];
 
 async function fetchOnce(src) {
   const res = await fetch(src.url, {
-    headers: { accept: src.kind === 'rss' || src.kind === 'atom' ? 'application/xml, application/rss+xml, text/xml, */*' : 'application/json' },
+    headers: {
+      accept:
+        src.kind === 'rss' || src.kind === 'atom'
+          ? 'application/xml, application/rss+xml, text/xml, */*'
+          : 'application/json',
+      // ★ 中文站（量子位 / InfoQ）对无 UA 的请求返回 **200 + 空响应体** ——
+      //   不报错、解析出 0 条，最容易被当成"这一源没内容"。统一带浏览器 UA。
+      'user-agent': UA,
+    },
     signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);

@@ -70,6 +70,11 @@ export const BOARD_IDS = [
   // docs/trend-sources.md），所以没有第三个面板。
   'douyin',
   'xiaohongshu',
+  // ── 2026-10-22：uapis 镜像的四家中文榜（同一份 video-boards.json）──
+  'baidu',
+  'v2ex',
+  'qqnews',
+  'kuaishou',
 ];
 
 /**
@@ -149,6 +154,10 @@ export const BOARD_TAGS = {
   // （uapis 聚合），不是 momoyu 那份快照 —— 见 scripts/fetch-video-boards.mjs
   douyin: { topic: 'cn-hot', source: 'douyin' },
   xiaohongshu: { topic: 'cn-hot', source: 'xiaohongshu' },
+  baidu: { topic: 'cn-hot', source: 'baidu' },
+  v2ex: { topic: 'cn-hot', source: 'v2ex' },
+  qqnews: { topic: 'cn-hot', source: 'qqnews' },
+  kuaishou: { topic: 'cn-hot', source: 'kuaishou' },
 };
 
 /**
@@ -192,6 +201,11 @@ export const SOURCE_SLUGS = [
   // 视频/生活方式热榜的两个来源（独立镜像快照，见 fetch-video-boards.mjs）
   'douyin',
   'xiaohongshu',
+  // ── 2026-10-22：uapis 镜像的四家中文榜（同一份 video-boards.json）──
+  'baidu',
+  'v2ex',
+  'qqnews',
+  'kuaishou',
 ];
 
 /**
@@ -292,6 +306,11 @@ export const BOARD_ICONS = {
   // 刻意不用 'monitor'：那是"资讯站"语义（IT之家/爱范儿那批），短视频平台不是。
   douyin: 'bolt',
   xiaohongshu: 'heart',
+  // 百度：搜索（用 file 以外的 'search'? 没有该图标 → 用 'trending'）
+  baidu: 'trending',
+  v2ex: 'code',
+  qqnews: 'monitor',
+  kuaishou: 'bolt',
 };
 
 /**

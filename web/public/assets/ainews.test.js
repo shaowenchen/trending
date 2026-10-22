@@ -151,10 +151,15 @@ t('normalizeMomoyu：无名来源/空条目剔除；坏输入不炸', () => {
 
 /* ---------------- 源清单与守卫 ---------------- */
 
-t('★ NEWS_SOURCES：8 个源、key 唯一、URL 都成型（少一个源就是面板少一组）', () => {
-  assert.equal(NEWS_SOURCES.length, 8);
-  assert.equal(new Set(NEWS_SOURCES.map((s) => s.key)).size, 8, 'key 不得重复');
+t('★ NEWS_SOURCES：11 个源、key 唯一、URL 都成型（少一个源就是面板少一组）', () => {
+  // 2026-10-22 由 8 增到 11：补了三家中文媒体（量子位 / InfoQ 中文 / 少数派）
+  assert.equal(NEWS_SOURCES.length, 11);
+  assert.equal(new Set(NEWS_SOURCES.map((s) => s.key)).size, 11, 'key 不得重复');
   for (const s of NEWS_SOURCES) assert.ok(/^https:\/\//.test(s.url), `${s.key} 的 URL 异常`);
+  // 三家中文源必须在列（英文源占满整张榜是这次要修的问题）
+  for (const k of ['qbitai', 'infoq', 'sspai']) {
+    assert.ok(NEWS_SOURCES.some((s) => s.key === k), `${k} 不在源列表里`);
+  }
   assert.equal(new Set(NEWS_SOURCES.map((s) => s.kind)).size, 5, 'kind 覆盖 hn/devto/rss/atom/lobsters');
 });
 

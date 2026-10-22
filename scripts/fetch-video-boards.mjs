@@ -74,6 +74,13 @@ export const BOARDS = [
     url: 'https://uapis.cn/api/v1/misc/hotboard?type=xiaohongshu',
     fallbackUrl: null,
   },
+  // ── 2026-10-22 扩充：同一镜像的另外四个中文榜 ──
+  // 这个脚本已经不只是"视频平台"了 —— 它是 uapis 镜像榜的统一入口
+  // （momoyu 那份聚合不含这四家）。四个都是标准结构，无需额外解析。
+  { key: 'baidu', name: '百度热搜', url: 'https://uapis.cn/api/v1/misc/hotboard?type=baidu', fallbackUrl: null },
+  { key: 'v2ex', name: 'V2EX 热帖', url: 'https://uapis.cn/api/v1/misc/hotboard?type=v2ex', fallbackUrl: null },
+  { key: 'qqnews', name: '腾讯新闻热点', url: 'https://uapis.cn/api/v1/misc/hotboard?type=qq-news', fallbackUrl: null },
+  { key: 'kuaishou', name: '快手热榜', url: 'https://uapis.cn/api/v1/misc/hotboard?type=kuaishou', fallbackUrl: null },
 ];
 
 /**

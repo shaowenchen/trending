@@ -96,6 +96,11 @@ export const SITE_FILES = [
   'assets/data/google-trends.json',
   // 视频/生活方式热榜的快照（抖音/小红书，uapis 镜像，见 fetch-video-boards.mjs）
   'assets/data/video-boards.json',
+  // 2026-10-22：uapis 镜像的四家中文榜（拆分快照）
+  'assets/data/baidu.json',
+  'assets/data/v2ex.json',
+  'assets/data/qqnews.json',
+  'assets/data/kuaishou.json',
   // ★ 2026-10-19 按面板拆分的逐榜快照（loadHotList 逐面板懒加载；缺失=构建失败）
   'assets/data/aifaner.json',
   'assets/data/bilibili.json',

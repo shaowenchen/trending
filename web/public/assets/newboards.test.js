@@ -21,6 +21,7 @@ import { normalizeHn } from '../../../scripts/fetch-hn-top.mjs';
 import { AI_ARTICLES, PROJECTS, isAiArticle, wikiTitle, wikiUrl } from '../../../scripts/fetch-wiki-attention.mjs';
 import { REGIONS, parseTrendsRss } from '../../../scripts/fetch-google-trends.mjs';
 import { flattenHnTop, flattenWikiAttention, flattenGoogleTrends } from './trend.js';
+import { SOURCE_SLUGS } from './boards.js';
 
 let pass = 0;
 const t = (name, fn) => {
@@ -287,9 +288,12 @@ t('★ buildSnapshot：与 cn-hot.json 同形（sources/key/name/fetchedAt/items
   }
 });
 
-t('★ BOARDS：两个 key 与 boards.js 的来源 slug 对齐（面板/标签/索引都靠它）', () => {
-  assert.deepEqual(BOARDS.map((b) => b.key), ['douyin', 'xiaohongshu']);
+t('★ BOARDS：key 与 boards.js 的来源 slug 对齐（面板/标签/索引都靠它）', () => {
+  // 2026-10-22：由 2 个扩到 6 个（同一镜像的百度 / V2EX / 腾讯新闻 / 快手）
+  assert.deepEqual(BOARDS.map((b) => b.key), ['douyin', 'xiaohongshu', 'baidu', 'v2ex', 'qqnews', 'kuaishou']);
   assert.ok(BOARDS.every((b) => b.url.startsWith('https://')), '端点必须是 https');
+  // 每个 key 都必须是 boards.js 里真实存在的来源
+  for (const b of BOARDS) assert.ok(SOURCE_SLUGS.includes(b.key), `${b.key} 不在 SOURCE_SLUGS 里`);
 });
 
 /* ---------------- 门禁 ---------------- */
