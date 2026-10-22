@@ -1,8 +1,744 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-22T14:01:02.323Z",
+ "fetchedAt": "2026-10-22T16:15:57.813Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.27861",
+    "authors": [
+     {
+      "_id": "6ad9e080d10c239d0da2cdd0",
+      "user": {
+       "_id": "69cccd702d6ab55d7425d815",
+       "avatarUrl": "/avatars/47e4916b2772d8724566ca55a4c05563.svg",
+       "isPro": false,
+       "fullname": "Haocheng Wang",
+       "user": "HaochengWang23",
+       "type": "user",
+       "name": "HaochengWang23"
+      },
+      "name": "Haocheng Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:05:06.444Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd1",
+      "name": "Youquan Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd2",
+      "name": "Weiyu Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd3",
+      "name": "Aokai Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd4",
+      "name": "Donghang Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd5",
+      "name": "Hongyu Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd6",
+      "name": "Sha Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd7",
+      "name": "Weidong Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e080d10c239d0da2cdd8",
+      "name": "Ben Fei",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
+    "submittedOnDailyBy": {
+     "_id": "69cccd702d6ab55d7425d815",
+     "avatarUrl": "/avatars/47e4916b2772d8724566ca55a4c05563.svg",
+     "isPro": false,
+     "fullname": "Haocheng Wang",
+     "user": "HaochengWang23",
+     "type": "user",
+     "name": "HaochengWang23"
+    },
+    "summary": "Vision-language-action (VLA) robustness is commonly summarized by aggregate task success, which obscures how individual executions change under distribution shifts and where failures emerge in long-horizon tasks. We introduce RoboCasa-Shift, a diagnostic robustness benchmark built on RoboCasa365 that combines controlled single-factor shifts, matched clean-perturbed rollouts in which each pair shares the same underlying settings and differs only in the target shift, and simulator-grounded stage-aware diagnostics. We evaluate GR00T N1.5 on four long-horizon tasks that pass a predefined clean-performance gate under four perturbation factors and three calibrated severity levels, including conditions that drive the evaluated policy to complete task failure, totaling 1,040 formal rollouts. Robustness responses vary substantially across factors and tasks, and increasing severity does not always produce monotonic degradation. For example, one camera condition yields ΔSR=0 despite 8 of 80 matched episodes changing outcome. Stage-aware analysis further shows that the same end-to-end degradation can correspond to different execution-depth profiles. Camera L_2 and Gaussian blur L_1 both yield ΔSR=0.188, yet their first-stage failure rates are 19.0\\% and 36.4\\%, respectively. Our findings suggest that VLA robustness should be viewed as a multi-dimensional property of execution rather than a single end-to-end performance measure, motivating evaluation protocols that jointly capture outcome degradation, paired outcome sensitivity, and failure progression. The code is publicly available at https://github.com/HaochengWang23/RoboCasa-Shift.",
+    "upvotes": 0,
+    "discussionId": "6ad9e080d10c239d0da2cdd9",
+    "githubRepo": "https://github.com/HaochengWang23/RoboCasa-Shift",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "RoboCasa-Shift evaluates vision-language-action robustness through paired rollouts and stage-aware diagnostics, revealing that failure patterns vary by shift factor and task rather than degrading uniformly.",
+    "ai_keywords": [
+     "vision-language-action",
+     "VLA",
+     "RoboCasa-Shift",
+     "distribution shifts",
+     "stage-aware diagnostics",
+     "matched rollouts",
+     "GR00T N1.5",
+     "long-horizon tasks",
+     "robustness",
+     "failure progression"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
+   "summary": "Vision-language-action (VLA) robustness is commonly summarized by aggregate task success, which obscures how individual executions change under distribution shifts and where failures emerge in long-horizon tasks. We introduce RoboCasa-Shift, a diagnostic robustness benchmark built on RoboCasa365 that combines controlled single-factor shifts, matched clean-perturbed rollouts in which each pair shares the same underlying settings and differs only in the target shift, and simulator-grounded stage-aware diagnostics. We evaluate GR00T N1.5 on four long-horizon tasks that pass a predefined clean-performance gate under four perturbation factors and three calibrated severity levels, including conditions that drive the evaluated policy to complete task failure, totaling 1,040 formal rollouts. Robustness responses vary substantially across factors and tasks, and increasing severity does not always produce monotonic degradation. For example, one camera condition yields ΔSR=0 despite 8 of 80 matched episodes changing outcome. Stage-aware analysis further shows that the same end-to-end degradation can correspond to different execution-depth profiles. Camera L_2 and Gaussian blur L_1 both yield ΔSR=0.188, yet their first-stage failure rates are 19.0\\% and 36.4\\%, respectively. Our findings suggest that VLA robustness should be viewed as a multi-dimensional property of execution rather than a single end-to-end performance measure, motivating evaluation protocols that jointly capture outcome degradation, paired outcome sensitivity, and failure progression. The code is publicly available at https://github.com/HaochengWang23/RoboCasa-Shift.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27861.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "69cccd702d6ab55d7425d815",
+    "avatarUrl": "/avatars/47e4916b2772d8724566ca55a4c05563.svg",
+    "fullname": "Haocheng Wang",
+    "name": "HaochengWang23",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.22659",
+    "authors": [
+     {
+      "_id": "6ada31290ad32446d8531642",
+      "name": "Zihao Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ada31290ad32446d8531643",
+      "name": "Avi Schwarzschild",
+      "hidden": false
+     },
+     {
+      "_id": "6ada31290ad32446d8531644",
+      "name": "Casey Meehan",
+      "hidden": false
+     },
+     {
+      "_id": "6ada31290ad32446d8531645",
+      "name": "Katherine Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6ada31290ad32446d8531646",
+      "name": "Zhili Feng",
+      "hidden": false
+     },
+     {
+      "_id": "6ada31290ad32446d8531647",
+      "name": "Dylan Sam",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Exploring The Empirical Privacy Landscape of Synthetic Data",
+    "submittedOnDailyBy": {
+     "_id": "6611cb2d80d295a494f08f7e",
+     "avatarUrl": "/avatars/b6095891d4260c625fa727927dac9583.svg",
+     "isPro": false,
+     "fullname": "Zihao Zhao",
+     "user": "zzhao0104",
+     "type": "user",
+     "name": "zzhao0104"
+    },
+    "summary": "Methods for training language models on sensitive data differ in how they balance capability gains against the risk of leaking private information. In this paper, we present a controlled comparison of data-level and training-level interventions for navigating the capability-privacy tradeoff on synthetic medical records with canaries to probe for leakage. Direct finetuning performs best on capability metrics but leads to the most privacy leakage, while DP-SGD reduces leakage at substantial cost to capabilities. Generating synthetic data from these records offers a more favorable balance, particularly when guided by a uniqueness-aware instruction to replace private details. Relative to naive paraphrasing, privacy-aware rewriting improves privacy protection across a variety of different rewriting models. We also find that more capable rewriting models generally reduce the risks of downstream privacy leakage, although held-out fit does not improve monotonically and increased test-time compute yields inconsistent gains. Overall, these results highlight privacy-aware rewriting as a promising direction for achieving a more favorable trade-off between capabilities and empirical privacy compared to other training-level methods, and our evaluation framework supports comparisons of future models and methods.",
+    "upvotes": 1,
+    "discussionId": "6ada31290ad32446d8531648",
+    "ai_summary": "Privacy-aware rewriting of synthetic medical records improves privacy protection with less capability loss than direct fine-tuning or DP-SGD, offering a favorable trade-off for sensitive data.",
+    "ai_keywords": [
+     "DP-SGD",
+     "canaries",
+     "synthetic medical records",
+     "privacy-aware rewriting",
+     "uniqueness-aware instruction",
+     "held-out fit",
+     "test-time compute"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-14T20:00:00.000Z",
+   "title": "Exploring The Empirical Privacy Landscape of Synthetic Data",
+   "summary": "Methods for training language models on sensitive data differ in how they balance capability gains against the risk of leaking private information. In this paper, we present a controlled comparison of data-level and training-level interventions for navigating the capability-privacy tradeoff on synthetic medical records with canaries to probe for leakage. Direct finetuning performs best on capability metrics but leads to the most privacy leakage, while DP-SGD reduces leakage at substantial cost to capabilities. Generating synthetic data from these records offers a more favorable balance, particularly when guided by a uniqueness-aware instruction to replace private details. Relative to naive paraphrasing, privacy-aware rewriting improves privacy protection across a variety of different rewriting models. We also find that more capable rewriting models generally reduce the risks of downstream privacy leakage, although held-out fit does not improve monotonically and increased test-time compute yields inconsistent gains. Overall, these results highlight privacy-aware rewriting as a promising direction for achieving a more favorable trade-off between capabilities and empirical privacy compared to other training-level methods, and our evaluation framework supports comparisons of future models and methods.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22659.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6611cb2d80d295a494f08f7e",
+    "avatarUrl": "/avatars/b6095891d4260c625fa727927dac9583.svg",
+    "fullname": "Zihao Zhao",
+    "name": "zzhao0104",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.28905",
+    "authors": [
+     {
+      "_id": "6ad9d261d10c239d0da2cd7f",
+      "user": {
+       "_id": "6ad5fa8ca5e873f2d94ce8fe",
+       "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+       "isPro": false,
+       "fullname": "Alan-Barsag Gazzaev",
+       "user": "RobotLearningLab",
+       "type": "user",
+       "name": "RobotLearningLab"
+      },
+      "name": "Alan-Barsag Gazzaev",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:05:10.548Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d261d10c239d0da2cd80",
+      "name": "Alexey Gavrilov",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d261d10c239d0da2cd81",
+      "name": "Sergey Muravyov",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d261d10c239d0da2cd82",
+      "name": "Ilya Makarov",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+    "submittedOnDailyBy": {
+     "_id": "6ad5fa8ca5e873f2d94ce8fe",
+     "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+     "isPro": false,
+     "fullname": "Alan-Barsag Gazzaev",
+     "user": "RobotLearningLab",
+     "type": "user",
+     "name": "RobotLearningLab"
+    },
+    "summary": "Diffusion language models form answers through a sequence of revisable continuous states, but multi-agent systems usually discard those states and make agents communicate only after decoding text. We ask whether one independent diffusion trajectory can pass a compact hidden message into another and, crucially, whether the receiver uses what that message means. In Hidden Messages, a sender compresses its denoising state into four signed dense vectors; the receiver consumes them while retaining its own context, canvas, and trajectory. Removing a message tests whether the channel matters; replacing it with a message from another example tests whether its content matters. Across controlled tasks, derangement removes a +63.6-point advantage on Tiny-A2D and a +100.0-point advantage on Dream-7B, while targeted substitutions steer the receiver toward the substituted fact. On QASC with the two supporting facts split across agents, matched communication reaches 80.8%, but a wrong-example message lowers accuracy to 46.8%, a content effect of +34.0 points. The surprising result is temporal: one late transfer reaches 87.8%, exceeding four recurrent exchanges by +7.0 points. These experiments provide causal evidence for continuous hidden communication between diffusion-LM agents and show that when information is transferred can matter more than how many times agents exchange it.",
+    "upvotes": 2,
+    "discussionId": "6ad9d261d10c239d0da2cd83",
+    "githubRepo": "https://github.com/alanrbtx/hidden-messages-diffusion-agents",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Diffusion language model agents can exchange compressed continuous hidden messages that causally affect reasoning, with the timing of transfer sometimes outweighing repeated exchanges.",
+    "ai_keywords": [
+     "diffusion language models",
+     "denoising state",
+     "hidden messages",
+     "multi-agent systems",
+     "continuous hidden communication",
+     "cross-attention"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "61b8da8ed48e2b6a4d2f5530",
+     "name": "ITMO",
+     "fullname": "ITMO University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+   "summary": "Diffusion language models form answers through a sequence of revisable continuous states, but multi-agent systems usually discard those states and make agents communicate only after decoding text. We ask whether one independent diffusion trajectory can pass a compact hidden message into another and, crucially, whether the receiver uses what that message means. In Hidden Messages, a sender compresses its denoising state into four signed dense vectors; the receiver consumes them while retaining its own context, canvas, and trajectory. Removing a message tests whether the channel matters; replacing it with a message from another example tests whether its content matters. Across controlled tasks, derangement removes a +63.6-point advantage on Tiny-A2D and a +100.0-point advantage on Dream-7B, while targeted substitutions steer the receiver toward the substituted fact. On QASC with the two supporting facts split across agents, matched communication reaches 80.8%, but a wrong-example message lowers accuracy to 46.8%, a content effect of +34.0 points. The surprising result is temporal: one late transfer reaches 87.8%, exceeding four recurrent exchanges by +7.0 points. These experiments provide causal evidence for continuous hidden communication between diffusion-LM agents and show that when information is transferred can matter more than how many times agents exchange it.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28905.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6ad5fa8ca5e873f2d94ce8fe",
+    "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+    "fullname": "Alan-Barsag Gazzaev",
+    "name": "RobotLearningLab",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61b8da8ed48e2b6a4d2f5530",
+    "name": "ITMO",
+    "fullname": "ITMO University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.28909",
+    "authors": [
+     {
+      "_id": "6ad9d22fd10c239d0da2cd78",
+      "user": {
+       "_id": "6ad5fa8ca5e873f2d94ce8fe",
+       "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+       "isPro": false,
+       "fullname": "Alan-Barsag Gazzaev",
+       "user": "RobotLearningLab",
+       "type": "user",
+       "name": "RobotLearningLab"
+      },
+      "name": "Alan-Barsag Gazzaev",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:05:12.852Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d22fd10c239d0da2cd79",
+      "name": "Alexey Gavrilov",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d22fd10c239d0da2cd7a",
+      "name": "Mikhail Mozikov",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9d22fd10c239d0da2cd7b",
+      "name": "Sergey Muravyov",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6ad5fa8ca5e873f2d94ce8fe/z8culVHe44H_N8hmzrPqS.png"
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
+    "submittedOnDailyBy": {
+     "_id": "6ad5fa8ca5e873f2d94ce8fe",
+     "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+     "isPro": false,
+     "fullname": "Alan-Barsag Gazzaev",
+     "user": "RobotLearningLab",
+     "type": "user",
+     "name": "RobotLearningLab"
+    },
+    "summary": "Deep research systems iteratively plan, gather evidence, synthesize, and revise, making end-to-end latency a key bottleneck for interactive use. Almost all production systems are built on autoregressive (AR) language models and inherit left-to-right decoding in planning and long-form writing. We present DiffResearch, an open multi-agent deep research framework that places a diffusion language model (dLLM) at the core of every stage, and measure how a diffusion backbone changes latency and report quality. Holding the agentic scaffold, retrieval code, prompts, and evaluation fixed, we swap the backbone between an open diffusion model and a comparable AR model. Across 100 Deep Research Bench tasks, the diffusion backbone is roughly 6 times faster end-to-end, driven by order-of-magnitude reductions in planning and writing. We further introduce dFast, a decomposition mode that reads intermediate denoising states and extracts subqueries before generation finishes, providing a 1.99 times median speedup for decomposition in isolation with no loss of report quality. On the benchmark's RACE rubric, dFast obtains the best overall score among the three configurations. Finally, in a public system-level leaderboard snapshot, an instance built on a stronger diffusion model ranks above several commercial systems. We release DiffResearch under an Apache-2.0 license.",
+    "upvotes": 2,
+    "discussionId": "6ad9d22fd10c239d0da2cd7c",
+    "githubRepo": "https://github.com/alanrbtx/DiffResearch",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "DiffResearch replaces autoregressive backbones with diffusion language models in multi-agent deep research, achieving large latency reductions and improved report quality via iterative planning and early subquery extraction.",
+    "ai_keywords": [
+     "diffusion language model",
+     "dLLM",
+     "autoregressive language models",
+     "diffusion backbone",
+     "dFast",
+     "denoising states",
+     "multi-agent deep research"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 41,
+    "organization": {
+     "_id": "61b8da8ed48e2b6a4d2f5530",
+     "name": "ITMO",
+     "fullname": "ITMO University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
+   "summary": "Deep research systems iteratively plan, gather evidence, synthesize, and revise, making end-to-end latency a key bottleneck for interactive use. Almost all production systems are built on autoregressive (AR) language models and inherit left-to-right decoding in planning and long-form writing. We present DiffResearch, an open multi-agent deep research framework that places a diffusion language model (dLLM) at the core of every stage, and measure how a diffusion backbone changes latency and report quality. Holding the agentic scaffold, retrieval code, prompts, and evaluation fixed, we swap the backbone between an open diffusion model and a comparable AR model. Across 100 Deep Research Bench tasks, the diffusion backbone is roughly 6 times faster end-to-end, driven by order-of-magnitude reductions in planning and writing. We further introduce dFast, a decomposition mode that reads intermediate denoising states and extracts subqueries before generation finishes, providing a 1.99 times median speedup for decomposition in isolation with no loss of report quality. On the benchmark's RACE rubric, dFast obtains the best overall score among the three configurations. Finally, in a public system-level leaderboard snapshot, an instance built on a stronger diffusion model ranks above several commercial systems. We release DiffResearch under an Apache-2.0 license.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6ad5fa8ca5e873f2d94ce8fe/z8culVHe44H_N8hmzrPqS.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28909.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6ad5fa8ca5e873f2d94ce8fe",
+    "avatarUrl": "/avatars/f1296b1cc8976de3c50b6e4e82be398d.svg",
+    "fullname": "Alan-Barsag Gazzaev",
+    "name": "RobotLearningLab",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61b8da8ed48e2b6a4d2f5530",
+    "name": "ITMO",
+    "fullname": "ITMO University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.30113",
+    "authors": [
+     {
+      "_id": "6ad9e176d10c239d0da2cddc",
+      "user": {
+       "_id": "6479e294ed75e95d3e974050",
+       "avatarUrl": "/avatars/a34e4b0d1c709ed5bf12d095a717508c.svg",
+       "isPro": false,
+       "fullname": "Houde Qian",
+       "user": "Ashitemaru",
+       "type": "user",
+       "name": "Ashitemaru"
+      },
+      "name": "Houde Qian",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:05:04.469Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cddd",
+      "name": "Zheng Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cdde",
+      "name": "Wenyi Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cddf",
+      "name": "Chenxi Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde0",
+      "name": "Xinjie Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde1",
+      "name": "Yuzhao Peng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde2",
+      "name": "Ruoyu Han",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde3",
+      "name": "Youjie Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde4",
+      "name": "Kaisen Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde5",
+      "name": "Qinhuai Na",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde6",
+      "name": "You Fu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9e176d10c239d0da2cde7",
+      "name": "Calvin Xiao",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+    "submittedOnDailyBy": {
+     "_id": "6479e294ed75e95d3e974050",
+     "avatarUrl": "/avatars/a34e4b0d1c709ed5bf12d095a717508c.svg",
+     "isPro": false,
+     "fullname": "Houde Qian",
+     "user": "Ashitemaru",
+     "type": "user",
+     "name": "Ashitemaru"
+    },
+    "summary": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.",
+    "upvotes": 17,
+    "discussionId": "6ad9e177d10c239d0da2cde8",
+    "projectPage": "https://lab.einsia.ai/quant-arena",
+    "ai_summary": "Quant-Arena benchmarks end-to-end quantitative research by evaluating whether language models can build trading strategies on historical A-share data that remain profitable in a sealed future year.",
+    "ai_keywords": [
+     "large language models",
+     "quantitative research",
+     "market hypothesis",
+     "executable signal",
+     "historical data",
+     "Quant-Arena",
+     "A-share market",
+     "stock-scoring code",
+     "cash-account evaluator",
+     "trading constraints",
+     "market impact",
+     "simulated order book",
+     "excess return",
+     "signal quality",
+     "feature diversity"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+   "summary": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30113.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6479e294ed75e95d3e974050",
+    "avatarUrl": "/avatars/a34e4b0d1c709ed5bf12d095a717508c.svg",
+    "fullname": "Houde Qian",
+    "name": "Ashitemaru",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.29934",
+    "authors": [
+     {
+      "_id": "6ada1ebf0ad32446d85315c8",
+      "name": "Nithin Sivakumaran",
+      "hidden": false
+     },
+     {
+      "_id": "6ada1ebf0ad32446d85315c9",
+      "name": "Ali Payani",
+      "hidden": false
+     },
+     {
+      "_id": "6ada1ebf0ad32446d85315ca",
+      "name": "Hyunji Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6ada1ebf0ad32446d85315cb",
+      "name": "Mohit Bansal",
+      "hidden": false
+     },
+     {
+      "_id": "6ada1ebf0ad32446d85315cc",
+      "name": "Elias Stengel-Eskin",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
+    "submittedOnDailyBy": {
+     "_id": "641c95a2043963b1c0a1da9e",
+     "avatarUrl": "/avatars/4f0ef159145f43e0d3093741237f9feb.svg",
+     "isPro": false,
+     "fullname": "Nithin Sivakumaran",
+     "user": "nsivaku",
+     "type": "user",
+     "name": "nsivaku"
+    },
+    "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens are trained to abstract and match. At test-time, ToM tokens are generated by each agent and act as conditioners for that agent's thoughts and actions. Across several environments covering collaborative, competitive, and mixed-motive settings (Overcooked-AI, multiparty negotiation, Decrypto, Hanabi, and Collab Escape/Capture), we evaluate ToM2Vec's ability to support multi-agent interactions and collaboration, finding consistent improvements over the base model and a variety of competitive trained and prompted baselines. We show that latent reasoning is critical, with performance dropping when reasoning is expressed in text. Moreover, we show that ToM2Vec training generalizes to partner model families not seen at train-time, including a proprietary model (GPT-5.4). In our analysis, we provide evidence that the latent tokens encode a ToM, rather than task-specific information: ToM2Vec's tokens improve the agent's ability to directly answer questions about partner beliefs, desires, and next actions.",
+    "upvotes": 0,
+    "discussionId": "6ada1ebf0ad32446d85315cd",
+    "githubRepo": "https://github.com/nsivaku/tom2vec",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "ToM2Vec learns abstract partner-state representations via continuous latent reasoning tokens to improve multi-agent collaboration across diverse settings.",
+    "ai_keywords": [
+     "theory-of-mind",
+     "ToM2Vec",
+     "latent space",
+     "continuous reasoning tokens",
+     "multi-agent collaboration",
+     "partner beliefs",
+     "latent reasoning"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0,
+    "organization": {
+     "_id": "669f9d1fec8789263c0e355a",
+     "name": "UNC-ChapelHill",
+     "fullname": "University of North Carolina at Chapel Hill",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/669f9c85bd649dba3b88e581/H5uB8_MCewnMtxEUnAvTL.png"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
+   "summary": "Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens are trained to abstract and match. At test-time, ToM tokens are generated by each agent and act as conditioners for that agent's thoughts and actions. Across several environments covering collaborative, competitive, and mixed-motive settings (Overcooked-AI, multiparty negotiation, Decrypto, Hanabi, and Collab Escape/Capture), we evaluate ToM2Vec's ability to support multi-agent interactions and collaboration, finding consistent improvements over the base model and a variety of competitive trained and prompted baselines. We show that latent reasoning is critical, with performance dropping when reasoning is expressed in text. Moreover, we show that ToM2Vec training generalizes to partner model families not seen at train-time, including a proprietary model (GPT-5.4). In our analysis, we provide evidence that the latent tokens encode a ToM, rather than task-specific information: ToM2Vec's tokens improve the agent's ability to directly answer questions about partner beliefs, desires, and next actions.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29934.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "641c95a2043963b1c0a1da9e",
+    "avatarUrl": "/avatars/4f0ef159145f43e0d3093741237f9feb.svg",
+    "fullname": "Nithin Sivakumaran",
+    "name": "nsivaku",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "669f9d1fec8789263c0e355a",
+    "name": "UNC-ChapelHill",
+    "fullname": "University of North Carolina at Chapel Hill",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/669f9c85bd649dba3b88e581/H5uB8_MCewnMtxEUnAvTL.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.24771",
+    "authors": [
+     {
+      "_id": "6ad9f198d10c239d0da2ce1a",
+      "name": "Xuchao Ren",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce1b",
+      "user": {
+       "_id": "69a2a3d8d01d2e07c5707692",
+       "avatarUrl": "/avatars/a32a53b5df10cabc53def8f4e884a375.svg",
+       "isPro": false,
+       "fullname": "Siyuan Feng",
+       "user": "Siyuan-Feng",
+       "type": "user",
+       "name": "Siyuan-Feng"
+      },
+      "name": "Siyuan Feng",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T13:04:59.161Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce1c",
+      "name": "Jing Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce1d",
+      "name": "Yanhua Yao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce1e",
+      "name": "Jing Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce1f",
+      "name": "Lingyu Alina Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce20",
+      "name": "Anan Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce21",
+      "name": "Hangjie Yuan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce22",
+      "name": "Tao Feng",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce23",
+      "name": "Qiong Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9f198d10c239d0da2ce24",
+      "name": "Sai Ma",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-17T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Design Anything, Design at Scale",
+    "submittedOnDailyBy": {
+     "_id": "69a2a3d8d01d2e07c5707692",
+     "avatarUrl": "/avatars/a32a53b5df10cabc53def8f4e884a375.svg",
+     "isPro": false,
+     "fullname": "Siyuan Feng",
+     "user": "Siyuan-Feng",
+     "type": "user",
+     "name": "Siyuan-Feng"
+    },
+    "summary": "As multimodal resources are transformed into media outputs, agentic AI is expected to stay aligned with design intent over long horizons. Designers follow briefs specifying goals, constraints, and deliverables, with later work building on earlier decisions. Recent work reuses design experience across tasks, yet alignment among artifacts within one project remains challenging. Agents therefore need to preserve and apply this intent across domains and as projects grow. We introduce Design Anything, a graph-based harness that preserves design intent outside the model and binds deliverables to the workflow steps that produce them through an intent-execution graph. A task contract retains constraints and decisions, selected designs become explicit inputs to later generations, and a deterministic controller uses bindings and execution records to check output types and counts, identify outstanding deliverables, and guide subsequent turns. We also introduce DesignAnything-Bench, with 228 tasks across 19 design domains, including 38 project families at scales of 6, 14, and 24 artifacts. With the LLM held fixed, Design Anything satisfies 85.0% and 92.5% of the brief's factual constraints with DeepSeek V4.1 Flash High and GPT-5.6 Sol High, respectively, exceeding the strongest same-model baselines by 15.4% and 14.4%. These gains reach 25.1% and 23.0% on 24-artifact tasks. Under each model, Design Anything leads or ties in constraint satisfaction in 18 of 19 domains. Professional designers also prefer its complete deliverable sets over those of same-model baselines in a blind evaluation.",
+    "upvotes": 1,
+    "discussionId": "6ad9f198d10c239d0da2ce25",
+    "projectPage": "https://designanything.gemus.ai",
+    "githubRepo": "https://github.com/Gemus-AI/DesignAnything",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Design Anything uses an intent-execution graph and task contracts to maintain design alignment across long projects, improving constraint satisfaction and deliverable completeness over baseline agents.",
+    "ai_keywords": [
+     "agentic AI",
+     "design intent",
+     "intent-execution graph",
+     "task contract",
+     "deterministic controller",
+     "DesignAnything-Bench"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2
+   },
+   "publishedAt": "2026-10-16T20:00:00.000Z",
+   "title": "Design Anything, Design at Scale",
+   "summary": "As multimodal resources are transformed into media outputs, agentic AI is expected to stay aligned with design intent over long horizons. Designers follow briefs specifying goals, constraints, and deliverables, with later work building on earlier decisions. Recent work reuses design experience across tasks, yet alignment among artifacts within one project remains challenging. Agents therefore need to preserve and apply this intent across domains and as projects grow. We introduce Design Anything, a graph-based harness that preserves design intent outside the model and binds deliverables to the workflow steps that produce them through an intent-execution graph. A task contract retains constraints and decisions, selected designs become explicit inputs to later generations, and a deterministic controller uses bindings and execution records to check output types and counts, identify outstanding deliverables, and guide subsequent turns. We also introduce DesignAnything-Bench, with 228 tasks across 19 design domains, including 38 project families at scales of 6, 14, and 24 artifacts. With the LLM held fixed, Design Anything satisfies 85.0% and 92.5% of the brief's factual constraints with DeepSeek V4.1 Flash High and GPT-5.6 Sol High, respectively, exceeding the strongest same-model baselines by 15.4% and 14.4%. These gains reach 25.1% and 23.0% on 24-artifact tasks. Under each model, Design Anything leads or ties in constraint satisfaction in 18 of 19 domains. Professional designers also prefer its complete deliverable sets over those of same-model baselines in a blind evaluation.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24771.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "69a2a3d8d01d2e07c5707692",
+    "avatarUrl": "/avatars/a32a53b5df10cabc53def8f4e884a375.svg",
+    "fullname": "Siyuan Feng",
+    "name": "Siyuan-Feng",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.29722",
@@ -51,7 +787,7 @@
      "name": "dolev31"
     },
     "summary": "Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, context compression, and agentic verification, yet these techniques are typically evaluated one at a time. It remains unclear whether their isolated gains survive composition, whether retrieval quality and answer faithfulness favor the same design choices, and whether conclusions from small corpora hold at large scale. We pre-declare three hypotheses and introduce LASAGNA, an open-source framework for controlled RAG evaluation. We test 450 configurations across eight benchmarks and corpora ranging from 5K to 200K documents. Three findings emerge. First, individually strong techniques from different phases of a RAG pipeline do not necessarily compose: three retrieval techniques predict a +47% combined improvement but deliver only +17% when used together. Second, component gains stack differently for retrieval and faithfulness, and optimizing one can hurt the other. Third, the best composition changes as the corpus grows: the combination that wins on a small corpus may not remain best at large scale. These findings show that gains measured in isolation are not reliable predictors of realistic performance, and that new RAG techniques should be tested with the full surrounding stack. We call on researchers to do so and supply LASAGNA to simplify these experiments.",
-    "upvotes": 20,
+    "upvotes": 22,
     "discussionId": "6ad9916a3f2bb52eb8d6ec7e",
     "projectPage": "https://dolev31.github.io/lasagna/",
     "githubRepo": "https://github.com/dolev31/lasagna",
@@ -97,7 +833,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 2,
+    "followerCount": 3,
     "isUserFollowing": false
    },
    "organization": {
@@ -145,7 +881,7 @@
      "name": "Purdy0228"
     },
     "summary": "Practitioners use reinforcement learning methods for language models through training frameworks, so a method that a framework includes is one configuration change away for its users. We measure how often this happens. We trace seven open-source frameworks for RL post-training through their commit histories and link them to 6,939 screened arXiv papers from January 2025 to June 2026. Of 1,598 papers that propose a general RL training method, 37 reached at least one framework. Across five quarterly cohorts of papers, the number included within 180 days stayed between 5 and 7 while the cohorts grew from 72 to 386 papers. Compared with papers from the same quarters, included papers more often trained policies of 30B parameters or more, at 41 against 10 percent, and more often changed a coefficient, clip, mask or weight in the existing loss, at 29 against 9 percent. Both gaps hold without papers from the companies that maintain the frameworks, while code release was equally common in both groups. The frameworks' issues and pull requests show that few methods are turned away in public. More than nine in ten of the general methods no framework included have no thread there that cites or names them, and many proposals that do appear stay open without a reply. Two further records, the frameworks' issues and the technical reports of 13 large open-weight models, show that users rarely report training failures in public and that the reports state 8 of the 13 widely included methods. We release the data as a tracker that links training failures to framework implementations and lists each framework's contribution rules and earlier proposals.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ad967203f2bb52eb8d6e91c",
     "projectPage": "https://pth2002.github.io/rl-method-tracker/",
     "githubRepo": "https://github.com/pth2002/rl-method-tracker",
@@ -185,6 +921,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -398,7 +1135,7 @@
      "name": "lhpku20010120"
     },
     "summary": "Spatial intelligence requires agents to actively acquire visual evidence and integrate observations into a coherent representation of the three-dimensional world. Yet spatial question answering offers limited evidence of whether models can construct accurate metric maps through autonomous exploration. We introduce SpatialScout, a benchmark for evaluating vision-language model (VLM) agents on active object-level 3D mapping. SpatialScout comprises 80 diverse indoor scenes containing 3,140 target objects. Given an object inventory, RGB observations, camera calibration, and camera poses, agents control a camera to explore each scene and estimate object centers in a shared coordinate frame. The task requires coordinating viewpoint selection, cross-view association, geometric estimation, and map revision under bounded interaction budgets. Evaluation jointly measures localization accuracy and target coverage through object-scale overlap scores that penalize missing predictions. Experiments with frontier VLMs reveal substantial limitations: the strongest evaluated model, Claude Opus 5.5, achieves a mean overlap score of 41.71%, with 47.23% of targets exceeding an intersection-over-union (IoU) threshold of 0.5 and only 3.25% exceeding 0.9. These results reveal a substantial gap between recovering coarse object layouts and constructing complete, precise metric maps. SpatialScout provides a quantitative testbed for developing agents that build reliable 3D spatial representations through active perception. Code is available at https://github.com/JesseZZZZZ/SpatialScout.",
-    "upvotes": 118,
+    "upvotes": 128,
     "discussionId": "6ad6e08a774b2a8cb5c7d9b6",
     "projectPage": "https://spatialscout.osslab-pku.org",
     "githubRepo": "https://github.com/JesseZZZZZ/SpatialScout",
@@ -747,7 +1484,7 @@
      "name": "fyzzzzzz"
     },
     "summary": "A login screen that appears after a tap on Sign in is expected; the same screen after a tap on View order is an attack. For GUI agents, safety is therefore a property of the transition rather than of the screen, and a monitor that inspects only screens can be defeated by reusing a legitimate one. Judging a transition requires an expectation of what should have followed the action. Existing GUI world models provide one, but they output it as text, code, or images, so checking it against the observed screen requires a second model to judge the two. We argue that a world model meant for verification should instead predict in the space in which observations are encoded, and present LGWM, a decoder-free, action-conditioned world model that predicts the representation of the next screen directly, trained without semantic annotation on 1.85M real GUI transitions. Verification reduces to a vector comparison, and the same signal reveals whether a mismatch is harmful. We evaluate on RSWT-BENCH, a diagnostic where each credential screen appears under both a legitimate and a hijacked transition, so detectors that see only the screen are at chance by construction. The training-free score reaches 0.987 AUC at 17 ms per decision, on par with the strongest closed-source VLMs and about ten AUC points above generative GUI world models at over three orders of magnitude lower latency. The residual direction reaches 0.953 AUC at separating harmful from benign violations, where prompted VLMs are near chance. Further analyses show that the prediction is a usable future state rather than an anomaly score. World models have mostly served as simulators or planners; our results point to a third role, verification, for which predicting in representation space is the natural design.",
-    "upvotes": 2,
+    "upvotes": 21,
     "discussionId": "6aca20d90ee6ff34004fd5fa",
     "projectPage": "https://jiamingzhang.netlify.app/lgwm/",
     "githubRepo": "https://github.com/jiamingzhang94/lgwm",
@@ -831,7 +1568,7 @@
      "name": "PatrickHaller"
     },
     "summary": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state. Additionally, we find that the large entries of the gated-delta state gather in columns, because some channels of the update written at each token remain large across many tokens. PACE therefore shares each quantization scale within one column. It also keeps the heads that retain rounding error longest at eight bits. On four hybrid models from 4B to 35B parameters, PACE with mixed four- and eight-bit heads is competitive with eight-bit DAMP on the three larger models at about two thirds of its memory, PACE with four-bit heads throughout scores higher than Q-Mamba at equal memory, and rounding every few tokens preserves the decoding speedup of the buffer.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6ad9ac083f2bb52eb8d6ed6f",
     "ai_summary": "PACE is a post-hoc four-bit quantizer for linear-attention recurrent states that rounds less frequently and uses column-wise scales to reduce error, enabling lower memory usage without fine-tuning.",
     "ai_keywords": [
@@ -1672,7 +2409,7 @@
      "name": "Caoza"
     },
     "summary": "Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dexterous behaviors common in real life unaddressed. The scarcity of contact-rich bimanual manipulation data and the increased complexity of coordinating contacts make developing a generalist bimanual tracker particularly challenging. Therefore, we present 1) DONIC, the first generalist bimanual tracker jointly trained across operation categories and human-motion sources, together with 2) BiHOI, a multi-view dataset of 1,575 sequences spanning 229 objects and emphasizing sustained bimanual interaction, where reconstructed interactions are retargeted into robot references. DONIC combines proximal policy optimization with behavioral cloning in a feedback loop that recycles verified successful executions into training demonstrations. An object-centered per-hand reward maintains object-motion feedback while supervising each hand according to its reference contact role. Clip-Centered Advantages remove reference-dependent advantage offsets while preserving within-trajectory differences. Together, these designs enable one single policy to learn coordinated manipulation across heterogeneous references. Without finetuning, a single checkpoint achieves 86.79% success on unseen trajectories of training objects and 57.32% on held-out objects, surpassing the state-of-the-art bimanual tracking baselines by 77.36 and 45.73 percentage points.",
-    "upvotes": 99,
+    "upvotes": 102,
     "discussionId": "6ad981d43f2bb52eb8d6eb42",
     "projectPage": "https://ropedia.github.io/DONIC/",
     "githubRepo": "https://github.com/Ropedia/DONIC",
@@ -1687,7 +2424,7 @@
      "generalist tracker"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 20,
     "organization": {
      "_id": "69b1179815ed2b14d9bcea99",
      "name": "ropedia-ai",
@@ -1769,7 +2506,7 @@
     "title": "Answering in the User's Variety: Calibrated Accommodation Pairs for Post-Training",
     "submittedOnDailyBy": {
      "_id": "65a9c8652bf3e0cbbfcab2c8",
-     "avatarUrl": "/avatars/fc690a78b5f2e94e08a40059ae40625c.svg",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
      "isPro": false,
      "fullname": "Alan KOU",
      "user": "alan1027",
@@ -1790,7 +2527,7 @@
    "numComments": 1,
    "submittedBy": {
     "_id": "65a9c8652bf3e0cbbfcab2c8",
-    "avatarUrl": "/avatars/fc690a78b5f2e94e08a40059ae40625c.svg",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
     "fullname": "Alan KOU",
     "name": "alan1027",
     "type": "user",
@@ -1848,7 +2585,7 @@
     "title": "Entertain, then Cancel: How Thinking Makes Reasoning Models Read Some and Or Literally",
     "submittedOnDailyBy": {
      "_id": "65a9c8652bf3e0cbbfcab2c8",
-     "avatarUrl": "/avatars/fc690a78b5f2e94e08a40059ae40625c.svg",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
      "isPro": false,
      "fullname": "Alan KOU",
      "user": "alan1027",
@@ -1856,7 +2593,7 @@
      "name": "alan1027"
     },
     "summary": "When a speaker says ``some students passed'', listeners infer that not all of them did. Reasoning models now let users decide how long a model thinks before it answers, but we do not know what extra thinking does to such everyday inferences. We study this directly: we keep a model's weights fixed, change only how much it thinks, and record which reading it chooses. A second tool cuts the model's own reasoning at successive points and asks for an answer, showing where the reading changes. Thinking makes models read logical words as logic: it cancels the implicatures of some (not all) and or (not both) in most tested open reasoning models and in GPT-5, while context-driven inferences such as indirect answers improve. The trace shows why: models first entertain the enriched reading and cancel it later. Answering from that early reading, an exploratory inference-time remedy, recovers these implicatures without losing literal accuracy. Evaluations of reasoning models should measure how they interpret, not only how accurate they are.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ad984173f2bb52eb8d6eb63",
     "githubRepo": "https://github.com/kouzhizhuo/entertain-then-cancel",
     "githubRepoAddedBy": "user",
@@ -1880,7 +2617,7 @@
    "numComments": 1,
    "submittedBy": {
     "_id": "65a9c8652bf3e0cbbfcab2c8",
-    "avatarUrl": "/avatars/fc690a78b5f2e94e08a40059ae40625c.svg",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
     "fullname": "Alan KOU",
     "name": "alan1027",
     "type": "user",
@@ -1964,6 +2701,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6727a4d03b1ef8fb59b37535/Ukgzvoy9Etvq-s2V7JCrn.mp4"
+    ],
     "publishedAt": "2026-10-20T00:00:00.000Z",
     "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
     "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
@@ -1977,7 +2717,7 @@
      "name": "iTheresaApocalypse"
     },
     "summary": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
-    "upvotes": 39,
+    "upvotes": 43,
     "discussionId": "6ad97e373f2bb52eb8d6eb1a",
     "projectPage": "https://gamescaling.github.io",
     "githubRepo": "https://github.com/THUSI-Lab/GameScaling",
@@ -1993,7 +2733,7 @@
      "model capacity"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 9,
+    "githubStars": 181,
     "organization": {
      "_id": "6a37841915f7fc6e01ca5d9c",
      "name": "THUSI-Lab",
@@ -2004,6 +2744,9 @@
    "publishedAt": "2026-10-19T20:00:00.000Z",
    "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
    "summary": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6727a4d03b1ef8fb59b37535/Ukgzvoy9Etvq-s2V7JCrn.mp4"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28698.png",
    "numComments": 1,
    "submittedBy": {
@@ -2096,7 +2839,7 @@
      "name": "yingmanji"
     },
     "summary": "Spatial reasoning requires more than access to geometric tools: a reasoner must decide when direct observation is sufficient and when to reconstruct, measure, or change reference frames. We present SpatialBrain, a framework that retains experience about these decisions while keeping its vision-language backbone fixed. The key distinction is between evidence about a scene and experience about how to reason with that evidence. 3DFusionMemory fuses current-scene observations into queryable spatial relations. A Spatial Skill Library provides reusable tool procedures, and Spatial Cognition associates task conditions with experience about when and how to use memory and skills. Completed trajectories are abstracted into process records and consolidated between task blocks, allowing later decisions to draw on earlier execution without transferring scene coordinates or reference answers. Across five spatial-reasoning benchmarks, SpatialBrain improves on direct answers from the same backbone on four and ties on the fifth. Component comparisons, experience-coverage curves, and traced resource decisions characterize how the framework accumulates and uses these resources.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6ad981d63f2bb52eb8d6eb4d",
     "ai_summary": "SpatialBrain improves spatial reasoning by separating scene evidence from reasoning experience, using fused spatial memory, reusable skill procedures, and consolidated process records to guide tool use without altering the vision-language backbone.",
     "ai_keywords": [
@@ -2168,7 +2911,7 @@
      "name": "libertywing"
     },
     "summary": "Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasoning trace behind it. That is a little ironic: they were themselves built on distilling human knowledge, and distilling an open-source model is still entirely routine; the restriction applies to their own outputs alone. Recent work recovers the hidden reasoning by replaying encrypted blocks across models. It somehow works, but it breaks the providers' terms of service, so it is not something a product can be built on long-term.\n  We built the alternative. We take the context and the teacher's answer as input, and generate the reasoning trace ourselves, in the style of the student's own model family. Training is two-stage, supervised and then adversarial: a generator learns to regenerate the family's own reasoning traces from their context and answer, and a critic learns how real a reasoning trace looks. Applied to a teacher's answer, the generator writes one in the family's style. An independent judge rates how likely traces are to be genuine on a scale from 0 to 1: ours average 0.68, real traces 0.66, and traces selected by the critic from four candidates 0.82. These are authenticity scores, not correctness rates.\n  We test the idea on five benchmarks with everything else held fixed. On general tasks the five training corpora are about the same; on coding, the generated reasoning beats Fable 5's own thinking content. With the same 5,000 questions and the same teacher answers, HumanEval+ improves by 3.7 points and MBPP+ by 7.1 at the final checkpoint, and the MBPP+ lead holds at every checkpoint. We suspect that reasoning written in the student's family style is easier for it to learn from.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6ad97bdd3f2bb52eb8d6eb09",
     "projectPage": "https://alleai.cloud/cot/",
     "ai_summary": "The study proposes a two-stage supervised and adversarial method to synthesize reasoning traces matching a student model's style from teacher answers, improving coding benchmarks without relying on hidden outputs.",
@@ -2471,7 +3214,7 @@
      "name": "ChilleD"
     },
     "summary": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, model context protocol services, and command-line interfaces, allowing agents to flexibly combine visual interaction, tool use, and code execution. WildAWM is entirely powered by open-source models, demonstrating that high-quality computer-use environments can be generated without proprietary frontier models. Beyond environments, we address three recurring challenges in task synthesis: ensuring solvability, maintaining sufficient difficulty, and producing reliable verifiers, by introducing execution-based quality gates that combine heterogeneous agent rollouts, cross-judge consistency checks, and counterfactual probes of judgment robustness. The resulting pipeline synthesizes 341 long-horizon environment-task pairs that can require over 100 agent steps to solve and remain challenging even for frontier models, with GPT-6-Astra solving only 60% of them. We train two Qwen models of different sizes exclusively in these synthetic worlds. Both models achieve substantial gains across 8 out-of-distribution benchmarks spanning web, claw, and computer-use agents, demonstrating that learning in WildAWM's synthesized worlds generalizes broadly to unseen computer-use tasks. The code is publicly available at https://github.com/MSR-Orchard/WildAWM.",
-    "upvotes": 60,
+    "upvotes": 61,
     "discussionId": "6ad6d7c3774b2a8cb5c7d8b8",
     "projectPage": "https://msr-orchard.github.io/WildAWM/",
     "githubRepo": "https://github.com/MSR-Orchard/WildAWM",
@@ -2490,7 +3233,7 @@
      "Qwen models"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 50,
+    "githubStars": 69,
     "organization": {
      "_id": "68151d0f51add3813f3f7d1b",
      "name": "MicrosoftResearch",
@@ -2585,7 +3328,7 @@
      "name": "yujianll"
     },
     "summary": "Autonomous agents can increasingly propose ideas, modify code, and run experiments, creating an opportunity to accelerate scientific discovery using teams of collaborative AI researchers. To escape local minima in the discovery, we propose to encourage orthogonal exploration by constructing the team using agents with varying expertise. However, realizing this design requires more than diverse backgrounds. When experiments are costly, a team can test only a limited number of ideas, thereby creating the need to balance exploration and exploitation when selecting a subset of researchers to propose and execute new experiments. Furthermore, each result should shape what the team tries next. We therefore ask how AI researchers with different scientific backgrounds can build on one another's findings and sustain progress under a limited experimental budget. To address these challenges, we build a team of persistent AI researchers, each grounded in a different discipline, who keep private research histories, share experimental evidence, and receive research opportunities through adaptive allocation. We demonstrate the effectiveness of this design by deploying the team to search for linear attention architectures, where it outperforms GDN2 at 1.3B scale on language modeling, common-sense reasoning, and synthetic and real-world retrieval tasks. In controlled comparisons, removing any single organizational component from our design yields markedly weaker discoveries: without disciplinary backgrounds, the search plateaus early; without private histories, researchers make less progress despite identical shared evidence; and uniform selection falls short of adaptive allocation within the same budget. These results suggest that sustained autonomous discovery depends not only on stronger agents, but also on who explores, what they remember, and how research effort is allocated.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6ad979943f2bb52eb8d6eab8",
     "organization": {
      "_id": "691d9d63284266ada1eb632a",
@@ -2878,7 +3621,7 @@
      "name": "taesiri"
     },
     "summary": "We present Qwen-Audio-3.1-ASR, a family of audio-language models that builds upon its predecesor Qwen-Audio-3.0-ASR with improved speech recognition and expanded capabilities in speaker-diarized transcription and general audio understanding. The family retains support for 30 languages and 16 Chinese dialects, together with instruction-controlled capabilities including historical-context conditioning, hierarchical hotword customization, and native transcription polishing. Speaker-diarized ASR produces structured outputs containing speaker labels, timestamps, and recognized text, maintaining consistent speaker labels across turns and the representation of overlapping speech. The general audio understanding capabilities cover audio-, speech-, and music-captioning, temporal grounding and sound event detection, as well as audio question answering and multiple-choice reasoning. These tasks broaden the application scope from recognizing spoken words to interpreting speakers, acoustic events, and their temporal relations. To accommodate different deployment requirements, the family includes variants for asynchronous file transcription, low-latency streaming, interactive voice input, and non-streaming recognition, with speaker-diarized transcription and general audio understanding available in certain variants. Evaluations span conventional ASR, multilingual and dialectal speech, speaker-diarized transcription, and general audio understanding, demonstrating the capabilities of the Qwen-Audio-3.1-ASR family across transcription and broader audio analysis tasks.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6ad97a1b3f2bb52eb8d6eaed"
    },
    "publishedAt": "2026-10-19T20:00:00.000Z",
@@ -3067,7 +3810,7 @@
      "name": "Hunter26666666"
     },
     "summary": "Post-hoc image explanations usually show where a model looks using spatial heatmaps or indicate which channels matter using global channel scores. These separate views are limiting for multispectral data because channel relevance is often spatially localized and physically meaningful. We introduce Spectral-Spatial Interpretation (SSI), a full-grid attribution method over position-channel players (g,c). For each spatial position, SSI fixes the observed surrounding context, defines a conditional game over the channels at that position, and applies the Shapley value to this local game. The result is a full spectral-spatial attribution matrix rather than a single heatmap or a global channel ranking. SSI has a clear local interpretation. It satisfies Shapley fairness within each position, and aggregating its channel attributions exactly recovers the position-level contextual contrast obtained by replacing that position with the baseline. SSI also differs from context-averaged Owen-style hierarchical accounting, which uses the same position-channel grouping but averages over external spatial coalitions. On HLS Burn Scar, SSI outperforms an MC-Owen estimator across retained attribution metrics while using only about 6% of its evaluation budget. Across CUB-200, EuroSAT, and HLS Burn Scar under both per-channel mean and zero baselines, SSI achieves the best joint deletion and insertion AUC over dense, flat, and rank-1 baselines, yields the strongest spectral hit rates and channel deletion, and leads spatial localization on both annotated datasets. Code is available at https://github.com/AtheavenMa/Spectral-Spatial-Interpretation.",
-    "upvotes": 10,
+    "upvotes": 29,
     "discussionId": "6ad2830360556d9547d94612",
     "projectPage": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
     "githubRepo": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
@@ -4089,12 +4832,12 @@
      "name": "JuliaKreutzerCohere"
     },
     "summary": "As LLMs expand their language coverage, evaluating how well they understand and represent diverse cultures becomes increasingly important. However, many benchmarks remain English-centric, with limited cultural coverage and a focus on factual knowledge over its application in real-world cultural contexts. We propose CulturalRiddles, a benchmark of original, culturally grounded riddles created entirely by humans through a participatory community effort, spanning 62 cultures (45 countries, 51 languages). These riddles are deeply rooted in their respective cultures and require abductive and compositional reasoning, alongside detailed factual and social knowledge, language skills, and an understanding of culturally specific associations. We benchmark 28 LLM configurations using both automatic and large-scale human evaluation. Even frontier models achieve at most 22% accuracy in some communities. We publicly release all artifacts alongside an open contribution process to expand the benchmark's linguistic and cultural coverage.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ad977283f2bb52eb8d6ea5e",
     "projectPage": "https://culturalriddles.ai/",
     "githubRepo": "https://github.com/Cohere-Labs-Community/CulturalRiddles",
     "githubRepoAddedBy": "user",
-    "githubStars": 1,
+    "githubStars": 4,
     "organization": {
      "_id": "660c1a2625be0029a984bf3a",
      "name": "CohereLabsCommunity",
@@ -4258,7 +5001,7 @@
      "name": "Jungang"
     },
     "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-    "upvotes": 67,
+    "upvotes": 256,
     "discussionId": "6ad83548efdc4c3bd8229f2d",
     "projectPage": "https://streameval.ai/",
     "githubRepo": "https://github.com/StreamEval/StreamEval",
@@ -4277,7 +5020,7 @@
      "omni-modal real-time interactive systems"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 129
+    "githubStars": 90
    },
    "publishedAt": "2026-10-19T20:00:00.000Z",
    "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
@@ -4377,7 +5120,7 @@
      "name": "CheeryLJH"
     },
     "summary": "Agent Skills improve LLM agents by making task knowledge reusable across sessions. Learning transferable Skills requires evidence about a procedure and its conditions of use, which a successful task attempt can leave untested. We introduce Socratic Skill Learning (SSL), which interleaves expert teaching with Student practice. An Educator guides investigation while the Student remains the sole environment operator and Skill author, able to question, test, and adapt advice. To test reuse beyond the learning task, we construct SkillTransferBench, with 35 task families and 408 executable cases, pairing public variation specifications with held-out evaluation in fresh solver sessions. On the main 22-family, 155-case cohort, Fixed-Window SSL reaches 0.801 utility, versus 0.723 without a Skill, 0.761 for adapted Trace2Skill (trajectory distillation), and 0.751 for adapted SKILL-KD (contrastive distillation). Across three model pairs on shared families, interleaved guidance outperforms expert authoring and post-hoc teaching. Process analysis links guidance to Student writing and package revision; a case study shows the Student testing and refining a proposed procedure for later reuse. As demand for new lessons falls, the cost of fixed-window review grows. Issue-Guided SSL tracks unresolved questions across Skill revisions to select and focus review, reaching 0.805 utility with 61.7% fewer Educator tokens and 16.9% fewer total acquisition tokens than Fixed-Window SSL on the main cohort.",
-    "upvotes": 31,
+    "upvotes": 32,
     "discussionId": "6acf7b3190585ab8267eea16",
     "githubRepo": "https://github.com/NJU-LINK/Socratic-Skill-Learning",
     "githubRepoAddedBy": "user",
@@ -4520,7 +5263,7 @@
      "LIBERO-PRO"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
+    "githubStars": 11,
     "organization": {
      "_id": "64f8a9c00590f3db14a59b8f",
      "name": "UCF-Ai-LLMs",
@@ -4715,7 +5458,7 @@
      "name": "crazyofapple"
     },
     "summary": "Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term deployment. While external memory systems attempt to bridge this gap, they mostly act as passive retrieval caches, evaluated primarily by whether they can recall stored facts or past interactions. Whether memory can drive genuine continual learning remains an open question. In this paper, we introduce Memory-Centric Continual Learning (MCCL), arguing that memory should be judged by whether it improves future actions, not merely what it retrieves. MCCL has three main parts. First, a three-axis taxonomy organizes memory by where state is stored (substrates), what form it takes (assets), and how it is managed (policies). This defines a two-loop lifecycle that updates memory state in an inner loop while refining management policies in an outer loop based on task feedback. Second, an evaluation protocol measures retention under interference, adaptation to change, and task transfer to isolate genuine behavioral gains from simple context expansion. Third, a memory scaling framework models how agent performance scales with experience, storage capacity, and compute budgets across non-parametric and parametric memory. Together, these components reframe agent memory from passive lookup to continuous learning, offering a principled route toward self-improving autonomous agents.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ad971303f2bb52eb8d6e9a9",
     "ai_summary": "Memory-Centric Continual Learning reframes agent memory as an active driver of behavioral improvement through a taxonomy of storage substrates, assets, and policies, a two-loop lifecycle, and scaling frameworks evaluated by retention, adaptation, and transfer.",
     "ai_keywords": [
@@ -4755,7 +5498,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 3,
+    "followerCount": 4,
     "isUserFollowing": false
    },
    "organization": {
@@ -5155,7 +5898,7 @@
      "name": "HELLORPG"
     },
     "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-    "upvotes": 63,
+    "upvotes": 84,
     "discussionId": "6ad96cfa3f2bb52eb8d6e95b",
     "projectPage": "https://hellorpg.github.io/looking-ahead/",
     "githubRepo": "https://github.com/TencentARC/Looking-Ahead",
@@ -5416,7 +6159,7 @@
      "name": "fuvty"
     },
     "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-    "upvotes": 84,
+    "upvotes": 87,
     "discussionId": "6ad96d683f2bb52eb8d6e967",
     "projectPage": "https://fuvty.github.io/thinking_yard_project_page/projects/akv/",
     "githubRepo": "https://github.com/thu-nics/AKV",
@@ -5736,7 +6479,7 @@
      "name": "jsantillana"
     },
     "summary": "Perimeter triage faces a latency/semantics trade-off: signature engines are fast and format-safe but blind to unseen attacks, while generative models are semantic but slow and produce unparseable output. In late 2026 a class of commercial System One decision models (TypeSafe Jev; Microsoft-Decision-1) began selling typed decision primitives - binary gates, closed-set choices, ordinal scores - as product APIs, with no academic treatment. We present VX-One: a small multi-head network (100K-10M parameters) whose outputs are these primitives - a calibrated gate, a choice over a closed candidate set that always includes an explicit unknown option, and an ordinal score, trained multi-task, temperature-calibrated per head (~0.7-1.7 ms p50 on CPU). We evaluate it on UNSW-NB15, CIC-IDS2017, EMBER2024 against calibrated XGBoost, Random-Forest, MLP, Kitsune, and measure a two-phase cascade (Suricata with 52,674 Emerging-Threats rules -> VX-One) over five days of CIC-IDS2017. Findings: (i) VX-One wins detection (AUROC/FPR@95%TPR) on UNSW-NB15 and under temporal drift on CIC-IDS2017 (0.711 vs 0.637), but XGBoost wins multi-class attribution on all three benchmarks; (ii) leave-one-family-out gate detects never-seen families on 9/9 UNSW folds yet drops below chance on CIC recon family, and abstention threshold transfers poorly across benchmarks; (iii) on payload-less reconstructions signature engines resolve ~0.1% of flows - gray zone ~99.9% of traffic, recovered by Phase 2 (combined recall >=0.978); (iv) calibration collapses under temporal drift (ECE 0.04->0.40) for every method while ranking partially survives. We provide a measured account of where typed calibrated decisions help perimeter triage, and where they fail.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ad96c863f2bb52eb8d6e951",
     "projectPage": "https://vectrayx.com",
     "githubRepo": "https://github.com/vectrayx/vx-one",
@@ -5978,7 +6721,7 @@
      "name": "Teaven"
     },
     "summary": "Agent harnesses have become a central component of modern agentic systems, shaping how models use tools, manage context, and coordinate long-horizon interaction. Realizing the benefits of these harnesses depends on how effectively the underlying model can make use of them, motivating reinforcement learning directly through the harness. However, existing approaches typically train through a single fixed harness, which can lead to specialization and limited transfer across harness configurations. To address this, we introduce Harness Scaling, a new scaling dimension for agentic RL that extends training from a single harness to diverse execution configurations. Concretely, we construct a factorized harness space, select a compact training subset with balanced factorial coverage, and organize cross-harness training to combine global coverage with controlled variation for the same task. Across multiple benchmarks, model scales, and RL algorithms, Harness Scaling consistently improves generalization to unseen white-box configurations. Moreover, models trained through structured white-box variation transfer effectively to unseen external black-box harnesses, outperforming models trained through a single complex black-box harness. These results establish harness diversity as a meaningful scaling dimension for agentic RL and highlight the importance of how this diversity is organized for cross-harness generalization.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6ad964513f2bb52eb8d6e90f",
     "githubRepo": "https://github.com/RUCAIBox/Harness-Scaling",
     "githubRepoAddedBy": "user",
@@ -6161,588 +6904,6 @@
     "name": "UIUC-CS",
     "fullname": "University of Illinois at Urbana-Champaign",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65448b21fcb96b8b48733729/ycqcXFayMTTD_KpE37067.jpeg"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.25519",
-    "authors": [
-     {
-      "_id": "6ad918f5f7563b9935e81547",
-      "name": "Mobina Kashaniyan",
-      "hidden": false
-     },
-     {
-      "_id": "6ad918f5f7563b9935e81548",
-      "name": "Ali Jannesari",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-18T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference",
-    "submittedOnDailyBy": {
-     "_id": "6798465e9f6d200ac8fcf717",
-     "avatarUrl": "/avatars/50ef6e81812c748f09a5c7c5bfa0d1c2.svg",
-     "isPro": false,
-     "fullname": "Mobina Kashaniyan",
-     "user": "iammobina",
-     "type": "user",
-     "name": "iammobina"
-    },
-    "summary": "Test-time scaling (TTS) improves large language model (LLM) reasoning by sampling multiple answers, but fixed sampling budgets ignore both query difficulty and the changing energy cost of inference under GPU contention. We measure up to a 4.1-fold increase in energy for the same four-sample query as GPU load rises. We present ATEST, a resource-aware TTS framework that jointly considers the expected value of additional samples and their current GPU cost. ATEST-Online, its default mode, requires no offline calibration: it incrementally generates samples, estimates the stability of the plurality answer, monitors live GPU conditions, and learns step energy cost online to decide when to stop. ATEST-Calibrated instead selects a per-query budget using offline accuracy and cost models, favoring deployments with stable loads. We evaluate both modes on four reasoning and question-answering datasets using Phi-3-mini on an NVIDIA A100 under controlled varying load, and test transfer to an NVIDIA L40S and Qwen2.5-3B. Across the four A100 datasets, ATEST-Online answers every query without exceeding the energy budget, while achieving the highest or statistically tied accuracy and reducing sampling as load increases. On GSM8K at high load, it achieves 60.0% accuracy with no deferrals, versus 44.0% accuracy and 42.4% deferrals for ATEST-Calibrated. Ablations show that online cost learning drives adaptation to load. Including offline profiling, ATEST-Online uses 42 times less GPU time and 48 times less energy than ATEST-Calibrated for the evaluated workload. Online control trades higher tail latency and lower throughput on short tasks for robustness under varying load; offline calibration remains competitive under stable conditions.",
-    "upvotes": 3,
-    "discussionId": "6ad918f6f7563b9935e81549",
-    "organization": {
-     "_id": "665ec627aee5bf751174cae1",
-     "name": "iastate",
-     "fullname": "Iowa State University",
-     "avatar": "https://www.gravatar.com/avatar/529296d8fe0078da8deb18b16f6443ad?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-10-17T20:00:00.000Z",
-   "title": "ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference",
-   "summary": "Test-time scaling (TTS) improves large language model (LLM) reasoning by sampling multiple answers, but fixed sampling budgets ignore both query difficulty and the changing energy cost of inference under GPU contention. We measure up to a 4.1-fold increase in energy for the same four-sample query as GPU load rises. We present ATEST, a resource-aware TTS framework that jointly considers the expected value of additional samples and their current GPU cost. ATEST-Online, its default mode, requires no offline calibration: it incrementally generates samples, estimates the stability of the plurality answer, monitors live GPU conditions, and learns step energy cost online to decide when to stop. ATEST-Calibrated instead selects a per-query budget using offline accuracy and cost models, favoring deployments with stable loads. We evaluate both modes on four reasoning and question-answering datasets using Phi-3-mini on an NVIDIA A100 under controlled varying load, and test transfer to an NVIDIA L40S and Qwen2.5-3B. Across the four A100 datasets, ATEST-Online answers every query without exceeding the energy budget, while achieving the highest or statistically tied accuracy and reducing sampling as load increases. On GSM8K at high load, it achieves 60.0% accuracy with no deferrals, versus 44.0% accuracy and 42.4% deferrals for ATEST-Calibrated. Ablations show that online cost learning drives adaptation to load. Including offline profiling, ATEST-Online uses 42 times less GPU time and 48 times less energy than ATEST-Calibrated for the evaluated workload. Online control trades higher tail latency and lower throughput on short tasks for robustness under varying load; offline calibration remains competitive under stable conditions.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.25519.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6798465e9f6d200ac8fcf717",
-    "avatarUrl": "/avatars/50ef6e81812c748f09a5c7c5bfa0d1c2.svg",
-    "fullname": "Mobina Kashaniyan",
-    "name": "iammobina",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "665ec627aee5bf751174cae1",
-    "name": "iastate",
-    "fullname": "Iowa State University",
-    "avatar": "https://www.gravatar.com/avatar/529296d8fe0078da8deb18b16f6443ad?d=retro&size=100"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.23010",
-    "authors": [
-     {
-      "_id": "6ad93133f7563b9935e81585",
-      "name": "Yiyuan Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6ad93133f7563b9935e81586",
-      "name": "Changliu Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad93133f7563b9935e81587",
-      "name": "Jiayuan Mao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-16T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "What Makes a Good Symbol for Hybrid Discrete-Continuous Planning?",
-    "submittedOnDailyBy": {
-     "_id": "68c77d107d3a655759641631",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/MJlat9vS2jkU7okYykC8h.png",
-     "isPro": false,
-     "fullname": "Yiyuan Pan",
-     "user": "YiyuanP",
-     "type": "user",
-     "name": "YiyuanP"
-    },
-    "summary": "The physical world has continuous state and action spaces, yet robot planning often benefits from hybrid discrete-continuous formulations that explicitly expose combinatorial structure, such as contact modes or discrete primitive actions. Existing methods typically rely on human-defined symbol sets or symbols derived from language supervision, without asking what makes a symbol computationally useful. In this paper, we take an inference-algorithm--centric view to define usefulness: a good symbol should expose the discrete commitments that simplify solving the original planning problem. We first introduce the concept of solver-sufficient symbolization by studying finite-horizon piecewise-affine systems, for which solver sufficiency can be precisely characterized, and develop a counterexample-guided algorithm for symbol invention. We then extend this principle to invent symbols for optimization objectives parameterized by general neural networks as energy functions, showing that solver-sufficient symbols can nevertheless be induced from their continuous optimization landscapes. Experiments on simulated and real-robot tasks show that the resulting symbols reduce solving cost while preserving solution quality, while also improving interpretability and steerability. Furthermore, our theoretical and algorithmic insights help explain why certain human-defined symbols are computationally useful.",
-    "upvotes": 2,
-    "discussionId": "6ad93133f7563b9935e81588",
-    "projectPage": "https://pyywill.github.io/good-symbols/",
-    "ai_summary": "Symbols for robot planning are invented by identifying discrete commitments that simplify solving continuous optimization problems, reducing cost while preserving quality.",
-    "ai_keywords": [
-     "piecewise-affine systems",
-     "solver-sufficient symbolization",
-     "counterexample-guided algorithm",
-     "neural networks",
-     "energy functions",
-     "optimization landscapes"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-15T20:00:00.000Z",
-   "title": "What Makes a Good Symbol for Hybrid Discrete-Continuous Planning?",
-   "summary": "The physical world has continuous state and action spaces, yet robot planning often benefits from hybrid discrete-continuous formulations that explicitly expose combinatorial structure, such as contact modes or discrete primitive actions. Existing methods typically rely on human-defined symbol sets or symbols derived from language supervision, without asking what makes a symbol computationally useful. In this paper, we take an inference-algorithm--centric view to define usefulness: a good symbol should expose the discrete commitments that simplify solving the original planning problem. We first introduce the concept of solver-sufficient symbolization by studying finite-horizon piecewise-affine systems, for which solver sufficiency can be precisely characterized, and develop a counterexample-guided algorithm for symbol invention. We then extend this principle to invent symbols for optimization objectives parameterized by general neural networks as energy functions, showing that solver-sufficient symbols can nevertheless be induced from their continuous optimization landscapes. Experiments on simulated and real-robot tasks show that the resulting symbols reduce solving cost while preserving solution quality, while also improving interpretability and steerability. Furthermore, our theoretical and algorithmic insights help explain why certain human-defined symbols are computationally useful.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.23010.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "68c77d107d3a655759641631",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/MJlat9vS2jkU7okYykC8h.png",
-    "fullname": "Yiyuan Pan",
-    "name": "YiyuanP",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2603.19233",
-    "authors": [
-     {
-      "_id": "6ad927b9f7563b9935e8156f",
-      "user": {
-       "_id": "66982313fd52271e0bb0e530",
-       "avatarUrl": "/avatars/02b8571bddb20602126240368b92892a.svg",
-       "isPro": true,
-       "fullname": "Bryce",
-       "user": "bag100",
-       "type": "user",
-       "name": "bag100"
-      },
-      "name": "Bryce Grant",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:06:08.862Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad927b9f7563b9935e81570",
-      "name": "Xijia Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ad927b9f7563b9935e81571",
-      "name": "Peng Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models",
-    "submittedOnDailyBy": {
-     "_id": "66982313fd52271e0bb0e530",
-     "avatarUrl": "/avatars/02b8571bddb20602126240368b92892a.svg",
-     "isPro": true,
-     "fullname": "Bryce",
-     "user": "bag100",
-     "type": "user",
-     "name": "bag100"
-    },
-    "summary": "A fine-tuned Vision-Language-Action (VLA) policy can easily place the alphabet soup in the basket on command, just as it saw during fine-tuning. However, if the basket is shifted five centimeters to the left, it drops the soup off the table. We developed an interpretability pipeline to investigate what such a policy is computing. Injecting task A's activations into the action expert while the policy looks at task B's scene makes pi0.5 execute task A's motor trajectory in 99.6\\% of episodes (n{=}1{,}968). The injected program is bound to absolute workspace coordinates and ignores the visible scene, which provides a mechanistic account of the perturbation brittleness that concurrent benchmarks report. The binding holds on a physical UR10e: directed replay redirects the commanded task in 26/26 rollouts in one direction and 18/26 in the other, with no-injection and random-direction controls at the floor, and once the source object is moved 10--15\\,cm the arm grasps and releases at the recorded coordinates in 50/50 trials, picking up the wrong block when one sits there and closing on empty air when none does. Applying the same interventions to six VLAs on LIBERO, MetaWorld, SimplerEnv, and ALOHA over 420{,}000+ rollouts yields three further findings: every architecture encodes the instruction, and four of the five weight it below vision whenever the scene alone identifies the goal; under the standard replacement write-back the SAE pooling that preserves behavior is architecture-specific (pi0.5 per-token, SmolVLA indifferent), and goal selection and motor generation separate into VLM and expert pathways wherever the two are distinguishable. We release Action Atlas (https://action-atlas.com), an interactive platform covering all 520+ trained SAEs, 79 identified concepts, and the scored UR10e rollouts. Code: https://github.com/CWRU-AISM/action-atlas",
-    "upvotes": 1,
-    "discussionId": "6ad927baf7563b9935e81572",
-    "projectPage": "https://cwru-aism.github.io/vla-interp-page/",
-    "githubRepo": "https://github.com/CWRU-AISM/action-atlas",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "A mechanistic interpretability study of vision-language-action policies reveals that motor programs are bound to absolute coordinates and ignores visual scene changes, with sparse autoencoder analysis separating instruction encoding and motor generation across architectures.",
-    "ai_keywords": [
-     "Vision-Language-Action",
-     "VLA",
-     "pi0.5",
-     "activations",
-     "action expert",
-     "sparse autoencoders",
-     "SAE",
-     "VLM",
-     "UR10e",
-     "LIBERO",
-     "MetaWorld",
-     "SimplerEnv",
-     "ALOHA"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 32
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models",
-   "summary": "A fine-tuned Vision-Language-Action (VLA) policy can easily place the alphabet soup in the basket on command, just as it saw during fine-tuning. However, if the basket is shifted five centimeters to the left, it drops the soup off the table. We developed an interpretability pipeline to investigate what such a policy is computing. Injecting task A's activations into the action expert while the policy looks at task B's scene makes pi0.5 execute task A's motor trajectory in 99.6\\% of episodes (n{=}1{,}968). The injected program is bound to absolute workspace coordinates and ignores the visible scene, which provides a mechanistic account of the perturbation brittleness that concurrent benchmarks report. The binding holds on a physical UR10e: directed replay redirects the commanded task in 26/26 rollouts in one direction and 18/26 in the other, with no-injection and random-direction controls at the floor, and once the source object is moved 10--15\\,cm the arm grasps and releases at the recorded coordinates in 50/50 trials, picking up the wrong block when one sits there and closing on empty air when none does. Applying the same interventions to six VLAs on LIBERO, MetaWorld, SimplerEnv, and ALOHA over 420{,}000+ rollouts yields three further findings: every architecture encodes the instruction, and four of the five weight it below vision whenever the scene alone identifies the goal; under the standard replacement write-back the SAE pooling that preserves behavior is architecture-specific (pi0.5 per-token, SmolVLA indifferent), and goal selection and motor generation separate into VLM and expert pathways wherever the two are distinguishable. We release Action Atlas (https://action-atlas.com), an interactive platform covering all 520+ trained SAEs, 79 identified concepts, and the scored UR10e rollouts. Code: https://github.com/CWRU-AISM/action-atlas",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2603.19233.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66982313fd52271e0bb0e530",
-    "avatarUrl": "/avatars/02b8571bddb20602126240368b92892a.svg",
-    "fullname": "Bryce",
-    "name": "bag100",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.25459",
-    "authors": [
-     {
-      "_id": "6ad6df16774b2a8cb5c7d96c",
-      "user": {
-       "_id": "666563313a64c70529d30b51",
-       "avatarUrl": "/avatars/f0d5504accc21364f4d89399c548edf4.svg",
-       "isPro": false,
-       "fullname": "Yong Wang",
-       "user": "Yong999",
-       "type": "user",
-       "name": "Yong999"
-      },
-      "name": "Yong Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-21T16:45:04.918Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6df16774b2a8cb5c7d96d",
-      "name": "Kecheng Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6df16774b2a8cb5c7d96e",
-      "name": "Xing Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6df16774b2a8cb5c7d96f",
-      "name": "Chao Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6df16774b2a8cb5c7d970",
-      "name": "Yujun Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6df16774b2a8cb5c7d971",
-      "name": "Shengze Cai",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-18T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
-    "submittedOnDailyBy": {
-     "_id": "666563313a64c70529d30b51",
-     "avatarUrl": "/avatars/f0d5504accc21364f4d89399c548edf4.svg",
-     "isPro": false,
-     "fullname": "Yong Wang",
-     "user": "Yong999",
-     "type": "user",
-     "name": "Yong999"
-    },
-    "summary": "Bimanual manipulation with dexterous hands has attracted growing attention in research on robotic action models. However, few studies have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we present BiDex-100, a simulation benchmark for bimanual dexterous manipulation that combines broad task coverage, multi-dimensional evaluation, and high-DoF hand embodiments. Concretely, the benchmark comprises 106 tasks organized along five capability axes: generalization, instruction following, limited demonstrations, long horizon, and memory. Each task is paired with an out-of-domain variant featuring controlled visual and spatial changes, allowing systematic assessment of robustness. In addition, the benchmark supports two embodiments and provides 8,080 success-validated teleoperated demonstrations, totaling 6.25 million frames. We evaluate seven recent Vision-Language-Action models under a unified protocol, establishing baselines for capability-specific performance, robustness, and data efficiency. The website is available at https://BiDex-100.github.io/BiDex-100/.",
-    "upvotes": 2,
-    "discussionId": "6ad6df16774b2a8cb5c7d972",
-    "projectPage": "https://bidex-100.github.io/BiDex-100",
-    "githubRepo": "https://github.com/robbyant-research/BiDex-100",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "BiDex-100 is a simulation benchmark for bimanual dexterous manipulation that evaluates vision-language-action models across diverse tasks, robustness variants, and demonstration scales.",
-    "ai_keywords": [
-     "Vision-Language-Action models",
-     "bimanual dexterous manipulation",
-     "high-DoF hand embodiments",
-     "out-of-domain variants",
-     "teleoperated demonstrations",
-     "data efficiency"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
-    "organization": {
-     "_id": "6a8eb8c2b938953de99e7939",
-     "name": "Robbyant-Research",
-     "fullname": "Robbyant Research",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67aeffda7330db26f93cd62f/sGSUfQbY1ezHjHO7mgSXL.png"
-    }
-   },
-   "publishedAt": "2026-10-17T20:00:00.000Z",
-   "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
-   "summary": "Bimanual manipulation with dexterous hands has attracted growing attention in research on robotic action models. However, few studies have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we present BiDex-100, a simulation benchmark for bimanual dexterous manipulation that combines broad task coverage, multi-dimensional evaluation, and high-DoF hand embodiments. Concretely, the benchmark comprises 106 tasks organized along five capability axes: generalization, instruction following, limited demonstrations, long horizon, and memory. Each task is paired with an out-of-domain variant featuring controlled visual and spatial changes, allowing systematic assessment of robustness. In addition, the benchmark supports two embodiments and provides 8,080 success-validated teleoperated demonstrations, totaling 6.25 million frames. We evaluate seven recent Vision-Language-Action models under a unified protocol, establishing baselines for capability-specific performance, robustness, and data efficiency. The website is available at https://BiDex-100.github.io/BiDex-100/.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.25459.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "666563313a64c70529d30b51",
-    "avatarUrl": "/avatars/f0d5504accc21364f4d89399c548edf4.svg",
-    "fullname": "Yong Wang",
-    "name": "Yong999",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6a8eb8c2b938953de99e7939",
-    "name": "Robbyant-Research",
-    "fullname": "Robbyant Research",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67aeffda7330db26f93cd62f/sGSUfQbY1ezHjHO7mgSXL.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.28069",
-    "authors": [
-     {
-      "_id": "6ad8ef74f7563b9935e81491",
-      "name": "Lingxiao Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ef74f7563b9935e81492",
-      "user": {
-       "_id": "6355473d525beaee688b7ba1",
-       "avatarUrl": "/avatars/1fb0d57ed5f1a9b872a1ada8b2973ffb.svg",
-       "isPro": false,
-       "fullname": "Wei Tao",
-       "user": "itaowe",
-       "type": "user",
-       "name": "itaowe"
-      },
-      "name": "Wei Tao",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T00:45:04.472Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ef74f7563b9935e81493",
-      "name": "Yiwen Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ef74f7563b9935e81494",
-      "name": "Lingfeng Bao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "Training the Whole Agent, Not Just the Model",
-    "submittedOnDailyBy": {
-     "_id": "6355473d525beaee688b7ba1",
-     "avatarUrl": "/avatars/1fb0d57ed5f1a9b872a1ada8b2973ffb.svg",
-     "isPro": false,
-     "fullname": "Wei Tao",
-     "user": "itaowe",
-     "type": "user",
-     "name": "itaowe"
-    },
-    "summary": "Training coding agents typically updates the policy while keeping the harness fixed. During training, trajectories reveal flawed repair strategies and interaction problems that vary across tasks and change as the policy learns. We introduce HarnessAdapt-RL, which trains the policy and adapts its harness during reinforcement learning. For flawed repair strategies, a frozen teacher generates task-specific mechanism-level skills. For interaction problems recurring across tasks, a separate teacher model evolves tools and hooks, keeping each change only if it improves the observed pass rate or the observed trainable rate without lowering either. The policy trains with the adapted harness, and its new trajectories guide further adaptation. With a 9B base model, HarnessAdapt-RL improves pass@1 over GRPO by 9.8, 12.6, and 6.4 percentage points on SWE-bench Verified, Multilingual, and Pro, and outperforms GRPO with the human-designed OpenHands harness. Gains from mechanism-level skills persist after their removal at evaluation. Re-evolving tools and hooks as the policy changes outperforms freezing early versions. Removing them at deployment, in contrast, costs up to 7.7 percentage points. Training therefore produces a model-harness pair: the trained policy and the evolved tools and hooks, with skills removed at deployment.",
-    "upvotes": 11,
-    "discussionId": "6ad8ef74f7563b9935e81495",
-    "githubRepo": "https://github.com/lingxiaotang/HarnessAdapt-RL",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "HarnessAdapt-RL jointly trains a coding policy and adapts its evaluation harness via mechanism-level skills and evolving tools, improving benchmark pass rates over fixed-harness reinforcement learning.",
-    "ai_keywords": [
-     "HarnessAdapt-RL",
-     "reinforcement learning",
-     "mechanism-level skills",
-     "cross-task interaction problems",
-     "evolving tools and hooks",
-     "pass rate",
-     "trainable rate",
-     "GRPO",
-     "SWE-bench"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
-    "organization": {
-     "_id": "66543b6e420092799d2f625c",
-     "name": "tencent",
-     "fullname": "Tencent",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "Training the Whole Agent, Not Just the Model",
-   "summary": "Training coding agents typically updates the policy while keeping the harness fixed. During training, trajectories reveal flawed repair strategies and interaction problems that vary across tasks and change as the policy learns. We introduce HarnessAdapt-RL, which trains the policy and adapts its harness during reinforcement learning. For flawed repair strategies, a frozen teacher generates task-specific mechanism-level skills. For interaction problems recurring across tasks, a separate teacher model evolves tools and hooks, keeping each change only if it improves the observed pass rate or the observed trainable rate without lowering either. The policy trains with the adapted harness, and its new trajectories guide further adaptation. With a 9B base model, HarnessAdapt-RL improves pass@1 over GRPO by 9.8, 12.6, and 6.4 percentage points on SWE-bench Verified, Multilingual, and Pro, and outperforms GRPO with the human-designed OpenHands harness. Gains from mechanism-level skills persist after their removal at evaluation. Re-evolving tools and hooks as the policy changes outperforms freezing early versions. Removing them at deployment, in contrast, costs up to 7.7 percentage points. Training therefore produces a model-harness pair: the trained policy and the evolved tools and hooks, with skills removed at deployment.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28069.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6355473d525beaee688b7ba1",
-    "avatarUrl": "/avatars/1fb0d57ed5f1a9b872a1ada8b2973ffb.svg",
-    "fullname": "Wei Tao",
-    "name": "itaowe",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 11,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66543b6e420092799d2f625c",
-    "name": "tencent",
-    "fullname": "Tencent",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.24519",
-    "authors": [
-     {
-      "_id": "6ad8ec89f7563b9935e8147f",
-      "name": "Xinye Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ec89f7563b9935e81480",
-      "name": "Zhenyang Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ec89f7563b9935e81481",
-      "name": "Yuxuan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8ec89f7563b9935e81482",
-      "name": "Yuanyuan Lei",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-17T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "Axiomatic World Modeling for Physics Reasoning",
-    "submittedOnDailyBy": {
-     "_id": "667d6a79a5d952954cdb07f3",
-     "avatarUrl": "/avatars/0da0fdf74be6eeabbfe3622fbf38a2ed.svg",
-     "isPro": true,
-     "fullname": "Xinye Yang",
-     "user": "AsherYang",
-     "type": "user",
-     "name": "AsherYang"
-    },
-    "summary": "Recent research-level physics-reasoning benchmarks for LLMs reveal a failure mode that lies not in knowledge or execution, but in modeling the world being reasoned about. Models often silently alter given quantities, fabricate laws, or inject unstated assumptions to force a problem into familiar patterns, and then reason inside this corrupted world. We define this premise-level divergence as modeling drift: the gap between a model's internal axiomatic world model (AWM) and the true physical world specified in the problem. Although RLVR and PRM have yielded substantial gains in mathematics and code, their reward shapes do not directly supervise world modeling in axiomatic domains such as physics. We propose Reinforcement Learning with Axiomatic World Modeling (RLAWM), which optimizes the policy by penalizing divergence between its inferred axiomatic world model and the true physics world. RLAWM probes physics reasoning at two hierarchical levels (modeling and solving), each scored by a physically grounded reward. The modeling reward targets abstract knowledge formulation, evaluating whether the model captures the true axiomatic world before attempting calculation. The solving reward targets instantiated knowledge reasoning, checking whether the model's concrete derivation remains consistent with the axiomatic world. This two-level structure separates what world the model believes it is reasoning in from how it reasons within that world. The framework operates exclusively during training, with no extra cost during inference. RLAWM improves performance by up to +12.2 points on PhysReason and +5.2 on PHYSICS over the baseline. It also generalizes zero-shot across difficulty, source, and domain, with a 2.45x gain and +10 points over the strongest baseline on olympiad-level physics and math.",
-    "upvotes": 2,
-    "discussionId": "6ad8ec8af7563b9935e81483",
-    "projectPage": "https://lei-nlp-lab.github.io/physics_reasoning_neurips_2026/",
-    "ai_summary": "RLAWM improves physics reasoning by penalizing divergence between a model's internal world model and true physical axioms through hierarchical modeling and solving rewards.",
-    "ai_keywords": [
-     "modeling drift",
-     "axiomatic world model",
-     "RLVR",
-     "PRM",
-     "RLAWM",
-     "reinforcement learning with axiomatic world modeling",
-     "modeling reward",
-     "solving reward"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-16T20:00:00.000Z",
-   "title": "Axiomatic World Modeling for Physics Reasoning",
-   "summary": "Recent research-level physics-reasoning benchmarks for LLMs reveal a failure mode that lies not in knowledge or execution, but in modeling the world being reasoned about. Models often silently alter given quantities, fabricate laws, or inject unstated assumptions to force a problem into familiar patterns, and then reason inside this corrupted world. We define this premise-level divergence as modeling drift: the gap between a model's internal axiomatic world model (AWM) and the true physical world specified in the problem. Although RLVR and PRM have yielded substantial gains in mathematics and code, their reward shapes do not directly supervise world modeling in axiomatic domains such as physics. We propose Reinforcement Learning with Axiomatic World Modeling (RLAWM), which optimizes the policy by penalizing divergence between its inferred axiomatic world model and the true physics world. RLAWM probes physics reasoning at two hierarchical levels (modeling and solving), each scored by a physically grounded reward. The modeling reward targets abstract knowledge formulation, evaluating whether the model captures the true axiomatic world before attempting calculation. The solving reward targets instantiated knowledge reasoning, checking whether the model's concrete derivation remains consistent with the axiomatic world. This two-level structure separates what world the model believes it is reasoning in from how it reasons within that world. The framework operates exclusively during training, with no extra cost during inference. RLAWM improves performance by up to +12.2 points on PhysReason and +5.2 on PHYSICS over the baseline. It also generalizes zero-shot across difficulty, source, and domain, with a 2.45x gain and +10 points over the strongest baseline on olympiad-level physics and math.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24519.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "667d6a79a5d952954cdb07f3",
-    "avatarUrl": "/avatars/0da0fdf74be6eeabbfe3622fbf38a2ed.svg",
-    "fullname": "Xinye Yang",
-    "name": "AsherYang",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.27914",
-    "authors": [
-     {
-      "_id": "6ad82fe9efdc4c3bd8229ef2",
-      "name": "Yijun Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82fe9efdc4c3bd8229ef3",
-      "name": "Delong Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82fe9efdc4c3bd8229ef4",
-      "name": "Xianming Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82fe9efdc4c3bd8229ef5",
-      "name": "Kai Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad82fe9efdc4c3bd8229ef6",
-      "name": "Pascale Fung",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/630491107424d937fa3258be/X4b9QDBRoMiCYDNb9U2IN.mp4"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-21T00:00:00.000Z",
-    "title": "World Models with Configurable Perception",
-    "submittedOnDailyBy": {
-     "_id": "630491107424d937fa3258be",
-     "avatarUrl": "/avatars/b8bd81bc8544674ee26b78702afdb87c.svg",
-     "isPro": true,
-     "fullname": "Delong Chen",
-     "user": "chendelong",
-     "type": "user",
-     "name": "chendelong"
-    },
-    "summary": "Real-world observations are noisy and often contain excessive task-irrelevant information. Effective world modeling and planning need to abstract observations into world state representations while filtering out irrelevant information. However, encoders in existing world models are typically non-adaptive, leading to state representations that are easily distracted by task-irrelevant information. As a result, the model may not selectively filter observations to cater to different task demands. To address this problem, we introduce ConfigWM, which realizes configurable perception through task-conditioned state extraction. Given a language description of the task at hand, ConfigWM uses it as a configuration signal to steer how visual embeddings are mapped into a task-specific state space, selectively preserving information relevant to the current task while suppressing task-irrelevant variations. Action-conditioned dynamics are then learned in this task-specific state space for planning. We evaluate ConfigWM in environments with increasing levels of distraction. While existing methods exhibit substantial declines in planning success rate as the environments become increasingly noisy, ConfigWM remains comparatively stable and outperforms the strongest competing method by 22.3% on average across diverse environments. Consistent gains in physical-quantity probing (+0.365 Pearson r) and distracted-to-clean retrieval (+75.5%) further indicate that ConfigWM learns states that preserve task-relevant information while remaining robust to distractors, supporting reliable world modeling and planning in noisy worlds. Project Page: https://configwm.github.io",
-    "upvotes": 2,
-    "discussionId": "6ad82feaefdc4c3bd8229ef7",
-    "projectPage": "https://configwm.github.io/",
-    "githubRepo": "https://github.com/yijunshens/ConfigWM",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "ConfigWM uses task descriptions to steer visual embeddings into task-specific state spaces, filtering irrelevant noise for robust planning.",
-    "ai_keywords": [
-     "world modeling",
-     "state representations",
-     "task-conditioned state extraction",
-     "configurable perception",
-     "action-conditioned dynamics",
-     "planning"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "World Models with Configurable Perception",
-   "summary": "Real-world observations are noisy and often contain excessive task-irrelevant information. Effective world modeling and planning need to abstract observations into world state representations while filtering out irrelevant information. However, encoders in existing world models are typically non-adaptive, leading to state representations that are easily distracted by task-irrelevant information. As a result, the model may not selectively filter observations to cater to different task demands. To address this problem, we introduce ConfigWM, which realizes configurable perception through task-conditioned state extraction. Given a language description of the task at hand, ConfigWM uses it as a configuration signal to steer how visual embeddings are mapped into a task-specific state space, selectively preserving information relevant to the current task while suppressing task-irrelevant variations. Action-conditioned dynamics are then learned in this task-specific state space for planning. We evaluate ConfigWM in environments with increasing levels of distraction. While existing methods exhibit substantial declines in planning success rate as the environments become increasingly noisy, ConfigWM remains comparatively stable and outperforms the strongest competing method by 22.3% on average across diverse environments. Consistent gains in physical-quantity probing (+0.365 Pearson r) and distracted-to-clean retrieval (+75.5%) further indicate that ConfigWM learns states that preserve task-relevant information while remaining robust to distractors, supporting reliable world modeling and planning in noisy worlds. Project Page: https://configwm.github.io",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/630491107424d937fa3258be/X4b9QDBRoMiCYDNb9U2IN.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27914.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "630491107424d937fa3258be",
-    "avatarUrl": "/avatars/b8bd81bc8544674ee26b78702afdb87c.svg",
-    "fullname": "Delong Chen",
-    "name": "chendelong",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 22,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": false
   }
