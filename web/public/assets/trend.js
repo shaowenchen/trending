@@ -3425,11 +3425,60 @@ function wireMobileIndex() {
   });
 }
 
+/**
+ * 一级分类的折叠状态（2026-10-22）：localStorage 里一组 topic slug。
+ * 折叠是读者自己的偏好，刷新后应当保持 —— 存 localStorage
+ * （sessionStorage 关掉浏览器就丢，"我明明折起来了"会反复失效）。
+ */
+const IDX_COLLAPSE_KEY = 'trend-idx-collapsed';
+
+function readCollapsedTopics() {
+  try {
+    const v = JSON.parse(localStorage.getItem(IDX_COLLAPSE_KEY) || '[]');
+    return new Set(Array.isArray(v) ? v.filter((x) => typeof x === 'string') : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function writeCollapsedTopics(set) {
+  try {
+    localStorage.setItem(IDX_COLLAPSE_KEY, JSON.stringify([...set]));
+  } catch {
+    /* 存不进就算了：本次点开仍然生效，只是刷新后不保持 */
+  }
+}
+
+/** 把折叠状态落到 DOM（class 控制显隐，aria-expanded 供读屏器） */
+function applyCollapse() {
+  const set = readCollapsedTopics();
+  for (const g of document.querySelectorAll('.idx-group[data-topic]')) {
+    const collapsed = set.has(g.getAttribute('data-topic'));
+    g.classList.toggle('collapsed', collapsed);
+    const btn = g.querySelector('[data-idx-toggle]');
+    if (btn) btn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+  }
+}
+
 function wireFilters() {
   // ★ 手机折叠索引（≤560px，见 site.css 同名块）：39 个榜片横滚一屏只见 2 个，
   // 改为「当前榜按钮 + 展开面板」。按钮与交互在这里注入；CSS 在桌面端把它整个
   // display:none，所以宽屏行为完全不变。
   wireMobileIndex();
+
+  // 一级分类折叠：先落一次状态（刷新后保持），再绑定组头点击
+  applyCollapse();
+  document.addEventListener('click', (e) => {
+    const head = e.target.closest?.('[data-idx-toggle]');
+    if (!head) return;
+    const group = head.closest('.idx-group');
+    const topic = group?.getAttribute('data-topic');
+    if (!topic) return;
+    const set = readCollapsedTopics();
+    if (set.has(topic)) set.delete(topic); else set.add(topic);
+    writeCollapsedTopics(set);
+    applyCollapse();
+  });
 
   // ★ 绑在 `document` 而不是 `panelsRoot`：**索引条是 `#panels` 的兄弟**（构建期落在
   //   它前面），不是它的子节点 —— 绑在 `panelsRoot` 上时，索引条里的榜片点下去

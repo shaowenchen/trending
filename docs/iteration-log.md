@@ -2,6 +2,18 @@
 
 > 约定：每个会话/回合把进度落到这里，重启后按文件接上，不依赖会话上下文。
 
+## 2026-10-22 · 一级分类支持点击折叠
+
+- `nav.js`：组头 `.idx-group-head` 从 div 改为 `<button data-idx-toggle aria-expanded>`，
+  组上加 `data-topic`（折叠状态的键）；组名 span 的 HTML 保持不变（测试按它断言）。
+- `trend.js`：`trend-idx-collapsed` 存 localStorage（刷新保持）；`applyCollapse()`
+  同步 class 与 aria-expanded；document 上委托点击切换。
+- `site.css`：`.idx-group.collapsed .idx-group-items { display:none }`；竖排形态
+  组头带折叠箭头（右转/下转）；561–1023 横滑条里组头 `pointer-events:none`、
+  不出箭头（横条里折叠没有意义）。
+- 验证：PC 点击收起/刷新保持/再点展开、localStorage 同步；手机 390 展开面板里
+  折叠"中文热榜"生效（15 个榜片收起）；800px 横滑条组头不可点。
+
 ## 2026-10-22 · dev 历史压成单提交 + README 与 master 对齐 + 提交规范
 
 - dev 的 README 改成与 master 完全相同（`# trending`）。**

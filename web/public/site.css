@@ -445,8 +445,45 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
    ★ 窄屏布局里这个包装层是 `display: contents`：组名仍按原几何直接参与
    `.idx-group` 的 flex（62px 列宽的对齐线不变），计数不显示 —— 横滑条里
    多一个数字纯属噪音。计数只在宽屏左列（≥1024）出现，见文件末尾。 */
+/* ── 一级分类可折叠（2026-10-22）──
+ * 组头是按钮（点一下折起这一类）。折叠状态由 trend.js 存 localStorage，
+ * 这里只负责视觉：.collapsed 时隐藏组内榜片。
+ * ★ 折叠只在"竖排"的两种形态生效（PC 左列、手机展开面板）；561–1023 的
+ *   横滑条里组头是 display:contents 且 pointer-events:none —— 横条里折起来
+ *   只会剩一个孤零零的组名，没有意义。 */
+.idx-group.collapsed .idx-group-items { display: none; }
 .idx-group-head { display: contents; }
 .idx-group-n { display: none; }
+/* 竖排形态下组头是一个可点的行：撑满整行、hover 提亮 */
+.idx-group-head {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+}
+.idx-group-head:hover .idx-group-label { color: var(--ink); }
+/* 折叠箭头（竖排形态） */
+.idx-group-head::after {
+  content: '';
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-left: auto;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .15s ease;
+  opacity: .55;
+}
+.idx-group.collapsed .idx-group-head::after { transform: rotate(-45deg) translate(-1px, 1px); }
+@media (min-width: 561px) and (max-width: 1023px) {
+  /* 横滑条：组头不参与折叠（display:contents 时也不出箭头） */
+  .idx-group-head { pointer-events: none; }
+  .idx-group-head::after { display: none; }
+}
 .idx-group-label {
   flex: none;
   width: var(--idx-label-w);
@@ -1172,6 +1209,7 @@ a.li:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   }
   .board-index.idx-open .idx-groups { display: flex; }
   .idx-group { flex: none; }
+  .idx-group-head { display: flex; align-items: baseline; gap: 8px; }
   .idx-group-items {
     display: flex;
     flex-wrap: wrap;
@@ -1439,6 +1477,7 @@ a.li:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     display: flex;
     align-items: baseline;
     gap: 6px;
+    border-radius: 6px;
   }
   .idx-group-n {
     display: inline;

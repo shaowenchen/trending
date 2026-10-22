@@ -232,12 +232,15 @@ export function renderIndex(lang) {
     // 组名旁一个**榜单数**（2026-10-20 晚）：扫左列时"哪类有多少榜"一眼可读。
     // ★ 计数是**推导**的（`boardsWithTag(topic).length`），不手写 —— 加榜后自己变。
     // 组名 span 的内容保持只有主题名（site.test.js 按它断言），数字放兄弟元素。
+    // 组头是**按钮**（2026-10-22）：点一下折叠/展开这一类的榜。
+    // 折叠状态由 trend.js 记在 localStorage（刷新后保持），aria-expanded 同步。
     const head =
-      `<div class="idx-group-head"><span class="idx-group-label">${escHtml(tagLabel(topic, lang))}` +
-      `</span><span class="idx-group-n">${boards.length}</span></div>`;
+      `<button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true">` +
+      `<span class="idx-group-label">${escHtml(tagLabel(topic, lang))}</span>` +
+      `<span class="idx-group-n">${boards.length}</span></button>`;
     // 组名同时是这一组的可访问名称（`role="group"`），读屏器会把"微博热搜"
     // 念成"中文热榜 组里的 微博热搜"。
-    return `<div class="idx-group" role="group" aria-label="${escHtml(tagLabel(topic, lang))}">
+    return `<div class="idx-group" role="group" data-topic="${escHtml(topic)}" aria-label="${escHtml(tagLabel(topic, lang))}">
       ${head}
       <div class="idx-group-items">${chips}</div>
     </div>`;
