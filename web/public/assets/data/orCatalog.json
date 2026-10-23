@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-10-23T01:15:57.522Z",
+ "fetchedAt": "2026-10-23T03:31:06.860Z",
  "payload": {
   "data": [
    {
@@ -60,11 +60,11 @@
    {
     "id": "minimax/minimax-m3.1-flash",
     "canonical_slug": "minimax/minimax-m3.1-flash-20261019",
-    "hugging_face_id": null,
+    "hugging_face_id": "MiniMaxAI/MiniMax-M3.1-Flash",
     "name": "MiniMax: MiniMax M3.1 Flash",
     "created": 1792379569,
     "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex,...",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "architecture": {
      "modality": "text+image+video->text",
      "input_modalities": [
@@ -84,20 +84,31 @@
      "input_cache_read": "0.000000015"
     },
     "top_provider": {
-     "context_length": 1000000,
+     "context_length": 1048576,
      "max_completion_tokens": 524288,
      "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
+     "frequency_penalty",
      "include_reasoning",
+     "logit_bias",
+     "logprobs",
      "max_tokens",
+     "min_p",
+     "presence_penalty",
      "reasoning",
      "reasoning_effort",
+     "repetition_penalty",
      "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
+     "top_k",
+     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {},
@@ -8938,13 +8949,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000079",
-     "completion": "0.0000014",
-     "input_cache_read": "0.000000078"
+     "prompt": "0.0000007",
+     "completion": "0.0000022",
+     "input_cache_read": "0.00000013"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 943718,
+     "max_completion_tokens": 262144,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -9257,13 +9268,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000004",
-     "completion": "0.00000135",
-     "input_cache_read": "0.000000018"
+     "prompt": "0.0000002",
+     "completion": "0.0000025",
+     "input_cache_read": "0.00000009"
     },
     "top_provider": {
      "context_length": 262144,
-     "max_completion_tokens": 65536,
+     "max_completion_tokens": 235929,
      "is_moderated": false
     },
     "per_request_limits": null,
