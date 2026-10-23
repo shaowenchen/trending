@@ -1,7 +1,7 @@
 {
  "key": "orTrends",
  "name": "orTrends",
- "fetchedAt": "2026-10-23T17:01:53.031Z",
+ "fetchedAt": "2026-10-23T19:15:59.657Z",
  "payload": [
   {
    "data": {
@@ -4414,37 +4414,37 @@
      }
     },
     "videoRequests": {
-     "black-forest-labs/flux-3-video-20260804": 1517,
-     "heygen/avatar-iv-20260625": 12050,
-     "bytedance/seedance-2.0-fast-20260414": 19522,
-     "alibaba/happyhorse-1.1-20260624": 3029,
-     "minimax/hailuo-03-20260730": 9491,
-     "alibaba/wan-3.0-20260824": 72411,
+     "bytedance/seedance-1-5-pro-20260320": 12667,
+     "kwaivgi/kling-v3.0-std-20260429": 10895,
      "alibaba/wan-3.0-prime-20260827": 4832,
      "alibaba/wan-2.6-20260327": 699,
-     "alibaba/happyhorse-1.0-20260624": 265,
-     "minimax/hailuo-3-max-20260901": 8979,
-     "runway/gen-4.5-20260729": 597,
-     "bytedance/seedance-2.0-mini-20260811": 9599,
-     "google/veo-3.1-lite-20260331": 49940,
-     "google/veo-3.1-20260320": 6776,
-     "runway/aleph-2-20260729": 594,
-     "kwaivgi/kling-v3.0-pro-20260429": 10656,
-     "x-ai/grok-imagine-video-20260512": 8308,
-     "bytedance/seedance-1-5-pro-20260320": 12667,
+     "bytedance/seedance-2.0-fast-20260414": 19522,
      "bytedance/seedance-2.5-20260807": 31795,
-     "heygen/heygen-video-1-20260930": 64297,
-     "kwaivgi/kling-v3.0-std-20260429": 10895,
-     "google/veo-3.1-fast-20260320": 15198,
-     "x-ai/grok-imagine-video-1.5-20260719": 7187,
+     "alibaba/wan-3.0-20260824": 72411,
      "bytedance/seedance-2.0-20260414": 18156,
+     "google/veo-3.1-fast-20260320": 15198,
+     "alibaba/happyhorse-1.0-20260624": 265,
      "alibaba/wan-2.7-20260414": 2454,
-     "kwaivgi/kling-video-o1-20260420": 1063,
      "minimax/hailuo-2.3-20260420": 559,
+     "bytedance/seedance-2.0-mini-20260811": 9599,
      "black-forest-labs/flux-video-edit-20260910": 2306,
-     "x-ai/grok-imagine-video-1.5-lite-20261001": 26072
+     "x-ai/grok-imagine-video-1.5-lite-20261001": 26072,
+     "google/veo-3.1-lite-20260331": 49940,
+     "heygen/avatar-iv-20260625": 12050,
+     "google/veo-3.1-20260320": 6776,
+     "alibaba/happyhorse-1.1-20260624": 3029,
+     "heygen/heygen-video-1-20260930": 64297,
+     "black-forest-labs/flux-3-video-20260804": 1517,
+     "minimax/hailuo-3-max-20260901": 8979,
+     "x-ai/grok-imagine-video-20260512": 8308,
+     "minimax/hailuo-03-20260730": 9491,
+     "x-ai/grok-imagine-video-1.5-20260719": 7187,
+     "kwaivgi/kling-v3.0-pro-20260429": 10656,
+     "runway/gen-4.5-20260729": 597,
+     "kwaivgi/kling-video-o1-20260420": 1063,
+     "runway/aleph-2-20260729": 594
     },
-    "generatedAt": "2026-10-23T16:53:48.782Z",
+    "generatedAt": "2026-10-23T18:57:32.361Z",
     "routerTokens": {
      "openrouter/auto": 791184433896,
      "~deepseek/deepseek-flash-latest": 1601361279836,
@@ -4480,6 +4480,72 @@
   },
   {
    "data": [
+    {
+     "id": "moonshotai/kimi-k3.1-pro",
+     "canonical_slug": "moonshotai/kimi-k3.1-pro-20261023",
+     "hugging_face_id": null,
+     "name": "MoonshotAI: Kimi K3.1 Pro",
+     "created": 1792778188,
+     "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, 3D...",
+     "context_length": 1048576,
+     "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+       "text",
+       "image",
+       "video"
+      ],
+      "output_modalities": [
+       "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+     },
+     "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "input_cache_read": "0.0000002"
+     },
+     "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 943718,
+      "is_moderated": false
+     },
+     "per_request_limits": null,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools"
+     ],
+     "default_parameters": {
+      "top_p": 0.95
+     },
+     "supported_voices": null,
+     "knowledge_cutoff": null,
+     "expiration_date": null,
+     "links": {
+      "details": "/api/v1/models/moonshotai/kimi-k3.1-pro-20261023/endpoints"
+     },
+     "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+       "max",
+       "high",
+       "low",
+       "none"
+      ],
+      "default_effort": "max"
+     }
+    },
     {
      "id": "recursive/flint-v1.0:free",
      "canonical_slug": "recursive/flint-v1.0-20261021",
@@ -10015,9 +10081,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.000000019",
-      "completion": "0.0000006",
-      "input_cache_read": "0.000000002"
+      "prompt": "0.00000007",
+      "completion": "0.0000005",
+      "input_cache_read": "0.000000008"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -17536,7 +17602,7 @@
      },
      "pricing": {
       "prompt": "0.000000239",
-      "completion": "0.000011936",
+      "completion": "0.0000108",
       "input_cache_read": "0.00000021"
      },
      "top_provider": {
@@ -24930,7 +24996,7 @@
      },
      "pricing": {
       "prompt": "0.000000238",
-      "completion": "0.000016",
+      "completion": "0.000024",
       "input_cache_read": "0.000000228"
      },
      "top_provider": {
@@ -26074,9 +26140,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.000000864954",
-      "completion": "0.000001729908",
-      "input_cache_read": "0.0000000720795"
+      "prompt": "0.000000794136",
+      "completion": "0.000001588272",
+      "input_cache_read": "0.000000066178"
      },
      "top_provider": {
       "context_length": 1024000,
@@ -27540,9 +27606,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.00000009",
-      "completion": "0.0000003",
-      "input_cache_read": "0.00000005"
+      "prompt": "0.0000000675",
+      "completion": "0.000000225",
+      "input_cache_read": "0.0000000375"
      },
      "top_provider": {
       "context_length": 262144,
@@ -49873,7 +49939,7 @@
      }
     }
    ],
-   "total_count": 468,
+   "total_count": 469,
    "links": {
     "next": null
    }
