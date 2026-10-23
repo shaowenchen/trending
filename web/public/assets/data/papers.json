@@ -1,8 +1,185 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-23T21:30:54.905Z",
+ "fetchedAt": "2026-10-23T23:45:59.974Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.25835",
+    "authors": [
+     {
+      "_id": "6adbe276121a70fc68345927",
+      "name": "Mohsen Fayyaz",
+      "hidden": false
+     },
+     {
+      "_id": "6adbe276121a70fc68345928",
+      "name": "Ali Modarressi",
+      "hidden": false
+     },
+     {
+      "_id": "6adbe276121a70fc68345929",
+      "name": "Daniel Israel",
+      "hidden": false
+     },
+     {
+      "_id": "6adbe276121a70fc6834592a",
+      "name": "Lucas Bandarkar",
+      "hidden": false
+     },
+     {
+      "_id": "6adbe276121a70fc6834592b",
+      "name": "Nanyun Peng",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-19T05:47:58.000Z",
+    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
+    "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
+    "submittedOnDailyBy": {
+     "_id": "60465ecd4f0c980fda768da7",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1648301912044-60465ecd4f0c980fda768da7.jpeg",
+     "isPro": false,
+     "fullname": "Mohsen Fayyaz",
+     "user": "mohsenfayyaz",
+     "type": "user",
+     "name": "mohsenfayyaz"
+    },
+    "summary": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
+    "upvotes": 1,
+    "discussionId": "6adbe277121a70fc6834592c",
+    "ai_summary": "Diffusion language models spend more computation on novel, rare, or incorrect outputs, and decoding speed can improve inference efficiency and reliability.",
+    "ai_keywords": [
+     "diffusion language models",
+     "forward passes",
+     "token generation",
+     "open-ended writing",
+     "DiffusionGemma",
+     "multilingual generation",
+     "tokenized languages",
+     "decoding speed",
+     "majority voting"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "60b492a78e9589ce25930346",
+     "name": "uclanlp",
+     "fullname": "UCLA NLP",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1622446751930-5ec0135ded25d76864d553f1.png"
+    }
+   },
+   "publishedAt": "2026-10-19T01:47:58.000Z",
+   "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
+   "summary": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.25835.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "60465ecd4f0c980fda768da7",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1648301912044-60465ecd4f0c980fda768da7.jpeg",
+    "fullname": "Mohsen Fayyaz",
+    "name": "mohsenfayyaz",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 13,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "60b492a78e9589ce25930346",
+    "name": "uclanlp",
+    "fullname": "UCLA NLP",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1622446751930-5ec0135ded25d76864d553f1.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.31198",
+    "authors": [
+     {
+      "_id": "6adb372c121a70fc683456f0",
+      "name": "Ofek Avivi",
+      "hidden": false
+     },
+     {
+      "_id": "6adb372c121a70fc683456f1",
+      "user": {
+       "_id": "67b9e1ba9734000097f005e5",
+       "avatarUrl": "/avatars/5c9969abe1ae7818a30c3936e9c662e8.svg",
+       "isPro": false,
+       "fullname": "Eliron Rahimi",
+       "user": "ElironRahimi",
+       "type": "user",
+       "name": "ElironRahimi"
+      },
+      "name": "Eliron Rahimi",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T16:45:04.599Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adb372c121a70fc683456f2",
+      "name": "Avi Mendelson",
+      "hidden": false
+     },
+     {
+      "_id": "6adb372c121a70fc683456f3",
+      "name": "Chaim Baskin",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
+    "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
+    "submittedOnDailyBy": {
+     "_id": "67b9e1ba9734000097f005e5",
+     "avatarUrl": "/avatars/5c9969abe1ae7818a30c3936e9c662e8.svg",
+     "isPro": false,
+     "fullname": "Eliron Rahimi",
+     "user": "ElironRahimi",
+     "type": "user",
+     "name": "ElironRahimi"
+    },
+    "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
+    "upvotes": 4,
+    "discussionId": "6adb372d121a70fc683456f4",
+    "projectPage": "https://t2quant.ofekavivi.com/",
+    "githubRepo": "https://github.com/OfekAvivi/T2Quant",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "T2Quant improves diffusion language model quantization by dynamically allocating activation precision across denoising steps based on predicted task- and time-dependent sensitivity.",
+    "ai_keywords": [
+     "Diffusion Language Models",
+     "quantization",
+     "mixed-precision quantization",
+     "denoising process",
+     "activation precision",
+     "label-free sensitivity signal"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 3
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
+   "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31198.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67b9e1ba9734000097f005e5",
+    "avatarUrl": "/avatars/5c9969abe1ae7818a30c3936e9c662e8.svg",
+    "fullname": "Eliron Rahimi",
+    "name": "ElironRahimi",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.24385",
@@ -678,7 +855,7 @@
      "name": "yimingz"
     },
     "summary": "Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera trajectories for dynamic 3D environments. To generate these trajectories, a Director agent constructs executable camera plans by composing high-level motions from concurrent atomic operations that jointly control translation, rotation, and framing. The Director is supported by three specialized agents: an Interpreter that extracts scene-grounded cinematographic intent, a Scout that selects initial viewpoints, and a Critic that evaluates rendered results and provides visual feedback for iterative plan refinement. We also introduce CinemaBench, comprising 150 Blender scenes from self-created and licensed sources, with five camera instructions per scene for 750 text-directed tasks and 60 reference videos associated with a subset of scenes. CinemaBench supports evaluation of both text-directed camera generation and video reference-directed camera generation. Across a diverse set of evaluated baselines, FilmFlow achieves the strongest benchmark performance and the highest user preference, demonstrating effective spatial reasoning, temporal coordination, and visual composition for executable 3D cinematography.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6adb63b1121a70fc683457da",
     "projectPage": "https://visionary-laboratory.github.io/Filmflow/",
     "ai_summary": "FilmFlow is an agentic framework that translates natural-language or video instructions into executable camera trajectories for 3D scenes using specialized director, interpreter, scout, and critic agents, evaluated on the CinemaBench dataset.",
@@ -4426,7 +4603,7 @@
      "name": "Yu2020"
     },
     "summary": "Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse sources, modalities, and heterogeneous formats, often involving complex interaction mechanisms that require agents to autonomously search for, access, and integrate relevant evidence during execution. To address this gap, we introduce the OpenDS task, designed to evaluate agents' ability to perform multi-step deep search in the live, open Web. This task requires agents to autonomously explore the real Web, discover and connect relevant evidence from multiple independent sources through Web search, browser interaction, and evidence processing, and ultimately determine a unique factual answer. Building on this task formulation, we construct OpenDS-World, a benchmark comprising 200 challenging tasks spanning diverse information modalities, heterogeneous file formats, and interactive access requirements, with independent human verification to ensure evidence validity and answer uniqueness. We evaluate 12 frontier models under a unified tool environment and execution protocol. The best-performing model achieves 39.0% accuracy, while human evaluation across 1,000 independent attempts yields 21.1% accuracy. Further analyses of tool usage, search cost, termination behavior, and failure recovery reveal substantial differences in research strategies across models, as well as persistent challenges in tool coordination and long-horizon search management. OpenDS-World provides a unified evaluation platform for systematically assessing and advancing agents' autonomous deep search capabilities in real-world open Web environments.",
-    "upvotes": 149,
+    "upvotes": 151,
     "discussionId": "6adad3e155db1e682e582da2",
     "githubRepo": "https://github.com/Yu-xm/OpenDS",
     "githubRepoAddedBy": "user",
@@ -4463,7 +4640,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 7,
+    "followerCount": 8,
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
@@ -4547,7 +4724,7 @@
    "title": "Rethinking Sequence Compression with Test-time Regression",
    "summary": "Sequence compression is a fundamental operation and a critical information bottleneck in efficient language and multimodal models, and yet prevailing approaches based on pooling or learned projections remain underperforming. We revisit sequence compression through the lens of test-time regression: input tokens define a regression problem whose fitted coefficients form the compressed representation. Importantly, the regression problem is learned end-to-end via backpropagation, while its coefficients are computed efficiently in closed form during the forward pass. This leads to TTR-Compressor, a general alternative to conventional pooling and projection-based compression. We evaluate TTR-Compressor as the compressor for block-wise sparse attention and the visual token merger for multimodal large language models. On block-wise sparse attention, TTR-Compressor improves RULER performance over attention-based compressors by a large margin. For visual token merging, it consistently outperforms the standard MLP merger and matches its performance with 55.6% fewer visual tokens. These results establish test-time regression as an effective primitive for sequence compression in efficient language and multimodal models.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31574.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6674e95a88b91ec3dddf8132",
     "avatarUrl": "/avatars/41209068bdc91f97528a5d0c972802f4.svg",
@@ -6240,231 +6417,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.28441",
-    "authors": [
-     {
-      "_id": "6ad961503f2bb52eb8d6e8e5",
-      "name": "Sahil Joshi",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8e6",
-      "user": {
-       "_id": "685c3bc166fca32c0a1f0e06",
-       "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
-       "isPro": false,
-       "fullname": "Prithvi",
-       "user": "Pd172944",
-       "type": "user",
-       "name": "Pd172944"
-      },
-      "name": "Prithvi Dixit",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:05:58.244Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8e7",
-      "name": "Aryan Katiyar",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8e8",
-      "name": "Agniva Chowdhury",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8e9",
-      "name": "Joseph E. Gonzalez",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8ea",
-      "name": "Anshumali Shrivastava",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8eb",
-      "name": "Aditya Desai",
-      "hidden": false
-     },
-     {
-      "_id": "6ad961503f2bb52eb8d6e8ec",
-      "user": {
-       "_id": "6254623af74165c7d2df0c18",
-       "avatarUrl": "/avatars/4ddd1aa858723dd9348fc51966f700c3.svg",
-       "isPro": false,
-       "fullname": "Kumar Krishna Agrawal",
-       "user": "kumarkrishna",
-       "type": "user",
-       "name": "kumarkrishna"
-      },
-      "name": "Kumar Krishna Agrawal",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T00:45:04.692Z",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/685c3bc166fca32c0a1f0e06/TAf_7DhiF53GNxC49kwy0.gif"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
-    "submittedOnDailyBy": {
-     "_id": "685c3bc166fca32c0a1f0e06",
-     "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
-     "isPro": false,
-     "fullname": "Prithvi",
-     "user": "Pd172944",
-     "type": "user",
-     "name": "Pd172944"
-    },
-    "summary": "Large Language Model inference over long contexts is increasingly bottlenecked by the cost of attending to a growing Key-Value (KV) cache. Sparse attention reduces this cost by accessing only a fraction of the cache, but existing methods face a trade-off between deterministic retrieval, which captures high-scoring tokens but discards residual attention mass, and sampling, which improves coverage at the cost of higher variance. Hybrid methods combine top-k retrieval with uniform sampling, yet still exhibit a substantial gap from dense attention at aggressive sparsity. We introduce Stratified Sparse Attention (SSA), a unified framework combining deterministic retrieval with score-guided sampling. SSA deterministically attends to high-scoring tokens while sampling the residual using proxy attention scores and correcting for their inclusion probabilities, thereby recovering attention mass beyond the retrieval set. SSA encompasses top-k, top-p, and hybrid top-k+sampling as special cases. Across RULER, LongBench, LOFT, and AIME, and five models ranging from 3B to 27B parameters, SSA consistently improves over the baselines at matched sparsity. On RULER-HARD with Ministral-3-8B, SSA improves accuracy over the strongest practical baseline from 81.8\\% to 84.2\\% at 32K and from 63.8\\% to 69.3\\% at 128K under 50times attention sparsity, recovering 94\\% and 85\\% of dense-attention performance, respectively. With optimized CUDA kernels, SSA achieves up to 2.96times decode speedup over FlashInfer at 1M context, demonstrating that its accuracy gains translate into practical long-context inference acceleration. We open-source our code at https://github.com/skylight-org/SSA-Paper-Code.",
-    "upvotes": 4,
-    "discussionId": "6ad961503f2bb52eb8d6e8ed",
-    "githubRepo": "https://github.com/skylight-org/SSA-Paper-Code",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Stratified Sparse Attention unifies deterministic retrieval and score-guided sampling to recover attention mass, improving long-context inference accuracy and speed across multiple benchmarks.",
-    "ai_keywords": [
-     "Stratified Sparse Attention",
-     "sparse attention",
-     "Key-Value cache",
-     "top-k retrieval",
-     "score-guided sampling",
-     "attention mass",
-     "long-context inference"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
-    "organization": {
-     "_id": "6ad95f86d542c106e386b8e5",
-     "name": "Skylight1",
-     "fullname": "Skylight",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/685c3bc166fca32c0a1f0e06/54hwCFKlF2VQT-AWtXlYS.png"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
-   "summary": "Large Language Model inference over long contexts is increasingly bottlenecked by the cost of attending to a growing Key-Value (KV) cache. Sparse attention reduces this cost by accessing only a fraction of the cache, but existing methods face a trade-off between deterministic retrieval, which captures high-scoring tokens but discards residual attention mass, and sampling, which improves coverage at the cost of higher variance. Hybrid methods combine top-k retrieval with uniform sampling, yet still exhibit a substantial gap from dense attention at aggressive sparsity. We introduce Stratified Sparse Attention (SSA), a unified framework combining deterministic retrieval with score-guided sampling. SSA deterministically attends to high-scoring tokens while sampling the residual using proxy attention scores and correcting for their inclusion probabilities, thereby recovering attention mass beyond the retrieval set. SSA encompasses top-k, top-p, and hybrid top-k+sampling as special cases. Across RULER, LongBench, LOFT, and AIME, and five models ranging from 3B to 27B parameters, SSA consistently improves over the baselines at matched sparsity. On RULER-HARD with Ministral-3-8B, SSA improves accuracy over the strongest practical baseline from 81.8\\% to 84.2\\% at 32K and from 63.8\\% to 69.3\\% at 128K under 50times attention sparsity, recovering 94\\% and 85\\% of dense-attention performance, respectively. With optimized CUDA kernels, SSA achieves up to 2.96times decode speedup over FlashInfer at 1M context, demonstrating that its accuracy gains translate into practical long-context inference acceleration. We open-source our code at https://github.com/skylight-org/SSA-Paper-Code.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/685c3bc166fca32c0a1f0e06/TAf_7DhiF53GNxC49kwy0.gif"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28441.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "685c3bc166fca32c0a1f0e06",
-    "avatarUrl": "/avatars/0844e6420b909b757705ef2259beb258.svg",
-    "fullname": "Prithvi",
-    "name": "Pd172944",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6ad95f86d542c106e386b8e5",
-    "name": "Skylight1",
-    "fullname": "Skylight",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/685c3bc166fca32c0a1f0e06/54hwCFKlF2VQT-AWtXlYS.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.28940",
-    "authors": [
-     {
-      "_id": "6ada62ac55db1e682e582b8b",
-      "name": "Yisi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ada62ac55db1e682e582b8c",
-      "name": "Nicholas Lee",
-      "hidden": false
-     },
-     {
-      "_id": "6ada62ac55db1e682e582b8d",
-      "name": "Gopala K. Anumanchipalli",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/656a4547996819a82836852d/pUOrDKtIoXZGYdLSyupI2.mp4"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
-    "submittedOnDailyBy": {
-     "_id": "656a4547996819a82836852d",
-     "avatarUrl": "/avatars/a5b522c18fced97140a156ff3e88d2e8.svg",
-     "isPro": false,
-     "fullname": "Nicholas Lee",
-     "user": "nicholaslee",
-     "type": "user",
-     "name": "nicholaslee"
-    },
-    "summary": "Voice style conversion (VSC) aims to transform a source utterance to match the timbre, accent, and emotion of a target voice while preserving linguistic content. StyleStream 1.0 introduced the first streamable zero-shot VSC system with state-of-the-art conversion quality, but remained limited in two ways: approximately 1s end-to-end latency on consumer hardware, and the lack of a text-based interface for designing or editing target voices. We present StyleStream 2.0, a fast and controllable streaming VSC framework that addresses these limitations. To reduce latency, we train a few-step pixel MeanFlow model and further fine-tune it with autoregressive feedback inspired by Self Forcing, improving robustness under streaming inference. This reduces end-to-end latency to 520~ms on a consumer GPU, a 2x speedup over StyleStream 1.0, while maintaining conversion quality. To enable controllable style manipulation, we remove the mel-spectrogram context and instead route target style information through a compact style embedding. In this embedding space, we train a unified text-conditioned flow matching model that supports both text-based voice design, which maps natural language prompts to voice styles, and instruction-based voice editing, which modifies a specific attribute of a source utterance while preserving the rest. Experiments show that StyleStream 2.0 achieves the strongest target style fidelity on VSC, voice design, and voice editing, while remaining competitive on intelligibility and non-edited attribute preservation.",
-    "upvotes": 10,
-    "discussionId": "6ada62ac55db1e682e582b8e",
-    "projectPage": "https://berkeley-speech-group.github.io/StyleStream2.0/",
-    "githubRepo": "https://github.com/Berkeley-Speech-Group/StyleStream2.0",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "StyleStream 2.0 improves streaming voice conversion with lower latency via a few-step MeanFlow model and enables text-based voice design and editing through a unified flow matching model.",
-    "ai_keywords": [
-     "zero-shot VSC",
-     "pixel MeanFlow",
-     "Self Forcing",
-     "autoregressive feedback",
-     "flow matching",
-     "text-conditioned flow matching",
-     "style embedding",
-     "voice design",
-     "instruction-based voice editing"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
-    "organization": {
-     "_id": "61f20a9ce108f2cba2dc0730",
-     "name": "Berkeley",
-     "fullname": "UC Berkeley",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61ac8f8a00d01045fca0ad2f/0FjsTg2txEZZ4dEgmMnQL.png"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
-   "summary": "Voice style conversion (VSC) aims to transform a source utterance to match the timbre, accent, and emotion of a target voice while preserving linguistic content. StyleStream 1.0 introduced the first streamable zero-shot VSC system with state-of-the-art conversion quality, but remained limited in two ways: approximately 1s end-to-end latency on consumer hardware, and the lack of a text-based interface for designing or editing target voices. We present StyleStream 2.0, a fast and controllable streaming VSC framework that addresses these limitations. To reduce latency, we train a few-step pixel MeanFlow model and further fine-tune it with autoregressive feedback inspired by Self Forcing, improving robustness under streaming inference. This reduces end-to-end latency to 520~ms on a consumer GPU, a 2x speedup over StyleStream 1.0, while maintaining conversion quality. To enable controllable style manipulation, we remove the mel-spectrogram context and instead route target style information through a compact style embedding. In this embedding space, we train a unified text-conditioned flow matching model that supports both text-based voice design, which maps natural language prompts to voice styles, and instruction-based voice editing, which modifies a specific attribute of a source utterance while preserving the rest. Experiments show that StyleStream 2.0 achieves the strongest target style fidelity on VSC, voice design, and voice editing, while remaining competitive on intelligibility and non-edited attribute preservation.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/656a4547996819a82836852d/pUOrDKtIoXZGYdLSyupI2.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28940.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "656a4547996819a82836852d",
-    "avatarUrl": "/avatars/a5b522c18fced97140a156ff3e88d2e8.svg",
-    "fullname": "Nicholas Lee",
-    "name": "nicholaslee",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61f20a9ce108f2cba2dc0730",
-    "name": "Berkeley",
-    "fullname": "UC Berkeley",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61ac8f8a00d01045fca0ad2f/0FjsTg2txEZZ4dEgmMnQL.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
