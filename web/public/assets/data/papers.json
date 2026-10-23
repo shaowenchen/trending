@@ -1,8 +1,378 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-22T23:00:59.122Z",
+ "fetchedAt": "2026-10-23T01:15:55.576Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.27233",
+    "authors": [
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7a",
+      "name": "Ruoxin Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7b",
+      "name": "Yuanting Pan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7c",
+      "name": "Binxu Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7d",
+      "name": "Ruiyang Ji",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7e",
+      "name": "Yaqian Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7f",
+      "name": "Jiayuan Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed80",
+      "name": "Qifan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed81",
+      "name": "Lifu Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed82",
+      "name": "Mingjie Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed83",
+      "name": "Yu Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed84",
+      "name": "Ehsan Adeli",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed85",
+      "name": "Kilian Pohl",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed86",
+      "name": "Zhe Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed87",
+      "name": "Zihao Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed88",
+      "name": "Haoyu Dong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed89",
+      "name": "Yixin Wang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/66e644522c78909baf18af3f/6LtWyHcNip1gc7B2eIs8v.mp4"
+    ],
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+    "submittedOnDailyBy": {
+     "_id": "66e644522c78909baf18af3f",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uWZQ95rTlI8Fj2t8YmM5M.png",
+     "isPro": false,
+     "fullname": "Roxanne WANG",
+     "user": "Roxanne-WANG",
+     "type": "user",
+     "name": "Roxanne-WANG"
+    },
+    "summary": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
+    "upvotes": 0,
+    "discussionId": "6ad9b90c3f2bb52eb8d6ed8a",
+    "projectPage": "https://mmedagent.org/",
+    "githubRepo": "https://github.com/RoxanneWAAANG/MMedAgent-Plus",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "MMedAgent-Plus is a multimodal medical agent that coordinates specialist AI models via a vision-language planner to execute multi-step clinical analyses with high accuracy and faithful synthesis.",
+    "ai_keywords": [
+     "multimodal medical tool-use agent",
+     "vision-language planner",
+     "specialist models",
+     "unified tool interface",
+     "instruction-tuned",
+     "tool orchestration",
+     "response synthesis",
+     "end-to-end execution",
+     "tool-call accuracy"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 9,
+    "organization": {
+     "_id": "6ac4239516c009def49dd641",
+     "name": "MMedAgent",
+     "fullname": "MMedAgent",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e644522c78909baf18af3f/IKMLwA0I1j24oLvn3ytSU.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-18T20:00:00.000Z",
+   "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+   "summary": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/66e644522c78909baf18af3f/6LtWyHcNip1gc7B2eIs8v.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27233.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66e644522c78909baf18af3f",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uWZQ95rTlI8Fj2t8YmM5M.png",
+    "fullname": "Roxanne WANG",
+    "name": "Roxanne-WANG",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6ac4239516c009def49dd641",
+    "name": "MMedAgent",
+    "fullname": "MMedAgent",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e644522c78909baf18af3f/IKMLwA0I1j24oLvn3ytSU.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.26836",
+    "authors": [
+     {
+      "_id": "6ad70674774b2a8cb5c7dcaa",
+      "user": {
+       "_id": "6723298f481e8b2b02a76503",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/G0bppVkXKvHEKscTku8g9.png",
+       "isPro": false,
+       "fullname": "Ke Zhang",
+       "user": "grenadeComing",
+       "type": "user",
+       "name": "grenadeComing"
+      },
+      "name": "Ke Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-21T00:45:04.616Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad70674774b2a8cb5c7dcab",
+      "name": "Sahchit Chundur",
+      "hidden": false
+     },
+     {
+      "_id": "6ad70674774b2a8cb5c7dcac",
+      "name": "Jerry Peprah Owusu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad70674774b2a8cb5c7dcad",
+      "name": "Mohammad Javad Abdolhosseini Qomi",
+      "hidden": false
+     },
+     {
+      "_id": "6ad70674774b2a8cb5c7dcae",
+      "name": "Maziar Raissi",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+    "submittedOnDailyBy": {
+     "_id": "6723298f481e8b2b02a76503",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/G0bppVkXKvHEKscTku8g9.png",
+     "isPro": false,
+     "fullname": "Ke Zhang",
+     "user": "grenadeComing",
+     "type": "user",
+     "name": "grenadeComing"
+    },
+    "summary": "LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geochemistry simulator from the USGS, whose reports reach 846.8k characters and whose determinism lets every printed value be traced. Agents use it to answer 158 execution-verified multiple-choice items. When agents read the simulator's report through a section index rather than in context, GPT-5.1 and GPT-5.2 lose 11.3 and 7.9 points of accuracy, while Claude Opus 4.6 and Claude Sonnet 4.6 show no detectable cost. Re-running all 11,007 logged simulator calls shows that both GPT models compute the keyed value about as often as before; what changes is the evidence they answer from. Under retrieval they often skip the report, answer from their own higher-precision output files, and misround to a neighboring option, a failure we call evidence substitution. With the simulation held fixed, retrieval still costs GPT-5.2 9.4 points. For GPT-5.4, more frequent correct simulations mask an evidence-use loss of about ten points, leaving a net change indistinguishable from zero. Naming the authoritative output raises accuracy by 6.3-7.9 points over plain retrieval for the three GPT models; for GPT-5.1 and GPT-5.2, inlining outputs that fit works as well, while asking for correct rounding does not. Context-management choices in agent harnesses should be judged by where accuracy is lost, not only by final accuracy.",
+    "upvotes": 1,
+    "discussionId": "6ad70674774b2a8cb5c7dcaf",
+    "githubRepo": "https://github.com/grenadeComing/same-simulation-different-evidence",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Agent harnesses that retrieve long simulator outputs from files rather than including them in context cause GPT models to substitute their own approximations for authoritative results, reducing accuracy despite correct underlying computations.",
+    "ai_keywords": [
+     "LLM agents",
+     "tool outputs",
+     "context window",
+     "retrieval",
+     "evidence substitution",
+     "PHREEQC",
+     "geochemistry simulator",
+     "agent harnesses"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0,
+    "organization": {
+     "_id": "65d66f7d4bbd0d92b6430f5e",
+     "name": "ucriverside",
+     "fullname": "UC Riverside",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d64bda5ef764405d3bd9c4/38YcpruPPpZAN1ub2XIrF.png"
+    }
+   },
+   "publishedAt": "2026-10-18T20:00:00.000Z",
+   "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+   "summary": "LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geochemistry simulator from the USGS, whose reports reach 846.8k characters and whose determinism lets every printed value be traced. Agents use it to answer 158 execution-verified multiple-choice items. When agents read the simulator's report through a section index rather than in context, GPT-5.1 and GPT-5.2 lose 11.3 and 7.9 points of accuracy, while Claude Opus 4.6 and Claude Sonnet 4.6 show no detectable cost. Re-running all 11,007 logged simulator calls shows that both GPT models compute the keyed value about as often as before; what changes is the evidence they answer from. Under retrieval they often skip the report, answer from their own higher-precision output files, and misround to a neighboring option, a failure we call evidence substitution. With the simulation held fixed, retrieval still costs GPT-5.2 9.4 points. For GPT-5.4, more frequent correct simulations mask an evidence-use loss of about ten points, leaving a net change indistinguishable from zero. Naming the authoritative output raises accuracy by 6.3-7.9 points over plain retrieval for the three GPT models; for GPT-5.1 and GPT-5.2, inlining outputs that fit works as well, while asking for correct rounding does not. Context-management choices in agent harnesses should be judged by where accuracy is lost, not only by final accuracy.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.26836.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6723298f481e8b2b02a76503",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/G0bppVkXKvHEKscTku8g9.png",
+    "fullname": "Ke Zhang",
+    "name": "grenadeComing",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "65d66f7d4bbd0d92b6430f5e",
+    "name": "ucriverside",
+    "fullname": "UC Riverside",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d64bda5ef764405d3bd9c4/38YcpruPPpZAN1ub2XIrF.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.26397",
+    "authors": [
+     {
+      "_id": "6ada889555db1e682e582c0a",
+      "name": "Runsheng Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ada889555db1e682e582c0b",
+      "user": {
+       "_id": "653f7e569e84d1e8b6a66e70",
+       "avatarUrl": "/avatars/24eaa6434508a162c349aebfc51990ff.svg",
+       "isPro": false,
+       "fullname": "Yihong Liu",
+       "user": "yihongLiu",
+       "type": "user",
+       "name": "yihongLiu"
+      },
+      "name": "Yihong Liu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T00:45:04.875Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ada889555db1e682e582c0c",
+      "name": "Raoyuan Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ada889555db1e682e582c0d",
+      "name": "Michael A. Hedderich",
+      "hidden": false
+     },
+     {
+      "_id": "6ada889555db1e682e582c0e",
+      "name": "Hinrich Schütze",
+      "hidden": false
+     },
+     {
+      "_id": "6ada889555db1e682e582c0f",
+      "name": "Matthias Grabmair",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-19T13:40:50.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "Bridged Self-Distillation for On-Policy Learning",
+    "submittedOnDailyBy": {
+     "_id": "653f7e569e84d1e8b6a66e70",
+     "avatarUrl": "/avatars/24eaa6434508a162c349aebfc51990ff.svg",
+     "isPro": false,
+     "fullname": "Yihong Liu",
+     "user": "yihongLiu",
+     "type": "user",
+     "name": "yihongLiu"
+    },
+    "summary": "On-policy distillation can transfer the reasoning capabilities of a strong teacher to a smaller student. However, distillation from a stronger teacher model faces two mismatches: its solutions may be difficult for a smaller student to imitate, and its token-level probabilities may be incompatible with, or even unavailable to, the student. Existing methods handle these settings through different forms of supervision. To this end, we propose Bridged Self-Distillation (BSD), a unified framework for distilling from any teacher that provides reasoning traces. The model to be distilled from, termed the external teacher, first provides a reasoning trace as privileged context, which can be generated in an offline fashion. The student generates rollouts without this context, while a copy of the student conditioned on it, serving as the self-teacher, scores the same rollouts in the student's own token space. BSD uses the resulting token-level guidance to adjust updates on unsuccessful rollouts, with a verifier providing the outcome signal. As the external teacher is queried only to produce text, the same training procedure applies to all teacher scenarios: shared-tokenizer, cross-tokenizer, and closed API teachers. Across these scenarios, BSD improves over the base model and outperforms baselines tailored to each scenario, offering a novel and unified pathway for distillation. Code is available: https://github.com/TUMLegalTech/Bridged-Self-Distillation",
+    "upvotes": 1,
+    "discussionId": "6ada889655db1e682e582c10",
+    "githubRepo": "https://github.com/TUMLegalTech/Bridged-Self-Distillation",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Bridged Self-Distillation unifies on-policy reasoning transfer from any teacher by using privileged reasoning traces to score student rollouts and guide updates via outcome verification.",
+    "ai_keywords": [
+     "on-policy distillation",
+     "reasoning traces",
+     "privileged context",
+     "rollouts",
+     "self-teacher",
+     "token-level guidance",
+     "verifier",
+     "cross-tokenizer",
+     "closed API teachers",
+     "Bridged Self-Distillation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "61fae781e68759322b9767be",
+     "name": "TUM",
+     "fullname": "Technical University of Munich",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-19T09:40:50.000Z",
+   "title": "Bridged Self-Distillation for On-Policy Learning",
+   "summary": "On-policy distillation can transfer the reasoning capabilities of a strong teacher to a smaller student. However, distillation from a stronger teacher model faces two mismatches: its solutions may be difficult for a smaller student to imitate, and its token-level probabilities may be incompatible with, or even unavailable to, the student. Existing methods handle these settings through different forms of supervision. To this end, we propose Bridged Self-Distillation (BSD), a unified framework for distilling from any teacher that provides reasoning traces. The model to be distilled from, termed the external teacher, first provides a reasoning trace as privileged context, which can be generated in an offline fashion. The student generates rollouts without this context, while a copy of the student conditioned on it, serving as the self-teacher, scores the same rollouts in the student's own token space. BSD uses the resulting token-level guidance to adjust updates on unsuccessful rollouts, with a verifier providing the outcome signal. As the external teacher is queried only to produce text, the same training procedure applies to all teacher scenarios: shared-tokenizer, cross-tokenizer, and closed API teachers. Across these scenarios, BSD improves over the base model and outperforms baselines tailored to each scenario, offering a novel and unified pathway for distillation. Code is available: https://github.com/TUMLegalTech/Bridged-Self-Distillation",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.26397.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "653f7e569e84d1e8b6a66e70",
+    "avatarUrl": "/avatars/24eaa6434508a162c349aebfc51990ff.svg",
+    "fullname": "Yihong Liu",
+    "name": "yihongLiu",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 5,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61fae781e68759322b9767be",
+    "name": "TUM",
+    "fullname": "Technical University of Munich",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.28441",
@@ -55,7 +425,18 @@
      },
      {
       "_id": "6ad961503f2bb52eb8d6e8ec",
+      "user": {
+       "_id": "6254623af74165c7d2df0c18",
+       "avatarUrl": "/avatars/4ddd1aa858723dd9348fc51966f700c3.svg",
+       "isPro": false,
+       "fullname": "Kumar Krishna Agrawal",
+       "user": "kumarkrishna",
+       "type": "user",
+       "name": "kumarkrishna"
+      },
       "name": "Kumar Krishna Agrawal",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T00:45:04.692Z",
       "hidden": false
      }
     ],
@@ -75,7 +456,7 @@
      "name": "Pd172944"
     },
     "summary": "Large Language Model inference over long contexts is increasingly bottlenecked by the cost of attending to a growing Key-Value (KV) cache. Sparse attention reduces this cost by accessing only a fraction of the cache, but existing methods face a trade-off between deterministic retrieval, which captures high-scoring tokens but discards residual attention mass, and sampling, which improves coverage at the cost of higher variance. Hybrid methods combine top-k retrieval with uniform sampling, yet still exhibit a substantial gap from dense attention at aggressive sparsity. We introduce Stratified Sparse Attention (SSA), a unified framework combining deterministic retrieval with score-guided sampling. SSA deterministically attends to high-scoring tokens while sampling the residual using proxy attention scores and correcting for their inclusion probabilities, thereby recovering attention mass beyond the retrieval set. SSA encompasses top-k, top-p, and hybrid top-k+sampling as special cases. Across RULER, LongBench, LOFT, and AIME, and five models ranging from 3B to 27B parameters, SSA consistently improves over the baselines at matched sparsity. On RULER-HARD with Ministral-3-8B, SSA improves accuracy over the strongest practical baseline from 81.8\\% to 84.2\\% at 32K and from 63.8\\% to 69.3\\% at 128K under 50times attention sparsity, recovering 94\\% and 85\\% of dense-attention performance, respectively. With optimized CUDA kernels, SSA achieves up to 2.96times decode speedup over FlashInfer at 1M context, demonstrating that its accuracy gains translate into practical long-context inference acceleration. We open-source our code at https://github.com/skylight-org/SSA-Paper-Code.",
-    "upvotes": 0,
+    "upvotes": 2,
     "discussionId": "6ad961503f2bb52eb8d6e8ed",
     "githubRepo": "https://github.com/skylight-org/SSA-Paper-Code",
     "githubRepoAddedBy": "user",
@@ -90,6 +471,7 @@
      "long-context inference"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0,
     "organization": {
      "_id": "6ad95f86d542c106e386b8e5",
      "name": "Skylight1",
@@ -1640,7 +2022,7 @@
      "name": "dolev31"
     },
     "summary": "Retrieval Augmented Generation (RAG) grounds large language models in external knowledge. Modern pipelines combine embedding, chunking, retrieval, reranking, query augmentation, context compression, and agentic verification, yet these techniques are typically evaluated one at a time. It remains unclear whether their isolated gains survive composition, whether retrieval quality and answer faithfulness favor the same design choices, and whether conclusions from small corpora hold at large scale. We pre-declare three hypotheses and introduce LASAGNA, an open-source framework for controlled RAG evaluation. We test 450 configurations across eight benchmarks and corpora ranging from 5K to 200K documents. Three findings emerge. First, individually strong techniques from different phases of a RAG pipeline do not necessarily compose: three retrieval techniques predict a +47% combined improvement but deliver only +17% when used together. Second, component gains stack differently for retrieval and faithfulness, and optimizing one can hurt the other. Third, the best composition changes as the corpus grows: the combination that wins on a small corpus may not remain best at large scale. These findings show that gains measured in isolation are not reliable predictors of realistic performance, and that new RAG techniques should be tested with the full surrounding stack. We call on researchers to do so and supply LASAGNA to simplify these experiments.",
-    "upvotes": 26,
+    "upvotes": 28,
     "discussionId": "6ad9916a3f2bb52eb8d6ec7e",
     "projectPage": "https://dolev31.github.io/lasagna/",
     "githubRepo": "https://github.com/dolev31/lasagna",
@@ -2337,7 +2719,7 @@
      "name": "fyzzzzzz"
     },
     "summary": "A login screen that appears after a tap on Sign in is expected; the same screen after a tap on View order is an attack. For GUI agents, safety is therefore a property of the transition rather than of the screen, and a monitor that inspects only screens can be defeated by reusing a legitimate one. Judging a transition requires an expectation of what should have followed the action. Existing GUI world models provide one, but they output it as text, code, or images, so checking it against the observed screen requires a second model to judge the two. We argue that a world model meant for verification should instead predict in the space in which observations are encoded, and present LGWM, a decoder-free, action-conditioned world model that predicts the representation of the next screen directly, trained without semantic annotation on 1.85M real GUI transitions. Verification reduces to a vector comparison, and the same signal reveals whether a mismatch is harmful. We evaluate on RSWT-BENCH, a diagnostic where each credential screen appears under both a legitimate and a hijacked transition, so detectors that see only the screen are at chance by construction. The training-free score reaches 0.987 AUC at 17 ms per decision, on par with the strongest closed-source VLMs and about ten AUC points above generative GUI world models at over three orders of magnitude lower latency. The residual direction reaches 0.953 AUC at separating harmful from benign violations, where prompted VLMs are near chance. Further analyses show that the prediction is a usable future state rather than an anomaly score. World models have mostly served as simulators or planners; our results point to a third role, verification, for which predicting in representation space is the natural design.",
-    "upvotes": 81,
+    "upvotes": 90,
     "discussionId": "6aca20d90ee6ff34004fd5fa",
     "projectPage": "https://jiamingzhang.netlify.app/lgwm/",
     "githubRepo": "https://github.com/jiamingzhang94/lgwm",
@@ -2902,7 +3284,18 @@
     "authors": [
      {
       "_id": "6ad98d803f2bb52eb8d6ec19",
+      "user": {
+       "_id": "61d53df2062444ea769d3b79",
+       "avatarUrl": "/avatars/fa771202368b6b2626a8fdf1c4369239.svg",
+       "isPro": false,
+       "fullname": "Ming Zhong",
+       "user": "MingZhong",
+       "type": "user",
+       "name": "MingZhong"
+      },
       "name": "Ming Zhong",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T00:45:04.724Z",
       "hidden": false
      },
      {
@@ -2984,7 +3377,7 @@
     "fullname": "Anthropic",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670531762351-6200d0a443eb0913fa2df7cc.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -3581,7 +3974,7 @@
      "name": "iTheresaApocalypse"
     },
     "summary": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
-    "upvotes": 47,
+    "upvotes": 49,
     "discussionId": "6ad97e373f2bb52eb8d6eb1a",
     "projectPage": "https://gamescaling.github.io",
     "githubRepo": "https://github.com/THUSI-Lab/GameScaling",
@@ -4674,7 +5067,7 @@
      "name": "Hunter26666666"
     },
     "summary": "Post-hoc image explanations usually show where a model looks using spatial heatmaps or indicate which channels matter using global channel scores. These separate views are limiting for multispectral data because channel relevance is often spatially localized and physically meaningful. We introduce Spectral-Spatial Interpretation (SSI), a full-grid attribution method over position-channel players (g,c). For each spatial position, SSI fixes the observed surrounding context, defines a conditional game over the channels at that position, and applies the Shapley value to this local game. The result is a full spectral-spatial attribution matrix rather than a single heatmap or a global channel ranking. SSI has a clear local interpretation. It satisfies Shapley fairness within each position, and aggregating its channel attributions exactly recovers the position-level contextual contrast obtained by replacing that position with the baseline. SSI also differs from context-averaged Owen-style hierarchical accounting, which uses the same position-channel grouping but averages over external spatial coalitions. On HLS Burn Scar, SSI outperforms an MC-Owen estimator across retained attribution metrics while using only about 6% of its evaluation budget. Across CUB-200, EuroSAT, and HLS Burn Scar under both per-channel mean and zero baselines, SSI achieves the best joint deletion and insertion AUC over dense, flat, and rank-1 baselines, yields the strongest spectral hit rates and channel deletion, and leads spatial localization on both annotated datasets. Code is available at https://github.com/AtheavenMa/Spectral-Spatial-Interpretation.",
-    "upvotes": 45,
+    "upvotes": 70,
     "discussionId": "6ad2830360556d9547d94612",
     "projectPage": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
     "githubRepo": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
@@ -4979,7 +5372,18 @@
      },
      {
       "_id": "6ad977283f2bb52eb8d6e9d6",
+      "user": {
+       "_id": "65b11c8d3b52344542d23a0b",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/zdZTX4FoxGkjpGo-3YpS9.png",
+       "isPro": false,
+       "fullname": "Gimei Alex",
+       "user": "gimmy256",
+       "type": "user",
+       "name": "gimmy256"
+      },
       "name": "Alex Gimei",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T00:45:04.701Z",
       "hidden": false
      },
      {
@@ -5592,7 +5996,18 @@
      },
      {
       "_id": "6ad977283f2bb52eb8d6ea4a",
+      "user": {
+       "_id": "63a0c25f45edac9f75ff93ff",
+       "avatarUrl": "/avatars/ad7ec7f883e8142dd018c1ba8561f23a.svg",
+       "isPro": false,
+       "fullname": "Emily Su",
+       "user": "graphtheory",
+       "type": "user",
+       "name": "graphtheory"
+      },
       "name": "Emily Z Su",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T00:45:04.715Z",
       "hidden": false
      },
      {
@@ -5707,7 +6122,7 @@
      "name": "JuliaKreutzerCohere"
     },
     "summary": "As LLMs expand their language coverage, evaluating how well they understand and represent diverse cultures becomes increasingly important. However, many benchmarks remain English-centric, with limited cultural coverage and a focus on factual knowledge over its application in real-world cultural contexts. We propose CulturalRiddles, a benchmark of original, culturally grounded riddles created entirely by humans through a participatory community effort, spanning 62 cultures (45 countries, 51 languages). These riddles are deeply rooted in their respective cultures and require abductive and compositional reasoning, alongside detailed factual and social knowledge, language skills, and an understanding of culturally specific associations. We benchmark 28 LLM configurations using both automatic and large-scale human evaluation. Even frontier models achieve at most 22% accuracy in some communities. We publicly release all artifacts alongside an open contribution process to expand the benchmark's linguistic and cultural coverage.",
-    "upvotes": 14,
+    "upvotes": 17,
     "discussionId": "6ad977283f2bb52eb8d6ea5e",
     "projectPage": "https://culturalriddles.ai/",
     "githubRepo": "https://github.com/Cohere-Labs-Community/CulturalRiddles",
@@ -5876,7 +6291,7 @@
      "name": "Jungang"
     },
     "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-    "upvotes": 343,
+    "upvotes": 355,
     "discussionId": "6ad83548efdc4c3bd8229f2d",
     "projectPage": "https://streameval.ai/",
     "githubRepo": "https://github.com/StreamEval/StreamEval",
@@ -6120,7 +6535,7 @@
      "name": "limingcv"
     },
     "summary": "Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners' own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning. To accommodate different execution mechanisms, harness-specific adapters connect recorded planner interactions with task outcomes, enabling a common RL training pipeline while keeping execution components fixed. On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory. These results demonstrate post-training as an effective approach for improving robot planners. We will release the framework and trained planner checkpoints.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6ad8fa4cf7563b9935e814ad",
     "projectPage": "https://xinxinliu-ai.github.io/AgenticRoboRL/",
     "githubRepo": "https://github.com/xinxinliu-ai/AgenticRoboRL",
@@ -6659,436 +7074,6 @@
     "name": "KlingTeam",
     "fullname": "KlingAI Research",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e272ca6c78a8c122b12127/ZQV1aKLUDPf2rUcxxAqj6.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.29989",
-    "authors": [
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e954",
-      "user": {
-       "_id": "66320391060ab1f666819e9c",
-       "avatarUrl": "/avatars/42856c3066f49ff183b10b5239daa6ab.svg",
-       "isPro": false,
-       "fullname": "Ruopeng Gao",
-       "user": "HELLORPG",
-       "type": "user",
-       "name": "HELLORPG"
-      },
-      "name": "Ruopeng Gao",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.178Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e955",
-      "user": {
-       "_id": "638ee900ee7e45e0474a5712",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638ee900ee7e45e0474a5712/KLli_eCbWwffKR7oLDmV3.jpeg",
-       "isPro": false,
-       "fullname": "Yukun Huang",
-       "user": "KevinHuang",
-       "type": "user",
-       "name": "KevinHuang"
-      },
-      "name": "Yukun Huang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:05:50.392Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e956",
-      "user": {
-       "_id": "657d32027295872e0123b0a8",
-       "avatarUrl": "/avatars/c9af59644be8ab0a6db3a8a719db39ba.svg",
-       "isPro": false,
-       "fullname": "Jiarui Hu",
-       "user": "wssy37",
-       "type": "user",
-       "name": "wssy37"
-      },
-      "name": "Jiarui Hu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.204Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e957",
-      "user": {
-       "_id": "66615c855fd9d736e670e0a9",
-       "avatarUrl": "/avatars/0ff3127b513552432a7c651e21d7f283.svg",
-       "isPro": false,
-       "fullname": "wangshuai",
-       "user": "wangsssssss",
-       "type": "user",
-       "name": "wangsssssss"
-      },
-      "name": "Shuai Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.187Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e958",
-      "user": {
-       "_id": "657a7458afbb0117ba15c59f",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/657a7458afbb0117ba15c59f/8_iwTS1UG_mKnfylFbLsY.jpeg",
-       "isPro": false,
-       "fullname": "Wenbo Hu",
-       "user": "wbhu-tc",
-       "type": "user",
-       "name": "wbhu-tc"
-      },
-      "name": "Wenbo Hu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.195Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e959",
-      "name": "Ying Shan",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96cf93f2bb52eb8d6e95a",
-      "name": "Limin Wang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/66320391060ab1f666819e9c/aKc4lilENlNoodKx0GtV5.mp4"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
-    "submittedOnDailyBy": {
-     "_id": "66320391060ab1f666819e9c",
-     "avatarUrl": "/avatars/42856c3066f49ff183b10b5239daa6ab.svg",
-     "isPro": false,
-     "fullname": "Ruopeng Gao",
-     "user": "HELLORPG",
-     "type": "user",
-     "name": "HELLORPG"
-    },
-    "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-    "upvotes": 108,
-    "discussionId": "6ad96cfa3f2bb52eb8d6e95b",
-    "projectPage": "https://hellorpg.github.io/looking-ahead/",
-    "githubRepo": "https://github.com/TencentARC/Looking-Ahead",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Future Chunk Prediction improves autoregressive video diffusion by enforcing future-chunk supervision, yielding more physically plausible video generation with reduced training cost.",
-    "ai_keywords": [
-     "autoregressive video diffusion",
-     "teacher forcing",
-     "temporal redundancy",
-     "Future Chunk Prediction",
-     "visual evolution",
-     "world models"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 52,
-    "organization": {
-     "_id": "60e3f7f641ca131919975fe5",
-     "name": "TencentARC",
-     "fullname": "ARC Lab, Tencent",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1625552871844-60e272ca6c78a8c122b12127.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
-   "summary": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/66320391060ab1f666819e9c/aKc4lilENlNoodKx0GtV5.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29989.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66320391060ab1f666819e9c",
-    "avatarUrl": "/avatars/42856c3066f49ff183b10b5239daa6ab.svg",
-    "fullname": "Ruopeng Gao",
-    "name": "HELLORPG",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "60e3f7f641ca131919975fe5",
-    "name": "TencentARC",
-    "fullname": "ARC Lab, Tencent",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1625552871844-60e272ca6c78a8c122b12127.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.29434",
-    "authors": [
-     {
-      "_id": "6ad96e503f2bb52eb8d6e979",
-      "user": {
-       "_id": "6348501e50fe0799927c3667",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6348501e50fe0799927c3667/QIcq2tIrJrrH9LKG6P35O.jpeg",
-       "isPro": true,
-       "fullname": "Aratako",
-       "user": "Aratako",
-       "type": "user",
-       "name": "Aratako"
-      },
-      "name": "Chihiro Arata",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:05:44.346Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96e503f2bb52eb8d6e97a",
-      "name": "Shohei Taniguchi",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96e503f2bb52eb8d6e97b",
-      "name": "Gouki Minegishi",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96e503f2bb52eb8d6e97c",
-      "name": "Kan Hatakeyama-Sato",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "RubatoCodec: Budgeted Adaptive Speech Tokenization with Streaming Decoding",
-    "submittedOnDailyBy": {
-     "_id": "6348501e50fe0799927c3667",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6348501e50fe0799927c3667/QIcq2tIrJrrH9LKG6P35O.jpeg",
-     "isPro": true,
-     "fullname": "Aratako",
-     "user": "Aratako",
-     "type": "user",
-     "name": "Aratako"
-    },
-    "summary": "Neural speech codecs provide discrete tokens for speech generation. Lower frame rates shorten token sequences, but each token must then carry more linguistic and acoustic information. Variable-frame-rate codecs address this trade-off by adapting token allocation to speech content, but threshold-based allocation lets content determine the token count, so the sequence length a speech generator must produce varies across utterances and datasets at a fixed setting. We present RubatoCodec, a variable-frame-rate speech codec built on X-Codec-2 with an exact utterance-level event budget and streaming decoding. Its Adaptive Firing mechanism uses changes in codec features and waveform spectra to divide speech into variable-duration events without a learned boundary predictor. Discrete codes and an explicit duration represent each event, allowing a speech generator to predict and decode one event at a time. Controlled experiments show that adaptive allocation outperforms fixed-rate coding in reconstruction fidelity and intelligibility at low event rates. A model trained on large-scale multilingual speech achieves competitive reconstruction quality across English, Japanese, and Mandarin, with the best intelligibility preservation among the compared codecs on the evaluated English and Japanese benchmarks at comparable bitrates. In a matched text-to-speech comparison, the adaptive representation yields lower WER and higher UTMOS and UTMOSv2 with comparable speaker similarity. The speech generator also learns the codec's utterance-level event budget without an explicit generation-time rate constraint. These results demonstrate that budgeted adaptive speech representations support both high-quality reconstruction and streaming text-to-speech generation. Code and weights are available at https://github.com/third-intelligence/RubatoCodec and https://huggingface.co/third-intelligence/RubatoCodec.",
-    "upvotes": 8,
-    "discussionId": "6ad96e503f2bb52eb8d6e97d",
-    "githubRepo": "https://github.com/third-intelligence/RubatoCodec",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "RubatoCodec uses adaptive event-based coding with fixed utterance budgets to improve low-rate speech reconstruction and streaming text-to-speech generation.",
-    "ai_keywords": [
-     "variable-frame-rate codec",
-     "X-Codec-2",
-     "Adaptive Firing",
-     "discrete codes",
-     "streaming decoding",
-     "text-to-speech",
-     "reconstruction fidelity",
-     "multilingual speech"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
-    "organization": {
-     "_id": "68ac4a6e4062c4c66d0ef142",
-     "name": "third-intelligence",
-     "fullname": "Third Intelligence, Inc.",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e05b224c15b415781f3682/UnqR5Dai-ZdrlEAmRbISi.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "RubatoCodec: Budgeted Adaptive Speech Tokenization with Streaming Decoding",
-   "summary": "Neural speech codecs provide discrete tokens for speech generation. Lower frame rates shorten token sequences, but each token must then carry more linguistic and acoustic information. Variable-frame-rate codecs address this trade-off by adapting token allocation to speech content, but threshold-based allocation lets content determine the token count, so the sequence length a speech generator must produce varies across utterances and datasets at a fixed setting. We present RubatoCodec, a variable-frame-rate speech codec built on X-Codec-2 with an exact utterance-level event budget and streaming decoding. Its Adaptive Firing mechanism uses changes in codec features and waveform spectra to divide speech into variable-duration events without a learned boundary predictor. Discrete codes and an explicit duration represent each event, allowing a speech generator to predict and decode one event at a time. Controlled experiments show that adaptive allocation outperforms fixed-rate coding in reconstruction fidelity and intelligibility at low event rates. A model trained on large-scale multilingual speech achieves competitive reconstruction quality across English, Japanese, and Mandarin, with the best intelligibility preservation among the compared codecs on the evaluated English and Japanese benchmarks at comparable bitrates. In a matched text-to-speech comparison, the adaptive representation yields lower WER and higher UTMOS and UTMOSv2 with comparable speaker similarity. The speech generator also learns the codec's utterance-level event budget without an explicit generation-time rate constraint. These results demonstrate that budgeted adaptive speech representations support both high-quality reconstruction and streaming text-to-speech generation. Code and weights are available at https://github.com/third-intelligence/RubatoCodec and https://huggingface.co/third-intelligence/RubatoCodec.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29434.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6348501e50fe0799927c3667",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6348501e50fe0799927c3667/QIcq2tIrJrrH9LKG6P35O.jpeg",
-    "fullname": "Aratako",
-    "name": "Aratako",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 596,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68ac4a6e4062c4c66d0ef142",
-    "name": "third-intelligence",
-    "fullname": "Third Intelligence, Inc.",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e05b224c15b415781f3682/UnqR5Dai-ZdrlEAmRbISi.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.28577",
-    "authors": [
-     {
-      "_id": "6ad96d683f2bb52eb8d6e95e",
-      "user": {
-       "_id": "6445fd9ba56444c355dcbcba",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
-       "isPro": false,
-       "fullname": "Tianyu Fu",
-       "user": "fuvty",
-       "type": "user",
-       "name": "fuvty"
-      },
-      "name": "Tianyu Fu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.213Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e95f",
-      "name": "Ruoxi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e960",
-      "name": "Zihan Min",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e961",
-      "name": "Zhongqi Ren",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e962",
-      "name": "Zhihao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e963",
-      "user": {
-       "_id": "65d83994a3c18e9316365c39",
-       "avatarUrl": "/avatars/b07234d21dbe58cce5aa60e9d2b488b6.svg",
-       "isPro": false,
-       "fullname": "Tengxuan Liu",
-       "user": "MX05",
-       "type": "user",
-       "name": "MX05"
-      },
-      "name": "Tengxuan Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:05:48.276Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e964",
-      "user": {
-       "_id": "68e7769e458298dd32cb1f6c",
-       "avatarUrl": "/avatars/267100da11dad38e8ca3971a454eb05b.svg",
-       "isPro": false,
-       "fullname": "Shengxu Mu",
-       "user": "pinghailinfeng",
-       "type": "user",
-       "name": "pinghailinfeng"
-      },
-      "name": "Shengxu Mu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T08:45:05.222Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e965",
-      "user": {
-       "_id": "6599c0078982abaa5cde36c8",
-       "avatarUrl": "/avatars/a94202b7f735eb43baa25e5ac0234be1.svg",
-       "isPro": false,
-       "fullname": "Hanling Zhang",
-       "user": "p2o6e100",
-       "type": "user",
-       "name": "p2o6e100"
-      },
-      "name": "Hanling Zhang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:05:46.338Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad96d683f2bb52eb8d6e966",
-      "name": "Yu Wang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6445fd9ba56444c355dcbcba/_dP_r92LTc754Us-haved.mp4"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
-    "title": "Cache Engineering for Agents",
-    "submittedOnDailyBy": {
-     "_id": "6445fd9ba56444c355dcbcba",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
-     "isPro": false,
-     "fullname": "Tianyu Fu",
-     "user": "fuvty",
-     "type": "user",
-     "name": "fuvty"
-    },
-    "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-    "upvotes": 111,
-    "discussionId": "6ad96d683f2bb52eb8d6e967",
-    "projectPage": "https://fuvty.github.io/thinking_yard_project_page/projects/akv/",
-    "githubRepo": "https://github.com/thu-nics/AKV",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "AKV introduces cache engineering to manage LLM agent key-value caches without altering trajectories, improving efficiency and accuracy via drop and repos operations with a co-designed serving engine.",
-    "ai_keywords": [
-     "key-value cache",
-     "KV cache I/O",
-     "context engineering",
-     "cache engineering",
-     "drop",
-     "repos",
-     "position encodings",
-     "history dependence",
-     "prefix matching",
-     "AKV serving engine",
-     "rolling-drop cache policy",
-     "recursive self-improvement"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 29,
-    "organization": {
-     "_id": "64b74b5fb727f8771ab887f9",
-     "name": "nics-efc",
-     "fullname": "Tsinghua-NICS-EFC",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641031b1a78453b8d96b8420/vmgxct2WsyHcKT2x2NAYT.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "Cache Engineering for Agents",
-   "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6445fd9ba56444c355dcbcba/_dP_r92LTc754Us-haved.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28577.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6445fd9ba56444c355dcbcba",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
-    "fullname": "Tianyu Fu",
-    "name": "fuvty",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 19,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "64b74b5fb727f8771ab887f9",
-    "name": "nics-efc",
-    "fullname": "Tsinghua-NICS-EFC",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641031b1a78453b8d96b8420/vmgxct2WsyHcKT2x2NAYT.jpeg"
    },
    "isAuthorParticipating": true
   }
