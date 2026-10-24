@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T06:31:00.279Z",
+ "fetchedAt": "2026-10-24T08:45:56.189Z",
  "payload": [
   {
    "paper": {
@@ -75,7 +75,7 @@
      "name": "xuyicheng-zju"
     },
     "summary": "Robots must act under physical and social constraints while adapting to changes in their environment and human needs. Existing embodied-agent systems often focus on specified goals or abstract execution into symbolic actions, limiting evaluation in an evolving world. We introduce TARSphere, a robot-oriented full-stack framework for physically and socially grounded long-horizon embodied agents. TARSphere-Infra runs robot policies in a physics simulator with embodied NPCs and constrained dialogue. An event-driven finite-state machine (FSM) uses completed actions and delivered information to update task states and evaluate outcomes. TARSphere-Harness, its embodied brain harness, lets a frozen multimodal large language model (MLLM) act through multi-level executable skills, using observations, hierarchical memory, and execution feedback to revise its decisions. On this foundation, agent-in-the-loop curation aligns task semantics, causal dependencies, and scene geometry to construct TARSphere-Bench: 360 episodes across 30 indoor scenes. Five paired conditions assess perceptual robustness, disruption adaptation, task update, human coordination, and intent understanding for navigate-and-report and fetch-and-deliver tasks. Our evaluation of 8 MLLMs shows that general-purpose models can outperform embodied models, while task updates and human interaction remain difficult. Frequent collisions and falls further motivate evaluating execution safety alongside task success, even with a shared action interface and decision budget.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ad986f93f2bb52eb8d6eba3",
     "projectPage": "https://xuyicheng-zju.github.io/TARSphere/",
     "githubRepo": "https://github.com/xuyicheng-zju/TARSphere",
@@ -122,7 +122,18 @@
     "authors": [
      {
       "_id": "6ad699bd774b2a8cb5c7d6d1",
+      "user": {
+       "_id": "641f77c0863b87326f49a24f",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/0lmANHmUFcRvSUgVgCeM-.png",
+       "isPro": false,
+       "fullname": "Georgios Politis",
+       "user": "gpolitis",
+       "type": "user",
+       "name": "gpolitis"
+      },
       "name": "Georgios Politis",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T08:45:04.553Z",
       "hidden": false
      },
      {
@@ -144,7 +155,7 @@
      "name": "gpolitis"
     },
     "summary": "Split language models keep input text on a client but send intermediate representations to a server. Attacks can reconstruct text from these messages. Comparing privacy evaluations is difficult when attackers see different messages, know different model weights or use different datasets and recovery measures. We present LLM-Attacker, a framework that records these choices and lets researchers check, compare and extend an evaluation. Compatible attacks reuse recorded messages, and their predictions are saved for independent scoring. The scoring rule requires a linked undefended reference before a defence can pass. Reports also identify attacks that remain untested. In a controlled GPT-2 experiment, adding gradients returned during training increased token recovery from 94.20% to 97.38% and exact-document recovery from 13.71% to 37.77%. The 95% interval for the token gain lay above the two-percentage-point threshold fixed before testing. This experiment is shared with a companion study; here, it tests how the evaluation responds to a change in attacker access. Further studies measure how corpus choice and compression defences affect recovery, compare an adapted published attack with its reference implementation, and test the measurement code. The framework reports implementation checks separately from measured attack effectiveness. Each privacy claim should state the attacker, dataset and scoring rule, report its controls and identify untested attacks.",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6ad699be774b2a8cb5c7d6d3",
     "projectPage": "https://setloop.io/llm-attacker",
     "githubRepo": "https://github.com/setloop-io/LLM-Attack-Suite",
@@ -193,7 +204,7 @@
     "fullname": "Setloop",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/l8UIXIEloO6cxPWimFXT4.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -254,7 +265,7 @@
      "name": "Mercury7353"
     },
     "summary": "Recursive self-improvement (RSI) relies on evaluation feedback to assess progress and guide further research, yet repeatedly running complex benchmarks is costly and slows iteration. Human experts reduce this cost by selecting benchmark subsets or designing compact suites. We ask whether AI agents can automate this design process and introduce EvalResearchBench (ERB), a benchmark for autonomous evaluation research. Given target materials, development references, candidate APIs, and fixed time and API budgets, an agent called the researcher selects or synthesizes tasks, implements graders, and revises them in pilot tests before freezing an executable evaluator for coding, co-work, and reasoning. We study 9 researchers and 13 candidate models and compare each frozen evaluator with 14 target benchmarks on score concordance and pairwise agreement. The best evaluators order about 75\\% of candidate pairs as the targets do, below the 91\\% ceiling set by disagreements among the targets. No researcher leads on every metric, and the best evaluator on development targets is not the best on sealed targets hidden from the researcher. A human-designed sample of public tasks remains a strong baseline, and the evaluator with the lowest recorded execution cost attains the highest pairwise agreement. Agents repair tasks and graders through pilot feedback, yet their evaluators can still truncate answers, exhaust the evaluation budget, or let a few questions dominate a domain score.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6adbf47e121a70fc68345949",
     "projectPage": "https://mercury7353.github.io/self-evaluation-bench/blog/when-ai-agents-design-the-test.html",
     "githubRepo": "https://github.com/Mercury7353/self-evaluation-bench",
@@ -349,7 +360,7 @@
      "name": "mohsenfayyaz"
     },
     "summary": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adbe277121a70fc6834592c",
     "ai_summary": "Diffusion language models spend more computation on novel, rare, or incorrect outputs, and decoding speed can improve inference efficiency and reliability.",
     "ai_keywords": [
@@ -446,7 +457,7 @@
      "name": "ElironRahimi"
     },
     "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6adb372d121a70fc683456f4",
     "projectPage": "https://t2quant.ofekavivi.com/",
     "githubRepo": "https://github.com/OfekAvivi/T2Quant",
@@ -1515,7 +1526,7 @@
      "denoising latency"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "61fb9e24dc607a42af5f193f",
      "name": "MBZUAI",
@@ -1603,7 +1614,7 @@
      "cross-run paper store"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 7,
     "organization": {
      "_id": "697e87d12cc19315a8497001",
      "name": "UCSanDiego",
@@ -2388,7 +2399,18 @@
      },
      {
       "_id": "6adb14ae55db1e682e58307c",
+      "user": {
+       "_id": "669a184bc7b418d6f357229a",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/669a184bc7b418d6f357229a/gZovo4yl29iJwRMG2RzC1.jpeg",
+       "isPro": false,
+       "fullname": "Yang Tian",
+       "user": "yangtian6781",
+       "type": "user",
+       "name": "yangtian6781"
+      },
       "name": "Yang Tian",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T08:45:04.602Z",
       "hidden": false
      },
      {
@@ -2646,7 +2668,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 56,
+    "upvotes": 64,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -2757,7 +2779,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 226,
+    "upvotes": 229,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -2775,7 +2797,7 @@
      "object-absent queries"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 78,
+    "githubStars": 88,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -3276,7 +3298,7 @@
      "name": "XaiverZ"
     },
     "summary": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into separate signals for mode selection and within-mode execution, enabling more targeted credit assignment to each decision level. We further introduce progressive exploration, which gradually shifts training from externally assigned modes to autonomous selection, so that the router first learns how to execute each mode before deciding when to use it. We evaluate RouteWeaver across mathematics, coding, knowledge, logical reasoning, and factual recall. RouteWeaver achieves an average accuracy of 61.4%, an 11.03% relative improvement over the strongest baseline, and outperforms all compared baselines in each of the five domains. Ablations show that both COMET-GRPO and progressive exploration are important for adaptive routing; without progressive exploration, the routing policy collapses entirely to single-round execution.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6adad0b155db1e682e582d64",
     "projectPage": "https://laughking.github.io/RouteWeaver/",
     "githubRepo": "https://github.com/LaughKing/RouteWeaver",
@@ -6088,7 +6110,7 @@
      "name": "taesiri"
     },
     "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6adac4aa55db1e682e582cc9",
     "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
     "ai_summary": "This survey unifies video understanding and generation through world modeling, organizing progress around inferring, synthesizing, sharing, and interacting with latent temporal states to emphasize persistent dynamics over clip-level perception.",
