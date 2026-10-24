@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T15:30:57.873Z",
+ "fetchedAt": "2026-10-24T17:45:53.063Z",
  "payload": [
   {
    "paper": {
@@ -414,7 +414,18 @@
     "authors": [
      {
       "_id": "6adb372c121a70fc683456f0",
+      "user": {
+       "_id": "6a2abffe3d55934730586b3c",
+       "avatarUrl": "/avatars/a912242b0bcdf5fbbc8a68b12352ac0f.svg",
+       "isPro": false,
+       "fullname": "Ofek Avivi",
+       "user": "ofekavivi",
+       "type": "user",
+       "name": "ofekavivi"
+      },
       "name": "Ofek Avivi",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T16:45:04.728Z",
       "hidden": false
      },
      {
@@ -457,7 +468,7 @@
      "name": "ElironRahimi"
     },
     "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6adb372d121a70fc683456f4",
     "projectPage": "https://t2quant.ofekavivi.com/",
     "githubRepo": "https://github.com/OfekAvivi/T2Quant",
@@ -901,7 +912,18 @@
     "authors": [
      {
       "_id": "6adb601d121a70fc683457b5",
+      "user": {
+       "_id": "672403d5f328a3e6638331ee",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/TXr0SKWI-z-6FvUXTNWXT.jpeg",
+       "isPro": false,
+       "fullname": "Ava Pun",
+       "user": "AvaLovelace",
+       "type": "user",
+       "name": "AvaLovelace"
+      },
       "name": "Ava Pun",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T16:45:04.740Z",
       "hidden": false
      },
      {
@@ -966,7 +988,7 @@
      "name": "AvaLovelace"
     },
     "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
-    "upvotes": 5,
+    "upvotes": 7,
     "discussionId": "6adb601d121a70fc683457bf",
     "projectPage": "https://avalovelace1.github.io/brickwright/",
     "githubRepo": "https://github.com/AvaLovelace1/brickwright",
@@ -1013,7 +1035,7 @@
     "fullname": "Generative Intelligence Lab (CMU)",
     "avatar": "https://www.gravatar.com/avatar/ffb85327669c21e7ca3d691f4a8f3c8c?d=retro&size=100"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -2668,7 +2690,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 84,
+    "upvotes": 85,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -2779,7 +2801,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 230,
+    "upvotes": 231,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -3314,7 +3336,7 @@
      "credit assignment"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 3,
     "organization": {
      "_id": "6508b28cf36bb51c50faad98",
      "name": "NanyangTechnologicalUniversity",
@@ -3527,7 +3549,7 @@
      "name": "Davidscut"
     },
     "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-    "upvotes": 162,
+    "upvotes": 175,
     "discussionId": "6ada184cd10c239d0da2ce96",
     "ai_summary": "LayerEditor unifies instruction-guided image editing with reusable RGBA layer generation via joint token modeling and edit-prior distillation, enabling precise local manipulation and layer reuse.",
     "ai_keywords": [
@@ -3639,7 +3661,7 @@
      "ROPE"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 31,
+    "githubStars": 46,
     "organization": {
      "_id": "683ebd0d913d82e703e77286",
      "name": "sii-research",
@@ -3683,7 +3705,18 @@
     "authors": [
      {
       "_id": "6adad89b55db1e682e582dc2",
+      "user": {
+       "_id": "64ae34066864362a7e290ab3",
+       "avatarUrl": "/avatars/ae6f9fd34a697deb7ea4e92fd5f91899.svg",
+       "isPro": true,
+       "fullname": "Huiwon Jang",
+       "user": "huiwon",
+       "type": "user",
+       "name": "huiwon"
+      },
       "name": "Huiwon Jang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T16:45:04.718Z",
       "hidden": false
      },
      {
@@ -3740,7 +3773,7 @@
      "name": "glory-hyeok"
     },
     "summary": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
-    "upvotes": 29,
+    "upvotes": 30,
     "discussionId": "6adad89b55db1e682e582dc8",
     "projectPage": "https://huiwon-jang.github.io/FRED/",
     "githubRepo": "https://github.com/suhyeok-jang/FRED",
@@ -3855,7 +3888,7 @@
      "temporal match"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 19,
+    "githubStars": 21,
     "organization": {
      "_id": "689f08c50df4fcf7fddc0b08",
      "name": "AlayaLab",
@@ -4395,7 +4428,7 @@
      "name": "HongcanGuo04"
     },
     "summary": "Hierarchical language generation separates continuous semantic modeling from discrete text realization, but its effectiveness depends on what the latent space compresses and how the discrete generator uses it. We propose Cola2, a framework that jointly studies continuous semantic compression, the balance between reconstruction and generation, and continuous-discrete co-adaptation. Cola2 dynamically segments text into semantic spans, controls the compression rate through auxiliary-loss-free negative feedback, and combines reconstruction and generation supervision to learn compact, predictive latent representations. A block-causal masked diffusion decoder is trained with clean, noisy, and dropped latent conditions, while classifier-free guidance adjusts the balance between semantic reconstruction and autonomous generation. Token-prediction gradients update the encoder through the latents, whereas Flow Matching prior learning is decoupled from representation learning by stop-gradient. During inference, generated text is re-encoded under a fixed span layout to keep the latent history consistent with the actual text context. Experiments on five downstream tasks with about 210 billion training tokens validate the core designs and show competitive, unsaturated scaling. With 346.03 billion source tokens, an unconverged checkpoint reaches a 60.10 average across eight tasks and surpasses Llama-3-8B on HellaSwag and StoryCloze despite its reported pretraining budget being over 43 times larger. These results demonstrate the potential of continuous-latent hierarchical language generation.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6adad78f55db1e682e582db7",
     "projectPage": "https://hongcanguo.github.io/Cola2",
     "ai_summary": "Cola2 improves hierarchical language generation by jointly optimizing continuous semantic compression, reconstruction-generation balance, and encoder-decoder co-adaptation via dynamic span segmentation, masked diffusion decoding, and flow-matching priors.",
@@ -4849,7 +4882,18 @@
      },
      {
       "_id": "6adad3e055db1e682e582d93",
+      "user": {
+       "_id": "687270fd98f149bbf399efc1",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/687270fd98f149bbf399efc1/4ngmITVvaKXCgD0z5jvxu.jpeg",
+       "isPro": false,
+       "fullname": "YiniHuang",
+       "user": "Nina-Huang",
+       "type": "user",
+       "name": "Nina-Huang"
+      },
       "name": "Yini Huang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T16:45:04.710Z",
       "hidden": false
      },
      {
@@ -5843,7 +5887,18 @@
      },
      {
       "_id": "6adac4e855db1e682e582cd3",
+      "user": {
+       "_id": "648ac415718bc0670a5a5f56",
+       "avatarUrl": "/avatars/27189e289b808ef01689ff2abb7a56bf.svg",
+       "isPro": false,
+       "fullname": "Sangdoo Yun",
+       "user": "oodgnas",
+       "type": "user",
+       "name": "oodgnas"
+      },
       "name": "Sangdoo Yun",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-24T16:45:04.702Z",
       "hidden": false
      }
     ],
@@ -6339,7 +6394,7 @@
      "name": "Liguyanger"
     },
     "summary": "Code-based video generation offers fine-grained control, targeted editing, and component reuse compared with direct video generation. This approach requires multimodal large language models (MLLMs) to translate visual and temporal requirements into executable programs that produce complete videos. However, existing code-based benchmarks primarily target specialized tasks, leaving complete video creation across diverse creative categories and input modalities insufficiently evaluated. We introduce Code2Video-Compass, a general-purpose benchmark for code-based video generation across text-to-video (T2V), image-to-video (I2V), and video-to-video (V2V) settings. Code2Video-Compass comprises 2,104 tasks spanning 10 categories, 24 subtypes, and three complexity dimensions covering construction, dynamic animation, and state dependency. It combines tasks curated from textual instructions and visual references with corresponding T2V, I2V, and V2V tasks derived from complete professional and user-created videos. We propose a dual-level evaluation framework combining 12 objective metrics and five subjective metrics. Objective evaluation covers operational performance, video quality, text-video alignment, and reference fidelity, while subjective evaluation uses an MLLM judge to evaluate instruction following and holistic video quality. Extensive evaluation of 15 recent proprietary and open-weight MLLMs from nine families reveals that even leading models face challenges in reliably generating high-quality complete videos aligned with textual and visual requirements, with performance generally declining as construction, dynamic animation, and state-dependency complexity increases. We anticipate that Code2Video-Compass will advance reliable, coherent, and controllable code-based video generation and inspire broader progress in programmatic visual creation.",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6ad843d2efdc4c3bd8229fc5",
     "projectPage": "https://code2video-compass.github.io",
     "githubRepo": "https://github.com/code2video-compass/Code2Video-Compass",
