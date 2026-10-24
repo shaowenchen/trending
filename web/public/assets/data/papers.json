@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T08:45:56.189Z",
+ "fetchedAt": "2026-10-24T11:01:11.978Z",
  "payload": [
   {
    "paper": {
@@ -457,7 +457,7 @@
      "name": "ElironRahimi"
     },
     "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
-    "upvotes": 6,
+    "upvotes": 10,
     "discussionId": "6adb372d121a70fc683456f4",
     "projectPage": "https://t2quant.ofekavivi.com/",
     "githubRepo": "https://github.com/OfekAvivi/T2Quant",
@@ -966,7 +966,7 @@
      "name": "AvaLovelace"
     },
     "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6adb601d121a70fc683457bf",
     "projectPage": "https://avalovelace1.github.io/brickwright/",
     "githubRepo": "https://github.com/AvaLovelace1/brickwright",
@@ -993,7 +993,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/672403d5f328a3e6638331ee/EUcI4xp1ACVO_EhPCppFG.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31651.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "672403d5f328a3e6638331ee",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/TXr0SKWI-z-6FvUXTNWXT.jpeg",
@@ -1074,7 +1074,7 @@
      "name": "barryjinks"
     },
     "summary": "As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT~5.6~Sol, Command~A+, Qwen~3.8~27B, and Command~R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ad8321befdc4c3bd8229f0a",
     "ai_summary": "Researchers use a shared-control maze to show that stronger language-model agents selectively involve humans based on route advantage rather than failing to collaborate.",
     "ai_keywords": [
@@ -1101,7 +1101,7 @@
    "title": "Who Takes the Lead? Model Ability and Task-Conditioned Collaboration with Humans",
    "summary": "As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT~5.6~Sol, Command~A+, Qwen~3.8~27B, and Command~R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27148.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "64b9ded93e62024f557813b0",
     "avatarUrl": "/avatars/dac8a322ed7d4cadd24acb677b69f19f.svg",
@@ -2668,7 +2668,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 64,
+    "upvotes": 68,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -3527,7 +3527,7 @@
      "name": "Davidscut"
     },
     "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-    "upvotes": 74,
+    "upvotes": 83,
     "discussionId": "6ada184cd10c239d0da2ce96",
     "ai_summary": "LayerEditor unifies instruction-guided image editing with reusable RGBA layer generation via joint token modeling and edit-prior distillation, enabling precise local manipulation and layer reuse.",
     "ai_keywords": [
@@ -3740,7 +3740,7 @@
      "name": "glory-hyeok"
     },
     "summary": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
-    "upvotes": 26,
+    "upvotes": 28,
     "discussionId": "6adad89b55db1e682e582dc8",
     "projectPage": "https://huiwon-jang.github.io/FRED/",
     "githubRepo": "https://github.com/suhyeok-jang/FRED",
@@ -3984,7 +3984,7 @@
      "name": "danielhzlin"
     },
     "summary": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
-    "upvotes": 49,
+    "upvotes": 50,
     "discussionId": "6adad1e955db1e682e582d73",
     "projectPage": "https://physical2rsi.github.io",
     "githubRepo": "https://github.com/Physical2RSI/Awesome-Physical2RSI",
@@ -4015,7 +4015,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4,
+    "followerCount": 5,
     "isUserFollowing": false
    },
    "organization": {
