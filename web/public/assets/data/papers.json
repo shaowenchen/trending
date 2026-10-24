@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T04:16:04.186Z",
+ "fetchedAt": "2026-10-24T06:31:00.279Z",
  "payload": [
   {
    "paper": {
@@ -1169,7 +1169,7 @@
      "name": "yimingz"
     },
     "summary": "Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera trajectories for dynamic 3D environments. To generate these trajectories, a Director agent constructs executable camera plans by composing high-level motions from concurrent atomic operations that jointly control translation, rotation, and framing. The Director is supported by three specialized agents: an Interpreter that extracts scene-grounded cinematographic intent, a Scout that selects initial viewpoints, and a Critic that evaluates rendered results and provides visual feedback for iterative plan refinement. We also introduce CinemaBench, comprising 150 Blender scenes from self-created and licensed sources, with five camera instructions per scene for 750 text-directed tasks and 60 reference videos associated with a subset of scenes. CinemaBench supports evaluation of both text-directed camera generation and video reference-directed camera generation. Across a diverse set of evaluated baselines, FilmFlow achieves the strongest benchmark performance and the highest user preference, demonstrating effective spatial reasoning, temporal coordination, and visual composition for executable 3D cinematography.",
-    "upvotes": 17,
+    "upvotes": 26,
     "discussionId": "6adb63b1121a70fc683457da",
     "projectPage": "https://visionary-laboratory.github.io/Filmflow/",
     "ai_summary": "FilmFlow is an agentic framework that translates natural-language or video instructions into executable camera trajectories for 3D scenes using specialized director, interpreter, scout, and critic agents, evaluated on the CinemaBench dataset.",
@@ -1298,7 +1298,7 @@
      "name": "Little-d1d1"
     },
     "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6adb551c121a70fc68345787",
     "githubRepo": "https://github.com/THU-KEG/RIDAR",
     "githubRepoAddedBy": "user",
@@ -2646,7 +2646,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 55,
+    "upvotes": 56,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -2757,7 +2757,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 225,
+    "upvotes": 226,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -2915,7 +2915,7 @@
      "task-conditioned retrieval"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 27
+    "githubStars": 28
    },
    "publishedAt": "2026-10-13T20:00:00.000Z",
    "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
@@ -3617,7 +3617,7 @@
      "ROPE"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 24,
+    "githubStars": 31,
     "organization": {
      "_id": "683ebd0d913d82e703e77286",
      "name": "sii-research",
@@ -3718,7 +3718,7 @@
      "name": "glory-hyeok"
     },
     "summary": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
-    "upvotes": 23,
+    "upvotes": 26,
     "discussionId": "6adad89b55db1e682e582dc8",
     "projectPage": "https://huiwon-jang.github.io/FRED/",
     "githubRepo": "https://github.com/suhyeok-jang/FRED",
@@ -3734,7 +3734,7 @@
      "zero-shot generalization"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 7,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -3833,7 +3833,7 @@
      "temporal match"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 18,
+    "githubStars": 19,
     "organization": {
      "_id": "689f08c50df4fcf7fddc0b08",
      "name": "AlayaLab",
@@ -3962,7 +3962,7 @@
      "name": "danielhzlin"
     },
     "summary": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
-    "upvotes": 48,
+    "upvotes": 49,
     "discussionId": "6adad1e955db1e682e582d73",
     "projectPage": "https://physical2rsi.github.io",
     "githubRepo": "https://github.com/Physical2RSI/Awesome-Physical2RSI",
@@ -4629,7 +4629,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 6,
+    "followerCount": 7,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -4934,7 +4934,7 @@
      "long-horizon search management"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 20
+    "githubStars": 23
    },
    "publishedAt": "2026-10-18T20:00:00.000Z",
    "title": "Deep Search in Real-World Web Environments",
@@ -6088,7 +6088,7 @@
      "name": "taesiri"
     },
     "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6adac4aa55db1e682e582cc9",
     "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
     "ai_summary": "This survey unifies video understanding and generation through world modeling, organizing progress around inferring, synthesizing, sharing, and interacting with latent temporal states to emphasize persistent dynamics over clip-level perception.",
