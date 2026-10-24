@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ★ 2026-10-19 mobile tab adaptation: full favicon set + PWA manifest + dual-theme
+     color-scheme theme-color. Paths are relative with ../ (this page lives in en/). -->
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#18191e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<!-- ★ The title tag is skeleton copy (2026-10-20 evening, owner's final wording):
+     brand word + one-line site description. Same convention as the h1 and the
+     meta description — hand-written per language, not in the dictionary and not
+     a placeholder (the BRAND placeholder mechanism retired with this change: the brand
+     word differs per language, one placeholder cannot produce both). -->
+<title>Trend boards</title>
+<meta name="description" content="Trend boards: model rankings, open-source ecosystem and AI news on one page.">
+<!--
+  Single-page site: all 39 boards live on this page, grouped into six topic
+  sections. There are no second-level pages any more.
+
+  Same notes as the Chinese page: hand-written static file served straight by
+  GitHub Pages, relative paths only, `<base href="./">` pins them to this
+  directory. There is deliberately no canonical / og:url / site verification
+  here — those need an absolute URL and this site never hard-codes its domain.
+  GTM is different: the container id does not depend on where the site is
+  hosted, so it is here, resolved at build time (see `src/site/gtm.js`).
+
+  Two build-time placeholders (see `src/site/nav.js`):
+    - the sticky index bar (topic filter + board jumps + refresh)
+    - the six topic sections; trend.js mounts the panels into them
+  Both derive from `assets/boards.js` (board/topic list) and `assets/i18n.js` (text).
+  (The placeholder literals are deliberately not spelled out here: injection is a
+  plain string replace, so a mention inside a comment would be expanded too.)
+-->
+<base href="./">
+<!-- ★ Theme boot: must run BEFORE the stylesheet, as a plain synchronous
+     inline script (not a module). Place it after the stylesheet and the
+     browser paints one frame in the default dark theme first — that flash is
+     exactly why the toggle was removed in the first place. The body is
+     resolved at build time (src/site/theme-boot.js → assets/theme.js
+     bootSnippet()), so the localStorage key and the valid-value rule have a
+     single source. -->
+<script>try{var t=localStorage.getItem("trend-theme");if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="../site.css?v=1792870210">
+<!-- Data version stamp (build-site fills in the newest snapshot fetchedAt in ms):
+     trend.js appends ?v= to in-site assets/data/*.json URLs to bust browser/CDN
+     caches. Unchanged data keeps the version; any update changes the URL. -->
+<script>window.__TREND_DATA_V__="1792870219244";</script>
+<!-- Google Tag Manager: container id comes from src/site/gtm.js, resolved at build time -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MTW4XNQ');</script>
+</head>
+<body>
+<!-- GTM noscript fallback — this position is the one Google requires -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTW4XNQ" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <h1 class="nav-home">Trend boards</h1>
+    <nav class="site-nav" aria-label="Site navigation">
+      <button class="icon-btn theme-btn" type="button" id="theme-toggle" aria-label="Theme" title="Theme"><span class="ic" data-icon="monitor"></span></button>
+      <a class="lang" href="../" hreflang="zh-CN" lang="zh-CN"><span class="ic" data-icon="globe"><span class="sr-only">Switch language: </span></span>中文</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- The h1 in the header (rendered by nav.js) is the site name; the content
+       starts straight with the split layout (the description line under the
+       title was removed on 2026-10-22, owner's request).
+       Levels stay three-deep: h1 site name (in the header) / h2 topic / h3 panel. -->
+
+  <!-- Two-column layout (2026-10-20): the left column is a fixed board picker
+       (39 boards grouped by topic, tap one to show only it; not collapsible and
+       it does not scroll with the page), the right column is the content
+       (the selected board, or the daily view when nothing is selected). Narrow
+       screens (<1024px) fall back to the stacked layout with the collapsible
+       index bar under the header (see the media queries in site.css). -->
+  <div class="home-layout">
+  <nav class="board-index" id="board-index" aria-label="Board index">
+    <div class="idx-groups"><div class="idx-group" role="group" data-topic="models" aria-label="Models">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">Models</span><span class="idx-group-n">6</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="trending" aria-pressed="false" title="Trending models"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Trending models</span></button><button class="idx-chip" type="button" data-jump="liked" aria-pressed="false" title="Most-liked models"><span class="idx-ic" data-icon="heart"></span><span class="idx-name">Most-liked models</span></button><button class="idx-chip" type="button" data-jump="downloaded" aria-pressed="false" title="Most-downloaded models"><span class="idx-ic" data-icon="download"></span><span class="idx-name">Most-downloaded models</span></button><button class="idx-chip" type="button" data-jump="newmodels" aria-pressed="false" title="Latest model releases"><span class="idx-ic" data-icon="box"></span><span class="idx-name">Latest model releases</span></button><button class="idx-chip" type="button" data-jump="openrouter" aria-pressed="false" title="OpenRouter model usage"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">OpenRouter model usage</span></button><button class="idx-chip" type="button" data-jump="orCatalog" aria-pressed="false" title="OpenRouter model catalog"><span class="idx-ic" data-icon="database"></span><span class="idx-name">OpenRouter model catalog</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="benchmarks" aria-label="Benchmarks">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">Benchmarks</span><span class="idx-group-n">4</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="eval" aria-pressed="false" title="Open-model evaluation board"><span class="idx-ic" data-icon="trophy"></span><span class="idx-name">Open-model evaluation board</span></button><button class="idx-chip" type="button" data-jump="aider" aria-pressed="false" title="Coding ability (Aider Polyglot)"><span class="idx-ic" data-icon="code"></span><span class="idx-name">Coding ability (Aider Polyglot)</span></button><button class="idx-chip" type="button" data-jump="aaBench" aria-pressed="false" title="Artificial Analysis benchmarks"><span class="idx-ic" data-icon="trophy"></span><span class="idx-name">Artificial Analysis benchmarks</span></button><button class="idx-chip" type="button" data-jump="swebench" aria-pressed="false" title="SWE-bench (real code fixes)"><span class="idx-ic" data-icon="code"></span><span class="idx-name">SWE-bench (real code fixes)</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="ecosystem" aria-label="Ecosystem">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">Ecosystem</span><span class="idx-group-n">5</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="spaces" aria-pressed="false" title="Trending AI apps"><span class="idx-ic" data-icon="cube"></span><span class="idx-name">Trending AI apps</span></button><button class="idx-chip" type="button" data-jump="datasets" aria-pressed="false" title="Trending datasets"><span class="idx-ic" data-icon="layers"></span><span class="idx-name">Trending datasets</span></button><button class="idx-chip" type="button" data-jump="papers" aria-pressed="false" title="Daily paper leaderboard"><span class="idx-ic" data-icon="file"></span><span class="idx-name">Daily paper leaderboard</span></button><button class="idx-chip" type="button" data-jump="repos" aria-pressed="false" title="Top-starred AI projects"><span class="idx-ic" data-icon="star"></span><span class="idx-name">Top-starred AI projects</span></button><button class="idx-chip" type="button" data-jump="ghTrending" aria-pressed="false" title="GitHub Trending (AI filter)"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">GitHub Trending (AI filter)</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="platform" aria-label="Platform">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">Platform</span><span class="idx-group-n">6</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="orTrends" aria-pressed="false" title="OpenRouter fastest climbers"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">OpenRouter fastest climbers</span></button><button class="idx-chip" type="button" data-jump="orAuthors" aria-pressed="false" title="OpenRouter vendor share"><span class="idx-ic" data-icon="database"></span><span class="idx-name">OpenRouter vendor share</span></button><button class="idx-chip" type="button" data-jump="orPerf" aria-pressed="false" title="OpenRouter performance"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">OpenRouter performance</span></button><button class="idx-chip" type="button" data-jump="orApps" aria-pressed="false" title="OpenRouter app usage"><span class="idx-ic" data-icon="cube"></span><span class="idx-name">OpenRouter app usage</span></button><button class="idx-chip" type="button" data-jump="wikiAttention" aria-pressed="false" title="Wikipedia attention on AI topics"><span class="idx-ic" data-icon="file"></span><span class="idx-name">Wikipedia attention on AI topics</span></button><button class="idx-chip" type="button" data-jump="googleTrends" aria-pressed="false" title="Google search trends"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Google search trends</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="news" aria-label="News">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">News</span><span class="idx-group-n">3</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="aiNews" aria-pressed="false" title="AI news roundup"><span class="idx-ic" data-icon="file"></span><span class="idx-name">AI news roundup</span></button><button class="idx-chip" type="button" data-jump="aiPress" aria-pressed="false" title="AI official news"><span class="idx-ic" data-icon="file"></span><span class="idx-name">AI official news</span></button><button class="idx-chip" type="button" data-jump="hnTop" aria-pressed="false" title="Hacker News front page"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Hacker News front page</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="cn-hot" aria-label="Chinese hot lists">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">Chinese hot lists</span><span class="idx-group-n">19</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="zhihu" aria-pressed="false" title="Zhihu hot list"><span class="idx-ic" data-icon="file"></span><span class="idx-name">Zhihu hot list</span></button><button class="idx-chip" type="button" data-jump="csdn" aria-pressed="false" title="CSDN hot list"><span class="idx-ic" data-icon="code"></span><span class="idx-name">CSDN hot list</span></button><button class="idx-chip" type="button" data-jump="juejin" aria-pressed="false" title="Juejin hot list"><span class="idx-ic" data-icon="code"></span><span class="idx-name">Juejin hot list</span></button><button class="idx-chip" type="button" data-jump="itzhijia" aria-pressed="false" title="ITHome hot list"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">ITHome hot list</span></button><button class="idx-chip" type="button" data-jump="huxiu" aria-pressed="false" title="Huxiu hot list"><span class="idx-ic" data-icon="file"></span><span class="idx-name">Huxiu hot list</span></button><button class="idx-chip" type="button" data-jump="aifaner" aria-pressed="false" title="Ifanr hot list"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">Ifanr hot list</span></button><button class="idx-chip" type="button" data-jump="zhongguancun" aria-pressed="false" title="ZOL hot list"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">ZOL hot list</span></button><button class="idx-chip" type="button" data-jump="bilibili" aria-pressed="false" title="Bilibili hot list"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">Bilibili hot list</span></button><button class="idx-chip" type="button" data-jump="weibo" aria-pressed="false" title="Weibo trending"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Weibo trending</span></button><button class="idx-chip" type="button" data-jump="toutiao" aria-pressed="false" title="Toutiao hot list"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Toutiao hot list</span></button><button class="idx-chip" type="button" data-jump="hupu" aria-pressed="false" title="Hupu hot list"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Hupu hot list</span></button><button class="idx-chip" type="button" data-jump="douban" aria-pressed="false" title="Douban hot topics"><span class="idx-ic" data-icon="star"></span><span class="idx-name">Douban hot topics</span></button><button class="idx-chip" type="button" data-jump="zhidemai" aria-pressed="false" title="Smzdm hot deals"><span class="idx-ic" data-icon="star"></span><span class="idx-name">Smzdm hot deals</span></button><button class="idx-chip" type="button" data-jump="douyin" aria-pressed="false" title="Douyin hot list"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">Douyin hot list</span></button><button class="idx-chip" type="button" data-jump="xiaohongshu" aria-pressed="false" title="Xiaohongshu hot list"><span class="idx-ic" data-icon="heart"></span><span class="idx-name">Xiaohongshu hot list</span></button><button class="idx-chip" type="button" data-jump="baidu" aria-pressed="false" title="Baidu hot searches"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Baidu hot searches</span></button><button class="idx-chip" type="button" data-jump="v2ex" aria-pressed="false" title="V2EX hot topics"><span class="idx-ic" data-icon="code"></span><span class="idx-name">V2EX hot topics</span></button><button class="idx-chip" type="button" data-jump="qqnews" aria-pressed="false" title="Tencent News trending"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">Tencent News trending</span></button><button class="idx-chip" type="button" data-jump="kuaishou" aria-pressed="false" title="Kuaishou hot list"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">Kuaishou hot list</span></button></div>
+    </div></div>
+  </nav>
+
+  <div class="home-main">
+  <!-- Daily view (2026-10-19): shown when no board is selected — one random
+       quote + illustrated "on this day" cards. "Weibo hot search" is selected by
+       default, so this stays hidden until you deselect that chip (tap it again).
+       Filled by mountDaily() in trend.js; this skeleton is just shape. -->
+  <section id="daily" class="daily" hidden>
+    <div class="daily-quote">
+      <h2 class="daily-h2" data-daily-quote-title></h2>
+      <blockquote class="daily-quote-text" data-daily-quote></blockquote>
+      <div class="daily-quote-meta"><span class="daily-quote-author" data-daily-author></span>
+        <button class="daily-next" type="button" data-daily-next></button></div>
+    </div>
+    <div class="daily-history">
+      <h2 class="daily-h2" data-daily-history-title></h2>
+      <p class="daily-history-note" data-daily-note></p>
+      <div class="daily-grid" data-daily-grid></div>
+    </div>
+  </section>
+
+  <!-- Six topic sections (Models / Benchmarks / Ecosystem / Platform / News /
+       Chinese hot lists). trend.js mounts each panel's skeleton at runtime and
+       lazy-loads it: data is only fetched when a panel scrolls near the
+       viewport, otherwise one visit would fire a dozen upstream requests at
+       once (three of them 4MB+ boards). -->
+  <div id="panels">
+  <section class="topic" id="topic-models">
+    <h2 class="topic-head">Models</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-benchmarks">
+    <h2 class="topic-head">Benchmarks</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-ecosystem">
+    <h2 class="topic-head">Ecosystem</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-platform">
+    <h2 class="topic-head">Platform</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-news">
+    <h2 class="topic-head">News</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-cn-hot">
+    <h2 class="topic-head">Chinese hot lists</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  </div>
+  </div>
+  </div>
+</main>
+<script src="../assets/trend.js" type="module"></script>
+<script src="../assets/ui.js" type="module"></script>
+<script src="../assets/theme.js" type="module"></script>
+</body>
+</html>

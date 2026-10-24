@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ★ 2026-10-19 移动端标签页适配：favicon 全套（SVG 矢量 + PNG 回退 + iOS 主屏图标）
+     + PWA manifest + 双主题 theme-color（手机浏览器 UI 条跟站主题走，暗色为默认态）。
+     路径全相对（站点可能挂在子路径下），en/ 页用 ../ 前缀（构建不改写，双份各写各的）。 -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#18191e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<!-- ★ 标题标签就是品牌词（2026-10-22 按 owner 要求去掉长描述）。 -->
+<title>趋势大盘</title>
+<meta name="description" content="趋势大盘：把各家平台的模型榜单、开源生态与 AI 资讯收进一个页面。">
+<!--
+  单页站：39 个榜单全部在这一页上铺开（按主题六类分段），没有二级页面。
+
+  页面里刻意**没有** canonical / og:url / 站长验证这类标记：它们的地址必须是
+  **绝对 URL**，而本站不写死域名（路径全用相对，见下）。GTM 与它们不同 ——
+  容器 ID 与部署地址无关，所以它**有**，由构建期落下（见 `src/site/gtm.js`）。
+
+  路径全部是**相对路径**（`site.css` 而不是 `/site.css`）：站点既可能挂在
+  `https://<用户名>.github.io/<仓库>/` 下，也可能挂在自定义域名的根下，
+  相对路径两种都能用，不需要任何 BASE_PATH 配置，也就不存在"换个域名整站白屏"。
+  下面这行 base 标签把这些相对路径钉在**本文件所在目录**上，与访问地址怎么写无关
+  （少了它，`/index.html` 与 `/index.html/` 这类地址会解析到不同的目录）。
+
+  两个占位符由构建期落值（`src/site/nav.js`）：
+    · 索引条占位（按主题分组的 39 个榜）
+    · 主题分段占位（六个主题段的骨架，面板由 trend.js 挂进去）
+  两者的真值都只在 `assets/boards.js`（面板/主题清单）与 `assets/i18n.js`（文案）。
+  （这里刻意不写出占位符的字面量：注入是朴素的字符串替换，写在注释里也会被撑开。）
+-->
+<base href="./">
+<!-- ★ 主题引导：必须在**样式表之前**、且是同步内联脚本（不是 module）。
+     摆在样式表之后就会先按默认暗色画一帧再翻成亮色 ——"先白后黑"就是这么来的。
+     正文由构建期落值（src/site/theme-boot.js → assets/theme.js 的 bootSnippet()），
+     所以 localStorage 的键与"什么算合法值"只有一处真值。 -->
+<script>try{var t=localStorage.getItem("trend-theme");if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="site.css?v=1792870210">
+<!-- 数据版本号（build-site 落值为最新快照 fetchedAt 的毫秒时间戳）：
+     trend.js 给 assets/data/*.json 的站内引用拼 ?v= 穿透浏览器/CDN 缓存，
+     数据不动版本不变，数据一更新 URL 必变。 -->
+<script>window.__TREND_DATA_V__="1792870219244";</script>
+<!-- Google Tag Manager：容器 ID 的唯一来源是 src/site/gtm.js，构建期落成真值。
+     放在 head 靠前的位置（早于页面绘制开始上报），与 Google 的建议一致。 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MTW4XNQ');</script>
+</head>
+<body>
+<!-- GTM 的 noscript 回退，位置由 Google 规定：紧跟 <body> 开标签 -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTW4XNQ" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <h1 class="nav-home">趋势大盘</h1>
+    <nav class="site-nav" aria-label="站点导航">
+      <button class="icon-btn theme-btn" type="button" id="theme-toggle" aria-label="主题" title="主题"><span class="ic" data-icon="monitor"></span></button>
+      <a class="lang" href="en/" hreflang="en" lang="en"><span class="ic" data-icon="globe"><span class="sr-only">切换语言：</span></span>English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- 页头左侧的 h1（nav.js 落）就是站点名；正文直接从分栏开始
+       （2026-10-22 按 owner 要求删掉了标题下的描述行）。
+       层次仍是三级：h1 站点名（在页头）/ h2 主题段 / h3 面板（trend.js 渲染）。 -->
+
+  <!-- 左右分栏（2026-10-20）：左列是**固定的分类栏**（39 个榜按主题分组，
+       点一个只看那一个；不做折叠、不跟随页面滚动），右列是正文（选中的榜 /
+       未选中时的每日视图）。窄屏（<1024px）退回上下布局：分类栏回到页头下方
+       那条可折叠的索引条（见 site.css 的断点）。 -->
+  <div class="home-layout">
+  <nav class="board-index" id="board-index" aria-label="榜单索引">
+    <div class="idx-groups"><div class="idx-group" role="group" data-topic="models" aria-label="模型榜">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">模型榜</span><span class="idx-group-n">6</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="trending" aria-pressed="false" title="正在流行的模型"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">正在流行的模型</span></button><button class="idx-chip" type="button" data-jump="liked" aria-pressed="false" title="最受喜欢的模型"><span class="idx-ic" data-icon="heart"></span><span class="idx-name">最受喜欢的模型</span></button><button class="idx-chip" type="button" data-jump="downloaded" aria-pressed="false" title="下载最多的模型"><span class="idx-ic" data-icon="download"></span><span class="idx-name">下载最多的模型</span></button><button class="idx-chip" type="button" data-jump="newmodels" aria-pressed="false" title="最新发布的模型"><span class="idx-ic" data-icon="box"></span><span class="idx-name">最新发布的模型</span></button><button class="idx-chip" type="button" data-jump="openrouter" aria-pressed="false" title="OpenRouter 模型用量榜"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">OpenRouter 模型用量榜</span></button><button class="idx-chip" type="button" data-jump="orCatalog" aria-pressed="false" title="OpenRouter 模型库"><span class="idx-ic" data-icon="database"></span><span class="idx-name">OpenRouter 模型库</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="benchmarks" aria-label="评测榜">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">评测榜</span><span class="idx-group-n">4</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="eval" aria-pressed="false" title="开源模型评测榜"><span class="idx-ic" data-icon="trophy"></span><span class="idx-name">开源模型评测榜</span></button><button class="idx-chip" type="button" data-jump="aider" aria-pressed="false" title="编程能力榜（Aider Polyglot）"><span class="idx-ic" data-icon="code"></span><span class="idx-name">编程能力榜（Aider Polyglot）</span></button><button class="idx-chip" type="button" data-jump="aaBench" aria-pressed="false" title="Artificial Analysis 评测榜"><span class="idx-ic" data-icon="trophy"></span><span class="idx-name">Artificial Analysis 评测榜</span></button><button class="idx-chip" type="button" data-jump="swebench" aria-pressed="false" title="SWE-bench（真实代码修复）"><span class="idx-ic" data-icon="code"></span><span class="idx-name">SWE-bench（真实代码修复）</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="ecosystem" aria-label="社区生态">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">社区生态</span><span class="idx-group-n">5</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="spaces" aria-pressed="false" title="正在流行的 AI 应用"><span class="idx-ic" data-icon="cube"></span><span class="idx-name">正在流行的 AI 应用</span></button><button class="idx-chip" type="button" data-jump="datasets" aria-pressed="false" title="正在流行的数据集"><span class="idx-ic" data-icon="layers"></span><span class="idx-name">正在流行的数据集</span></button><button class="idx-chip" type="button" data-jump="papers" aria-pressed="false" title="每日论文热榜"><span class="idx-ic" data-icon="file"></span><span class="idx-name">每日论文热榜</span></button><button class="idx-chip" type="button" data-jump="repos" aria-pressed="false" title="高星 AI 开源项目"><span class="idx-ic" data-icon="star"></span><span class="idx-name">高星 AI 开源项目</span></button><button class="idx-chip" type="button" data-jump="ghTrending" aria-pressed="false" title="GitHub Trending（AI 过滤）"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">GitHub Trending（AI 过滤）</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="platform" aria-label="平台洞察">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">平台洞察</span><span class="idx-group-n">6</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="orTrends" aria-pressed="false" title="OpenRouter 上升榜"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">OpenRouter 上升榜</span></button><button class="idx-chip" type="button" data-jump="orAuthors" aria-pressed="false" title="OpenRouter 厂商份额"><span class="idx-ic" data-icon="database"></span><span class="idx-name">OpenRouter 厂商份额</span></button><button class="idx-chip" type="button" data-jump="orPerf" aria-pressed="false" title="OpenRouter 性能榜"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">OpenRouter 性能榜</span></button><button class="idx-chip" type="button" data-jump="orApps" aria-pressed="false" title="OpenRouter 应用榜"><span class="idx-ic" data-icon="cube"></span><span class="idx-name">OpenRouter 应用榜</span></button><button class="idx-chip" type="button" data-jump="wikiAttention" aria-pressed="false" title="维基百科 AI 词条关注度"><span class="idx-ic" data-icon="file"></span><span class="idx-name">维基百科 AI 词条关注度</span></button><button class="idx-chip" type="button" data-jump="googleTrends" aria-pressed="false" title="Google 搜索趋势"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Google 搜索趋势</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="news" aria-label="资讯">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">资讯</span><span class="idx-group-n">3</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="aiNews" aria-pressed="false" title="AI 新闻热点"><span class="idx-ic" data-icon="file"></span><span class="idx-name">AI 新闻热点</span></button><button class="idx-chip" type="button" data-jump="aiPress" aria-pressed="false" title="AI 官方要闻"><span class="idx-ic" data-icon="file"></span><span class="idx-name">AI 官方要闻</span></button><button class="idx-chip" type="button" data-jump="hnTop" aria-pressed="false" title="Hacker News 首页"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">Hacker News 首页</span></button></div>
+    </div>
+    <div class="idx-group" role="group" data-topic="cn-hot" aria-label="中文热榜">
+      <button class="idx-group-head" type="button" data-idx-toggle aria-expanded="true"><span class="idx-group-label">中文热榜</span><span class="idx-group-n">19</span></button>
+      <div class="idx-group-items"><button class="idx-chip" type="button" data-jump="zhihu" aria-pressed="false" title="知乎热榜"><span class="idx-ic" data-icon="file"></span><span class="idx-name">知乎热榜</span></button><button class="idx-chip" type="button" data-jump="csdn" aria-pressed="false" title="CSDN 热榜"><span class="idx-ic" data-icon="code"></span><span class="idx-name">CSDN 热榜</span></button><button class="idx-chip" type="button" data-jump="juejin" aria-pressed="false" title="掘金热榜"><span class="idx-ic" data-icon="code"></span><span class="idx-name">掘金热榜</span></button><button class="idx-chip" type="button" data-jump="itzhijia" aria-pressed="false" title="IT之家热榜"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">IT之家热榜</span></button><button class="idx-chip" type="button" data-jump="huxiu" aria-pressed="false" title="虎嗅热榜"><span class="idx-ic" data-icon="file"></span><span class="idx-name">虎嗅热榜</span></button><button class="idx-chip" type="button" data-jump="aifaner" aria-pressed="false" title="爱范儿热榜"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">爱范儿热榜</span></button><button class="idx-chip" type="button" data-jump="zhongguancun" aria-pressed="false" title="中关村在线热榜"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">中关村在线热榜</span></button><button class="idx-chip" type="button" data-jump="bilibili" aria-pressed="false" title="B站热榜"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">B站热榜</span></button><button class="idx-chip" type="button" data-jump="weibo" aria-pressed="false" title="微博热搜"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">微博热搜</span></button><button class="idx-chip" type="button" data-jump="toutiao" aria-pressed="false" title="今日头条热榜"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">今日头条热榜</span></button><button class="idx-chip" type="button" data-jump="hupu" aria-pressed="false" title="虎扑步行街热榜"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">虎扑步行街热榜</span></button><button class="idx-chip" type="button" data-jump="douban" aria-pressed="false" title="豆瓣热话"><span class="idx-ic" data-icon="star"></span><span class="idx-name">豆瓣热话</span></button><button class="idx-chip" type="button" data-jump="zhidemai" aria-pressed="false" title="值得买热榜"><span class="idx-ic" data-icon="star"></span><span class="idx-name">值得买热榜</span></button><button class="idx-chip" type="button" data-jump="douyin" aria-pressed="false" title="抖音热榜"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">抖音热榜</span></button><button class="idx-chip" type="button" data-jump="xiaohongshu" aria-pressed="false" title="小红书热榜"><span class="idx-ic" data-icon="heart"></span><span class="idx-name">小红书热榜</span></button><button class="idx-chip" type="button" data-jump="baidu" aria-pressed="false" title="百度热搜"><span class="idx-ic" data-icon="trending"></span><span class="idx-name">百度热搜</span></button><button class="idx-chip" type="button" data-jump="v2ex" aria-pressed="false" title="V2EX 热帖"><span class="idx-ic" data-icon="code"></span><span class="idx-name">V2EX 热帖</span></button><button class="idx-chip" type="button" data-jump="qqnews" aria-pressed="false" title="腾讯新闻热点"><span class="idx-ic" data-icon="monitor"></span><span class="idx-name">腾讯新闻热点</span></button><button class="idx-chip" type="button" data-jump="kuaishou" aria-pressed="false" title="快手热榜"><span class="idx-ic" data-icon="bolt"></span><span class="idx-name">快手热榜</span></button></div>
+    </div></div>
+  </nav>
+
+  <div class="home-main">
+  <!-- 每日视图（2026-10-19）：**未选中任何榜时的落点** —— 一句随机名言 +
+       历史上的今天图文卡。默认选中「微博热搜」，所以它平时是隐藏的；
+       把选中的那一片再点一次（取消选中）才会出现。
+       内容由 trend.js 的 mountDaily() 填充，骨架在这里只为 SSR 形状与无 JS 兜底。 -->
+  <section id="daily" class="daily" hidden>
+    <div class="daily-quote">
+      <h2 class="daily-h2" data-daily-quote-title></h2>
+      <blockquote class="daily-quote-text" data-daily-quote></blockquote>
+      <div class="daily-quote-meta"><span class="daily-quote-author" data-daily-author></span>
+        <button class="daily-next" type="button" data-daily-next></button></div>
+    </div>
+    <div class="daily-history">
+      <h2 class="daily-h2" data-daily-history-title></h2>
+      <p class="daily-history-note" data-daily-note></p>
+      <div class="daily-grid" data-daily-grid></div>
+    </div>
+  </section>
+
+  <!-- 六个主题分段（模型榜 / 评测榜 / 社区生态 / 平台洞察 / 资讯 / 中文热榜）。
+       每段里的面板由 trend.js 运行时建骨架并懒加载：滚到视口附近才去上游取数，
+       否则进页面会同时开拉十几个源（其中三个是 4MB+ 的大体积榜）。 -->
+  <div id="panels">
+  <section class="topic" id="topic-models">
+    <h2 class="topic-head">模型榜</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-benchmarks">
+    <h2 class="topic-head">评测榜</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-ecosystem">
+    <h2 class="topic-head">社区生态</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-platform">
+    <h2 class="topic-head">平台洞察</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-news">
+    <h2 class="topic-head">资讯</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  <section class="topic" id="topic-cn-hot">
+    <h2 class="topic-head">中文热榜</h2>
+    <div class="topic-grid" data-panels></div>
+  </section>
+  </div>
+  </div>
+  </div>
+</main>
+<script src="assets/trend.js" type="module"></script>
+<script src="assets/ui.js" type="module"></script>
+<script src="assets/theme.js" type="module"></script>
+</body>
+</html>
