@@ -1,7 +1,7 @@
 {
  "key": "orTrends",
  "name": "orTrends",
- "fetchedAt": "2026-10-24T20:01:08.377Z",
+ "fetchedAt": "2026-10-24T22:15:56.526Z",
  "payload": [
   {
    "data": {
@@ -4402,36 +4402,36 @@
     },
     "videoRequests": {
      "minimax/hailuo-2.3-20260420": 515,
-     "google/veo-3.1-lite-20260331": 47474,
-     "heygen/avatar-iv-20260625": 11834,
-     "kwaivgi/kling-video-o1-20260420": 976,
-     "minimax/hailuo-03-20260730": 9139,
-     "runway/aleph-2-20260729": 530,
-     "kwaivgi/kling-v3.0-pro-20260429": 10543,
-     "bytedance/seedance-2.0-20260414": 18654,
-     "alibaba/wan-2.6-20260327": 677,
      "alibaba/wan-3.0-20260824": 73116,
+     "google/veo-3.1-lite-20260331": 47474,
+     "bytedance/seedance-2.0-mini-20260811": 9735,
+     "alibaba/happyhorse-1.0-20260624": 209,
+     "minimax/hailuo-03-20260730": 9139,
+     "kwaivgi/kling-v3.0-pro-20260429": 10543,
+     "alibaba/wan-2.6-20260327": 677,
+     "kwaivgi/kling-video-o1-20260420": 976,
+     "heygen/avatar-iv-20260625": 11834,
+     "runway/aleph-2-20260729": 530,
+     "runway/gen-4.5-20260729": 561,
+     "alibaba/happyhorse-1.1-20260624": 2975,
+     "x-ai/grok-imagine-video-20260512": 8502,
      "x-ai/grok-imagine-video-1.5-20260719": 6858,
      "bytedance/seedance-2.5-20260807": 31569,
-     "alibaba/happyhorse-1.0-20260624": 209,
-     "x-ai/grok-imagine-video-20260512": 8502,
-     "minimax/hailuo-3-max-20260901": 9844,
-     "bytedance/seedance-1-5-pro-20260320": 12043,
-     "runway/gen-4.5-20260729": 561,
-     "black-forest-labs/flux-video-edit-20260910": 1908,
-     "x-ai/grok-imagine-video-1.5-lite-20261001": 28427,
-     "alibaba/happyhorse-1.1-20260624": 2975,
-     "google/veo-3.1-fast-20260320": 14719,
+     "black-forest-labs/flux-3-video-20260804": 1482,
      "bytedance/seedance-2.0-fast-20260414": 22080,
-     "heygen/heygen-video-1-20260930": 61233,
-     "google/veo-3.1-20260320": 5978,
-     "kwaivgi/kling-v3.0-std-20260429": 11255,
-     "bytedance/seedance-2.0-mini-20260811": 9735,
+     "google/veo-3.1-fast-20260320": 14719,
+     "bytedance/seedance-1-5-pro-20260320": 12043,
      "alibaba/wan-2.7-20260414": 2559,
      "alibaba/wan-3.0-prime-20260827": 4606,
-     "black-forest-labs/flux-3-video-20260804": 1482
+     "heygen/heygen-video-1-20260930": 61233,
+     "google/veo-3.1-20260320": 5978,
+     "minimax/hailuo-3-max-20260901": 9844,
+     "kwaivgi/kling-v3.0-std-20260429": 11255,
+     "bytedance/seedance-2.0-20260414": 18654,
+     "black-forest-labs/flux-video-edit-20260910": 1908,
+     "x-ai/grok-imagine-video-1.5-lite-20261001": 28427
     },
-    "generatedAt": "2026-10-24T19:49:03.287Z",
+    "generatedAt": "2026-10-24T21:55:35.512Z",
     "routerTokens": {
      "~z-ai/glm-flash-latest": 222731732486,
      "openrouter/auto": 776918094853,
@@ -12754,9 +12754,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000000507",
-      "completion": "0.0000000702",
-      "input_cache_read": "0.00000003"
+      "prompt": "0.0000000175",
+      "completion": "0.0000001425",
+      "input_cache_read": "0.0000000175"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -14921,6 +14921,80 @@
        "low"
       ],
       "default_effort": "high"
+     }
+    },
+    {
+     "id": "liquid/lfm-2.5-2.6b",
+     "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+     "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
+     "name": "LiquidAI: LFM2.5-2.6B",
+     "created": 1786470519,
+     "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+     "context_length": 128000,
+     "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+       "text"
+      ],
+      "output_modalities": [
+       "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+     },
+     "pricing": {
+      "prompt": "0.00000035",
+      "completion": "0.0000005",
+      "input_cache_read": "0.00000004"
+     },
+     "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+     },
+     "per_request_limits": null,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+     ],
+     "default_parameters": {
+      "temperature": 0.1,
+      "top_k": 50,
+      "repetition_penalty": 1.1
+     },
+     "supported_voices": null,
+     "knowledge_cutoff": null,
+     "expiration_date": null,
+     "links": {
+      "details": "/api/v1/models/liquid/lfm-2.5-2.6b-20260811/endpoints"
+     },
+     "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+       "intelligence_index": 8.4,
+       "coding_index": 7.7,
+       "agentic_index": null
+      }
+     },
+     "reasoning": {
+      "mandatory": true
      }
     },
     {
@@ -25048,9 +25122,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.00000019",
-      "completion": "0.00000894",
-      "input_cache_read": "0.00000019"
+      "prompt": "0.000000225",
+      "completion": "0.000016",
+      "input_cache_read": "0.000000215"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -49818,7 +49892,7 @@
      }
     }
    ],
-   "total_count": 466,
+   "total_count": 467,
    "links": {
     "next": null
    }

@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T20:01:06.671Z",
+ "fetchedAt": "2026-10-24T22:15:54.614Z",
  "payload": [
   {
    "paper": {
@@ -1636,7 +1636,7 @@
      "cross-run paper store"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
+    "githubStars": 9,
     "organization": {
      "_id": "697e87d12cc19315a8497001",
      "name": "UCSanDiego",
@@ -5583,7 +5583,7 @@
    "title": "SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs",
    "summary": "Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories. Fine-tuned guardrail models are efficient but degrade on compound policies, and while LLM-as-a-judge approaches achieve higher accuracy, they incur high inference cost and tend to produce unstable predictions. Neurosymbolic methods offer a natural alternative, decomposing the policy into narrow neural decisions composed under explicit logic. However, existing symbolic layers lack the required expressiveness and are optimized against fixed data rather than the policy itself. To address this, we introduce SCOPE, which compiles a policy into an executable program of neural predicates executed by small models, deterministic extractors, and code that composes their outputs. The program is optimized jointly with its training data, using adversarial generation of counterexamples that target where the program deviates from the policy. We evaluate SCOPE on a benchmark of real-world policy tasks against prompt optimization, task decomposition, and workflow generation methods, achieving the highest average accuracy across tasks and models. Programs optimized with the weakest executor transfer to other models without further optimization. This allows them to be deployed in production on inexpensive models, where they reach accuracy comparable to frontier reasoning models. Unlike these monolithic models, SCOPE produces substantially more stable predictions, and each verdict is interpretable through the predicate outputs that produced it. Additionally, we validate the key components of our method through an ablation study. SCOPE thus enables reliable, interpretable, and efficient policy enforcement at production scale.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31062.png",
-   "numComments": 7,
+   "numComments": 8,
    "submittedBy": {
     "_id": "635d618494e5b275ca73b844",
     "avatarUrl": "/avatars/8cdaac6591a12b252612b99094e00959.svg",
@@ -6098,112 +6098,6 @@
   },
   {
    "paper": {
-    "id": "2610.31668",
-    "authors": [
-     {
-      "_id": "6adac4a955db1e682e582cc1",
-      "name": "Shengqiong Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc2",
-      "user": {
-       "_id": "64ad1c0bad6218d51a07b54e",
-       "avatarUrl": "/avatars/0f84d9a51c6ca9bcef44de2d7c707d9b.svg",
-       "isPro": false,
-       "fullname": "LUO MENG",
-       "user": "Eureka-Leo",
-       "type": "user",
-       "name": "Eureka-Leo"
-      },
-      "name": "Meng Luo",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.531Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc3",
-      "name": "Bobo Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc4",
-      "name": "Ziwei Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc5",
-      "name": "Shuicheng Yan",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc6",
-      "name": "Ming-Hsuan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc7",
-      "name": "Philip Torr",
-      "hidden": false
-     },
-     {
-      "_id": "6adac4a955db1e682e582cc8",
-      "name": "Hao Fei",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
-    "submittedOnDailyBy": {
-     "_id": "6039478ab3ecf716b1a5fd4d",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-     "isPro": true,
-     "fullname": "taesiri",
-     "user": "taesiri",
-     "type": "user",
-     "name": "taesiri"
-    },
-    "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 8,
-    "discussionId": "6adac4aa55db1e682e582cc9",
-    "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
-    "ai_summary": "This survey unifies video understanding and generation through world modeling, organizing progress around inferring, synthesizing, sharing, and interacting with latent temporal states to emphasize persistent dynamics over clip-level perception.",
-    "ai_keywords": [
-     "video foundation models",
-     "video world models",
-     "world modeling",
-     "latent temporal world",
-     "temporal coherence",
-     "persistent state",
-     "controllable evolution",
-     "physical validity",
-     "causal validity"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
-   "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31668.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6039478ab3ecf716b1a5fd4d",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-    "fullname": "taesiri",
-    "name": "taesiri",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 402,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
     "id": "2610.27598",
     "authors": [
      {
@@ -6449,6 +6343,162 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6437eca0819f3ab20d162e14/kWv0cGlAhAG3iNWVxowkJ.png"
    },
    "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.27233",
+    "authors": [
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7a",
+      "name": "Ruoxin Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7b",
+      "name": "Yuanting Pan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7c",
+      "name": "Binxu Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7d",
+      "name": "Ruiyang Ji",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7e",
+      "name": "Yaqian Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed7f",
+      "name": "Jiayuan Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed80",
+      "name": "Qifan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed81",
+      "name": "Lifu Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed82",
+      "name": "Mingjie Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed83",
+      "name": "Yu Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed84",
+      "name": "Ehsan Adeli",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed85",
+      "name": "Kilian Pohl",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed86",
+      "name": "Zhe Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed87",
+      "name": "Zihao Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed88",
+      "name": "Haoyu Dong",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9b90c3f2bb52eb8d6ed89",
+      "name": "Yixin Wang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/66e644522c78909baf18af3f/6LtWyHcNip1gc7B2eIs8v.mp4"
+    ],
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-22T00:00:00.000Z",
+    "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+    "submittedOnDailyBy": {
+     "_id": "66e644522c78909baf18af3f",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uWZQ95rTlI8Fj2t8YmM5M.png",
+     "isPro": false,
+     "fullname": "Roxanne WANG",
+     "user": "Roxanne-WANG",
+     "type": "user",
+     "name": "Roxanne-WANG"
+    },
+    "summary": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
+    "upvotes": 2,
+    "discussionId": "6ad9b90c3f2bb52eb8d6ed8a",
+    "projectPage": "https://mmedagent.org/",
+    "githubRepo": "https://github.com/RoxanneWAAANG/MMedAgent-Plus",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "MMedAgent-Plus is a multimodal medical agent that coordinates specialist AI models via a vision-language planner to execute multi-step clinical analyses with high accuracy and faithful synthesis.",
+    "ai_keywords": [
+     "multimodal medical tool-use agent",
+     "vision-language planner",
+     "specialist models",
+     "unified tool interface",
+     "instruction-tuned",
+     "tool orchestration",
+     "response synthesis",
+     "end-to-end execution",
+     "tool-call accuracy"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 11,
+    "organization": {
+     "_id": "6ac4239516c009def49dd641",
+     "name": "MMedAgent",
+     "fullname": "MMedAgent",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e644522c78909baf18af3f/IKMLwA0I1j24oLvn3ytSU.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-18T20:00:00.000Z",
+   "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+   "summary": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/66e644522c78909baf18af3f/6LtWyHcNip1gc7B2eIs8v.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27233.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "66e644522c78909baf18af3f",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uWZQ95rTlI8Fj2t8YmM5M.png",
+    "fullname": "Roxanne WANG",
+    "name": "Roxanne-WANG",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6ac4239516c009def49dd641",
+    "name": "MMedAgent",
+    "fullname": "MMedAgent",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e644522c78909baf18af3f/IKMLwA0I1j24oLvn3ytSU.jpeg"
+   },
+   "isAuthorParticipating": false
   }
  ]
 }
