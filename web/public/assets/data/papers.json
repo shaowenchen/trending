@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-24T11:01:11.978Z",
+ "fetchedAt": "2026-10-24T13:15:59.408Z",
  "payload": [
   {
    "paper": {
@@ -92,7 +92,7 @@
      "embodied NPCs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 16
+    "githubStars": 17
    },
    "publishedAt": "2026-10-20T20:00:00.000Z",
    "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
@@ -172,7 +172,7 @@
      "privacy evaluation"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
+    "githubStars": 1,
     "organization": {
      "_id": "6aa001b46ab3ddac3fcc9177",
      "name": "Setloop",
@@ -784,7 +784,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6169a814cc21d3c0aa086ad4/wLprm7izngXDyhilWGSU0.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30418.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "6169a814cc21d3c0aa086ad4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
@@ -1309,7 +1309,7 @@
      "name": "Little-d1d1"
     },
     "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6adb551c121a70fc68345787",
     "githubRepo": "https://github.com/THU-KEG/RIDAR",
     "githubRepoAddedBy": "user",
@@ -1324,7 +1324,7 @@
      "runtime intervention"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 5,
     "organization": {
      "_id": "64db4fc57266618e854318f4",
      "name": "THU-KEG",
@@ -2668,7 +2668,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 68,
+    "upvotes": 77,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -2779,7 +2779,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 229,
+    "upvotes": 230,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -3092,7 +3092,7 @@
      "name": "Knowing"
     },
     "summary": "Feed-forward 3D Gaussian Splatting (FF3DGS) reconstructs 3D scenes from images in a single forward pass, making it well-suited to applications that must operate within limited resource budgets. To further improve its practicality, recent budget-controllable FF3DGS methods allow the number of Gaussians to be adjusted at inference, so that the output meets a given storage limit or rendering-latency constraint. However, these methods overlook the cost of inference itself: to produce a representation with the target number of Gaussians, they first predict a dense set of Gaussians and then prune or select from it, requiring nearly constant latency and peak memory regardless of the budget. We therefore propose RLSplat, a resource-linear budget-controllable FF3DGS framework whose representation size, inference latency, and peak memory all decrease linearly as the Gaussian budget is reduced. Instead of pruning or selection, RLSplat learns a Gaussian allocation policy that distributes the budget across local scene regions, so that exactly the requested number of Gaussians is generated. These Gaussians are then refined through resource-linear Gaussian decoding, in which each Gaussian attends only to nearby Gaussians found via an efficient hierarchical neighbor search, so that the decoding cost decreases linearly with fewer Gaussians. In zero-shot evaluation, RLSplat outperforms prior budget-controllable methods at every budget, surpassing the strongest baseline even with 4times fewer Gaussians, while running up to 4.1times faster with 9.6times less peak memory at low budgets.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6adafa3455db1e682e582f3e",
     "projectPage": "https://mlvlab.github.io/RLSplat/",
     "githubRepo": "https://github.com/mlvlab/RLSplat",
@@ -3527,7 +3527,7 @@
      "name": "Davidscut"
     },
     "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-    "upvotes": 83,
+    "upvotes": 120,
     "discussionId": "6ada184cd10c239d0da2ce96",
     "ai_summary": "LayerEditor unifies instruction-guided image editing with reusable RGBA layer generation via joint token modeling and edit-prior distillation, enabling precise local manipulation and layer reuse.",
     "ai_keywords": [
@@ -4068,7 +4068,7 @@
      "name": "phenixace"
     },
     "summary": "Chemical chain-of-thought can contain hallucinated structural and property claims. We thereby introduce MolLean, a process-verifiable language that grounds chemical reasoning in an explicit molecular state. A layered Lean-based kernel checks state transitions and assertions over molecular readouts, from primitive graph edits to compound transformations. Meanwhile, a typed witness protocol separates native structural checks from externally supplied measurements. We further introduce MolLean-MCP, a stateful tool interface that exposes these transitions, checks, and readouts during generation: the model receives feedback to decide its next action, and rejected actions leave the state unchanged. MolLean supports one-pass trace execution, whole-trace refinement, and interactive reasoning through MolLean-MCP. We evaluate these three modes with direct chain-of-thought on 8,800 matched examples across 12 tasks spanning molecular generation, editing, optimization, and reactions. With Qwen3.6-27B, whole-trace refinement outperforms direct chain-of-thought on all 12 tasks. MolLean-MCP complements whole-trace refinement with stepwise verification feedback, reaching better performance in reaction tasks. Together, these results highlight an executable foundation for chemical reasoning, in which explicit chemical commitments can be checked and revised rather than remaining solely in free-form explanations.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6adadb7155db1e682e582e08",
     "githubRepo": "https://github.com/phenixace/Open-MolLean",
     "githubRepoAddedBy": "user",
@@ -4939,7 +4939,7 @@
      "name": "Yu2020"
     },
     "summary": "Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse sources, modalities, and heterogeneous formats, often involving complex interaction mechanisms that require agents to autonomously search for, access, and integrate relevant evidence during execution. To address this gap, we introduce the OpenDS task, designed to evaluate agents' ability to perform multi-step deep search in the live, open Web. This task requires agents to autonomously explore the real Web, discover and connect relevant evidence from multiple independent sources through Web search, browser interaction, and evidence processing, and ultimately determine a unique factual answer. Building on this task formulation, we construct OpenDS-World, a benchmark comprising 200 challenging tasks spanning diverse information modalities, heterogeneous file formats, and interactive access requirements, with independent human verification to ensure evidence validity and answer uniqueness. We evaluate 12 frontier models under a unified tool environment and execution protocol. The best-performing model achieves 39.0% accuracy, while human evaluation across 1,000 independent attempts yields 21.1% accuracy. Further analyses of tool usage, search cost, termination behavior, and failure recovery reveal substantial differences in research strategies across models, as well as persistent challenges in tool coordination and long-horizon search management. OpenDS-World provides a unified evaluation platform for systematically assessing and advancing agents' autonomous deep search capabilities in real-world open Web environments.",
-    "upvotes": 152,
+    "upvotes": 153,
     "discussionId": "6adad3e155db1e682e582da2",
     "githubRepo": "https://github.com/Yu-xm/OpenDS",
     "githubRepoAddedBy": "user",
@@ -5173,7 +5173,7 @@
    "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
    "summary": "LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and reranking over raw history to supply evidence to a reader LLM. Across LoCoMo, LongMemEval, MEME, and MemoryAgentBench, Raw-RAG ranks first among the compared memory systems in six of seven benchmark-model settings, outperforming the strongest compared agentic memory system by 0.13-5.53 points. We investigate why raw-history retrieval remains competitive. Evidence analysis shows that its higher coverage of necessary evidence can offset lower utilization. Useful evidence includes both answer values and the relations and dependency paths needed to derive them. Even complete access to transformed memory stores leaves an accuracy gap relative to raw evidence, highlighting the importance of preserving raw information. These findings challenge the necessity of complex agentic memory for the evaluated conversation tasks and establish naive RAG as an essential baseline.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30755.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "6512a55c4151fb1fa722c4f7",
     "avatarUrl": "/avatars/c7cebc47d424c3c81c4c7e8a0f55c713.svg",
@@ -5539,7 +5539,7 @@
    "title": "SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs",
    "summary": "Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories. Fine-tuned guardrail models are efficient but degrade on compound policies, and while LLM-as-a-judge approaches achieve higher accuracy, they incur high inference cost and tend to produce unstable predictions. Neurosymbolic methods offer a natural alternative, decomposing the policy into narrow neural decisions composed under explicit logic. However, existing symbolic layers lack the required expressiveness and are optimized against fixed data rather than the policy itself. To address this, we introduce SCOPE, which compiles a policy into an executable program of neural predicates executed by small models, deterministic extractors, and code that composes their outputs. The program is optimized jointly with its training data, using adversarial generation of counterexamples that target where the program deviates from the policy. We evaluate SCOPE on a benchmark of real-world policy tasks against prompt optimization, task decomposition, and workflow generation methods, achieving the highest average accuracy across tasks and models. Programs optimized with the weakest executor transfer to other models without further optimization. This allows them to be deployed in production on inexpensive models, where they reach accuracy comparable to frontier reasoning models. Unlike these monolithic models, SCOPE produces substantially more stable predictions, and each verdict is interpretable through the predicate outputs that produced it. Additionally, we validate the key components of our method through an ablation study. SCOPE thus enables reliable, interpretable, and efficient policy enforcement at production scale.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31062.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "635d618494e5b275ca73b844",
     "avatarUrl": "/avatars/8cdaac6591a12b252612b99094e00959.svg",
@@ -6299,7 +6299,7 @@
       "name": "Zhenghan Chen",
       "status": "claimed_verified",
       "statusLastChangedAt": "2026-10-22T16:45:04.590Z",
-      "hidden": true
+      "hidden": false
      },
      {
       "_id": "6ad843d2efdc4c3bd8229fc1",
