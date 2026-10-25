@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-25T07:15:53.105Z",
+ "fetchedAt": "2026-10-25T09:30:57.360Z",
  "payload": [
   {
    "paper": {
@@ -228,7 +228,18 @@
      },
      {
       "_id": "6adbf47e121a70fc68345944",
+      "user": {
+       "_id": "6518a144a28f86d3e9e67c34",
+       "avatarUrl": "/avatars/f2aed39e971cffe6c9d0b9c2f7a0df70.svg",
+       "isPro": false,
+       "fullname": "Tianyi Xu",
+       "user": "tianyi0216",
+       "type": "user",
+       "name": "tianyi0216"
+      },
       "name": "Tianyi Xu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T08:45:05.064Z",
       "hidden": false
      },
      {
@@ -248,7 +259,18 @@
      },
      {
       "_id": "6adbf47e121a70fc68345948",
+      "user": {
+       "_id": "688969c4d0ac71994caa0df6",
+       "avatarUrl": "/avatars/f8f89e0ca810908cfe21c921d8373e28.svg",
+       "isPro": false,
+       "fullname": "Huazheng Wang",
+       "user": "huazhengwang",
+       "type": "user",
+       "name": "huazhengwang"
+      },
       "name": "Huazheng Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T08:45:05.054Z",
       "hidden": false
      }
     ],
@@ -306,7 +328,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 15,
+    "followerCount": 16,
     "isUserFollowing": false
    },
    "organization": {
@@ -468,7 +490,7 @@
      "name": "ElironRahimi"
     },
     "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
-    "upvotes": 20,
+    "upvotes": 23,
     "discussionId": "6adb372d121a70fc683456f4",
     "projectPage": "https://t2quant.ofekavivi.com/",
     "githubRepo": "https://github.com/OfekAvivi/T2Quant",
@@ -1636,7 +1658,7 @@
      "cross-run paper store"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 9,
+    "githubStars": 10,
     "organization": {
      "_id": "697e87d12cc19315a8497001",
      "name": "UCSanDiego",
@@ -2690,7 +2712,7 @@
      "name": "ZhengChen1999"
     },
     "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 91,
+    "upvotes": 93,
     "discussionId": "6adb14ae55db1e682e5830ab",
     "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
     "ai_keywords": [
@@ -2801,7 +2823,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 239,
+    "upvotes": 241,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -2819,7 +2841,7 @@
      "object-absent queries"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 107,
+    "githubStars": 143,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -2883,7 +2905,18 @@
      },
      {
       "_id": "6ad6f22a774b2a8cb5c7db7b",
+      "user": {
+       "_id": "6a5f29217ff099983483e767",
+       "avatarUrl": "/avatars/9c48d5e60a18acaf8ae048ef6e69f9cf.svg",
+       "isPro": false,
+       "fullname": "Zecong Tang",
+       "user": "zecongtanghku",
+       "type": "user",
+       "name": "zecongtanghku"
+      },
       "name": "Zecong Tang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T08:45:05.007Z",
       "hidden": false
      },
      {
@@ -3423,7 +3456,7 @@
      "name": "Yooki"
     },
     "summary": "Tool-using voice agents often leave users waiting after speech ends, even when actionable information arrives earlier in the request. Speculative approaches begin work during speech, but chunk-bounded or interrupt-on-update generation can truncate a tool call before its arguments are complete. This couples computation time to speech updates, limiting useful work completed in advance. We introduce Heartbeat Thinking, which handles updated input through new Thinker invocations while allowing ongoing invocations and dispatched tools to finish. Periodic invocations read the latest partial transcript and a shared record of completed reasoning and tool results. These results help resolve missing arguments and initiate dependent calls, allowing preparation to progress across speech updates. Across SpeechFCEval, FDBench v3, and AudioCRAG, Heartbeat improves aggregate speculative tool coverage or retrieval reuse over a SHANKS-style windowed baseline, with benchmark-dependent effects on final task quality. On FDBench v3, it increases tool coverage by 16 percentage points and reduces mean final-response latency by 36.4\\%. The results show that heartbeat thinking paradigm preserving ongoing computation during speech can turn listening time into reusable preparation for faster and more capable voice-agent responses.",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6adaf3e855db1e682e582ee7",
     "ai_summary": "A heartbeat-style speculative reasoning approach lets voice agents continue preparing tool calls during speech updates, improving coverage and reducing response latency.",
     "ai_keywords": [
@@ -3644,7 +3677,7 @@
      "name": "J3rr1"
     },
     "summary": "This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, symmetries, and partial observations. Current solutions struggle to balance reliability and efficiency: methods based on intermediate structures are prone to error propagation, while diffusion models suffer from high inference latency and complex post-hoc candidate extraction. To address this, we present F2G-Pose, a real-time direct, single-pass framework that predicts category-level pose, metric size, and camera-frame completed shape from a single RGB-D observation in one feed-forward pass. F2G-Pose lifts dense visual foundation features to partial point clouds, encodes local geometry with DGCNN tokenization, and integrates object-level structure with a Mixture-of-Experts Transformer. Joint size prediction and camera-frame shape completion encourage metric consistency through dense geometric supervision. With its task-specific network trained only on pose-annotated synthetic SOPE data and its frozen RADIO backbone externally pretrained, F2G-Pose achieves state-of-the-art accuracy on SOPE and ROPE while running at 28 FPS for pose-only inference, and further demonstrates strong camera-frame geometry on HouseCat6D and real-object transfer on HANDAL. Analyses of latency, robustness, shape completion, and GenPose++ candidate behavior further demonstrate the efficiency and reliability of F2G-Pose, with real-world manipulation experiments demonstrating deployment potential under segmented RGB-D inputs. The project page, code, and pretrained models are made available at https://jrryzh.github.io/F2G-Pose/.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6adae51b55db1e682e582ea6",
     "projectPage": "https://jrryzh.github.io/F2G-Pose/",
     "githubRepo": "https://github.com/jrryzh/F2G-Pose",
@@ -3873,7 +3906,7 @@
      "name": "kpzhang996"
     },
     "summary": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact.\n  Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners.\n  AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input.\n  It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame.\n  We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses sim10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection.\n  To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6adac17255db1e682e582c8f",
     "projectPage": "https://alaya-lab.github.io/AnyGameRenderer/",
     "githubRepo": "https://github.com/AlayaLab/AnyGameRenderer",
@@ -5377,7 +5410,7 @@
      "name": "maksim64"
     },
     "summary": "Selecting intermediate features from a frozen diffusion model for discriminative tasks is non-trivial because the useful signal is distributed across the denoising trajectory, network depth, and channels. In practice, this requires choosing a timestep, a block, and a channel subset. Existing methods either fix these choices by hand or optimize only a few extraction hyperparameters, most often the timestep, then reuse the same rule across inputs and budgets. We introduce Policy-Mask, a budget-conditioned policy trained on the downstream objective that jointly selects all three under a prescribed channel budget. Without normalization, the channel-score contribution grows with the number of selected channels and dominates the timestep and block updates. We normalize it by subset cardinality, keeping the three policy heads on comparable scales and stabilizing joint training. At matched budgets, Policy-Mask improves over fixed extraction and feature-filter baselines across segmentation, classification, and semantic correspondence, reaching 38.9 mIoU on ADE20K, 75.4% top-1 on CIFAR-100 at 128 dimensions, and 76.3 PCK@0.1 on SPair-71k. Component-wise ablations show that block selection materially affects downstream accuracy, and the highest recorded channel-budget score occurs at 256 retained channels, identifying a practical operating point for compact diffusion representations. We further adapt Policy-Mask to diffusion transformers, including PixArt-Σ and SD3.5 MMDiT, by replacing U-Net channels with image-token hidden dimensions.",
-    "upvotes": 50,
+    "upvotes": 51,
     "discussionId": "6ada664755db1e682e582b9a",
     "ai_summary": "Policy-Mask learns a budget-conditioned selection policy over diffusion timesteps, network blocks, and channels to extract compact, task-optimal features for discriminative vision tasks.",
     "ai_keywords": [
@@ -5918,7 +5951,7 @@
      "name": "junha1125"
     },
     "summary": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
-    "upvotes": 35,
+    "upvotes": 37,
     "discussionId": "6adac4e855db1e682e582cd4",
     "projectPage": "https://june-page.github.io/lala-world/",
     "githubRepo": "https://github.com/junha1125/LaLa-World",
@@ -6252,7 +6285,18 @@
      },
      {
       "_id": "6ad843d2efdc4c3bd8229fc1",
+      "user": {
+       "_id": "679093be8de55abd1b72a03b",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/eZ5fXspK0xZ6uyXusZ_Cb.png",
+       "isPro": false,
+       "fullname": "Zekai Shao",
+       "user": "ZekaiShao",
+       "type": "user",
+       "name": "ZekaiShao"
+      },
       "name": "Zekai Shao",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T08:45:05.025Z",
       "hidden": false
      },
      {
