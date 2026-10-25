@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-25T00:31:02.064Z",
+ "fetchedAt": "2026-10-25T02:46:05.191Z",
  "payload": [
   {
    "paper": {
@@ -806,7 +806,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 9,
+    "followerCount": 10,
     "isUserFollowing": false
    },
    "organization": {
@@ -2801,7 +2801,7 @@
      "name": "liangtm"
     },
     "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 238,
+    "upvotes": 239,
     "discussionId": "6adb093455db1e682e582f8e",
     "projectPage": "https://tencent.github.io/WeVisOne-VL",
     "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
@@ -6445,7 +6445,7 @@
      "name": "Roxanne-WANG"
     },
     "summary": "Medical workflows often require multiple interdependent analyses, but existing specialist and generalist AI models are not designed to coordinate them. We introduce MMedAgent-Plus, a multimodal medical tool-use agent that combines a vision-language planner with 18 leading specialist models spanning 12 tasks and 8 modalities. Through a unified tool interface, the planner selects specialists, executes them in sequence, and synthesizes responses grounded in their outputs. The planner is instruction-tuned on 208,928 samples from 32 public medical benchmarks, covering single- and multi-tool interactions across single and multiple rounds. We separately evaluate tool orchestration, response synthesis, and end-to-end execution on held-out samples. MMedAgent-Plus achieves tool-call accuracies of 91.0%, 98.1%, and 80.7% in single-tool multi-round, multi-tool multi-round, and multi-tool single-round settings, respectively. Given correct tool outputs, MMedAgent-Plus achieves scores of 14.4-14.8 out of 15 for faithfulness, completeness, and conciseness across 600 evaluation samples. In end-to-end execution without pre-supplied tool outputs, MMedAgent-Plus correctly invokes the required specialist in 90.6% of 350 evaluation cases spanning seven tasks. Its final-answer accuracy reaches 0.98, matching the dedicated leading specialist and exceeding the strongest baseline (0.28).",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ad9b90c3f2bb52eb8d6ed8a",
     "projectPage": "https://mmedagent.org/",
     "githubRepo": "https://github.com/RoxanneWAAANG/MMedAgent-Plus",
