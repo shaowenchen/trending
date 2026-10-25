@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-25T02:46:05.191Z",
+ "fetchedAt": "2026-10-25T05:01:05.766Z",
  "payload": [
   {
    "paper": {
@@ -265,7 +265,7 @@
      "name": "Mercury7353"
     },
     "summary": "Recursive self-improvement (RSI) relies on evaluation feedback to assess progress and guide further research, yet repeatedly running complex benchmarks is costly and slows iteration. Human experts reduce this cost by selecting benchmark subsets or designing compact suites. We ask whether AI agents can automate this design process and introduce EvalResearchBench (ERB), a benchmark for autonomous evaluation research. Given target materials, development references, candidate APIs, and fixed time and API budgets, an agent called the researcher selects or synthesizes tasks, implements graders, and revises them in pilot tests before freezing an executable evaluator for coding, co-work, and reasoning. We study 9 researchers and 13 candidate models and compare each frozen evaluator with 14 target benchmarks on score concordance and pairwise agreement. The best evaluators order about 75\\% of candidate pairs as the targets do, below the 91\\% ceiling set by disagreements among the targets. No researcher leads on every metric, and the best evaluator on development targets is not the best on sealed targets hidden from the researcher. A human-designed sample of public tasks remains a strong baseline, and the evaluator with the lowest recorded execution cost attains the highest pairwise agreement. Agents repair tasks and graders through pilot feedback, yet their evaluators can still truncate answers, exhaust the evaluation budget, or let a few questions dominate a domain score.",
-    "upvotes": 7,
+    "upvotes": 18,
     "discussionId": "6adbf47e121a70fc68345949",
     "projectPage": "https://mercury7353.github.io/self-evaluation-bench/blog/when-ai-agents-design-the-test.html",
     "githubRepo": "https://github.com/Mercury7353/self-evaluation-bench",
@@ -468,7 +468,7 @@
      "name": "ElironRahimi"
     },
     "summary": "Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
-    "upvotes": 19,
+    "upvotes": 20,
     "discussionId": "6adb372d121a70fc683456f4",
     "projectPage": "https://t2quant.ofekavivi.com/",
     "githubRepo": "https://github.com/OfekAvivi/T2Quant",
@@ -1000,7 +1000,7 @@
      "text-to-brick"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 10,
     "organization": {
      "_id": "680ba1b453d9d56430b82b57",
      "name": "cmu-gil",
@@ -3549,7 +3549,7 @@
      "name": "Davidscut"
     },
     "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-    "upvotes": 181,
+    "upvotes": 182,
     "discussionId": "6ada184cd10c239d0da2ce96",
     "ai_summary": "LayerEditor unifies instruction-guided image editing with reusable RGBA layer generation via joint token modeling and edit-prior distillation, enabling precise local manipulation and layer reuse.",
     "ai_keywords": [
@@ -3661,7 +3661,7 @@
      "ROPE"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 46,
+    "githubStars": 52,
     "organization": {
      "_id": "683ebd0d913d82e703e77286",
      "name": "sii-research",
@@ -3888,7 +3888,7 @@
      "temporal match"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 21,
+    "githubStars": 23,
     "organization": {
      "_id": "689f08c50df4fcf7fddc0b08",
      "name": "AlayaLab",
@@ -4022,7 +4022,7 @@
     "projectPage": "https://physical2rsi.github.io",
     "githubRepo": "https://github.com/Physical2RSI/Awesome-Physical2RSI",
     "githubRepoAddedBy": "user",
-    "githubStars": 30,
+    "githubStars": 39,
     "organization": {
      "_id": "6508ab2b349930913196378b",
      "name": "NationalUniversityofSingapore",
@@ -4655,7 +4655,7 @@
      "name": "Rubin-Wei"
     },
     "summary": "Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory avoids online retrieval, but constructing its training data requires extensive offline search, and output-level interpolation provides only shallow fusion. We introduce Deep Fusion Memory (DFM), a parametric memory architecture that reduces this construction workload and incorporates learned memory into intermediate hidden states. A causal memory predictor learns to generate memory from the preceding context, using retrieved chunk embeddings from the corpus as supervision. The predicted memory is shared across tokens within each chunk and fused into their hidden states through gated cross-attention. Memory prediction and fusion are trained end to end with the backbone frozen, and inference requires no explicit retrieval. Compared with existing parametric memory approaches, which often construct token-level memory targets, DFM requires 32times fewer retrieval queries and 2048times fewer retrieved items to construct its training data. Across six QA tasks, DFM performs better over the strongest baseline by 12.71% on Mistral-7B-v0.3 and 11.19% on Qwen3-8B-Base. Beyond QA, domain adaptation yields average gains of 6.51 and 4.38 points over Qwen3-4B-Base and Qwen3-8B-Base, respectively.",
-    "upvotes": 47,
+    "upvotes": 48,
     "discussionId": "6adad76855db1e682e582dad",
     "ai_summary": "Deep Fusion Memory integrates predicted parametric memory into intermediate hidden states via gated cross-attention, reducing retrieval overhead and improving knowledge-intensive tasks without online retrieval.",
     "ai_keywords": [
@@ -5205,7 +5205,7 @@
      "MemoryAgentBench"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 17,
+    "githubStars": 20,
     "organization": {
      "_id": "66a92d5a58cff488d93ab512",
      "name": "XianJiaotongUniversity",
@@ -6288,7 +6288,7 @@
      "name": "Liguyanger"
     },
     "summary": "Code-based video generation offers fine-grained control, targeted editing, and component reuse compared with direct video generation. This approach requires multimodal large language models (MLLMs) to translate visual and temporal requirements into executable programs that produce complete videos. However, existing code-based benchmarks primarily target specialized tasks, leaving complete video creation across diverse creative categories and input modalities insufficiently evaluated. We introduce Code2Video-Compass, a general-purpose benchmark for code-based video generation across text-to-video (T2V), image-to-video (I2V), and video-to-video (V2V) settings. Code2Video-Compass comprises 2,104 tasks spanning 10 categories, 24 subtypes, and three complexity dimensions covering construction, dynamic animation, and state dependency. It combines tasks curated from textual instructions and visual references with corresponding T2V, I2V, and V2V tasks derived from complete professional and user-created videos. We propose a dual-level evaluation framework combining 12 objective metrics and five subjective metrics. Objective evaluation covers operational performance, video quality, text-video alignment, and reference fidelity, while subjective evaluation uses an MLLM judge to evaluate instruction following and holistic video quality. Extensive evaluation of 15 recent proprietary and open-weight MLLMs from nine families reveals that even leading models face challenges in reliably generating high-quality complete videos aligned with textual and visual requirements, with performance generally declining as construction, dynamic animation, and state-dependency complexity increases. We anticipate that Code2Video-Compass will advance reliable, coherent, and controllable code-based video generation and inspire broader progress in programmatic visual creation.",
-    "upvotes": 31,
+    "upvotes": 32,
     "discussionId": "6ad843d2efdc4c3bd8229fc5",
     "projectPage": "https://code2video-compass.github.io",
     "githubRepo": "https://github.com/code2video-compass/Code2Video-Compass",
