@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-25T16:16:01.149Z",
+ "fetchedAt": "2026-10-25T18:30:56.398Z",
  "payload": [
   {
    "paper": {
@@ -1353,7 +1353,7 @@
      "name": "Little-d1d1"
     },
     "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6adb551c121a70fc68345787",
     "githubRepo": "https://github.com/THU-KEG/RIDAR",
     "githubRepoAddedBy": "user",
@@ -1380,7 +1380,7 @@
    "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
    "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31372.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "68f5cfb57b23d048745eb8a9",
     "avatarUrl": "/avatars/8fc6894470f36700410a38b7faef7805.svg",
@@ -1408,7 +1408,18 @@
     "authors": [
      {
       "_id": "6adb2dd055db1e682e58312e",
+      "user": {
+       "_id": "67164dea24552afb831fcb10",
+       "avatarUrl": "/avatars/97be1764f70e27634702f49be717576b.svg",
+       "isPro": false,
+       "fullname": "Dmitry Osin",
+       "user": "xaosina",
+       "type": "user",
+       "name": "xaosina"
+      },
       "name": "Dmitry Osin",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T16:45:04.699Z",
       "hidden": false
      },
      {
@@ -1497,7 +1508,7 @@
     "isMod": false,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -1521,7 +1532,18 @@
      },
      {
       "_id": "6ad9201ff7563b9935e81561",
+      "user": {
+       "_id": "67ab95daf69ffe01cc0c55a2",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/7DENF94zmOOw-XfAVlLXD.png",
+       "isPro": false,
+       "fullname": "Tran Nguyen Le",
+       "user": "trannguyenle95",
+       "type": "user",
+       "name": "trannguyenle95"
+      },
       "name": "Tran Nguyen Le",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T16:45:04.632Z",
       "hidden": false
      },
      {
@@ -1554,7 +1576,7 @@
      "name": "giakhuyendihoc"
     },
     "summary": "Vision-language-action (VLA) models have shown strong promise for generalist robotic manipulation, but their inference cost remains a major bottleneck for real-time control. This limitation is especially pronounced in flow-matching VLAs such as π_{0.5}, where the action expert is evaluated repeatedly during iterative denoising. We introduce MambaAct, an efficient Mamba action expert for flow-matching VLA policies. MambaAct retains the pretrained visual-language prefix encoder of π_{0.5}, while replacing its transformer-based action expert with a compact Mamba-based action expert. Within this expert, Mamba serves as the action mixer that models dependencies across the noisy continuous-action sequence. To preserve visual-language conditioning without repeated token-level cross-attention, MambaAct uses a lightweight Context Compressor to map Vision-language model (VLM) prefix tokens into a compact conditioning signal that gates and modulates each Mamba action block. MambaAct uses a 10times smaller action expert and reduces flow-matching denoising latency by 64.8% on LIBERO and 58.8% in real-world deployment, while improving mean LIBERO success by 1.08 percentage points across three independent fine-tuning seeds and maintaining gains on LIBERO-Plus and real-world benchmarks. Our code and model weights are publicly available at https://github.com/giakhuyendihoc/MambaAct.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ad92020f7563b9935e81564",
     "projectPage": "https://giakhuyendihoc.github.io/mambaact-page/",
     "githubRepo": "https://github.com/giakhuyendihoc/MambaAct",
@@ -3694,7 +3716,7 @@
      "ROPE"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 52,
+    "githubStars": 66,
     "organization": {
      "_id": "683ebd0d913d82e703e77286",
      "name": "sii-research",
@@ -3822,7 +3844,7 @@
      "zero-shot generalization"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
+    "githubStars": 9,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -3906,7 +3928,7 @@
      "name": "kpzhang996"
     },
     "summary": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact.\n  Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners.\n  AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input.\n  It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame.\n  We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses sim10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection.\n  To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6adac17255db1e682e582c8f",
     "projectPage": "https://alaya-lab.github.io/AnyGameRenderer/",
     "githubRepo": "https://github.com/AlayaLab/AnyGameRenderer",
@@ -3921,7 +3943,7 @@
      "temporal match"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 23,
+    "githubStars": 26,
     "organization": {
      "_id": "689f08c50df4fcf7fddc0b08",
      "name": "AlayaLab",
@@ -4671,7 +4693,18 @@
      },
      {
       "_id": "6adad76855db1e682e582dac",
+      "user": {
+       "_id": "68d21f8ca090df93e72c09a0",
+       "avatarUrl": "/avatars/3aac21cea09bf30230bab4d52dfc0582.svg",
+       "isPro": false,
+       "fullname": "Zhouhan Lin",
+       "user": "ZhouhanLin",
+       "type": "user",
+       "name": "ZhouhanLin"
+      },
       "name": "Zhouhan Lin",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T16:45:04.690Z",
       "hidden": false
      }
     ],
@@ -4785,7 +4818,7 @@
      "name": "alan1027"
     },
     "summary": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning traces installs it in most models whose base lacks it. Where the base already uses it, both released RL-Zero recipes (OLMo-3, MiMo) multiply it, whereas KL-free GRPO from the same base does not; OLMo-3's recipe wears down its form and makes it a more sensitive but more liberal alarm; RL after supervised fine-tuning barely changes it, and our GRPO recipe erases a marker seeded by fine-tuning. Finally, we show that marker frequency alone does not indicate RL-induced reasoning and caution against LLM-as-a-judge revision metrics, as automated judges can reverse human-labelled trends.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6adacae755db1e682e582d0c",
     "githubRepo": "https://github.com/kouzhizhuo/wait-provenance",
     "githubRepoAddedBy": "user",
@@ -4815,7 +4848,7 @@
    "title": "Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models",
    "summary": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning traces installs it in most models whose base lacks it. Where the base already uses it, both released RL-Zero recipes (OLMo-3, MiMo) multiply it, whereas KL-free GRPO from the same base does not; OLMo-3's recipe wears down its form and makes it a more sensitive but more liberal alarm; RL after supervised fine-tuning barely changes it, and our GRPO recipe erases a marker seeded by fine-tuning. Finally, we show that marker frequency alone does not indicate RL-induced reasoning and caution against LLM-as-a-judge revision metrics, as automated judges can reverse human-labelled trends.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30882.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "65a9c8652bf3e0cbbfcab2c8",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
@@ -5514,7 +5547,7 @@
      "name": "marinero4972"
     },
     "summary": "Deep research agents synthesize open-web evidence into long reports, but current benchmarks do not evaluate research centered on a source video. We introduce Video-Centered Deep Research Report Generation. Given a video and user request, an agent identifies research questions, retrieves external multimodal evidence, and produces an interactive report linked to relevant video moments. This task has direct practical value because it helps users locate relevant moments, verify claims, reproduce demonstrated procedures, and make informed decisions from video content. We present a skill-based workflow and OmniDR-Bench for this task. For evaluation, we propose Omni Atomic Rubric Trees (Omni-ARTs). Each tree contains three dimensions, 23 shared directions, and task-specific atomic binary criteria. The directions test audiovisual grounding, multimodal evidence use, and interactive presentation. Audited Rubric Construction (ARC) builds these trees through independent evidence collection, automated checks, behavioral calibration, and iterative human review. OmniDR-Bench contains 50 Chinese and English tasks across 19 realworld subcategories. It includes 6,414 criteria. Across 18 agent configurations, the best system scores 63.3 out of 100. Current agents still need broader content coverage, stronger causal and logical analysis across modalities, and more accurate citation support. We further analyze models, harnesses, skill configurations, video categories, and research trajectories. The code and data are released at https://github.com/marinero4972/OmniDR-Bench.",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6adacc9055db1e682e582d4f",
     "githubRepo": "https://github.com/marinero4972/OmniDR-Bench",
     "githubRepoAddedBy": "user",
@@ -6095,7 +6128,7 @@
      "multi-shot generation"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
+    "githubStars": 3,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
