@@ -1,8 +1,542 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-26T17:01:44.475Z",
+ "fetchedAt": "2026-10-26T19:16:00.301Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.27364",
+    "authors": [
+     {
+      "_id": "6adf9b97a5efa215400a7749",
+      "name": "Mosh Levy",
+      "hidden": false
+     },
+     {
+      "_id": "6adf9b97a5efa215400a774a",
+      "name": "Aly Lidayan",
+      "hidden": false
+     },
+     {
+      "_id": "6adf9b97a5efa215400a774b",
+      "name": "Yoav Goldberg",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/622f35a2bc2a392eaf21b3e7/hWzX2SS-N5qzmLRRt4pxX.mp4"
+    ],
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Predictive Closure: A Set-Level Characterization of JEPA's Feature Selection",
+    "submittedOnDailyBy": {
+     "_id": "622f35a2bc2a392eaf21b3e7",
+     "avatarUrl": "/avatars/383409ebd912ba90d8e7966e61a3910d.svg",
+     "isPro": false,
+     "fullname": "Mosh Levy",
+     "user": "Mosh",
+     "type": "user",
+     "name": "Mosh"
+    },
+    "summary": "In joint-embedding predictive architectures (JEPA), an encoder and a predictor are trained together to produce a representation that minimizes the error in predicting the representation of the next observation. Because the representations of both the current and the next observation are learned, it is unclear which features they will include. Earlier characterizations describe the features JEPA selects in terms of their individual predictability, raising the concern that unpredictable features, like a traffic light, will not be encoded into the representation. However, the prediction error is also affected by the relationships between features, e.g., the light's color helps predict whether the traffic will stop. We propose the predictive closure characterization, which accounts for these relationships. Based on a reformulation of the JEPA training objective, we show that selection depends on properties of feature sets. This view agrees with earlier works when features evolve independently, but makes new predictions when they do not, for instance that a feature like the traffic light can still be retained. We test this characterization in controlled experiments, which show that unpredictable features can become better represented when they help predict other features, and that changing one feature's predictive relationships can affect how well others are represented. We also demonstrate implications for steering feature selection: targeting one feature with an auxiliary objective, or supplying it to the predictor as side information, can strengthen the representation of another feature whose future values it helps predict, so steering can be indirect.",
+    "upvotes": 0,
+    "discussionId": "6adf9b98a5efa215400a774c",
+    "githubRepo": "https://github.com/Mosh0110/predictive-closure",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "JEPA feature selection depends on predictive relationships between features rather than individual predictability, allowing unpredictable but relationally useful features to be retained and enabling indirect steering of representations.",
+    "ai_keywords": [
+     "joint-embedding predictive architectures",
+     "JEPA",
+     "predictive closure",
+     "feature selection",
+     "auxiliary objective",
+     "side information"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 3,
+    "organization": {
+     "_id": "66b1baeff10262fc4fa61961",
+     "name": "UCBerkeley",
+     "fullname": "University of California, Berkeley",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f425c3a096536aeab42dea/bxNKEkprdm5JI1wkjmNAL.png"
+    }
+   },
+   "publishedAt": "2026-10-18T20:00:00.000Z",
+   "title": "Predictive Closure: A Set-Level Characterization of JEPA's Feature Selection",
+   "summary": "In joint-embedding predictive architectures (JEPA), an encoder and a predictor are trained together to produce a representation that minimizes the error in predicting the representation of the next observation. Because the representations of both the current and the next observation are learned, it is unclear which features they will include. Earlier characterizations describe the features JEPA selects in terms of their individual predictability, raising the concern that unpredictable features, like a traffic light, will not be encoded into the representation. However, the prediction error is also affected by the relationships between features, e.g., the light's color helps predict whether the traffic will stop. We propose the predictive closure characterization, which accounts for these relationships. Based on a reformulation of the JEPA training objective, we show that selection depends on properties of feature sets. This view agrees with earlier works when features evolve independently, but makes new predictions when they do not, for instance that a feature like the traffic light can still be retained. We test this characterization in controlled experiments, which show that unpredictable features can become better represented when they help predict other features, and that changing one feature's predictive relationships can affect how well others are represented. We also demonstrate implications for steering feature selection: targeting one feature with an auxiliary objective, or supplying it to the predictor as side information, can strengthen the representation of another feature whose future values it helps predict, so steering can be indirect.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/622f35a2bc2a392eaf21b3e7/hWzX2SS-N5qzmLRRt4pxX.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27364.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "622f35a2bc2a392eaf21b3e7",
+    "avatarUrl": "/avatars/383409ebd912ba90d8e7966e61a3910d.svg",
+    "fullname": "Mosh Levy",
+    "name": "Mosh",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "66b1baeff10262fc4fa61961",
+    "name": "UCBerkeley",
+    "fullname": "University of California, Berkeley",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f425c3a096536aeab42dea/bxNKEkprdm5JI1wkjmNAL.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.27528",
+    "authors": [
+     {
+      "_id": "6ad81d62efdc4c3bd8229df7",
+      "user": {
+       "_id": "661d32117692e9bff1010973",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661d32117692e9bff1010973/zE2rAAZuJC3hPv4apjTkk.jpeg",
+       "isPro": false,
+       "fullname": "sgq",
+       "user": "gqbond",
+       "type": "user",
+       "name": "gqbond"
+      },
+      "name": "Guiquan Sun",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-26T13:33:24.728Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad81d62efdc4c3bd8229df8",
+      "name": "Bing Bai",
+      "hidden": false
+     },
+     {
+      "_id": "6ad81d62efdc4c3bd8229df9",
+      "name": "Martin Renqiang Min",
+      "hidden": false
+     },
+     {
+      "_id": "6ad81d62efdc4c3bd8229dfa",
+      "name": "Dongjin Song",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
+    "submittedOnDailyBy": {
+     "_id": "661d32117692e9bff1010973",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661d32117692e9bff1010973/zE2rAAZuJC3hPv4apjTkk.jpeg",
+     "isPro": false,
+     "fullname": "sgq",
+     "user": "gqbond",
+     "type": "user",
+     "name": "gqbond"
+    },
+    "summary": "Generative reward models (GenRMs) generate natural language rationales to justify preference judgments, yet a correct verdict does not guarantee a sound justification. Existing approaches often rely on reference explanations to supervise rationales, but obtaining such references can be costly and does not necessarily establish whether generated rationales support the resulting verdict. To address these limitations, we propose DeCert, a framework that evaluates the validity and verdict consistency of generated rationales without requiring reference explanations. Crucially, DeCert translates these assessments into preference supervision that accounts for both verdict correctness and justification quality. In particular, when multiple sampled judgments share the same correct verdict, differences in certificate quality enable DeCert to construct rationale preference pairs that distinguish stronger from weaker justifications. Extensive empirical studies across two model families and multiple in- and out-of-distribution benchmarks demonstrate that DeCert consistently outperforms strong generative judge baselines while improving rationale quality. Moreover, DeCert effectively mitigates positional bias, improving position-consistent accuracy by up to 14.8 points. These results highlight the importance of supervising not only which verdict is correct, but also how that verdict is justified.",
+    "upvotes": 1,
+    "discussionId": "6ad81d62efdc4c3bd8229dfb",
+    "githubRepo": "https://github.com/UConn-DSIS/DeCert",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "DeCert evaluates and improves generative reward model rationales by assessing justification validity and verdict consistency without reference explanations, yielding stronger preference supervision.",
+    "ai_keywords": [
+     "generative reward models",
+     "GenRMs",
+     "preference judgments",
+     "rationales",
+     "DeCert",
+     "verdict consistency",
+     "certificate quality",
+     "rationale preference pairs",
+     "positional bias"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
+   "summary": "Generative reward models (GenRMs) generate natural language rationales to justify preference judgments, yet a correct verdict does not guarantee a sound justification. Existing approaches often rely on reference explanations to supervise rationales, but obtaining such references can be costly and does not necessarily establish whether generated rationales support the resulting verdict. To address these limitations, we propose DeCert, a framework that evaluates the validity and verdict consistency of generated rationales without requiring reference explanations. Crucially, DeCert translates these assessments into preference supervision that accounts for both verdict correctness and justification quality. In particular, when multiple sampled judgments share the same correct verdict, differences in certificate quality enable DeCert to construct rationale preference pairs that distinguish stronger from weaker justifications. Extensive empirical studies across two model families and multiple in- and out-of-distribution benchmarks demonstrate that DeCert consistently outperforms strong generative judge baselines while improving rationale quality. Moreover, DeCert effectively mitigates positional bias, improving position-consistent accuracy by up to 14.8 points. These results highlight the importance of supervising not only which verdict is correct, but also how that verdict is justified.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27528.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "661d32117692e9bff1010973",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661d32117692e9bff1010973/zE2rAAZuJC3hPv4apjTkk.jpeg",
+    "fullname": "sgq",
+    "name": "gqbond",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.31572",
+    "authors": [
+     {
+      "_id": "6adf8956a5efa215400a770a",
+      "name": "Andrea Giuseppe Di Francesco",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8956a5efa215400a770b",
+      "name": "Rishabh Jain",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8956a5efa215400a770c",
+      "name": "Franco Maria Nardini",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8956a5efa215400a770d",
+      "name": "Nicola Tonellotto",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8956a5efa215400a770e",
+      "name": "Pietro Liò",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8956a5efa215400a770f",
+      "name": "Fabrizio Silvestri",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/67608f1c1f022a4d6ffdca88/eRVTGaFold8i65p0AG0B0.mp4"
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
+    "submittedOnDailyBy": {
+     "_id": "67608f1c1f022a4d6ffdca88",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/cbv1bjC0EUGdGHd9_u1I9.png",
+     "isPro": false,
+     "fullname": "Andrea Giuseppe Di Francesco",
+     "user": "difra00",
+     "type": "user",
+     "name": "difra00"
+    },
+    "summary": "Recent methods for injecting graph structure into LLM prompts include graph soft prompting, in which a graph neural network (GNN) learns graph-specific tokens that capture relational information among entities in textual prompts. G-Retriever combines graph soft prompts with a verbalized description of the same graph to strengthen the textual prompt signal. We conduct an in-depth analysis of G-Retriever and uncover a pathological behavior we term token collapse. Across three benchmarks, three graph encoders, two LLM families, and both frozen and LoRA-adapted models, G-Retriever's graph tokens become almost indistinguishable across inputs. We provide evidence that the same failure is inherited by subsequent methods, even with multi-token pooling. Under the standard setup, swapping a token with the dataset mean, a token from another example, or one derived from a corrupted graph produces no resolved answer-level effect in accuracy. Moreover, a learned constant prompt that never accesses the graph matches or surpasses G-Retriever on all three benchmarks. These findings indicate that, rather than conveying graph content as intended, the collapsed token functions primarily as a generic soft prompt. We also examine conditions linked to this collapse and propose a two-stage procedure that yields non-collapsed tokens while maintaining competitive performance in most cases. However, token variability alone does not prove that the model uses graph information: via interventions and decoding probes, we show that depending on the configuration, a token can reflect the question, an answer prior, or graph-derived content that the LLM may or may not use. Overall, our results offer a practical approach to evaluating graph-token alignment rather than inferring it from task accuracy alone. Code to reproduce our experiments is available at https://github.com/difra100/Token_Collapse_KGQA.",
+    "upvotes": 0,
+    "discussionId": "6adf8956a5efa215400a7710",
+    "githubRepo": "https://github.com/difra100/Token_Collapse_KGQA",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Graph soft prompting in LLMs suffers from token collapse, where learned graph tokens become indistinguishable and function as generic prompts rather than conveying relational structure, prompting evaluation via alignment probes rather than accuracy alone.",
+    "ai_keywords": [
+     "graph soft prompting",
+     "graph neural network",
+     "GNN",
+     "G-Retriever",
+     "token collapse",
+     "LoRA",
+     "multi-token pooling",
+     "soft prompt",
+     "decoding probes"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "627cd83363fd471b33b08bdc",
+     "name": "Sapienza",
+     "fullname": "Sapienza University of Rome",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661615661155-627cd7fe72aed9ffb0a2680d.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
+   "summary": "Recent methods for injecting graph structure into LLM prompts include graph soft prompting, in which a graph neural network (GNN) learns graph-specific tokens that capture relational information among entities in textual prompts. G-Retriever combines graph soft prompts with a verbalized description of the same graph to strengthen the textual prompt signal. We conduct an in-depth analysis of G-Retriever and uncover a pathological behavior we term token collapse. Across three benchmarks, three graph encoders, two LLM families, and both frozen and LoRA-adapted models, G-Retriever's graph tokens become almost indistinguishable across inputs. We provide evidence that the same failure is inherited by subsequent methods, even with multi-token pooling. Under the standard setup, swapping a token with the dataset mean, a token from another example, or one derived from a corrupted graph produces no resolved answer-level effect in accuracy. Moreover, a learned constant prompt that never accesses the graph matches or surpasses G-Retriever on all three benchmarks. These findings indicate that, rather than conveying graph content as intended, the collapsed token functions primarily as a generic soft prompt. We also examine conditions linked to this collapse and propose a two-stage procedure that yields non-collapsed tokens while maintaining competitive performance in most cases. However, token variability alone does not prove that the model uses graph information: via interventions and decoding probes, we show that depending on the configuration, a token can reflect the question, an answer prior, or graph-derived content that the LLM may or may not use. Overall, our results offer a practical approach to evaluating graph-token alignment rather than inferring it from task accuracy alone. Code to reproduce our experiments is available at https://github.com/difra100/Token_Collapse_KGQA.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/67608f1c1f022a4d6ffdca88/eRVTGaFold8i65p0AG0B0.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31572.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67608f1c1f022a4d6ffdca88",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/cbv1bjC0EUGdGHd9_u1I9.png",
+    "fullname": "Andrea Giuseppe Di Francesco",
+    "name": "difra00",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "627cd83363fd471b33b08bdc",
+    "name": "Sapienza",
+    "fullname": "Sapienza University of Rome",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661615661155-627cd7fe72aed9ffb0a2680d.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.31779",
+    "authors": [
+     {
+      "_id": "6adf816ea5efa215400a76ad",
+      "name": "Sicong Leng",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76ae",
+      "name": "Yunze Man",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76af",
+      "name": "Zhiqi Li",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b0",
+      "name": "Jing Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b1",
+      "name": "Yuhe Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b2",
+      "name": "Ryan Punamiya",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b3",
+      "name": "Siddharth Patki",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b4",
+      "name": "Kaiyuan Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b5",
+      "name": "Zi-ang Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b6",
+      "name": "Zhiding Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b7",
+      "name": "Sifei Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b8",
+      "name": "Danfei Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76b9",
+      "name": "Ben Levin",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76ba",
+      "name": "Jan Kautz",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76bb",
+      "name": "Yuke Zhu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76bc",
+      "user": {
+       "_id": "679bda55e0a10bfd8679fae0",
+       "avatarUrl": "/avatars/ac60835545367fa345d41d472bf9dff1.svg",
+       "isPro": false,
+       "fullname": "johan bjorck",
+       "user": "nv-njb",
+       "type": "user",
+       "name": "nv-njb"
+      },
+      "name": "Johan Bjorck",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-26T16:45:04.665Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adf816ea5efa215400a76bd",
+      "name": "Linxi &#34;Jim&#34; Fan",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+    "submittedOnDailyBy": {
+     "_id": "679bda55e0a10bfd8679fae0",
+     "avatarUrl": "/avatars/ac60835545367fa345d41d472bf9dff1.svg",
+     "isPro": false,
+     "fullname": "johan bjorck",
+     "user": "nv-njb",
+     "type": "user",
+     "name": "nv-njb"
+    },
+    "summary": "The life-cycle of robotics foundation models crucially depends on data labels. Outcome reward labels are needed for monitoring real-world deployments. Process reward labels are needed during RL post-training. Timestamped captions are needed for filtering and balancing pretraining data. We present Flora, an industrial-quality data engine used for training GR00T models, that simultaneously covers these capabilities. Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer. On internal benchmarks it is competitive with GPT-6 Astra while beating other frontier models. The model is substantially cheaper than API-based alternatives, roughly 125 times cheaper than GPT-6 Astra. Florais battle tested at scale, labeling 200,000 hours of data per day across 512 GB300s. By open-sourcing our data engine, we enable researchers to scale custom robotics datasets and explore emerging applications such as physical auto-research and human-to-robot transfer.",
+    "upvotes": 0,
+    "discussionId": "6adf816ea5efa215400a76be",
+    "projectPage": "https://research.nvidia.com/labs/gear/flora/",
+    "githubRepo": "https://github.com/NVIDIA/Flora",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Flora is an open-source industrial data engine for robotics foundation models that provides captioning, outcome and process reward labeling, and pretraining data curation at scale with high accuracy and low cost.",
+    "ai_keywords": [
+     "robotics foundation models",
+     "outcome reward labels",
+     "process reward labels",
+     "RL post-training",
+     "timestamped captions",
+     "data engine",
+     "GR00T",
+     "WGO-Bench",
+     "RoboReward",
+     "Robometer",
+     "physical auto-research",
+     "human-to-robot transfer"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 16,
+    "organization": {
+     "_id": "60262b67268c201cdc8b7d43",
+     "name": "nvidia",
+     "fullname": "NVIDIA",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+   "summary": "The life-cycle of robotics foundation models crucially depends on data labels. Outcome reward labels are needed for monitoring real-world deployments. Process reward labels are needed during RL post-training. Timestamped captions are needed for filtering and balancing pretraining data. We present Flora, an industrial-quality data engine used for training GR00T models, that simultaneously covers these capabilities. Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer. On internal benchmarks it is competitive with GPT-6 Astra while beating other frontier models. The model is substantially cheaper than API-based alternatives, roughly 125 times cheaper than GPT-6 Astra. Florais battle tested at scale, labeling 200,000 hours of data per day across 512 GB300s. By open-sourcing our data engine, we enable researchers to scale custom robotics datasets and explore emerging applications such as physical auto-research and human-to-robot transfer.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31779.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "679bda55e0a10bfd8679fae0",
+    "avatarUrl": "/avatars/ac60835545367fa345d41d472bf9dff1.svg",
+    "fullname": "johan bjorck",
+    "name": "nv-njb",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "60262b67268c201cdc8b7d43",
+    "name": "nvidia",
+    "fullname": "NVIDIA",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.20117",
+    "authors": [
+     {
+      "_id": "6adf62f02c062a8c1911e146",
+      "user": {
+       "_id": "69ece8efc8b832a9d6c38eb2",
+       "avatarUrl": "/avatars/962a050708f7c2f2c38dc82e618e46e8.svg",
+       "isPro": false,
+       "fullname": "Lukas Niehaus",
+       "user": "luniehaus",
+       "type": "user",
+       "name": "luniehaus"
+      },
+      "name": "Lukas Niehaus",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-26T16:45:04.647Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adf62f02c062a8c1911e147",
+      "name": "Robin Rawiel",
+      "hidden": false
+     },
+     {
+      "_id": "6adf62f02c062a8c1911e148",
+      "name": "Ulf Krumnack",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/69ece8efc8b832a9d6c38eb2/ot_4xZpJlSsz68l0XYy31.mp4"
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks",
+    "submittedOnDailyBy": {
+     "_id": "69ece8efc8b832a9d6c38eb2",
+     "avatarUrl": "/avatars/962a050708f7c2f2c38dc82e618e46e8.svg",
+     "isPro": false,
+     "fullname": "Lukas Niehaus",
+     "user": "luniehaus",
+     "type": "user",
+     "name": "luniehaus"
+    },
+    "summary": "KANLab is a browser-based visualization tool designed to interactively teach the core concepts of Kolmogorov-Arnold Networks (KAN), forked from the widely successful TensorFlow Playground. To maximize educational clarity, KANLab omits residual connections and learnable scaling parameters found in modern KAN implementations, ensuring that displayed B-spline activation curves directly correspond to their underlying trainable control points. Users can inspect and modify activation functions, initialization schemes and observe gradient descent correcting manual disruptions. Furthermore, user can explore phenomena such as activation variance, interactive pruning, and re\\-/training within a compact 2D machine learning setting. KANLab is open-source and available at https://kanlab.app/",
+    "upvotes": 2,
+    "discussionId": "6adf62f12c062a8c1911e149",
+    "projectPage": "https://kanlab.app",
+    "githubRepo": "https://github.com/lniehaus/kanlab",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "KANLab is an interactive browser tool for teaching Kolmogorov-Arnold Networks by visualizing B-spline activation curves, gradient descent, and pruning in a compact 2D setting.",
+    "ai_keywords": [
+     "Kolmogorov-Arnold Networks",
+     "B-spline activation curves",
+     "trainable control points",
+     "gradient descent",
+     "activation variance",
+     "interactive pruning",
+     "residual connections",
+     "learnable scaling parameters"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 4
+   },
+   "publishedAt": "2026-10-13T20:00:00.000Z",
+   "title": "KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks",
+   "summary": "KANLab is a browser-based visualization tool designed to interactively teach the core concepts of Kolmogorov-Arnold Networks (KAN), forked from the widely successful TensorFlow Playground. To maximize educational clarity, KANLab omits residual connections and learnable scaling parameters found in modern KAN implementations, ensuring that displayed B-spline activation curves directly correspond to their underlying trainable control points. Users can inspect and modify activation functions, initialization schemes and observe gradient descent correcting manual disruptions. Furthermore, user can explore phenomena such as activation variance, interactive pruning, and re\\-/training within a compact 2D machine learning setting. KANLab is open-source and available at https://kanlab.app/",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/69ece8efc8b832a9d6c38eb2/ot_4xZpJlSsz68l0XYy31.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20117.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "69ece8efc8b832a9d6c38eb2",
+    "avatarUrl": "/avatars/962a050708f7c2f2c38dc82e618e46e8.svg",
+    "fullname": "Lukas Niehaus",
+    "name": "luniehaus",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.30524",
@@ -85,11 +619,12 @@
      "Lean Proof-Repair"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
     "organization": {
-     "_id": "691d9a1012cc4d473e1c862f",
-     "name": "CarnegieMellonU",
-     "fullname": "Carnegie Mellon University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
+     "_id": "6adf8ef32ec28211c2bc5001",
+     "name": "FormalCert-AI",
+     "fullname": "FormalCert-AI",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6adf8ae901c59645413876e6/ldPNKKCiqur8tvYMAtgWY.png"
     }
    },
    "publishedAt": "2026-10-20T20:00:00.000Z",
@@ -114,10 +649,10 @@
     "isUserFollowing": false
    },
    "organization": {
-    "_id": "691d9a1012cc4d473e1c862f",
-    "name": "CarnegieMellonU",
-    "fullname": "Carnegie Mellon University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
+    "_id": "6adf8ef32ec28211c2bc5001",
+    "name": "FormalCert-AI",
+    "fullname": "FormalCert-AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6adf8ae901c59645413876e6/ldPNKKCiqur8tvYMAtgWY.png"
    },
    "isAuthorParticipating": false
   },
@@ -194,7 +729,7 @@
      "name": "zhongweixie"
     },
     "summary": "Repeated event forecasting requires extracting predictive signals from noisy evidence and evaluating their value across successive decisions. We introduce JockeyBench, a benchmark and evaluation protocol that studies this problem through historical Japanese horse racing. The protocol combines time-gated evidence, priced tools, paired frozen-program controls, and two workflows: executing an LLM-written predictor or acquiring evidence for a fresh per-race LLM forecast. Evaluation separates forecast quality, benchmark-specific net utility, and retrospective betting returns and risk under fixed decision rules. Across 28 model--scaffold configurations on 324 races, paired tests identify seven revision gains and two declines after multiple-testing correction. Yet every configuration has negative mean profit under capped-Kelly settlement. In a four-model comparison, the reusable-program workflow has higher mean betting profit and lower research fees, although both workflows lose on average. Further diagnostics reveal that mean probability bias reverses on selected bets and that profitable individual runs can depend on concentrated returns. These findings motivate evaluating predictive competence, adaptation, resource use, and decision value separately when assessing agents for repeated event forecasting.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6adf75f32c062a8c1911e1d9",
     "projectPage": "https://hkust-knowcomp.github.io/JockeyBench/",
     "githubRepo": "https://github.com/HKUST-KnowComp/JockeyBench",
@@ -268,7 +803,7 @@
      "name": "jytan12"
     },
     "summary": "Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version. Starting from the LaTeX source, PaperFormalizer transcribes the paper into a dependency graph of statements, audits each statement in natural language for faithfulness, ambiguity and correctness, and then formalizes and proves the statements in Lean against Mathlib, optional domain libraries and the author's personal toolkit. Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed. The pipeline therefore stops and asks the author whenever a statement admits more than one reading, presents every repair, in natural language and TeX symbols, as a proposal that the author can accept, decline or redirect, and leaves to the author every decision that could potentially change what the paper claims. The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so that researchers who build on them can reuse their Lean code. By making verified papers practical to produce, PaperFormalizer aims to make research that rests on mathematical proofs more robust. PaperFormalizer runs inside a coding agent (Claude Code or Codex) and is available at https://github.com/Jiyuan-Tan/PaperFormalizer. Papers with Lean code shared by users are available at https://paperformalizer.org.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adf735e2c062a8c1911e1ba",
     "organization": {
      "_id": "672c672dcf09d152f4da04c4",
@@ -284,7 +819,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/67a24fd8016941971453cd49/kyZoE3gV6EFVzUIdNM_Wu.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31810.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "67a24fd8016941971453cd49",
     "avatarUrl": "/avatars/b8f068f96963ac6881e9ca93426c3f77.svg",
@@ -357,7 +892,7 @@
      "name": "danielmisrael"
     },
     "summary": "Speculative decoding is a technique that accelerates the inference speed of autoregressive large language models (LLMs) by sampling from a faster, lower quality draft model. Traditionally, a fundamental characteristic of speculative decoding is that it is lossless with respect to the verifier distribution, guaranteeing speed without sacrificing quality. This differs from recently developed diffusion LLMs (dLLMs), which are notably able to achieve substantial speedups by degrading the quality of their outputs with less diffusion effort. Because diffusion models are able to sample faster than autoregressive models by generating tokens in parallel, they are considered strong candidates for draft models in speculative diffusion. While it is widely understood that diffusion models can sacrifice quality for speed, speculative decoding itself can also be generalized to generate lossy samples faster using more lenient acceptance criteria with respect to the verifier distribution. Presented with the two parameters of diffusion effort and speculative decoding leniency, this paper explores the full achievable Pareto frontier via joint variations of these parameters. Our experiments show that jointly varying diffusion effort and acceptance leniency can extend the speed-quality Pareto frontier over single step diffusion drafting.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adebbe6121a70fc68346251",
     "ai_summary": "This paper explores trading inference speed for output quality in speculative decoding by jointly adjusting diffusion effort and acceptance leniency to extend the speed-quality Pareto frontier.",
     "ai_keywords": [
@@ -439,7 +974,7 @@
      "name": "ktwu01"
     },
     "summary": "Publishers and funders increasingly ask authors to disclose how AI tools contributed to a piece of research. In computational work the repository is where an author or an auditor would look for the answer, and we ask what it can actually supply. We audit two single-investigator repositories by the same author in the same field, each carrying a different class of agent residue: a prescriptive trace of standing rule files and a narrative trace of a running agent scratchpad, in repositories of 466 and 103 commits. The two are legible in opposite ways. 85.6% of the lines ever committed to the prescriptive trace are visible at the current revision, and a standing rule states a conclusion and discards the episode behind it; the narrative trace records episodes and shows 21.8%. Counted by revision the gap is far smaller: 15 of the prescriptive trace's 41 revisions leave no visible line, against 18 of the narrative trace's 41. The Co-Authored-By trailer, the field an automated audit reads, is one of three AI trailer keys Project A carries and covers 66 of the 121 commits carrying any. In Project B it has low sensitivity against an explicit within-repository proxy: 39 commits revise a file maintained to hold an agent's working notes and 1 (2.6%) carries the trailer. Project A's repository-level rate is unstable in time too, stepping from 2.7% to 17.7% across a boundary we did not specify in advance. Repository channels disagree, and neither rate can be read as an involvement rate; we do not isolate the cause, and say so. We give a field-by-field account of which provenance claims such traces support, which they cannot, and which they answer confidently and wrongly, construct an auditable evidence ledger, and derive the requirements this places on any system meant to record research provenance as it happens.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6adf68452c062a8c1911e156",
     "githubRepo": "https://github.com/ktwu01/git-provenance-auditor",
     "githubRepoAddedBy": "user",
@@ -459,7 +994,7 @@
    "title": "What Git Does Not Record: Provenance Legibility in Two AI-Assisted Research Repositories",
    "summary": "Publishers and funders increasingly ask authors to disclose how AI tools contributed to a piece of research. In computational work the repository is where an author or an auditor would look for the answer, and we ask what it can actually supply. We audit two single-investigator repositories by the same author in the same field, each carrying a different class of agent residue: a prescriptive trace of standing rule files and a narrative trace of a running agent scratchpad, in repositories of 466 and 103 commits. The two are legible in opposite ways. 85.6% of the lines ever committed to the prescriptive trace are visible at the current revision, and a standing rule states a conclusion and discards the episode behind it; the narrative trace records episodes and shows 21.8%. Counted by revision the gap is far smaller: 15 of the prescriptive trace's 41 revisions leave no visible line, against 18 of the narrative trace's 41. The Co-Authored-By trailer, the field an automated audit reads, is one of three AI trailer keys Project A carries and covers 66 of the 121 commits carrying any. In Project B it has low sensitivity against an explicit within-repository proxy: 39 commits revise a file maintained to hold an agent's working notes and 1 (2.6%) carries the trailer. Project A's repository-level rate is unstable in time too, stepping from 2.7% to 17.7% across a boundary we did not specify in advance. Repository channels disagree, and neither rate can be read as an involvement rate; we do not isolate the cause, and say so. We give a field-by-field account of which provenance claims such traces support, which they cannot, and which they answer confidently and wrongly, construct an auditable evidence ledger, and derive the requirements this places on any system meant to record research provenance as it happens.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28655.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "674d191fc406e58320e21dc0",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d191fc406e58320e21dc0/3WUBoDbpGxOu5-OJq0bxS.png",
@@ -866,7 +1401,7 @@
      "name": "HuggingFriends"
     },
     "summary": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-annotated videos from 8 source corpora and 10 video generators, spanning grippers, human hands, and dexterous hands. Experiments reveal uneven alignment between existing judges and human ratings: general-purpose MLLMs show lower agreement on physical adherence, while specialized video judges designed for general-domain physical reasoning do not consistently transfer to embodied scenarios. Motivated by these findings, we construct RoboJudge-Train, comprising 12K videos annotated with 25K human-verified scores and model-assisted rationales for Physical Adherence and Instruction Alignment. We fine-tune a 9B MLLM on this dataset with supervised learning followed by reinforcement learning, yielding RoboJudge-9B. Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation. Training on RoboJudge-Train also yields gains on external benchmarks, including VideoPhy2 and Physion-Eval. We further use RoboJudge-9B as a downstream evaluator to benchmark video generation models according to Physical Adherence and Instruction Alignment.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adf12f6121a70fc683464ec",
     "projectPage": "https://spherelab.ai/RoboJudge/",
     "githubRepo": "https://github.com/Sphere-AI-Lab/RoboJudge",
@@ -1107,7 +1642,7 @@
      "name": "JackieLin0123"
     },
     "summary": "Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference. We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD). Our analyses reveal a capacity-dependent interaction between supervision difficulty, trajectory quality, and model capacity: smaller students benefit more from selected supervision, while larger students are robust to trajectory variation and mixed-domain interference. Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales. Across 15 multimodal benchmarks, MVR-4B achieves an average score of 72.8, outperforming Qwen3.5-9B (Instruct) and MMFineReason-8B while using about 70% fewer samples than MMFineReason. Scaling to 9B improves the average to 74.4, surpassing Qwen3.5-35B-A3B (Instruct). Overall, MMVistaReason demonstrates that systematic open-data construction and capacity-aware post-training provide a practical and scalable path toward reliable multimodal reasoning.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6adf083e121a70fc68346493",
     "githubRepo": "https://github.com/JackieForest/MMVistaReason",
     "githubRepoAddedBy": "user",
@@ -1329,7 +1864,7 @@
      "name": "Franck-Dernoncourt"
     },
     "summary": "The growth of time-series datasets and foundation models has made dataset comparison a central part of time-series workflows. Assessing source-target transfer before model adaptation requires similarity estimates that can summarize transfer-related dataset relationships without exhaustive source-target evaluation over every candidate pair. Many metrics have been proposed for measuring similarity between time-series datasets, but they capture different dataset relationships and vary in how well they align with downstream utility across tasks. We evaluate this gap by measuring the correlation between source-target similarity scores and downstream forecasting errors in out-of-distribution and transfer-learning settings. We propose Domain-Integrated Similarity Cost (DISC), a learnable aggregation framework that uses calibration transfer observations to select, weight, and combine similarity metrics for different downstream tasks. By integrating complementary metric values, DISC better distinguishes source-target dataset differences that matter for downstream behavior. After calibration, DISC scores source-target pairs using only their similarity-metric values and yields higher alignment than single-metric references on the reported split. These results show that time-series dataset similarity is task-dependent, and that learned metric integration provides a stronger proxy for downstream transfer behavior than manually selecting one similarity metric.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adf0825121a70fc68346486",
     "ai_summary": "DISC is a learnable framework that calibrates and combines time-series dataset similarity metrics to better predict downstream forecasting transfer performance.",
     "ai_keywords": [
@@ -1629,7 +2164,7 @@
      "name": "hulehule"
     },
     "summary": "Language models can make personalized recommendations from rich item content, user history, and feedback. However, evaluating many candidates with full-text inputs incurs substantial online computation and limits serving throughput. We introduce DuoLM, a framework for fast and effective personalized recommendation that integrates a compact recommendation model with an efficient serving runtime. An encoder LLM learns compact item representations for offline reuse, while a personalized ranker LLM combines them with user history and feedback for recommendation. We train both models end to end with recommendation supervision and teacher distillation. The runtime further accelerates inference through virtual token IDs for embedding access, shared history computation, and CUDA Graph replay. Benchmark results show that our framework achieves recommendation quality comparable to that of the expert teacher model. On a single H100, it delivers approximately 26,400 candidate scores per second, about 60times the throughput of the teacher served with vLLM and automatic prefix caching.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ad99f293f2bb52eb8d6ece9",
     "projectPage": "https://arxiv.org/abs/2610.24481",
     "githubRepo": "https://github.com/jiangLLM/DuoLM",
@@ -1796,7 +2331,7 @@
      "global linear convergence"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
+    "githubStars": 2
    },
    "publishedAt": "2026-10-22T20:00:00.000Z",
    "title": "The fixed-point bundle method over product-of-simplex domains arising from game equilibria",
@@ -1877,7 +2412,7 @@
      "name": "leonsick"
     },
     "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reasoning demonstrations. We push supervision to the limit: guided solely by coarse, high-level topic descriptions, the model synthesizes its own curriculum of queries and privileged reasoning traces without access to any human-curated prompts or answers. We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on. We demonstrate the generality of this framework across text and multimodal domains, achieving consistent self-improvement on standard language benchmarks and Visual Question Answering. Our findings demonstrate that foundation models possess rich latent capabilities that can be amplified without external task supervision or curated problem distributions.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6adeff51121a70fc6834642b",
     "ai_summary": "Foundation models can self-improve across text and vision tasks by generating synthetic questions and reasoning traces guided only by high-level topics, without external supervision.",
     "ai_keywords": [
@@ -1996,7 +2531,7 @@
      "name": "yuuhan"
     },
     "summary": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ad982043f2bb52eb8d6eb59",
     "projectPage": "https://sunyuhan19981208.github.io/posts/multiagent-opd/",
     "ai_summary": "MultiAgent-OPD jointly trains a hierarchical multi-agent team via on-policy distillation and reinforcement learning, using a frozen teacher for local process supervision to improve end-to-end performance across multiple datasets.",
@@ -2152,7 +2687,7 @@
      "Sentinel-2"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1
+    "githubStars": 2
    },
    "publishedAt": "2026-10-22T20:00:00.000Z",
    "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
@@ -2246,7 +2781,7 @@
      "name": "SII-xrliu"
     },
     "summary": "The rapid growth of microdramas has increased demand for high-quality script production. Long-form microdrama script generation with LLMs requires both diverse plot progression and long-range narrative coherence. Our observations reveal that candidate continuations increasingly concentrate on fewer narrative mechanisms as generation progresses, while conventional retrieval may reinforce trope reuse and overlook historical information essential to future plots. To address these challenges, we propose DraMaze, a multi-agent pipeline that explores diverse causal paths through trope memory-guided evolutionary tree search and mutation. It further constructs a Backward Narrative Dependency Tree to organize, retain, and retrieve historical memories based on future narrative goals. We also introduce MiDramaBench, a bilingual benchmark for evaluating script logic and creative quality across different script lengths, together with causal-pattern metrics for narrative repetition and diversity. Experiments show consistent improvements across three backbone LLMs. For 60-episode scripts of up to 60k words, DraMaze reduces causal-pattern repetition by 32.1% and achieves a Logic score of 82.5, outperforming the best-performing baseline by 8.5 points.",
-    "upvotes": 8,
+    "upvotes": 11,
     "discussionId": "6adef095121a70fc683463b3",
     "ai_summary": "DraMaze improves long-form microdrama script generation by using evolutionary tree search guided by trope memory and backward narrative dependency trees to enhance plot diversity and coherence.",
     "ai_keywords": [
@@ -2807,7 +3342,7 @@
      "name": "CaiGuohao"
     },
     "summary": "World Models (WMs) can support Multimodal Agents (MAs) through simulated experience, while Agent trajectories can inform World Model refinement. Evaluating this interaction requires separate evidence about action selection and state evolution. We introduce Dual Exam, which tests Agents under fixed environment response mechanisms and World Models under fixed action interventions across physical, digital, social, and scientific domains. The Agent track compares 10 configurations on 1,088 items in 15 reporting categories. The World Model track contains 400 cases across eight scenarios; 15 configurations have full coverage and one covers six scenarios. GPT 6 Astra leads the case-weighted Agent Index at 31.3, and GPT-Image-2 leads the full-coverage WM Overall at 21.7. These scores use different tasks and metrics and are not directly comparable. A 150-case pilot of one coupled pairing records zero task successes and motivates component-level diagnosis. Results reveal uneven task performance and failures to preserve task-relevant state. Their value for predicting coupled success or sustained reciprocal learning remains to be established.",
-    "upvotes": 14,
+    "upvotes": 16,
     "discussionId": "6aded68e121a70fc6834637c",
     "ai_summary": "Dual Exam evaluates multimodal agents and world models separately across diverse domains, revealing uneven performance and no coupled success in pilot tests.",
     "ai_keywords": [
@@ -3290,7 +3825,7 @@
      "name": "zimuwang"
     },
     "summary": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and τ^3 Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
-    "upvotes": 32,
+    "upvotes": 33,
     "discussionId": "6adec48a121a70fc683462b2",
     "projectPage": "https://simpleagentlab.com/rsihub",
     "githubRepo": "https://github.com/simple-agent-lab/RSIHub",
@@ -3999,7 +4534,7 @@
      "name": "taesiri"
     },
     "summary": "A live esports broadcast needs a director who chooses which camera goes on air and a caster who talks over that choice, every second and without knowing what comes next. Streaming video language models have learned to commentate, but only over a broadcast that a human director has already produced. We study live broadcast production, in which a model receives the raw camera of every player and must both direct and commentate from the past alone. We present DirCast, a single streaming video language model that does both. Every second it scans all cameras at low resolution, decides with a hold-or-switch director whether and where to cut, and reads the chosen camera at high resolution before it speaks. Its context keeps what went on air and what was said and lets the other views expire, which bounds the cost of a stream of any length. We build a dataset of 27 professional Dota 2 matches with a camera for every hero, the human director's choices and the casters' commentary. DirCast directs better than rule-based and zero-shot directors including GPT-5, and its commentary wins 29.2 percent of comparisons against GPT-4o under the Proact-VL protocol, against 19.4 percent for the strongest of eleven streaming commentators that watch the human broadcast.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6adeba8b121a70fc6834624a",
     "projectPage": "https://zixiangao.github.io/DirCast/",
     "ai_summary": "DirCast is a streaming video language model that simultaneously directs live esports broadcasts by selecting cameras and generates real-time commentary using only past context.",
@@ -4084,7 +4619,7 @@
      "name": "taesiri"
     },
     "summary": "HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller. The recipe separates reusable motor skills from task decisions: a compact planner requests future body-point targets, while the frozen controller handles joint-level execution. A learned decoder maps 32-dimensional actions to structured target windows, and measured-state imitation initializes the planner before reinforcement learning. Task learning then refines interaction behavior while reusing the decoder and controller, avoiding the need to relearn whole-body control. This combination keeps task optimization focused on a compact upper policy and supplies an initial behavior before reward-driven exploration. Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run. This excludes controller pretraining, data preparation, evaluation, and search. Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adeb8d0121a70fc6834623f",
     "ai_summary": "HoloBoxing learns humanoid boxing by combining a frozen whole-body controller with a compact planner that predicts body-point targets, using imitation initialization and reinforcement learning to refine interaction behavior with minimal additional training.",
     "ai_keywords": [
@@ -4189,7 +4724,7 @@
      "name": "BradyFU"
     },
     "summary": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate at the output level, overlooking the entanglement of grounding evidence and learned priors within fused representations. To address this issue, we propose Omni-Woodpecker (OWP), a training-free framework that shifts hallucination mitigation from output-level manipulation to conflict-conditioned representation rebalancing. Specifically, OWP first identifies cross-modal conflicts from complementary modality-specific views. It then employs orthogonal decomposition to separate grounding evidence from competing priors within the hidden states. Finally, OWP adaptively rebalances fused representations by suppressing misleading priors and restoring ignored evidence before decoding. Extensive experiments demonstrate the effectiveness and strong cross-architecture generalization of OWP. Using Qwen2.5-Omni-7B as the backbone, OWP improves performance by 12.9 and 8.6 points on CMM and AVHBench, respectively, while consistently achieving gains of 0.67-2.25 points across four general OLLM reasoning benchmarks. Furthermore, OWP generalizes effectively to VideoLLaMA2-AV, improving performance by 4.6 and 3.9 points on the same benchmarks. Code is publicly available at https://github.com/ZiiJianLiu/Omni-Woodpecker",
-    "upvotes": 21,
+    "upvotes": 22,
     "discussionId": "6adea6a5121a70fc6834621b",
     "githubRepo": "https://github.com/ZiiJianLiu/Omni-Woodpecker",
     "githubRepoAddedBy": "user",
@@ -5000,7 +5535,18 @@
     "authors": [
      {
       "_id": "6adb9485121a70fc68345847",
+      "user": {
+       "_id": "6169a814cc21d3c0aa086ad4",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
+       "isPro": false,
+       "fullname": "Daniel Ruiz",
+       "user": "ZQ-Dev",
+       "type": "user",
+       "name": "ZQ-Dev"
+      },
       "name": "Daniel Ruiz",
+      "status": "admin_assigned",
+      "statusLastChangedAt": "2026-10-26T18:46:58.797Z",
       "hidden": false
      },
      {
@@ -5041,7 +5587,7 @@
      "name": "ZQ-Dev"
     },
     "summary": "Modern LLM agents can retrieve information from accessible documents, and then disclose a sensitive conclusion assembled from them. This mosaic effect creates a critical risk for agents operating over confidential data. We quantify its realization with 30 synthetic cybersecurity, medical, and military examples, yielding 10,800 final answers from three LLM agents in controlled simulation and 1,440 answers from live agents in two open-source harnesses. Even under benign queries designed to be answerable from one document, GPT-5.6-Sol, the best performing model tested, discloses forbidden composites in 7.08% of answers (95% CI: 3.75-10.67%) in simulation, with worse disclosure rates in live harnesses. Adding visible classification headers and explicit aggregation rules reduces pooled disclosure rates substantially, yet unsafe disclosures persist in 32.37% of simulated answers (95% CI: 28.33-36.19%) across all intents despite these safeguards. Furthermore, increased refusals do not guarantee confidentiality, since significant refusals reveal the prohibited conclusion regardless. These results point to a troubling conclusion: sensitive data leaks via mosaic-style events are an observed confidentiality failure mode in the evaluated settings at non-negligible rates. They motivate stronger controls on what agents may infer and disclose in sensitive data environments with mixed-clearance users.",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6adb9485121a70fc6834584a",
     "ai_summary": "LLM agents frequently leak sensitive conclusions assembled from multiple confidential documents, and common safeguards fail to eliminate this mosaic-style disclosure risk.",
     "ai_keywords": [
@@ -5069,7 +5615,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6169a814cc21d3c0aa086ad4/wLprm7izngXDyhilWGSU0.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30418.png",
-   "numComments": 4,
+   "numComments": 6,
    "submittedBy": {
     "_id": "6169a814cc21d3c0aa086ad4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
@@ -5089,7 +5635,7 @@
     "fullname": "University of Southern California",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66a403728069e3c30e0d8524/tkYCfeIJfF1FxtYiRZ8bf.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -5308,579 +5854,6 @@
     "name": "cmu-gil",
     "fullname": "Generative Intelligence Lab (CMU)",
     "avatar": "https://www.gravatar.com/avatar/ffb85327669c21e7ca3d691f4a8f3c8c?d=retro&size=100"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.27148",
-    "authors": [
-     {
-      "_id": "6ad8321aefdc4c3bd8229f04",
-      "user": {
-       "_id": "64b9ded93e62024f557813b0",
-       "avatarUrl": "/avatars/dac8a322ed7d4cadd24acb677b69f19f.svg",
-       "isPro": false,
-       "fullname": "Barry Li",
-       "user": "barryjinks",
-       "type": "user",
-       "name": "barryjinks"
-      },
-      "name": "Weien Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:06:58.548Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8321aefdc4c3bd8229f05",
-      "name": "Haochen Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8321aefdc4c3bd8229f06",
-      "name": "Zeyu Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8321aefdc4c3bd8229f07",
-      "name": "Rui Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8321aefdc4c3bd8229f08",
-      "name": "Zixuan Dong",
-      "hidden": false
-     },
-     {
-      "_id": "6ad8321aefdc4c3bd8229f09",
-      "name": "Ye Yuan",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Who Takes the Lead? Model Ability and Task-Conditioned Collaboration with Humans",
-    "submittedOnDailyBy": {
-     "_id": "64b9ded93e62024f557813b0",
-     "avatarUrl": "/avatars/dac8a322ed7d4cadd24acb677b69f19f.svg",
-     "isPro": false,
-     "fullname": "Barry Li",
-     "user": "barryjinks",
-     "type": "user",
-     "name": "barryjinks"
-    },
-    "summary": "As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT~5.6~Sol, Command~A+, Qwen~3.8~27B, and Command~R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.",
-    "upvotes": 11,
-    "discussionId": "6ad8321befdc4c3bd8229f0a",
-    "ai_summary": "Researchers use a shared-control maze to show that stronger language-model agents selectively involve humans based on route advantage rather than failing to collaborate.",
-    "ai_keywords": [
-     "shared-control maze",
-     "agent-controlled avatar",
-     "human-controlled avatar",
-     "co-play",
-     "solo performance",
-     "route-conditioned human involvement",
-     "GPT-5.6 Sol",
-     "Command A+",
-     "Qwen 3.8 27B",
-     "Command R"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "6983db493c6df70911445535",
-     "name": "5a-community",
-     "fullname": "New Ground AI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6354a0b05eac2d2efa7adc63/OYS1kfEpBAbx83m8ZtNY3.png"
-    }
-   },
-   "publishedAt": "2026-10-18T20:00:00.000Z",
-   "title": "Who Takes the Lead? Model Ability and Task-Conditioned Collaboration with Humans",
-   "summary": "As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT~5.6~Sol, Command~A+, Qwen~3.8~27B, and Command~R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27148.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "64b9ded93e62024f557813b0",
-    "avatarUrl": "/avatars/dac8a322ed7d4cadd24acb677b69f19f.svg",
-    "fullname": "Barry Li",
-    "name": "barryjinks",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6983db493c6df70911445535",
-    "name": "5a-community",
-    "fullname": "New Ground AI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6354a0b05eac2d2efa7adc63/OYS1kfEpBAbx83m8ZtNY3.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30753",
-    "authors": [
-     {
-      "_id": "6adb63b1121a70fc683457d2",
-      "name": "Yiming Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d3",
-      "name": "Jiarui Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d4",
-      "name": "Haojia Wei",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d5",
-      "name": "Yifei Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d6",
-      "name": "Yifan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d7",
-      "name": "Hongjie Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d8",
-      "name": "Xue Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb63b1121a70fc683457d9",
-      "name": "Zhihang Zhong",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "FilmFlow: Agentic System for 3D Virtual Film Cinematography",
-    "submittedOnDailyBy": {
-     "_id": "644608163a0fa0e98cd1a284",
-     "avatarUrl": "/avatars/a715d48548438cc2903be00aa5608b89.svg",
-     "isPro": false,
-     "fullname": "Yiming Zhang",
-     "user": "yimingz",
-     "type": "user",
-     "name": "yimingz"
-    },
-    "summary": "Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera trajectories for dynamic 3D environments. To generate these trajectories, a Director agent constructs executable camera plans by composing high-level motions from concurrent atomic operations that jointly control translation, rotation, and framing. The Director is supported by three specialized agents: an Interpreter that extracts scene-grounded cinematographic intent, a Scout that selects initial viewpoints, and a Critic that evaluates rendered results and provides visual feedback for iterative plan refinement. We also introduce CinemaBench, comprising 150 Blender scenes from self-created and licensed sources, with five camera instructions per scene for 750 text-directed tasks and 60 reference videos associated with a subset of scenes. CinemaBench supports evaluation of both text-directed camera generation and video reference-directed camera generation. Across a diverse set of evaluated baselines, FilmFlow achieves the strongest benchmark performance and the highest user preference, demonstrating effective spatial reasoning, temporal coordination, and visual composition for executable 3D cinematography.",
-    "upvotes": 32,
-    "discussionId": "6adb63b1121a70fc683457da",
-    "projectPage": "https://visionary-laboratory.github.io/Filmflow/",
-    "ai_summary": "FilmFlow is an agentic framework that translates natural-language or video instructions into executable camera trajectories for 3D scenes using specialized director, interpreter, scout, and critic agents, evaluated on the CinemaBench dataset.",
-    "ai_keywords": [
-     "agentic framework",
-     "camera trajectories",
-     "3D environments",
-     "Director agent",
-     "atomic operations",
-     "Interpreter",
-     "Scout",
-     "Critic",
-     "visual feedback",
-     "CinemaBench",
-     "text-directed camera generation",
-     "video reference-directed camera generation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "FilmFlow: Agentic System for 3D Virtual Film Cinematography",
-   "summary": "Complex camera motion is central to visual storytelling, yet translating cinematographic intent into controllable, executable camera trajectories remains challenging. We introduce FilmFlow, an agentic framework that converts natural-language instructions or reference videos into explicit camera trajectories for dynamic 3D environments. To generate these trajectories, a Director agent constructs executable camera plans by composing high-level motions from concurrent atomic operations that jointly control translation, rotation, and framing. The Director is supported by three specialized agents: an Interpreter that extracts scene-grounded cinematographic intent, a Scout that selects initial viewpoints, and a Critic that evaluates rendered results and provides visual feedback for iterative plan refinement. We also introduce CinemaBench, comprising 150 Blender scenes from self-created and licensed sources, with five camera instructions per scene for 750 text-directed tasks and 60 reference videos associated with a subset of scenes. CinemaBench supports evaluation of both text-directed camera generation and video reference-directed camera generation. Across a diverse set of evaluated baselines, FilmFlow achieves the strongest benchmark performance and the highest user preference, demonstrating effective spatial reasoning, temporal coordination, and visual composition for executable 3D cinematography.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30753.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "644608163a0fa0e98cd1a284",
-    "avatarUrl": "/avatars/a715d48548438cc2903be00aa5608b89.svg",
-    "fullname": "Yiming Zhang",
-    "name": "yimingz",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.31372",
-    "authors": [
-     {
-      "_id": "6adb551b121a70fc6834577d",
-      "user": {
-       "_id": "68f5cfb57b23d048745eb8a9",
-       "avatarUrl": "/avatars/8fc6894470f36700410a38b7faef7805.svg",
-       "isPro": false,
-       "fullname": "Jiening Siow",
-       "user": "Little-d1d1",
-       "type": "user",
-       "name": "Little-d1d1"
-      },
-      "name": "Jiening Siow",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.648Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc6834577e",
-      "user": {
-       "_id": "660bf98c3336a7e128a0e918",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660bf98c3336a7e128a0e918/lpketCvJ3Kgx5ucN0-HWo.jpeg",
-       "isPro": false,
-       "fullname": "Amy Xin",
-       "user": "amyxx2001",
-       "type": "user",
-       "name": "amyxx2001"
-      },
-      "name": "Amy Xin",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.637Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc6834577f",
-      "name": "Junjie Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345780",
-      "name": "Ziyu Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345781",
-      "name": "Zijun Yao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345782",
-      "name": "Yunjia Qi",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345783",
-      "name": "Fanjin Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345784",
-      "name": "Lei Hou",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345785",
-      "name": "Jie Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb551b121a70fc68345786",
-      "name": "Juanzi Li",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
-    "submittedOnDailyBy": {
-     "_id": "68f5cfb57b23d048745eb8a9",
-     "avatarUrl": "/avatars/8fc6894470f36700410a38b7faef7805.svg",
-     "isPro": false,
-     "fullname": "Jiening Siow",
-     "user": "Little-d1d1",
-     "type": "user",
-     "name": "Little-d1d1"
-    },
-    "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-    "upvotes": 16,
-    "discussionId": "6adb551c121a70fc68345787",
-    "githubRepo": "https://github.com/THU-KEG/RIDAR",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "RIDAR detects and mitigates research integrity violations in autonomous agents via taxonomy-based post-hoc analysis and real-time intervention.",
-    "ai_keywords": [
-     "research integrity violations",
-     "RIVT",
-     "RIDAR-post-hoc",
-     "RIDAR-runtime",
-     "agent trajectories",
-     "F1 performance",
-     "runtime intervention"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 6,
-    "organization": {
-     "_id": "64db4fc57266618e854318f4",
-     "name": "THU-KEG",
-     "fullname": "Knowledge Engineer Group @ Tsinghua University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/648c4b46e549be47af1aafcd/5atqdE9AUWvYAHm9FNkG_.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
-   "summary": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31372.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "68f5cfb57b23d048745eb8a9",
-    "avatarUrl": "/avatars/8fc6894470f36700410a38b7faef7805.svg",
-    "fullname": "Jiening Siow",
-    "name": "Little-d1d1",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "64db4fc57266618e854318f4",
-    "name": "THU-KEG",
-    "fullname": "Knowledge Engineer Group @ Tsinghua University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/648c4b46e549be47af1aafcd/5atqdE9AUWvYAHm9FNkG_.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.12586",
-    "authors": [
-     {
-      "_id": "6adb2dd055db1e682e58312e",
-      "user": {
-       "_id": "67164dea24552afb831fcb10",
-       "avatarUrl": "/avatars/97be1764f70e27634702f49be717576b.svg",
-       "isPro": false,
-       "fullname": "Dmitry Osin",
-       "user": "xaosina",
-       "type": "user",
-       "name": "xaosina"
-      },
-      "name": "Dmitry Osin",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-25T16:45:04.699Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e58312f",
-      "name": "Egor Surkov",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583130",
-      "name": "Petr Mokrov",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583131",
-      "name": "Igor Udovichenko",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583132",
-      "name": "Ivan Karpukhin",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583133",
-      "name": "Evgeny Burnaev",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583134",
-      "name": "Egor Shvetsov",
-      "hidden": false
-     },
-     {
-      "_id": "6adb2dd055db1e682e583135",
-      "name": "Alexander Korotin",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/67164dea24552afb831fcb10/-W8MoE8x5YfbFjHkojNo3.png"
-    ],
-    "publishedAt": "2026-10-08T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
-    "submittedOnDailyBy": {
-     "_id": "67164dea24552afb831fcb10",
-     "avatarUrl": "/avatars/97be1764f70e27634702f49be717576b.svg",
-     "isPro": false,
-     "fullname": "Dmitry Osin",
-     "user": "xaosina",
-     "type": "user",
-     "name": "xaosina"
-    },
-    "summary": "Event sequences are chains of random events, each described by heterogeneous (numerical and categorical) features. The problem of event sequence forecasting occurs in finance, healthcare, business process intelligence, and other fields. In this work, we study multi-horizon forecasting of event sequences as a conditional generative modeling problem. We evaluate forecasts not only for prediction accuracy, but also for distributional realism. To this end, we present a benchmark comprising metrics for both quality aspects, strong statistical baselines, recent models adapted from adjacent fields, and curated real-world datasets. Careful evaluation reveals that no method excels at both accuracy and realism, highlighting a fundamental trade-off between the two. Finally, we introduce Wasserstein BaryBooster, an algorithm that aggregates samples from a realism-strong diffusion model into a state-of-the-art predictor, demonstrating that distributional realism can be converted into prediction accuracy. Code is available at https://github.com/xaosina/event-sequence-forecasting.",
-    "upvotes": 7,
-    "discussionId": "6adb2dd055db1e682e583136",
-    "githubRepo": "https://github.com/xaosina/event-sequence-forecasting",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Event sequence forecasting is evaluated as conditional generative modeling, revealing a trade-off between accuracy and realism, and a proposed algorithm converts realism into predictive accuracy.",
-    "ai_keywords": [
-     "multi-horizon forecasting",
-     "conditional generative modeling",
-     "diffusion model",
-     "Wasserstein BaryBooster"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
-   },
-   "publishedAt": "2026-10-07T20:00:00.000Z",
-   "title": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
-   "summary": "Event sequences are chains of random events, each described by heterogeneous (numerical and categorical) features. The problem of event sequence forecasting occurs in finance, healthcare, business process intelligence, and other fields. In this work, we study multi-horizon forecasting of event sequences as a conditional generative modeling problem. We evaluate forecasts not only for prediction accuracy, but also for distributional realism. To this end, we present a benchmark comprising metrics for both quality aspects, strong statistical baselines, recent models adapted from adjacent fields, and curated real-world datasets. Careful evaluation reveals that no method excels at both accuracy and realism, highlighting a fundamental trade-off between the two. Finally, we introduce Wasserstein BaryBooster, an algorithm that aggregates samples from a realism-strong diffusion model into a state-of-the-art predictor, demonstrating that distributional realism can be converted into prediction accuracy. Code is available at https://github.com/xaosina/event-sequence-forecasting.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/67164dea24552afb831fcb10/-W8MoE8x5YfbFjHkojNo3.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.12586.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "67164dea24552afb831fcb10",
-    "avatarUrl": "/avatars/97be1764f70e27634702f49be717576b.svg",
-    "fullname": "Dmitry Osin",
-    "name": "xaosina",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.22951",
-    "authors": [
-     {
-      "_id": "6ad9201ff7563b9935e81560",
-      "user": {
-       "_id": "662484218fee5ba324d493ce",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/662484218fee5ba324d493ce/WDxvpLZuCfxH3ZAODyQnH.jpeg",
-       "isPro": false,
-       "fullname": "Pham Gia Khuyen",
-       "user": "giakhuyendihoc",
-       "type": "user",
-       "name": "giakhuyendihoc"
-      },
-      "name": "Khuyen Pham",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:06:12.227Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9201ff7563b9935e81561",
-      "user": {
-       "_id": "67ab95daf69ffe01cc0c55a2",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/7DENF94zmOOw-XfAVlLXD.png",
-       "isPro": false,
-       "fullname": "Tran Nguyen Le",
-       "user": "trannguyenle95",
-       "type": "user",
-       "name": "trannguyenle95"
-      },
-      "name": "Tran Nguyen Le",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-25T16:45:04.632Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9201ff7563b9935e81562",
-      "name": "Edoardo Fazzari",
-      "hidden": false
-     },
-     {
-      "_id": "6ad9201ff7563b9935e81563",
-      "name": "Cesare Stefanini",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/CkaQ8ZDpE9L-4MsyVo06o.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/BnXyahm0Nhas0YBPWYXp5.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/-eyW_g250oj6uUoMlmYTE.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/b84nxKvBe_6nOfNy_B6b2.png"
-    ],
-    "publishedAt": "2026-10-16T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
-    "submittedOnDailyBy": {
-     "_id": "662484218fee5ba324d493ce",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/662484218fee5ba324d493ce/WDxvpLZuCfxH3ZAODyQnH.jpeg",
-     "isPro": false,
-     "fullname": "Pham Gia Khuyen",
-     "user": "giakhuyendihoc",
-     "type": "user",
-     "name": "giakhuyendihoc"
-    },
-    "summary": "Vision-language-action (VLA) models have shown strong promise for generalist robotic manipulation, but their inference cost remains a major bottleneck for real-time control. This limitation is especially pronounced in flow-matching VLAs such as π_{0.5}, where the action expert is evaluated repeatedly during iterative denoising. We introduce MambaAct, an efficient Mamba action expert for flow-matching VLA policies. MambaAct retains the pretrained visual-language prefix encoder of π_{0.5}, while replacing its transformer-based action expert with a compact Mamba-based action expert. Within this expert, Mamba serves as the action mixer that models dependencies across the noisy continuous-action sequence. To preserve visual-language conditioning without repeated token-level cross-attention, MambaAct uses a lightweight Context Compressor to map Vision-language model (VLM) prefix tokens into a compact conditioning signal that gates and modulates each Mamba action block. MambaAct uses a 10times smaller action expert and reduces flow-matching denoising latency by 64.8% on LIBERO and 58.8% in real-world deployment, while improving mean LIBERO success by 1.08 percentage points across three independent fine-tuning seeds and maintaining gains on LIBERO-Plus and real-world benchmarks. Our code and model weights are publicly available at https://github.com/giakhuyendihoc/MambaAct.",
-    "upvotes": 10,
-    "discussionId": "6ad92020f7563b9935e81564",
-    "projectPage": "https://giakhuyendihoc.github.io/mambaact-page/",
-    "githubRepo": "https://github.com/giakhuyendihoc/MambaAct",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "MambaAct replaces the transformer action expert in flow-matching VLA policies with a compact Mamba-based expert and a context compressor to cut inference latency while improving robotic manipulation success.",
-    "ai_keywords": [
-     "vision-language-action models",
-     "flow-matching",
-     "Mamba",
-     "action expert",
-     "cross-attention",
-     "context compressor",
-     "denoising latency"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
-    "organization": {
-     "_id": "61fb9e24dc607a42af5f193f",
-     "name": "MBZUAI",
-     "fullname": "Mohamed Bin Zayed University of Artificial Intelligence",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1643879908583-603ab5664a944b99e81476e8.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-15T20:00:00.000Z",
-   "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
-   "summary": "Vision-language-action (VLA) models have shown strong promise for generalist robotic manipulation, but their inference cost remains a major bottleneck for real-time control. This limitation is especially pronounced in flow-matching VLAs such as π_{0.5}, where the action expert is evaluated repeatedly during iterative denoising. We introduce MambaAct, an efficient Mamba action expert for flow-matching VLA policies. MambaAct retains the pretrained visual-language prefix encoder of π_{0.5}, while replacing its transformer-based action expert with a compact Mamba-based action expert. Within this expert, Mamba serves as the action mixer that models dependencies across the noisy continuous-action sequence. To preserve visual-language conditioning without repeated token-level cross-attention, MambaAct uses a lightweight Context Compressor to map Vision-language model (VLM) prefix tokens into a compact conditioning signal that gates and modulates each Mamba action block. MambaAct uses a 10times smaller action expert and reduces flow-matching denoising latency by 64.8% on LIBERO and 58.8% in real-world deployment, while improving mean LIBERO success by 1.08 percentage points across three independent fine-tuning seeds and maintaining gains on LIBERO-Plus and real-world benchmarks. Our code and model weights are publicly available at https://github.com/giakhuyendihoc/MambaAct.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/CkaQ8ZDpE9L-4MsyVo06o.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/BnXyahm0Nhas0YBPWYXp5.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/-eyW_g250oj6uUoMlmYTE.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/662484218fee5ba324d493ce/b84nxKvBe_6nOfNy_B6b2.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22951.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "662484218fee5ba324d493ce",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/662484218fee5ba324d493ce/WDxvpLZuCfxH3ZAODyQnH.jpeg",
-    "fullname": "Pham Gia Khuyen",
-    "name": "giakhuyendihoc",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61fb9e24dc607a42af5f193f",
-    "name": "MBZUAI",
-    "fullname": "Mohamed Bin Zayed University of Artificial Intelligence",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1643879908583-603ab5664a944b99e81476e8.jpeg"
    },
    "isAuthorParticipating": true
   }
