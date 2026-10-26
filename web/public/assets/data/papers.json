@@ -1,8 +1,480 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-26T14:46:02.101Z",
+ "fetchedAt": "2026-10-26T17:01:44.475Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.30524",
+    "authors": [
+     {
+      "_id": "6adf8497a5efa215400a76d5",
+      "name": "Zhipeng Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76d6",
+      "name": "Peiyang Song",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76d7",
+      "name": "Nikolaus Vertovec",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76d8",
+      "name": "Weiru Cui",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76d9",
+      "name": "Zhihao Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76da",
+      "name": "Mingkang Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76db",
+      "name": "Luxia Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76dc",
+      "name": "Bai Xue",
+      "hidden": false
+     },
+     {
+      "_id": "6adf8497a5efa215400a76dd",
+      "name": "Alessandro Abate",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/649c5cf5c1ae48cf4d7dda34/C9dzKu_Pi4Mbq83iwNjKB.png"
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification",
+    "submittedOnDailyBy": {
+     "_id": "649c5cf5c1ae48cf4d7dda34",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649c5cf5c1ae48cf4d7dda34/veZLUgYCK0hGPNkexZe9A.jpeg",
+     "isPro": false,
+     "fullname": "Peiyang Song",
+     "user": "p-song1",
+     "type": "user",
+     "name": "p-song1"
+    },
+    "summary": "Lyapunov functions and barrier certificates give state-space guarantees of stability and safety, but synthesizing and verifying them---especially for nonlinear, high-dimensional systems---remains an open challenge. Existing pipelines verify candidates with numerical solvers (sum-of-squares programs), interval methods, or satisfiability-modulo-theories (SMT) solvers, which often require relaxations, are conservative, or scale poorly with model dimension and nonlinearity. These limitations have also shaped benchmark design: standard test suites are dominated by low-dimensional polynomial systems chosen to suit what solvers can handle rather than what engineering applications require. We address both sides of this challenge. First, we introduce DynaCertBench, a benchmark of 105 instances: 80 non-redundant systems curated from the literature, extended with high-dimensional and control-constrained variants and new nonlinearly coupled systems, comprehensively spanning stability, region-of-attraction, forward-invariance, and safety tasks. Second, we present LLM2Cert, an LLM-driven framework that synthesizes candidate certificates and verifies them against their proof obligations: each obligation is routed to an SMT solver or directly to the Lean Proof-Repair agent. On DynaCertBench, LLM2Cert verifies 81 of 105 instances (77.1%), a 17.1 percentage point improvement over one-shot proposal without feedback. On the 81 fixed certificates, LLM2Cert verifies 22 that All-SMT leaves unresolved. Code and data are available at https://github.com/FormalCert-AI/llm2cert.",
+    "upvotes": 1,
+    "discussionId": "6adf8497a5efa215400a76de",
+    "projectPage": "https://formalcert-ai.github.io/llm2cert/",
+    "githubRepo": "https://github.com/FormalCert-AI/llm2cert",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "A benchmark of nonlinear dynamical systems and an LLM-driven framework that synthesizes and verifies stability and safety certificates via SMT solvers and proof repair agents achieve substantial verification improvements.",
+    "ai_keywords": [
+     "Lyapunov functions",
+     "barrier certificates",
+     "sum-of-squares",
+     "SMT solver",
+     "DynaCertBench",
+     "LLM2Cert",
+     "Lean Proof-Repair"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "691d9a1012cc4d473e1c862f",
+     "name": "CarnegieMellonU",
+     "fullname": "Carnegie Mellon University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification",
+   "summary": "Lyapunov functions and barrier certificates give state-space guarantees of stability and safety, but synthesizing and verifying them---especially for nonlinear, high-dimensional systems---remains an open challenge. Existing pipelines verify candidates with numerical solvers (sum-of-squares programs), interval methods, or satisfiability-modulo-theories (SMT) solvers, which often require relaxations, are conservative, or scale poorly with model dimension and nonlinearity. These limitations have also shaped benchmark design: standard test suites are dominated by low-dimensional polynomial systems chosen to suit what solvers can handle rather than what engineering applications require. We address both sides of this challenge. First, we introduce DynaCertBench, a benchmark of 105 instances: 80 non-redundant systems curated from the literature, extended with high-dimensional and control-constrained variants and new nonlinearly coupled systems, comprehensively spanning stability, region-of-attraction, forward-invariance, and safety tasks. Second, we present LLM2Cert, an LLM-driven framework that synthesizes candidate certificates and verifies them against their proof obligations: each obligation is routed to an SMT solver or directly to the Lean Proof-Repair agent. On DynaCertBench, LLM2Cert verifies 81 of 105 instances (77.1%), a 17.1 percentage point improvement over one-shot proposal without feedback. On the 81 fixed certificates, LLM2Cert verifies 22 that All-SMT leaves unresolved. Code and data are available at https://github.com/FormalCert-AI/llm2cert.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/649c5cf5c1ae48cf4d7dda34/C9dzKu_Pi4Mbq83iwNjKB.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30524.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "649c5cf5c1ae48cf4d7dda34",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649c5cf5c1ae48cf4d7dda34/veZLUgYCK0hGPNkexZe9A.jpeg",
+    "fullname": "Peiyang Song",
+    "name": "p-song1",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 6,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "691d9a1012cc4d473e1c862f",
+    "name": "CarnegieMellonU",
+    "fullname": "Carnegie Mellon University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.19589",
+    "authors": [
+     {
+      "_id": "6adf75f32c062a8c1911e1ce",
+      "name": "Zhongwei Xie",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1cf",
+      "name": "Xingsu Li",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d0",
+      "name": "Jingqiao Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d1",
+      "name": "Zihao Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d2",
+      "name": "Hong ChiTat",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d3",
+      "name": "Zhaowei Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d4",
+      "name": "Weizhi Du",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d5",
+      "name": "Yuxuan Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d6",
+      "name": "Huihao Jing",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d7",
+      "name": "Jiaxin Bai",
+      "hidden": false
+     },
+     {
+      "_id": "6adf75f32c062a8c1911e1d8",
+      "name": "Yangqiu Song",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making",
+    "submittedOnDailyBy": {
+     "_id": "665cbf97f130c1313c8a66bf",
+     "avatarUrl": "/avatars/3bbebd177a3a4bcd7f971746728b461e.svg",
+     "isPro": true,
+     "fullname": "ZHONGWEI XIE",
+     "user": "zhongweixie",
+     "type": "user",
+     "name": "zhongweixie"
+    },
+    "summary": "Repeated event forecasting requires extracting predictive signals from noisy evidence and evaluating their value across successive decisions. We introduce JockeyBench, a benchmark and evaluation protocol that studies this problem through historical Japanese horse racing. The protocol combines time-gated evidence, priced tools, paired frozen-program controls, and two workflows: executing an LLM-written predictor or acquiring evidence for a fresh per-race LLM forecast. Evaluation separates forecast quality, benchmark-specific net utility, and retrospective betting returns and risk under fixed decision rules. Across 28 model--scaffold configurations on 324 races, paired tests identify seven revision gains and two declines after multiple-testing correction. Yet every configuration has negative mean profit under capped-Kelly settlement. In a four-model comparison, the reusable-program workflow has higher mean betting profit and lower research fees, although both workflows lose on average. Further diagnostics reveal that mean probability bias reverses on selected bets and that profitable individual runs can depend on concentrated returns. These findings motivate evaluating predictive competence, adaptation, resource use, and decision value separately when assessing agents for repeated event forecasting.",
+    "upvotes": 1,
+    "discussionId": "6adf75f32c062a8c1911e1d9",
+    "projectPage": "https://hkust-knowcomp.github.io/JockeyBench/",
+    "githubRepo": "https://github.com/HKUST-KnowComp/JockeyBench",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "JockeyBench evaluates repeated event forecasting via Japanese horse racing, finding that reusable predictors improve efficiency but all configurations yield negative average betting returns.",
+    "ai_keywords": [
+     "JockeyBench",
+     "time-gated evidence",
+     "LLM-written predictor",
+     "per-race LLM forecast",
+     "capped-Kelly settlement",
+     "mean probability bias",
+     "repeated event forecasting"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2
+   },
+   "publishedAt": "2026-10-13T20:00:00.000Z",
+   "title": "JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making",
+   "summary": "Repeated event forecasting requires extracting predictive signals from noisy evidence and evaluating their value across successive decisions. We introduce JockeyBench, a benchmark and evaluation protocol that studies this problem through historical Japanese horse racing. The protocol combines time-gated evidence, priced tools, paired frozen-program controls, and two workflows: executing an LLM-written predictor or acquiring evidence for a fresh per-race LLM forecast. Evaluation separates forecast quality, benchmark-specific net utility, and retrospective betting returns and risk under fixed decision rules. Across 28 model--scaffold configurations on 324 races, paired tests identify seven revision gains and two declines after multiple-testing correction. Yet every configuration has negative mean profit under capped-Kelly settlement. In a four-model comparison, the reusable-program workflow has higher mean betting profit and lower research fees, although both workflows lose on average. Further diagnostics reveal that mean probability bias reverses on selected bets and that profitable individual runs can depend on concentrated returns. These findings motivate evaluating predictive competence, adaptation, resource use, and decision value separately when assessing agents for repeated event forecasting.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.19589.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "665cbf97f130c1313c8a66bf",
+    "avatarUrl": "/avatars/3bbebd177a3a4bcd7f971746728b461e.svg",
+    "fullname": "ZHONGWEI XIE",
+    "name": "zhongweixie",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.31810",
+    "authors": [
+     {
+      "_id": "6adf735e2c062a8c1911e1b7",
+      "name": "Jiyuan Tan",
+      "hidden": false
+     },
+     {
+      "_id": "6adf735e2c062a8c1911e1b8",
+      "name": "Vasilis Syrgkanis",
+      "hidden": false
+     },
+     {
+      "_id": "6adf735e2c062a8c1911e1b9",
+      "name": "Jose Blanchet",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/67a24fd8016941971453cd49/kyZoE3gV6EFVzUIdNM_Wu.mp4"
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+    "submittedOnDailyBy": {
+     "_id": "67a24fd8016941971453cd49",
+     "avatarUrl": "/avatars/b8f068f96963ac6881e9ca93426c3f77.svg",
+     "isPro": false,
+     "fullname": "Jiyuan",
+     "user": "jytan12",
+     "type": "user",
+     "name": "jytan12"
+    },
+    "summary": "Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version. Starting from the LaTeX source, PaperFormalizer transcribes the paper into a dependency graph of statements, audits each statement in natural language for faithfulness, ambiguity and correctness, and then formalizes and proves the statements in Lean against Mathlib, optional domain libraries and the author's personal toolkit. Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed. The pipeline therefore stops and asks the author whenever a statement admits more than one reading, presents every repair, in natural language and TeX symbols, as a proposal that the author can accept, decline or redirect, and leaves to the author every decision that could potentially change what the paper claims. The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so that researchers who build on them can reuse their Lean code. By making verified papers practical to produce, PaperFormalizer aims to make research that rests on mathematical proofs more robust. PaperFormalizer runs inside a coding agent (Claude Code or Codex) and is available at https://github.com/Jiyuan-Tan/PaperFormalizer. Papers with Lean code shared by users are available at https://paperformalizer.org.",
+    "upvotes": 2,
+    "discussionId": "6adf735e2c062a8c1911e1ba",
+    "organization": {
+     "_id": "672c672dcf09d152f4da04c4",
+     "name": "StanfordUniversity",
+     "fullname": "Stanford University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/vJI0POlzGMXL2878t1vz2.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean",
+   "summary": "Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version. Starting from the LaTeX source, PaperFormalizer transcribes the paper into a dependency graph of statements, audits each statement in natural language for faithfulness, ambiguity and correctness, and then formalizes and proves the statements in Lean against Mathlib, optional domain libraries and the author's personal toolkit. Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed. The pipeline therefore stops and asks the author whenever a statement admits more than one reading, presents every repair, in natural language and TeX symbols, as a proposal that the author can accept, decline or redirect, and leaves to the author every decision that could potentially change what the paper claims. The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so that researchers who build on them can reuse their Lean code. By making verified papers practical to produce, PaperFormalizer aims to make research that rests on mathematical proofs more robust. PaperFormalizer runs inside a coding agent (Claude Code or Codex) and is available at https://github.com/Jiyuan-Tan/PaperFormalizer. Papers with Lean code shared by users are available at https://paperformalizer.org.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/67a24fd8016941971453cd49/kyZoE3gV6EFVzUIdNM_Wu.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31810.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67a24fd8016941971453cd49",
+    "avatarUrl": "/avatars/b8f068f96963ac6881e9ca93426c3f77.svg",
+    "fullname": "Jiyuan",
+    "name": "jytan12",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "672c672dcf09d152f4da04c4",
+    "name": "StanfordUniversity",
+    "fullname": "Stanford University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/vJI0POlzGMXL2878t1vz2.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.31819",
+    "authors": [
+     {
+      "_id": "6adebbe6121a70fc6834624d",
+      "name": "Aaron Zorel",
+      "hidden": false
+     },
+     {
+      "_id": "6adebbe6121a70fc6834624e",
+      "name": "Guy Van den Broeck",
+      "hidden": false
+     },
+     {
+      "_id": "6adebbe6121a70fc6834624f",
+      "name": "Aditya Grover",
+      "hidden": false
+     },
+     {
+      "_id": "6adebbe6121a70fc68346250",
+      "user": {
+       "_id": "630139f1f6bea7dd15bdaf4e",
+       "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+       "isPro": false,
+       "fullname": "Daniel Israel",
+       "user": "danielmisrael",
+       "type": "user",
+       "name": "danielmisrael"
+      },
+      "name": "Daniel Israel",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-26T08:45:04.899Z",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/630139f1f6bea7dd15bdaf4e/1yyZJEBU3lX59T64GQeLi.mp4"
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Speculative Diffusion is a Tale of Two Tradeoffs",
+    "submittedOnDailyBy": {
+     "_id": "630139f1f6bea7dd15bdaf4e",
+     "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+     "isPro": false,
+     "fullname": "Daniel Israel",
+     "user": "danielmisrael",
+     "type": "user",
+     "name": "danielmisrael"
+    },
+    "summary": "Speculative decoding is a technique that accelerates the inference speed of autoregressive large language models (LLMs) by sampling from a faster, lower quality draft model. Traditionally, a fundamental characteristic of speculative decoding is that it is lossless with respect to the verifier distribution, guaranteeing speed without sacrificing quality. This differs from recently developed diffusion LLMs (dLLMs), which are notably able to achieve substantial speedups by degrading the quality of their outputs with less diffusion effort. Because diffusion models are able to sample faster than autoregressive models by generating tokens in parallel, they are considered strong candidates for draft models in speculative diffusion. While it is widely understood that diffusion models can sacrifice quality for speed, speculative decoding itself can also be generalized to generate lossy samples faster using more lenient acceptance criteria with respect to the verifier distribution. Presented with the two parameters of diffusion effort and speculative decoding leniency, this paper explores the full achievable Pareto frontier via joint variations of these parameters. Our experiments show that jointly varying diffusion effort and acceptance leniency can extend the speed-quality Pareto frontier over single step diffusion drafting.",
+    "upvotes": 2,
+    "discussionId": "6adebbe6121a70fc68346251",
+    "ai_summary": "This paper explores trading inference speed for output quality in speculative decoding by jointly adjusting diffusion effort and acceptance leniency to extend the speed-quality Pareto frontier.",
+    "ai_keywords": [
+     "speculative decoding",
+     "autoregressive large language models",
+     "diffusion LLMs",
+     "diffusion models",
+     "draft models",
+     "speculative diffusion",
+     "acceptance criteria",
+     "Pareto frontier"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "67784c39dac147922d8d09f0",
+     "name": "UCLA",
+     "fullname": "University of California, Los Angeles",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67784bd637dfa531fbce95a2/Nf0seEMEn66sPL3QsJXj4.png"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "Speculative Diffusion is a Tale of Two Tradeoffs",
+   "summary": "Speculative decoding is a technique that accelerates the inference speed of autoregressive large language models (LLMs) by sampling from a faster, lower quality draft model. Traditionally, a fundamental characteristic of speculative decoding is that it is lossless with respect to the verifier distribution, guaranteeing speed without sacrificing quality. This differs from recently developed diffusion LLMs (dLLMs), which are notably able to achieve substantial speedups by degrading the quality of their outputs with less diffusion effort. Because diffusion models are able to sample faster than autoregressive models by generating tokens in parallel, they are considered strong candidates for draft models in speculative diffusion. While it is widely understood that diffusion models can sacrifice quality for speed, speculative decoding itself can also be generalized to generate lossy samples faster using more lenient acceptance criteria with respect to the verifier distribution. Presented with the two parameters of diffusion effort and speculative decoding leniency, this paper explores the full achievable Pareto frontier via joint variations of these parameters. Our experiments show that jointly varying diffusion effort and acceptance leniency can extend the speed-quality Pareto frontier over single step diffusion drafting.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/630139f1f6bea7dd15bdaf4e/1yyZJEBU3lX59T64GQeLi.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31819.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "630139f1f6bea7dd15bdaf4e",
+    "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+    "fullname": "Daniel Israel",
+    "name": "danielmisrael",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "67784c39dac147922d8d09f0",
+    "name": "UCLA",
+    "fullname": "University of California, Los Angeles",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67784bd637dfa531fbce95a2/Nf0seEMEn66sPL3QsJXj4.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.28655",
+    "authors": [
+     {
+      "_id": "6adf68442c062a8c1911e153",
+      "name": "Koutian Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf68442c062a8c1911e154",
+      "name": "Zesen Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf68442c062a8c1911e155",
+      "name": "Hejia Geng",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-09T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "What Git Does Not Record: Provenance Legibility in Two AI-Assisted Research Repositories",
+    "submittedOnDailyBy": {
+     "_id": "674d191fc406e58320e21dc0",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d191fc406e58320e21dc0/3WUBoDbpGxOu5-OJq0bxS.png",
+     "isPro": false,
+     "fullname": "Koutian Wu",
+     "user": "ktwu01",
+     "type": "user",
+     "name": "ktwu01"
+    },
+    "summary": "Publishers and funders increasingly ask authors to disclose how AI tools contributed to a piece of research. In computational work the repository is where an author or an auditor would look for the answer, and we ask what it can actually supply. We audit two single-investigator repositories by the same author in the same field, each carrying a different class of agent residue: a prescriptive trace of standing rule files and a narrative trace of a running agent scratchpad, in repositories of 466 and 103 commits. The two are legible in opposite ways. 85.6% of the lines ever committed to the prescriptive trace are visible at the current revision, and a standing rule states a conclusion and discards the episode behind it; the narrative trace records episodes and shows 21.8%. Counted by revision the gap is far smaller: 15 of the prescriptive trace's 41 revisions leave no visible line, against 18 of the narrative trace's 41. The Co-Authored-By trailer, the field an automated audit reads, is one of three AI trailer keys Project A carries and covers 66 of the 121 commits carrying any. In Project B it has low sensitivity against an explicit within-repository proxy: 39 commits revise a file maintained to hold an agent's working notes and 1 (2.6%) carries the trailer. Project A's repository-level rate is unstable in time too, stepping from 2.7% to 17.7% across a boundary we did not specify in advance. Repository channels disagree, and neither rate can be read as an involvement rate; we do not isolate the cause, and say so. We give a field-by-field account of which provenance claims such traces support, which they cannot, and which they answer confidently and wrongly, construct an auditable evidence ledger, and derive the requirements this places on any system meant to record research provenance as it happens.",
+    "upvotes": 0,
+    "discussionId": "6adf68452c062a8c1911e156",
+    "githubRepo": "https://github.com/ktwu01/git-provenance-auditor",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Repository traces of AI use in computational research are partially visible and unreliable for measuring involvement, requiring auditable provenance systems.",
+    "ai_keywords": [
+     "agent residue",
+     "prescriptive trace",
+     "narrative trace",
+     "Co-Authored-By trailer",
+     "provenance claims",
+     "auditable evidence ledger"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-08T20:00:00.000Z",
+   "title": "What Git Does Not Record: Provenance Legibility in Two AI-Assisted Research Repositories",
+   "summary": "Publishers and funders increasingly ask authors to disclose how AI tools contributed to a piece of research. In computational work the repository is where an author or an auditor would look for the answer, and we ask what it can actually supply. We audit two single-investigator repositories by the same author in the same field, each carrying a different class of agent residue: a prescriptive trace of standing rule files and a narrative trace of a running agent scratchpad, in repositories of 466 and 103 commits. The two are legible in opposite ways. 85.6% of the lines ever committed to the prescriptive trace are visible at the current revision, and a standing rule states a conclusion and discards the episode behind it; the narrative trace records episodes and shows 21.8%. Counted by revision the gap is far smaller: 15 of the prescriptive trace's 41 revisions leave no visible line, against 18 of the narrative trace's 41. The Co-Authored-By trailer, the field an automated audit reads, is one of three AI trailer keys Project A carries and covers 66 of the 121 commits carrying any. In Project B it has low sensitivity against an explicit within-repository proxy: 39 commits revise a file maintained to hold an agent's working notes and 1 (2.6%) carries the trailer. Project A's repository-level rate is unstable in time too, stepping from 2.7% to 17.7% across a boundary we did not specify in advance. Repository channels disagree, and neither rate can be read as an involvement rate; we do not isolate the cause, and say so. We give a field-by-field account of which provenance claims such traces support, which they cannot, and which they answer confidently and wrongly, construct an auditable evidence ledger, and derive the requirements this places on any system meant to record research provenance as it happens.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28655.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "674d191fc406e58320e21dc0",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d191fc406e58320e21dc0/3WUBoDbpGxOu5-OJq0bxS.png",
+    "fullname": "Koutian Wu",
+    "name": "ktwu01",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 7,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.31423",
@@ -260,7 +732,7 @@
      "name": "ChocoWu"
     },
     "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 218,
+    "upvotes": 219,
     "discussionId": "6adac4aa55db1e682e582cc9",
     "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
     "githubRepo": "https://github.com/vid-gen/awesome-video-world-model",
@@ -956,7 +1428,7 @@
      "name": "liamdugan"
     },
     "summary": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts. We accomplish this by training sparse autoencoders (SAEs) directly on a detector's residual stream, assigning auto-interpretation labels to each SAE feature, and retaining only features whose generated descriptions pass a global fidelity threshold. We then train a lightweight classifier on just the interpretable features. We find that our SAEs recover latent concepts that correspond to highly specific and predictive linguistic \"tells\" of AI-generated text. Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.",
-    "upvotes": 5,
+    "upvotes": 7,
     "discussionId": "6ad9cefa3f2bb52eb8d6ee85",
     "githubRepo": "https://github.com/google-deepmind/detectorscope",
     "githubRepoAddedBy": "user",
@@ -1065,7 +1537,7 @@
      "name": "user-7431"
     },
     "summary": "Codes of professional ethics guide and restrict specialists, who increasingly work with assistants built on large language models. Such an assistant can breach the user's code, or help the user breach it, without the user noticing. Evaluations reporting broad categories of harm cannot show how often this happens or which provision is breached. TenetBench pairs 3,433 requests conflicting with clauses of fifteen Russian-language professional codes with benign twins that differ only in the legitimacy of what is asked. An automated pipeline generates the tasks from the text of a code, so the corpus grows with every code added and a provision yields new tasks on every run. It also produced tasks and human-validated verdicts from two English codes of other jurisdictions. In human validation of the frozen pipeline, specialists rated 0.995 of the conflicting tasks plausible, and the model judge agreed with the adjudicated label at Gwet's AC1 of at least 0.894 on 1,860 elements. We evaluated fourteen model and reasoning-mode combinations on whether they produce the conflicting text, decline or warn. Eleven of the fourteen produce conflicting content on most such requests, mostly without a warning, and nearly three warnings in four accompany conflicting content. The models that conform more do so by declining while still serving the legitimate twin, and enabling reasoning halved the refusals of two models. We hope the dataset and pipeline will help evaluate how language models observe professional norms and let diagnostic datasets be built for particular professions and organisations.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6adb37ca121a70fc683456fc",
     "ai_summary": "TenetBench evaluates whether language models adhere to professional ethical codes by pairing conflicting requests with benign equivalents, revealing frequent unflagged violations across most tested models.",
     "ai_keywords": [
@@ -1405,7 +1877,7 @@
      "name": "leonsick"
     },
     "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reasoning demonstrations. We push supervision to the limit: guided solely by coarse, high-level topic descriptions, the model synthesizes its own curriculum of queries and privileged reasoning traces without access to any human-curated prompts or answers. We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on. We demonstrate the generality of this framework across text and multimodal domains, achieving consistent self-improvement on standard language benchmarks and Visual Question Answering. Our findings demonstrate that foundation models possess rich latent capabilities that can be amplified without external task supervision or curated problem distributions.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6adeff51121a70fc6834642b",
     "ai_summary": "Foundation models can self-improve across text and vision tasks by generating synthetic questions and reasoning traces guided only by high-level topics, without external supervision.",
     "ai_keywords": [
@@ -1847,7 +2319,7 @@
      "name": "ammarali32"
     },
     "summary": "We introduce TWIG (Tree-structured Weights with Inherited Gates), a representation in which every weight of a neural network is the end of a path of small discrete decisions: a sign, a shift by a power of two, a zero gate, an index into a shared table. Weights that belong together share the upper part of their paths, and each decision is inherited by every weight below it, so it is stored once and applied once. This simple change has three consequences. Any trained network can be written as a TWIG, and when the decisions are powers of two its weight layers become circuits made almost entirely of wires and adders, suited to chips whose weights are fixed at fabrication. Pruning, quantization, low-rank factorization, codebooks and weight sharing become edits of one object, so a single optimizer can choose among all of them for a whole network. And choosing the decisions is the ground-state problem of a higher-order Boltzmann machine whose interactions follow the paths of the tree, the problem class that annealers and quantum optimizers are built to solve. Today these questions are handled apart: each compression method brings its own format and solver, a circuit with fixed weights needs a dedicated constant multiplier for every weight, and discrete solvers reach only narrow subproblems such as rounding. Weight formats have long been moving toward shared decisions, through group scales, shared exponents, microexponents and sparse weights; TWIG takes this trend to its end, and every common format is a shallow TWIG at no extra cost. On five weight matrices of a large language model, a flat tree whose signed power-of-two terms are chosen per weight for circuit cost, with no group scales, needs 9--15\\% fewer additions than GPTQ at equal layer error at 3- and 4-bit accuracy on typical matrices, and 20--55\\% fewer on matrices with strong outliers.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6adedc10121a70fc68346388",
     "githubRepo": "https://github.com/ammarali32/StateTree-Representation",
     "githubRepoAddedBy": "user",
@@ -1868,7 +2340,7 @@
      "GPTQ"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 17,
     "organization": {
      "_id": "61b8da8ed48e2b6a4d2f5530",
      "name": "ITMO",
@@ -2335,7 +2807,7 @@
      "name": "CaiGuohao"
     },
     "summary": "World Models (WMs) can support Multimodal Agents (MAs) through simulated experience, while Agent trajectories can inform World Model refinement. Evaluating this interaction requires separate evidence about action selection and state evolution. We introduce Dual Exam, which tests Agents under fixed environment response mechanisms and World Models under fixed action interventions across physical, digital, social, and scientific domains. The Agent track compares 10 configurations on 1,088 items in 15 reporting categories. The World Model track contains 400 cases across eight scenarios; 15 configurations have full coverage and one covers six scenarios. GPT 6 Astra leads the case-weighted Agent Index at 31.3, and GPT-Image-2 leads the full-coverage WM Overall at 21.7. These scores use different tasks and metrics and are not directly comparable. A 150-case pilot of one coupled pairing records zero task successes and motivates component-level diagnosis. Results reveal uneven task performance and failures to preserve task-relevant state. Their value for predicting coupled success or sustained reciprocal learning remains to be established.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6aded68e121a70fc6834637c",
     "ai_summary": "Dual Exam evaluates multimodal agents and world models separately across diverse domains, revealing uneven performance and no coupled success in pilot tests.",
     "ai_keywords": [
@@ -2429,7 +2901,7 @@
      "name": "zecongtanghku"
     },
     "summary": "Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control. As a procedurally generated open world, Minecraft provides a natural testbed for studying the integration of these capabilities. Existing agents typically provide either native visuomotor control without long-horizon autonomy or high-level planning executed through environment APIs or predefined skills. To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness. At the orchestration level, we equip the harness with structured memory for tracking progress and a VLM planner for selecting subtasks within the VLA's capabilities. To reliably determine subtask completion, we further introduce a policy-coupled task completion state detector that conditions on VLA policy context to signal candidate completion. At the control level, a single VLA executes all subtasks with vision-only perception and native keyboard-and-mouse actions. To mitigate interference between heterogeneous GUI and non-GUI interactions, we introduce regime-specific RMSNorm branches and separate mouse-movement token embeddings. We also train the VLA through world knowledge injection, imitation learning, and reinforcement learning with environment feedback to improve reliability and recovery. HiSTEVE achieves state-of-the-art atomic-task performance, scoring 85.0% on MineStudio Bench and a 37.4% average success rate on OpenHA, while also completing long-horizon tasks such as crafting an iron pickaxe from scratch like human players.",
-    "upvotes": 37,
+    "upvotes": 38,
     "discussionId": "6adecd75121a70fc68346302",
     "ai_summary": "HiSTEVE is a hierarchical vision-language-action agent that combines long-horizon planning with native keyboard-and-mouse control to perform complex open-ended tasks in Minecraft.",
     "ai_keywords": [
@@ -2571,7 +3043,7 @@
      "name": "ik4sumii"
     },
     "summary": "Music source separation (MSS) has been conventionally addressed by discriminative methods. Recently, flow matching has emerged as a strong generative paradigm for modeling complex data distributions, with successful applications across diverse domains. These advances motivate us to systematically investigate flow matching for MSS in a four-source (Vocals, Bass, Drums, Other) setting in full-band stereo. Specifically, we investigate prediction targets, flow paths, single-source versus multi-source modeling, and mixture consistency constraints. Beyond the signal-level metrics commonly used for MSS, such as signal-to-distortion ratio, we further evaluate MSS methods using embedding-based metrics, as well as a listening test, providing a comprehensive benchmark. On MUSDB18-HQ, our proposed model exhibits competitive performance in both objective and subjective tests, highlighting the potential of flow matching for generative MSS. Demo: https://ik4sumii.github.io/FLOMSS/",
-    "upvotes": 8,
+    "upvotes": 10,
     "discussionId": "6adaf59255db1e682e582f01",
     "projectPage": "https://ik4sumii.github.io/FLOMSS/",
     "ai_summary": "Flow matching is investigated for four-source full-band stereo music separation, evaluating prediction targets, flow paths, modeling strategies, and consistency constraints with both signal-level and perceptual metrics.",
@@ -2818,7 +3290,7 @@
      "name": "zimuwang"
     },
     "summary": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and τ^3 Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
-    "upvotes": 31,
+    "upvotes": 32,
     "discussionId": "6adec48a121a70fc683462b2",
     "projectPage": "https://simpleagentlab.com/rsihub",
     "githubRepo": "https://github.com/simple-agent-lab/RSIHub",
@@ -3405,7 +3877,7 @@
      "name": "Polaris0913"
     },
     "summary": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation.",
-    "upvotes": 46,
+    "upvotes": 47,
     "discussionId": "6adeb7c1121a70fc68346236",
     "projectPage": "https://recgpt-team.github.io/UserArena-Page/",
     "githubRepo": "https://github.com/RecGPT-Team/UserArena",
@@ -3527,7 +3999,7 @@
      "name": "taesiri"
     },
     "summary": "A live esports broadcast needs a director who chooses which camera goes on air and a caster who talks over that choice, every second and without knowing what comes next. Streaming video language models have learned to commentate, but only over a broadcast that a human director has already produced. We study live broadcast production, in which a model receives the raw camera of every player and must both direct and commentate from the past alone. We present DirCast, a single streaming video language model that does both. Every second it scans all cameras at low resolution, decides with a hold-or-switch director whether and where to cut, and reads the chosen camera at high resolution before it speaks. Its context keeps what went on air and what was said and lets the other views expire, which bounds the cost of a stream of any length. We build a dataset of 27 professional Dota 2 matches with a camera for every hero, the human director's choices and the casters' commentary. DirCast directs better than rule-based and zero-shot directors including GPT-5, and its commentary wins 29.2 percent of comparisons against GPT-4o under the Proact-VL protocol, against 19.4 percent for the strongest of eleven streaming commentators that watch the human broadcast.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6adeba8b121a70fc6834624a",
     "projectPage": "https://zixiangao.github.io/DirCast/",
     "ai_summary": "DirCast is a streaming video language model that simultaneously directs live esports broadcasts by selecting cameras and generates real-time commentary using only past context.",
@@ -4563,7 +5035,7 @@
      "_id": "6169a814cc21d3c0aa086ad4",
      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
      "isPro": false,
-     "fullname": "ZQ",
+     "fullname": "Daniel Ruiz",
      "user": "ZQ-Dev",
      "type": "user",
      "name": "ZQ-Dev"
@@ -4601,7 +5073,7 @@
    "submittedBy": {
     "_id": "6169a814cc21d3c0aa086ad4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
-    "fullname": "ZQ",
+    "fullname": "Daniel Ruiz",
     "name": "ZQ-Dev",
     "type": "user",
     "isPro": false,
@@ -4802,7 +5274,7 @@
      "text-to-brick"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 12,
+    "githubStars": 13,
     "organization": {
      "_id": "680ba1b453d9d56430b82b57",
      "name": "cmu-gil",
@@ -4898,7 +5370,7 @@
      "name": "barryjinks"
     },
     "summary": "As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT~5.6~Sol, Command~A+, Qwen~3.8~27B, and Command~R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6ad8321befdc4c3bd8229f0a",
     "ai_summary": "Researchers use a shared-control maze to show that stronger language-model agents selectively involve humans based on route advantage rather than failing to collaborate.",
     "ai_keywords": [
@@ -5409,1446 +5881,6 @@
     "name": "MBZUAI",
     "fullname": "Mohamed Bin Zayed University of Artificial Intelligence",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1643879908583-603ab5664a944b99e81476e8.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30468",
-    "authors": [
-     {
-      "_id": "6adb0a4f55db1e682e582fa7",
-      "name": "Seemandhar Jain",
-      "hidden": false
-     },
-     {
-      "_id": "6adb0a4f55db1e682e582fa8",
-      "name": "Manmohan Chandraker",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/63ec1c3b59a46fd5f4b4ffdc/3TKE8WNSQGXg4yiDwRUzk.gif"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
-    "submittedOnDailyBy": {
-     "_id": "63ec1c3b59a46fd5f4b4ffdc",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ec1c3b59a46fd5f4b4ffdc/DCLxRtOCTVefSwillvqeN.jpeg",
-     "isPro": false,
-     "fullname": "Seemandhar Jain",
-     "user": "sj68",
-     "type": "user",
-     "name": "sj68"
-    },
-    "summary": "Reproducing a published 3DGS paper takes weeks of expert engineering before any extension can be proposed. Prior autonomous-research systems read papers, draft hypotheses, and write code, but are limited by short fixed templates, low executability, and weak traceability, and none has been demonstrated end-to-end in a live computer-vision subfield with intense activity. SplatLab is an autonomous research system for 3D Gaussian Splatting that addresses these limitations. Given a research prompt, a target-paper URL, or no input at all, it reproduces a published baseline, proposes an extension, trains and ablates across Mip-NeRF 360 and LLFF, writes the manuscript, and binds every reported number to a logged training run. Five design choices distinguish it: (i) candidates mutate plugins from a verified-reproduction backbone matched to published baselines; (ii) a cascade-weighted Elo tournament across eight islands scores candidates on measured GPU PSNR with verbal-gradient feedback; (iii) a standing falsifier subtracts Elo on failure, integrating stress-test survival into selection; (iv) every reported number is bound to a logged training run, and the run cannot terminate while any claim is unbacked; (v) a seven-category 3DGS taxonomy wraps EVOLVE-BLOCK markers in domain-aligned scaffolds transferable across 3DGS repositories. On PSNR-targeted runs, SplatLab's manuscripts beat their reproduced targets by +0.18 to +3.78 dB, including +3.78 dB on astrophotographic nebula rendering, for which no prior 3DGS method exists. The research cycle compresses from months of graduate-student time to days of mostly autonomous compute. Code, all manuscripts, experiment ledgers, and the cross-run paper store are available on the project page.",
-    "upvotes": 8,
-    "discussionId": "6adb0a4f55db1e682e582fa9",
-    "projectPage": "https://seemandharjain.com/splatlab/",
-    "githubRepo": "https://github.com/seemandhar/SplatLab",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "SplatLab autonomously reproduces 3D Gaussian Splatting baselines, proposes extensions, and writes manuscripts with fully traceable training logs, improving PSNR by up to 3.78 dB.",
-    "ai_keywords": [
-     "3D Gaussian Splatting",
-     "Mip-NeRF 360",
-     "LLFF",
-     "Elo tournament",
-     "plugin mutation",
-     "falsifier",
-     "EVOLVE-BLOCK",
-     "cross-run paper store"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 16,
-    "organization": {
-     "_id": "697e87d12cc19315a8497001",
-     "name": "UCSanDiego",
-     "fullname": "University of California at San Diego",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/697e8687c00f332cf492d29e/KUQpvngxP4r9oBSDZwIwZ.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
-   "summary": "Reproducing a published 3DGS paper takes weeks of expert engineering before any extension can be proposed. Prior autonomous-research systems read papers, draft hypotheses, and write code, but are limited by short fixed templates, low executability, and weak traceability, and none has been demonstrated end-to-end in a live computer-vision subfield with intense activity. SplatLab is an autonomous research system for 3D Gaussian Splatting that addresses these limitations. Given a research prompt, a target-paper URL, or no input at all, it reproduces a published baseline, proposes an extension, trains and ablates across Mip-NeRF 360 and LLFF, writes the manuscript, and binds every reported number to a logged training run. Five design choices distinguish it: (i) candidates mutate plugins from a verified-reproduction backbone matched to published baselines; (ii) a cascade-weighted Elo tournament across eight islands scores candidates on measured GPU PSNR with verbal-gradient feedback; (iii) a standing falsifier subtracts Elo on failure, integrating stress-test survival into selection; (iv) every reported number is bound to a logged training run, and the run cannot terminate while any claim is unbacked; (v) a seven-category 3DGS taxonomy wraps EVOLVE-BLOCK markers in domain-aligned scaffolds transferable across 3DGS repositories. On PSNR-targeted runs, SplatLab's manuscripts beat their reproduced targets by +0.18 to +3.78 dB, including +3.78 dB on astrophotographic nebula rendering, for which no prior 3DGS method exists. The research cycle compresses from months of graduate-student time to days of mostly autonomous compute. Code, all manuscripts, experiment ledgers, and the cross-run paper store are available on the project page.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/63ec1c3b59a46fd5f4b4ffdc/3TKE8WNSQGXg4yiDwRUzk.gif"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30468.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "63ec1c3b59a46fd5f4b4ffdc",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ec1c3b59a46fd5f4b4ffdc/DCLxRtOCTVefSwillvqeN.jpeg",
-    "fullname": "Seemandhar Jain",
-    "name": "sj68",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "697e87d12cc19315a8497001",
-    "name": "UCSanDiego",
-    "fullname": "University of California at San Diego",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/697e8687c00f332cf492d29e/KUQpvngxP4r9oBSDZwIwZ.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.20091",
-    "authors": [
-     {
-      "_id": "6ad0a5c28304c5d882d7afd3",
-      "user": {
-       "_id": "6a507ea9ee9c6940a34f4d12",
-       "avatarUrl": "/avatars/1d3c5cbcb1dad3ef92bd1f6ab34b8da0.svg",
-       "isPro": false,
-       "fullname": "Jaeyeon Heo",
-       "user": "HeoJaeYeon",
-       "type": "user",
-       "name": "HeoJaeYeon"
-      },
-      "name": "Jaeyeon Heo",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-15T16:45:05.550Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad0a5c28304c5d882d7afd4",
-      "name": "Geuntaek Lim",
-      "hidden": false
-     },
-     {
-      "_id": "6ad0a5c28304c5d882d7afd5",
-      "name": "Yukyung Choi",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-14T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
-    "submittedOnDailyBy": {
-     "_id": "6a507ea9ee9c6940a34f4d12",
-     "avatarUrl": "/avatars/1d3c5cbcb1dad3ef92bd1f6ab34b8da0.svg",
-     "isPro": false,
-     "fullname": "Jaeyeon Heo",
-     "user": "HeoJaeYeon",
-     "type": "user",
-     "name": "HeoJaeYeon"
-    },
-    "summary": "Video scene graph generation (VidSGG) aims to capture objects and their evolving relationships in videos. This requires accounting for both the persistence of object identities and abrupt changes in relationships. Existing methods aggregate information across frames to exploit temporal context, but an emphasis on consistency can obscure these changes. As a result, a model may retain its previous prediction even after the underlying relation has changed. We refer to this failure mode as relational semantic inertia. To address this issue, we propose Relation-Transition-Aware Transformer (RTAformer), a one-stage framework that separately models entity persistence and relation changes. It injects calibrated differences between adjacent-frame relation queries to guide predicate updates, while cross-frame instance alignment during training helps reduce cross-frame representational drift. Experiments on Action Genome show improvements in recall and mean recall over existing methods, with ablation studies supporting the contributions of the proposed components and comparisons using matched backbones showing larger gains on relation-transition frames than on non-transition frames.",
-    "upvotes": 19,
-    "discussionId": "6ad0a5c28304c5d882d7afd6",
-    "githubRepo": "https://github.com/sejong-rcv/RTAformer",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "RTAformer separately models persistent entities and changing relations in video scene graphs by injecting calibrated query differences and aligning cross-frame instances to overcome relational semantic inertia.",
-    "ai_keywords": [
-     "video scene graph generation",
-     "relational semantic inertia",
-     "Relation-Transition-Aware Transformer",
-     "RTAformer",
-     "relation queries",
-     "cross-frame instance alignment",
-     "representational drift",
-     "Action Genome"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4
-   },
-   "publishedAt": "2026-10-13T20:00:00.000Z",
-   "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
-   "summary": "Video scene graph generation (VidSGG) aims to capture objects and their evolving relationships in videos. This requires accounting for both the persistence of object identities and abrupt changes in relationships. Existing methods aggregate information across frames to exploit temporal context, but an emphasis on consistency can obscure these changes. As a result, a model may retain its previous prediction even after the underlying relation has changed. We refer to this failure mode as relational semantic inertia. To address this issue, we propose Relation-Transition-Aware Transformer (RTAformer), a one-stage framework that separately models entity persistence and relation changes. It injects calibrated differences between adjacent-frame relation queries to guide predicate updates, while cross-frame instance alignment during training helps reduce cross-frame representational drift. Experiments on Action Genome show improvements in recall and mean recall over existing methods, with ablation studies supporting the contributions of the proposed components and comparisons using matched backbones showing larger gains on relation-transition frames than on non-transition frames.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20091.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6a507ea9ee9c6940a34f4d12",
-    "avatarUrl": "/avatars/1d3c5cbcb1dad3ef92bd1f6ab34b8da0.svg",
-    "fullname": "Jaeyeon Heo",
-    "name": "HeoJaeYeon",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30949",
-    "authors": [
-     {
-      "_id": "6adb14ae55db1e682e582ffa",
-      "name": "A. Jian Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e582ffb",
-      "name": "An Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e582ffc",
-      "name": "Bo Dan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e582ffd",
-      "name": "Chen Mu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e582ffe",
-      "name": "Chengran Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e582fff",
-      "name": "Chuan Shi",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583000",
-      "name": "Feng Chang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583001",
-      "name": "Hongxin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583002",
-      "name": "Hongyuan Tao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583003",
-      "name": "Jinxing Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583004",
-      "name": "Jujie He",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583005",
-      "name": "Kun Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583006",
-      "name": "Lin Jing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583007",
-      "name": "Ming Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583008",
-      "name": "Qicheng Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583009",
-      "user": {
-       "_id": "67f1037cd5f976f3d4777390",
-       "avatarUrl": "/avatars/c2c9dfbb3d82815dba511c3a54a1ef6b.svg",
-       "isPro": false,
-       "fullname": "Ryan",
-       "user": "RenyuanLi",
-       "type": "user",
-       "name": "RenyuanLi"
-      },
-      "name": "Renyuan Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-26T13:31:58.793Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300a",
-      "name": "Shark Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300b",
-      "name": "Shawn Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300c",
-      "name": "Shi Qing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300d",
-      "name": "Shi Zhong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300e",
-      "name": "Tianyu Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58300f",
-      "name": "Wei Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583010",
-      "name": "Wei Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583011",
-      "name": "Wenrui Cai",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583012",
-      "name": "Wenxiao Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583013",
-      "name": "Xuxing Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583014",
-      "name": "Yan Xing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583015",
-      "name": "Yi Xing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583016",
-      "user": {
-       "_id": "66221f7290f3fd333c4edab8",
-       "avatarUrl": "/avatars/2d970489963c58842b69bc0b1d46f3e5.svg",
-       "isPro": false,
-       "fullname": "Yifan Luo",
-       "user": "ArgusK17",
-       "type": "user",
-       "name": "ArgusK17"
-      },
-      "name": "Yifan Luo",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.565Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583017",
-      "name": "Yiran Xing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583018",
-      "name": "Yizhi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583019",
-      "name": "Yongsheng Kang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301a",
-      "user": {
-       "_id": "632d6c1ccb4cad7600646f00",
-       "avatarUrl": "/avatars/eb9050a1c3095378cd0fdec7a53ee563.svg",
-       "isPro": false,
-       "fullname": "yc.ding",
-       "user": "O98K",
-       "type": "user",
-       "name": "O98K"
-      },
-      "name": "Yucheng Ding",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-26T13:30:32.989Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301b",
-      "name": "Yue Song",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301c",
-      "name": "Yun Qing",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301d",
-      "name": "Yunqi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301e",
-      "name": "Zelong Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58301f",
-      "name": "Zhengmao Ye",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583020",
-      "name": "Zhentao Fan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583021",
-      "name": "Zhiteng Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583022",
-      "name": "Ziling Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583023",
-      "name": "Bihong Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583024",
-      "name": "Bingli Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583025",
-      "name": "Ce Jun",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583026",
-      "name": "Changhao Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583027",
-      "name": "Chen Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583028",
-      "name": "Chen Xiao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583029",
-      "name": "Chi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302a",
-      "name": "Chunjiang Ge",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302b",
-      "name": "Danyang Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302c",
-      "name": "Deyang Kong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302d",
-      "name": "Dian Qi",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302e",
-      "name": "Ding Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58302f",
-      "name": "Evan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583030",
-      "name": "Fanglin Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583031",
-      "name": "Fei Bai",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583032",
-      "name": "Gang Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583033",
-      "name": "Guochang Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583034",
-      "name": "Hao Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583035",
-      "name": "Haoran Feng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583036",
-      "name": "Haowen Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583037",
-      "name": "Huahao Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583038",
-      "name": "Huanjin Yao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583039",
-      "name": "Huatong Song",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303a",
-      "name": "Jia Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303b",
-      "name": "Jiajun Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303c",
-      "name": "Jialiang Cheng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303d",
-      "name": "Jiayi Liang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303e",
-      "name": "Jiayi Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58303f",
-      "name": "Jie Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583040",
-      "name": "Jiejun Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583041",
-      "name": "Jing Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583042",
-      "name": "Jingda Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583043",
-      "name": "Junhang Cheng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583044",
-      "name": "Junxiao Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583045",
-      "name": "Kai Lv",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583046",
-      "name": "Kaixiang Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583047",
-      "name": "Kecheng Lu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583048",
-      "name": "Kun Zeng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583049",
-      "name": "Kun Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304a",
-      "name": "Kunbo Ding",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304b",
-      "name": "Liang Qiu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304c",
-      "name": "Lingyi Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304d",
-      "name": "Luan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304e",
-      "name": "Mengxiao Lv",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58304f",
-      "name": "Ning Dong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583050",
-      "name": "Pei Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583051",
-      "name": "Peng Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583052",
-      "name": "Qingsong Cai",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583053",
-      "name": "Qixiang Yin",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583054",
-      "user": {
-       "_id": "64560618bfdf9c63ce2d658a",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64560618bfdf9c63ce2d658a/GVBWU4yNzRsjdyzKT3z3B.jpeg",
-       "isPro": false,
-       "fullname": "Mathsion Wong",
-       "user": "QiYao-Wang",
-       "type": "user",
-       "name": "QiYao-Wang"
-      },
-      "name": "Qiyao Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-26T13:31:56.299Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583055",
-      "name": "Renbiao Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583056",
-      "name": "Renfei Dang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583057",
-      "name": "Ruihang Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583058",
-      "name": "Ruirui Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583059",
-      "name": "Shanhui Yin",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305a",
-      "name": "Shen Jian",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305b",
-      "name": "Shengjie Fang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305c",
-      "name": "Shikai Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305d",
-      "name": "Shinan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305e",
-      "name": "Shiqi Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58305f",
-      "name": "Shuai Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583060",
-      "name": "Shuangqi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583061",
-      "name": "Shuo Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583062",
-      "name": "Shuqing Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583063",
-      "name": "Sijin Hao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583064",
-      "name": "Siwei Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583065",
-      "name": "Siyue Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583066",
-      "name": "Tao Hai",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583067",
-      "name": "Tao Ren",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583068",
-      "name": "TingYang Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583069",
-      "name": "Wei Shao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306a",
-      "name": "Weicheng Gu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306b",
-      "name": "Weihan Peng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306c",
-      "name": "Wenlong Miao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306d",
-      "name": "Xavier Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306e",
-      "name": "Xiangyuan Ji",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58306f",
-      "name": "Xiaocheng Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583070",
-      "name": "Xiaodong Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583071",
-      "name": "Xiaohan Ge",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583072",
-      "name": "Xiaoxiang Shi",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583073",
-      "name": "Xiaoyang Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583074",
-      "name": "Xiaoyu Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583075",
-      "name": "Xidong Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583076",
-      "name": "Xin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583077",
-      "name": "Xinyu Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583078",
-      "name": "Xiyuan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583079",
-      "name": "Xudong Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307a",
-      "name": "Ya Tong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307b",
-      "name": "Yachao Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307c",
-      "user": {
-       "_id": "669a184bc7b418d6f357229a",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/669a184bc7b418d6f357229a/gZovo4yl29iJwRMG2RzC1.jpeg",
-       "isPro": false,
-       "fullname": "Yang Tian",
-       "user": "yangtian6781",
-       "type": "user",
-       "name": "yangtian6781"
-      },
-      "name": "Yang Tian",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-24T08:45:04.602Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307d",
-      "name": "Yaxin Du",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307e",
-      "name": "Yeli Ruan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58307f",
-      "name": "Yi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583080",
-      "name": "Yi Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583081",
-      "name": "Yibin Feng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583082",
-      "name": "Yibo Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583083",
-      "name": "Yihang Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583084",
-      "name": "Yiming Ju",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583085",
-      "name": "Yinda Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583086",
-      "name": "Yinda Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583087",
-      "name": "Yingjie Du",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583088",
-      "name": "Yiwei Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583089",
-      "name": "Yizhi Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308a",
-      "name": "Yuan Wei",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308b",
-      "name": "Yuli Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308c",
-      "name": "Yuqi Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308d",
-      "name": "Yuwen Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308e",
-      "name": "Yuxi Dong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58308f",
-      "name": "Yuxuan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583090",
-      "name": "Yuyang Song",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583091",
-      "name": "Zhange Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583092",
-      "name": "Zhaohan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583093",
-      "user": {
-       "_id": "64212c24b286e8c464f95f13",
-       "avatarUrl": "/avatars/30d2e6aea3812859e85eaac6d99bd6c5.svg",
-       "isPro": false,
-       "fullname": "Li Zhaoyi",
-       "user": "joeylee2333",
-       "type": "user",
-       "name": "joeylee2333"
-      },
-      "name": "Zhaoyi Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.587Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583094",
-      "name": "Zhen Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583095",
-      "name": "Zhengbo Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583096",
-      "name": "Zhihang Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583097",
-      "name": "Zhiwei Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583098",
-      "name": "Zhixin Xie",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e583099",
-      "name": "Zhiyu Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309a",
-      "name": "Zhizhao Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309b",
-      "name": "Zhongyuan Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309c",
-      "name": "Zhou Fang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309d",
-      "name": "Zhu Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309e",
-      "name": "Zhuocheng Gong",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e58309f",
-      "name": "Zixi Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a0",
-      "name": "Ziyang Zeng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a1",
-      "name": "Ziyi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a2",
-      "name": "Ziyu Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a3",
-      "name": "Ran Tao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a4",
-      "name": "Mingjie Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a5",
-      "name": "Chuan Hao",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a6",
-      "name": "Peihao Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a7",
-      "name": "Jianzhou Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a8",
-      "name": "Nan Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830a9",
-      "name": "Yuan Zhi",
-      "hidden": false
-     },
-     {
-      "_id": "6adb14ae55db1e682e5830aa",
-      "name": "Bryan Dai",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
-    "submittedOnDailyBy": {
-     "_id": "66d6cd1a15494eba6ee80105",
-     "avatarUrl": "/avatars/5a906137c466ba0346094d5be4dc4a4a.svg",
-     "isPro": false,
-     "fullname": "Zheng Chen",
-     "user": "ZhengChen1999",
-     "type": "user",
-     "name": "ZhengChen1999"
-    },
-    "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-    "upvotes": 101,
-    "discussionId": "6adb14ae55db1e682e5830ab",
-    "ai_summary": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model trained via multi-stage pre-training, mid-training, and post-training to achieve strong agentic coding and general capabilities.",
-    "ai_keywords": [
-     "sparse Mixture-of-Experts",
-     "MoE",
-     "Stable SplitNorm",
-     "Muon",
-     "muP",
-     "two-stage curriculum",
-     "fine-grained mid-training",
-     "multi-scaffold post-training",
-     "SFT",
-     "domain-specialized RL",
-     "MOPD",
-     "model merging"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "6937e1578cd2568ba4c9d3f9",
-     "name": "IQuestLab",
-     "fullname": "IQuest",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
-   "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30949.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66d6cd1a15494eba6ee80105",
-    "avatarUrl": "/avatars/5a906137c466ba0346094d5be4dc4a4a.svg",
-    "fullname": "Zheng Chen",
-    "name": "ZhengChen1999",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6937e1578cd2568ba4c9d3f9",
-    "name": "IQuestLab",
-    "fullname": "IQuest",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.31329",
-    "authors": [
-     {
-      "_id": "6adb093355db1e682e582f86",
-      "name": "Tianming Liang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f87",
-      "name": "Junyi Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f88",
-      "name": "Yuxi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f89",
-      "name": "Canmiao Fu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f8a",
-      "name": "Zhipeng Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f8b",
-      "name": "Chong Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f8c",
-      "name": "Chen Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adb093355db1e682e582f8d",
-      "name": "Jing Lyu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/66c98c27fafc0fc87c280749/hoztVcjSPXoLjRfeCTYu9.png"
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
-    "submittedOnDailyBy": {
-     "_id": "66c98c27fafc0fc87c280749",
-     "avatarUrl": "/avatars/c71db3bee0fcd9aabcc38fd871d1cb75.svg",
-     "isPro": false,
-     "fullname": "Tianming Liang",
-     "user": "liangtm",
-     "type": "user",
-     "name": "liangtm"
-    },
-    "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-    "upvotes": 246,
-    "discussionId": "6adb093455db1e682e582f8e",
-    "projectPage": "https://tencent.github.io/WeVisOne-VL",
-    "githubRepo": "https://github.com/Tencent/WeVisOne-VL",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "WeVisOne-VL unifies object-level and pixel-level visual perception via structured token prediction, supporting detection, localization, counting, OCR, segmentation, and matting with a lightweight pixel decoder and multi-stage training.",
-    "ai_keywords": [
-     "vision-language models",
-     "structured next-token prediction",
-     "object-level perception",
-     "pixel-level perception",
-     "pixel decoder",
-     "<OBJ> token",
-     "curriculum SFT",
-     "mixed-task RL",
-     "object-absent queries"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 229,
-    "organization": {
-     "_id": "66543b6e420092799d2f625c",
-     "name": "tencent",
-     "fullname": "Tencent",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
-   "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/66c98c27fafc0fc87c280749/hoztVcjSPXoLjRfeCTYu9.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31329.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "66c98c27fafc0fc87c280749",
-    "avatarUrl": "/avatars/c71db3bee0fcd9aabcc38fd871d1cb75.svg",
-    "fullname": "Tianming Liang",
-    "name": "liangtm",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66543b6e420092799d2f625c",
-    "name": "tencent",
-    "fullname": "Tencent",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.23987",
-    "authors": [
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db79",
-      "user": {
-       "_id": "688883172ea6b042aa69fb17",
-       "avatarUrl": "/avatars/74fe4a57a5173723f450bc3c81ff6f04.svg",
-       "isPro": false,
-       "fullname": "Tengju_Ru",
-       "user": "Lruca",
-       "type": "user",
-       "name": "Lruca"
-      },
-      "name": "Tengju Ru",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-22T13:09:19.830Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7a",
-      "name": "Weitong Lian",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7b",
-      "user": {
-       "_id": "6a5f29217ff099983483e767",
-       "avatarUrl": "/avatars/9c48d5e60a18acaf8ae048ef6e69f9cf.svg",
-       "isPro": false,
-       "fullname": "Zecong Tang",
-       "user": "zecongtanghku",
-       "type": "user",
-       "name": "zecongtanghku"
-      },
-      "name": "Zecong Tang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-25T08:45:05.007Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7c",
-      "name": "Zhiheng Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7d",
-      "name": "Lingyi Meng",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7e",
-      "name": "Haoran Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db7f",
-      "user": {
-       "_id": "68f71bf7d92a2573e355055a",
-       "avatarUrl": "/avatars/6689c01e0adc93e076b31fa5c866079f.svg",
-       "isPro": false,
-       "fullname": "Kaixuan Wang",
-       "user": "kaixuanwang",
-       "type": "user",
-       "name": "kaixuanwang"
-      },
-      "name": "Kaixuan Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.260Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db80",
-      "name": "Bohao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ad6f22a774b2a8cb5c7db81",
-      "name": "Xihui Liu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/688883172ea6b042aa69fb17/uXMBDG8dYjJ1gw2eteaau.png"
-    ],
-    "publishedAt": "2026-10-14T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
-    "submittedOnDailyBy": {
-     "_id": "688883172ea6b042aa69fb17",
-     "avatarUrl": "/avatars/74fe4a57a5173723f450bc3c81ff6f04.svg",
-     "isPro": false,
-     "fullname": "Tengju_Ru",
-     "user": "Lruca",
-     "type": "user",
-     "name": "Lruca"
-    },
-    "summary": "Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways that preserve rich visual information complementary to understanding. However, existing generation-assisted understanding methods mainly rely on generative supervision or explicit generation and have not systematically explored direct use of native generation-side representations. To address this gap, we systematically analyze what generation-side representations offer for fine-grained understanding, finding that they are more sensitive to fine-grained semantic changes, capture task-relevant changes missed by understanding-side representations, and depend on correct spatial organization for this advantage. Guided by these findings, we design GAFU, a post-training framework that unlocks native generation-side information for fine-grained understanding. It compresses generation-side visual representations into compact \\(G\\) tokens that preserve fine-grained visual details, enabling task-conditioned retrieval by the understanding pathway. Experiments show that GAFU consistently outperforms SFT baselines trained on the same data across diverse visual understanding tasks and UMM architectures, with maximum relative improvements of 20.00\\%, 17.94\\%, and 8.62\\% on VStar-Bench, OmniSpatial, and VSR-Bench, respectively. Overall, GAFU converts complementary information from the generation pathway into gains in fine-grained visual understanding, providing an effective path toward synergy between generation and understanding in UMMs.",
-    "upvotes": 40,
-    "discussionId": "6ad6f22a774b2a8cb5c7db82",
-    "githubRepo": "https://github.com/LRuca/GAFU",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "GAFU leverages native generation-side representations to improve fine-grained visual understanding in unified multimodal models by compressing them into compact tokens for task-conditioned retrieval.",
-    "ai_keywords": [
-     "vision-language models",
-     "unified multimodal models",
-     "generation-side representations",
-     "fine-grained visual understanding",
-     "GAFU",
-     "G tokens",
-     "task-conditioned retrieval"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 29
-   },
-   "publishedAt": "2026-10-13T20:00:00.000Z",
-   "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
-   "summary": "Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways that preserve rich visual information complementary to understanding. However, existing generation-assisted understanding methods mainly rely on generative supervision or explicit generation and have not systematically explored direct use of native generation-side representations. To address this gap, we systematically analyze what generation-side representations offer for fine-grained understanding, finding that they are more sensitive to fine-grained semantic changes, capture task-relevant changes missed by understanding-side representations, and depend on correct spatial organization for this advantage. Guided by these findings, we design GAFU, a post-training framework that unlocks native generation-side information for fine-grained understanding. It compresses generation-side visual representations into compact \\(G\\) tokens that preserve fine-grained visual details, enabling task-conditioned retrieval by the understanding pathway. Experiments show that GAFU consistently outperforms SFT baselines trained on the same data across diverse visual understanding tasks and UMM architectures, with maximum relative improvements of 20.00\\%, 17.94\\%, and 8.62\\% on VStar-Bench, OmniSpatial, and VSR-Bench, respectively. Overall, GAFU converts complementary information from the generation pathway into gains in fine-grained visual understanding, providing an effective path toward synergy between generation and understanding in UMMs.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/688883172ea6b042aa69fb17/uXMBDG8dYjJ1gw2eteaau.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.23987.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "688883172ea6b042aa69fb17",
-    "avatarUrl": "/avatars/74fe4a57a5173723f450bc3c81ff6f04.svg",
-    "fullname": "Tengju_Ru",
-    "name": "Lruca",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": true
   }
