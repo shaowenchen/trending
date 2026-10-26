@@ -1,8 +1,116 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-26T19:16:00.301Z",
+ "fetchedAt": "2026-10-26T21:30:58.216Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.21109",
+    "authors": [
+     {
+      "_id": "6adfa992a5efa215400a776b",
+      "name": "Shirley Anugrah Hayati",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a776c",
+      "name": "Patricia Anugrah Setiani",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a776d",
+      "name": "Ruizi Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a776e",
+      "name": "Zhouyi Li",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a776f",
+      "name": "Khanh Chi Le",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a7770",
+      "name": "Young-Jun Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6adfa992a5efa215400a7771",
+      "name": "Dongyeop Kang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/649b86f08037178519cda33c/xZk0ptrwL05GERSZi8NG_.png"
+    ],
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
+    "submittedOnDailyBy": {
+     "_id": "649b86f08037178519cda33c",
+     "avatarUrl": "/avatars/f9665f8125b6c5634a2ac6c7b99f8d58.svg",
+     "isPro": false,
+     "fullname": "Shirley A. Hayati",
+     "user": "shirleyah",
+     "type": "user",
+     "name": "shirleyah"
+    },
+    "summary": "When humans collaborate with AI agents on long-horizon tasks, what happens to the agents' contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent's ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants' collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from the unfolding workflow without constant expert feedback. Our benchmark operationalizes both: (1) forecasting how professionals use agent contributions at diverse workflows, and (2) verifying their judgments of collaboration satisfaction and output quality. Findings show that frontier models, both agentic and non-agentic, overestimate collaboration with experts and struggle to distinguish between high- and low-quality collaboration. Longer workflow context does not consistently improve these predictions. As frontier agents cannot yet understand long-horizon collaboration with experts, we position Kolab as a valuable dataset for studying human-agent collaboration grounded in real professional workflows.",
+    "upvotes": 4,
+    "discussionId": "6adfa993a5efa215400a7772",
+    "projectPage": "https://minnesotanlp.github.io/kolab/",
+    "githubRepo": "https://github.com/minnesotanlp/kolab",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Kolab is a dataset of professional screen recordings that reveals frontier AI agents overestimate collaboration quality and fail to predict expert adoption of contributions in long-horizon workflows.",
+    "ai_keywords": [
+     "agentic benchmarks",
+     "long-horizon tasks",
+     "collaboration patterns",
+     "forecasting agent contributions",
+     "collaboration quality assessment",
+     "workflow context",
+     "human-agent collaboration"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0,
+    "organization": {
+     "_id": "643536750b30bd434ea1f1c3",
+     "name": "minnesotanlp",
+     "fullname": "Minnesota NLP",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e0c5053a1781f66b4e9aed/YHpZgv9x3v9lLYnXyOWi_.png"
+    }
+   },
+   "publishedAt": "2026-10-14T20:00:00.000Z",
+   "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
+   "summary": "When humans collaborate with AI agents on long-horizon tasks, what happens to the agents' contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent's ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants' collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from the unfolding workflow without constant expert feedback. Our benchmark operationalizes both: (1) forecasting how professionals use agent contributions at diverse workflows, and (2) verifying their judgments of collaboration satisfaction and output quality. Findings show that frontier models, both agentic and non-agentic, overestimate collaboration with experts and struggle to distinguish between high- and low-quality collaboration. Longer workflow context does not consistently improve these predictions. As frontier agents cannot yet understand long-horizon collaboration with experts, we position Kolab as a valuable dataset for studying human-agent collaboration grounded in real professional workflows.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/649b86f08037178519cda33c/xZk0ptrwL05GERSZi8NG_.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21109.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "649b86f08037178519cda33c",
+    "avatarUrl": "/avatars/f9665f8125b6c5634a2ac6c7b99f8d58.svg",
+    "fullname": "Shirley A. Hayati",
+    "name": "shirleyah",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "643536750b30bd434ea1f1c3",
+    "name": "minnesotanlp",
+    "fullname": "Minnesota NLP",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e0c5053a1781f66b4e9aed/YHpZgv9x3v9lLYnXyOWi_.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.27364",
@@ -1267,7 +1375,7 @@
      "name": "ChocoWu"
     },
     "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 219,
+    "upvotes": 220,
     "discussionId": "6adac4aa55db1e682e582cc9",
     "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
     "githubRepo": "https://github.com/vid-gen/awesome-video-world-model",
@@ -1285,7 +1393,7 @@
      "causal validity"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 20,
+    "githubStars": 22,
     "organization": {
      "_id": "627bbc28fbab61b048eba8b6",
      "name": "Oxford",
@@ -1658,7 +1766,7 @@
      "cross-domain interference"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 3,
     "organization": {
      "_id": "68fba380705bf8aa76e5397e",
      "name": "OpenDataArena",
@@ -1963,7 +2071,7 @@
      "name": "liamdugan"
     },
     "summary": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts. We accomplish this by training sparse autoencoders (SAEs) directly on a detector's residual stream, assigning auto-interpretation labels to each SAE feature, and retaining only features whose generated descriptions pass a global fidelity threshold. We then train a lightweight classifier on just the interpretable features. We find that our SAEs recover latent concepts that correspond to highly specific and predictive linguistic \"tells\" of AI-generated text. Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6ad9cefa3f2bb52eb8d6ee85",
     "githubRepo": "https://github.com/google-deepmind/detectorscope",
     "githubRepoAddedBy": "user",
@@ -2531,7 +2639,7 @@
      "name": "yuuhan"
     },
     "summary": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6ad982043f2bb52eb8d6eb59",
     "projectPage": "https://sunyuhan19981208.github.io/posts/multiagent-opd/",
     "ai_summary": "MultiAgent-OPD jointly trains a hierarchical multi-agent team via on-policy distillation and reinforcement learning, using a frozen teacher for local process supervision to improve end-to-end performance across multiple datasets.",
@@ -2898,7 +3006,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 19,
+    "followerCount": 20,
     "isUserFollowing": false
    },
    "organization": {
@@ -3825,7 +3933,7 @@
      "name": "zimuwang"
     },
     "summary": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and τ^3 Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
-    "upvotes": 33,
+    "upvotes": 34,
     "discussionId": "6adec48a121a70fc683462b2",
     "projectPage": "https://simpleagentlab.com/rsihub",
     "githubRepo": "https://github.com/simple-agent-lab/RSIHub",
@@ -4534,7 +4642,7 @@
      "name": "taesiri"
     },
     "summary": "A live esports broadcast needs a director who chooses which camera goes on air and a caster who talks over that choice, every second and without knowing what comes next. Streaming video language models have learned to commentate, but only over a broadcast that a human director has already produced. We study live broadcast production, in which a model receives the raw camera of every player and must both direct and commentate from the past alone. We present DirCast, a single streaming video language model that does both. Every second it scans all cameras at low resolution, decides with a hold-or-switch director whether and where to cut, and reads the chosen camera at high resolution before it speaks. Its context keeps what went on air and what was said and lets the other views expire, which bounds the cost of a stream of any length. We build a dataset of 27 professional Dota 2 matches with a camera for every hero, the human director's choices and the casters' commentary. DirCast directs better than rule-based and zero-shot directors including GPT-5, and its commentary wins 29.2 percent of comparisons against GPT-4o under the Proact-VL protocol, against 19.4 percent for the strongest of eleven streaming commentators that watch the human broadcast.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6adeba8b121a70fc6834624a",
     "projectPage": "https://zixiangao.github.io/DirCast/",
     "ai_summary": "DirCast is a streaming video language model that simultaneously directs live esports broadcasts by selecting cameras and generates real-time commentary using only past context.",
@@ -5169,7 +5277,7 @@
      "name": "mohsenfayyaz"
     },
     "summary": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
-    "upvotes": 10,
+    "upvotes": 17,
     "discussionId": "6adbe277121a70fc6834592c",
     "ai_summary": "Diffusion language models spend more computation on novel, rare, or incorrect outputs, and decoding speed can improve inference efficiency and reliability.",
     "ai_keywords": [
@@ -5587,7 +5695,7 @@
      "name": "ZQ-Dev"
     },
     "summary": "Modern LLM agents can retrieve information from accessible documents, and then disclose a sensitive conclusion assembled from them. This mosaic effect creates a critical risk for agents operating over confidential data. We quantify its realization with 30 synthetic cybersecurity, medical, and military examples, yielding 10,800 final answers from three LLM agents in controlled simulation and 1,440 answers from live agents in two open-source harnesses. Even under benign queries designed to be answerable from one document, GPT-5.6-Sol, the best performing model tested, discloses forbidden composites in 7.08% of answers (95% CI: 3.75-10.67%) in simulation, with worse disclosure rates in live harnesses. Adding visible classification headers and explicit aggregation rules reduces pooled disclosure rates substantially, yet unsafe disclosures persist in 32.37% of simulated answers (95% CI: 28.33-36.19%) across all intents despite these safeguards. Furthermore, increased refusals do not guarantee confidentiality, since significant refusals reveal the prohibited conclusion regardless. These results point to a troubling conclusion: sensitive data leaks via mosaic-style events are an observed confidentiality failure mode in the evaluated settings at non-negligible rates. They motivate stronger controls on what agents may infer and disclose in sensitive data environments with mixed-clearance users.",
-    "upvotes": 25,
+    "upvotes": 26,
     "discussionId": "6adb9485121a70fc6834584a",
     "ai_summary": "LLM agents frequently leak sensitive conclusions assembled from multiple confidential documents, and common safeguards fail to eliminate this mosaic-style disclosure risk.",
     "ai_keywords": [
@@ -5615,7 +5723,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6169a814cc21d3c0aa086ad4/wLprm7izngXDyhilWGSU0.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30418.png",
-   "numComments": 6,
+   "numComments": 7,
    "submittedBy": {
     "_id": "6169a814cc21d3c0aa086ad4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
@@ -5725,137 +5833,6 @@
     "avatar": "https://www.gravatar.com/avatar/826f52a2201f2e45b89ed295ce5145d8?d=retro&size=100"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.31651",
-    "authors": [
-     {
-      "_id": "6adb601d121a70fc683457b5",
-      "user": {
-       "_id": "672403d5f328a3e6638331ee",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/TXr0SKWI-z-6FvUXTNWXT.jpeg",
-       "isPro": false,
-       "fullname": "Ava Pun",
-       "user": "AvaLovelace",
-       "type": "user",
-       "name": "AvaLovelace"
-      },
-      "name": "Ava Pun",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-24T16:45:04.740Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457b6",
-      "name": "Kevin Dai",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457b7",
-      "name": "Sally Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457b8",
-      "name": "Maxwell Jones",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457b9",
-      "name": "Ruixuan Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457ba",
-      "name": "Kangle Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457bb",
-      "name": "Changliu Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457bc",
-      "name": "Maneesh Agrawala",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457bd",
-      "name": "Deva Ramanan",
-      "hidden": false
-     },
-     {
-      "_id": "6adb601d121a70fc683457be",
-      "name": "Jun-Yan Zhu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/672403d5f328a3e6638331ee/EUcI4xp1ACVO_EhPCppFG.mp4"
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-    "submittedOnDailyBy": {
-     "_id": "672403d5f328a3e6638331ee",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/TXr0SKWI-z-6FvUXTNWXT.jpeg",
-     "isPro": false,
-     "fullname": "Ava Pun",
-     "user": "AvaLovelace",
-     "type": "user",
-     "name": "AvaLovelace"
-    },
-    "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
-    "upvotes": 13,
-    "discussionId": "6adb601d121a70fc683457bf",
-    "projectPage": "https://avalovelace1.github.io/brickwright/",
-    "githubRepo": "https://github.com/AvaLovelace1/brickwright",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "BrickWright improves physical validity of AI-generated LEGO assemblies by providing agents with an assembly API and feasibility validator, achieving perfect validity while preserving prompt adherence.",
-    "ai_keywords": [
-     "pre-trained agents",
-     "inference cost",
-     "text-to-brick"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13,
-    "organization": {
-     "_id": "680ba1b453d9d56430b82b57",
-     "name": "cmu-gil",
-     "fullname": "Generative Intelligence Lab (CMU)",
-     "avatar": "https://www.gravatar.com/avatar/ffb85327669c21e7ca3d691f4a8f3c8c?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-   "summary": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/672403d5f328a3e6638331ee/EUcI4xp1ACVO_EhPCppFG.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31651.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "672403d5f328a3e6638331ee",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/TXr0SKWI-z-6FvUXTNWXT.jpeg",
-    "fullname": "Ava Pun",
-    "name": "AvaLovelace",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 7,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "680ba1b453d9d56430b82b57",
-    "name": "cmu-gil",
-    "fullname": "Generative Intelligence Lab (CMU)",
-    "avatar": "https://www.gravatar.com/avatar/ffb85327669c21e7ca3d691f4a8f3c8c?d=retro&size=100"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
