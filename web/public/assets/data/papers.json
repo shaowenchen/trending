@@ -1,8 +1,1257 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-26T05:46:01.858Z",
+ "fetchedAt": "2026-10-26T08:01:24.831Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.14253",
+    "authors": [
+     {
+      "_id": "6adf0886121a70fc683464a5",
+      "name": "Arman Zarei",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464a6",
+      "name": "Sayan Nag",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464a7",
+      "name": "Bryan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464a8",
+      "name": "Franck Dernoncourt",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464a9",
+      "name": "Varun Manjunatha",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464aa",
+      "name": "Nedim Lipka",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464ab",
+      "name": "Soheil Feizi",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0886121a70fc683464ac",
+      "name": "Samyadeep Basu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
+    "submittedOnDailyBy": {
+     "_id": "62c5947524171688a9feb992",
+     "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+     "isPro": false,
+     "fullname": "Franck Dernoncourt",
+     "user": "Franck-Dernoncourt",
+     "type": "user",
+     "name": "Franck-Dernoncourt"
+    },
+    "summary": "Slider-based control aims to give users continuous, fine-grained control over the intensity of individual edits in instruction-based image editing. However, existing approaches fail to deliver reliable continuous controllability: traversing a slider can produce abrupt visual jumps and non-monotonic changes, while jointly controlled sliders can interfere with one another. To systematically study these limitations, we introduce SlideBench, a comprehensive benchmark for continuous image editing spanning diverse editing categories and equipped with a unified suite of metrics quantifying monotonic progression, perceptual continuity, and inter-slider disentanglement. Building on these observations, we propose SliderEdit++, which explicitly regularizes the intermediate editing trajectory rather than supervising only its endpoints. Our method combines velocity- and semantic-space trajectory regularization with spectral control to encourage smooth, predictable slider traversal, together with a disentanglement objective that reduces interference between independently controlled edits. On SlideBench, SliderEdit++ achieves state-of-the-art performance, improving the overall score by 18.5% relative to the strongest baseline. At the same time, using a few-step editing backbone makes our method approximately 3x to 20x faster than existing slider-based approaches, enabling substantially more responsive interactive editing.",
+    "upvotes": 1,
+    "discussionId": "6adf0886121a70fc683464ad",
+    "ai_summary": "SlideBench benchmarks continuous image editing and SliderEdit++ improves slider reliability via trajectory regularization and disentanglement for smoother, faster control.",
+    "ai_keywords": [
+     "slider-based control",
+     "instruction-based image editing",
+     "continuous controllability",
+     "SlideBench",
+     "monotonic progression",
+     "perceptual continuity",
+     "inter-slider disentanglement",
+     "SliderEdit++",
+     "trajectory regularization",
+     "velocity-space regularization",
+     "semantic-space regularization",
+     "spectral control",
+     "disentanglement objective"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-13T20:00:00.000Z",
+   "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
+   "summary": "Slider-based control aims to give users continuous, fine-grained control over the intensity of individual edits in instruction-based image editing. However, existing approaches fail to deliver reliable continuous controllability: traversing a slider can produce abrupt visual jumps and non-monotonic changes, while jointly controlled sliders can interfere with one another. To systematically study these limitations, we introduce SlideBench, a comprehensive benchmark for continuous image editing spanning diverse editing categories and equipped with a unified suite of metrics quantifying monotonic progression, perceptual continuity, and inter-slider disentanglement. Building on these observations, we propose SliderEdit++, which explicitly regularizes the intermediate editing trajectory rather than supervising only its endpoints. Our method combines velocity- and semantic-space trajectory regularization with spectral control to encourage smooth, predictable slider traversal, together with a disentanglement objective that reduces interference between independently controlled edits. On SlideBench, SliderEdit++ achieves state-of-the-art performance, improving the overall score by 18.5% relative to the strongest baseline. At the same time, using a few-step editing backbone makes our method approximately 3x to 20x faster than existing slider-based approaches, enabling substantially more responsive interactive editing.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.14253.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "62c5947524171688a9feb992",
+    "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+    "fullname": "Franck Dernoncourt",
+    "name": "Franck-Dernoncourt",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 14,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.01352",
+    "authors": [
+     {
+      "_id": "6adf083e121a70fc68346489",
+      "name": "Juekai Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648a",
+      "name": "Honglin Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648b",
+      "name": "Yuqian Yuan",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648c",
+      "name": "Xiaolong Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648d",
+      "name": "Jie Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648e",
+      "name": "Liang Liang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc6834648f",
+      "name": "Yunqi Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc68346490",
+      "name": "Yun Zhu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc68346491",
+      "name": "Wenqiao Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf083e121a70fc68346492",
+      "name": "Lijun Wu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
+    "submittedOnDailyBy": {
+     "_id": "67fe5ff8957e1683eb54d05a",
+     "avatarUrl": "/avatars/c1ebfe304cc53dcfc21c3ea9dfb415ab.svg",
+     "isPro": false,
+     "fullname": "JueJue",
+     "user": "JackieLin0123",
+     "type": "user",
+     "name": "JackieLin0123"
+    },
+    "summary": "Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference. We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD). Our analyses reveal a capacity-dependent interaction between supervision difficulty, trajectory quality, and model capacity: smaller students benefit more from selected supervision, while larger students are robust to trajectory variation and mixed-domain interference. Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales. Across 15 multimodal benchmarks, MVR-4B achieves an average score of 72.8, outperforming Qwen3.5-9B (Instruct) and MMFineReason-8B while using about 70% fewer samples than MMFineReason. Scaling to 9B improves the average to 74.4, surpassing Qwen3.5-35B-A3B (Instruct). Overall, MMVistaReason demonstrates that systematic open-data construction and capacity-aware post-training provide a practical and scalable path toward reliable multimodal reasoning.",
+    "upvotes": 0,
+    "discussionId": "6adf083e121a70fc68346493",
+    "githubRepo": "https://github.com/JackieForest/MMVistaReason",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "MMVistaReason improves open multimodal reasoning through structured data construction, difficulty-aware distillation, and specialized reinforcement learning integration.",
+    "ai_keywords": [
+     "multimodal reasoning",
+     "supervised fine-tuning",
+     "reinforcement learning",
+     "teacher distillation",
+     "trajectory selection",
+     "multi-teacher on-policy distillation",
+     "negative transfer",
+     "cross-domain interference"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "68fba380705bf8aa76e5397e",
+     "name": "OpenDataArena",
+     "fullname": "OpenDataArena",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/643e60d96db6ba8c5ee177ad/y-K9JVRETLV0zr_jJYdu3.png"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
+   "summary": "Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference. We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD). Our analyses reveal a capacity-dependent interaction between supervision difficulty, trajectory quality, and model capacity: smaller students benefit more from selected supervision, while larger students are robust to trajectory variation and mixed-domain interference. Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales. Across 15 multimodal benchmarks, MVR-4B achieves an average score of 72.8, outperforming Qwen3.5-9B (Instruct) and MMFineReason-8B while using about 70% fewer samples than MMFineReason. Scaling to 9B improves the average to 74.4, surpassing Qwen3.5-35B-A3B (Instruct). Overall, MMVistaReason demonstrates that systematic open-data construction and capacity-aware post-training provide a practical and scalable path toward reliable multimodal reasoning.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.01352.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67fe5ff8957e1683eb54d05a",
+    "avatarUrl": "/avatars/c1ebfe304cc53dcfc21c3ea9dfb415ab.svg",
+    "fullname": "JueJue",
+    "name": "JackieLin0123",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "68fba380705bf8aa76e5397e",
+    "name": "OpenDataArena",
+    "fullname": "OpenDataArena",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/643e60d96db6ba8c5ee177ad/y-K9JVRETLV0zr_jJYdu3.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.14465",
+    "authors": [
+     {
+      "_id": "6adf0865121a70fc68346496",
+      "name": "Zhisheng Qi",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc68346497",
+      "name": "Haoyu Han",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc68346498",
+      "name": "Jiaxi Li",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc68346499",
+      "name": "Bing He",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649a",
+      "name": "Huiyuan Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649b",
+      "name": "Franck Dernoncourt",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649c",
+      "name": "Ryan A. Rossi",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649d",
+      "name": "Mahantesh M. Halappanavar",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649e",
+      "name": "Jin Lu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc6834649f",
+      "name": "Yu Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc683464a0",
+      "name": "Tianming Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0865121a70fc683464a1",
+      "name": "Yu Wang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-17T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Co-adaptive Rule Routing and Constraining for Structured Knowledge Retrieval",
+    "submittedOnDailyBy": {
+     "_id": "62c5947524171688a9feb992",
+     "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+     "isPro": false,
+     "fullname": "Franck Dernoncourt",
+     "user": "Franck-Dernoncourt",
+     "type": "user",
+     "name": "Franck-Dernoncourt"
+    },
+    "summary": "Structured knowledge retrieval acquires task-relevant evidence from structured knowledge sources for downstream tasks. Existing methods rely on unconstrained retrieval or predefined query-rule supervision, such as author-paper rules for scientific discovery and anatomy-drug rules for precision medicine. Such supervision is rarely available in practice. We propose Co-Adaptive Rule Routing and Constraining Retrieval (CoRE), which jointly learns which reasoning rule to assign to each query and how to retrieve evidence under that rule, without predefined query-rule pairs. A routing agent selects a rule, and its corresponding retriever traverses the knowledge base and ranks evidence that satisfies the rule's constraints. Because routing and retrieval are interdependent, CoRE alternates between reinforcement learning for the routing policy and contrastive learning for the rule-constrained retriever. The selected rules provide supervision for retriever training, while retrieval performance rewards the routing policy. This closed-loop process enables both components to co-adapt without explicit query-rule supervision. Experiments on STaRK-QA datasets across scientific discovery, biomedical reasoning, and e-commerce knowledge management demonstrate CoRE's effectiveness. Ablations show the benefit of co-adapting the router and retriever. Generation-based routing transfers across datasets and benefits from multi-domain pretraining followed by target-specific fine-tuning. Analysis of rule usage across queries also informs automatic rule refinement and discovery.",
+    "upvotes": 1,
+    "discussionId": "6adf0866121a70fc683464a2",
+    "ai_summary": "CoRE jointly learns reasoning rules and constrained evidence retrieval through alternating reinforcement and contrastive learning without predefined query-rule supervision.",
+    "ai_keywords": [
+     "structured knowledge retrieval",
+     "reasoning rule",
+     "rule-constrained retrieval",
+     "routing agent",
+     "reinforcement learning",
+     "contrastive learning",
+     "co-adaptive retrieval"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-16T20:00:00.000Z",
+   "title": "Co-adaptive Rule Routing and Constraining for Structured Knowledge Retrieval",
+   "summary": "Structured knowledge retrieval acquires task-relevant evidence from structured knowledge sources for downstream tasks. Existing methods rely on unconstrained retrieval or predefined query-rule supervision, such as author-paper rules for scientific discovery and anatomy-drug rules for precision medicine. Such supervision is rarely available in practice. We propose Co-Adaptive Rule Routing and Constraining Retrieval (CoRE), which jointly learns which reasoning rule to assign to each query and how to retrieve evidence under that rule, without predefined query-rule pairs. A routing agent selects a rule, and its corresponding retriever traverses the knowledge base and ranks evidence that satisfies the rule's constraints. Because routing and retrieval are interdependent, CoRE alternates between reinforcement learning for the routing policy and contrastive learning for the rule-constrained retriever. The selected rules provide supervision for retriever training, while retrieval performance rewards the routing policy. This closed-loop process enables both components to co-adapt without explicit query-rule supervision. Experiments on STaRK-QA datasets across scientific discovery, biomedical reasoning, and e-commerce knowledge management demonstrate CoRE's effectiveness. Ablations show the benefit of co-adapting the router and retriever. Generation-based routing transfers across datasets and benefits from multi-domain pretraining followed by target-specific fine-tuning. Analysis of rule usage across queries also informs automatic rule refinement and discovery.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.14465.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "62c5947524171688a9feb992",
+    "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+    "fullname": "Franck Dernoncourt",
+    "name": "Franck-Dernoncourt",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 14,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.31288",
+    "authors": [
+     {
+      "_id": "6adf0825121a70fc68346482",
+      "name": "Yen-Ku Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0825121a70fc68346483",
+      "name": "Hongjie Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0825121a70fc68346484",
+      "name": "Franck Dernoncourt",
+      "hidden": false
+     },
+     {
+      "_id": "6adf0825121a70fc68346485",
+      "name": "Ryan Rossi",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "DISC: Domain-Integrated Similarity Cost for Time-Series Dataset",
+    "submittedOnDailyBy": {
+     "_id": "62c5947524171688a9feb992",
+     "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+     "isPro": false,
+     "fullname": "Franck Dernoncourt",
+     "user": "Franck-Dernoncourt",
+     "type": "user",
+     "name": "Franck-Dernoncourt"
+    },
+    "summary": "The growth of time-series datasets and foundation models has made dataset comparison a central part of time-series workflows. Assessing source-target transfer before model adaptation requires similarity estimates that can summarize transfer-related dataset relationships without exhaustive source-target evaluation over every candidate pair. Many metrics have been proposed for measuring similarity between time-series datasets, but they capture different dataset relationships and vary in how well they align with downstream utility across tasks. We evaluate this gap by measuring the correlation between source-target similarity scores and downstream forecasting errors in out-of-distribution and transfer-learning settings. We propose Domain-Integrated Similarity Cost (DISC), a learnable aggregation framework that uses calibration transfer observations to select, weight, and combine similarity metrics for different downstream tasks. By integrating complementary metric values, DISC better distinguishes source-target dataset differences that matter for downstream behavior. After calibration, DISC scores source-target pairs using only their similarity-metric values and yields higher alignment than single-metric references on the reported split. These results show that time-series dataset similarity is task-dependent, and that learned metric integration provides a stronger proxy for downstream transfer behavior than manually selecting one similarity metric.",
+    "upvotes": 1,
+    "discussionId": "6adf0825121a70fc68346486",
+    "ai_summary": "DISC is a learnable framework that calibrates and combines time-series dataset similarity metrics to better predict downstream forecasting transfer performance.",
+    "ai_keywords": [
+     "time-series datasets",
+     "foundation models",
+     "dataset comparison",
+     "transfer learning",
+     "out-of-distribution",
+     "similarity metrics",
+     "Domain-Integrated Similarity Cost",
+     "DISC",
+     "learnable aggregation",
+     "calibration transfer"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "DISC: Domain-Integrated Similarity Cost for Time-Series Dataset",
+   "summary": "The growth of time-series datasets and foundation models has made dataset comparison a central part of time-series workflows. Assessing source-target transfer before model adaptation requires similarity estimates that can summarize transfer-related dataset relationships without exhaustive source-target evaluation over every candidate pair. Many metrics have been proposed for measuring similarity between time-series datasets, but they capture different dataset relationships and vary in how well they align with downstream utility across tasks. We evaluate this gap by measuring the correlation between source-target similarity scores and downstream forecasting errors in out-of-distribution and transfer-learning settings. We propose Domain-Integrated Similarity Cost (DISC), a learnable aggregation framework that uses calibration transfer observations to select, weight, and combine similarity metrics for different downstream tasks. By integrating complementary metric values, DISC better distinguishes source-target dataset differences that matter for downstream behavior. After calibration, DISC scores source-target pairs using only their similarity-metric values and yields higher alignment than single-metric references on the reported split. These results show that time-series dataset similarity is task-dependent, and that learned metric integration provides a stronger proxy for downstream transfer behavior than manually selecting one similarity metric.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31288.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "62c5947524171688a9feb992",
+    "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+    "fullname": "Franck Dernoncourt",
+    "name": "Franck-Dernoncourt",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 14,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.30006",
+    "authors": [
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee7f",
+      "user": {
+       "_id": "6509e1e01b3694179dee256e",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/sUbok2yloLElaebkps3lT.png",
+       "isPro": true,
+       "fullname": "Liam Dugan",
+       "user": "liamdugan",
+       "type": "user",
+       "name": "liamdugan"
+      },
+      "name": "Liam Dugan",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-22T16:45:04.619Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee80",
+      "name": "Callum McDougall",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee81",
+      "name": "Matthew Denton",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee82",
+      "name": "Philip Pham",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee83",
+      "name": "Christine Kaeser-Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ad9cefa3f2bb52eb8d6ee84",
+      "name": "Chris Callison-Burch",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6509e1e01b3694179dee256e/NQXLe55w6swINgajDUUP4.gif"
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+    "submittedOnDailyBy": {
+     "_id": "6509e1e01b3694179dee256e",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/sUbok2yloLElaebkps3lT.png",
+     "isPro": true,
+     "fullname": "Liam Dugan",
+     "user": "liamdugan",
+     "type": "user",
+     "name": "liamdugan"
+    },
+    "summary": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts. We accomplish this by training sparse autoencoders (SAEs) directly on a detector's residual stream, assigning auto-interpretation labels to each SAE feature, and retaining only features whose generated descriptions pass a global fidelity threshold. We then train a lightweight classifier on just the interpretable features. We find that our SAEs recover latent concepts that correspond to highly specific and predictive linguistic \"tells\" of AI-generated text. Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.",
+    "upvotes": 2,
+    "discussionId": "6ad9cefa3f2bb52eb8d6ee85",
+    "githubRepo": "https://github.com/google-deepmind/detectorscope",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "A pipeline using sparse autoencoders extracts interpretable linguistic features from neural detectors, yielding more accurate and explainable AI-generated text classification.",
+    "ai_keywords": [
+     "sparse autoencoders",
+     "residual stream",
+     "auto-interpretation",
+     "fidelity threshold",
+     "interpretable features",
+     "out-of-distribution"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 10,
+    "organization": {
+     "_id": "6a2b25b4ec475d46ea5f3775",
+     "name": "GoogleDeepMind",
+     "fullname": "GoogleDeepMind",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6a153cb9a34f4d9db4bbbd5e/kDYQdARkY_o_BW_ale87U.png"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+   "summary": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts. We accomplish this by training sparse autoencoders (SAEs) directly on a detector's residual stream, assigning auto-interpretation labels to each SAE feature, and retaining only features whose generated descriptions pass a global fidelity threshold. We then train a lightweight classifier on just the interpretable features. We find that our SAEs recover latent concepts that correspond to highly specific and predictive linguistic \"tells\" of AI-generated text. Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6509e1e01b3694179dee256e/NQXLe55w6swINgajDUUP4.gif"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30006.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6509e1e01b3694179dee256e",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/sUbok2yloLElaebkps3lT.png",
+    "fullname": "Liam Dugan",
+    "name": "liamdugan",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6a2b25b4ec475d46ea5f3775",
+    "name": "GoogleDeepMind",
+    "fullname": "GoogleDeepMind",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6a153cb9a34f4d9db4bbbd5e/kDYQdARkY_o_BW_ale87U.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.29477",
+    "authors": [
+     {
+      "_id": "6adb37c9121a70fc683456f7",
+      "user": {
+       "_id": "6a29870aa8ab2dce607cf3d6",
+       "avatarUrl": "/avatars/de5a18e315f491eb426ed94fef9302e2.svg",
+       "isPro": false,
+       "fullname": "Yegor Anichkov",
+       "user": "user-7431",
+       "type": "user",
+       "name": "user-7431"
+      },
+      "name": "Yegor Anichkov",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-23T16:45:04.609Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adb37c9121a70fc683456f8",
+      "name": "Valery Vinogradov",
+      "hidden": false
+     },
+     {
+      "_id": "6adb37c9121a70fc683456f9",
+      "name": "Andrey Furov",
+      "hidden": false
+     },
+     {
+      "_id": "6adb37c9121a70fc683456fa",
+      "name": "Marina Polukoshko",
+      "hidden": false
+     },
+     {
+      "_id": "6adb37c9121a70fc683456fb",
+      "name": "Sergey Bolovtsov",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6a29870aa8ab2dce607cf3d6/SrcO8e3IMiT578fx4Vtdw.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/6a29870aa8ab2dce607cf3d6/k9eQBHKevovL2byNyyH0v.png"
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "TenetBench: A Clause-Anchored Russian Corpus for Evaluating Language Models against Professional Codes of Ethics",
+    "submittedOnDailyBy": {
+     "_id": "6a29870aa8ab2dce607cf3d6",
+     "avatarUrl": "/avatars/de5a18e315f491eb426ed94fef9302e2.svg",
+     "isPro": false,
+     "fullname": "Yegor Anichkov",
+     "user": "user-7431",
+     "type": "user",
+     "name": "user-7431"
+    },
+    "summary": "Codes of professional ethics guide and restrict specialists, who increasingly work with assistants built on large language models. Such an assistant can breach the user's code, or help the user breach it, without the user noticing. Evaluations reporting broad categories of harm cannot show how often this happens or which provision is breached. TenetBench pairs 3,433 requests conflicting with clauses of fifteen Russian-language professional codes with benign twins that differ only in the legitimacy of what is asked. An automated pipeline generates the tasks from the text of a code, so the corpus grows with every code added and a provision yields new tasks on every run. It also produced tasks and human-validated verdicts from two English codes of other jurisdictions. In human validation of the frozen pipeline, specialists rated 0.995 of the conflicting tasks plausible, and the model judge agreed with the adjudicated label at Gwet's AC1 of at least 0.894 on 1,860 elements. We evaluated fourteen model and reasoning-mode combinations on whether they produce the conflicting text, decline or warn. Eleven of the fourteen produce conflicting content on most such requests, mostly without a warning, and nearly three warnings in four accompany conflicting content. The models that conform more do so by declining while still serving the legitimate twin, and enabling reasoning halved the refusals of two models. We hope the dataset and pipeline will help evaluate how language models observe professional norms and let diagnostic datasets be built for particular professions and organisations.",
+    "upvotes": 0,
+    "discussionId": "6adb37ca121a70fc683456fc",
+    "ai_summary": "TenetBench evaluates whether language models adhere to professional ethical codes by pairing conflicting requests with benign equivalents, revealing frequent unflagged violations across most tested models.",
+    "ai_keywords": [
+     "large language models",
+     "TenetBench",
+     "reasoning-mode",
+     "model judge",
+     "Gwet's AC1",
+     "conflicting tasks",
+     "benign twins",
+     "professional codes"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "TenetBench: A Clause-Anchored Russian Corpus for Evaluating Language Models against Professional Codes of Ethics",
+   "summary": "Codes of professional ethics guide and restrict specialists, who increasingly work with assistants built on large language models. Such an assistant can breach the user's code, or help the user breach it, without the user noticing. Evaluations reporting broad categories of harm cannot show how often this happens or which provision is breached. TenetBench pairs 3,433 requests conflicting with clauses of fifteen Russian-language professional codes with benign twins that differ only in the legitimacy of what is asked. An automated pipeline generates the tasks from the text of a code, so the corpus grows with every code added and a provision yields new tasks on every run. It also produced tasks and human-validated verdicts from two English codes of other jurisdictions. In human validation of the frozen pipeline, specialists rated 0.995 of the conflicting tasks plausible, and the model judge agreed with the adjudicated label at Gwet's AC1 of at least 0.894 on 1,860 elements. We evaluated fourteen model and reasoning-mode combinations on whether they produce the conflicting text, decline or warn. Eleven of the fourteen produce conflicting content on most such requests, mostly without a warning, and nearly three warnings in four accompany conflicting content. The models that conform more do so by declining while still serving the legitimate twin, and enabling reasoning halved the refusals of two models. We hope the dataset and pipeline will help evaluate how language models observe professional norms and let diagnostic datasets be built for particular professions and organisations.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6a29870aa8ab2dce607cf3d6/SrcO8e3IMiT578fx4Vtdw.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/6a29870aa8ab2dce607cf3d6/k9eQBHKevovL2byNyyH0v.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29477.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6a29870aa8ab2dce607cf3d6",
+    "avatarUrl": "/avatars/de5a18e315f491eb426ed94fef9302e2.svg",
+    "fullname": "Yegor Anichkov",
+    "name": "user-7431",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.24481",
+    "authors": [
+     {
+      "_id": "6ad99f293f2bb52eb8d6ece4",
+      "name": "Jiang Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99f293f2bb52eb8d6ece5",
+      "name": "Yutong Song",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99f293f2bb52eb8d6ece6",
+      "name": "Hongbo Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99f293f2bb52eb8d6ece7",
+      "name": "Guanghe Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad99f293f2bb52eb8d6ece8",
+      "name": "Jeff Lei Liang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
+    "submittedOnDailyBy": {
+     "_id": "6922c5cae48ed72eeae574a0",
+     "avatarUrl": "/avatars/af4cdcc73cf4dfa7759d5f7ad1d21dd0.svg",
+     "isPro": true,
+     "fullname": "Jiang Wu",
+     "user": "hulehule",
+     "type": "user",
+     "name": "hulehule"
+    },
+    "summary": "Language models can make personalized recommendations from rich item content, user history, and feedback. However, evaluating many candidates with full-text inputs incurs substantial online computation and limits serving throughput. We introduce DuoLM, a framework for fast and effective personalized recommendation that integrates a compact recommendation model with an efficient serving runtime. An encoder LLM learns compact item representations for offline reuse, while a personalized ranker LLM combines them with user history and feedback for recommendation. We train both models end to end with recommendation supervision and teacher distillation. The runtime further accelerates inference through virtual token IDs for embedding access, shared history computation, and CUDA Graph replay. Benchmark results show that our framework achieves recommendation quality comparable to that of the expert teacher model. On a single H100, it delivers approximately 26,400 candidate scores per second, about 60times the throughput of the teacher served with vLLM and automatic prefix caching.",
+    "upvotes": 2,
+    "discussionId": "6ad99f293f2bb52eb8d6ece9",
+    "projectPage": "https://huggingface.co/blog/hulehule/duolm-personalization-and-reuse",
+    "githubRepo": "https://github.com/jiangLLM/DuoLM",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "DuoLM accelerates personalized recommendation by combining a compact encoder and ranker with optimized inference, achieving high throughput with minimal quality loss.",
+    "ai_keywords": [
+     "DuoLM",
+     "encoder LLM",
+     "personalized ranker LLM",
+     "teacher distillation",
+     "virtual token IDs",
+     "CUDA Graph replay",
+     "vLLM"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "64a3151b05292480e9756fff",
+     "name": "ucirvine",
+     "fullname": "UC Irvine",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a314dd5b232c870a773c3d/xBiiey7-vrcFzsP0NTRE4.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
+   "summary": "Language models can make personalized recommendations from rich item content, user history, and feedback. However, evaluating many candidates with full-text inputs incurs substantial online computation and limits serving throughput. We introduce DuoLM, a framework for fast and effective personalized recommendation that integrates a compact recommendation model with an efficient serving runtime. An encoder LLM learns compact item representations for offline reuse, while a personalized ranker LLM combines them with user history and feedback for recommendation. We train both models end to end with recommendation supervision and teacher distillation. The runtime further accelerates inference through virtual token IDs for embedding access, shared history computation, and CUDA Graph replay. Benchmark results show that our framework achieves recommendation quality comparable to that of the expert teacher model. On a single H100, it delivers approximately 26,400 candidate scores per second, about 60times the throughput of the teacher served with vLLM and automatic prefix caching.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24481.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6922c5cae48ed72eeae574a0",
+    "avatarUrl": "/avatars/af4cdcc73cf4dfa7759d5f7ad1d21dd0.svg",
+    "fullname": "Jiang Wu",
+    "name": "hulehule",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "64a3151b05292480e9756fff",
+    "name": "ucirvine",
+    "fullname": "UC Irvine",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a314dd5b232c870a773c3d/xBiiey7-vrcFzsP0NTRE4.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2606.00778",
+    "authors": [
+     {
+      "_id": "6addc1c7121a70fc68345ebf",
+      "user": {
+       "_id": "6addc0219c5bb3af9af41354",
+       "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+       "isPro": false,
+       "fullname": "Hongbo Sun",
+       "user": "shb20",
+       "type": "user",
+       "name": "shb20"
+      },
+      "name": "Hongbo Sun",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T16:45:04.709Z",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "A path-following framework on fiber bundle for variational inequalities",
+    "submittedOnDailyBy": {
+     "_id": "6addc0219c5bb3af9af41354",
+     "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+     "isPro": false,
+     "fullname": "Hongbo Sun",
+     "user": "shb20",
+     "type": "user",
+     "name": "shb20"
+    },
+    "summary": "Developing general-purpose algorithms with global asymptotic convergence guarantees for variational inequalities (VIs) remains a longstanding challenge. This paper proposes a path-following framework for finite-dimensional VIs with arbitrary continuous mappings and polytope domains. The approach first transforms a general VI into a smooth VI on a simplex. Its key innovation is to formulate the resulting problem on a fiber bundle, called the fixed-point bundle, whose geometric structure enables the systematic integration of initialization, path-following, and singularity avoidance. Without imposing monotonicity or similar assumptions, the framework guarantees global linear convergence for nonsingular solutions and global linear convergence up to any prescribed precision for singular solutions. In numerical experiments, the algorithm attained a precision of 10^{-5} on all 6400 randomly generated instances, with dimensions up to 1024. Code and data are available at https://github.com/shb20tsinghua/FiberBundle_VI.",
+    "upvotes": 2,
+    "discussionId": "6addc1c8121a70fc68345ec0",
+    "projectPage": "https://github.com/shb20tsinghua/FiberBundle_VI",
+    "ai_summary": "A path-following framework on a fixed-point fiber bundle achieves global linear convergence for variational inequalities with continuous mappings over polytopes without monotonicity assumptions.",
+    "ai_keywords": [
+     "variational inequalities",
+     "path-following framework",
+     "fiber bundle",
+     "fixed-point bundle",
+     "singularity avoidance",
+     "global linear convergence",
+     "nonsingular solutions"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-22T20:00:00.000Z",
+   "title": "A path-following framework on fiber bundle for variational inequalities",
+   "summary": "Developing general-purpose algorithms with global asymptotic convergence guarantees for variational inequalities (VIs) remains a longstanding challenge. This paper proposes a path-following framework for finite-dimensional VIs with arbitrary continuous mappings and polytope domains. The approach first transforms a general VI into a smooth VI on a simplex. Its key innovation is to formulate the resulting problem on a fiber bundle, called the fixed-point bundle, whose geometric structure enables the systematic integration of initialization, path-following, and singularity avoidance. Without imposing monotonicity or similar assumptions, the framework guarantees global linear convergence for nonsingular solutions and global linear convergence up to any prescribed precision for singular solutions. In numerical experiments, the algorithm attained a precision of 10^{-5} on all 6400 randomly generated instances, with dimensions up to 1024. Code and data are available at https://github.com/shb20tsinghua/FiberBundle_VI.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.00778.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6addc0219c5bb3af9af41354",
+    "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+    "fullname": "Hongbo Sun",
+    "name": "shb20",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2609.16158",
+    "authors": [
+     {
+      "_id": "6addc204121a70fc68345ec3",
+      "user": {
+       "_id": "6addc0219c5bb3af9af41354",
+       "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+       "isPro": false,
+       "fullname": "Hongbo Sun",
+       "user": "shb20",
+       "type": "user",
+       "name": "shb20"
+      },
+      "name": "Hongbo Sun",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-25T16:45:04.719Z",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "The fixed-point bundle method over product-of-simplex domains arising from game equilibria",
+    "submittedOnDailyBy": {
+     "_id": "6addc0219c5bb3af9af41354",
+     "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+     "isPro": false,
+     "fullname": "Hongbo Sun",
+     "user": "shb20",
+     "type": "user",
+     "name": "shb20"
+    },
+    "summary": "Developing general-purpose algorithms with global asymptotic convergence guarantees for Nash equilibria of general-sum games remains a longstanding challenge. This paper extends the fixed-point bundle framework for finite-dimensional variational inequalities (VIs) from simplex domains to product-of-simplex domains, enabling its direct application to Nash equilibrium computation. The resulting fixed-point bundle exhibits a composite fiber bundle structure. The key innovation is to construct an equivalent VI on a simplex and establish the equivalence between the two fixed-point bundle frameworks via a fiber bundle isomorphism. Exploiting this geometric equivalence, we show that the path-following algorithm for VIs on product-of-simplex domains inherits the global linear convergence guarantees of the simplex-domain framework. In numerical experiments, the algorithm attained a precision of 10^{-5} on all 5600 randomly generated game instances, with dimension ranging from 2-player 128-action to 128-player 2-action. Code and data are available at https://github.com/shb20tsinghua/FiberBundle_VI.",
+    "upvotes": 2,
+    "discussionId": "6addc205121a70fc68345ec4",
+    "githubRepo": "https://github.com/shb20tsinghua/FiberBundle_VI",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "A fixed-point bundle framework extended to product-of-simplex domains via geometric equivalence yields globally convergent path-following algorithms for Nash equilibrium computation.",
+    "ai_keywords": [
+     "fixed-point bundle framework",
+     "variational inequalities",
+     "product-of-simplex domains",
+     "Nash equilibrium",
+     "fiber bundle",
+     "path-following algorithm",
+     "global linear convergence"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-10-22T20:00:00.000Z",
+   "title": "The fixed-point bundle method over product-of-simplex domains arising from game equilibria",
+   "summary": "Developing general-purpose algorithms with global asymptotic convergence guarantees for Nash equilibria of general-sum games remains a longstanding challenge. This paper extends the fixed-point bundle framework for finite-dimensional variational inequalities (VIs) from simplex domains to product-of-simplex domains, enabling its direct application to Nash equilibrium computation. The resulting fixed-point bundle exhibits a composite fiber bundle structure. The key innovation is to construct an equivalent VI on a simplex and establish the equivalence between the two fixed-point bundle frameworks via a fiber bundle isomorphism. Exploiting this geometric equivalence, we show that the path-following algorithm for VIs on product-of-simplex domains inherits the global linear convergence guarantees of the simplex-domain framework. In numerical experiments, the algorithm attained a precision of 10^{-5} on all 5600 randomly generated game instances, with dimension ranging from 2-player 128-action to 128-player 2-action. Code and data are available at https://github.com/shb20tsinghua/FiberBundle_VI.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2609.16158.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6addc0219c5bb3af9af41354",
+    "avatarUrl": "/avatars/3f75baa43ba8fbbf44455069b8e19f9a.svg",
+    "fullname": "Hongbo Sun",
+    "name": "shb20",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.32770",
+    "authors": [
+     {
+      "_id": "6adeff51121a70fc68346425",
+      "name": "Leon Sick",
+      "hidden": false
+     },
+     {
+      "_id": "6adeff51121a70fc68346426",
+      "name": "Lukas Hoyer",
+      "hidden": false
+     },
+     {
+      "_id": "6adeff51121a70fc68346427",
+      "name": "Yannick Strümpler",
+      "hidden": false
+     },
+     {
+      "_id": "6adeff51121a70fc68346428",
+      "name": "Christian Reisswig",
+      "hidden": false
+     },
+     {
+      "_id": "6adeff51121a70fc68346429",
+      "name": "Timo Ropinski",
+      "hidden": false
+     },
+     {
+      "_id": "6adeff51121a70fc6834642a",
+      "name": "Federico Tombari",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+    "submittedOnDailyBy": {
+     "_id": "642150c201c62c1e41fc2390",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642150c201c62c1e41fc2390/4udBai02RARpIujIeiCX-.png",
+     "isPro": true,
+     "fullname": "Leon Sick",
+     "user": "leonsick",
+     "type": "user",
+     "name": "leonsick"
+    },
+    "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reasoning demonstrations. We push supervision to the limit: guided solely by coarse, high-level topic descriptions, the model synthesizes its own curriculum of queries and privileged reasoning traces without access to any human-curated prompts or answers. We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on. We demonstrate the generality of this framework across text and multimodal domains, achieving consistent self-improvement on standard language benchmarks and Visual Question Answering. Our findings demonstrate that foundation models possess rich latent capabilities that can be amplified without external task supervision or curated problem distributions.",
+    "upvotes": 3,
+    "discussionId": "6adeff51121a70fc6834642b",
+    "ai_summary": "Foundation models can self-improve across text and vision tasks by generating synthetic questions and reasoning traces guided only by high-level topics, without external supervision.",
+    "ai_keywords": [
+     "on-policy self-distillation",
+     "self-training",
+     "privileged reasoning demonstrations",
+     "synthetic curriculum",
+     "Visual Question Answering",
+     "self-improvement"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "5e6aca39878b8b2bf9806447",
+     "name": "google",
+     "fullname": "Google",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png"
+    }
+   },
+   "publishedAt": "2026-10-22T20:00:00.000Z",
+   "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models",
+   "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reasoning demonstrations. We push supervision to the limit: guided solely by coarse, high-level topic descriptions, the model synthesizes its own curriculum of queries and privileged reasoning traces without access to any human-curated prompts or answers. We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on. We demonstrate the generality of this framework across text and multimodal domains, achieving consistent self-improvement on standard language benchmarks and Visual Question Answering. Our findings demonstrate that foundation models possess rich latent capabilities that can be amplified without external task supervision or curated problem distributions.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32770.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "642150c201c62c1e41fc2390",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642150c201c62c1e41fc2390/4udBai02RARpIujIeiCX-.png",
+    "fullname": "Leon Sick",
+    "name": "leonsick",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 5,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "5e6aca39878b8b2bf9806447",
+    "name": "google",
+    "fullname": "Google",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.23234",
+    "authors": [
+     {
+      "_id": "6ad982043f2bb52eb8d6eb50",
+      "name": "Yuhan Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb51",
+      "name": "Jiaxin Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb52",
+      "name": "Yongdong Luo",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb53",
+      "name": "Yibo Hu",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb54",
+      "name": "Meiguang Jin",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb55",
+      "name": "Junfeng Ma",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb56",
+      "name": "Weixun Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb57",
+      "name": "Weihang Pan",
+      "hidden": false
+     },
+     {
+      "_id": "6ad982043f2bb52eb8d6eb58",
+      "name": "Zhongan Bi",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation",
+    "submittedOnDailyBy": {
+     "_id": "6406d8f4d684369027164e41",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6406d8f4d684369027164e41/vHRepecrzKtxdm0q52lVd.jpeg",
+     "isPro": false,
+     "fullname": "sunyuhan",
+     "user": "yuuhan",
+     "type": "user",
+     "name": "yuuhan"
+    },
+    "summary": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
+    "upvotes": 5,
+    "discussionId": "6ad982043f2bb52eb8d6eb59",
+    "projectPage": "https://sunyuhan19981208.github.io/posts/multiagent-opd/",
+    "ai_summary": "MultiAgent-OPD jointly trains a hierarchical multi-agent team via on-policy distillation and reinforcement learning, using a frozen teacher for local process supervision to improve end-to-end performance across multiple datasets.",
+    "ai_keywords": [
+     "on-policy distillation",
+     "reinforcement learning",
+     "multi-agent system",
+     "process supervision",
+     "Leader-Searcher-Answerer"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6a6205cbc80c71fffa0d91c0",
+     "name": "TaoLiveAIGC",
+     "fullname": "TaoLive AIGC",
+     "avatar": "https://www.gravatar.com/avatar/6ad8c78ff1fe4f98ab8ae0c6fe81f1e4?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation",
+   "summary": "In a hierarchical multi-agent system, a Leader assigns tasks and subagents carry them out. Jointly training the Leader and the subagents is difficult because a final answer gives only indirect feedback to the subagents. An LLM judge can score the performance of the subagents, but these scores depend on the judge's own assessment of the quality of subagents' responses. We present MultiAgent-OPD, which combines on-policy distillation with reinforcement learning to jointly train a shared-parameter Leader-Searcher-Answerer team end to end. We first train a Teacher in a Searcher-Answerer workflow using answer correctness. During team training, the frozen Teacher scores student-generated search and summary tokens to provide local process supervision for the Searchers, while the Leader learns from team success and the Answerer from candidate correctness. Across seven datasets, the trained system reaches 38.68% macro avg@4, exceeding Prompted Critic by 4.06 percentage points and C-MAS + RL, the trained cascaded multiagent system, by 2.61 percentage points. The team also solves more questions within four attempts.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.23234.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6406d8f4d684369027164e41",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6406d8f4d684369027164e41/vHRepecrzKtxdm0q52lVd.jpeg",
+    "fullname": "sunyuhan",
+    "name": "yuuhan",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6a6205cbc80c71fffa0d91c0",
+    "name": "TaoLiveAIGC",
+    "fullname": "TaoLive AIGC",
+    "avatar": "https://www.gravatar.com/avatar/6ad8c78ff1fe4f98ab8ae0c6fe81f1e4?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.32894",
+    "authors": [
+     {
+      "_id": "6adef0e3121a70fc683463b6",
+      "name": "Panagiotis Koromilas",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463b7",
+      "name": "Eleanna Vali",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463b8",
+      "name": "Diogenis Antonopoulos",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463b9",
+      "name": "Eleni Saka",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463ba",
+      "name": "Dimitris Christofis",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463bb",
+      "name": "Nikolaos Ioannis Bountos",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463bc",
+      "name": "Konstantin Klemmer",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463bd",
+      "name": "Ioannis Papoutsis",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463be",
+      "name": "Yannis Panagakis",
+      "hidden": false
+     },
+     {
+      "_id": "6adef0e3121a70fc683463bf",
+      "name": "Mihalis A. Nicolaou",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/634986f3429608888c4223e9/Kpl_02r3XvsdQ83kVz0yH.png"
+    ],
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+    "submittedOnDailyBy": {
+     "_id": "634986f3429608888c4223e9",
+     "avatarUrl": "/avatars/e97689a096aaae2bff0aa45cf6ed0409.svg",
+     "isPro": false,
+     "fullname": "Panagiotis Koromilas",
+     "user": "pakoromilas",
+     "type": "user",
+     "name": "pakoromilas"
+    },
+    "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.",
+    "upvotes": 3,
+    "discussionId": "6adef0e3121a70fc683463c0",
+    "githubRepo": "https://github.com/eleannavali/LoCA",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "LoCA is a two-stage pipeline that trains co-aligned multimodal image encoders and uses them as high-rank targets to train location and metadata encoders via contrastive learning, outperforming existing methods across diverse geospatial tasks.",
+    "ai_keywords": [
+     "location encoders",
+     "contrastive alignment",
+     "intrinsic dimension",
+     "Lipschitz",
+     "covariance regularizer",
+     "co-alignment",
+     "LoCA",
+     "multi-view contrastive learning",
+     "Sentinel-1",
+     "Sentinel-2"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-22T20:00:00.000Z",
+   "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+   "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder's embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target's spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/634986f3429608888c4223e9/Kpl_02r3XvsdQ83kVz0yH.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32894.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "634986f3429608888c4223e9",
+    "avatarUrl": "/avatars/e97689a096aaae2bff0aa45cf6ed0409.svg",
+    "fullname": "Panagiotis Koromilas",
+    "name": "pakoromilas",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.32002",
+    "authors": [
+     {
+      "_id": "6adef095121a70fc683463ab",
+      "name": "Siyang He",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463ac",
+      "name": "Qiqi Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463ad",
+      "name": "Fan Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463ae",
+      "name": "Yuncheng Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463af",
+      "name": "Pengfei Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463b0",
+      "name": "Xi Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463b1",
+      "name": "Ziwei He",
+      "hidden": false
+     },
+     {
+      "_id": "6adef095121a70fc683463b2",
+      "name": "Xipeng Qiu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation",
+    "submittedOnDailyBy": {
+     "_id": "64f033ef82c6eea604c4da8b",
+     "avatarUrl": "/avatars/51b93fea7fd68b4274ee03701245dcca.svg",
+     "isPro": false,
+     "fullname": "Xiaoran Liu (SII)",
+     "user": "SII-xrliu",
+     "type": "user",
+     "name": "SII-xrliu"
+    },
+    "summary": "The rapid growth of microdramas has increased demand for high-quality script production. Long-form microdrama script generation with LLMs requires both diverse plot progression and long-range narrative coherence. Our observations reveal that candidate continuations increasingly concentrate on fewer narrative mechanisms as generation progresses, while conventional retrieval may reinforce trope reuse and overlook historical information essential to future plots. To address these challenges, we propose DraMaze, a multi-agent pipeline that explores diverse causal paths through trope memory-guided evolutionary tree search and mutation. It further constructs a Backward Narrative Dependency Tree to organize, retain, and retrieve historical memories based on future narrative goals. We also introduce MiDramaBench, a bilingual benchmark for evaluating script logic and creative quality across different script lengths, together with causal-pattern metrics for narrative repetition and diversity. Experiments show consistent improvements across three backbone LLMs. For 60-episode scripts of up to 60k words, DraMaze reduces causal-pattern repetition by 32.1% and achieves a Logic score of 82.5, outperforming the best-performing baseline by 8.5 points.",
+    "upvotes": 7,
+    "discussionId": "6adef095121a70fc683463b3",
+    "ai_summary": "DraMaze improves long-form microdrama script generation by using evolutionary tree search guided by trope memory and backward narrative dependency trees to enhance plot diversity and coherence.",
+    "ai_keywords": [
+     "multi-agent pipeline",
+     "evolutionary tree search",
+     "trope memory",
+     "Backward Narrative Dependency Tree",
+     "causal-pattern metrics",
+     "narrative repetition",
+     "narrative diversity"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation",
+   "summary": "The rapid growth of microdramas has increased demand for high-quality script production. Long-form microdrama script generation with LLMs requires both diverse plot progression and long-range narrative coherence. Our observations reveal that candidate continuations increasingly concentrate on fewer narrative mechanisms as generation progresses, while conventional retrieval may reinforce trope reuse and overlook historical information essential to future plots. To address these challenges, we propose DraMaze, a multi-agent pipeline that explores diverse causal paths through trope memory-guided evolutionary tree search and mutation. It further constructs a Backward Narrative Dependency Tree to organize, retain, and retrieve historical memories based on future narrative goals. We also introduce MiDramaBench, a bilingual benchmark for evaluating script logic and creative quality across different script lengths, together with causal-pattern metrics for narrative repetition and diversity. Experiments show consistent improvements across three backbone LLMs. For 60-episode scripts of up to 60k words, DraMaze reduces causal-pattern repetition by 32.1% and achieves a Logic score of 82.5, outperforming the best-performing baseline by 8.5 points.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32002.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "64f033ef82c6eea604c4da8b",
+    "avatarUrl": "/avatars/51b93fea7fd68b4274ee03701245dcca.svg",
+    "fullname": "Xiaoran Liu (SII)",
+    "name": "SII-xrliu",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 16,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.31931",
@@ -31,7 +1280,7 @@
      "name": "ammarali32"
     },
     "summary": "We introduce TWIG (Tree-structured Weights with Inherited Gates), a representation in which every weight of a neural network is the end of a path of small discrete decisions: a sign, a shift by a power of two, a zero gate, an index into a shared table. Weights that belong together share the upper part of their paths, and each decision is inherited by every weight below it, so it is stored once and applied once. This simple change has three consequences. Any trained network can be written as a TWIG, and when the decisions are powers of two its weight layers become circuits made almost entirely of wires and adders, suited to chips whose weights are fixed at fabrication. Pruning, quantization, low-rank factorization, codebooks and weight sharing become edits of one object, so a single optimizer can choose among all of them for a whole network. And choosing the decisions is the ground-state problem of a higher-order Boltzmann machine whose interactions follow the paths of the tree, the problem class that annealers and quantum optimizers are built to solve. Today these questions are handled apart: each compression method brings its own format and solver, a circuit with fixed weights needs a dedicated constant multiplier for every weight, and discrete solvers reach only narrow subproblems such as rounding. Weight formats have long been moving toward shared decisions, through group scales, shared exponents, microexponents and sparse weights; TWIG takes this trend to its end, and every common format is a shallow TWIG at no extra cost. On five weight matrices of a large language model, a flat tree whose signed power-of-two terms are chosen per weight for circuit cost, with no group scales, needs 9--15\\% fewer additions than GPTQ at equal layer error at 3- and 4-bit accuracy on typical matrices, and 20--55\\% fewer on matrices with strong outliers.",
-    "upvotes": 0,
+    "upvotes": 7,
     "discussionId": "6adedc10121a70fc68346388",
     "githubRepo": "https://github.com/ammarali32/StateTree-Representation",
     "githubRepoAddedBy": "user",
@@ -519,7 +1768,7 @@
      "name": "CaiGuohao"
     },
     "summary": "World Models (WMs) can support Multimodal Agents (MAs) through simulated experience, while Agent trajectories can inform World Model refinement. Evaluating this interaction requires separate evidence about action selection and state evolution. We introduce Dual Exam, which tests Agents under fixed environment response mechanisms and World Models under fixed action interventions across physical, digital, social, and scientific domains. The Agent track compares 10 configurations on 1,088 items in 15 reporting categories. The World Model track contains 400 cases across eight scenarios; 15 configurations have full coverage and one covers six scenarios. GPT 6 Astra leads the case-weighted Agent Index at 31.3, and GPT-Image-2 leads the full-coverage WM Overall at 21.7. These scores use different tasks and metrics and are not directly comparable. A 150-case pilot of one coupled pairing records zero task successes and motivates component-level diagnosis. Results reveal uneven task performance and failures to preserve task-relevant state. Their value for predicting coupled success or sustained reciprocal learning remains to be established.",
-    "upvotes": 4,
+    "upvotes": 13,
     "discussionId": "6aded68e121a70fc6834637c",
     "ai_summary": "Dual Exam evaluates multimodal agents and world models separately across diverse domains, revealing uneven performance and no coupled success in pilot tests.",
     "ai_keywords": [
@@ -602,7 +1851,7 @@
      "name": "zecongtanghku"
     },
     "summary": "Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control. As a procedurally generated open world, Minecraft provides a natural testbed for studying the integration of these capabilities. Existing agents typically provide either native visuomotor control without long-horizon autonomy or high-level planning executed through environment APIs or predefined skills. To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness. At the orchestration level, we equip the harness with structured memory for tracking progress and a VLM planner for selecting subtasks within the VLA's capabilities. To reliably determine subtask completion, we further introduce a policy-coupled task completion state detector that conditions on VLA policy context to signal candidate completion. At the control level, a single VLA executes all subtasks with vision-only perception and native keyboard-and-mouse actions. To mitigate interference between heterogeneous GUI and non-GUI interactions, we introduce regime-specific RMSNorm branches and separate mouse-movement token embeddings. We also train the VLA through world knowledge injection, imitation learning, and reinforcement learning with environment feedback to improve reliability and recovery. HiSTEVE achieves state-of-the-art atomic-task performance, scoring 85.0% on MineStudio Bench and a 37.4% average success rate on OpenHA, while also completing long-horizon tasks such as crafting an iron pickaxe from scratch like human players.",
-    "upvotes": 21,
+    "upvotes": 28,
     "discussionId": "6adecd75121a70fc68346302",
     "ai_summary": "HiSTEVE is a hierarchical vision-language-action agent that combines long-horizon planning with native keyboard-and-mouse control to perform complex open-ended tasks in Minecraft.",
     "ai_keywords": [
@@ -628,7 +1877,7 @@
    "title": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
    "summary": "Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control. As a procedurally generated open world, Minecraft provides a natural testbed for studying the integration of these capabilities. Existing agents typically provide either native visuomotor control without long-horizon autonomy or high-level planning executed through environment APIs or predefined skills. To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness. At the orchestration level, we equip the harness with structured memory for tracking progress and a VLM planner for selecting subtasks within the VLA's capabilities. To reliably determine subtask completion, we further introduce a policy-coupled task completion state detector that conditions on VLA policy context to signal candidate completion. At the control level, a single VLA executes all subtasks with vision-only perception and native keyboard-and-mouse actions. To mitigate interference between heterogeneous GUI and non-GUI interactions, we introduce regime-specific RMSNorm branches and separate mouse-movement token embeddings. We also train the VLA through world knowledge injection, imitation learning, and reinforcement learning with environment feedback to improve reliability and recovery. HiSTEVE achieves state-of-the-art atomic-task performance, scoring 85.0% on MineStudio Bench and a 37.4% average success rate on OpenHA, while also completing long-horizon tasks such as crafting an iron pickaxe from scratch like human players.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31162.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6a5f29217ff099983483e767",
     "avatarUrl": "/avatars/9c48d5e60a18acaf8ae048ef6e69f9cf.svg",
@@ -744,7 +1993,7 @@
      "name": "ik4sumii"
     },
     "summary": "Music source separation (MSS) has been conventionally addressed by discriminative methods. Recently, flow matching has emerged as a strong generative paradigm for modeling complex data distributions, with successful applications across diverse domains. These advances motivate us to systematically investigate flow matching for MSS in a four-source (Vocals, Bass, Drums, Other) setting in full-band stereo. Specifically, we investigate prediction targets, flow paths, single-source versus multi-source modeling, and mixture consistency constraints. Beyond the signal-level metrics commonly used for MSS, such as signal-to-distortion ratio, we further evaluate MSS methods using embedding-based metrics, as well as a listening test, providing a comprehensive benchmark. On MUSDB18-HQ, our proposed model exhibits competitive performance in both objective and subjective tests, highlighting the potential of flow matching for generative MSS. Demo: https://ik4sumii.github.io/FLOMSS/",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6adaf59255db1e682e582f01",
     "projectPage": "https://ik4sumii.github.io/FLOMSS/",
     "ai_summary": "Flow matching is investigated for four-source full-band stereo music separation, evaluating prediction targets, flow paths, modeling strategies, and consistency constraints with both signal-level and perceptual metrics.",
@@ -833,7 +2082,7 @@
      "name": "Viglong"
     },
     "summary": "Single-image 3D scene construction is a fundamental problem in 3D vision. Recent methods such as SAM-3Dfy enable end-to-end reconstruction of 3D assets and their scene layouts, but still struggle with fine-grained scene geometry and asset quality. Meanwhile, specialized 3D object generators provide detailed object geometry, while 3D foundation models offer strong and generalizable spatial understanding. We propose Easy-3Dfy, a compositional workflow that decouples object generation from scene layout estimation, allowing specialized models to fully exploit their respective strengths. An RPF-based aligner then bridges these capabilities by establishing geometric correspondence between object-local meshes and partial scene pointmaps, recovering object layout for scene composition. Without requiring complete scene-level supervision, the proposed workflow consistently outperforms SAM-3Dfy across multiple geometric metrics on Scene-Maker and 3D-FUTURE200. Our results demonstrate that explicit geometric composition can effectively combine high-quality object generation with strong spatial understanding, while enabling the workflow to benefit independently from advances in both 3D object generation and foundation models.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adec55d121a70fc683462e2",
     "projectPage": "https://easy3dfy.github.io/",
     "ai_summary": "Easy-3Dfy separates object generation from scene layout estimation and uses geometric alignment to combine high-quality 3D objects with spatial understanding for improved scene reconstruction.",
@@ -958,7 +2207,7 @@
      "name": "zimuwang"
     },
     "summary": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and τ^3 Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
-    "upvotes": 21,
+    "upvotes": 24,
     "discussionId": "6adec48a121a70fc683462b2",
     "projectPage": "https://simpleagentlab.com/rsihub",
     "githubRepo": "https://github.com/simple-agent-lab/RSIHub",
@@ -1153,7 +2402,7 @@
      "name": "hbh123"
     },
     "summary": "We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and Rynn-GEU for long-horizon visual planning and anticipatory reasoning. Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano. Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks. Together, these results establish RynnUnify as a shared foundation for embodied understanding, visual planning, and robot control, taking a step toward a unified embodied brain.",
-    "upvotes": 16,
+    "upvotes": 25,
     "discussionId": "6adec4d9121a70fc683462d8",
     "projectPage": "https://alibaba-damo-academy.github.io/RynnUnify.github.io/",
     "githubRepo": "https://github.com/alibaba-damo-academy/RynnUnify",
@@ -1171,7 +2420,13 @@
      "long-horizon visual planning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7
+    "githubStars": 7,
+    "organization": {
+     "_id": "6808e7522a4d69d5111da55f",
+     "name": "Alibaba-DAMO-Academy",
+     "fullname": "DAMO Academy",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6808e64de5dd22427c006e10/9J3vdB62CdeTOd_YrGh9w.jpeg"
+    }
    },
    "publishedAt": "2026-10-22T20:00:00.000Z",
    "title": "RynnUnify: Towards Unified Embodied Brain",
@@ -1190,6 +2445,12 @@
     "isMod": false,
     "followerCount": 1,
     "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6808e7522a4d69d5111da55f",
+    "name": "Alibaba-DAMO-Academy",
+    "fullname": "DAMO Academy",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6808e64de5dd22427c006e10/9J3vdB62CdeTOd_YrGh9w.jpeg"
    },
    "isAuthorParticipating": false
   },
@@ -1281,7 +2542,7 @@
      "name": "lyfeng001"
     },
     "summary": "Recognizing task completion and failure enables robots to stop upon success and initiate recovery or replanning after failure. Existing methods augment Vision Language Action (VLA) policies with task status signal prediction to support these execution decisions. However, learning and integrating these signals can require fine-grained supervision, external monitoring models, or complex architectural designs. Moreover, the potential of task status signals to directly guide action generation remains underexplored. We present Echo, a framework that combines task status signal learning without frame-level progress annotations with a compact design for status prediction and action generation within a single VLA. Specifically, Echo represents task status with stop and failure signals, added as two dimensions of each action chunk and denoised together with robot actions. Their combination distinguishes ongoing execution, successful completion, and failure. To learn these signals without fine-grained progress annotations, Echo constructs successful, failed, and recovery trajectories with complementary supervision properties. To enable status signal-guided action generation, Echo controls interactions between the signals and actions and denoises the signals faster than the actions. These allow later action denoising steps to condition on cleaner status estimates while preserving accurate signal prediction. Extensive real-world manipulation experiments show that Echo accurately predicts task status and consistently improves policy performance.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6adebd6e121a70fc68346262",
     "projectPage": "https://lyfeng001.github.io/Echo/",
     "githubRepo": "https://github.com/lyfeng001/Echo-Sim",
@@ -1373,7 +2634,7 @@
      "name": "XinNUS"
     },
     "summary": "Fine-grained multimodal intelligence requires models to both understand a designated region and localize it from language. Existing methods learn these directions with separate objectives and task-specific annotations. We present Generalized CycleGRPO, the first unified reinforcement learning framework coupling region understanding and localization across spatial, temporal, and spatio-temporal domains. Given a region, a multimodal large language model generates candidate descriptions and then localizes each description to reconstruct the input region. Reconstruction overlap provides a verifiable reward for captioning, while individual localization rewards improve the inverse mapping. A common region-space formulation extends this cycle from image masks and boxes to video intervals and timestamped spatial evidence, without reference captions or an external language-model judge during reinforcement learning. In videos, the cycle encourages descriptions that distinguish a target event from similar recurrences. We introduce DOVE (Distinctive Occurrence-level Video-caption Evaluation), a human-verified contrastive benchmark for this temporal distinctiveness. CycleGRPO improves SAMTok's overall gIoU from 57.5% to 68.2% on GroundingSuite and average gIoU from 71.2% to 78.7% on GRES. For temporal tasks, it achieves 51.9% tIoU on Charades and 33.3% Temporal Evidence Coverage on DOVE, compared with 45.6% and 14.8% for the Qwen3-VL initialization. These results establish region-text cycle consistency as a general self-evaluation principle for multimodal understanding and localization. Models, code, and DOVE are available at https://devinxzhang.github.io/Generalized-CycleGRPO-Page/.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6adebe8d121a70fc6834627d",
     "projectPage": "https://devinxzhang.github.io/Generalized-CycleGRPO-Page/",
     "githubRepo": "https://github.com/devinxzhang/CycleGRPO",
@@ -1489,7 +2750,7 @@
      "name": "Polaris0913"
     },
     "summary": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation.",
-    "upvotes": 24,
+    "upvotes": 34,
     "discussionId": "6adeb7c1121a70fc68346236",
     "projectPage": "https://recgpt-team.github.io/UserArena-Page/",
     "githubRepo": "https://github.com/RecGPT-Team/UserArena",
@@ -1588,7 +2849,7 @@
      "name": "taesiri"
     },
     "summary": "A live esports broadcast needs a director who chooses which camera goes on air and a caster who talks over that choice, every second and without knowing what comes next. Streaming video language models have learned to commentate, but only over a broadcast that a human director has already produced. We study live broadcast production, in which a model receives the raw camera of every player and must both direct and commentate from the past alone. We present DirCast, a single streaming video language model that does both. Every second it scans all cameras at low resolution, decides with a hold-or-switch director whether and where to cut, and reads the chosen camera at high resolution before it speaks. Its context keeps what went on air and what was said and lets the other views expire, which bounds the cost of a stream of any length. We build a dataset of 27 professional Dota 2 matches with a camera for every hero, the human director's choices and the casters' commentary. DirCast directs better than rule-based and zero-shot directors including GPT-5, and its commentary wins 29.2 percent of comparisons against GPT-4o under the Proact-VL protocol, against 19.4 percent for the strongest of eleven streaming commentators that watch the human broadcast.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6adeba8b121a70fc6834624a",
     "projectPage": "https://zixiangao.github.io/DirCast/",
     "ai_summary": "DirCast is a streaming video language model that simultaneously directs live esports broadcasts by selecting cameras and generates real-time commentary using only past context.",
@@ -1673,7 +2934,7 @@
      "name": "taesiri"
     },
     "summary": "HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller. The recipe separates reusable motor skills from task decisions: a compact planner requests future body-point targets, while the frozen controller handles joint-level execution. A learned decoder maps 32-dimensional actions to structured target windows, and measured-state imitation initializes the planner before reinforcement learning. Task learning then refines interaction behavior while reusing the decoder and controller, avoiding the need to relearn whole-body control. This combination keeps task optimization focused on a compact upper policy and supplies an initial behavior before reward-driven exploration. Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run. This excludes controller pretraining, data preparation, evaluation, and search. Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6adeb8d0121a70fc6834623f",
     "ai_summary": "HoloBoxing learns humanoid boxing by combining a frozen whole-body controller with a compact planner that predicts body-point targets, using imitation initialization and reinforcement learning to refine interaction behavior with minimal additional training.",
     "ai_keywords": [
@@ -1756,7 +3017,7 @@
      "name": "BradyFU"
     },
     "summary": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate at the output level, overlooking the entanglement of grounding evidence and learned priors within fused representations. To address this issue, we propose Omni-Woodpecker (OWP), a training-free framework that shifts hallucination mitigation from output-level manipulation to conflict-conditioned representation rebalancing. Specifically, OWP first identifies cross-modal conflicts from complementary modality-specific views. It then employs orthogonal decomposition to separate grounding evidence from competing priors within the hidden states. Finally, OWP adaptively rebalances fused representations by suppressing misleading priors and restoring ignored evidence before decoding. Extensive experiments demonstrate the effectiveness and strong cross-architecture generalization of OWP. Using Qwen2.5-Omni-7B as the backbone, OWP improves performance by 12.9 and 8.6 points on CMM and AVHBench, respectively, while consistently achieving gains of 0.67-2.25 points across four general OLLM reasoning benchmarks. Furthermore, OWP generalizes effectively to VideoLLaMA2-AV, improving performance by 4.6 and 3.9 points on the same benchmarks. Code is publicly available at https://github.com/ZiiJianLiu/Omni-Woodpecker",
-    "upvotes": 19,
+    "upvotes": 21,
     "discussionId": "6adea6a5121a70fc6834621b",
     "githubRepo": "https://github.com/ZiiJianLiu/Omni-Woodpecker",
     "githubRepoAddedBy": "user",
@@ -4671,7 +5932,7 @@
      "object-absent queries"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 193,
+    "githubStars": 229,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -4686,7 +5947,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/66c98c27fafc0fc87c280749/hoztVcjSPXoLjRfeCTYu9.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31329.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "66c98c27fafc0fc87c280749",
     "avatarUrl": "/avatars/c71db3bee0fcd9aabcc38fd871d1cb75.svg",
@@ -4822,7 +6083,7 @@
      "task-conditioned retrieval"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 28
+    "githubStars": 29
    },
    "publishedAt": "2026-10-13T20:00:00.000Z",
    "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
@@ -4977,7 +6238,7 @@
      "name": "Knowing"
     },
     "summary": "Feed-forward 3D Gaussian Splatting (FF3DGS) reconstructs 3D scenes from images in a single forward pass, making it well-suited to applications that must operate within limited resource budgets. To further improve its practicality, recent budget-controllable FF3DGS methods allow the number of Gaussians to be adjusted at inference, so that the output meets a given storage limit or rendering-latency constraint. However, these methods overlook the cost of inference itself: to produce a representation with the target number of Gaussians, they first predict a dense set of Gaussians and then prune or select from it, requiring nearly constant latency and peak memory regardless of the budget. We therefore propose RLSplat, a resource-linear budget-controllable FF3DGS framework whose representation size, inference latency, and peak memory all decrease linearly as the Gaussian budget is reduced. Instead of pruning or selection, RLSplat learns a Gaussian allocation policy that distributes the budget across local scene regions, so that exactly the requested number of Gaussians is generated. These Gaussians are then refined through resource-linear Gaussian decoding, in which each Gaussian attends only to nearby Gaussians found via an efficient hierarchical neighbor search, so that the decoding cost decreases linearly with fewer Gaussians. In zero-shot evaluation, RLSplat outperforms prior budget-controllable methods at every budget, surpassing the strongest baseline even with 4times fewer Gaussians, while running up to 4.1times faster with 9.6times less peak memory at low budgets.",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6adafa3455db1e682e582f3e",
     "projectPage": "https://mlvlab.github.io/RLSplat/",
     "githubRepo": "https://github.com/mlvlab/RLSplat",
@@ -4992,7 +6253,7 @@
      "resource-linear decoding"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 10
+    "githubStars": 11
    },
    "publishedAt": "2026-10-19T20:00:00.000Z",
    "title": "RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting",
@@ -5230,1451 +6491,6 @@
     "name": "NanyangTechnologicalUniversity",
     "fullname": "Nanyang Technological University",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZPD1fvei0bcIGeDXxeSkn.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.26233",
-    "authors": [
-     {
-      "_id": "6adaf3e855db1e682e582ee0",
-      "name": "Zhenyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee1",
-      "name": "Kewei Fu",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee2",
-      "name": "Yongqi Tong",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee3",
-      "name": "Chenzhi Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee4",
-      "name": "Wei Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee5",
-      "name": "Jiang-Ming Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adaf3e855db1e682e582ee6",
-      "name": "Jianshe Li",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Heartbeat Thinking: Speculative Reasoning and Tool Execution While Listening in Realtime Voice Agents",
-    "submittedOnDailyBy": {
-     "_id": "64c1856bc3b5e0a9760e37f2",
-     "avatarUrl": "/avatars/a67c3f95f83b2be3a14f71c6faf3b995.svg",
-     "isPro": false,
-     "fullname": "Yongqi Tong",
-     "user": "Yooki",
-     "type": "user",
-     "name": "Yooki"
-    },
-    "summary": "Tool-using voice agents often leave users waiting after speech ends, even when actionable information arrives earlier in the request. Speculative approaches begin work during speech, but chunk-bounded or interrupt-on-update generation can truncate a tool call before its arguments are complete. This couples computation time to speech updates, limiting useful work completed in advance. We introduce Heartbeat Thinking, which handles updated input through new Thinker invocations while allowing ongoing invocations and dispatched tools to finish. Periodic invocations read the latest partial transcript and a shared record of completed reasoning and tool results. These results help resolve missing arguments and initiate dependent calls, allowing preparation to progress across speech updates. Across SpeechFCEval, FDBench v3, and AudioCRAG, Heartbeat improves aggregate speculative tool coverage or retrieval reuse over a SHANKS-style windowed baseline, with benchmark-dependent effects on final task quality. On FDBench v3, it increases tool coverage by 16 percentage points and reduces mean final-response latency by 36.4\\%. The results show that heartbeat thinking paradigm preserving ongoing computation during speech can turn listening time into reusable preparation for faster and more capable voice-agent responses.",
-    "upvotes": 24,
-    "discussionId": "6adaf3e855db1e682e582ee7",
-    "ai_summary": "A heartbeat-style speculative reasoning approach lets voice agents continue preparing tool calls during speech updates, improving coverage and reducing response latency.",
-    "ai_keywords": [
-     "speculative generation",
-     "chunk-bounded generation",
-     "interrupt-on-update generation",
-     "Thinker invocations",
-     "partial transcript",
-     "shared reasoning record",
-     "dependent tool calls",
-     "SpeechFCEval",
-     "FDBench v3",
-     "AudioCRAG",
-     "SHANKS-style windowed baseline",
-     "tool coverage",
-     "final-response latency"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "68d4ae9941614425f8aa7490",
-     "name": "ant-intl",
-     "fullname": "ant-international",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e9c86d2551cb38000fa77c/qG2KcieHqYFuWXi2-weuP.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-18T20:00:00.000Z",
-   "title": "Heartbeat Thinking: Speculative Reasoning and Tool Execution While Listening in Realtime Voice Agents",
-   "summary": "Tool-using voice agents often leave users waiting after speech ends, even when actionable information arrives earlier in the request. Speculative approaches begin work during speech, but chunk-bounded or interrupt-on-update generation can truncate a tool call before its arguments are complete. This couples computation time to speech updates, limiting useful work completed in advance. We introduce Heartbeat Thinking, which handles updated input through new Thinker invocations while allowing ongoing invocations and dispatched tools to finish. Periodic invocations read the latest partial transcript and a shared record of completed reasoning and tool results. These results help resolve missing arguments and initiate dependent calls, allowing preparation to progress across speech updates. Across SpeechFCEval, FDBench v3, and AudioCRAG, Heartbeat improves aggregate speculative tool coverage or retrieval reuse over a SHANKS-style windowed baseline, with benchmark-dependent effects on final task quality. On FDBench v3, it increases tool coverage by 16 percentage points and reduces mean final-response latency by 36.4\\%. The results show that heartbeat thinking paradigm preserving ongoing computation during speech can turn listening time into reusable preparation for faster and more capable voice-agent responses.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.26233.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "64c1856bc3b5e0a9760e37f2",
-    "avatarUrl": "/avatars/a67c3f95f83b2be3a14f71c6faf3b995.svg",
-    "fullname": "Yongqi Tong",
-    "name": "Yooki",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 3,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68d4ae9941614425f8aa7490",
-    "name": "ant-intl",
-    "fullname": "ant-international",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e9c86d2551cb38000fa77c/qG2KcieHqYFuWXi2-weuP.jpeg"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.24738",
-    "authors": [
-     {
-      "_id": "6ada184cd10c239d0da2ce8e",
-      "user": {
-       "_id": "65edc5b64f2eb015855afc0c",
-       "avatarUrl": "/avatars/12c03399feb8d5f3a10fb8e01eda1987.svg",
-       "isPro": false,
-       "fullname": "xue wen",
-       "user": "Davidscut",
-       "type": "user",
-       "name": "Davidscut"
-      },
-      "name": "Wen Xue",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.389Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce8f",
-      "name": "Yong Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce90",
-      "name": "Xueheng Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce91",
-      "name": "Si Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce92",
-      "name": "Yong Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce93",
-      "name": "Yipeng Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce94",
-      "name": "Yan Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ada184cd10c239d0da2ce95",
-      "name": "Simiu Gu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/blrTBXh3qS9tXFzMropzF.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/07PWHTSn3tgGLzbZNwGJ4.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/wu4jdSfx957OHPJFBVKGk.png"
-    ],
-    "publishedAt": "2026-10-17T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
-    "submittedOnDailyBy": {
-     "_id": "65edc5b64f2eb015855afc0c",
-     "avatarUrl": "/avatars/12c03399feb8d5f3a10fb8e01eda1987.svg",
-     "isPro": false,
-     "fullname": "xue wen",
-     "user": "Davidscut",
-     "type": "user",
-     "name": "Davidscut"
-    },
-    "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-    "upvotes": 184,
-    "discussionId": "6ada184cd10c239d0da2ce96",
-    "ai_summary": "LayerEditor unifies instruction-guided image editing with reusable RGBA layer generation via joint token modeling and edit-prior distillation, enabling precise local manipulation and layer reuse.",
-    "ai_keywords": [
-     "In-Context RGB-Alpha Token Modeling",
-     "Compositional Edit-Prior Distillation",
-     "RGBA layers",
-     "instruction-guided image editing",
-     "layer decomposition"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "682a97a154b087448a5504ee",
-     "name": "jingdong1",
-     "fullname": "jingdong",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/682a966182dc4fc3e373e3ed/9xUgXZCij6qGJpLqpR99M.png"
-    }
-   },
-   "publishedAt": "2026-10-16T20:00:00.000Z",
-   "title": "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
-   "summary": "High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separately from instruction-driven editing. To this end, we introduce LayerEditor, a unified framework that couples instruction-guided image editing with controllable generation of reusable RGBA layers. At its core, In-Context RGB-Alpha Token Modeling jointly represents the edited canvas and an ordered sequence of RGB-Alpha layers within a single token sequence, enabling semantic edits and explicit control over individual layer content. To retain the pretrained model's editing capability during adaptation to layered outputs, we propose Compositional Edit-Prior Distillation, which transfers its editing prior to both the edited canvas and the image composed from the predicted layers. To support training and evaluation, we construct LayerEditor-100K, a large-scale paired image-editing dataset with ordered RGBA layer annotations, and introduce dedicated benchmarks for layered editing. Extensive experiments demonstrate that LayerEditor maintains strong editing fidelity while generating accurate RGBA layers, supporting both flexible layer-level manipulation and multi-layer decomposition.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/blrTBXh3qS9tXFzMropzF.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/07PWHTSn3tgGLzbZNwGJ4.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/65edc5b64f2eb015855afc0c/wu4jdSfx957OHPJFBVKGk.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24738.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65edc5b64f2eb015855afc0c",
-    "avatarUrl": "/avatars/12c03399feb8d5f3a10fb8e01eda1987.svg",
-    "fullname": "xue wen",
-    "name": "Davidscut",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "682a97a154b087448a5504ee",
-    "name": "jingdong1",
-    "fullname": "jingdong",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/682a966182dc4fc3e373e3ed/9xUgXZCij6qGJpLqpR99M.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.31623",
-    "authors": [
-     {
-      "_id": "6adae51b55db1e682e582ea1",
-      "name": "Jinyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adae51b55db1e682e582ea2",
-      "name": "Haitao Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6adae51b55db1e682e582ea3",
-      "name": "Jiashu Hou",
-      "hidden": false
-     },
-     {
-      "_id": "6adae51b55db1e682e582ea4",
-      "name": "Xiangyang Xue",
-      "hidden": false
-     },
-     {
-      "_id": "6adae51b55db1e682e582ea5",
-      "name": "Yanwei Fu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/64f09372f0a34dcdcecb5791/bX0C3B-vyfNJ7KRRbjOFm.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/64f09372f0a34dcdcecb5791/a1Uvy0SHFVwvMuiBPkAgG.png"
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation",
-    "submittedOnDailyBy": {
-     "_id": "64f09372f0a34dcdcecb5791",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64f09372f0a34dcdcecb5791/55GPtTwHc8nTlev3si1HP.jpeg",
-     "isPro": false,
-     "fullname": "jrryzh(SII)",
-     "user": "J3rr1",
-     "type": "user",
-     "name": "J3rr1"
-    },
-    "summary": "This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, symmetries, and partial observations. Current solutions struggle to balance reliability and efficiency: methods based on intermediate structures are prone to error propagation, while diffusion models suffer from high inference latency and complex post-hoc candidate extraction. To address this, we present F2G-Pose, a real-time direct, single-pass framework that predicts category-level pose, metric size, and camera-frame completed shape from a single RGB-D observation in one feed-forward pass. F2G-Pose lifts dense visual foundation features to partial point clouds, encodes local geometry with DGCNN tokenization, and integrates object-level structure with a Mixture-of-Experts Transformer. Joint size prediction and camera-frame shape completion encourage metric consistency through dense geometric supervision. With its task-specific network trained only on pose-annotated synthetic SOPE data and its frozen RADIO backbone externally pretrained, F2G-Pose achieves state-of-the-art accuracy on SOPE and ROPE while running at 28 FPS for pose-only inference, and further demonstrates strong camera-frame geometry on HouseCat6D and real-object transfer on HANDAL. Analyses of latency, robustness, shape completion, and GenPose++ candidate behavior further demonstrate the efficiency and reliability of F2G-Pose, with real-world manipulation experiments demonstrating deployment potential under segmented RGB-D inputs. The project page, code, and pretrained models are made available at https://jrryzh.github.io/F2G-Pose/.",
-    "upvotes": 14,
-    "discussionId": "6adae51b55db1e682e582ea6",
-    "projectPage": "https://jrryzh.github.io/F2G-Pose/",
-    "githubRepo": "https://github.com/jrryzh/F2G-Pose",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "F2G-Pose is a real-time feed-forward framework that predicts category-level object pose, metric size, and completed shape from a single RGB-D image using dense visual features, DGCNN tokenization, and a Mixture-of-Experts Transformer.",
-    "ai_keywords": [
-     "category-level RGB-D object pose estimation",
-     "diffusion models",
-     "DGCNN tokenization",
-     "Mixture-of-Experts Transformer",
-     "shape completion",
-     "dense geometric supervision",
-     "SOPE",
-     "ROPE"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 76,
-    "organization": {
-     "_id": "683ebd0d913d82e703e77286",
-     "name": "sii-research",
-     "fullname": "Shanghai Innovation Institute",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6144a0c4ff1146bbd84d9865/SQAtyVRxNjp9L0CUi0tgI.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation",
-   "summary": "This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, symmetries, and partial observations. Current solutions struggle to balance reliability and efficiency: methods based on intermediate structures are prone to error propagation, while diffusion models suffer from high inference latency and complex post-hoc candidate extraction. To address this, we present F2G-Pose, a real-time direct, single-pass framework that predicts category-level pose, metric size, and camera-frame completed shape from a single RGB-D observation in one feed-forward pass. F2G-Pose lifts dense visual foundation features to partial point clouds, encodes local geometry with DGCNN tokenization, and integrates object-level structure with a Mixture-of-Experts Transformer. Joint size prediction and camera-frame shape completion encourage metric consistency through dense geometric supervision. With its task-specific network trained only on pose-annotated synthetic SOPE data and its frozen RADIO backbone externally pretrained, F2G-Pose achieves state-of-the-art accuracy on SOPE and ROPE while running at 28 FPS for pose-only inference, and further demonstrates strong camera-frame geometry on HouseCat6D and real-object transfer on HANDAL. Analyses of latency, robustness, shape completion, and GenPose++ candidate behavior further demonstrate the efficiency and reliability of F2G-Pose, with real-world manipulation experiments demonstrating deployment potential under segmented RGB-D inputs. The project page, code, and pretrained models are made available at https://jrryzh.github.io/F2G-Pose/.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/64f09372f0a34dcdcecb5791/bX0C3B-vyfNJ7KRRbjOFm.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/64f09372f0a34dcdcecb5791/a1Uvy0SHFVwvMuiBPkAgG.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31623.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "64f09372f0a34dcdcecb5791",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64f09372f0a34dcdcecb5791/55GPtTwHc8nTlev3si1HP.jpeg",
-    "fullname": "jrryzh(SII)",
-    "name": "J3rr1",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 3,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "683ebd0d913d82e703e77286",
-    "name": "sii-research",
-    "fullname": "Shanghai Innovation Institute",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6144a0c4ff1146bbd84d9865/SQAtyVRxNjp9L0CUi0tgI.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.30320",
-    "authors": [
-     {
-      "_id": "6adad89b55db1e682e582dc2",
-      "user": {
-       "_id": "64ae34066864362a7e290ab3",
-       "avatarUrl": "/avatars/ae6f9fd34a697deb7ea4e92fd5f91899.svg",
-       "isPro": true,
-       "fullname": "Huiwon Jang",
-       "user": "huiwon",
-       "type": "user",
-       "name": "huiwon"
-      },
-      "name": "Huiwon Jang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-24T16:45:04.718Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adad89b55db1e682e582dc3",
-      "user": {
-       "_id": "67041a46d1fb54bd91a478fd",
-       "avatarUrl": "/avatars/6414c7c501857948a36a55036b0e1f8b.svg",
-       "isPro": true,
-       "fullname": "Suhyeok Jang",
-       "user": "glory-hyeok",
-       "type": "user",
-       "name": "glory-hyeok"
-      },
-      "name": "Suhyeok Jang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.504Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adad89b55db1e682e582dc4",
-      "name": "Hyeonmo Kang",
-      "hidden": false
-     },
-     {
-      "_id": "6adad89b55db1e682e582dc5",
-      "name": "Seungku Kim",
-      "hidden": false
-     },
-     {
-      "_id": "6adad89b55db1e682e582dc6",
-      "name": "Jinwoo Shin",
-      "hidden": false
-     },
-     {
-      "_id": "6adad89b55db1e682e582dc7",
-      "name": "Sihyun Yu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/67041a46d1fb54bd91a478fd/1vdjCuqT6jDCSTL7V9Hbd.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/67041a46d1fb54bd91a478fd/4lO0r4dNV0v66fQWK4-HI.png"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Self-Distilling Future Video Representations for World Action Models",
-    "submittedOnDailyBy": {
-     "_id": "67041a46d1fb54bd91a478fd",
-     "avatarUrl": "/avatars/6414c7c501857948a36a55036b0e1f8b.svg",
-     "isPro": true,
-     "fullname": "Suhyeok Jang",
-     "user": "glory-hyeok",
-     "type": "user",
-     "name": "glory-hyeok"
-    },
-    "summary": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
-    "upvotes": 37,
-    "discussionId": "6adad89b55db1e682e582dc8",
-    "projectPage": "https://huiwon-jang.github.io/FRED/",
-    "githubRepo": "https://github.com/suhyeok-jang/FRED",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "FRED improves single-step future video representations in world action models through self-distillation and temporal conditioning, boosting robot policy performance on long-horizon and unseen tasks.",
-    "ai_keywords": [
-     "World Action Models",
-     "video diffusion models",
-     "self-distillation",
-     "temporal context",
-     "future representations",
-     "denoising",
-     "zero-shot generalization"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 9,
-    "organization": {
-     "_id": "6475760c33192631bad2bb38",
-     "name": "kaist-ai",
-     "fullname": "KAIST AI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "Self-Distilling Future Video Representations for World Action Models",
-   "summary": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/67041a46d1fb54bd91a478fd/1vdjCuqT6jDCSTL7V9Hbd.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/67041a46d1fb54bd91a478fd/4lO0r4dNV0v66fQWK4-HI.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30320.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "67041a46d1fb54bd91a478fd",
-    "avatarUrl": "/avatars/6414c7c501857948a36a55036b0e1f8b.svg",
-    "fullname": "Suhyeok Jang",
-    "name": "glory-hyeok",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 5,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6475760c33192631bad2bb38",
-    "name": "kaist-ai",
-    "fullname": "KAIST AI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.31466",
-    "authors": [
-     {
-      "_id": "6adac17255db1e682e582c8a",
-      "name": "Ruicong Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adac17255db1e682e582c8b",
-      "name": "Liangyang Ouyang",
-      "hidden": false
-     },
-     {
-      "_id": "6adac17255db1e682e582c8c",
-      "name": "Fengbo Lan",
-      "hidden": false
-     },
-     {
-      "_id": "6adac17255db1e682e582c8d",
-      "name": "Zhixiang Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adac17255db1e682e582c8e",
-      "name": "Kaipeng Zhang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/65f1713552c38a91e0a445e8/g3Nm0WSxrlIZKDSEqYNMG.mp4"
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark",
-    "submittedOnDailyBy": {
-     "_id": "65f1713552c38a91e0a445e8",
-     "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
-     "isPro": false,
-     "fullname": "kaipeng",
-     "user": "kpzhang996",
-     "type": "user",
-     "name": "kpzhang996"
-    },
-    "summary": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact.\n  Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners.\n  AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input.\n  It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame.\n  We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses sim10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection.\n  To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered.",
-    "upvotes": 19,
-    "discussionId": "6adac17255db1e682e582c8f",
-    "projectPage": "https://alaya-lab.github.io/AnyGameRenderer/",
-    "githubRepo": "https://github.com/AlayaLab/AnyGameRenderer",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "AnyGameRenderer is a video-to-video generative model that transforms low-quality agent-built game footage into high-fidelity visuals while preserving layout, camera, and entity timing.",
-    "ai_keywords": [
-     "video-to-video generative renderer",
-     "LoRA fine-tuning",
-     "MiniMax-H3 ref2va",
-     "reference-video-conditioned video generation",
-     "entity correspondence",
-     "temporal match"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 27,
-    "organization": {
-     "_id": "689f08c50df4fcf7fddc0b08",
-     "name": "AlayaLab",
-     "fullname": "Alaya Lab",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63342778d92c5842ae728aef/dNCvNz9MMshksG2xspIbM.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark",
-   "summary": "AI coding agents can now build small playable games in minutes, but the results usually look like programmer art: gray blockouts, colored geometric primitives, and flat semantic blobs. We present AnyGameRenderer, a video-to-video generative renderer that turns such footage into high-quality visuals with characters, motion detail, and effects. Throughout, it keeps the layout, camera, and every entity's position and timing intact.\n  Our AnyGameRenderer generalizes across a wide range of genres that agents build, such as tower defense, auto-battlers, top-down survivors, turn-based battles, kart racing, and crowd runners.\n  AnyGameRenderer takes plain video as its game-state input, with no complex representations such as engine G-buffers, per-object class labels, or low-poly proxies. Gray blockouts, colored primitives, semantic maps, and wireframes all work as input.\n  It also preserves entity correspondence: group counts stay correct, and entities appear and disappear on the right frame.\n  We implement AnyGameRenderer by LoRA fine-tuning MiniMax-H3 ref2va, a 33B reference-video-conditioned video generation model. Training uses sim10k paired clips from three sources: (i) multi-stream rendering data from 38 agent-made games exported from GEAR, an AI game-creation tool; (ii) two-stream rendering data from Unreal Engine, with programmatically controlled crowds, count changes, and entity scales; and (iii) real gameplay recordings, with pairs reconstructed via 3D-box detection.\n  To evaluate the entity correspondence, we propose an entity-level benchmark of 59 held-out cases with 753 entities, scored against ground-truth boxes. Compared with the base model, AnyGameRenderer better preserves entity correspondence: temporal match rises from 50.9\\% to 62.9\\%, missed count changes fall from 34.7\\% to 21.3\\%, and fewer entities are hallucinated or left unrendered.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/65f1713552c38a91e0a445e8/g3Nm0WSxrlIZKDSEqYNMG.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31466.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65f1713552c38a91e0a445e8",
-    "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
-    "fullname": "kaipeng",
-    "name": "kpzhang996",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 11,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "689f08c50df4fcf7fddc0b08",
-    "name": "AlayaLab",
-    "fullname": "Alaya Lab",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63342778d92c5842ae728aef/dNCvNz9MMshksG2xspIbM.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.29677",
-    "authors": [
-     {
-      "_id": "6adad1e955db1e682e582d67",
-      "user": {
-       "_id": "64ad1c0bad6218d51a07b54e",
-       "avatarUrl": "/avatars/0f84d9a51c6ca9bcef44de2d7c707d9b.svg",
-       "isPro": false,
-       "fullname": "LUO MENG",
-       "user": "Eureka-Leo",
-       "type": "user",
-       "name": "Eureka-Leo"
-      },
-      "name": "Meng Luo",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T16:45:04.540Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d68",
-      "name": "Zechen Bai",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d69",
-      "name": "Shanqing Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6a",
-      "name": "Yanlin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6b",
-      "name": "Kaixin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6c",
-      "name": "Mengchen Qian",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6d",
-      "name": "Weifeng Lu",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6e",
-      "name": "Ran Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d6f",
-      "name": "Yingtian Zou",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d70",
-      "name": "Ziyang Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d71",
-      "name": "Wei Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adad1e955db1e682e582d72",
-      "name": "Hongzhan Lin",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6499466c7d1edf7cb612a9a6/Mchxx93SLTs4lPZHZCkye.mp4"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Toward Recursive Self-Improvement in Physical AI",
-    "submittedOnDailyBy": {
-     "_id": "6499466c7d1edf7cb612a9a6",
-     "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
-     "isPro": false,
-     "fullname": "Hongzhan Lin",
-     "user": "danielhzlin",
-     "type": "user",
-     "name": "danielhzlin"
-    },
-    "summary": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
-    "upvotes": 59,
-    "discussionId": "6adad1e955db1e682e582d73",
-    "projectPage": "https://physical2rsi.github.io",
-    "githubRepo": "https://github.com/Physical2RSI/Awesome-Physical2RSI",
-    "githubRepoAddedBy": "user",
-    "githubStars": 53,
-    "organization": {
-     "_id": "6508ab2b349930913196378b",
-     "name": "NationalUniversityofSingapore",
-     "fullname": "National University of Singapore",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "Toward Recursive Self-Improvement in Physical AI",
-   "summary": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6499466c7d1edf7cb612a9a6/Mchxx93SLTs4lPZHZCkye.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29677.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6499466c7d1edf7cb612a9a6",
-    "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
-    "fullname": "Hongzhan Lin",
-    "name": "danielhzlin",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 5,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6508ab2b349930913196378b",
-    "name": "NationalUniversityofSingapore",
-    "fullname": "National University of Singapore",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.20459",
-    "authors": [
-     {
-      "_id": "6adadb7155db1e682e582e06",
-      "user": {
-       "_id": "6438e55cb2ea24b52ebc45ec",
-       "avatarUrl": "/avatars/e13c7398f77e7e0bd5eed03102aa5c36.svg",
-       "isPro": false,
-       "fullname": "Jiatong LI",
-       "user": "phenixace",
-       "type": "user",
-       "name": "phenixace"
-      },
-      "name": "Jiatong Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.531Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adadb7155db1e682e582e07",
-      "name": "Yatao Bian",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6438e55cb2ea24b52ebc45ec/dmSXuzRFvf0U7DAUlnI8-.mp4"
-    ],
-    "publishedAt": "2026-10-14T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "MolLean: A Process-Verifiable Language for Chemical Reasoning",
-    "submittedOnDailyBy": {
-     "_id": "6438e55cb2ea24b52ebc45ec",
-     "avatarUrl": "/avatars/e13c7398f77e7e0bd5eed03102aa5c36.svg",
-     "isPro": false,
-     "fullname": "Jiatong LI",
-     "user": "phenixace",
-     "type": "user",
-     "name": "phenixace"
-    },
-    "summary": "Chemical chain-of-thought can contain hallucinated structural and property claims. We thereby introduce MolLean, a process-verifiable language that grounds chemical reasoning in an explicit molecular state. A layered Lean-based kernel checks state transitions and assertions over molecular readouts, from primitive graph edits to compound transformations. Meanwhile, a typed witness protocol separates native structural checks from externally supplied measurements. We further introduce MolLean-MCP, a stateful tool interface that exposes these transitions, checks, and readouts during generation: the model receives feedback to decide its next action, and rejected actions leave the state unchanged. MolLean supports one-pass trace execution, whole-trace refinement, and interactive reasoning through MolLean-MCP. We evaluate these three modes with direct chain-of-thought on 8,800 matched examples across 12 tasks spanning molecular generation, editing, optimization, and reactions. With Qwen3.6-27B, whole-trace refinement outperforms direct chain-of-thought on all 12 tasks. MolLean-MCP complements whole-trace refinement with stepwise verification feedback, reaching better performance in reaction tasks. Together, these results highlight an executable foundation for chemical reasoning, in which explicit chemical commitments can be checked and revised rather than remaining solely in free-form explanations.",
-    "upvotes": 15,
-    "discussionId": "6adadb7155db1e682e582e08",
-    "githubRepo": "https://github.com/phenixace/Open-MolLean",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "MolLean introduces a verifiable chemical reasoning framework with explicit molecular states, Lean-based verification, and interactive tool feedback to reduce hallucinations across generation and reaction tasks.",
-    "ai_keywords": [
-     "chain-of-thought",
-     "Lean-based kernel",
-     "typed witness protocol",
-     "MolLean-MCP",
-     "stateful tool interface",
-     "whole-trace refinement",
-     "interactive reasoning"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3
-   },
-   "publishedAt": "2026-10-13T20:00:00.000Z",
-   "title": "MolLean: A Process-Verifiable Language for Chemical Reasoning",
-   "summary": "Chemical chain-of-thought can contain hallucinated structural and property claims. We thereby introduce MolLean, a process-verifiable language that grounds chemical reasoning in an explicit molecular state. A layered Lean-based kernel checks state transitions and assertions over molecular readouts, from primitive graph edits to compound transformations. Meanwhile, a typed witness protocol separates native structural checks from externally supplied measurements. We further introduce MolLean-MCP, a stateful tool interface that exposes these transitions, checks, and readouts during generation: the model receives feedback to decide its next action, and rejected actions leave the state unchanged. MolLean supports one-pass trace execution, whole-trace refinement, and interactive reasoning through MolLean-MCP. We evaluate these three modes with direct chain-of-thought on 8,800 matched examples across 12 tasks spanning molecular generation, editing, optimization, and reactions. With Qwen3.6-27B, whole-trace refinement outperforms direct chain-of-thought on all 12 tasks. MolLean-MCP complements whole-trace refinement with stepwise verification feedback, reaching better performance in reaction tasks. Together, these results highlight an executable foundation for chemical reasoning, in which explicit chemical commitments can be checked and revised rather than remaining solely in free-form explanations.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6438e55cb2ea24b52ebc45ec/dmSXuzRFvf0U7DAUlnI8-.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20459.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6438e55cb2ea24b52ebc45ec",
-    "avatarUrl": "/avatars/e13c7398f77e7e0bd5eed03102aa5c36.svg",
-    "fullname": "Jiatong LI",
-    "name": "phenixace",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 8,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.26252",
-    "authors": [
-     {
-      "_id": "6adadaf655db1e682e582df2",
-      "name": "Walaa Othman",
-      "hidden": false
-     },
-     {
-      "_id": "6adadaf655db1e682e582df3",
-      "name": "Baher Mohammad",
-      "hidden": false
-     },
-     {
-      "_id": "6adadaf655db1e682e582df4",
-      "name": "Stamatios Lefkimmiatis",
-      "hidden": false
-     },
-     {
-      "_id": "6adadaf655db1e682e582df5",
-      "user": {
-       "_id": "6166db59f78a267701a78c2a",
-       "avatarUrl": "/avatars/8784efc36f67719e9455b1f081340ed9.svg",
-       "isPro": false,
-       "fullname": "Ammar Ali",
-       "user": "ammarali32",
-       "type": "user",
-       "name": "ammarali32"
-      },
-      "name": "Ammar Ali",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.523Z",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "SEAM: Spectral Embedding Alignment and Merging for Low-Resource TTS",
-    "submittedOnDailyBy": {
-     "_id": "6166db59f78a267701a78c2a",
-     "avatarUrl": "/avatars/8784efc36f67719e9455b1f081340ed9.svg",
-     "isPro": false,
-     "fullname": "Ammar Ali",
-     "user": "ammarali32",
-     "type": "user",
-     "name": "ammarali32"
-    },
-    "summary": "Expanding the vocabulary of conditional text-to-speech (TTS) models typically requires extensive fine-tuning with paired audio, creating a major bottleneck for low-resource and cross-lingual adaptation. To address this, we introduce SEAM, a zero-audio initialization method that constructs embeddings for unseen tokens from known subtokens. Unlike standard pooling strategies that ignore sequential structure, SEAM applies a spectral filter to preserve temporal phonetic order and uses closed-form ridge regression to align the new embeddings with the pretrained conditioning manifold. Across three languages and two TTS architectures, SEAM approaches or matches baseline performance using up to four times less training data, reducing sample complexity by 75\\% compared to random initialization and mean pooling. Our approach provides a lightweight, reproducible, and theoretically grounded solution for vocabulary expansion in low-resource speech synthesis.",
-    "upvotes": 7,
-    "discussionId": "6adadaf655db1e682e582df6",
-    "ai_summary": "SEAM initializes unseen token embeddings from subtokens via spectral filtering and ridge regression, reducing training data needs by 75% for low-resource text-to-speech vocabulary expansion.",
-    "ai_keywords": [
-     "conditional text-to-speech",
-     "zero-audio initialization",
-     "spectral filter",
-     "ridge regression",
-     "vocabulary expansion",
-     "low-resource speech synthesis"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "61b8da8ed48e2b6a4d2f5530",
-     "name": "ITMO",
-     "fullname": "ITMO University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
-    }
-   },
-   "publishedAt": "2026-10-18T20:00:00.000Z",
-   "title": "SEAM: Spectral Embedding Alignment and Merging for Low-Resource TTS",
-   "summary": "Expanding the vocabulary of conditional text-to-speech (TTS) models typically requires extensive fine-tuning with paired audio, creating a major bottleneck for low-resource and cross-lingual adaptation. To address this, we introduce SEAM, a zero-audio initialization method that constructs embeddings for unseen tokens from known subtokens. Unlike standard pooling strategies that ignore sequential structure, SEAM applies a spectral filter to preserve temporal phonetic order and uses closed-form ridge regression to align the new embeddings with the pretrained conditioning manifold. Across three languages and two TTS architectures, SEAM approaches or matches baseline performance using up to four times less training data, reducing sample complexity by 75\\% compared to random initialization and mean pooling. Our approach provides a lightweight, reproducible, and theoretically grounded solution for vocabulary expansion in low-resource speech synthesis.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.26252.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6166db59f78a267701a78c2a",
-    "avatarUrl": "/avatars/8784efc36f67719e9455b1f081340ed9.svg",
-    "fullname": "Ammar Ali",
-    "name": "ammarali32",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 19,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61b8da8ed48e2b6a4d2f5530",
-    "name": "ITMO",
-    "fullname": "ITMO University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/fBvTjWt5kZM802VUpqCno.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30866",
-    "authors": [
-     {
-      "_id": "6adada5455db1e682e582de1",
-      "name": "Zhuoran Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de2",
-      "user": {
-       "_id": "673c7319d11b1c2e246ead9c",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-       "isPro": false,
-       "fullname": "Yang Shi",
-       "user": "DogNeverSleep",
-       "type": "user",
-       "name": "DogNeverSleep"
-      },
-      "name": "Yang Shi",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.514Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de3",
-      "name": "Qixun Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de4",
-      "name": "Tengfei Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de5",
-      "name": "Yuqi Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de6",
-      "name": "Xuanyu Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de7",
-      "name": "Yizhuo Jia",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de8",
-      "name": "Jingyun Hua",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582de9",
-      "name": "Shixuan Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582dea",
-      "name": "Xianghua Ying",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582deb",
-      "name": "Haotian Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582dec",
-      "name": "Yuanxing Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582ded",
-      "name": "Pengfei Wan",
-      "hidden": false
-     },
-     {
-      "_id": "6adada5455db1e682e582dee",
-      "name": "Wenjing Yang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Verus-Insight: Towards Explainable Artifact Detection in AI-Generated Videos",
-    "submittedOnDailyBy": {
-     "_id": "673c7319d11b1c2e246ead9c",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-     "isPro": false,
-     "fullname": "Yang Shi",
-     "user": "DogNeverSleep",
-     "type": "user",
-     "name": "DogNeverSleep"
-    },
-    "summary": "Recent advances in video generation have made synthetic videos increasingly realistic, placing greater demands on reliable AI-generated video detection. Existing artifact-based detectors typically identify generation artifacts as evidence for source prediction, yet they may either fail to recognize subtle artifacts or reach the correct source decision without faithfully identifying the evidence underlying it. In this work, we systematically investigate how to design and train effective artifact detectors and formulate artifact detection as a structured process comprising three complementary capabilities: Inspection Planning, which determines what should be examined; Evidence Verification, which verifies whether the inspected content exhibits genuine generation artifacts; and Evidence Aggregation, which integrates the verified evidence into the final source decision. Building on this formulation, we introduce Verus-Insight, trained with human-anchored full-process supervision and progressive capability training to strengthen both fine-grained artifact detection and video-level detection. We further introduce Verus-Bench, a benchmark with fine-grained human annotations of perceptible artifacts for evaluating artifact detection. Extensive experiments across diverse benchmarks demonstrate that Verus-Insight achieves strong performance in both fine-grained artifact analysis and AI-generated video detection, with substantial gains in recovering human-perceived artifacts. Further analyses reveal that the three capabilities are complementary yet distinct, and that Verus-Insight more reliably converts relevant inspection targets into supported artifact evidence without increasing spurious artifact claims.",
-    "upvotes": 18,
-    "discussionId": "6adada5455db1e682e582def",
-    "projectPage": "https://verus-team.github.io/Verus-Insight-Preview/",
-    "githubRepo": "https://github.com/zhangzhuoran997997/Verus-Insight",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Verus-Insight improves AI-generated video detection by training artifact detectors through structured inspection planning, evidence verification, and evidence aggregation with human-anchored supervision.",
-    "ai_keywords": [
-     "artifact detection",
-     "Inspection Planning",
-     "Evidence Verification",
-     "Evidence Aggregation",
-     "Verus-Insight",
-     "Verus-Bench",
-     "AI-generated video detection"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 5
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "Verus-Insight: Towards Explainable Artifact Detection in AI-Generated Videos",
-   "summary": "Recent advances in video generation have made synthetic videos increasingly realistic, placing greater demands on reliable AI-generated video detection. Existing artifact-based detectors typically identify generation artifacts as evidence for source prediction, yet they may either fail to recognize subtle artifacts or reach the correct source decision without faithfully identifying the evidence underlying it. In this work, we systematically investigate how to design and train effective artifact detectors and formulate artifact detection as a structured process comprising three complementary capabilities: Inspection Planning, which determines what should be examined; Evidence Verification, which verifies whether the inspected content exhibits genuine generation artifacts; and Evidence Aggregation, which integrates the verified evidence into the final source decision. Building on this formulation, we introduce Verus-Insight, trained with human-anchored full-process supervision and progressive capability training to strengthen both fine-grained artifact detection and video-level detection. We further introduce Verus-Bench, a benchmark with fine-grained human annotations of perceptible artifacts for evaluating artifact detection. Extensive experiments across diverse benchmarks demonstrate that Verus-Insight achieves strong performance in both fine-grained artifact analysis and AI-generated video detection, with substantial gains in recovering human-perceived artifacts. Further analyses reveal that the three capabilities are complementary yet distinct, and that Verus-Insight more reliably converts relevant inspection targets into supported artifact evidence without increasing spurious artifact claims.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30866.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "673c7319d11b1c2e246ead9c",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-    "fullname": "Yang Shi",
-    "name": "DogNeverSleep",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 17,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.31305",
-    "authors": [
-     {
-      "_id": "6adad78e55db1e682e582db0",
-      "name": "Hongcan Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db1",
-      "name": "Yian Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db2",
-      "name": "Feng Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db3",
-      "name": "Shen Nie",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db4",
-      "name": "Guoqiang Wei",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db5",
-      "name": "Yan Zeng",
-      "hidden": false
-     },
-     {
-      "_id": "6adad78e55db1e682e582db6",
-      "name": "Hengshuang Zhao",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/69e9fb295e900af460ceda90/Ypr5CpKcWgyVznW3Fv9yD.mp4"
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Cola2: Co-Adaptive Hierarchical Language Modeling with Continuous Semantic Compression and Balanced Discrete Generation",
-    "submittedOnDailyBy": {
-     "_id": "69e9fb295e900af460ceda90",
-     "avatarUrl": "/avatars/8aebe2ed4286622eb106d2be384f583f.svg",
-     "isPro": false,
-     "fullname": "Hongcan Guo",
-     "user": "HongcanGuo04",
-     "type": "user",
-     "name": "HongcanGuo04"
-    },
-    "summary": "Hierarchical language generation separates continuous semantic modeling from discrete text realization, but its effectiveness depends on what the latent space compresses and how the discrete generator uses it. We propose Cola2, a framework that jointly studies continuous semantic compression, the balance between reconstruction and generation, and continuous-discrete co-adaptation. Cola2 dynamically segments text into semantic spans, controls the compression rate through auxiliary-loss-free negative feedback, and combines reconstruction and generation supervision to learn compact, predictive latent representations. A block-causal masked diffusion decoder is trained with clean, noisy, and dropped latent conditions, while classifier-free guidance adjusts the balance between semantic reconstruction and autonomous generation. Token-prediction gradients update the encoder through the latents, whereas Flow Matching prior learning is decoupled from representation learning by stop-gradient. During inference, generated text is re-encoded under a fixed span layout to keep the latent history consistent with the actual text context. Experiments on five downstream tasks with about 210 billion training tokens validate the core designs and show competitive, unsaturated scaling. With 346.03 billion source tokens, an unconverged checkpoint reaches a 60.10 average across eight tasks and surpasses Llama-3-8B on HellaSwag and StoryCloze despite its reported pretraining budget being over 43 times larger. These results demonstrate the potential of continuous-latent hierarchical language generation.",
-    "upvotes": 21,
-    "discussionId": "6adad78f55db1e682e582db7",
-    "projectPage": "https://hongcanguo.github.io/Cola2",
-    "ai_summary": "Cola2 improves hierarchical language generation by jointly optimizing continuous semantic compression, reconstruction-generation balance, and encoder-decoder co-adaptation via dynamic span segmentation, masked diffusion decoding, and flow-matching priors.",
-    "ai_keywords": [
-     "hierarchical language generation",
-     "continuous semantic compression",
-     "latent space",
-     "block-causal masked diffusion decoder",
-     "classifier-free guidance",
-     "token-prediction gradients",
-     "Flow Matching",
-     "continuous-latent hierarchical language generation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "67d1140985ea0644e2f14b99",
-     "name": "ByteDance-Seed",
-     "fullname": "ByteDance Seed",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6535c9e88bde2fae19b6fb25/flkDUqd_YEuFsjeNET3r-.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "Cola2: Co-Adaptive Hierarchical Language Modeling with Continuous Semantic Compression and Balanced Discrete Generation",
-   "summary": "Hierarchical language generation separates continuous semantic modeling from discrete text realization, but its effectiveness depends on what the latent space compresses and how the discrete generator uses it. We propose Cola2, a framework that jointly studies continuous semantic compression, the balance between reconstruction and generation, and continuous-discrete co-adaptation. Cola2 dynamically segments text into semantic spans, controls the compression rate through auxiliary-loss-free negative feedback, and combines reconstruction and generation supervision to learn compact, predictive latent representations. A block-causal masked diffusion decoder is trained with clean, noisy, and dropped latent conditions, while classifier-free guidance adjusts the balance between semantic reconstruction and autonomous generation. Token-prediction gradients update the encoder through the latents, whereas Flow Matching prior learning is decoupled from representation learning by stop-gradient. During inference, generated text is re-encoded under a fixed span layout to keep the latent history consistent with the actual text context. Experiments on five downstream tasks with about 210 billion training tokens validate the core designs and show competitive, unsaturated scaling. With 346.03 billion source tokens, an unconverged checkpoint reaches a 60.10 average across eight tasks and surpasses Llama-3-8B on HellaSwag and StoryCloze despite its reported pretraining budget being over 43 times larger. These results demonstrate the potential of continuous-latent hierarchical language generation.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/69e9fb295e900af460ceda90/Ypr5CpKcWgyVznW3Fv9yD.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31305.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "69e9fb295e900af460ceda90",
-    "avatarUrl": "/avatars/8aebe2ed4286622eb106d2be384f583f.svg",
-    "fullname": "Hongcan Guo",
-    "name": "HongcanGuo04",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "67d1140985ea0644e2f14b99",
-    "name": "ByteDance-Seed",
-    "fullname": "ByteDance Seed",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6535c9e88bde2fae19b6fb25/flkDUqd_YEuFsjeNET3r-.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.31494",
-    "authors": [
-     {
-      "_id": "6adad82555db1e682e582dba",
-      "user": {
-       "_id": "67a99ec47b754f038d110926",
-       "avatarUrl": "/avatars/e1ff318a42ccb75b094bbe7dae0cabec.svg",
-       "isPro": false,
-       "fullname": "Advait Gupta",
-       "user": "advaitgupta",
-       "type": "user",
-       "name": "advaitgupta"
-      },
-      "name": "Advait Gupta",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.495Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adad82555db1e682e582dbb",
-      "name": "Sachin Konan",
-      "hidden": false
-     },
-     {
-      "_id": "6adad82555db1e682e582dbc",
-      "name": "Tom Yin",
-      "hidden": false
-     },
-     {
-      "_id": "6adad82555db1e682e582dbd",
-      "name": "Gabriel Sarch",
-      "hidden": false
-     },
-     {
-      "_id": "6adad82555db1e682e582dbe",
-      "name": "Zhuang Liu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
-    "submittedOnDailyBy": {
-     "_id": "67a99ec47b754f038d110926",
-     "avatarUrl": "/avatars/e1ff318a42ccb75b094bbe7dae0cabec.svg",
-     "isPro": false,
-     "fullname": "Advait Gupta",
-     "user": "advaitgupta",
-     "type": "user",
-     "name": "advaitgupta"
-    },
-    "summary": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23 source datasets and adapting them for reliable offline evaluation. The resulting benchmark preserves realistic scenarios from interactive environments across diverse domains, and its model rankings track those from corresponding online evaluations. Across the 22 evaluated models, the best achieves only 58.5% accuracy. Our cross-domain analysis shows that errors are driven primarily by failures to ground and maintain accurate representations of the current and evolving visual state, including localizing relevant UI elements, interpreting motion, tracking state changes over time, and inferring 3D spatial relationships, rather than by task misinterpretation or downstream logical reasoning.",
-    "upvotes": 18,
-    "discussionId": "6adad82655db1e682e582dbf",
-    "projectPage": "https://zlab-princeton.github.io/AgentVQA",
-    "githubRepo": "https://github.com/zlab-princeton/AgentVQA",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "AgentVQA is an offline benchmark assessing vision-language models on realistic agentic tasks across web, robotics, video, games, and spatial planning, revealing that visual grounding and state tracking errors are the primary failure modes.",
-    "ai_keywords": [
-     "vision-language models",
-     "agentic contexts",
-     "offline VQA benchmarks",
-     "AgentVQA",
-     "web agents",
-     "robotics",
-     "egocentric videos",
-     "spatial planning",
-     "visual grounding",
-     "state tracking"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 8,
-    "organization": {
-     "_id": "693f73b93a874cda4c2c2a8d",
-     "name": "zlab-princeton",
-     "fullname": "zlab-princeton",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/656a9b9f9496f21be8271f1b/k8zoWOhJOIijkX6bh7O0w.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
-   "summary": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23 source datasets and adapting them for reliable offline evaluation. The resulting benchmark preserves realistic scenarios from interactive environments across diverse domains, and its model rankings track those from corresponding online evaluations. Across the 22 evaluated models, the best achieves only 58.5% accuracy. Our cross-domain analysis shows that errors are driven primarily by failures to ground and maintain accurate representations of the current and evolving visual state, including localizing relevant UI elements, interpreting motion, tracking state changes over time, and inferring 3D spatial relationships, rather than by task misinterpretation or downstream logical reasoning.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31494.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "67a99ec47b754f038d110926",
-    "avatarUrl": "/avatars/e1ff318a42ccb75b094bbe7dae0cabec.svg",
-    "fullname": "Advait Gupta",
-    "name": "advaitgupta",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "693f73b93a874cda4c2c2a8d",
-    "name": "zlab-princeton",
-    "fullname": "zlab-princeton",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/656a9b9f9496f21be8271f1b/k8zoWOhJOIijkX6bh7O0w.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.25100",
-    "authors": [
-     {
-      "_id": "6adad76855db1e682e582da5",
-      "user": {
-       "_id": "6609a53bd81d611249ef5266",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6609a53bd81d611249ef5266/h31hdQFl-jhRnO8R6Gr4C.png",
-       "isPro": false,
-       "fullname": "Rubin Wei",
-       "user": "Rubin-Wei",
-       "type": "user",
-       "name": "Rubin-Wei"
-      },
-      "name": "Rubin Wei",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-23T08:45:05.488Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582da6",
-      "name": "Siyuan Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582da7",
-      "name": "Hao Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582da8",
-      "name": "Yuliang Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582da9",
-      "name": "Xiang Shi",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582daa",
-      "name": "Jiarui Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582dab",
-      "name": "Junming Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adad76855db1e682e582dac",
-      "user": {
-       "_id": "68d21f8ca090df93e72c09a0",
-       "avatarUrl": "/avatars/3aac21cea09bf30230bab4d52dfc0582.svg",
-       "isPro": false,
-       "fullname": "Zhouhan Lin",
-       "user": "ZhouhanLin",
-       "type": "user",
-       "name": "ZhouhanLin"
-      },
-      "name": "Zhouhan Lin",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-25T16:45:04.690Z",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-18T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models",
-    "submittedOnDailyBy": {
-     "_id": "6609a53bd81d611249ef5266",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6609a53bd81d611249ef5266/h31hdQFl-jhRnO8R6Gr4C.png",
-     "isPro": false,
-     "fullname": "Rubin Wei",
-     "user": "Rubin-Wei",
-     "type": "user",
-     "name": "Rubin-Wei"
-    },
-    "summary": "Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory avoids online retrieval, but constructing its training data requires extensive offline search, and output-level interpolation provides only shallow fusion. We introduce Deep Fusion Memory (DFM), a parametric memory architecture that reduces this construction workload and incorporates learned memory into intermediate hidden states. A causal memory predictor learns to generate memory from the preceding context, using retrieved chunk embeddings from the corpus as supervision. The predicted memory is shared across tokens within each chunk and fused into their hidden states through gated cross-attention. Memory prediction and fusion are trained end to end with the backbone frozen, and inference requires no explicit retrieval. Compared with existing parametric memory approaches, which often construct token-level memory targets, DFM requires 32times fewer retrieval queries and 2048times fewer retrieved items to construct its training data. Across six QA tasks, DFM performs better over the strongest baseline by 12.71% on Mistral-7B-v0.3 and 11.19% on Qwen3-8B-Base. Beyond QA, domain adaptation yields average gains of 6.51 and 4.38 points over Qwen3-4B-Base and Qwen3-8B-Base, respectively.",
-    "upvotes": 50,
-    "discussionId": "6adad76855db1e682e582dad",
-    "ai_summary": "Deep Fusion Memory integrates predicted parametric memory into intermediate hidden states via gated cross-attention, reducing retrieval overhead and improving knowledge-intensive tasks without online retrieval.",
-    "ai_keywords": [
-     "Deep Fusion Memory",
-     "parametric memory",
-     "causal memory predictor",
-     "chunk embeddings",
-     "gated cross-attention",
-     "hidden states",
-     "end-to-end training"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-17T20:00:00.000Z",
-   "title": "Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models",
-   "summary": "Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory avoids online retrieval, but constructing its training data requires extensive offline search, and output-level interpolation provides only shallow fusion. We introduce Deep Fusion Memory (DFM), a parametric memory architecture that reduces this construction workload and incorporates learned memory into intermediate hidden states. A causal memory predictor learns to generate memory from the preceding context, using retrieved chunk embeddings from the corpus as supervision. The predicted memory is shared across tokens within each chunk and fused into their hidden states through gated cross-attention. Memory prediction and fusion are trained end to end with the backbone frozen, and inference requires no explicit retrieval. Compared with existing parametric memory approaches, which often construct token-level memory targets, DFM requires 32times fewer retrieval queries and 2048times fewer retrieved items to construct its training data. Across six QA tasks, DFM performs better over the strongest baseline by 12.71% on Mistral-7B-v0.3 and 11.19% on Qwen3-8B-Base. Beyond QA, domain adaptation yields average gains of 6.51 and 4.38 points over Qwen3-4B-Base and Qwen3-8B-Base, respectively.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.25100.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6609a53bd81d611249ef5266",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6609a53bd81d611249ef5266/h31hdQFl-jhRnO8R6Gr4C.png",
-    "fullname": "Rubin Wei",
-    "name": "Rubin-Wei",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 7,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30882",
-    "authors": [
-     {
-      "_id": "6adacae755db1e682e582d03",
-      "name": "Zhizhuo Kou",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d04",
-      "name": "Sizai Hou",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d05",
-      "name": "Long Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d06",
-      "name": "Jian Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d07",
-      "name": "Junyu Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d08",
-      "name": "Jingshu Peng",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d09",
-      "name": "Wenkai Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d0a",
-      "name": "Sirui Han",
-      "hidden": false
-     },
-     {
-      "_id": "6adacae755db1e682e582d0b",
-      "name": "Yike Guo",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T08:03:07.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models",
-    "submittedOnDailyBy": {
-     "_id": "65a9c8652bf3e0cbbfcab2c8",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
-     "isPro": false,
-     "fullname": "Alan KOU",
-     "user": "alan1027",
-     "type": "user",
-     "name": "alan1027"
-    },
-    "summary": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning traces installs it in most models whose base lacks it. Where the base already uses it, both released RL-Zero recipes (OLMo-3, MiMo) multiply it, whereas KL-free GRPO from the same base does not; OLMo-3's recipe wears down its form and makes it a more sensitive but more liberal alarm; RL after supervised fine-tuning barely changes it, and our GRPO recipe erases a marker seeded by fine-tuning. Finally, we show that marker frequency alone does not indicate RL-induced reasoning and caution against LLM-as-a-judge revision metrics, as automated judges can reverse human-labelled trends.",
-    "upvotes": 15,
-    "discussionId": "6adacae755db1e682e582d0c",
-    "githubRepo": "https://github.com/kouzhizhuo/wait-provenance",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Reinforcement learning improves reasoning accuracy without requiring a specific wait marker, which originates from training data rather than RL, and automated evaluation metrics can misrepresent reasoning trends.",
-    "ai_keywords": [
-     "reinforcement learning",
-     "reasoning models",
-     "MATH-500",
-     "OLMo-3",
-     "RL-Zero",
-     "MiMo",
-     "GRPO",
-     "KL-free",
-     "supervised fine-tuning",
-     "LLM-as-a-judge"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
-    "organization": {
-     "_id": "5f83c275f0801648bf88454a",
-     "name": "huawei-noah",
-     "fullname": "HUAWEI Noah's Ark Lab",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1602470452594-5f83c19ff0801648bf884549.png"
-    }
-   },
-   "publishedAt": "2026-10-22T04:03:07.000Z",
-   "title": "Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models",
-   "summary": "Reinforcement learning (RL) is credited with teaching reasoning models to write {wait} before reconsidering a step, yet large RL accuracy gains do not require the word. This view can confuse what RL discovers with what a model inherits from its training data. We trace the word through open models' training histories, reading it with label-free indices of frequency, position, form and usage and an injected-error test, all computed from sampled outputs. We find that zero-RL almost never coins the marker: on bases that lack the word, RL raises MATH-500 accuracy substantially while {wait} stays near absent. It arrives with training data: mid-training in OLMo-3, and fine-tuning on reasoning traces installs it in most models whose base lacks it. Where the base already uses it, both released RL-Zero recipes (OLMo-3, MiMo) multiply it, whereas KL-free GRPO from the same base does not; OLMo-3's recipe wears down its form and makes it a more sensitive but more liberal alarm; RL after supervised fine-tuning barely changes it, and our GRPO recipe erases a marker seeded by fine-tuning. Finally, we show that marker frequency alone does not indicate RL-induced reasoning and caution against LLM-as-a-judge revision metrics, as automated judges can reverse human-labelled trends.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30882.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "65a9c8652bf3e0cbbfcab2c8",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65a9c8652bf3e0cbbfcab2c8/7g2qUpW_vDSb_oAddl7Fv.jpeg",
-    "fullname": "Alan KOU",
-    "name": "alan1027",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "5f83c275f0801648bf88454a",
-    "name": "huawei-noah",
-    "fullname": "HUAWEI Noah's Ark Lab",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1602470452594-5f83c19ff0801648bf884549.png"
    },
    "isAuthorParticipating": false
   }
