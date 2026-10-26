@@ -1,8 +1,75 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-26T21:30:58.216Z",
+ "fetchedAt": "2026-10-26T23:46:04.240Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.25118",
+    "authors": [
+     {
+      "_id": "6adfd43aa5efa215400a77b7",
+      "name": "Eliron Rahimi",
+      "hidden": false
+     },
+     {
+      "_id": "6adfd43aa5efa215400a77b8",
+      "name": "Margarita Osadchy",
+      "hidden": false
+     },
+     {
+      "_id": "6adfd43aa5efa215400a77b9",
+      "name": "Orr Dunkelman",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-18T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
+    "title": "How Much Feedback Is Needed to Break Template Protection? The Geometric Vulnerability of Biometric Authentication",
+    "submittedOnDailyBy": {
+     "_id": "67b9e1ba9734000097f005e5",
+     "avatarUrl": "/avatars/5c9969abe1ae7818a30c3936e9c662e8.svg",
+     "isPro": false,
+     "fullname": "Eliron Rahimi",
+     "user": "ElironRahimi",
+     "type": "user",
+     "name": "ElironRahimi"
+    },
+    "summary": "Biometric authentication systems increasingly use privacy-preserving mechanisms to protect sensitive templates. However, the authentication interface itself may still leak information that enables reconstruction attacks. Prior attacks exploit released similarity scores, whereas more advanced systems reveal only the binary accept/reject decision. This binary feedback provides substantially less information, making template reconstruction far more challenging.\n  In this work, we introduce query-efficient reconstruction attacks under extremely limited feedback, addressing two key limitations of prior attacks. First, we introduce the first attack that reconstructs protected biometric templates using only authentication success/failure feedback by exploiting the geometric constraints of biometric authentication. Second, we introduce distribution-aware query-efficient reconstruction methods for score-releasing systems, achieving a more realistic threat model by reducing the number of required queries by a factor of 5times compared to recent prior score-based attacks. Finally, we combine these two insights by incorporating a pretrained facial diffusion prior into our geometric binary attack, reducing the number of required queries by a factor of 5times.\n  Our findings reveal a fundamental security limitation of biometric authentication: independently of the template protection mechanism, the authentication process itself exposes geometric information that can enable perfect template reconstruction up to numerical precision. Moreover, the distribution of biometric templates can be leveraged to make significantly more effective reconstruction attacks.",
+    "upvotes": 1,
+    "discussionId": "6adfd43aa5efa215400a77ba",
+    "githubRepo": "https://github.com/ElironRahimi/geometric_biometric_reconstruction",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Biometric authentication leaks geometric information enabling precise template reconstruction from binary feedback, and diffusion priors reduce query costs significantly.",
+    "ai_keywords": [
+     "pretrained facial diffusion prior",
+     "diffusion prior",
+     "geometric constraints",
+     "template reconstruction"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-17T20:00:00.000Z",
+   "title": "How Much Feedback Is Needed to Break Template Protection? The Geometric Vulnerability of Biometric Authentication",
+   "summary": "Biometric authentication systems increasingly use privacy-preserving mechanisms to protect sensitive templates. However, the authentication interface itself may still leak information that enables reconstruction attacks. Prior attacks exploit released similarity scores, whereas more advanced systems reveal only the binary accept/reject decision. This binary feedback provides substantially less information, making template reconstruction far more challenging.\n  In this work, we introduce query-efficient reconstruction attacks under extremely limited feedback, addressing two key limitations of prior attacks. First, we introduce the first attack that reconstructs protected biometric templates using only authentication success/failure feedback by exploiting the geometric constraints of biometric authentication. Second, we introduce distribution-aware query-efficient reconstruction methods for score-releasing systems, achieving a more realistic threat model by reducing the number of required queries by a factor of 5times compared to recent prior score-based attacks. Finally, we combine these two insights by incorporating a pretrained facial diffusion prior into our geometric binary attack, reducing the number of required queries by a factor of 5times.\n  Our findings reveal a fundamental security limitation of biometric authentication: independently of the template protection mechanism, the authentication process itself exposes geometric information that can enable perfect template reconstruction up to numerical precision. Moreover, the distribution of biometric templates can be leveraged to make significantly more effective reconstruction attacks.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.25118.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67b9e1ba9734000097f005e5",
+    "avatarUrl": "/avatars/5c9969abe1ae7818a30c3936e9c662e8.svg",
+    "fullname": "Eliron Rahimi",
+    "name": "ElironRahimi",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.21109",
@@ -59,7 +126,7 @@
      "name": "shirleyah"
     },
     "summary": "When humans collaborate with AI agents on long-horizon tasks, what happens to the agents' contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent's ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants' collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from the unfolding workflow without constant expert feedback. Our benchmark operationalizes both: (1) forecasting how professionals use agent contributions at diverse workflows, and (2) verifying their judgments of collaboration satisfaction and output quality. Findings show that frontier models, both agentic and non-agentic, overestimate collaboration with experts and struggle to distinguish between high- and low-quality collaboration. Longer workflow context does not consistently improve these predictions. As frontier agents cannot yet understand long-horizon collaboration with experts, we position Kolab as a valuable dataset for studying human-agent collaboration grounded in real professional workflows.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6adfa993a5efa215400a7772",
     "projectPage": "https://minnesotanlp.github.io/kolab/",
     "githubRepo": "https://github.com/minnesotanlp/kolab",
@@ -911,7 +978,7 @@
      "name": "jytan12"
     },
     "summary": "Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version. Starting from the LaTeX source, PaperFormalizer transcribes the paper into a dependency graph of statements, audits each statement in natural language for faithfulness, ambiguity and correctness, and then formalizes and proves the statements in Lean against Mathlib, optional domain libraries and the author's personal toolkit. Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed. The pipeline therefore stops and asks the author whenever a statement admits more than one reading, presents every repair, in natural language and TeX symbols, as a proposal that the author can accept, decline or redirect, and leaves to the author every decision that could potentially change what the paper claims. The output is an annotated and revised version of the paper, a report of the changes, and Lean code in which each declaration is linked to the statement it formalizes. The author's toolkit grows as more papers are formalized, and authors can share their verified papers so that researchers who build on them can reuse their Lean code. By making verified papers practical to produce, PaperFormalizer aims to make research that rests on mathematical proofs more robust. PaperFormalizer runs inside a coding agent (Claude Code or Codex) and is available at https://github.com/Jiyuan-Tan/PaperFormalizer. Papers with Lean code shared by users are available at https://paperformalizer.org.",
-    "upvotes": 3,
+    "upvotes": 5,
     "discussionId": "6adf735e2c062a8c1911e1ba",
     "organization": {
      "_id": "672c672dcf09d152f4da04c4",
@@ -1375,7 +1442,7 @@
      "name": "ChocoWu"
     },
     "summary": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "upvotes": 220,
+    "upvotes": 221,
     "discussionId": "6adac4aa55db1e682e582cc9",
     "projectPage": "https://vid-gen.github.io/video-world-model-survey/",
     "githubRepo": "https://github.com/vid-gen/awesome-video-world-model",
@@ -2259,6 +2326,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6922c5cae48ed72eeae574a0/a6Ofyjgp2ktMXp8oiBbca.mp4"
+    ],
     "publishedAt": "2026-10-20T00:00:00.000Z",
     "submittedOnDailyAt": "2026-10-26T00:00:00.000Z",
     "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
@@ -2299,6 +2369,9 @@
    "publishedAt": "2026-10-19T20:00:00.000Z",
    "title": "DuoLM: Fast and Effective Personalized Recommendation with Language Models",
    "summary": "Language models can make personalized recommendations from rich item content, user history, and feedback. However, evaluating many candidates with full-text inputs incurs substantial online computation and limits serving throughput. We introduce DuoLM, a framework for fast and effective personalized recommendation that integrates a compact recommendation model with an efficient serving runtime. An encoder LLM learns compact item representations for offline reuse, while a personalized ranker LLM combines them with user history and feedback for recommendation. We train both models end to end with recommendation supervision and teacher distillation. The runtime further accelerates inference through virtual token IDs for embedding access, shared history computation, and CUDA Graph replay. Benchmark results show that our framework achieves recommendation quality comparable to that of the expert teacher model. On a single H100, it delivers approximately 26,400 candidate scores per second, about 60times the throughput of the teacher served with vLLM and automatic prefix caching.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6922c5cae48ed72eeae574a0/a6Ofyjgp2ktMXp8oiBbca.mp4"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24481.png",
    "numComments": 1,
    "submittedBy": {
@@ -2520,7 +2593,7 @@
      "name": "leonsick"
     },
     "summary": "On-policy self-distillation enables post-training foundation models without relying on stronger external teachers. However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals. In this work, we reformulate on-policy self-distillation as a self-training framework, driven by self-generated question-answer pairs and privileged reasoning demonstrations. We push supervision to the limit: guided solely by coarse, high-level topic descriptions, the model synthesizes its own curriculum of queries and privileged reasoning traces without access to any human-curated prompts or answers. We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on. We demonstrate the generality of this framework across text and multimodal domains, achieving consistent self-improvement on standard language benchmarks and Visual Question Answering. Our findings demonstrate that foundation models possess rich latent capabilities that can be amplified without external task supervision or curated problem distributions.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6adeff51121a70fc6834642b",
     "ai_summary": "Foundation models can self-improve across text and vision tasks by generating synthetic questions and reasoning traces guided only by high-level topics, without external supervision.",
     "ai_keywords": [
@@ -2889,7 +2962,7 @@
      "name": "SII-xrliu"
     },
     "summary": "The rapid growth of microdramas has increased demand for high-quality script production. Long-form microdrama script generation with LLMs requires both diverse plot progression and long-range narrative coherence. Our observations reveal that candidate continuations increasingly concentrate on fewer narrative mechanisms as generation progresses, while conventional retrieval may reinforce trope reuse and overlook historical information essential to future plots. To address these challenges, we propose DraMaze, a multi-agent pipeline that explores diverse causal paths through trope memory-guided evolutionary tree search and mutation. It further constructs a Backward Narrative Dependency Tree to organize, retain, and retrieve historical memories based on future narrative goals. We also introduce MiDramaBench, a bilingual benchmark for evaluating script logic and creative quality across different script lengths, together with causal-pattern metrics for narrative repetition and diversity. Experiments show consistent improvements across three backbone LLMs. For 60-episode scripts of up to 60k words, DraMaze reduces causal-pattern repetition by 32.1% and achieves a Logic score of 82.5, outperforming the best-performing baseline by 8.5 points.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6adef095121a70fc683463b3",
     "ai_summary": "DraMaze improves long-form microdrama script generation by using evolutionary tree search guided by trope memory and backward narrative dependency trees to enhance plot diversity and coherence.",
     "ai_keywords": [
@@ -2962,7 +3035,7 @@
      "name": "ammarali32"
     },
     "summary": "We introduce TWIG (Tree-structured Weights with Inherited Gates), a representation in which every weight of a neural network is the end of a path of small discrete decisions: a sign, a shift by a power of two, a zero gate, an index into a shared table. Weights that belong together share the upper part of their paths, and each decision is inherited by every weight below it, so it is stored once and applied once. This simple change has three consequences. Any trained network can be written as a TWIG, and when the decisions are powers of two its weight layers become circuits made almost entirely of wires and adders, suited to chips whose weights are fixed at fabrication. Pruning, quantization, low-rank factorization, codebooks and weight sharing become edits of one object, so a single optimizer can choose among all of them for a whole network. And choosing the decisions is the ground-state problem of a higher-order Boltzmann machine whose interactions follow the paths of the tree, the problem class that annealers and quantum optimizers are built to solve. Today these questions are handled apart: each compression method brings its own format and solver, a circuit with fixed weights needs a dedicated constant multiplier for every weight, and discrete solvers reach only narrow subproblems such as rounding. Weight formats have long been moving toward shared decisions, through group scales, shared exponents, microexponents and sparse weights; TWIG takes this trend to its end, and every common format is a shallow TWIG at no extra cost. On five weight matrices of a large language model, a flat tree whose signed power-of-two terms are chosen per weight for circuit cost, with no group scales, needs 9--15\\% fewer additions than GPTQ at equal layer error at 3- and 4-bit accuracy on typical matrices, and 20--55\\% fewer on matrices with strong outliers.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6adedc10121a70fc68346388",
     "githubRepo": "https://github.com/ammarali32/StateTree-Representation",
     "githubRepoAddedBy": "user",
@@ -5277,7 +5350,7 @@
      "name": "mohsenfayyaz"
     },
     "summary": "Diffusion language models can write several tokens in one forward pass, and they decide during generation how many passes to spend. Two outputs of the same token length can therefore vary a lot in cost. To understand the underlying factors of this cost variation, we analyze two diffusion models across 10 tasks. We find that the number of forward passes per token depends heavily on the task. Text copied or lightly edited from the input is cheap, while open-ended writing is costly. In DiffusionGemma, generating a token for story writing requires more than three times as many forward passes as for grammar correction. Two output properties explain much of this gap: how much of it is new relative to the input, and how rare its words are within the task. The same holds within a single response when thinking is involved. The final answer is cheap when it repeats the model's reasoning trace and costly when it adds something new. In multilingual generation, we find that highly tokenized languages also require more passes per token, adding to the cost they already pay with more tokens. Finally, cost tracks correctness: on the same math problem, wrong answers take more passes per token than correct ones, and weighting candidate answers by decoding speed beats majority voting by up to 4.2 points at no extra cost. Taken together, our results show that diffusion's computational advantage depends on how much of the output is already determined, while its decoding effort offers a practical signal for making inference more efficient and reliable.",
-    "upvotes": 17,
+    "upvotes": 19,
     "discussionId": "6adbe277121a70fc6834592c",
     "ai_summary": "Diffusion language models spend more computation on novel, rare, or incorrect outputs, and decoding speed can improve inference efficiency and reliability.",
     "ai_keywords": [
@@ -5723,7 +5796,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6169a814cc21d3c0aa086ad4/wLprm7izngXDyhilWGSU0.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30418.png",
-   "numComments": 7,
+   "numComments": 8,
    "submittedBy": {
     "_id": "6169a814cc21d3c0aa086ad4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6169a814cc21d3c0aa086ad4/XUzE5BVDymXiLVy0Ychkh.jpeg",
@@ -5744,95 +5817,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66a403728069e3c30e0d8524/tkYCfeIJfF1FxtYiRZ8bf.png"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.28950",
-    "authors": [
-     {
-      "_id": "6adb83ea121a70fc68345820",
-      "name": "Jonas Eschmann",
-      "hidden": false
-     },
-     {
-      "_id": "6adb83ea121a70fc68345821",
-      "name": "Giuseppe Loianno",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/64a011bd343399711c7057ad/1j--xS1ZtNNLS601akop_.mp4"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-23T00:00:00.000Z",
-    "title": "HyperDrone: Simulation-to-Reality Transfer at Millions of Frames per Second",
-    "submittedOnDailyBy": {
-     "_id": "64a011bd343399711c7057ad",
-     "avatarUrl": "/avatars/ba09009f6ae9208ad084bf13135e85e2.svg",
-     "isPro": false,
-     "fullname": "Jonas Eschmann",
-     "user": "jonas-eschmann",
-     "type": "user",
-     "name": "jonas-eschmann"
-    },
-    "summary": "We present HyperDrone, an extremely fast quadrotor simulator focused on high-performance batch rendering that is more than 20x faster than existing state-of-the-art batch quadrotor simulators. HyperDrone combines highly optimized multirotor dynamics with HyperLux, a new ray-tracing engine that supports Nvidia OptiX, Vulkan, Apple Metal and WebGPU backends that takes full advantage of modern ray-tracing hardware, capable of running both components entirely on the GPU. HyperLux renders RGB, depth, semantic/instance segmentation, surface normals and optical flow observations at configurable levels of fidelity, including reflections, realistic lighting, motion blur, anti-aliasing, and Physically Based Rendering (PBR). Even in the highest-fidelity settings, HyperLux achieves millions of Frames Per Second (FPS) on consumer-grade GPUs while rendering realistic 3D scenes. We demonstrate the merits of HyperDrone by training a vision-based yaw-control policy purely in simulation and transferring it to a real small-scale quadrotor (Crazyflie) with a camera, running completely onboard.",
-    "upvotes": 10,
-    "discussionId": "6adb83eb121a70fc68345822",
-    "ai_summary": "HyperDrone is a GPU-accelerated quadrotor simulator using a ray-tracing engine to render high-fidelity observations at high speed, enabling vision-based policy training and real-world transfer.",
-    "ai_keywords": [
-     "HyperDrone",
-     "HyperLux",
-     "ray-tracing engine",
-     "OptiX",
-     "Vulkan",
-     "Metal",
-     "WebGPU",
-     "multirotor dynamics",
-     "RGB",
-     "depth",
-     "semantic segmentation",
-     "instance segmentation",
-     "surface normals",
-     "optical flow",
-     "PBR",
-     "vision-based yaw-control"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "681e2a1307bdf1124edc827d",
-     "name": "rl-tools",
-     "fullname": "RLtools",
-     "avatar": "https://www.gravatar.com/avatar/826f52a2201f2e45b89ed295ce5145d8?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "HyperDrone: Simulation-to-Reality Transfer at Millions of Frames per Second",
-   "summary": "We present HyperDrone, an extremely fast quadrotor simulator focused on high-performance batch rendering that is more than 20x faster than existing state-of-the-art batch quadrotor simulators. HyperDrone combines highly optimized multirotor dynamics with HyperLux, a new ray-tracing engine that supports Nvidia OptiX, Vulkan, Apple Metal and WebGPU backends that takes full advantage of modern ray-tracing hardware, capable of running both components entirely on the GPU. HyperLux renders RGB, depth, semantic/instance segmentation, surface normals and optical flow observations at configurable levels of fidelity, including reflections, realistic lighting, motion blur, anti-aliasing, and Physically Based Rendering (PBR). Even in the highest-fidelity settings, HyperLux achieves millions of Frames Per Second (FPS) on consumer-grade GPUs while rendering realistic 3D scenes. We demonstrate the merits of HyperDrone by training a vision-based yaw-control policy purely in simulation and transferring it to a real small-scale quadrotor (Crazyflie) with a camera, running completely onboard.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/64a011bd343399711c7057ad/1j--xS1ZtNNLS601akop_.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.28950.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "64a011bd343399711c7057ad",
-    "avatarUrl": "/avatars/ba09009f6ae9208ad084bf13135e85e2.svg",
-    "fullname": "Jonas Eschmann",
-    "name": "jonas-eschmann",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "681e2a1307bdf1124edc827d",
-    "name": "rl-tools",
-    "fullname": "RLtools",
-    "avatar": "https://www.gravatar.com/avatar/826f52a2201f2e45b89ed295ce5145d8?d=retro&size=100"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
