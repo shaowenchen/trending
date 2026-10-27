@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-10-27T08:46:06.472Z",
+ "fetchedAt": "2026-10-27T11:01:05.833Z",
  "payload": {
   "data": [
    {
@@ -617,9 +617,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000003",
-     "completion": "0.0000012",
-     "input_cache_read": "0.000000006",
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000003",
      "overrides": [
       {
        "utc_days": [
@@ -5976,9 +5976,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000002484",
+     "prompt": "0.0000002428",
      "completion": "0.000008",
-     "input_cache_read": "0.00000025"
+     "input_cache_read": "0.00000024"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -8702,9 +8702,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000513",
-     "completion": "0.0000000701",
-     "input_cache_read": "0.00000003"
+     "prompt": "0.0000000285",
+     "completion": "0.0000000923",
+     "input_cache_read": "0.0000000285"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -10524,9 +10524,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000132",
-     "completion": "0.00000396",
-     "input_cache_read": "0.000000044",
+     "prompt": "0.00000066",
+     "completion": "0.00000198",
+     "input_cache_read": "0.000000022",
      "overrides": [
       {
        "utc_days": [
@@ -13669,9 +13669,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000179",
+     "prompt": "0.000000169",
      "completion": "0.00002",
-     "input_cache_read": "0.000000169"
+     "input_cache_read": "0.000000159"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -21119,9 +21119,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000179",
-     "completion": "0.00002",
-     "input_cache_read": "0.000000169"
+     "prompt": "0.0000001605",
+     "completion": "0.0000097224",
+     "input_cache_read": "0.00000016"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -25496,82 +25496,6 @@
      "tools",
      "top_k",
      "top_logprobs",
-     "top_p"
-    ],
-    "default_parameters": {
-     "temperature": 1,
-     "top_p": 0.95,
-     "top_k": null,
-     "frequency_penalty": null,
-     "presence_penalty": null,
-     "repetition_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/nvidia/nemotron-3-super-120b-a12b-20230311/endpoints"
-    },
-    "benchmarks": {
-     "design_arena": [],
-     "artificial_analysis": {
-      "intelligence_index": 12.8,
-      "coding_index": 37.7,
-      "agentic_index": 1.7
-     }
-    },
-    "reasoning": {
-     "mandatory": false,
-     "default_enabled": true,
-     "supports_max_tokens": true,
-     "supported_efforts": [
-      "medium",
-      "low",
-      "none"
-     ],
-     "default_effort": "medium"
-    }
-   },
-   {
-    "id": "nvidia/nemotron-3-super-120b-a12b:free",
-    "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-    "name": "NVIDIA: Nemotron 3 Super (free)",
-    "created": 1773245239,
-    "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
-    "context_length": 262144,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Other",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0",
-     "completion": "0"
-    },
-    "top_provider": {
-     "context_length": 262144,
-     "max_completion_tokens": 235929,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "include_reasoning",
-     "max_tokens",
-     "reasoning",
-     "reasoning_effort",
-     "response_format",
-     "seed",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
      "top_p"
     ],
     "default_parameters": {
@@ -36006,7 +35930,7 @@
     },
     "supported_voices": null,
     "knowledge_cutoff": "2024-12-31",
-    "expiration_date": null,
+    "expiration_date": "2026-12-31",
     "links": {
      "details": "/api/v1/models/z-ai/glm-4.5v/endpoints"
     },
@@ -43896,7 +43820,7 @@
     "default_parameters": {},
     "supported_voices": null,
     "knowledge_cutoff": "2023-12-31",
-    "expiration_date": null,
+    "expiration_date": "2026-11-03",
     "links": {
      "details": "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
     },
@@ -45199,7 +45123,7 @@
     }
    }
   ],
-  "total_count": 464,
+  "total_count": 463,
   "links": {
    "next": null
   }
