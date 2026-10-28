@@ -3093,6 +3093,301 @@ async function loadOrApps() {
  * 用**映射**而不是数组：面板页靠 id 指名要跑哪一个，数组就只能按下标取，
  * 而"第 5 个"这种说法一旦有人调整顺序就会静默错位（跑出别的面板，页面不报错）。
  */
+/* ================================================================== */
+/* 面板：2026-10-28 新增 5 榜                                            */
+/* ================================================================== */
+
+const LMA_SNAP_URL = new URL('./data/lmarena.json', import.meta.url).href;
+const WIKI_TOP_SNAP_URL = new URL('./data/wiki-top.json', import.meta.url).href;
+const APPSTORE_SNAP_URL = new URL('./data/appstore.json', import.meta.url).href;
+const TBENCH_SNAP_URL = new URL('./data/tbench.json', import.meta.url).href;
+const PHUNT_SNAP_URL = new URL('./data/producthunt.json', import.meta.url).href;
+
+/** LMArena 直连地址（datasets-server 带 Origin 时回显，浏览器可直连） */
+const LMA_API =
+  'https://datasets-server.huggingface.co/first-rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text&split=latest';
+
+/**
+ * LMArena 快照 → 面板行（导出给测试：与抓取脚本同一套字段口径）。
+ * 上游 `rank` 是文本榜内的名次；缺 rank 时按 rating 降序兜底。
+ */
+export function flattenLmarena(snap) {
+  const items = Array.isArray(snap?.items) ? snap.items : [];
+  return items
+    .filter((x) => x?.model && Number.isFinite(Number(x.rating)))
+    .map((x) => ({
+      rank: Number.isFinite(Number(x.rank)) ? Number(x.rank) : null,
+      model: String(x.model),
+      org: String(x.org || ''),
+      license: String(x.license || ''),
+      rating: Math.round(Number(x.rating) * 10) / 10,
+      votes: Number.isFinite(Number(x.votes)) ? Number(x.votes) : null,
+    }))
+    .sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9) || b.rating - a.rating);
+}
+
+/** 维基快照 → 面板行（中英合并，每条带 lang 标签） */
+export function flattenWikiTop(snap) {
+  const out = [];
+  for (const src of snap?.sources || []) {
+    for (const it of src?.items || []) {
+      const title = String(it?.title || '').trim();
+      if (!title) continue;
+      out.push({
+        title,
+        url: String(it?.url || ''),
+        views: Number.isFinite(Number(it?.views)) ? Number(it.views) : null,
+        lang: String(src?.name || it?.lang || ''),
+      });
+    }
+  }
+  return out.sort((a, b) => (b.views ?? -1) - (a.views ?? -1));
+}
+
+/** App Store 快照 → 面板行 */
+export function flattenAppStore(snap) {
+  const items = Array.isArray(snap?.items) ? snap.items : [];
+  return items
+    .filter((x) => x?.name)
+    .map((x, i) => ({
+      rank: Number.isFinite(Number(x.rank)) ? Number(x.rank) : i + 1,
+      name: String(x.name),
+      developer: String(x.developer || ''),
+      genres: Array.isArray(x.genres) ? x.genres : [],
+      url: String(x.url || ''),
+    }));
+}
+
+/** Terminal-Bench 快照 → 面板行 */
+export function flattenTbench(snap) {
+  const items = Array.isArray(snap?.items) ? snap.items : [];
+  return items
+    .filter((x) => Number.isFinite(Number(x.score)))
+    .map((x, i) => ({
+      rank: Number.isFinite(Number(x.rank)) ? Number(x.rank) : i + 1,
+      agent: String(x.agent || ''),
+      model: String(x.model || ''),
+      org: String(x.org || ''),
+      score: Number(x.score),
+      trials: Number.isFinite(Number(x.trials)) ? Number(x.trials) : null,
+      label: String(x.agent || x.model || ''),
+    }))
+    .sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9));
+}
+
+/** Product Hunt 快照 → 面板行 */
+export function flattenProductHunt(snap) {
+  const items = Array.isArray(snap?.items) ? snap.items : [];
+  return items
+    .filter((x) => x?.title && x?.url)
+    .map((x, i) => ({
+      rank: i + 1,
+      title: String(x.title),
+      tagline: String(x.tagline || ''),
+      author: String(x.author || ''),
+      url: String(x.url),
+      time: String(x.time || ''),
+    }));
+}
+
+/**
+ * 面板骨架：这几个榜都是"一个 URL 一份快照"，形状不同但渲染套路一致
+ * （列表 + 底部"数据更新于"），用一个小工厂收口，避免复制 5 份。
+ */
+function mountSnapshotPanel({ id, iconName, key, url, rows, baseNote, card, cols, limit }) {
+  return async function load() {
+    const p = ensurePanel({ id, iconName, title: L(`p.${id}.title`), hint: L(`p.${id}.hint`) });
+    try {
+      const snap = await cachedJson(`pb-${key}`, url);
+      const list = rows(snap);
+      if (!list.length) throw new Error(L('err.noRows'));
+      const updated = snapTime ? Date.parse(snap?.fetchedAt) : null;
+      p.status('', 'ok');
+      mountBoard(p, {
+        rows: list,
+        cols,
+        note: Number.isFinite(updated) ? L('st.updated', { time: fmtStamp(updated) }) : '',
+        limit: limit || 50,
+        transform: withRank,
+        defaultSort: null,
+        card,
+      });
+      return true;
+    } catch (e) {
+      p.status(L('st.failed', { msg: e.message }), 'err');
+      p.body('');
+      return false;
+    }
+  };
+}
+
+/** LMArena：直连优先（HF datasets-server 回显 Origin），失败回落快照 */
+async function loadLmarena() {
+  const p = ensurePanel({ id: 'lmarena', iconName: 'trophy', title: L('p.lmarena.title'), hint: L('p.lmarena.hint') });
+  let rows = [];
+  let updated = null;
+  let live = false;
+  try {
+    const res = await fetch(LMA_API, { headers: { accept: 'application/json' } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    rows = flattenLmarena({ items: normalizeLmarenaLive(await res.json()) });
+    updated = Date.now();
+    live = true;
+  } catch {
+    try {
+      const snap = await cachedJson('pb-lmarena', LMA_SNAP_URL);
+      rows = flattenLmarena(snap);
+      updated = Date.parse(snap?.fetchedAt);
+    } catch (e) {
+      p.status(L('st.failed', { msg: e.message }), 'err');
+      p.body('');
+      return;
+    }
+  }
+  if (!rows.length) {
+    p.status(L('err.noRows'), 'err');
+    p.body('');
+    return;
+  }
+  p.status('', 'ok');
+  mountBoard(p, {
+    rows,
+    cols: [
+      { label: '#', sortable: false, cell: (r) => rankBadge(r.__rank) },
+      { label: L('col.model'), field: 'model', cell: (r) => esc(r.model) },
+      { label: L('col.org'), cls: 'col-2', field: 'org', cell: (r) => (r.org ? `<span class="tag">${esc(r.org)}</span>` : '—') },
+      { label: L('col.elo'), num: true, field: 'rating', cell: (r) => `<span class="v-num">${num(r.rating, 1)}</span>` },
+      { label: L('col.votes'), num: true, cls: 'col-2', field: 'votes', cell: (r) => (compact(r.votes) ?? '—') },
+    ],
+    limit: 50,
+    transform: withRank,
+    note: Number.isFinite(updated) ? L('st.updated', { time: fmtStamp(updated) }) : '',
+    card: {
+      title: (r) => esc(r.model),
+      value: (r) => `<span class="v-num">${num(r.rating, 1)}</span> <span class="v-unit">Elo</span>`,
+      meta: (r) => (r.org ? `<span class="tag">${esc(r.org)}</span>` : '') + (r.votes ? `<span class="tag">${compact(r.votes)} 票</span>` : ''),
+    },
+  });
+  void live;
+}
+
+/** 直连回来的 first-rows → 与快照同形的 items（复用抓取脚本的口径） */
+function normalizeLmarenaLive(json) {
+  const rows = Array.isArray(json?.rows) ? json.rows : [];
+  return rows
+    .map((r) => {
+      const row = r?.row || r;
+      const rating = Number(row?.rating);
+      if (!row?.model_name || !Number.isFinite(rating)) return null;
+      return {
+        rank: Number.isFinite(Number(row?.rank)) ? Number(row.rank) : null,
+        model: String(row.model_name),
+        org: String(row?.organization || ''),
+        license: String(row?.license || ''),
+        rating: Math.round(rating * 10) / 10,
+        votes: Number.isFinite(Number(row?.vote_count)) ? Number(row.vote_count) : null,
+      };
+    })
+    .filter(Boolean);
+}
+
+/** 维基全球热词：直连优先（wikimedia CORS *，浏览器自带 UA），失败回落快照 */
+async function loadWikiTop() {
+  const p = ensurePanel({ id: 'wikiTop', iconName: 'file', title: L('p.wikiTop.title'), hint: L('p.wikiTop.hint') });
+  const LANGS = [{ code: 'zh', label: '中文维基' }, { code: 'en', label: '英文维基' }];
+  const day = wikiTopDay();
+  const sources = [];
+  for (const { code, label } of LANGS) {
+    try {
+      const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/${code}.wikipedia/all-access/${day}`;
+      const res = await fetch(url, { headers: { accept: 'application/json' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const rows = wikiTopRows(await res.json(), code, label);
+      if (rows.length) sources.push({ key: code, name: label, items: rows });
+    } catch {
+      /* 单语种直连失败：留给快照兜底 */
+    }
+  }
+  let updated = Date.now();
+  if (!sources.length) {
+    try {
+      const snap = await cachedJson('pb-wikiTop', WIKI_TOP_SNAP_URL);
+      for (const src of snap?.sources || []) sources.push(src);
+      updated = Date.parse(snap?.fetchedAt);
+    } catch (e) {
+      p.status(L('st.failed', { msg: e.message }), 'err');
+      p.body('');
+      return;
+    }
+  }
+  // ★ 分段：中英各取前 20，段内各自编号（2026-10-28）
+  //   英文维基的浏览量比中文高一个量级，混排会把中文那 20 条全挤到 40 行之外，
+  //   "中英两榜"就只剩一个榜可见 —— 所以按语种分段，段内按浏览量降序。
+  const grouped = new Map();
+  for (const src of sources) {
+    const list = (src.items || [])
+      .map((it) => ({ ...it, lang: src.name }))
+      .sort((a, b) => (b.views ?? -1) - (a.views ?? -1))
+      .slice(0, 20);
+    grouped.set(src.name, list);
+  }
+  const rows = [];
+  for (const list of grouped.values()) {
+    list.forEach((r, i) => rows.push({ ...r, __rank: i + 1 }));
+  }
+  if (!rows.length) {
+    p.status(L('err.noRows'), 'err');
+    p.body('');
+    return;
+  }
+  p.status('', 'ok');
+  mountBoard(p, {
+    rows,
+    cols: [
+      { label: '#', sortable: false, cell: (r) => rankBadge(r.__rank) },
+      { label: L('col.title'), field: 'title', cell: (r) => (r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` : esc(r.title)) },
+      { label: L('col.lang'), cls: 'col-2', field: 'lang', cell: (r) => `<span class="tag">${esc(r.lang)}</span>` },
+      { label: L('col.views'), num: true, field: 'views', cell: (r) => compact(r.views) ?? '—' },
+    ],
+    limit: 40,
+    // 名次由上面的分段逻辑给定，不再用 withRank 覆盖
+    note: Number.isFinite(updated) ? L('st.updated', { time: fmtStamp(updated) }) : '',
+    card: {
+      title: (r) => esc(r.title),
+      value: (r) => `<span class="v-num">${compact(r.views) ?? '—'}</span> <span class="v-unit">${L('col.views')}</span>`,
+      meta: (r) => `<span class="tag">${esc(r.lang)}</span>`,
+      link: (r) => r.url || null,
+    },
+  });
+}
+
+/** 前一日 UTC（维基当日数据尚未结算），格式 Y/M/D */
+function wikiTopDay() {
+  const d = new Date(Date.now() - 24 * 3600 * 1000);
+  const p2 = (n) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}/${p2(d.getUTCMonth() + 1)}/${p2(d.getUTCDate())}`;
+}
+
+/** 直连的维基响应 → 条目（与抓取脚本同一套过滤：去掉首页/特殊页） */
+function wikiTopRows(json, code, label, limit = 20) {
+  const articles = json?.items?.[0]?.articles;
+  if (!Array.isArray(articles)) return [];
+  const skip = /^(Main_Page|Special:|Wikipedia:|Portal:|File:|Help:|Template:|Category:|Talk:|User:|MediaWiki:|Draft:|Module:|Book:|TimedText:)/;
+  const home = /^(首页|首頁|メインページ|대문|Заглавная_страница|Hauptseite|Portada|Accueil)$/;
+  return articles
+    .filter((a) => {
+      const t = String(a?.article || '').trim();
+      return t && !skip.test(t) && !home.test(t);
+    })
+    .slice(0, limit)
+    .map((a) => ({
+      title: String(a.article).replace(/_/g, ' '),
+      views: Number.isFinite(Number(a.views)) ? Number(a.views) : null,
+      lang: label,
+      url: `https://${code}.wikipedia.org/wiki/${encodeURIComponent(String(a.article))}`,
+    }));
+}
+
 const BOARD_LOADERS = {
   trending: () =>
     loadModelBoard({
@@ -3164,6 +3459,70 @@ const BOARD_LOADERS = {
   v2ex: () => loadHotList('v2ex', VIDEO_SNAP_URL, 'video-v2ex'),
   qqnews: () => loadHotList('qqnews', VIDEO_SNAP_URL, 'video-qqnews'),
   kuaishou: () => loadHotList('kuaishou', VIDEO_SNAP_URL, 'video-kuaishou'),
+  // 2026-10-28 新增 5 榜
+  lmarena: () => loadLmarena(),
+  tbench: mountSnapshotPanel({
+    id: 'tbench',
+    iconName: 'code',
+    key: 'tbench',
+    url: TBENCH_SNAP_URL,
+    rows: flattenTbench,
+    limit: 50,
+    cols: [
+      { label: '#', sortable: false, cell: (r) => rankBadge(r.__rank) },
+      { label: L('col.agent'), field: 'label', cell: (r) => esc(r.label) },
+      { label: L('col.model'), cls: 'col-2', field: 'model', cell: (r) => esc(r.model || '—') },
+      { label: L('col.org'), cls: 'col-2', field: 'org', cell: (r) => (r.org ? `<span class="tag">${esc(r.org)}</span>` : '—') },
+      { label: L('col.score'), num: true, field: 'score', cell: (r) => `<span class="v-num">${num(r.score, 1)}%</span>` },
+      { label: L('col.trials'), num: true, cls: 'col-2', field: 'trials', cell: (r) => (compact(r.trials) ?? '—') },
+    ],
+    card: {
+      title: (r) => esc(r.label),
+      value: (r) => `<span class="v-num">${num(r.score, 1)}%</span> <span class="v-unit">${L('col.score')}</span>`,
+      meta: (r) => (r.model ? `<span class="tag">${esc(r.model)}</span>` : '') + (r.trials ? `<span class="tag">${compact(r.trials)} trials</span>` : ''),
+    },
+  }),
+  wikiTop: () => loadWikiTop(),
+  appStore: mountSnapshotPanel({
+    id: 'appStore',
+    iconName: 'download',
+    key: 'appstore',
+    url: APPSTORE_SNAP_URL,
+    rows: flattenAppStore,
+    limit: 50,
+    cols: [
+      { label: '#', sortable: false, cell: (r) => rankBadge(r.__rank) },
+      { label: L('col.app'), field: 'name', cell: (r) => (r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.name)}</a>` : esc(r.name)) },
+      { label: L('col.developer'), cls: 'col-2', field: 'developer', cell: (r) => esc(r.developer || '—') },
+      { label: L('col.genre'), cls: 'col-2', field: 'genres', cell: (r) => (r.genres.length ? `<span class="tag">${esc(r.genres[0])}</span>` : '—') },
+    ],
+    card: {
+      title: (r) => esc(r.name),
+      value: (r) => `<span class="v-num">#${r.rank}</span>`,
+      meta: (r) => (r.developer ? `<span class="tag">${esc(r.developer)}</span>` : '') + (r.genres[0] ? `<span class="tag">${esc(r.genres[0])}</span>` : ''),
+      link: (r) => r.url || null,
+    },
+  }),
+  productHunt: mountSnapshotPanel({
+    id: 'productHunt',
+    iconName: 'star',
+    key: 'producthunt',
+    url: PHUNT_SNAP_URL,
+    rows: flattenProductHunt,
+    limit: 50,
+    cols: [
+      { label: '#', sortable: false, cell: (r) => rankBadge(r.__rank) },
+      { label: L('col.title'), field: 'title', cell: (r) => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>` },
+      { label: L('col.tagline'), cls: 'col-2', field: 'tagline', cell: (r) => esc(r.tagline || '—') },
+      { label: L('col.author'), cls: 'col-2', field: 'author', cell: (r) => esc(r.author || '—') },
+    ],
+    card: {
+      title: (r) => esc(r.title),
+      value: (r) => '',
+      meta: (r) => (r.tagline ? `<span class="tag">${esc(r.tagline)}</span>` : '') + (r.author ? `<span class="tag">${esc(r.author)}</span>` : ''),
+      link: (r) => r.url,
+    },
+  }),
 };
 
 /**

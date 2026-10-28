@@ -75,6 +75,12 @@ export const BOARD_IDS = [
   'v2ex',
   'qqnews',
   'kuaishou',
+  // ── 2026-10-28：新增 5 个榜 ──
+  'lmarena',      // 评测：人类盲测 Elo
+  'tbench',       // 评测：终端任务（agent 能力）
+  'wikiTop',      // 平台洞察：维基官方当日全站阅读 Top（中英合并）
+  'appStore',     // 平台洞察：App Store 中国区免费榜（真实下载）
+  'productHunt',  // 社区生态：每日新品
 ];
 
 /**
@@ -158,6 +164,11 @@ export const BOARD_TAGS = {
   v2ex: { topic: 'cn-hot', source: 'v2ex' },
   qqnews: { topic: 'cn-hot', source: 'qqnews' },
   kuaishou: { topic: 'cn-hot', source: 'kuaishou' },
+  lmarena: { topic: 'benchmarks', source: 'lmarena' },
+  tbench: { topic: 'benchmarks', source: 'tbench' },
+  wikiTop: { topic: 'platform', source: 'wikipedia' },
+  appStore: { topic: 'platform', source: 'appstore' },
+  productHunt: { topic: 'ecosystem', source: 'producthunt' },
 };
 
 /**
@@ -206,6 +217,12 @@ export const SOURCE_SLUGS = [
   'v2ex',
   'qqnews',
   'kuaishou',
+  // ── 2026-10-28：新增榜的**来源** slug（★ 不是面板 id）──
+  // wikiTop 的来源是既有的 'wikipedia'，不重复登记。
+  'lmarena',      // LMArena 竞技场（人类盲测 Elo）
+  'tbench',       // Terminal-Bench（终端任务）
+  'appstore',     // App Store 中国区免费榜
+  'producthunt',  // Product Hunt 每日新品
 ];
 
 /**
@@ -311,6 +328,12 @@ export const BOARD_ICONS = {
   v2ex: 'code',
   qqnews: 'monitor',
   kuaishou: 'bolt',
+  // 2026-10-28
+  lmarena: 'trophy',       // 竞技场排名
+  tbench: 'code',          // 终端任务
+  wikiTop: 'file',         // 百科条目
+  appStore: 'download',    // 下载榜
+  productHunt: 'star',     // 新品
 };
 
 /**

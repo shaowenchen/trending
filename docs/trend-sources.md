@@ -477,3 +477,15 @@ top.json 拦截、VentureBeat 稳定 429、smol.ai /rss 404。
   vvhan / pearktrue 域名已不解析、RSSHub 公共实例连接超时、tophub 安全验证 403。
 - 结论与此前一致：**没有可用的公开数据通路**。若将来出现稳定镜像，
   接法与本次完全相同（`BOARDS` 里加一项即可）。
+
+## 15. 2026-10-28 新增 5 榜（LMArena / 维基热词 / App Store / Terminal-Bench / Product Hunt）
+
+| 榜 | 端点 | 通路 | 口径与坑 |
+|---|---|---|---|
+| LMArena 竞技场 | `datasets-server.huggingface.co/first-rows?dataset=lmarena-ai/leaderboard-dataset&config=text&split=latest` | **前端直连**（带 Origin 时回显该 Origin）+ 构建期快照兜底 | 人类盲测 Elo；只取 `config=text` 主榜（24 子榜里的文本榜）；字段 model_name/organization/license/rating/vote_count/rank；`rank` 用上游的，缺失时按 rating 降序兜底 |
+| 维基百科全球热词 | `wikimedia.org/api/rest_v1/metrics/pageviews/top/{zh,en}.wikipedia/all-access/{Y}/{M}/{D}` | **前端直连**（CORS `*`；浏览器自带 UA 才能过——curl 无 UA 实测 403）+ 快照兜底 | 取**前一日 UTC**（当日未结算）；中英各取前 20，**分段展示、段内各自编号**——英文维基体量约中文一个量级，混排会把中文 20 条全挤出可见区；过滤 `Main_Page` / `Special:*` / `Wikipedia:*` / `Portal:*` / `File:*` / `Category:*` 与各语言首页写法 |
+| App Store 中国区免费榜 | `rss.applemarketingtools.com/api/v2/cn/apps/top-free/25/apps.json` | **构建期快照**（无 CORS） | 25 条；★ 端点**偶发 502**（Apple 边缘节点抖动）→ 抓取带 2s/5s/10s 退避重试（共 4 次尝试）；只收 name/artistName/genres/url，**不收图标** |
+| Terminal-Bench | `www.tbench.ai/leaderboard` | **构建期快照 + RSC flight 解析** | 数据在 Next.js flight payload（`self.__next_f.push([1,"…"])`，双重转义 `\"`）里；解析步骤：还原转义 → 找 `"rows":[` 做括号配对 → JSON.parse；字段 metadata.agent_display/model_display + metrics.accuracy/n_trials（accuracy 已是百分数**不乘 100**）；★ **解析失败保留上一快照并告警**，不让页面变空 |
+| Product Hunt 今日新品 | `www.producthunt.com/feed` | **构建期快照**（atom，无 CORS） | 50 条取前 30；该 feed **没有 votes 字段** → 面板不显示热度数字（硬造比不显示更糟）；一句话简介从 `<content>` 的第一个 `<p>` 提取，第二个 `<p>` 是 Discussion/Link 导航 |
+
+五张榜的分工：LMArena 补"人类偏好"（评测段原来只有跑分）、Terminal-Bench 补"终端/运维"能力、维基热词补"大众注意力全景"（`wikiAttention` 只是 AI 词条切片）、App Store 补"真实下载行为"、Product Hunt 补"新产品发布"。

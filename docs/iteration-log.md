@@ -2,6 +2,40 @@
 
 > 约定：每个会话/回合把进度落到这里，重启后按文件接上，不依赖会话上下文。
 
+## 2026-10-28 · 新增 5 榜（43 → 48）：LMArena / 维基热词 / App Store / Terminal-Bench / Product Hunt
+
+按 `docs/任务-新增5榜-20261028.md` 执行。
+
+### 接入
+
+| 榜 | 分类 | 通路 |
+|---|---|---|
+| LMArena 竞技场榜 | 评测榜 | 直连优先（HF first-rows 回显 Origin）+ 快照兜底 |
+| Terminal-Bench | 评测榜 | 构建期快照 + RSC flight 解析（失败保留旧快照） |
+| 维基百科全球热词 | 平台洞察 | 直连优先（CORS *）+ 快照兜底；中英分段 |
+| App Store 中国区免费榜 | 平台洞察 | 构建期快照（502 退避重试 ≥3） |
+| Product Hunt 今日新品 | 社区生态 | 构建期快照（atom） |
+
+- 5 个新脚本：`snap:lma` / `snap:wiki-top` / `snap:appstore` / `snap:tbench` / `snap:producthunt`，
+  已并入 `snap:all` 与 `snap:slow`；
+- 首页两份（中英）由 `boards.js` 驱动，索引条/主题段自动获得入口（48 个榜片实测）；
+- 来源色、图标、i18n（面板名/说明/列名/来源标签）全部补齐；
+- 新增 `new5boards.test.js`（16 条），已接入 `npm test`。
+
+### 两处实测修正（与任务书描述不一致的地方，按实测走）
+
+1. **LMArena 的 CORS 是"回显 Origin"而不是 `*`** —— 直接 curl 看不到
+   `access-control-allow-origin`，必须带 `Origin` 头才回显；浏览器天然带，所以直连成立。
+2. **维基的 top 端点 CORS 是 `*`，但要求浏览器 UA**（curl 无 UA 403）——
+   浏览器直连没问题，构建期快照则必须带 UA（脚本已带）。
+
+### 验收
+
+- [x] `npm run build` 通过；`npm test` 全绿（9+7+12+106+16+22+16+46 = 234 条）。
+- [x] 无头实测：48 个榜片；5 个新榜均渲染真实数据（LMArena 50 行 / tbench 35 /
+      维基 40（中英各 20，段内独立编号）/ App Store 25 / Product Hunt 30）。
+- [x] 推 dev → CI 部署 → 线上核对。
+
 ## 2026-10-22 · 新增 4 个中文榜 + 3 个中文 AI 资讯源（39 → 43）
 
 调研结论（实测）：uapis 镜像还能给百度/V2EX/腾讯新闻/快手（各 9–51 条）；

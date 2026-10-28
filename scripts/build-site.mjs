@@ -101,6 +101,12 @@ export const SITE_FILES = [
   'assets/data/v2ex.json',
   'assets/data/qqnews.json',
   'assets/data/kuaishou.json',
+  // 2026-10-28：新增 5 榜快照
+  'assets/data/lmarena.json',
+  'assets/data/wiki-top.json',
+  'assets/data/appstore.json',
+  'assets/data/tbench.json',
+  'assets/data/producthunt.json',
   // ★ 2026-10-19 按面板拆分的逐榜快照（loadHotList 逐面板懒加载；缺失=构建失败）
   'assets/data/aifaner.json',
   'assets/data/bilibili.json',
