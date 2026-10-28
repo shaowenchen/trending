@@ -2,6 +2,40 @@
 
 > 约定：每个会话/回合把进度落到这里，重启后按文件接上，不依赖会话上下文。
 
+## 2026-10-28（续）· GitHub Trending 去掉 AI 过滤，按 GitHub 原顺序展示全部
+
+用户令：GitHub Trending 去掉 AI 过滤，直接按 GitHub 自己的趋势顺序展示全部仓库。
+
+### 改动
+
+1. `loadGhTrending`：删掉 `view='ai'` 与 `all.filter(r => r.ai)` —— 全部条目上屏；
+   **`defaultSort: null`**（原来按 starsToday 降序，会打乱 GitHub 的趋势排名）。
+2. i18n：标题 `GitHub Trending（AI 过滤）` → `GitHub Trending`；hint 改为
+   「github.com/trending 每日榜构建期快照，按 GitHub 趋势排名」（en 同步）。
+3. `ai` 字段保留（`flattenGhTrending` 照常算），不参与展示/过滤。
+4. 测试：原「AI 过滤」断言改为「全部条目 + 原顺序」两条新用例
+   （顺序与 entries 一致；非 AI 仓库不被过滤），并加一条源码门禁
+   （`loadGhTrending` 里不许再出现按 `r.ai` 过滤、必须有 `defaultSort: null`）。
+
+### 抓取端核查（任务书第 2 点）
+
+`parseGhTrending` **不截断、不重排**：页面里 N 个 `<article class="Box-row">`
+就出 N 条，0 丢弃，顺序原样。当日实测：
+
+| 取法 | 条数 |
+|---|---|
+| `curl` `github.com/trending` | 11 |
+| `?since=daily` / `?since=weekly` | 11 / 13 |
+| **headless Chrome 真实渲染** | **11**（前 3 名与快照一致） |
+
+→ "只有 12 条"不是解析截断，而是这个环境里 GitHub 当日就只返回这么多。
+若某天恢复正常 25 条，脚本会自动收全（无条数上限）。
+
+### 验收
+
+- [x] `npm run build` 通过；`npm test` 全绿（9+7+12+108+16+22+16+46 = 236 条）。
+- [x] 无头实测面板：标题 `GitHub Trending`、hint 新文案、11 行、顺序与页面一致。
+
 ## 2026-10-28 · 新增 5 榜（43 → 48）：LMArena / 维基热词 / App Store / Terminal-Bench / Product Hunt
 
 按 `docs/任务-新增5榜-20261028.md` 执行。

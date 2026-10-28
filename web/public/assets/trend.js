@@ -1579,18 +1579,25 @@ export function flattenGhTrending(snap) {
   return rows;
 }
 
-/** 面板：GitHub Trending 每日榜（默认只看 AI 相关，可切全部仓库） */
+/**
+ * 面板：GitHub Trending 每日榜 —— **全部仓库、GitHub 原顺序**（2026-10-28 改）
+ *
+ * 这一榜原来只显示命中 AI 关键词的仓库（标题里标着"AI 过滤"）。owner 要求改成
+ * "直接按 GitHub 自己的趋势顺序展示全部仓库"：
+ *   · 不再过滤 —— `ai` 字段仍由 flattenGhTrending 算出来（别的逻辑可能引用），
+ *     但**不参与本榜的展示与筛序**；
+ *   · **不重排** —— `defaultSort: null`，数组顺序即快照里的顺序，也就是 GitHub
+ *     页面上 1..N 的趋势排名。改成按 starsToday 排序会把"GitHub 认为的趋势"
+ *     换成"我们算的热度"，那就不是这个榜了。
+ */
 async function loadGhTrending() {
-  // 只收 AI 相关的仓库（"全部仓库"那个切换已去掉）
-  const view = 'ai';
   const p = ensurePanel(shellMeta('ghTrending'));
   try {
     // 快照很小（几十 KB），10 分钟内的会话缓存足够 —— 数据本来就是每日一更
     const snap = await cachedJson('gh-trending', GH_TRENDING_SNAP_URL);
     const fetchedAt = Date.parse(snap?.fetchedAt);
-    const all = flattenGhTrending(snap);
-    if (!all.length) throw new Error(L('err.noRepos'));
-    const rows = view === 'ai' ? all.filter((r) => r.ai) : all;
+    const rows = flattenGhTrending(snap);
+    if (!rows.length) throw new Error(L('err.noRepos'));
     p.status('', 'ok');
     mountBoard(p, {
       rows,
@@ -1606,7 +1613,8 @@ async function loadGhTrending() {
         { label: L('col.lang'), cls: 'col-2', field: 'lang', cell: (r) => (r.lang ? `<span class="tag">${esc(r.lang)}</span>` : '—') },
         { label: L('col.desc'), field: 'desc', cell: (r) => esc(r.desc) || '—' },
       ],
-      defaultSort: { index: 2, dir: 'desc' },
+      // ★ 不排序：数组顺序 = 快照顺序 = GitHub 页面的趋势排名 1..N
+      defaultSort: null,
       searchFields: ['repo', 'desc', 'lang'],
       groupField: 'lang',
       groupLabel: L('ui.allLangs'),
@@ -3424,7 +3432,7 @@ const BOARD_LOADERS = {
   aiNews: () => loadAiNews(),
   aiPress: () => loadAiPress(),
   repos: () => loadRepos('week'),
-  ghTrending: () => loadGhTrending('ai'),
+  ghTrending: () => loadGhTrending(),
   zhihu: () => loadHotList('zhihu'),
   csdn: () => loadHotList('csdn'),
   juejin: () => loadHotList('juejin'),

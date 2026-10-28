@@ -995,7 +995,7 @@ await ta('fetchAllEvalPages：onProgress 逐批推进（done 单调不减、末�
 });
 
 
-/* ---------------- GitHub Trending（构建期快照 + AI 过滤） ---------------- */
+/* ---------------- GitHub Trending（构建期快照 + 原顺序、不再 AI 过滤） ---------------- */
 
 /*
  * fixture 取自 2026-10-01 的真实 github.com/trending 页面（两条 article 原文）。
@@ -1063,7 +1063,7 @@ t('★ isAiRepo：词边界匹配 —— storage 里的 rag、html 里的 ml、a
   assert.equal(isAiRepo({ repo: 'openai/cool', desc: '' }), true);
 });
 
-t('flattenGhTrending：快照 JSON → 面板行（数字归一、AI 标记、空仓库名剔除）', () => {
+t('flattenGhTrending：快照 JSON → 面板行（数字归一、保留 ai 标记、空仓库名剔除）', () => {
   const snap = {
     source: 'https://github.com/trending',
     fetchedAt: '2026-10-01T01:02:30.141Z',
@@ -1078,10 +1078,33 @@ t('flattenGhTrending：快照 JSON → 面板行（数字归一、AI 标记、�
   assert.equal(rows.length, 2);
   assert.equal(rows[0].stars, 12682, '"12,682" → 12682');
   assert.equal(rows[0].starsToday, 1281);
-  assert.equal(rows[0].ai, true);
+  assert.equal(rows[0].ai, true, 'ai 标记仍要算出来（别的逻辑可能引用）');
   assert.equal(rows[1].stars, null);
   assert.equal(rows[1].ai, false);
   assert.equal(flattenGhTrending(null).length, 0, '空输入不炸');
+});
+
+t('★ flattenGhTrending：**保持快照原顺序**（= GitHub 趋势排名），一条不丢', () => {
+  // 2026-10-28：这个榜改成"按 GitHub 原顺序展示全部仓库"，所以这里钉两件事：
+  //   ① 不按 AI 过滤（非 AI 仓库也要在结果里）；② 顺序与 entries 完全一致。
+  const entries = [
+    { repo: 'z/last-by-stars', desc: 'plain tool', stars: 10, starsToday: 1 },
+    { repo: 'a/first-by-stars', desc: 'popular llm thing', stars: 99999, starsToday: 5000 },
+    { repo: 'm/middle', desc: 'unrelated', stars: 500, starsToday: 20 },
+  ];
+  const rows = flattenGhTrending({ entries });
+  assert.deepEqual(rows.map((r) => r.repo), ['z/last-by-stars', 'a/first-by-stars', 'm/middle'],
+    '顺序必须与 entries 一致（不按星标/今日星重排）');
+  assert.equal(rows.length, 3, '非 AI 仓库不得被过滤');
+});
+
+t('★ 源码门禁：loadGhTrending 不再按 ai 过滤，也不再默认排序', () => {
+  const src = readFileSync(new URL('./trend.js', import.meta.url), 'utf8');
+  const start = src.indexOf('async function loadGhTrending(');
+  assert.ok(start > -1, '找不到 loadGhTrending');
+  const block = src.slice(start, src.indexOf('function ', start + 10) > -1 ? src.indexOf('function ', start + 10) : start + 4000);
+  assert.ok(!/filter\(\s*\(?\s*r\s*\)?\s*=>\s*r\.ai/.test(block), 'loadGhTrending 里不应再按 r.ai 过滤');
+  assert.ok(/defaultSort:\s*null/.test(block), '必须 defaultSort: null 才能保持 GitHub 原顺序');
 });
 
 /* ---------------- OpenRouter 模型库 ---------------- */

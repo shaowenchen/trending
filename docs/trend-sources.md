@@ -489,3 +489,13 @@ top.json 拦截、VentureBeat 稳定 429、smol.ai /rss 404。
 | Product Hunt 今日新品 | `www.producthunt.com/feed` | **构建期快照**（atom，无 CORS） | 50 条取前 30；该 feed **没有 votes 字段** → 面板不显示热度数字（硬造比不显示更糟）；一句话简介从 `<content>` 的第一个 `<p>` 提取，第二个 `<p>` 是 Discussion/Link 导航 |
 
 五张榜的分工：LMArena 补"人类偏好"（评测段原来只有跑分）、Terminal-Bench 补"终端/运维"能力、维基热词补"大众注意力全景"（`wikiAttention` 只是 AI 词条切片）、App Store 补"真实下载行为"、Product Hunt 补"新产品发布"。
+
+### 2026-10-28 变更：GitHub Trending 去掉 AI 过滤
+
+- 面板改为**全部仓库、GitHub 原顺序**（趋势排名 1..N），`defaultSort: null` ——
+  按 starsToday 排序会把"GitHub 认为的趋势"换成"我们算的热度"，那就不是这个榜了；
+- 标题去掉「（AI 过滤）」，hint 改为「github.com/trending 每日榜构建期快照，按 GitHub 趋势排名」；
+- `ai` 字段仍在（`flattenGhTrending` 照常计算，别处可能引用），但**不参与本榜展示与过滤**；
+- 抓取端核查：`parseGhTrending` **不截断、不重排**（article → 条目一一对应）。
+  实测当日页面本身只有 **11 条**（curl 与真实浏览器 headless 均 11 条、前 3 名一致，
+  `since=daily` 11 / `weekly` 13），所以"条数少"是上游当日的实际情况，不是我们截的。
