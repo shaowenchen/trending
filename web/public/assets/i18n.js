@@ -52,8 +52,8 @@ const zh = {
   'p.downloaded.hint': '累计下载数',
   'p.eval.title': '开源模型评测榜',
   'p.eval.hint': '取全部成绩后按平均分排序；上游数据源已归档，站内快照即最新全量',
-  'p.aider.title': '编程能力榜（Aider Polyglot）',
-  'p.aider.hint': '同一模型取最高的通过率',
+  'p.aider.title': '编程能力榜',
+  'p.aider.hint': 'Aider Polyglot 排行榜；同一模型取最高的通过率',
   'p.spaces.title': '正在流行的 AI 应用',
   'p.spaces.hint': '按趋势分排序',
   'p.datasets.title': '正在流行的数据集',
@@ -147,8 +147,8 @@ const zh = {
   'p.orApps.image': '图像模型',
   'p.orApps.video': '视频模型',
   'p.orApps.audio': '语音模型',
-  'p.swebench.title': 'SWE-bench（真实代码修复）',
-  'p.swebench.hint': '数据较大（约 4MB），进页面即加载',
+  'p.swebench.title': 'SWE-bench',
+  'p.swebench.hint': '真实代码修复任务；数据较大（约 4MB），进页面即加载',
 
   // ── 2026-10-16 新增三张榜 ──
   'p.hnTop.title': 'Hacker News 首页',
@@ -397,8 +397,8 @@ const en = {
   'p.downloaded.hint': 'total downloads',
   'p.eval.title': 'Open-model evaluation board',
   'p.eval.hint': 'all raw scores fetched, then sorted by average; the upstream source is archived, the on-site snapshot is the latest full list',
-  'p.aider.title': 'Coding ability (Aider Polyglot)',
-  'p.aider.hint': 'best pass rate per model',
+  'p.aider.title': 'Coding ability',
+  'p.aider.hint': 'Aider Polyglot leaderboard; best pass rate per model',
   'p.spaces.title': 'Trending AI apps',
   'p.spaces.hint': 'sorted by trending score',
   'p.datasets.title': 'Trending datasets',
@@ -490,8 +490,8 @@ const en = {
   'p.orApps.image': 'Image models',
   'p.orApps.video': 'Video models',
   'p.orApps.audio': 'Speech models',
-  'p.swebench.title': 'SWE-bench (real code fixes)',
-  'p.swebench.hint': 'large payload (~4MB), loads on page open',
+  'p.swebench.title': 'SWE-bench',
+  'p.swebench.hint': 'real-world code fixes; large payload (~4MB), loads on page open',
 
   // ── Three boards added 2026-10-16 ──
   'p.hnTop.title': 'Hacker News front page',

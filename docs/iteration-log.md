@@ -2,6 +2,42 @@
 
 > 约定：每个会话/回合把进度落到这里，重启后按文件接上，不依赖会话上下文。
 
+## 2026-10-28（续）· 全站名称去括号
+
+owner 令：分类/榜单**名称**里不许出现括号（全角（）与半角()都算），括号里的
+限定词移到该榜的 hint/描述里。
+
+### 改动（i18n.js，中英各 2 处 = 4 条）
+
+| 键 | 前 | 后 | hint 补入 |
+|---|---|---|---|
+| `p.aider.title` | 编程能力榜（Aider Polyglot） | 编程能力榜 | Aider Polyglot 排行榜；… |
+| `p.swebench.title` | SWE-bench（真实代码修复） | SWE-bench | 真实代码修复任务；… |
+| `p.aider.title`(en) | Coding ability (Aider Polyglot) | Coding ability | Aider Polyglot leaderboard; … |
+| `p.swebench.title`(en) | SWE-bench (real code fixes) | SWE-bench | real-world code fixes; … |
+
+`ghTrending.title` 的括号已在上一轮（去 AI 过滤）清掉。
+
+### 全站扫描结果（除上述 4 处外均无括号）
+
+- `p.*.title` / `tag.*` / `daily.*Title`：只剩上述 4 处 → 已清；
+- 构建产物（dist）里 h1/h2/h3：9 个标题，0 括号；
+- 索引条 48 个榜名 + 6 个主题分组名：0 括号；
+- 运行时客户端渲染的 48 个面板标题（中英两页）：0 括号
+  （aider → 编程能力榜 / Coding ability；swebench → SWE-bench）。
+- `ui.js` 图标 label（读屏器文案）无括号；`params: f('#Params (B)')` 是**数据字段名**
+  （模型参数量列），不是榜单名，不在本次范围。
+
+### 新增门禁
+
+`i18n.test.js` 加一条：面板名 `p.<id>.title`、标签 `tag.*`、每日视图标题
+`daily.*Title` 的值**不得含中英括号**（临时塞回一个带括号的 title 验证过门禁会红）。
+
+### 验收
+
+- [x] `npm run build` 通过；`npm test` 全绿（10+7+12+108+16+22+16+46 = 237 条）。
+- [x] 中英两页 48 个面板标题实测 0 括号。
+
 ## 2026-10-28（续）· GitHub Trending 去掉 AI 过滤，按 GitHub 原顺序展示全部
 
 用户令：GitHub Trending 去掉 AI 过滤，直接按 GitHub 自己的趋势顺序展示全部仓库。

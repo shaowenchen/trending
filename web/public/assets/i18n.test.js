@@ -102,4 +102,21 @@ t_('字典里没有不再被引用的骨架键（服务端注入那一层已经�
   assert.deepEqual(dead, [], `页面已不存在却仍有这些键：${dead}`);
 });
 
+t_('★ 面向用户的**名称**里不许出现括号（中英都算）', () => {
+  // 2026-10-28 owner 令：分类/榜单名称不带括号（全角（）与半角()都算）。
+  // 括号里的限定词应移进 hint/描述，而不是留在标题 —— 名称是"这叫什么"，
+  // 括号里那半句是"它是什么"，两者混在一起读起来啰嗦、也占标题宽度。
+  // 这条盯三类键：面板名 `p.<id>.title`、主题/来源标签 `tag.*`、以及 daily 区块标题。
+  const NAME_RE = /(^p\.[A-Za-z0-9]+\.title$)|(^tag\.[A-Za-z0-9-]+$)|(^daily\.[A-Za-z]+Title$)/;
+  const bad = [];
+  for (const locale of LOCALES) {
+    for (const key of keysOf(locale)) {
+      if (!NAME_RE.test(key)) continue;
+      const val = t(locale, key);
+      if (/[（(]/.test(val) || /[)）]/.test(val)) bad.push(`${locale} ${key} = ${val}`);
+    }
+  }
+  assert.deepEqual(bad, [], `名称里还有括号（应移到 hint）：\n      ${bad.join('\n      ')}`);
+});
+
 console.log(`\n  通过 ${pass} 失败 ${process.exitCode ? 1 : 0}\n`);
