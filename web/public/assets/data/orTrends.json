@@ -1,7 +1,7 @@
 {
  "key": "orTrends",
  "name": "orTrends",
- "fetchedAt": "2026-10-28T19:46:16.948Z",
+ "fetchedAt": "2026-10-28T22:01:37.249Z",
  "payload": [
   {
    "data": {
@@ -4141,35 +4141,35 @@
     "videoRequests": {
      "runway/gen-4.5-20260729": 704,
      "google/veo-3.1-fast-20260320": 16511,
-     "heygen/heygen-video-1-20260930": 63004,
-     "bytedance/seedance-2.0-20260414": 18775,
-     "runway/aleph-2-20260729": 671,
      "alibaba/wan-3.0-20260824": 60429,
-     "minimax/hailuo-2.3-20260420": 430,
-     "google/veo-3.1-lite-20260331": 41656,
-     "bytedance/seedance-2.0-fast-20260414": 32980,
-     "x-ai/grok-imagine-video-20260512": 9663,
-     "black-forest-labs/flux-3-video-20260804": 1752,
-     "alibaba/wan-2.6-20260327": 633,
-     "bytedance/seedance-1-5-pro-20260320": 11997,
-     "kwaivgi/kling-v3.0-std-20260429": 11543,
      "alibaba/wan-2.7-20260414": 2259,
-     "x-ai/grok-imagine-video-1.5-20260719": 8239,
-     "kwaivgi/kling-video-o1-20260420": 813,
-     "bytedance/seedance-2.5-20260807": 32123,
-     "alibaba/wan-3.0-prime-20260827": 5001,
-     "alibaba/happyhorse-1.1-20260624": 2618,
-     "black-forest-labs/flux-video-edit-20260910": 1429,
-     "x-ai/grok-imagine-video-1.5-lite-20261001": 32586,
      "alibaba/happyhorse-1.0-20260624": 134,
      "google/veo-3.1-20260320": 6081,
-     "heygen/avatar-iv-20260625": 12328,
+     "bytedance/seedance-2.0-fast-20260414": 32980,
      "minimax/hailuo-3-max-20260901": 12012,
+     "kwaivgi/kling-video-o1-20260420": 813,
+     "google/veo-3.1-lite-20260331": 41656,
+     "bytedance/seedance-2.0-20260414": 18775,
+     "heygen/heygen-video-1-20260930": 63004,
+     "black-forest-labs/flux-video-edit-20260910": 1429,
+     "x-ai/grok-imagine-video-1.5-lite-20261001": 32586,
+     "bytedance/seedance-1-5-pro-20260320": 11997,
+     "bytedance/seedance-2.5-20260807": 32123,
+     "alibaba/wan-2.6-20260327": 633,
+     "x-ai/grok-imagine-video-20260512": 9663,
+     "kwaivgi/kling-v3.0-std-20260429": 11543,
+     "heygen/avatar-iv-20260625": 12328,
+     "runway/aleph-2-20260729": 671,
+     "black-forest-labs/flux-3-video-20260804": 1752,
+     "alibaba/wan-3.0-prime-20260827": 5001,
+     "bytedance/seedance-2.0-mini-20260811": 9785,
+     "x-ai/grok-imagine-video-1.5-20260719": 8239,
+     "alibaba/happyhorse-1.1-20260624": 2618,
      "minimax/hailuo-03-20260730": 9644,
-     "kwaivgi/kling-v3.0-pro-20260429": 12627,
-     "bytedance/seedance-2.0-mini-20260811": 9785
+     "minimax/hailuo-2.3-20260420": 430,
+     "kwaivgi/kling-v3.0-pro-20260429": 12627
     },
-    "generatedAt": "2026-10-28T19:22:12.422Z",
+    "generatedAt": "2026-10-28T21:39:25.839Z",
     "routerTokens": {
      "openrouter/auto": 758996676617,
      "typesafe/jev-router": 21918712336,
@@ -4205,6 +4205,80 @@
   },
   {
    "data": [
+    {
+     "id": "particle-ai/particle-1",
+     "canonical_slug": "particle-ai/particle-1-20261027",
+     "hugging_face_id": null,
+     "name": "Particle AI: Particle-1",
+     "created": 1793207893,
+     "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, codebase changes, and data...",
+     "context_length": 1048576,
+     "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+       "text",
+       "image"
+      ],
+      "output_modalities": [
+       "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+     },
+     "pricing": {
+      "prompt": "0.00000025",
+      "completion": "0.000001",
+      "input_cache_read": "0.00000003"
+     },
+     "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+     },
+     "per_request_limits": null,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+     ],
+     "default_parameters": {},
+     "supported_voices": null,
+     "knowledge_cutoff": null,
+     "expiration_date": null,
+     "links": {
+      "details": "/api/v1/models/particle-ai/particle-1-20261027/endpoints"
+     },
+     "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+       "max",
+       "xhigh",
+       "high",
+       "medium",
+       "low",
+       "minimal",
+       "none"
+      ],
+      "default_effort": "high"
+     }
+    },
     {
      "id": "openai/gpt-6.1-terra-pro",
      "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
@@ -5552,7 +5626,7 @@
      },
      "top_provider": {
       "context_length": 1048576,
-      "max_completion_tokens": 943718,
+      "max_completion_tokens": 131072,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -10246,9 +10320,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000001318",
+      "prompt": "0.0000001035",
       "completion": "0.000008",
-      "input_cache_read": "0.00000013"
+      "input_cache_read": "0.0000001"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -10324,9 +10398,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000000115",
+      "prompt": "0.0000000138",
       "completion": "0.0000018",
-      "input_cache_read": "0.0000000114"
+      "input_cache_read": "0.0000000137"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -11046,13 +11120,13 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.00000014",
-      "completion": "0.00000042",
-      "input_cache_read": "0.0000000042"
+      "prompt": "0.000000045",
+      "completion": "0.0000005",
+      "input_cache_read": "0.000000006"
      },
      "top_provider": {
       "context_length": 1048576,
-      "max_completion_tokens": 131072,
+      "max_completion_tokens": 943718,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -12949,9 +13023,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000000259",
-      "completion": "0.0000001042",
-      "input_cache_read": "0.0000000259"
+      "prompt": "0.0000000285",
+      "completion": "0.0000000923",
+      "input_cache_read": "0.0000000285"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -13088,9 +13162,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000000259",
-      "completion": "0.0000001042",
-      "input_cache_read": "0.0000000259"
+      "prompt": "0.0000000285",
+      "completion": "0.0000000923",
+      "input_cache_read": "0.0000000285"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -20976,7 +21050,7 @@
      },
      "pricing": {
       "prompt": "0.000000006",
-      "completion": "0.000007",
+      "completion": "0.0000054",
       "input_cache_read": "0.000000005"
      },
      "top_provider": {
@@ -29727,7 +29801,7 @@
      "name": "NVIDIA: Nemotron 3 Super",
      "created": 1773245239,
      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
-     "context_length": 262144,
+     "context_length": 1048576,
      "architecture": {
       "modality": "text->text",
       "input_modalities": [
@@ -29745,8 +29819,8 @@
       "input_cache_read": "0.00000015"
      },
      "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 235929,
+      "context_length": 1048576,
+      "max_completion_tokens": 262144,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -39697,7 +39771,7 @@
      },
      "top_provider": {
       "context_length": 163840,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": 147456,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -48332,7 +48406,7 @@
      }
     }
    ],
-   "total_count": 456,
+   "total_count": 457,
    "links": {
     "next": null
    }

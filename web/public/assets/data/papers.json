@@ -1,8 +1,181 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-28T19:46:14.491Z",
+ "fetchedAt": "2026-10-28T22:01:35.097Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2509.05512",
+    "authors": [
+     {
+      "_id": "6ae25953d670fc6ea896c6ae",
+      "name": "Bryce Grant",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25953d670fc6ea896c6af",
+      "name": "Peng Wang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
+    "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+    "submittedOnDailyBy": {
+     "_id": "66982313fd52271e0bb0e530",
+     "avatarUrl": "/avatars/fbf8b34799cee2c41d4afc11223b26ca.svg",
+     "isPro": true,
+     "fullname": "Bryce",
+     "user": "bag100",
+     "type": "user",
+     "name": "bag100"
+    },
+    "summary": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
+    "upvotes": 0,
+    "discussionId": "6ae25953d670fc6ea896c6b0",
+    "projectPage": "https://cwru-aism.github.io/QUANpaper/",
+    "githubRepo": "https://github.com/bryceag11/QUAN_ultralytics",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "QUAN is a quaternion-based deep learning framework that approximates quaternion convolution with real-valued operations to achieve rotation-equivariant image classification and object detection with improved efficiency.",
+    "ai_keywords": [
+     "quaternion algebra",
+     "rotation equivariant",
+     "quaternion convolution",
+     "Hamilton product decomposition",
+     "Independent Quaternion Batch Normalization",
+     "spatial attention",
+     "quaternion neural networks",
+     "Convolutional Neural Networks"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-26T20:00:00.000Z",
+   "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+   "summary": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2509.05512.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66982313fd52271e0bb0e530",
+    "avatarUrl": "/avatars/fbf8b34799cee2c41d4afc11223b26ca.svg",
+    "fullname": "Bryce",
+    "name": "bag100",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.22684",
+    "authors": [
+     {
+      "_id": "6ae25565d670fc6ea896c68f",
+      "name": "Liqin Ye",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c690",
+      "name": "Rongzhi Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c691",
+      "name": "Xin Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c692",
+      "name": "Zheng Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c693",
+      "name": "Yuan He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c694",
+      "name": "Qingyu Yin",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c695",
+      "name": "Priyanka Nigam",
+      "hidden": false
+     },
+     {
+      "_id": "6ae25565d670fc6ea896c696",
+      "name": "Chao Zhang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
+    "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+    "submittedOnDailyBy": {
+     "_id": "65bc5265f525e2008ebdded0",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65bc5265f525e2008ebdded0/DJESzOpHD47N3VLAfXfvp.jpeg",
+     "isPro": true,
+     "fullname": "Liqin Ye",
+     "user": "liqinye",
+     "type": "user",
+     "name": "liqinye"
+    },
+    "summary": "Forecasting an unresolved event requires finding relevant evidence and deciding how strongly it supports each outcome. Yet outcome-based training of Large Language Model (LLM) forecasters often begins with preassembled evidence at a single prediction date, leaving evidence acquisition outside the learning loop. We introduce AlphaBet, an agentic reinforcement learning (RL) framework that trains a single LLM policy to search, reason, and report probabilities across multiple pre-resolution dates. Each dated forecast is scored by a proper scoring rule against the eventual outcome, allowing one resolved event to supervise decisions under different information states. We decompose forecasting regret into an evidence-acquisition gap and a probability-reporting gap, and show that Group Relative Policy Optimization (GRPO)'s standard-deviation normalization can distort the reporting target under multi-class proper scores. On GLM-4.5-Air, AlphaBet reduces the Brier score from 0.731 to 0.626 on Forecast-Dojo and from 0.612 to 0.528 on FutureX. Controlled ablations attribute these gains to multi-date training and show that they come from improvements in both information acquisition and probability reporting. Our empirical results validate that GRPO's std normalization degrades proper-scoring-rule performance while leaving top-outcome accuracy largely unchanged.",
+    "upvotes": 1,
+    "discussionId": "6ae25566d670fc6ea896c697",
+    "projectPage": "https://alphabet-agent.github.io/",
+    "githubRepo": "https://github.com/AlphaBet-Agent/AlphaBet",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "AlphaBet uses agentic reinforcement learning to train a single LLM policy to search, reason, and report forecast probabilities across multiple dates, reducing Brier scores by improving both evidence acquisition and probability reporting.",
+    "ai_keywords": [
+     "agentic reinforcement learning",
+     "Group Relative Policy Optimization",
+     "proper scoring rule",
+     "Brier score",
+     "multi-date training",
+     "evidence acquisition",
+     "probability reporting"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 3,
+    "organization": {
+     "_id": "64155eaa95fb6f824b237c3d",
+     "name": "GeorgiaTech",
+     "fullname": "Georgia Institute of Technology",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64155e8abe60230f2f40b03a/3i-AL3LrNkaTarSKnaGy8.png"
+    }
+   },
+   "publishedAt": "2026-10-14T20:00:00.000Z",
+   "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+   "summary": "Forecasting an unresolved event requires finding relevant evidence and deciding how strongly it supports each outcome. Yet outcome-based training of Large Language Model (LLM) forecasters often begins with preassembled evidence at a single prediction date, leaving evidence acquisition outside the learning loop. We introduce AlphaBet, an agentic reinforcement learning (RL) framework that trains a single LLM policy to search, reason, and report probabilities across multiple pre-resolution dates. Each dated forecast is scored by a proper scoring rule against the eventual outcome, allowing one resolved event to supervise decisions under different information states. We decompose forecasting regret into an evidence-acquisition gap and a probability-reporting gap, and show that Group Relative Policy Optimization (GRPO)'s standard-deviation normalization can distort the reporting target under multi-class proper scores. On GLM-4.5-Air, AlphaBet reduces the Brier score from 0.731 to 0.626 on Forecast-Dojo and from 0.612 to 0.528 on FutureX. Controlled ablations attribute these gains to multi-date training and show that they come from improvements in both information acquisition and probability reporting. Our empirical results validate that GRPO's std normalization degrades proper-scoring-rule performance while leaving top-outcome accuracy largely unchanged.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22684.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65bc5265f525e2008ebdded0",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65bc5265f525e2008ebdded0/DJESzOpHD47N3VLAfXfvp.jpeg",
+    "fullname": "Liqin Ye",
+    "name": "liqinye",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "64155eaa95fb6f824b237c3d",
+    "name": "GeorgiaTech",
+    "fullname": "Georgia Institute of Technology",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64155e8abe60230f2f40b03a/3i-AL3LrNkaTarSKnaGy8.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.31924",
@@ -327,7 +500,7 @@
      "name": "shanyangmie"
     },
     "summary": "Outcome RL raises pass@1 but not pass@k at large k (Yue et al., 2025). But every pass@1 is scored under a token budget. Every recipe also trains under one. On physics and math problems at fixed token budgets, we compare the pass@1 of 20 released RL models (1.5B to 32B) with that of the thinking models they started from. We ask whether each pass@1 gain is changed behaviour or new knowledge. We divide each change in pass@1 into three parts. Finishing measures answering before the budget runs out. Reliability measures being right once finished. Reach measures problems RL solves that its base answered wrongly in all eight tries, minus problems the base solves that RL answered wrongly in all eight. We find four things. (1) Where the base often hits the token budget before answering, most of the change, gain or loss, is finishing (82% at 4k and 8k). Given more tokens, the base closes most of the finishing gap itself. (2) Where the base has enough tokens, the gain is reliability: the RL model is graded right more often, even on problems both finish. (3) By our definition, RL rarely solves what its base cannot. Reach adds at most 2.1 percentage points on any of our four physics and math sets. We checked 144 physics problems that only the RL model solved. Of these, 3.5% hold up when resampled or read. In a random sample, nine of ten new RL steps a human confirmed also appear in the base's samples. (4) In a small-scale RL run on an 8B model, the gain on new problems is finishing, with reliability flat. Supplying each problem's physical setup was not shown to improve on plain RL.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae22dd4d670fc6ea896c612",
     "projectPage": "https://shanyang.me/what-outcome-rl-buys/",
     "githubRepo": "https://github.com/shanyang-me/outcome-rl-buys",
@@ -407,7 +580,7 @@
      "name": "jhzyu"
     },
     "summary": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step. We truncate the student's trajectory immediately before the error (aiming to obtain a correct prefix), condition a frozen copy of the student on the same prefix plus the hint, and distill that hint-conditioned teacher into the student over a short rollout under reverse KL. No external model contributes a gradient. We apply Fin-SD to GPT-OSS-20B on a custom multi-step financial reasoning benchmark that requires deriving formula inputs from realistic scenarios via accounting conventions. We find: (i) replacing the critique with a generic-feedback control matches Fin-SD's entire 3.03 pp accuracy gain over the base model on the FinanceReasoning Hard subset, suggesting the gain comes from where supervision is applied, not hint content; (ii) the model writing the hint does not need to be stronger than the model receiving it: hints from same-family GPT-OSS-120B, at roughly 6x the parameters, yield no materially greater benefits than self-written hints; and (iii) Fin-SD matches on-policy self-distillation from full reference solutions on accuracy while generating 9.5% fewer tokens. With Fin-SD, general reasoning on MMLU-Pro and a fourteen-metric compliance audit on FinTrust show no material regression.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae16938a5eb0647c2907455",
     "githubRepo": "https://github.com/johnnyhyu/fin-sd",
     "githubRepoAddedBy": "user",
@@ -839,7 +1012,7 @@
      "name": "tomaarsen"
     },
     "summary": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
-    "upvotes": 10,
+    "upvotes": 12,
     "discussionId": "6ae1622ba5eb0647c290729e",
     "ai_summary": "EmbeddingGemma 2 is an open multimodal embedding model that unifies text, images, audio, and video representations with efficient resource-flexible design and state-of-the-art benchmark performance.",
     "ai_keywords": [
@@ -877,7 +1050,7 @@
     "isHf": true,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4691,
+    "followerCount": 4692,
     "isUserFollowing": false
    },
    "organization": {
@@ -1447,7 +1620,7 @@
      "name": "WaltonFuture"
     },
     "summary": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6ae1a3aba5eb0647c2907621",
     "projectPage": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
     "githubRepo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
@@ -1466,7 +1639,7 @@
      "visual reasoning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 12,
     "organization": {
      "_id": "67aea5c8f086ab0f70ed97c9",
      "name": "inclusionAI",
@@ -1580,7 +1753,7 @@
      "continuous visual representations"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 8,
+    "githubStars": 29,
     "organization": {
      "_id": "68b28d79a176a9beb30d2049",
      "name": "meituan-longcat",
@@ -1953,7 +2126,7 @@
      "name": "diaomuxi"
     },
     "summary": "Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. We introduce VibeVideoBench, a benchmark for evaluating agents on code-driven video generation. Its 239 self-contained tasks in English and Chinese span 12 categories, from data stories and music-driven pieces to classroom lessons and paper explainers; each asks an agent, running in its native harness inside a sandbox with no image or video generation model, to deliver a finished MP4 with sound within one hour. Evaluation is hierarchical and evidence-based: program checks of the delivery spec, about 13k task-specific rubric checks traced to the requirements they enforce, and five quality dimensions anchored per task, scored by three VLM judge panels. Across nine frontier agent systems and 2,151 scored rollouts, GPT-6 Astra and Claude Opus 5.5 rank first and second with both the judges and human annotators, and the strongest system satisfies every core requirement on 76.3% of tasks. Delivery is a second axis: counting missing videos as zero changes the ranking, and three quarters of the lost videos are final renders that started too late, ran too slowly or never started, a failure of how agents plan their hour. Agents build their own rendering pipelines and inspect their own frames, yet how much they look does not predict quality. The judges' ranking of the systems closely matches blind human preferences.",
-    "upvotes": 140,
+    "upvotes": 168,
     "discussionId": "6ae1740fa5eb0647c2907508",
     "projectPage": "https://vibevideobench.github.io/",
     "ai_summary": "VibeVideoBench evaluates multimodal agents that generate videos via code, finding that top systems meet core requirements on most tasks but frequently fail due to poor time management.",
@@ -5611,7 +5784,7 @@
      "name": "chyun"
     },
     "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-    "upvotes": 46,
+    "upvotes": 47,
     "discussionId": "6ae15d94a5eb0647c290723a",
     "projectPage": "https://thinkworld-project.github.io/",
     "ai_summary": "ThinkWorld improves robotic generalization by representing actions as dynamics chains and using world imagination to learn from unlabeled human videos.",
@@ -7138,7 +7311,7 @@
      "name": "zhangchenxu"
     },
     "summary": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, closing a median of 76% of the base-to-Instruct gap across 12 capability benchmarks. Its human-preference rating is also close to NVIDIA Instruct after statistical adjustment for answer length and formatting. In Stage 2, each agent receives the comparison records and votes involving its Stage 1 model and is given three additional days for further training. Using NVIDIA Instruct as a common reference across the two evaluation rounds, we observe an improvement from Stage 1 to Stage 2 in the style-adjusted relative rating of eight of the ten models. We show that benchmark gains were modest, with no clear link to preference gains, while some agents encouraged longer responses and one model showed increased harmful compliance on StrongREJECT. RSI Arena provides an auditable setting for studying how human feedback can guide autonomous model development. It takes a step toward recursive self-improvement with human feedback (RSIHF), in which people help define what improvement means for the AI systems they use.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ae15742a5eb0647c2907196",
     "projectPage": "https://rsiarena.org",
     "ai_summary": "RSI Arena demonstrates that autonomous AI agents can independently train and iteratively improve language models using human feedback, with most agents achieving preference gains in a second stage despite modest benchmark improvements.",
@@ -7928,222 +8101,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65cd955637be1841d0b75397/Rao_Kq6NMtTVfSqLUIR4k.webp"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.31566",
-    "authors": [
-     {
-      "_id": "6ae0e9b4a5eb0647c2906e53",
-      "user": {
-       "_id": "65aa8a11b0b08767906a34dc",
-       "avatarUrl": "/avatars/55ec74eb4e147dc3e3d24fdfdf896f46.svg",
-       "isPro": false,
-       "fullname": "Ilan Theodoro",
-       "user": "ilan-theodoro",
-       "type": "user",
-       "name": "ilan-theodoro"
-      },
-      "name": "Ilan Theodoro",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T00:45:04.688Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0e9b4a5eb0647c2906e54",
-      "name": "Jordão Bragantini",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0e9b4a5eb0647c2906e55",
-      "name": "Loïc A. Royer",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-27T00:00:00.000Z",
-    "title": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models",
-    "submittedOnDailyBy": {
-     "_id": "65aa8a11b0b08767906a34dc",
-     "avatarUrl": "/avatars/55ec74eb4e147dc3e3d24fdfdf896f46.svg",
-     "isPro": false,
-     "fullname": "Ilan Theodoro",
-     "user": "ilan-theodoro",
-     "type": "user",
-     "name": "ilan-theodoro"
-    },
-    "summary": "Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we created a new benchmark, CellTrack-Bench, which assesses Vision-Language Models' (VLMs) cell-tracking-related performance against specialized trackers. The full benchmark draws from 15 standard cell-tracking datasets across four imaging modalities and comprises 1,537 problems corresponding to 9,041 cell-linking decisions. We selected a hard subset requiring greater reasoning effort by identifying failures shared across distinct algorithmic trackers. With this proposed dataset, we: (i) evaluated different environment harnesses for VLMs; (ii) benchmarked 9 frontier closed-source models and 13 open-weight models; and (iii) provided a detailed analysis of their failure modes. Code, the stored model outputs, and a pipeline that regenerates the benchmark from the source datasets are available at https://github.com/royerlab/celltrack-bench.",
-    "upvotes": 2,
-    "discussionId": "6ae0e9b5a5eb0647c2906e56",
-    "githubRepo": "https://github.com/royerlab/celltrack-bench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "A new benchmark evaluates vision-language models on cell tracking against specialized algorithms, revealing reasoning gaps across diverse imaging modalities.",
-    "ai_keywords": [
-     "Vision-Language Models",
-     "cell tracking",
-     "CellTrack-Bench",
-     "spatiotemporal awareness",
-     "imaging modalities",
-     "algorithmic trackers"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
-    "organization": {
-     "_id": "6526b5782f6f160f578098a4",
-     "name": "biohub",
-     "fullname": "Biohub",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6558377d50b9a14799c7aa00/pknOVYGLI8wofNCY11Aif.png"
-    }
-   },
-   "publishedAt": "2026-10-21T20:00:00.000Z",
-   "title": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models",
-   "summary": "Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we created a new benchmark, CellTrack-Bench, which assesses Vision-Language Models' (VLMs) cell-tracking-related performance against specialized trackers. The full benchmark draws from 15 standard cell-tracking datasets across four imaging modalities and comprises 1,537 problems corresponding to 9,041 cell-linking decisions. We selected a hard subset requiring greater reasoning effort by identifying failures shared across distinct algorithmic trackers. With this proposed dataset, we: (i) evaluated different environment harnesses for VLMs; (ii) benchmarked 9 frontier closed-source models and 13 open-weight models; and (iii) provided a detailed analysis of their failure modes. Code, the stored model outputs, and a pipeline that regenerates the benchmark from the source datasets are available at https://github.com/royerlab/celltrack-bench.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31566.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65aa8a11b0b08767906a34dc",
-    "avatarUrl": "/avatars/55ec74eb4e147dc3e3d24fdfdf896f46.svg",
-    "fullname": "Ilan Theodoro",
-    "name": "ilan-theodoro",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6526b5782f6f160f578098a4",
-    "name": "biohub",
-    "fullname": "Biohub",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6558377d50b9a14799c7aa00/pknOVYGLI8wofNCY11Aif.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.32177",
-    "authors": [
-     {
-      "_id": "6ae14405a5eb0647c2907090",
-      "user": {
-       "_id": "631ad4b2fac58c9c8167bafc",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ad4b2fac58c9c8167bafc/jum1yrhVWkl-biBdKitF3.png",
-       "isPro": false,
-       "fullname": "Khai Loong Aw",
-       "user": "awwkl",
-       "type": "user",
-       "name": "awwkl"
-      },
-      "name": "Khai Loong Aw",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T00:45:04.744Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907091",
-      "name": "Klemen Kotar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907092",
-      "name": "Baihan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907093",
-      "name": "Yifan Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907094",
-      "name": "Lilian Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907095",
-      "name": "Atlas Kazemian",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907096",
-      "name": "Rahul Venkatesh",
-      "hidden": false
-     },
-     {
-      "_id": "6ae14405a5eb0647c2907097",
-      "name": "Daniel Yamins",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/631ad4b2fac58c9c8167bafc/63i2e1IBCyE8QNu8ajZhI.mp4"
-    ],
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-27T00:00:00.000Z",
-    "title": "Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
-    "submittedOnDailyBy": {
-     "_id": "631ad4b2fac58c9c8167bafc",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ad4b2fac58c9c8167bafc/jum1yrhVWkl-biBdKitF3.png",
-     "isPro": false,
-     "fullname": "Khai Loong Aw",
-     "user": "awwkl",
-     "type": "user",
-     "name": "awwkl"
-    },
-    "summary": "Humans reason about the physical world by flexibly combining different forms of inference as a problem unfolds. Achieving this flexibility is a major open challenge in AI: capabilities often remain separated across specialized models, limiting how they can be composed and jointly adapted to a task. We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought. These streams interleave images, text, and explicit representations of geometry and motion, all of which the model can generate and interpret through a shared token interface. Ψ-0.6 surpasses leading open-weight models zero-shot on multi-view spatial reasoning, with further gains from reasoning through geometric intermediates. It also supports counterfactual simulation: generating and interpreting imagined scenes to determine, for example, whether moving an object would obstruct a pathway. Reinforcement learning from task feedback jointly optimizes the selection, generation, and use of intermediate representations, improving visual question-answering accuracy with gains that transfer to unseen benchmarks. Ψ-0.6 offers a path toward adaptive physical reasoning -- not only predicting the physical world but also choosing the representations through which to reason.",
-    "upvotes": 5,
-    "discussionId": "6ae14405a5eb0647c2907098",
-    "projectPage": "https://neuroailab.github.io/psi-website/blog/psi-0-6.html",
-    "githubRepo": "https://github.com/neuroailab/psi-0.6",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "A unified vision-language world model adaptively combines perception, language, geometry, and simulation through interleaved reasoning streams to improve spatial reasoning and counterfactual simulation.",
-    "ai_keywords": [
-     "vision-language world model",
-     "streams of thought",
-     "token interface",
-     "multi-view spatial reasoning",
-     "geometric intermediates",
-     "counterfactual simulation",
-     "reinforcement learning",
-     "visual question-answering"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 15,
-    "organization": {
-     "_id": "636025b83605bd411c1889d9",
-     "name": "Stanford",
-     "fullname": "Stanford AI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/604d2f473050a33ebb17ef51/Z-vDTyG_6-yZhzfXklqAK.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-22T20:00:00.000Z",
-   "title": "Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
-   "summary": "Humans reason about the physical world by flexibly combining different forms of inference as a problem unfolds. Achieving this flexibility is a major open challenge in AI: capabilities often remain separated across specialized models, limiting how they can be composed and jointly adapted to a task. We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought. These streams interleave images, text, and explicit representations of geometry and motion, all of which the model can generate and interpret through a shared token interface. Ψ-0.6 surpasses leading open-weight models zero-shot on multi-view spatial reasoning, with further gains from reasoning through geometric intermediates. It also supports counterfactual simulation: generating and interpreting imagined scenes to determine, for example, whether moving an object would obstruct a pathway. Reinforcement learning from task feedback jointly optimizes the selection, generation, and use of intermediate representations, improving visual question-answering accuracy with gains that transfer to unseen benchmarks. Ψ-0.6 offers a path toward adaptive physical reasoning -- not only predicting the physical world but also choosing the representations through which to reason.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/631ad4b2fac58c9c8167bafc/63i2e1IBCyE8QNu8ajZhI.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32177.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "631ad4b2fac58c9c8167bafc",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ad4b2fac58c9c8167bafc/jum1yrhVWkl-biBdKitF3.png",
-    "fullname": "Khai Loong Aw",
-    "name": "awwkl",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "636025b83605bd411c1889d9",
-    "name": "Stanford",
-    "fullname": "Stanford AI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/604d2f473050a33ebb17ef51/Z-vDTyG_6-yZhzfXklqAK.jpeg"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
