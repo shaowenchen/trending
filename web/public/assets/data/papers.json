@@ -1,8 +1,266 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-28T10:46:49.289Z",
+ "fetchedAt": "2026-10-28T13:01:15.456Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.35013",
+    "authors": [
+     {
+      "_id": "6ae1d53f717a45b73580b380",
+      "name": "Tao Ren",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b381",
+      "name": "Hui Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b382",
+      "name": "Jia Deng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b383",
+      "name": "Tingyang Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b384",
+      "name": "Qiyao Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b385",
+      "name": "Shuo Tang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b386",
+      "name": "Ziyang Zeng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b387",
+      "name": "Yuhua Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b388",
+      "name": "Guanghao Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b389",
+      "name": "Huatong Song",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38a",
+      "name": "Yining Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38b",
+      "name": "Yifan Luo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38c",
+      "name": "Kunbao Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38d",
+      "name": "Feng Chang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38e",
+      "name": "Chuan Hao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b38f",
+      "name": "Ran Tao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b390",
+      "name": "Bryan Dai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b391",
+      "name": "Jiafeng Liang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d53f717a45b73580b392",
+      "name": "Jinyang Jiang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
+    "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+    "submittedOnDailyBy": {
+     "_id": "68cb7d70de299da181a5ec4c",
+     "avatarUrl": "/avatars/793f4263e9d900299cfd59c99922e7dc.svg",
+     "isPro": false,
+     "fullname": "CHEN TINGYANG",
+     "user": "Tingyang-Chen",
+     "type": "user",
+     "name": "Tingyang-Chen"
+    },
+    "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
+    "upvotes": 4,
+    "discussionId": "6ae1d53f717a45b73580b393",
+    "ai_summary": "Multiscale Policy Optimization improves long-horizon agent training by aligning credit assignment and policy updates at the turn scale.",
+    "ai_keywords": [
+     "Multiscale Policy Optimization",
+     "Multiscale Advantage Estimation",
+     "turn-level importance sampling",
+     "critic values",
+     "long-horizon LLM agents"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6937e1578cd2568ba4c9d3f9",
+     "name": "IQuestLab",
+     "fullname": "IQuest",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+    }
+   },
+   "publishedAt": "2026-10-25T20:00:00.000Z",
+   "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+   "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35013.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "68cb7d70de299da181a5ec4c",
+    "avatarUrl": "/avatars/793f4263e9d900299cfd59c99922e7dc.svg",
+    "fullname": "CHEN TINGYANG",
+    "name": "Tingyang-Chen",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6937e1578cd2568ba4c9d3f9",
+    "name": "IQuestLab",
+    "fullname": "IQuest",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.35962",
+    "authors": [
+     {
+      "_id": "6ae1d66f717a45b73580b396",
+      "name": "Skander Moalla",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d66f717a45b73580b397",
+      "name": "Ahmad Rammal",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d66f717a45b73580b398",
+      "name": "Niket Patel",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d66f717a45b73580b399",
+      "name": "Remi Munos",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1d66f717a45b73580b39a",
+      "name": "Julia Kempe",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/66d04835530bebbbef1d8405/6_Fx6XP3Uu5EsqEajK5B-.png"
+    ],
+    "publishedAt": "2026-10-25T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
+    "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+    "submittedOnDailyBy": {
+     "_id": "66d04835530bebbbef1d8405",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66d04835530bebbbef1d8405/qBXxfmycHKlKz1K9sMJc-.jpeg",
+     "isPro": false,
+     "fullname": "Skander Moalla",
+     "user": "skandermoalla",
+     "type": "user",
+     "name": "skandermoalla"
+    },
+    "summary": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
+    "upvotes": 7,
+    "discussionId": "6ae1d670717a45b73580b39b",
+    "ai_summary": "A simple agentic loop with efficient Lean feedback achieves state-of-the-art formal theorem proving without structured workflows, showing that execution interfaces matter more than complex orchestration.",
+    "ai_keywords": [
+     "agentic loop",
+     "test-time compute",
+     "formal theorem proving",
+     "Lean 4",
+     "verifier feedback",
+     "self-reflection",
+     "PutnamBench",
+     "FATE-X",
+     "FormalConjectures",
+     "Goedel-Architect",
+     "AlphaProof Nexus",
+     "Claude Code",
+     "AxProverBase"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "64aa62fec05da19ca8539776",
+     "name": "meta-llama",
+     "fullname": "Meta Llama",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png"
+    }
+   },
+   "publishedAt": "2026-10-24T20:00:00.000Z",
+   "title": "h1: A Taste of the Bitter Lesson in Automated Theorem Proving",
+   "summary": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/66d04835530bebbbef1d8405/6_Fx6XP3Uu5EsqEajK5B-.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35962.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66d04835530bebbbef1d8405",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66d04835530bebbbef1d8405/qBXxfmycHKlKz1K9sMJc-.jpeg",
+    "fullname": "Skander Moalla",
+    "name": "skandermoalla",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "64aa62fec05da19ca8539776",
+    "name": "meta-llama",
+    "fullname": "Meta Llama",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2602.10657",
@@ -51,7 +309,7 @@
      "name": "PenPaperKeyCode"
     },
     "summary": "How much of zero-shot benchmark accuracy is captured by word-level alignment between a pre-training corpus and the benchmark target? We study this question through word-level unigram cross-entropy (UCE), a tokenizer-agnostic, model-free measure of lexical alignment between a reference corpus and a target benchmark. Likelihood training shapes the model's predictive distribution from the pre-training corpus, and zero-shot scores under likelihood-based evaluation depend in part on the lexical alignment between that corpus and the benchmark target. Cleanly tracing how the lexical imprint of pre-training data scales with corpus--benchmark alignment requires controlled from-scratch pre-training that varies corpus identity while holding the training recipe fixed. Across this controlled sweep, spanning 10 zero-shot benchmarks, 4 pre-training corpora, and 3 model scales, we find that corpus--benchmark lexical alignment, UCE, consistently tracks zero-shot accuracy on every benchmark, with corpora more aligned with the benchmark (lower UCE) achieving higher accuracy. The same signal extends from measurement to control at finer scopes. At the document level, strengthening the imprint by selecting training documents to maximize lexical alignment with the benchmark produces the accuracy gains predicted by the mechanism. At the prompt level, matching the imprint per prompt by routing each prompt to the drafter whose domain corpus is most lexically aligned with it produces measurable throughput gains over a generalist-drafter baseline. Taken together, pre-training corpora leave a measurable lexical imprint on base-model zero-shot behavior, and UCE provides a model-free probe of lexical alignment between reference and target data.",
-    "upvotes": 4,
+    "upvotes": 6,
     "discussionId": "6ae1c259a5eb0647c2907720",
     "githubRepo": "https://github.com/penpaperkeycode/lexical-imprint",
     "githubRepoAddedBy": "user",
@@ -183,7 +441,7 @@
      "name": "WaltonFuture"
     },
     "summary": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6ae1a3aba5eb0647c2907621",
     "projectPage": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
     "githubRepo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
@@ -299,7 +557,7 @@
      "name": "yuezhengrong"
     },
     "summary": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal understanding. Trained on industrial-scale multimodal data, our model achieves state-of-the-art performance among discrete-representation models, outperforming UniAR and Emu3-Chat by 22.8% and 59.2%, respectively, on a nine-metric average. To our knowledge, it is also the first discrete-representation model competitive with strong continuous-representation models such as Qwen3-VL, including on fine-grained OCR tasks. We further identify the key principles and a practical recipe enabling this competitiveness. These results and insights support the potential of discrete visual representations to underpin large-scale native multimodal foundation models. Code and models are available at https://github.com/hustvl/FVQ",
-    "upvotes": 42,
+    "upvotes": 61,
     "discussionId": "6ae16423a5eb0647c29072b3",
     "projectPage": "https://doctor-james.github.io/FVQ-Page/",
     "githubRepo": "https://github.com/hustvl/FVQ",
@@ -678,7 +936,7 @@
      "name": "diaomuxi"
     },
     "summary": "Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. We introduce VibeVideoBench, a benchmark for evaluating agents on code-driven video generation. Its 239 self-contained tasks in English and Chinese span 12 categories, from data stories and music-driven pieces to classroom lessons and paper explainers; each asks an agent, running in its native harness inside a sandbox with no image or video generation model, to deliver a finished MP4 with sound within one hour. Evaluation is hierarchical and evidence-based: program checks of the delivery spec, about 13k task-specific rubric checks traced to the requirements they enforce, and five quality dimensions anchored per task, scored by three VLM judge panels. Across nine frontier agent systems and 2,151 scored rollouts, GPT-6 Astra and Claude Opus 5.5 rank first and second with both the judges and human annotators, and the strongest system satisfies every core requirement on 76.3% of tasks. Delivery is a second axis: counting missing videos as zero changes the ranking, and three quarters of the lost videos are final renders that started too late, ran too slowly or never started, a failure of how agents plan their hour. Agents build their own rendering pipelines and inspect their own frames, yet how much they look does not predict quality. The judges' ranking of the systems closely matches blind human preferences.",
-    "upvotes": 22,
+    "upvotes": 54,
     "discussionId": "6ae1740fa5eb0647c2907508",
     "projectPage": "https://vibevideobench.github.io/",
     "ai_summary": "VibeVideoBench evaluates multimodal agents that generate videos via code, finding that top systems meet core requirements on most tasks but frequently fail due to poor time management.",
@@ -1004,7 +1262,7 @@
      "name": "lin5547"
     },
     "summary": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
-    "upvotes": 120,
+    "upvotes": 136,
     "discussionId": "6ae15d0fa5eb0647c2907230",
     "ai_summary": "PDRVLA improves robot action generation by integrating a lightweight physical dynamics module that predicts future visual features with world-model supervision, avoiding online video generation latency.",
     "ai_keywords": [
@@ -1037,7 +1295,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 8,
+    "followerCount": 9,
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
@@ -1388,8 +1646,11 @@
      "name": "IntJudge"
     },
     "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
-    "upvotes": 106,
+    "upvotes": 227,
     "discussionId": "6ae17a9aa5eb0647c2907534",
+    "projectPage": "https://trinity-rsi.github.io/",
+    "githubRepo": "https://github.com/InfRec-Cardinal/The-Trinity",
+    "githubRepoAddedBy": "user",
     "ai_summary": "The Trinity framework recursively improves multimodal agents by organizing tasks into a capability tree, generating simulated training worlds, and routing specialized harness modules to boost performance on diverse benchmarks.",
     "ai_keywords": [
      "recursive self-improvement",
@@ -1413,7 +1674,7 @@
    "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
    "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36077.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "648157807a741c7f33f5ebf5",
     "avatarUrl": "/avatars/3fe9cf3b7aca89b37f7d13503d4d093d.svg",
@@ -3817,7 +4078,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 16,
+    "followerCount": 17,
     "isUserFollowing": false
    },
    "organization": {
@@ -4077,7 +4338,7 @@
      "name": "DogNeverSleep"
     },
     "summary": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experiments reveal that while leading proprietary MLLMs demonstrate promising code captioning capabilities, they still struggle to faithfully capture complex temporal dynamics, with open-source models lagging substantially behind.",
-    "upvotes": 47,
+    "upvotes": 49,
     "discussionId": "6ae15aa3a5eb0647c2907219",
     "projectPage": "https://codecap-bench.github.io/",
     "ai_summary": "Executable code representations of video content improve reasoning and reconstruction over natural language, yet current multimodal models still struggle to generate faithful code captions for complex temporal dynamics.",
@@ -4195,7 +4456,7 @@
      "name": "hexuan21"
     },
     "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
-    "upvotes": 59,
+    "upvotes": 67,
     "discussionId": "6ae00874a5efa215400a78f3",
     "projectPage": "https://hexuan21.github.io/MemoryTax/",
     "githubRepo": "https://github.com/hexuan21/MemoryTax",
@@ -4221,7 +4482,7 @@
    "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
    "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34073.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "655c3953ce055ed40a7de0ba",
     "avatarUrl": "/avatars/ec5387d3892784407b88b93fa0e38f6f.svg",
@@ -4232,7 +4493,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 7,
+    "followerCount": 8,
     "isUserFollowing": false
    },
    "organization": {
@@ -4321,7 +4582,7 @@
      "name": "chyun"
     },
     "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-    "upvotes": 42,
+    "upvotes": 44,
     "discussionId": "6ae15d94a5eb0647c290723a",
     "projectPage": "https://thinkworld-project.github.io/",
     "ai_summary": "ThinkWorld improves robotic generalization by representing actions as dynamics chains and using world imagination to learn from unlabeled human videos.",
@@ -4742,7 +5003,7 @@
      "name": "hollyming"
     },
     "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
-    "upvotes": 69,
+    "upvotes": 75,
     "discussionId": "6adae30255db1e682e582e99",
     "projectPage": "https://hollyming.github.io/habit-bench-site/",
     "githubRepo": "https://github.com/LUMIA-Group/habit-bench",
@@ -4874,7 +5135,7 @@
      "name": "yepengliu"
     },
     "summary": "Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery process, making computational efficiency an important consideration when scaling to larger models. This motivates us to explore an efficient test-time adaptation method for scientific discovery. We introduce Test-Time Memory Evolution (TTME), a plug-and-play test-time adaptation method, as an alternative to TTT. TTME continually updates the external memory by distilling the experience to guide subsequent discovery without updating model weights. To have a clean comparison, we evaluate TTME and TTT under the same discovery framework, replacing only the test-time adaptation method. Our evaluation shows that TTME outperforms TTT on all five mathematical tasks, while reducing computational cost by 82.8-84.6% in FLOPs and 47.7-58.4% in runtime. These results establish TTME as an effective and computationally efficient alternative to TTT in the evaluated discovery settings.",
-    "upvotes": 45,
+    "upvotes": 50,
     "discussionId": "6ae0176da5efa215400a79c2",
     "githubRepo": "https://github.com/yepengliu/TTME",
     "githubRepoAddedBy": "user",
@@ -5244,7 +5505,7 @@
      "name": "weizhiwang"
     },
     "summary": "Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interaction turns. It generates variable-length segments conditioned on current inputs and cached history. Our central design aligns structured video captions with action-aware causal attention: descriptive context remains accessible across segments, while action instructions are restricted to their intended temporal windows. A vision-language Prompt Enhancer (PE) translates user requests and multimodal interaction histories into structured conditions for the next segment. A multi-stage curriculum progressively introduces causal generation, text interaction, camera control, and training on model-generated histories, followed by diffusion distillation. In human evaluation, Hy-Nomas shows superior performance over existing world models. We release model weights, code and benchmarks, together with a lightweight adaptation workflow, to support reproducible research on interactive world generation.",
-    "upvotes": 100,
+    "upvotes": 101,
     "discussionId": "6ae15718a5eb0647c290716f",
     "projectPage": "https://hy-nomas.hy.tencent.com/",
     "githubRepo": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
@@ -5549,7 +5810,7 @@
      "name": "KaiserWhoLearns"
     },
     "summary": "Generative models increasingly expose a reasoning effort setting that lets users scale inference-time compute, trading higher cost for potentially improved performance. Users must choose an effort level before knowing whether extra reasoning will help, and even a successful run does not reveal whether the effort purchased was necessary. Reasoning effort is therefore a credence good: buyers observe the outcome but cannot assess the marginal value of the computation they paid for. In this work, we measure the counterfactual effect of effort levels on both proprietary and open-weight models on four benchmarks, spanning single-call reasoning and long-horizon agentic tasks. Effort, it turns out, does not consistently preserve tasks that lower effort solves, can overspend, and can change trajectory behavior. First, we find that although higher effort can raise accuracy in aggregate, it frequently fails on tasks that lower effort solved. Second, on the subset of easy tasks that every effort level solves, higher effort is generally more costly, with the highest effort level costing up to 42x as much as the lowest. Lastly, effort changes not only how many tokens are used, but also how agents solve tasks: at higher effort, agents verify their own work more heavily and more often search for solutions than work through problems directly, both of which lengthen trajectories without necessarily altering the outcome. These findings show that naively choosing the highest level is not only cost-inefficient but also offers no guarantee of the best instance-level performance. A simple alternative, starting at the lowest effort and escalating only after a verified failure, matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6ae1277ea5eb0647c2907033",
     "githubRepo": "https://github.com/KaiserWhoLearns/ReasoningEffortLLM",
     "githubRepoAddedBy": "user",
@@ -5959,7 +6220,7 @@
      "name": "HU22333"
     },
     "summary": "Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave categorical relations largely unconstrained. When post-training emphasizes one readout, improvements can therefore concentrate on that interface while transfer to others remains weak or even degrades; we call this observed specialization interface lock-in. ChronoReplay addresses it by replaying heterogeneous spatial supervision as chronologically ordered episodes, retaining source-native targets, and balancing supervision across families. Under the same observation access, a single ChronoReplay checkpoint improves OVO-S-Bench, OST-Bench, and UCS-Bench together, including a 13.41-point gain on OST-Bench, and achieves the highest three-benchmark mean among the supervision settings compared here. Same-data controls further separate the ingredients of this transfer: answer serialization redistributes gains across OST and UCS, family-balanced learning improves over ordinary joint SFT and natural turn weighting, and chronological replay exceeds a shifted-order control by about 2.41 OST points across two paired seeds. Adaptive frame selection then changes evidence access while keeping the trained model fixed, providing an additional inference-time gain at lower visual cost. Streaming spatial performance depends on what distinctions supervision preserves, how heterogeneous histories are organized during learning, and what causal evidence inference makes available at test time.",
-    "upvotes": 167,
+    "upvotes": 216,
     "discussionId": "6ae15489a5eb0647c2907146",
     "projectPage": "https://yihaohu0118.github.io/ChronoReplay/",
     "githubRepo": "https://github.com/yihaohu0118/ChronoReplay",
@@ -6294,7 +6555,7 @@
      "name": "EliezerS"
     },
     "summary": "Diffusion language models (DLMs) promise parallel text generation, but in practice face an unresolved speed-quality trade-off. Exact decoding fills in only one masked position per model pass, while faster multi-token decoding schemes are lossy. Speculative decoding is the standard lossless acceleration for autoregressive models. However, it does not transfer directly to DLMs, which must choose both what to generate and where. We show that this order is the missing piece: the model's own predictions from the previous pass already give the right token at over 90% of positions, but not which position comes next. We introduce Speculating Positions Order Trajectory (SPOT), a 0.62M-parameter model that reads only the target's output distributions, predicts this order and proposes a tree of candidate continuations, which the target verifies in a single pass by state equality. Coupled-noise match, which shares Gumbel noise between drafter and target, keeps this verification exact at any temperature. This approach also inspired us to introduce SPOT-Sets for dynamic threshold decoding, where a pass commits several positions: SPOT-Sets drafts whole commit sets together with their tokens. Our comprehensive experiments show that SPOT cuts target passes by up to 6.8times and reaches up to 3.4times the throughput of standard decoding on SDAR-8B, matching or beating the calibrated and training-free drafting baselines in every task and budget at T=0 and T=1. In addition, we show that SPOT's learned drafter transfers across models, demonstrating successful transfer across six different DLMs; with a light calibration, the SPOT-Sets drafter transfers as well. On top of dynamic threshold decoding, SPOT-Sets improves the throughput of SDAR-8B by 59% on average over the threshold decoder alone. Project page: https://eliezer318.github.io/SPOT-dLLM/",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6ad5c2ab60556d9547d950c3",
     "projectPage": "https://eliezer318.github.io/SPOT-dLLM/",
     "githubRepo": "https://github.com/Eliezer318/SPOT-dLLM",
@@ -6457,7 +6718,7 @@
      "name": "ryancll118"
     },
     "summary": "Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision without a separately learned value model. We build a scalable training system that unifies distributed world-model search with asynchronous real-robot execution, forming a self-reinforcing cycle: real-world experience continually sharpens the world model, and a sharper world model in turn drives further policy improvement. We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline. Experiments on three challenging real-world tasks show that Rollback improves success rates over the strongest baseline by an absolute 10.67%, 11.11%, and 11.85% on block extraction, ball tossing, and tabletop curling, respectively, while achieving more stable improvement throughout training. Although initialized from teleoperated demonstrations far below human level, Rollback surpasses the average success rate of human players on both ball tossing and tabletop curling within 8 hours of training.",
-    "upvotes": 49,
+    "upvotes": 50,
     "discussionId": "6ae1517ea5eb0647c2907108",
     "projectPage": "https://rollback-wm.github.io/",
     "ai_summary": "Rollback improves robot policies by using world models to rewind to past decisions, explore counterfactual actions, and generate fine-grained supervision, while continuously refining dynamics via real-world feedback.",
@@ -7065,7 +7326,7 @@
      "name": "Dolphin42"
     },
     "summary": "Modern image generation largely relies on specialized generative models that leave the process of image construction implicit in learned parameters. We explore an alternative: general-purpose coding agents that construct images through executable programs. Our study of zero-shot drawing on AgentDrawBench, a 200-prompt benchmark, reveals a distinctive capability profile. Agents excel at preserving structure and satisfying precise visual constraints, achieving competitive results in domains where compositional accuracy matters more than photorealistic appearance, while remaining limited in perceptual richness. Their visual expressiveness varies with the drawing interface, and a qualitative study on reconstruction shows how procedural skills extracted from human demonstrations support different artistic media. We then examine code as an external visual language of thought: a structured, executable representation that agents can construct and inspect. We test it in visual question answering task and find reconstructed visual code retains substantial information for question answering and, in some domains, supports higher accuracy than the original image. These abilities raise a further question: do agents draw on a shared internal representation of scene content beyond a particular drawing program? We explore an internal visual language-of-thought hypothesis, in which a shared, compositionally structured representation supports visual operations across drawing languages. Cross-harness drawings and images assembled from independent single-pixel queries exhibit related layouts and tones. Agents also maintain self-generated room arrangements across viewpoints after visible drawings are removed. These results demonstrate that the coding agent would maintain a consistent and coherent world inside its imagine even before the harness gets involved and the generation starts.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6ae13692a5eb0647c2907079",
     "projectPage": "https://hengguangzhou.github.io/0shotdrawer/",
     "ai_summary": "Coding agents build images via executable programs, showing structured visual reasoning and consistent internal scene representations across drawing interfaces.",
@@ -7161,7 +7422,7 @@
      "name": "Hunter26666666"
     },
     "summary": "Sparse autoencoders (SAEs) decompose language model activations into sparse features, but prompt transformations designed to preserve the underlying request can redistribute activity across them. A feature change observed on one transformed prompt need not recur, and even a recurring change need not affect a downstream computation. We introduce the redistribution sensitivity score (RSS), which identifies large feature responses that recur in a consistent direction, and evaluate the resulting supports on variants excluded from selection. Across 27 pretrained SAEs spanning eight language models, the tested prompt transformations produce a reproducible redistribution profile on these excluded variants. We then separate recurring representation change from signed readout contribution and decision failure. For a fixed linear readout, an exact decomposition shows how response magnitude, readout coefficients, directional alignment, and the clean margin determine downstream consequences. In two frozen safety readouts, combining RSS support erosion with the full clean margin yields recurrent failure AUROCs of 0.935 and 0.958 using median supports of 20 and 19 features, compared with 0.965 and 0.964 using full erosion. RSS therefore provides a way to identify recurring sparse representation changes and quantify their contribution to a downstream readout without equating representation change with failure. Code is available at https://github.com/OpenSAE/Redistribution-Sensitivity-Score",
-    "upvotes": 36,
+    "upvotes": 48,
     "discussionId": "6ad2833760556d9547d94617",
     "projectPage": "https://github.com/OpenSAE/Redistribution-Sensitivity-Score",
     "githubRepo": "https://github.com/OpenSAE/Redistribution-Sensitivity-Score",
@@ -7469,236 +7730,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.33861",
-    "authors": [
-     {
-      "_id": "6ae0c05fa5eb0647c2906d04",
-      "user": {
-       "_id": "68cccfe16e4618473d571b1f",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68cccfe16e4618473d571b1f/xeF5Ojc5Q1qvtnWy7XoQL.jpeg",
-       "isPro": false,
-       "fullname": "Jiarong Liang",
-       "user": "lllqaq",
-       "type": "user",
-       "name": "lllqaq"
-      },
-      "name": "Jiarong Liang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T00:45:04.675Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0c05fa5eb0647c2906d05",
-      "name": "Yubo Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0c05fa5eb0647c2906d06",
-      "name": "Zijie Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0c05fa5eb0647c2906d07",
-      "name": "Yuxuan Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0c05fa5eb0647c2906d08",
-      "name": "Ping Nie",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0c05fa5eb0647c2906d09",
-      "name": "Wenhu Chen",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/68cccfe16e4618473d571b1f/ZdPgcy_YW0ZQx8JarM7TX.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/68cccfe16e4618473d571b1f/2R9JY5X90-Kfy2sCZpYla.png"
-    ],
-    "publishedAt": "2026-10-24T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-27T00:00:00.000Z",
-    "title": "ReGE: Stronger Agents through Experience Synthesis",
-    "submittedOnDailyBy": {
-     "_id": "68cccfe16e4618473d571b1f",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68cccfe16e4618473d571b1f/xeF5Ojc5Q1qvtnWy7XoQL.jpeg",
-     "isPro": false,
-     "fullname": "Jiarong Liang",
-     "user": "lllqaq",
-     "type": "user",
-     "name": "lllqaq"
-    },
-    "summary": "Repeated attempts at interactive tasks uncover facts, useful operations, and failures that can inform subsequent execution. We introduce ReGE, a framework for turning this recorded experience into guidance for a fresh attempt. Its main implementation, ReGE-Syn, uses a single coach call to jointly synthesize bounded execution records and available artifacts into self-contained guidance, connecting task-specific findings with proposed actions and relevant pitfalls. A student starts from the task's initial environment state and adapts this guidance to current observations. Source generation, synthesis, and student execution use the same base model, without parameter updates or a stronger teacher. Across four benchmarks, ReGE improves accuracy by an average of 9.9 percentage points for GPT and 8.8 percentage points for Claude compared with unguided execution. On matched BrowseComp-Plus subsets, ReGE-Syn reduces guidance-construction tokens by 98.2\\% on GPT and 95.5\\% on Claude relative to adapted AggAgent, with observed success. Combined construction and execution tokens decrease by 15.7\\% and 35.4\\%, respectively, counting input plus output and excluding source generation. BrowseComp-Plus ablations further associate access to process information with fewer student steps and show that joint synthesis produces substantially shorter guidance than Direct history or Independent summaries, with observed success. These results demonstrate how agents can use their own recorded experience to improve subsequent task completion, and suggest a low-cost way to consolidate the execution records of parallel agent systems such as agent swarms.",
-    "upvotes": 13,
-    "discussionId": "6ae0c05fa5eb0647c2906d0a",
-    "projectPage": "https://tiger-ai-lab.github.io/ReGE/",
-    "githubRepo": "https://github.com/TIGER-AI-Lab/ReGE",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "ReGE converts recorded agent execution experience into synthesized guidance to improve subsequent task attempts without requiring stronger teachers or parameter updates.",
-    "ai_keywords": [
-     "ReGE",
-     "ReGE-Syn",
-     "bounded execution records",
-     "self-contained guidance",
-     "cross-attention",
-     "agent swarms",
-     "process information",
-     "joint synthesis"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
-    "organization": {
-     "_id": "6313a90017838d05194fd282",
-     "name": "TIGER-Lab",
-     "fullname": "TIGER-Lab",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6313a86154e6e5d9f0f94e04/Noi3Qq3RYz8Jdq6BaFteq.png"
-    }
-   },
-   "publishedAt": "2026-10-23T20:00:00.000Z",
-   "title": "ReGE: Stronger Agents through Experience Synthesis",
-   "summary": "Repeated attempts at interactive tasks uncover facts, useful operations, and failures that can inform subsequent execution. We introduce ReGE, a framework for turning this recorded experience into guidance for a fresh attempt. Its main implementation, ReGE-Syn, uses a single coach call to jointly synthesize bounded execution records and available artifacts into self-contained guidance, connecting task-specific findings with proposed actions and relevant pitfalls. A student starts from the task's initial environment state and adapts this guidance to current observations. Source generation, synthesis, and student execution use the same base model, without parameter updates or a stronger teacher. Across four benchmarks, ReGE improves accuracy by an average of 9.9 percentage points for GPT and 8.8 percentage points for Claude compared with unguided execution. On matched BrowseComp-Plus subsets, ReGE-Syn reduces guidance-construction tokens by 98.2\\% on GPT and 95.5\\% on Claude relative to adapted AggAgent, with observed success. Combined construction and execution tokens decrease by 15.7\\% and 35.4\\%, respectively, counting input plus output and excluding source generation. BrowseComp-Plus ablations further associate access to process information with fewer student steps and show that joint synthesis produces substantially shorter guidance than Direct history or Independent summaries, with observed success. These results demonstrate how agents can use their own recorded experience to improve subsequent task completion, and suggest a low-cost way to consolidate the execution records of parallel agent systems such as agent swarms.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/68cccfe16e4618473d571b1f/ZdPgcy_YW0ZQx8JarM7TX.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/68cccfe16e4618473d571b1f/2R9JY5X90-Kfy2sCZpYla.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.33861.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "68cccfe16e4618473d571b1f",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68cccfe16e4618473d571b1f/xeF5Ojc5Q1qvtnWy7XoQL.jpeg",
-    "fullname": "Jiarong Liang",
-    "name": "lllqaq",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 5,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6313a90017838d05194fd282",
-    "name": "TIGER-Lab",
-    "fullname": "TIGER-Lab",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6313a86154e6e5d9f0f94e04/Noi3Qq3RYz8Jdq6BaFteq.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.32004",
-    "authors": [
-     {
-      "_id": "6adfdad3a5efa215400a77fc",
-      "user": {
-       "_id": "65ca0831ec1e90b3ab29a29c",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/xsA7uGZyM55t-0b3Z4dZv.png",
-       "isPro": false,
-       "fullname": "Monojit",
-       "user": "MonojitBanerjee",
-       "type": "user",
-       "name": "MonojitBanerjee"
-      },
-      "name": "Monojit Banerjee",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T14:30:49.252Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adfdad3a5efa215400a77fd",
-      "name": "Zhujun Lan",
-      "hidden": false
-     },
-     {
-      "_id": "6adfdad3a5efa215400a77fe",
-      "user": {
-       "_id": "6405915949a9869c858a1302",
-       "avatarUrl": "/avatars/69ff9d531cb9158bfd7d369607a2bf9b.svg",
-       "isPro": false,
-       "fullname": "Defu Cao",
-       "user": "idevede",
-       "type": "user",
-       "name": "idevede"
-      },
-      "name": "Defu Cao",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T00:45:04.654Z",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/65ca0831ec1e90b3ab29a29c/tiAOP3mNmLOKyfSXtveFl.png"
-    ],
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-27T00:00:00.000Z",
-    "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
-    "submittedOnDailyBy": {
-     "_id": "65ca0831ec1e90b3ab29a29c",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/xsA7uGZyM55t-0b3Z4dZv.png",
-     "isPro": false,
-     "fullname": "Monojit",
-     "user": "MonojitBanerjee",
-     "type": "user",
-     "name": "MonojitBanerjee"
-    },
-    "summary": "Deploying language agents in real applications demands more than the right answer: an agent must execute a multi-step business process correctly, follow domain-specific rules, and interact with a user across a dialogue, where the gap between saying and doing is the gap between a satisfied customer and a real loss. We argue that a deployable-agent benchmark should jointly assess four facets: the outcome an agent reaches, the trajectory it takes, its operational viability, and its policy compliance. Customer relationship management (CRM), where mutable records meet operational rules and consequential effects, exercises all four. We introduce CRM-Agent-Bench, an execution-grounded benchmark of 555 stateful, multi-turn tasks across nine business domains and 36 capability tags. Each task supplies a task-specific executable contract drawn from checks over actions, arguments, order, response, target state, and protected state; success is the strict conjunction of the checks declared for that task. We evaluate the complete agent system through these contracts and report scored coverage, latency, and cost. Across sixteen systems evaluated on the audited final release, strict success spans 64.32% to 83.60%; the closely grouped leading systems nonetheless diverge sharply in cost and per-domain reliability. CRM-Agent-Bench offers an auditable framework for measuring contract-grounded business-transaction integrity and adherence to task-declared benchmark policies, with a portable structure designed for extension as models improve. Github repository: https://github.com/salesforce-misc/crm-agent-bench",
-    "upvotes": 9,
-    "discussionId": "6adfdad3a5efa215400a77ff",
-    "projectPage": "https://crm-agent-bench.github.io/",
-    "githubRepo": "https://github.com/salesforce-misc/crm-agent-bench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "The study introduces an execution-grounded benchmark for evaluating deployable language agents on multi-turn business tasks using strict contract-based success criteria across outcome, trajectory, viability, and compliance.",
-    "ai_keywords": [
-     "language agents",
-     "multi-turn dialogue",
-     "CRM-Agent-Bench",
-     "executable contracts",
-     "contract-grounded evaluation",
-     "stateful tasks",
-     "policy compliance",
-     "operational viability"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
-    "organization": {
-     "_id": "69d6a942c5b7566ffde12e41",
-     "name": "salesforceaicloud",
-     "fullname": "Salesforce AI Cloud",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/645e44a38c0dc5198a41ac68/ONxpSWw1BDeF-RYplXgQ4.png"
-    }
-   },
-   "publishedAt": "2026-10-22T20:00:00.000Z",
-   "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
-   "summary": "Deploying language agents in real applications demands more than the right answer: an agent must execute a multi-step business process correctly, follow domain-specific rules, and interact with a user across a dialogue, where the gap between saying and doing is the gap between a satisfied customer and a real loss. We argue that a deployable-agent benchmark should jointly assess four facets: the outcome an agent reaches, the trajectory it takes, its operational viability, and its policy compliance. Customer relationship management (CRM), where mutable records meet operational rules and consequential effects, exercises all four. We introduce CRM-Agent-Bench, an execution-grounded benchmark of 555 stateful, multi-turn tasks across nine business domains and 36 capability tags. Each task supplies a task-specific executable contract drawn from checks over actions, arguments, order, response, target state, and protected state; success is the strict conjunction of the checks declared for that task. We evaluate the complete agent system through these contracts and report scored coverage, latency, and cost. Across sixteen systems evaluated on the audited final release, strict success spans 64.32% to 83.60%; the closely grouped leading systems nonetheless diverge sharply in cost and per-domain reliability. CRM-Agent-Bench offers an auditable framework for measuring contract-grounded business-transaction integrity and adherence to task-declared benchmark policies, with a portable structure designed for extension as models improve. Github repository: https://github.com/salesforce-misc/crm-agent-bench",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/65ca0831ec1e90b3ab29a29c/tiAOP3mNmLOKyfSXtveFl.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32004.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65ca0831ec1e90b3ab29a29c",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/xsA7uGZyM55t-0b3Z4dZv.png",
-    "fullname": "Monojit",
-    "name": "MonojitBanerjee",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "69d6a942c5b7566ffde12e41",
-    "name": "salesforceaicloud",
-    "fullname": "Salesforce AI Cloud",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/645e44a38c0dc5198a41ac68/ONxpSWw1BDeF-RYplXgQ4.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
