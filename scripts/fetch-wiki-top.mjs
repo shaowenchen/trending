@@ -81,18 +81,54 @@ function ymd(d) {
   return `${d.getUTCFullYear()}/${p(d.getUTCMonth() + 1)}/${p(d.getUTCDate())}`;
 }
 
+/**
+ * wikimedia pageviews 的结算延迟实测是 **T+2**（T-1 常返回 404 "we either do not
+ * have data for those date(s)"），不是注释里早先假设的 T+1。逐日回退到能取到数据
+ * 的那天，最多回退 RETRY_DAYS 天，避免整条工作流因为一天的数据没结算就红。
+ */
+const RETRY_DAYS = 3;
+
+async function fetchDay(code, day) {
+  const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/${code}.wikipedia/all-access/${day}`;
+  const res = await fetch(url, {
+    headers: { accept: 'application/json', 'user-agent': UA },
+    signal: AbortSignal.timeout(25000),
+  });
+  if (!res.ok) {
+    const err = new Error(`HTTP ${res.status}`);
+    err.status = res.status;
+    throw err;
+  }
+  return res.json();
+}
+
 async function main() {
-  const yesterday = new Date(Date.now() - 24 * 3600 * 1000);
-  const day = ymd(yesterday);
   const blocks = [];
   const skipped = [];
+  let day = '';
   for (const { code, label } of WIKI_TOP_LANGS) {
-    const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/${code}.wikipedia/all-access/${day}`;
-    try {
-      const res = await fetch(url, { headers: { accept: 'application/json', 'user-agent': UA }, signal: AbortSignal.timeout(25000) });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const rows = normalizeWikiTop(await res.json(), label);
-      if (!rows.length) throw new Error('过滤后 0 条');
+    let rows = null;
+    let lastErr = null;
+    for (let offset = 1; offset <= RETRY_DAYS; offset++) {
+      const cand = ymd(new Date(Date.now() - offset * 24 * 3600 * 1000));
+      try {
+        const json = await fetchDay(code, cand);
+        const parsed = normalizeWikiTop(json, label);
+        if (!parsed.length) throw new Error('过滤后 0 条');
+        rows = parsed;
+        if (cand !== day) {
+          if (!day) day = cand;
+          else console.warn(`  ! ${label} 与其他语种日期不同（${cand} vs ${day}）`);
+        }
+        console.log(`  · ${label} 使用 ${cand} 的数据（回退 ${offset} 天）`);
+        break;
+      } catch (e) {
+        lastErr = e;
+        // 只有 404（该日未结算）才值得继续回退；其他错误直接放弃该语种
+        if (e.status && e.status !== 404) break;
+      }
+    }
+    if (rows) {
       // 条目地址按语种拼（标题里的空格换回下划线）
       for (const r of rows) {
         r.url = `https://${code}.wikipedia.org/wiki/${encodeURIComponent(r.article)}`;
@@ -100,9 +136,9 @@ async function main() {
       }
       blocks.push({ key: code, name: label, items: rows });
       console.log(`  ✓ ${label}  ${rows.length} 条 · 榜首「${rows[0].title}」${rows[0].views} 次`);
-    } catch (e) {
-      skipped.push({ key: code, name: label, reason: String(e.message).slice(0, 80) });
-      console.warn(`  ✗ ${label}  ${e.message}`);
+    } else {
+      skipped.push({ key: code, name: label, reason: String(lastErr?.message || 'unknown').slice(0, 80) });
+      console.warn(`  ✗ ${label}  ${lastErr?.message}`);
     }
   }
   const total = blocks.reduce((n, b) => n + b.items.length, 0);
