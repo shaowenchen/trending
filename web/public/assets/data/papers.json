@@ -1,8 +1,269 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T07:01:24.290Z",
+ "fetchedAt": "2026-10-29T09:16:10.935Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.29702",
+    "authors": [
+     {
+      "_id": "6ae3054bd670fc6ea896c960",
+      "name": "Yijun Shen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c961",
+      "name": "Diqi He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c962",
+      "name": "Jinbang Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c963",
+      "name": "Wanyue Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c964",
+      "name": "Jiaming Mi",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c965",
+      "name": "Huan Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c966",
+      "name": "Zhongyuan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c967",
+      "name": "Zhiwei Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3054bd670fc6ea896c968",
+      "name": "Kai Zhang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/674d339d937bbd33958bb004/dF1PupdQO6AusnVxQto1e.mp4"
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
+    "submittedOnDailyBy": {
+     "_id": "674d339d937bbd33958bb004",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fcnYFN5C12VYWXiVQ_I7b.png",
+     "isPro": false,
+     "fullname": "Yijun Shen",
+     "user": "YijunShen",
+     "type": "user",
+     "name": "YijunShen"
+    },
+    "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
+    "upvotes": 0,
+    "discussionId": "6ae3054bd670fc6ea896c969",
+    "projectPage": "https://causground.github.io/",
+    "githubRepo": "https://github.com/Intelligent-Interaction/CausGround",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "CausGround extracts reusable action preconditions and effects from interaction experience to improve embodied planning and reasoning across diverse environments without model retraining.",
+    "ai_keywords": [
+     "multimodal large language models",
+     "causal interaction grounding",
+     "action preconditions",
+     "action effects",
+     "factorized world-state representation",
+     "backward reasoning",
+     "forward reasoning",
+     "high-level planning",
+     "embodied planning"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
+   "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/674d339d937bbd33958bb004/dF1PupdQO6AusnVxQto1e.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29702.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "674d339d937bbd33958bb004",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fcnYFN5C12VYWXiVQ_I7b.png",
+    "fullname": "Yijun Shen",
+    "name": "YijunShen",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.34186",
+    "authors": [
+     {
+      "_id": "6ae301c7d670fc6ea896c93c",
+      "user": {
+       "_id": "6586817e509bcae23f3dfc60",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pwEStoey1XJYDi3F0Z930.png",
+       "isPro": false,
+       "fullname": "Yang Liu",
+       "user": "yliu-cs",
+       "type": "user",
+       "name": "yliu-cs"
+      },
+      "name": "Yang Liu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.870Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c93d",
+      "name": "Jiacheng Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c93e",
+      "name": "Hengtao Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c93f",
+      "name": "Yuheng Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c940",
+      "name": "Zijian Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c941",
+      "name": "Ji Dai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c942",
+      "name": "Maoxin Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c943",
+      "name": "Yi Gao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c944",
+      "name": "Qishen Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c945",
+      "name": "Baohua Yin",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c946",
+      "name": "Peiyang Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c947",
+      "name": "Shuanghao Bai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c948",
+      "name": "Mingyang Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c949",
+      "name": "Pengxiang Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c94a",
+      "name": "Jianqin Yin",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c94b",
+      "name": "Lixin Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae301c7d670fc6ea896c94c",
+      "name": "Donglin Wang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-25T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+    "submittedOnDailyBy": {
+     "_id": "6586817e509bcae23f3dfc60",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pwEStoey1XJYDi3F0Z930.png",
+     "isPro": false,
+     "fullname": "Yang Liu",
+     "user": "yliu-cs",
+     "type": "user",
+     "name": "yliu-cs"
+    },
+    "summary": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
+    "upvotes": 1,
+    "discussionId": "6ae301c7d670fc6ea896c94d",
+    "projectPage": "https://yliu-cs.github.io/HuGe",
+    "githubRepo": "https://github.com/yliu-cs/HuGe",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "HuGe pre-trains vision-language-action models on egocentric human and robot data with pseudo-proprioception and visual adaptation to enable whole-body humanoid control.",
+    "ai_keywords": [
+     "Vision-Language-Action models",
+     "VLAs",
+     "latent motion tokens",
+     "whole-body controller",
+     "pseudo-proprioceptive states",
+     "egocentric pre-training",
+     "humanoid adaptation",
+     "re-rendering"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 11
+   },
+   "publishedAt": "2026-10-24T20:00:00.000Z",
+   "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+   "summary": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34186.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6586817e509bcae23f3dfc60",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pwEStoey1XJYDi3F0Z930.png",
+    "fullname": "Yang Liu",
+    "name": "yliu-cs",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2601.15351",
@@ -14,7 +275,18 @@
      },
      {
       "_id": "6ae2e571d670fc6ea896c8e5",
+      "user": {
+       "_id": "6461cc67ddb3aaa43c8afef3",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/wqPC4tHBrFRcxpqkJW3qD.png",
+       "isPro": false,
+       "fullname": "Zeyu Xia",
+       "user": "xiazeyu",
+       "type": "user",
+       "name": "xiazeyu"
+      },
       "name": "Zeyu Xia",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.855Z",
       "hidden": false
      },
      {
@@ -74,7 +346,7 @@
     "followerCount": 1,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -82,7 +354,18 @@
     "authors": [
      {
       "_id": "6ae2c512d670fc6ea896c854",
+      "user": {
+       "_id": "65f6afa36ea40b9a29dd45ca",
+       "avatarUrl": "/avatars/f8ece25687802cede4b23280325fb4c8.svg",
+       "isPro": true,
+       "fullname": "Yunfei Xie",
+       "user": "yunfeixie",
+       "type": "user",
+       "name": "yunfeixie"
+      },
       "name": "Yunfei Xie",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.838Z",
       "hidden": false
      },
      {
@@ -122,7 +405,7 @@
      "name": "yunfeixie"
     },
     "summary": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
-    "upvotes": 1,
+    "upvotes": 33,
     "discussionId": "6ae2c512d670fc6ea896c859",
     "projectPage": "https://yunfeixie233.github.io/s2/",
     "githubRepo": "https://github.com/yunfeixie233/sensorimotor-alignment",
@@ -172,7 +455,7 @@
     "fullname": "Rice University",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6630443e246247eeadf6e565/RsWYMEcEsnef5OsxZAZpp.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -180,7 +463,18 @@
     "authors": [
      {
       "_id": "6ae1d18da5eb0647c290774c",
+      "user": {
+       "_id": "661cb57f851baf948bca33a4",
+       "avatarUrl": "/avatars/5077723bfe0b5600f0346cc995cc0dc1.svg",
+       "isPro": false,
+       "fullname": "Li shuhuai",
+       "user": "lsh-algorithm",
+       "type": "user",
+       "name": "lsh-algorithm"
+      },
       "name": "Shuhuai Li",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.803Z",
       "hidden": false
      },
      {
@@ -217,7 +511,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -244,7 +538,7 @@
    "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
    "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37230.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "661cb57f851baf948bca33a4",
     "avatarUrl": "/avatars/5077723bfe0b5600f0346cc995cc0dc1.svg",
@@ -255,7 +549,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -264,7 +558,7 @@
     "fullname": "AIOR",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f33193520c146189241780/UyBZGY7cm0LlIbu8qm0H4.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -322,7 +616,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 22,
+    "upvotes": 29,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -419,7 +713,7 @@
      "name": "JusperLee"
     },
     "summary": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
-    "upvotes": 140,
+    "upvotes": 144,
     "discussionId": "6ae29be1d670fc6ea896c7a3",
     "projectPage": "https://cslikai.cn/Falcon/",
     "githubRepo": "https://github.com/JusperLee/Falcon",
@@ -461,7 +755,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 62,
+    "followerCount": 63,
     "isUserFollowing": false
    },
    "organization": {
@@ -543,7 +837,7 @@
      "name": "zwq2018"
     },
     "summary": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across different generation budgets, with gains of up to 9.0 points on MATH500 and 5.3 points on GSM8K over the base model.",
-    "upvotes": 255,
+    "upvotes": 256,
     "discussionId": "6ae2a281d670fc6ea896c7b8",
     "projectPage": "https://zju-omniai.github.io/DTCA/",
     "githubRepo": "https://github.com/ZJU-OmniAI/DTCA",
@@ -574,7 +868,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/-HwSwdNgn5m4Bx9b0Riez.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35201.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "6485bd278d14bcd5cdbb7c8d",
     "avatarUrl": "/avatars/18348cb2ef91757f3450c18debd11599.svg",
@@ -947,7 +1241,7 @@
      "probability reporting"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "64155eaa95fb6f824b237c3d",
      "name": "GeorgiaTech",
@@ -1253,7 +1547,7 @@
      "name": "ziqiaow"
     },
     "summary": "Learning velocity fields directly in pixel space is difficult and slow. We show that coarse second-order image statistics can ease this task: frozen Wiener estimates improve velocity learning, with gains extending beyond the linear predictions they explicitly provide. Moreover, we observe similar but complementary gains from frozen bases and pixel decoding. These observations motivate Wiener-informed Decoding (WiD), which uses statistical knowledge both for direct prediction and to organize decoder computation without modifying native blocks. WiD combines a trainable Wiener prediction path with coefficient interfaces that inject features into the native decoder and return its predicted coefficient corrections, with these components initialized with data statistics. All introduced parameters, including the spectrum and coordinate transforms, are trained jointly under the original pixel-space velocity objective. Across model scales and decoder architectures, WiD accelerates training and improves generation quality with modest parameter overhead. It also yields smoother gradient trajectories and remains effective with representation alignment. WiD improves class-conditional and text-to-image generation across different resolutions. On ImageNet 256 x 256, PixelDiT-XL with WiD reaches FID 1.53 after 500 epochs, achieving comparable quality to PixelDiT with 37.5% fewer training epochs. Statistical denoisers contribute beyond the estimate: their computational structure can also ease pixel-space training.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6ae1ed49717a45b73580b3e6",
     "githubRepo": "https://github.com/NUS-HPC-AI-Lab/WiD",
     "githubRepoAddedBy": "user",
@@ -1310,7 +1604,18 @@
     "authors": [
      {
       "_id": "6ae22dd4d670fc6ea896c611",
+      "user": {
+       "_id": "68a4bc1bda6bbe29517f05b0",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/U-0am7YjqI9cFM5Euskqf.png",
+       "isPro": true,
+       "fullname": "Shan Yang",
+       "user": "shanyangmie",
+       "type": "user",
+       "name": "shanyangmie"
+      },
       "name": "Shan Yang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.810Z",
       "hidden": false
      }
     ],
@@ -1366,7 +1671,7 @@
     "followerCount": 3,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -2111,7 +2416,7 @@
      "name": "Tingyang-Chen"
     },
     "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
-    "upvotes": 376,
+    "upvotes": 377,
     "discussionId": "6ae1d53f717a45b73580b393",
     "ai_summary": "Multiscale Policy Optimization improves long-horizon agent training by aligning credit assignment and policy updates at the turn scale.",
     "ai_keywords": [
@@ -2201,7 +2506,7 @@
      "name": "skandermoalla"
     },
     "summary": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6ae1d670717a45b73580b39b",
     "ai_summary": "A simple agentic loop with efficient Lean feedback achieves state-of-the-art formal theorem proving without structured workflows, showing that execution interfaces matter more than complex orchestration.",
     "ai_keywords": [
@@ -2591,7 +2896,7 @@
      "continuous visual representations"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 29,
+    "githubStars": 32,
     "organization": {
      "_id": "68b28d79a176a9beb30d2049",
      "name": "meituan-longcat",
@@ -2694,7 +2999,7 @@
      "name": "xjxyys"
     },
     "summary": "Looped transformers reuse a shared block of layers to increase computational depth without increasing the number of trainable parameters. They are trained with backpropagation through time (BPTT). To save training compute, BPTT is often truncated to the last few loops, but truncation yields biased gradients that may weaken the benefit of looping. In this work, we study the value of truncation in looped transformer training in a systematic way: we jointly vary model size, training tokens, and forward and backward loop counts across nearly 600 training runs and fit a unified scaling law that captures the effects of looping and truncation through effective parameters. Despite the training-compute savings of truncation, our fitted law favors full BPTT when forward and backward loop counts are jointly optimized. In matched-compute runs, full BPTT through fewer loops consistently outperforms truncated settings of the same compute. The law further shows that at fixed model size, the compute-optimal loop count and training-token budget both grow with compute. When model size is also free, the law identifies two fully trained loops as the best looped setting. Experimentally, this setting achieves lower validation loss than the compute-optimal non-looped model with about 27% fewer non-embedding parameters and only 8% more training compute.",
-    "upvotes": 27,
+    "upvotes": 28,
     "discussionId": "6ad82abcefdc4c3bd8229ea1",
     "projectPage": "https://xjxyys.github.io/truncate-or-not/",
     "githubRepo": "https://github.com/xjxyys/Truncate-or-Not",
@@ -2964,7 +3269,7 @@
      "name": "diaomuxi"
     },
     "summary": "Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. We introduce VibeVideoBench, a benchmark for evaluating agents on code-driven video generation. Its 239 self-contained tasks in English and Chinese span 12 categories, from data stories and music-driven pieces to classroom lessons and paper explainers; each asks an agent, running in its native harness inside a sandbox with no image or video generation model, to deliver a finished MP4 with sound within one hour. Evaluation is hierarchical and evidence-based: program checks of the delivery spec, about 13k task-specific rubric checks traced to the requirements they enforce, and five quality dimensions anchored per task, scored by three VLM judge panels. Across nine frontier agent systems and 2,151 scored rollouts, GPT-6 Astra and Claude Opus 5.5 rank first and second with both the judges and human annotators, and the strongest system satisfies every core requirement on 76.3% of tasks. Delivery is a second axis: counting missing videos as zero changes the ranking, and three quarters of the lost videos are final renders that started too late, ran too slowly or never started, a failure of how agents plan their hour. Agents build their own rendering pipelines and inspect their own frames, yet how much they look does not predict quality. The judges' ranking of the systems closely matches blind human preferences.",
-    "upvotes": 173,
+    "upvotes": 174,
     "discussionId": "6ae1740fa5eb0647c2907508",
     "projectPage": "https://vibevideobench.github.io/",
     "ai_summary": "VibeVideoBench evaluates multimodal agents that generate videos via code, finding that top systems meet core requirements on most tasks but frequently fail due to poor time management.",
@@ -3054,7 +3359,18 @@
      },
      {
       "_id": "6ae16537a5eb0647c29072ce",
+      "user": {
+       "_id": "65fd82762bf2cd20ddaa193f",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/yBYbWp_mT7UusYdkqtAvw.png",
+       "isPro": false,
+       "fullname": "Siteng Huang",
+       "user": "huangsiteng",
+       "type": "user",
+       "name": "huangsiteng"
+      },
       "name": "Siteng Huang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.794Z",
       "hidden": false
      },
      {
@@ -3148,7 +3464,7 @@
     "fullname": "DAMO Academy",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6808e64de5dd22427c006e10/9J3vdB62CdeTOd_YrGh9w.jpeg"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -3685,7 +4001,7 @@
      "name": "IntJudge"
     },
     "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
-    "upvotes": 538,
+    "upvotes": 540,
     "discussionId": "6ae17a9aa5eb0647c2907534",
     "projectPage": "https://trinity-rsi.github.io/",
     "githubRepo": "https://github.com/InfRec-Cardinal/The-Trinity",
@@ -5902,7 +6218,7 @@
      "name": "taesiri"
     },
     "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ae167dea5eb0647c2907445",
     "ai_summary": "Timestral is a family of time series foundation models that achieves state-of-the-art probabilistic forecasting through decoupled horizon forecasting, native future covariate support, and synthetic pretraining followed by mixed post-training.",
     "ai_keywords": [
@@ -6072,7 +6388,7 @@
      "name": "gmlwns5176"
     },
     "summary": "Mixture-of-Experts (MoE) models are bottlenecked by loading routed-expert weights from memory during interactive decoding at small batch sizes. Because most intermediate channels in a routed expert contribute little to any single token, channel selectors predict which channels matter and read only their weights, typically keeping channels above a threshold calibrated on offline data. We show that channel selection needs no calibration data. First, a calibrated threshold does not fix how much a selector reads, because the number of channels passing it varies across inputs; Prox with thresholds calibrated for an 18% read budget actually reads only 12.9% on average across our benchmarks. Second, top-k keeps each token's k highest-scoring channels and needs no calibration data. At the calibrated budget, a selector's top-k version matches or beats its threshold version on the same score in 40 of 43 comparisons at 13% and 18% budgets, including all 23 on generation tasks. The top-k versions also avoid the repetition-loop collapse that calibrated thresholds cause on Gemma 4. Calibrating a threshold thus provides neither of the two things selectors use it for: a known read budget and a consistent accuracy gain at that budget. We furthermore introduce a reader built entirely from the model's weights, which screens channels with a ternary sketch and recovers the skipped ones with a low-rank map. Across three post-trained MoE models, our reader retains 98.1% of full-model accuracy at 17.8% of routed-expert reads, with Triton kernels running MoE blocks 1.60 to 1.90x faster than optimized vLLM at batch one and up to 2.69x at larger batches on the same three models.",
-    "upvotes": 19,
+    "upvotes": 21,
     "discussionId": "6ae15ad1a5eb0647c290721e",
     "githubRepo": "https://github.com/AidenGeunGeun/calibration-free-moe",
     "githubRepoAddedBy": "user",
@@ -6151,7 +6467,18 @@
      },
      {
       "_id": "6ae015b5a5efa215400a7986",
+      "user": {
+       "_id": "66842ad1eef2f5be9e113fb9",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/SaEuI2ddyT6jzz_i84Jzp.png",
+       "isPro": false,
+       "fullname": "Yinglun Li",
+       "user": "Geralt-Lee",
+       "type": "user",
+       "name": "Geralt-Lee"
+      },
       "name": "Yinglun Li",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.770Z",
       "hidden": false
      },
      {
@@ -6819,7 +7146,18 @@
      },
      {
       "_id": "6ae051f6a5efa215400a7c12",
+      "user": {
+       "_id": "63999368636597492d720400",
+       "avatarUrl": "/avatars/268e08186155c8a657d6de13593446be.svg",
+       "isPro": false,
+       "fullname": "Yifan Yang",
+       "user": "yfyeung",
+       "type": "user",
+       "name": "yfyeung"
+      },
       "name": "Yifan Yang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.785Z",
       "hidden": false
      },
      {
@@ -6873,6 +7211,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/67fa43316c81d1828acd526e/aDOffYtc5XxnsTQCLtt04.mp4"
+    ],
     "publishedAt": "2026-10-26T00:00:00.000Z",
     "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
     "title": "Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams",
@@ -6913,6 +7254,9 @@
    "publishedAt": "2026-10-25T20:00:00.000Z",
    "title": "Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams",
    "summary": "Omnimodal large language models (Omni-LLMs) are increasingly expected to assist users while observing continuous audiovisual streams. However, existing evaluations provide limited insight into how reliably these models connect stream evidence and user needs to timely, sustained interventions. We introduce Omni-InteractScope, a benchmark of 1,479 human-annotated, cross-reviewed interactions with 1,790 temporal targets across eight task groups. It links input modalities, event triggers, intervention types, and user needs, covering event-timed tool invocation and query-free assistance alongside notifications, warnings, state tracking, and continuous responses. Our experimental results on the proposed benchmark reveal three critical limitations of current Omni-LLMs: (1) Timely tool invocation remains unreliable: all 12 evaluated models produce an on-time first response for at most 40\\% of tool-invocation targets, and joint timing-and-tool accuracy reaches at most 32.0\\%. (2) Query-free reminders remain poorly covered: all evaluated models achieve lower timely reference-target recall on query-free reminders than on explicit questions, measured on their respective target sets. Reminder recall never exceeds 23.0\\%. (3) End-to-end guidance coverage remains limited: nine models cover none of the 26 guidance sequences in full, and the remaining three cover only one to three sequences each. Targeted controls further show that tool-invocation scores alone do not establish event grounding and that reminder coverage depends on response history and frequency. These findings motivate developing and evaluating streaming assistants for timely action, initiative under general user needs, and coverage of entire response sequences.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/67fa43316c81d1828acd526e/aDOffYtc5XxnsTQCLtt04.mp4"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35439.png",
    "numComments": 2,
    "submittedBy": {
@@ -7714,221 +8058,6 @@
     "isMod": false,
     "followerCount": 4,
     "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.34724",
-    "authors": [
-     {
-      "_id": "6ae09630d8eed2f6faa51f65",
-      "user": {
-       "_id": "620a61cba53066560e226d30",
-       "avatarUrl": "/avatars/1c3dfad75d530214320609787beb7fd1.svg",
-       "isPro": false,
-       "fullname": "bizhen",
-       "user": "bizhen",
-       "type": "user",
-       "name": "bizhen"
-      },
-      "name": "Zhen Bi",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T14:29:45.243Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f66",
-      "name": "Zhizhi Peng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f67",
-      "name": "Yan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f68",
-      "name": "Xueshu Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f69",
-      "name": "Haofei Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f6a",
-      "name": "Yaobo Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f6b",
-      "name": "Zeyu Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f6c",
-      "name": "Qing Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae09630d8eed2f6faa51f6d",
-      "name": "Jungang Lou",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Harness-Model Collaboration for Long-Horizon Continual Learning",
-    "submittedOnDailyBy": {
-     "_id": "620a61cba53066560e226d30",
-     "avatarUrl": "/avatars/1c3dfad75d530214320609787beb7fd1.svg",
-     "isPro": false,
-     "fullname": "bizhen",
-     "user": "bizhen",
-     "type": "user",
-     "name": "bizhen"
-    },
-    "summary": "Long-horizon agents continuously encounter reusable procedural knowledge, yet existing systems typically rely either on model adaptation or external memory, trading persistent learning for rapid reuse. This limitation is especially important for Web agents that repeatedly execute related multi-step workflows. We propose HaMo, a Harness-Model collaborative framework that combines fast non-parametric experience accumulation with slow parametric adaptation. HaMo distills trajectories into strategy-level experience cards for immediate retrieval, while an experience-conditioned continual learning objective trains the model to interpret, ground, and execute retrieved strategies across changing contexts. A retrieval-coverage-based selection mechanism further identifies compact and complementary trajectories for parameter updates. Experiments show that HaMo outperforms harness-only and model-only adaptation under within-domain and cross-domain shifts, improving both retention and adaptation. These results highlight the importance of jointly preserving procedural experience and internalizing the competence to transfer and execute it across tasks.",
-    "upvotes": 6,
-    "discussionId": "6ae09630d8eed2f6faa51f6e",
-    "ai_summary": "HaMo combines rapid retrieval of procedural experience cards with gradual model adaptation to improve long-horizon web agents' retention and cross-task execution.",
-    "ai_keywords": [
-     "non-parametric experience accumulation",
-     "parametric adaptation",
-     "experience cards",
-     "continual learning",
-     "retrieval-coverage-based selection",
-     "cross-domain adaptation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-25T20:00:00.000Z",
-   "title": "Harness-Model Collaboration for Long-Horizon Continual Learning",
-   "summary": "Long-horizon agents continuously encounter reusable procedural knowledge, yet existing systems typically rely either on model adaptation or external memory, trading persistent learning for rapid reuse. This limitation is especially important for Web agents that repeatedly execute related multi-step workflows. We propose HaMo, a Harness-Model collaborative framework that combines fast non-parametric experience accumulation with slow parametric adaptation. HaMo distills trajectories into strategy-level experience cards for immediate retrieval, while an experience-conditioned continual learning objective trains the model to interpret, ground, and execute retrieved strategies across changing contexts. A retrieval-coverage-based selection mechanism further identifies compact and complementary trajectories for parameter updates. Experiments show that HaMo outperforms harness-only and model-only adaptation under within-domain and cross-domain shifts, improving both retention and adaptation. These results highlight the importance of jointly preserving procedural experience and internalizing the competence to transfer and execute it across tasks.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34724.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "620a61cba53066560e226d30",
-    "avatarUrl": "/avatars/1c3dfad75d530214320609787beb7fd1.svg",
-    "fullname": "bizhen",
-    "name": "bizhen",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.34491",
-    "authors": [
-     {
-      "_id": "6ae1277da5eb0647c290702d",
-      "user": {
-       "_id": "616745f893f6837511d9ae25",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/616745f893f6837511d9ae25/H0JIGDL5VOu29zVd4KiKB.jpeg",
-       "isPro": false,
-       "fullname": "Kaiser Sun",
-       "user": "KaiserWhoLearns",
-       "type": "user",
-       "name": "KaiserWhoLearns"
-      },
-      "name": "Kaiser Sun",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.254Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1277da5eb0647c290702e",
-      "name": "Yongchan Kwon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1277da5eb0647c290702f",
-      "name": "Zain Hasan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1277da5eb0647c2907030",
-      "name": "Shang Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1277da5eb0647c2907031",
-      "name": "Kaitlyn Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1277da5eb0647c2907032",
-      "name": "Federico Bianchi",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
-    "submittedOnDailyBy": {
-     "_id": "616745f893f6837511d9ae25",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/616745f893f6837511d9ae25/H0JIGDL5VOu29zVd4KiKB.jpeg",
-     "isPro": false,
-     "fullname": "Kaiser Sun",
-     "user": "KaiserWhoLearns",
-     "type": "user",
-     "name": "KaiserWhoLearns"
-    },
-    "summary": "Generative models increasingly expose a reasoning effort setting that lets users scale inference-time compute, trading higher cost for potentially improved performance. Users must choose an effort level before knowing whether extra reasoning will help, and even a successful run does not reveal whether the effort purchased was necessary. Reasoning effort is therefore a credence good: buyers observe the outcome but cannot assess the marginal value of the computation they paid for. In this work, we measure the counterfactual effect of effort levels on both proprietary and open-weight models on four benchmarks, spanning single-call reasoning and long-horizon agentic tasks. Effort, it turns out, does not consistently preserve tasks that lower effort solves, can overspend, and can change trajectory behavior. First, we find that although higher effort can raise accuracy in aggregate, it frequently fails on tasks that lower effort solved. Second, on the subset of easy tasks that every effort level solves, higher effort is generally more costly, with the highest effort level costing up to 42x as much as the lowest. Lastly, effort changes not only how many tokens are used, but also how agents solve tasks: at higher effort, agents verify their own work more heavily and more often search for solutions than work through problems directly, both of which lengthen trajectories without necessarily altering the outcome. These findings show that naively choosing the highest level is not only cost-inefficient but also offers no guarantee of the best instance-level performance. A simple alternative, starting at the lowest effort and escalating only after a verified failure, matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models.",
-    "upvotes": 16,
-    "discussionId": "6ae1277ea5eb0647c2907033",
-    "githubRepo": "https://github.com/KaiserWhoLearns/ReasoningEffortLLM",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Reasoning effort in generative models acts as a credence good where higher compute does not guarantee better instance-level results, and an escalation strategy from low effort improves cost-efficiency.",
-    "ai_keywords": [
-     "reasoning effort",
-     "inference-time compute",
-     "counterfactual effect",
-     "agentic tasks",
-     "trajectory behavior",
-     "token usage",
-     "escalation strategy"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 43,
-    "organization": {
-     "_id": "632b803bb2dd35f135623cc2",
-     "name": "togethercomputer",
-     "fullname": "Together",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67be52be391885e452f4f1be/XiCaXuCIs-N_03X_nzopf.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-24T20:00:00.000Z",
-   "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
-   "summary": "Generative models increasingly expose a reasoning effort setting that lets users scale inference-time compute, trading higher cost for potentially improved performance. Users must choose an effort level before knowing whether extra reasoning will help, and even a successful run does not reveal whether the effort purchased was necessary. Reasoning effort is therefore a credence good: buyers observe the outcome but cannot assess the marginal value of the computation they paid for. In this work, we measure the counterfactual effect of effort levels on both proprietary and open-weight models on four benchmarks, spanning single-call reasoning and long-horizon agentic tasks. Effort, it turns out, does not consistently preserve tasks that lower effort solves, can overspend, and can change trajectory behavior. First, we find that although higher effort can raise accuracy in aggregate, it frequently fails on tasks that lower effort solved. Second, on the subset of easy tasks that every effort level solves, higher effort is generally more costly, with the highest effort level costing up to 42x as much as the lowest. Lastly, effort changes not only how many tokens are used, but also how agents solve tasks: at higher effort, agents verify their own work more heavily and more often search for solutions than work through problems directly, both of which lengthen trajectories without necessarily altering the outcome. These findings show that naively choosing the highest level is not only cost-inefficient but also offers no guarantee of the best instance-level performance. A simple alternative, starting at the lowest effort and escalating only after a verified failure, matches or improves on fixed top effort across all models and benchmarks at lower cost for most proprietary models.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34491.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "616745f893f6837511d9ae25",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/616745f893f6837511d9ae25/H0JIGDL5VOu29zVd4KiKB.jpeg",
-    "fullname": "Kaiser Sun",
-    "name": "KaiserWhoLearns",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 6,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "632b803bb2dd35f135623cc2",
-    "name": "togethercomputer",
-    "fullname": "Together",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67be52be391885e452f4f1be/XiCaXuCIs-N_03X_nzopf.jpeg"
    },
    "isAuthorParticipating": true
   }
