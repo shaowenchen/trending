@@ -1,8 +1,270 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T11:31:26.196Z",
+ "fetchedAt": "2026-10-29T13:46:09.363Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.22507",
+    "authors": [
+     {
+      "_id": "6ae32c639ef630670c714bf2",
+      "name": "Yunqi Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf3",
+      "name": "Peiyu Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf4",
+      "name": "Bingli Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf5",
+      "name": "Leo Luo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf6",
+      "name": "Xuanwu Song",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf7",
+      "name": "Xudong Ma",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf8",
+      "name": "Hongxin Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bf9",
+      "name": "Yaxin Du",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bfa",
+      "name": "Weicheng Gu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bfb",
+      "name": "Fanglin Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bfc",
+      "name": "Yi Xing",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bfd",
+      "name": "XiangLong Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bfe",
+      "name": "Jujie He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714bff",
+      "name": "Zhange Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c00",
+      "name": "Huatong Song",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c01",
+      "name": "Zhaoyi Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c02",
+      "name": "Deyang Kong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c03",
+      "name": "Chuan Hao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c04",
+      "name": "Peihao Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c05",
+      "name": "Mingjie Tang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c06",
+      "name": "Ran Tao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c07",
+      "name": "Jian Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c08",
+      "name": "Wayne Xin Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae32c639ef630670c714c09",
+      "name": "Bryan Dai",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
+    "submittedOnDailyBy": {
+     "_id": "66d82581b842183143b87da8",
+     "avatarUrl": "/avatars/5766c928f517434ee0c88c2c251905aa.svg",
+     "isPro": false,
+     "fullname": "Jian Yang",
+     "user": "csjiaya",
+     "type": "user",
+     "name": "csjiaya"
+    },
+    "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
+    "upvotes": 10,
+    "discussionId": "6ae32c649ef630670c714c0a",
+    "ai_summary": "REALCLI is a benchmark that jointly evaluates CLI agent task execution and human-agent collaboration quality, revealing major gaps in steerability, trust calibration, and safety management.",
+    "ai_keywords": [
+     "CLI agents",
+     "REALCLI",
+     "collaboration framework",
+     "progressive information",
+     "steerability",
+     "trust calibration",
+     "safety boundary management",
+     "joint collaboration score"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6937e1578cd2568ba4c9d3f9",
+     "name": "IQuestLab",
+     "fullname": "IQuest",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+    }
+   },
+   "publishedAt": "2026-10-14T20:00:00.000Z",
+   "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
+   "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22507.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66d82581b842183143b87da8",
+    "avatarUrl": "/avatars/5766c928f517434ee0c88c2c251905aa.svg",
+    "fullname": "Jian Yang",
+    "name": "csjiaya",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6937e1578cd2568ba4c9d3f9",
+    "name": "IQuestLab",
+    "fullname": "IQuest",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.30132",
+    "authors": [
+     {
+      "_id": "6ae33e75d26ed0b25d0d4aff",
+      "name": "Zhennan Wan",
+      "hidden": false
+     },
+     {
+      "_id": "6ae33e75d26ed0b25d0d4b00",
+      "name": "Jianfei Chen",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+    "submittedOnDailyBy": {
+     "_id": "65d73ac991dbd0f8b399ab73",
+     "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
+     "isPro": false,
+     "fullname": "Zhennan Wan",
+     "user": "zhennan1",
+     "type": "user",
+     "name": "zhennan1"
+    },
+    "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
+    "upvotes": 2,
+    "discussionId": "6ae33e75d26ed0b25d0d4b01",
+    "githubRepo": "https://github.com/zhennan1/LongZero",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "LongZero enables large language models to self-improve long-context reasoning by synthesizing structured multi-hop and retrieval tasks and training with GRPO without external data.",
+    "ai_keywords": [
+     "reinforcement learning",
+     "long-context reasoning",
+     "large language models",
+     "GRPO",
+     "multi-hop reasoning",
+     "multi-round retrieval",
+     "self-synthesis"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 4,
+    "organization": {
+     "_id": "628735cbc83a2d6ab8d14a66",
+     "name": "Tsinghua",
+     "fullname": "Tsinghua University",
+     "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-10-20T20:00:00.000Z",
+   "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+   "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30132.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65d73ac991dbd0f8b399ab73",
+    "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
+    "fullname": "Zhennan Wan",
+    "name": "zhennan1",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "628735cbc83a2d6ab8d14a66",
+    "name": "Tsinghua",
+    "fullname": "Tsinghua University",
+    "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.30161",
@@ -45,7 +307,7 @@
      "name": "KrishanuA"
     },
     "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
-    "upvotes": 1,
+    "upvotes": 8,
     "discussionId": "6ae2de81d670fc6ea896c8e1",
     "githubRepo": "https://github.com/npci/TauIndianBankBench",
     "githubRepoAddedBy": "user",
@@ -75,7 +337,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30161.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "68ad42bca1f07af43fcfcead",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
@@ -86,6 +348,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "organization": {
@@ -162,7 +425,7 @@
      "name": "YijunShen"
     },
     "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae3054bd670fc6ea896c969",
     "projectPage": "https://causground.github.io/",
     "githubRepo": "https://github.com/Intelligent-Interaction/CausGround",
@@ -604,7 +867,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -709,7 +972,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 31,
+    "upvotes": 38,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -2248,7 +2511,7 @@
      "name": "tomaarsen"
     },
     "summary": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
-    "upvotes": 21,
+    "upvotes": 23,
     "discussionId": "6ae1622ba5eb0647c290729e",
     "ai_summary": "EmbeddingGemma 2 is an open multimodal embedding model that unifies text, images, audio, and video representations with efficient resource-flexible design and state-of-the-art benchmark performance.",
     "ai_keywords": [
@@ -2286,7 +2549,7 @@
     "isHf": true,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4695,
+    "followerCount": 4696,
     "isUserFollowing": false
    },
    "organization": {
@@ -2509,7 +2772,7 @@
      "name": "Tingyang-Chen"
     },
     "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
-    "upvotes": 377,
+    "upvotes": 378,
     "discussionId": "6ae1d53f717a45b73580b393",
     "ai_summary": "Multiscale Policy Optimization improves long-horizon agent training by aligning credit assignment and policy updates at the turn scale.",
     "ai_keywords": [
@@ -3699,7 +3962,7 @@
      "name": "lin5547"
     },
     "summary": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
-    "upvotes": 144,
+    "upvotes": 145,
     "discussionId": "6ae15d0fa5eb0647c2907230",
     "ai_summary": "PDRVLA improves robot action generation by integrating a lightweight physical dynamics module that predicts future visual features with world-model supervision, avoiding online video generation latency.",
     "ai_keywords": [
@@ -4094,7 +4357,7 @@
      "name": "IntJudge"
     },
     "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
-    "upvotes": 540,
+    "upvotes": 541,
     "discussionId": "6ae17a9aa5eb0647c2907534",
     "projectPage": "https://trinity-rsi.github.io/",
     "githubRepo": "https://github.com/InfRec-Cardinal/The-Trinity",
@@ -4111,7 +4374,7 @@
      "Capability-Aware Harness Router"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 22,
+    "githubStars": 26,
     "organization": {
      "_id": "6508ab2b349930913196378b",
      "name": "NationalUniversityofSingapore",
@@ -6311,7 +6574,7 @@
      "name": "taesiri"
     },
     "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6ae167dea5eb0647c2907445",
     "ai_summary": "Timestral is a family of time series foundation models that achieves state-of-the-art probabilistic forecasting through decoupled horizon forecasting, native future covariate support, and synthetic pretraining followed by mixed post-training.",
     "ai_keywords": [
@@ -6516,7 +6779,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/0_dgyPCaBvlKzv_dlyFJO.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37386.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "62e622d08e0b2dc6707f8794",
     "avatarUrl": "/avatars/bc7c1d862ba571b95cedf55ed3c9f920.svg",
@@ -6798,7 +7061,7 @@
      "name": "DogNeverSleep"
     },
     "summary": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experiments reveal that while leading proprietary MLLMs demonstrate promising code captioning capabilities, they still struggle to faithfully capture complex temporal dynamics, with open-source models lagging substantially behind.",
-    "upvotes": 49,
+    "upvotes": 50,
     "discussionId": "6ae15aa3a5eb0647c2907219",
     "projectPage": "https://codecap-bench.github.io/",
     "ai_summary": "Executable code representations of video content improve reasoning and reconstruction over natural language, yet current multimodal models still struggle to generate faithful code captions for complex temporal dynamics.",
@@ -7042,7 +7305,7 @@
      "name": "chyun"
     },
     "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-    "upvotes": 51,
+    "upvotes": 52,
     "discussionId": "6ae15d94a5eb0647c290723a",
     "projectPage": "https://thinkworld-project.github.io/",
     "ai_summary": "ThinkWorld improves robotic generalization by representing actions as dynamics chains and using world imagination to learn from unlabeled human videos.",
@@ -7667,404 +7930,6 @@
     "name": "UCSantaBarbara",
     "fullname": "University of California, Santa Barbara",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/AoPyKoRF9O8PHOoaJOi7h.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.34714",
-    "authors": [
-     {
-      "_id": "6ae158b6a5eb0647c29071ac",
-      "name": "Jingjie Ning",
-      "hidden": false
-     },
-     {
-      "_id": "6ae158b6a5eb0647c29071ad",
-      "name": "Xueqi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae158b6a5eb0647c29071ae",
-      "name": "Yibo Kong",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6310a812a23f0327bce68778/X3R0fOEKNomYlHBkuMoTH.mp4"
-    ],
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
-    "submittedOnDailyBy": {
-     "_id": "6310a812a23f0327bce68778",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6310a812a23f0327bce68778/dp9JherZV-RYiSRKnvxsh.jpeg",
-     "isPro": false,
-     "fullname": "Ethan Ning",
-     "user": "ethanning",
-     "type": "user",
-     "name": "ethanning"
-    },
-    "summary": "AI agents must decide when another search is worth its cost. Answer-success probabilities capture question difficulty, while this decision requires estimating the additional benefit of search. We introduce SearchHorizonBench, a benchmark for learning and evaluating search value from execution experience. Paired continuations and repeated executions separate expected search gain from generation noise and connect prediction quality to decision utility. The resource contains 45,632 executions across 3,168 questions. On 1,632 held-out questions, historical calibration reduces Brier error by 16.2%, with the improvement concentrated in success-level information. Search gains have a standard deviation of 21.4 percentage points, and tested historical estimators explain less than 2% of this variance in point estimates. Matched-configuration learning curves probe this distinction across training scales. At the reference token price, free selection observations yield a 2.49-point utility opportunity over the best constant action, driven primarily by gain information. Reusable histories, frozen splits, strong baselines and scoring tools provide a common foundation for developing and evaluating value-aware search agents.",
-    "upvotes": 7,
-    "discussionId": "6ae158b7a5eb0647c29071af",
-    "projectPage": "https://ethanning.github.io/SearchHorizonBench/",
-    "githubRepo": "https://github.com/EthanNing/SearchHorizonBench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "SearchHorizonBench evaluates how agents learn to estimate the value of additional search from execution history, showing that historical calibration improves prediction accuracy but leaves most search-gain variance unexplained.",
-    "ai_keywords": [
-     "SearchHorizonBench",
-     "answer-success probabilities",
-     "search value",
-     "Brier error",
-     "historical calibration",
-     "search gains",
-     "matched-configuration learning curves",
-     "value-aware search agents"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1,
-    "organization": {
-     "_id": "691d9a1012cc4d473e1c862f",
-     "name": "CarnegieMellonU",
-     "fullname": "Carnegie Mellon University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
-    }
-   },
-   "publishedAt": "2026-10-25T20:00:00.000Z",
-   "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
-   "summary": "AI agents must decide when another search is worth its cost. Answer-success probabilities capture question difficulty, while this decision requires estimating the additional benefit of search. We introduce SearchHorizonBench, a benchmark for learning and evaluating search value from execution experience. Paired continuations and repeated executions separate expected search gain from generation noise and connect prediction quality to decision utility. The resource contains 45,632 executions across 3,168 questions. On 1,632 held-out questions, historical calibration reduces Brier error by 16.2%, with the improvement concentrated in success-level information. Search gains have a standard deviation of 21.4 percentage points, and tested historical estimators explain less than 2% of this variance in point estimates. Matched-configuration learning curves probe this distinction across training scales. At the reference token price, free selection observations yield a 2.49-point utility opportunity over the best constant action, driven primarily by gain information. Reusable histories, frozen splits, strong baselines and scoring tools provide a common foundation for developing and evaluating value-aware search agents.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6310a812a23f0327bce68778/X3R0fOEKNomYlHBkuMoTH.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34714.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "6310a812a23f0327bce68778",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6310a812a23f0327bce68778/dp9JherZV-RYiSRKnvxsh.jpeg",
-    "fullname": "Ethan Ning",
-    "name": "ethanning",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 5,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "691d9a1012cc4d473e1c862f",
-    "name": "CarnegieMellonU",
-    "fullname": "Carnegie Mellon University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.36729",
-    "authors": [
-     {
-      "_id": "6ae15718a5eb0647c2907149",
-      "name": "Qiaoling Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714a",
-      "name": "Jiaxiang Cheng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714b",
-      "name": "Xueqing Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714c",
-      "name": "Tiankai Hang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714d",
-      "name": "Ji Hou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714e",
-      "name": "Jiaqi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290714f",
-      "name": "Yifan Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907150",
-      "name": "Tao Lu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907151",
-      "name": "Junshu Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907152",
-      "name": "Yu Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907153",
-      "name": "Yao Teng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907154",
-      "name": "Yu Tian",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907155",
-      "name": "Heng Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907156",
-      "user": {
-       "_id": "63d34004b734eaa4d4faeccf",
-       "avatarUrl": "/avatars/7431a0177ac618bfcdffbf436e689acc.svg",
-       "isPro": false,
-       "fullname": "Weizhi Wang",
-       "user": "weizhiwang",
-       "type": "user",
-       "name": "weizhiwang"
-      },
-      "name": "Weizhi Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T16:45:04.740Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907157",
-      "user": {
-       "_id": "655fed9fdef5905d38b84af3",
-       "avatarUrl": "/avatars/866598925611eba67186b0daa6a9913d.svg",
-       "isPro": false,
-       "fullname": "Xiyao Wang",
-       "user": "russwang",
-       "type": "user",
-       "name": "russwang"
-      },
-      "name": "Xiyao Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.290Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907158",
-      "name": "Xilun Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907159",
-      "name": "Mingyu Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715a",
-      "name": "Yangbin Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715b",
-      "user": {
-       "_id": "652b83b73b5997ed71a310f2",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652b83b73b5997ed71a310f2/ipCpdeHUp4-0OmRz5z8IW.png",
-       "isPro": false,
-       "fullname": "Rui Zhao",
-       "user": "ruizhaocv",
-       "type": "user",
-       "name": "ruizhaocv"
-      },
-      "name": "Rui Zhao",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T00:45:04.923Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715c",
-      "name": "Longjun Cao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715d",
-      "name": "Linghao Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715e",
-      "name": "Haoyi Duan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290715f",
-      "name": "Jiaming Han",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907160",
-      "name": "Mingji Han",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907161",
-      "name": "Enhua Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907162",
-      "name": "Shunkai Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907163",
-      "name": "Yanzhe Liang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907164",
-      "name": "Qinwei Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907165",
-      "name": "Cong Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907166",
-      "name": "Lei Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907167",
-      "name": "Bing Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907168",
-      "name": "Ke Xing",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c2907169",
-      "name": "Ray Ying",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290716a",
-      "name": "Zhentao Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290716b",
-      "name": "Key Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290716c",
-      "name": "Yuan Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290716d",
-      "name": "Zhengguang Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15718a5eb0647c290716e",
-      "user": {
-       "_id": "647993d9f966f086918da59e",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647993d9f966f086918da59e/TQFeJvoQy0jt7I-5MTbJ4.png",
-       "isPro": false,
-       "fullname": "Kai Zou",
-       "user": "jackyhate",
-       "type": "user",
-       "name": "jackyhate"
-      },
-      "name": "Kai Zou",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.295Z",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/63d34004b734eaa4d4faeccf/lOBvI5ytl4xxTPiMTwOCy.mp4"
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
-    "submittedOnDailyBy": {
-     "_id": "63d34004b734eaa4d4faeccf",
-     "avatarUrl": "/avatars/7431a0177ac618bfcdffbf436e689acc.svg",
-     "isPro": false,
-     "fullname": "Weizhi Wang",
-     "user": "weizhiwang",
-     "type": "user",
-     "name": "weizhiwang"
-    },
-    "summary": "Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interaction turns. It generates variable-length segments conditioned on current inputs and cached history. Our central design aligns structured video captions with action-aware causal attention: descriptive context remains accessible across segments, while action instructions are restricted to their intended temporal windows. A vision-language Prompt Enhancer (PE) translates user requests and multimodal interaction histories into structured conditions for the next segment. A multi-stage curriculum progressively introduces causal generation, text interaction, camera control, and training on model-generated histories, followed by diffusion distillation. In human evaluation, Hy-Nomas shows superior performance over existing world models. We release model weights, code and benchmarks, together with a lightweight adaptation workflow, to support reproducible research on interactive world generation.",
-    "upvotes": 107,
-    "discussionId": "6ae15718a5eb0647c290716f",
-    "projectPage": "https://hy-nomas.hy.tencent.com/",
-    "githubRepo": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Hy-Nomas is a video world model that uses causal attention and structured conditioning to generate interactive, multi-turn video segments with text and camera control.",
-    "ai_keywords": [
-     "video world model",
-     "diffusion backbone",
-     "causal attention",
-     "vision-language Prompt Enhancer",
-     "curriculum learning",
-     "diffusion distillation",
-     "interactive world generation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 355,
-    "organization": {
-     "_id": "6645f953c39288df638dbdd5",
-     "name": "Tencent-Hunyuan",
-     "fullname": "Tencent Hunyuan",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/62d22496c58f969c152bcefd/woKSjt2wXvBNKussyYPsa.png"
-    }
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
-   "summary": "Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interaction turns. It generates variable-length segments conditioned on current inputs and cached history. Our central design aligns structured video captions with action-aware causal attention: descriptive context remains accessible across segments, while action instructions are restricted to their intended temporal windows. A vision-language Prompt Enhancer (PE) translates user requests and multimodal interaction histories into structured conditions for the next segment. A multi-stage curriculum progressively introduces causal generation, text interaction, camera control, and training on model-generated histories, followed by diffusion distillation. In human evaluation, Hy-Nomas shows superior performance over existing world models. We release model weights, code and benchmarks, together with a lightweight adaptation workflow, to support reproducible research on interactive world generation.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/63d34004b734eaa4d4faeccf/lOBvI5ytl4xxTPiMTwOCy.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36729.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "63d34004b734eaa4d4faeccf",
-    "avatarUrl": "/avatars/7431a0177ac618bfcdffbf436e689acc.svg",
-    "fullname": "Weizhi Wang",
-    "name": "weizhiwang",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 23,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6645f953c39288df638dbdd5",
-    "name": "Tencent-Hunyuan",
-    "fullname": "Tencent Hunyuan",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/62d22496c58f969c152bcefd/woKSjt2wXvBNKussyYPsa.png"
    },
    "isAuthorParticipating": true
   }
