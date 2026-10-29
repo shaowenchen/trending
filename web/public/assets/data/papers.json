@@ -1,8 +1,247 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T13:46:09.363Z",
+ "fetchedAt": "2026-10-29T16:02:00.834Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.35671",
+    "authors": [
+     {
+      "_id": "6ae31bf5d670fc6ea896c9de",
+      "name": "Yao Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9df",
+      "name": "Zhiyuan Zeng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e0",
+      "name": "Yu Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e1",
+      "name": "Zhitong Zhu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e2",
+      "name": "Dingcheng Duan",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e3",
+      "name": "Hao Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e4",
+      "name": "Shangzhi Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e5",
+      "name": "Yifan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e6",
+      "name": "Jinzhe Tu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e7",
+      "name": "Shukun Xiong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e8",
+      "name": "Yihe Zang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9e9",
+      "name": "Han Yan",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9ea",
+      "name": "Hongchang Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9eb",
+      "name": "Fuyu Gu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9ec",
+      "name": "Wei Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9ed",
+      "name": "Yinpeng Dong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae31bf5d670fc6ea896c9ee",
+      "name": "Xiaojian Li",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+    "submittedOnDailyBy": {
+     "_id": "63a369d98c0c89dcae3b8329",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a369d98c0c89dcae3b8329/AiH2zjy1cnt9OADAAZMLD.jpeg",
+     "isPro": false,
+     "fullname": "Adina Yakefu",
+     "user": "AdinaY",
+     "type": "user",
+     "name": "AdinaY"
+    },
+    "summary": "As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety risks. While closed-source releases are routinely accompanied by comprehensive system cards, open-weight models receive less scrutiny regarding frontier risks. To address this gap, we present an independent safety evaluation of DeepSeek V4.1 Flash-1017, the latest version of V4.1 Flash that departs from V4 with a new architecture, scaled-up training, and strong agentic capabilities. Drawing on the EU General-Purpose AI Code of Practice, we evaluate the model across 34 benchmarks, including 5 in-house suites, spanning evaluation integrity, loss of control, and harmful manipulation. Conforming to the AEF-1 standard, we compare V4.1 Flash-1017 against V4.1 Flash, earlier DeepSeek V4 models, and leading closed-source systems (GPT-6 Astra, GPT-5.6 Sol, and Gemini 3.8 Flash). Overall, V4.1 Flash-1017 shows substantial safety improvements over the V4 generation and approaches or matches leading closed-source baselines on several dimensions, while still exhibiting notable behaviors that warrant continued attention. Building on our findings, we highlight three key observations and recommendations. First, because safety can shift and even regress across minor updates, developers should integrate safety evaluation into incremental releases. Second, as final-turn outputs and end-state checks alone cannot reliably detect loss-of-control behaviors, deployments require process-level observability across both reasoning traces and action logs. Third, because public benchmarks elicit strong evaluation awareness and face data contamination risks, developing private benchmarks is essential for trustworthy frontier evaluation.",
+    "upvotes": 2,
+    "discussionId": "6ae31bf6d670fc6ea896c9ef",
+    "ai_summary": "Independent safety evaluation of DeepSeek V4.1 Flash-1017 reveals substantial improvements over prior versions and near-parity with leading closed-source models, while recommending process-level observability, incremental safety testing, and private benchmarks.",
+    "ai_keywords": [
+     "systemic safety risks",
+     "open-weight models",
+     "evaluation integrity",
+     "loss of control",
+     "harmful manipulation",
+     "reasoning traces",
+     "action logs",
+     "evaluation awareness",
+     "data contamination",
+     "private benchmarks"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6ae31c597c74bab34a3adb32",
+     "name": "FangcunAI",
+     "fullname": "Fangcun AI",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae31b4b9e2a17d198fc9f8b/heEA2NJqeZ1_GqZHPUUT0.png"
+    }
+   },
+   "publishedAt": "2026-10-25T20:00:00.000Z",
+   "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+   "summary": "As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety risks. While closed-source releases are routinely accompanied by comprehensive system cards, open-weight models receive less scrutiny regarding frontier risks. To address this gap, we present an independent safety evaluation of DeepSeek V4.1 Flash-1017, the latest version of V4.1 Flash that departs from V4 with a new architecture, scaled-up training, and strong agentic capabilities. Drawing on the EU General-Purpose AI Code of Practice, we evaluate the model across 34 benchmarks, including 5 in-house suites, spanning evaluation integrity, loss of control, and harmful manipulation. Conforming to the AEF-1 standard, we compare V4.1 Flash-1017 against V4.1 Flash, earlier DeepSeek V4 models, and leading closed-source systems (GPT-6 Astra, GPT-5.6 Sol, and Gemini 3.8 Flash). Overall, V4.1 Flash-1017 shows substantial safety improvements over the V4 generation and approaches or matches leading closed-source baselines on several dimensions, while still exhibiting notable behaviors that warrant continued attention. Building on our findings, we highlight three key observations and recommendations. First, because safety can shift and even regress across minor updates, developers should integrate safety evaluation into incremental releases. Second, as final-turn outputs and end-state checks alone cannot reliably detect loss-of-control behaviors, deployments require process-level observability across both reasoning traces and action logs. Third, because public benchmarks elicit strong evaluation awareness and face data contamination risks, developing private benchmarks is essential for trustworthy frontier evaluation.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35671.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "63a369d98c0c89dcae3b8329",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a369d98c0c89dcae3b8329/AiH2zjy1cnt9OADAAZMLD.jpeg",
+    "fullname": "Adina Yakefu",
+    "name": "AdinaY",
+    "type": "user",
+    "isPro": false,
+    "isHf": true,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1249,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6ae31c597c74bab34a3adb32",
+    "name": "FangcunAI",
+    "fullname": "Fangcun AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae31b4b9e2a17d198fc9f8b/heEA2NJqeZ1_GqZHPUUT0.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.20832",
+    "authors": [
+     {
+      "_id": "6ae358e4d26ed0b25d0d4b4d",
+      "name": "Anita Kriz",
+      "hidden": false
+     },
+     {
+      "_id": "6ae358e4d26ed0b25d0d4b4e",
+      "name": "Antonin Berthon",
+      "hidden": false
+     },
+     {
+      "_id": "6ae358e4d26ed0b25d0d4b4f",
+      "name": "Nicolás Astorga",
+      "hidden": false
+     },
+     {
+      "_id": "6ae358e4d26ed0b25d0d4b50",
+      "name": "Mihaela van der Schaar",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
+    "submittedOnDailyBy": {
+     "_id": "6701d4e7eb760972bc1c0682",
+     "avatarUrl": "/avatars/0478cbbc883d4cdf8bf9dbe3bc1f3459.svg",
+     "isPro": false,
+     "fullname": "Antonin Berthon",
+     "user": "antoninbrthn",
+     "type": "user",
+     "name": "antoninbrthn"
+    },
+    "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
+    "upvotes": 3,
+    "discussionId": "6ae358e4d26ed0b25d0d4b51",
+    "githubRepo": "https://github.com/anitakriz/ar-bed",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Large language models learn adaptive information gathering by training reasoning with information-gain rewards, improving experimental design efficiency and generalizing across tasks.",
+    "ai_keywords": [
+     "sequential Bayesian experimental design",
+     "information-gain rewards",
+     "amortization",
+     "generative model",
+     "expected information gain",
+     "multi-step objectives",
+     "Twenty Questions",
+     "Medi-Q"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "65f9e02087d1c912d985eebf",
+     "name": "CambUni",
+     "fullname": "University of Cambridge",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/gdCou-0KoYsLPYqPrz6xn.png"
+    }
+   },
+   "publishedAt": "2026-10-13T20:00:00.000Z",
+   "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
+   "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20832.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6701d4e7eb760972bc1c0682",
+    "avatarUrl": "/avatars/0478cbbc883d4cdf8bf9dbe3bc1f3459.svg",
+    "fullname": "Antonin Berthon",
+    "name": "antoninbrthn",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "65f9e02087d1c912d985eebf",
+    "name": "CambUni",
+    "fullname": "University of Cambridge",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/gdCou-0KoYsLPYqPrz6xn.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.22507",
@@ -14,7 +253,18 @@
      },
      {
       "_id": "6ae32c639ef630670c714bf3",
+      "user": {
+       "_id": "6523fea2563d19d78488de57",
+       "avatarUrl": "/avatars/841e4e2b540e78627ee8a35c8fa86cf4.svg",
+       "isPro": false,
+       "fullname": "pei wang",
+       "user": "wpei",
+       "type": "user",
+       "name": "wpei"
+      },
       "name": "Peiyu Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T14:49:04.793Z",
       "hidden": false
      },
      {
@@ -141,7 +391,7 @@
      "name": "csjiaya"
     },
     "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
-    "upvotes": 10,
+    "upvotes": 15,
     "discussionId": "6ae32c649ef630670c714c0a",
     "ai_summary": "REALCLI is a benchmark that jointly evaluates CLI agent task execution and human-agent collaboration quality, revealing major gaps in steerability, trust calibration, and safety management.",
     "ai_keywords": [
@@ -194,7 +444,18 @@
     "authors": [
      {
       "_id": "6ae33e75d26ed0b25d0d4aff",
+      "user": {
+       "_id": "65d73ac991dbd0f8b399ab73",
+       "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
+       "isPro": false,
+       "fullname": "Zhennan Wan",
+       "user": "zhennan1",
+       "type": "user",
+       "name": "zhennan1"
+      },
       "name": "Zhennan Wan",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T14:49:00.447Z",
       "hidden": false
      },
      {
@@ -263,7 +524,7 @@
     "fullname": "Tsinghua University",
     "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -307,7 +568,7 @@
      "name": "KrishanuA"
     },
     "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae2de81d670fc6ea896c8e1",
     "githubRepo": "https://github.com/npci/TauIndianBankBench",
     "githubRepoAddedBy": "user",
@@ -867,7 +1128,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -972,7 +1233,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 38,
+    "upvotes": 40,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -1085,7 +1346,7 @@
      "near-field leakage suppression"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13,
+    "githubStars": 20,
     "organization": {
      "_id": "640d3084536d9fe0f005cac3",
      "name": "thu-ml",
@@ -1209,7 +1470,7 @@
      "token-level entropy"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 8,
     "organization": {
      "_id": "696461ab2d94e9a07cdb8efd",
      "name": "OmniAI-ZJU",
@@ -1224,7 +1485,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/-HwSwdNgn5m4Bx9b0Riez.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35201.png",
-   "numComments": 4,
+   "numComments": 5,
    "submittedBy": {
     "_id": "6485bd278d14bcd5cdbb7c8d",
     "avatarUrl": "/avatars/18348cb2ef91757f3450c18debd11599.svg",
@@ -1292,7 +1553,7 @@
      }
     ],
     "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6335298275bed9932474ea77/ONmnfOpGjjRWImE_s_7ts.mp4"
+     "https://cdn-uploads.huggingface.co/production/uploads/6335298275bed9932474ea77/tQs5l8JmJey2ibn_vrks4.mp4"
     ],
     "publishedAt": "2026-10-23T00:00:00.000Z",
     "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
@@ -1335,7 +1596,7 @@
    "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
    "summary": "Data science agents can automate end-to-end machine learning workflows, yet they remain far from competitive on human leaderboards. Agents make process errors such as insufficient exploration, unsound validation, coding bugs, and poor use of a fixed budget (re-running the same exploratory data analysis and baseline models in every attempt). We propose AdaPRA to address these issues: a persistent coding agent harness that accumulates knowledge across attempts on the same task, with rubric-guided process supervision that identifies and corrects errors. Our process reward agent audits the agent's trajectory and workspace by executing checks, and adapts its rubrics to each task. We find that rubrics seeded from easier tasks generalize to harder tasks, with rubric adaptation further improving performance. With five attempts per task, AdaPRA improves an 80B Qwen model's leaderboard percentile by 24.5 points on DSPredict-Easy and 14.8 points on DSPredict-Hard while reducing process errors. We also show that supervision with rubrics mined from one base model's runs improves another (DeepSeek-V3.2), and that AdaPRA beats DataPRM, a competitive PRM for data science. We also share our code for reproducibility.",
    "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6335298275bed9932474ea77/ONmnfOpGjjRWImE_s_7ts.mp4"
+    "https://cdn-uploads.huggingface.co/production/uploads/6335298275bed9932474ea77/tQs5l8JmJey2ibn_vrks4.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.33245.png",
    "numComments": 2,
@@ -1423,7 +1684,7 @@
      "name": "Taewhoo"
     },
     "summary": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, despite operating as a standalone RL framework with no inference-time scaffolding. Beyond final performance, SARL maintains training stability under extended search horizons, a regime where existing methods consistently degrade, enabling sustained gains as task complexity grows.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae28eecd670fc6ea896c760",
     "ai_summary": "Self-Assessment Reinforcement Learning trains search agents to recognize missing information and improve search efficiency without extra inference-time assessment.",
     "ai_keywords": [
@@ -2511,7 +2772,7 @@
      "name": "tomaarsen"
     },
     "summary": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
-    "upvotes": 23,
+    "upvotes": 25,
     "discussionId": "6ae1622ba5eb0647c290729e",
     "ai_summary": "EmbeddingGemma 2 is an open multimodal embedding model that unifies text, images, audio, and video representations with efficient resource-flexible design and state-of-the-art benchmark performance.",
     "ai_keywords": [
@@ -2772,7 +3033,7 @@
      "name": "Tingyang-Chen"
     },
     "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
-    "upvotes": 378,
+    "upvotes": 379,
     "discussionId": "6ae1d53f717a45b73580b393",
     "ai_summary": "Multiscale Policy Optimization improves long-horizon agent training by aligning credit assignment and policy updates at the turn scale.",
     "ai_keywords": [
@@ -2862,7 +3123,7 @@
      "name": "skandermoalla"
     },
     "summary": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6ae1d670717a45b73580b39b",
     "ai_summary": "A simple agentic loop with efficient Lean feedback achieves state-of-the-art formal theorem proving without structured workflows, showing that execution interfaces matter more than complex orchestration.",
     "ai_keywords": [
@@ -3119,7 +3380,7 @@
      "name": "WaltonFuture"
     },
     "summary": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
-    "upvotes": 26,
+    "upvotes": 27,
     "discussionId": "6ae1a3aba5eb0647c2907621",
     "projectPage": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
     "githubRepo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
@@ -3235,7 +3496,7 @@
      "name": "yuezhengrong"
     },
     "summary": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal understanding. Trained on industrial-scale multimodal data, our model achieves state-of-the-art performance among discrete-representation models, outperforming UniAR and Emu3-Chat by 22.8% and 59.2%, respectively, on a nine-metric average. To our knowledge, it is also the first discrete-representation model competitive with strong continuous-representation models such as Qwen3-VL, including on fine-grained OCR tasks. We further identify the key principles and a practical recipe enabling this competitiveness. These results and insights support the potential of discrete visual representations to underpin large-scale native multimodal foundation models. Code and models are available at https://github.com/hustvl/FVQ",
-    "upvotes": 90,
+    "upvotes": 91,
     "discussionId": "6ae16423a5eb0647c29072b3",
     "projectPage": "https://doctor-james.github.io/FVQ-Page/",
     "githubRepo": "https://github.com/hustvl/FVQ",
@@ -3625,7 +3886,7 @@
      "name": "diaomuxi"
     },
     "summary": "Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. We introduce VibeVideoBench, a benchmark for evaluating agents on code-driven video generation. Its 239 self-contained tasks in English and Chinese span 12 categories, from data stories and music-driven pieces to classroom lessons and paper explainers; each asks an agent, running in its native harness inside a sandbox with no image or video generation model, to deliver a finished MP4 with sound within one hour. Evaluation is hierarchical and evidence-based: program checks of the delivery spec, about 13k task-specific rubric checks traced to the requirements they enforce, and five quality dimensions anchored per task, scored by three VLM judge panels. Across nine frontier agent systems and 2,151 scored rollouts, GPT-6 Astra and Claude Opus 5.5 rank first and second with both the judges and human annotators, and the strongest system satisfies every core requirement on 76.3% of tasks. Delivery is a second axis: counting missing videos as zero changes the ranking, and three quarters of the lost videos are final renders that started too late, ran too slowly or never started, a failure of how agents plan their hour. Agents build their own rendering pipelines and inspect their own frames, yet how much they look does not predict quality. The judges' ranking of the systems closely matches blind human preferences.",
-    "upvotes": 174,
+    "upvotes": 175,
     "discussionId": "6ae1740fa5eb0647c2907508",
     "projectPage": "https://vibevideobench.github.io/",
     "ai_summary": "VibeVideoBench evaluates multimodal agents that generate videos via code, finding that top systems meet core requirements on most tasks but frequently fail due to poor time management.",
@@ -4357,7 +4618,7 @@
      "name": "IntJudge"
     },
     "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
-    "upvotes": 541,
+    "upvotes": 543,
     "discussionId": "6ae17a9aa5eb0647c2907534",
     "projectPage": "https://trinity-rsi.github.io/",
     "githubRepo": "https://github.com/InfRec-Cardinal/The-Trinity",
@@ -4641,7 +4902,7 @@
      "name": "taesiri"
     },
     "summary": "AI research agents can propose, execute, and improve programs that solve machine learning tasks. However, executing each candidate program requires training and evaluating ML models, limiting how many candidates an agent can explore at each step. We introduce MLE-World, a world model finetuned from Qwen3.5-4B that predicts a program's terminal output (error traces, training logs, and validation scores) from its code and data description without executing it, together with a confidence score estimating the prediction's correctness. Because a prediction costs one inference call rather than a training run, MLE-World makes test time scaling (TTS) affordable for these agents. We build five TTS policies, guided by MLE-World, that compare several candidates per step by their predicted outputs: Sequential revision, Best-of-N, Pairwise judging, Fusion, and a UCB style rule that also adds an exploration bonus from this confidence score. Since predictions can be wrong, we run a candidate for real only when its confidence score is low. On 17 MLE-bench Lite tasks, MLE-World matches the real terminal output on 77.9% of held out programs, versus 41.1% for much larger prompted models. MLE-World guided TTS achieves up to 22.1% higher observed mean performance than the agent without a world model, with less real execution. Project webpage: https://mle-world.github.io/.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ae169fca5eb0647c2907466",
     "projectPage": "https://mle-world.github.io/",
     "ai_summary": "A world model predicts machine learning program outcomes to enable affordable test-time scaling for AI research agents, improving performance with fewer real executions.",
@@ -4752,7 +5013,7 @@
      "RoboTwin"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3
+    "githubStars": 5
    },
    "publishedAt": "2026-10-26T20:00:00.000Z",
    "title": "Vision-Language-Action or World-Action? Just Action Models",
@@ -6574,7 +6835,7 @@
      "name": "taesiri"
     },
     "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae167dea5eb0647c2907445",
     "ai_summary": "Timestral is a family of time series foundation models that achieves state-of-the-art probabilistic forecasting through decoupled horizon forecasting, native future covariate support, and synthetic pretraining followed by mixed post-training.",
     "ai_keywords": [
@@ -6687,7 +6948,7 @@
      "GeoUG"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 10
+    "githubStars": 12
    },
    "publishedAt": "2026-10-25T20:00:00.000Z",
    "title": "Learning and Reasoning with Geometry: How Generation Helps Spatial Understanding",
@@ -6779,7 +7040,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/0_dgyPCaBvlKzv_dlyFJO.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37386.png",
-   "numComments": 4,
+   "numComments": 5,
    "submittedBy": {
     "_id": "62e622d08e0b2dc6707f8794",
     "avatarUrl": "/avatars/bc7c1d862ba571b95cedf55ed3c9f920.svg",
@@ -7179,7 +7440,7 @@
      "name": "hexuan21"
     },
     "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
-    "upvotes": 148,
+    "upvotes": 149,
     "discussionId": "6ae00874a5efa215400a78f3",
     "projectPage": "https://hexuan21.github.io/MemoryTax/",
     "githubRepo": "https://github.com/hexuan21/MemoryTax",
@@ -7433,7 +7694,7 @@
      "GPU memory"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 66,
+    "githubStars": 76,
     "organization": {
      "_id": "62d55f243bf5e059f7ca25ba",
      "name": "mmlab-ntu",
@@ -7599,7 +7860,7 @@
      "streaming assistants"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 5,
+    "githubStars": 7,
     "organization": {
      "_id": "64c8b5837fe12ecd0a7e92eb",
      "name": "Qwen",
@@ -7635,303 +7896,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.24520",
-    "authors": [
-     {
-      "_id": "6adae30255db1e682e582e8f",
-      "user": {
-       "_id": "670a580ecee41905fb182b9f",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
-       "isPro": false,
-       "fullname": "Junming Zhang",
-       "user": "hollyming",
-       "type": "user",
-       "name": "hollyming"
-      },
-      "name": "Junming Zhang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T08:45:04.856Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e90",
-      "user": {
-       "_id": "6609a53bd81d611249ef5266",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6609a53bd81d611249ef5266/h31hdQFl-jhRnO8R6Gr4C.png",
-       "isPro": false,
-       "fullname": "Rubin Wei",
-       "user": "Rubin-Wei",
-       "type": "user",
-       "name": "Rubin-Wei"
-      },
-      "name": "Rubin Wei",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.207Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e91",
-      "user": {
-       "_id": "671a1ef0c673da43e8368b40",
-       "avatarUrl": "/avatars/362365e5a164929ba9fc85a80bbf994f.svg",
-       "isPro": false,
-       "fullname": "xucheng",
-       "user": "cheese1010",
-       "type": "user",
-       "name": "cheese1010"
-      },
-      "name": "Xu Cheng",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.214Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e92",
-      "name": "Hao Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e93",
-      "name": "Jiarui Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e94",
-      "user": {
-       "_id": "66e3939711e4f40aa75df2ff",
-       "avatarUrl": "/avatars/26fb0a1c6355f0f47afd580251bed6ed.svg",
-       "isPro": false,
-       "fullname": "Cheng",
-       "user": "RosyCheng",
-       "type": "user",
-       "name": "RosyCheng"
-      },
-      "name": "Ruoxi Cheng",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-26T13:32:18.858Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e95",
-      "name": "Xiquan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e96",
-      "name": "Peisong Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e97",
-      "name": "Mingsong Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6adae30255db1e682e582e98",
-      "name": "Zhouhan Lin",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/dphUJb8pG4XvpZ8oS1dDy.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/e6Gl7oM6nVPr-kO50ofjC.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/8z8wEIUxc90XjSaICLMpG.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/mddQAwfELjuIx6mY9Hsip.png"
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
-    "submittedOnDailyBy": {
-     "_id": "670a580ecee41905fb182b9f",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
-     "isPro": false,
-     "fullname": "Junming Zhang",
-     "user": "hollyming",
-     "type": "user",
-     "name": "hollyming"
-    },
-    "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
-    "upvotes": 81,
-    "discussionId": "6adae30255db1e682e582e99",
-    "projectPage": "https://hollyming.github.io/habit-bench-site/",
-    "githubRepo": "https://github.com/LUMIA-Group/habit-bench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "HABIT-Bench evaluates whether LLM agent memory systems can infer implicit user habits from sparse dialogue evidence and apply them correctly across long-term interactions.",
-    "ai_keywords": [
-     "large language model agents",
-     "habit inference",
-     "agent memory systems",
-     "HABIT-Bench",
-     "task-oriented dialogue",
-     "habit graphs",
-     "temporary exceptions",
-     "macro accuracy"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
-    "organization": {
-     "_id": "63e5ef7bf2e9a8f22c515654",
-     "name": "SJTU",
-     "fullname": "Shanghai Jiao Tong University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676013394657-63e5ee22b6a40bf941da0928.png"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
-   "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/dphUJb8pG4XvpZ8oS1dDy.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/e6Gl7oM6nVPr-kO50ofjC.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/8z8wEIUxc90XjSaICLMpG.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/mddQAwfELjuIx6mY9Hsip.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24520.png",
-   "numComments": 7,
-   "submittedBy": {
-    "_id": "670a580ecee41905fb182b9f",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
-    "fullname": "Junming Zhang",
-    "name": "hollyming",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "63e5ef7bf2e9a8f22c515654",
-    "name": "SJTU",
-    "fullname": "Shanghai Jiao Tong University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676013394657-63e5ee22b6a40bf941da0928.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.32046",
-    "authors": [
-     {
-      "_id": "6ae0176da5efa215400a79bb",
-      "user": {
-       "_id": "63f3fc83520c1461892d323e",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f3fc83520c1461892d323e/1TuBK_w2sFAY8TjWqVxkX.jpeg",
-       "isPro": false,
-       "fullname": "Yepeng Liu",
-       "user": "yepengliu",
-       "type": "user",
-       "name": "yepengliu"
-      },
-      "name": "Yepeng Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T08:45:05.005Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79bc",
-      "name": "Shengmai Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79bd",
-      "user": {
-       "_id": "6275a465597c70eb8949fce5",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6275a465597c70eb8949fce5/ph4UogqMurMB0hSXZC38w.png",
-       "isPro": false,
-       "fullname": "Xuandong Zhao",
-       "user": "Xuandong",
-       "type": "user",
-       "name": "Xuandong"
-      },
-      "name": "Xuandong Zhao",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T00:45:04.669Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79be",
-      "name": "Chengzhi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79bf",
-      "name": "Dawn Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79c0",
-      "name": "Xin Eric Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae0176da5efa215400a79c1",
-      "name": "Yuheng Bu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?",
-    "submittedOnDailyBy": {
-     "_id": "63f3fc83520c1461892d323e",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f3fc83520c1461892d323e/1TuBK_w2sFAY8TjWqVxkX.jpeg",
-     "isPro": false,
-     "fullname": "Yepeng Liu",
-     "user": "yepengliu",
-     "type": "user",
-     "name": "yepengliu"
-    },
-    "summary": "Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery process, making computational efficiency an important consideration when scaling to larger models. This motivates us to explore an efficient test-time adaptation method for scientific discovery. We introduce Test-Time Memory Evolution (TTME), a plug-and-play test-time adaptation method, as an alternative to TTT. TTME continually updates the external memory by distilling the experience to guide subsequent discovery without updating model weights. To have a clean comparison, we evaluate TTME and TTT under the same discovery framework, replacing only the test-time adaptation method. Our evaluation shows that TTME outperforms TTT on all five mathematical tasks, while reducing computational cost by 82.8-84.6% in FLOPs and 47.7-58.4% in runtime. These results establish TTME as an effective and computationally efficient alternative to TTT in the evaluated discovery settings.",
-    "upvotes": 119,
-    "discussionId": "6ae0176da5efa215400a79c2",
-    "githubRepo": "https://github.com/yepengliu/TTME",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Test-Time Memory Evolution updates external memory without changing model weights to guide scientific discovery more efficiently than test-time training.",
-    "ai_keywords": [
-     "test-time training",
-     "test-time adaptation",
-     "Test-Time Memory Evolution",
-     "external memory",
-     "model weights",
-     "FLOPs"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
-    "organization": {
-     "_id": "691d9d63284266ada1eb632a",
-     "name": "UCSantaBarbara",
-     "fullname": "University of California, Santa Barbara",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/AoPyKoRF9O8PHOoaJOi7h.png"
-    }
-   },
-   "publishedAt": "2026-10-22T20:00:00.000Z",
-   "title": "Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?",
-   "summary": "Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery process, making computational efficiency an important consideration when scaling to larger models. This motivates us to explore an efficient test-time adaptation method for scientific discovery. We introduce Test-Time Memory Evolution (TTME), a plug-and-play test-time adaptation method, as an alternative to TTT. TTME continually updates the external memory by distilling the experience to guide subsequent discovery without updating model weights. To have a clean comparison, we evaluate TTME and TTT under the same discovery framework, replacing only the test-time adaptation method. Our evaluation shows that TTME outperforms TTT on all five mathematical tasks, while reducing computational cost by 82.8-84.6% in FLOPs and 47.7-58.4% in runtime. These results establish TTME as an effective and computationally efficient alternative to TTT in the evaluated discovery settings.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32046.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "63f3fc83520c1461892d323e",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f3fc83520c1461892d323e/1TuBK_w2sFAY8TjWqVxkX.jpeg",
-    "fullname": "Yepeng Liu",
-    "name": "yepengliu",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "691d9d63284266ada1eb632a",
-    "name": "UCSantaBarbara",
-    "fullname": "University of California, Santa Barbara",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/AoPyKoRF9O8PHOoaJOi7h.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
