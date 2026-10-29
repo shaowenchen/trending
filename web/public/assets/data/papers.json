@@ -1,8 +1,101 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T09:16:10.935Z",
+ "fetchedAt": "2026-10-29T11:31:26.196Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.30161",
+    "authors": [
+     {
+      "_id": "6ae2de80d670fc6ea896c8df",
+      "user": {
+       "_id": "68ad42bca1f07af43fcfcead",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
+       "isPro": false,
+       "fullname": "Krishanu Adhikary",
+       "user": "KrishanuA",
+       "type": "user",
+       "name": "KrishanuA"
+      },
+      "name": "Krishanu Adhikary",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T08:45:04.847Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2de80d670fc6ea896c8e0",
+      "name": "Prashant Devadiga",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
+    ],
+    "publishedAt": "2026-09-30T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+    "submittedOnDailyBy": {
+     "_id": "68ad42bca1f07af43fcfcead",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
+     "isPro": false,
+     "fullname": "Krishanu Adhikary",
+     "user": "KrishanuA",
+     "type": "user",
+     "name": "KrishanuA"
+    },
+    "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
+    "upvotes": 1,
+    "discussionId": "6ae2de81d670fc6ea896c8e1",
+    "githubRepo": "https://github.com/npci/TauIndianBankBench",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "TauIndianBankBench evaluates language model assistants on Indian retail banking by verifying both procedural compliance and final outcomes across 1,000 simulated tasks.",
+    "ai_keywords": [
+     "TauIndianBankBench",
+     "action-oriented benchmark",
+     "procedure adherence",
+     "required steps",
+     "unrequested change",
+     "Indian retail banking",
+     "language models"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 6,
+    "organization": {
+     "_id": "69842b03a289b72fb05279be",
+     "name": "NPCI",
+     "fullname": "National Payments Corporation of India",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/698429270765e1c471552aa5/c_g5oaMFQVDLPibSTVrTQ.png"
+    }
+   },
+   "publishedAt": "2026-09-29T20:00:00.000Z",
+   "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+   "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30161.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "68ad42bca1f07af43fcfcead",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
+    "fullname": "Krishanu Adhikary",
+    "name": "KrishanuA",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69842b03a289b72fb05279be",
+    "name": "NPCI",
+    "fullname": "National Payments Corporation of India",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/698429270765e1c471552aa5/c_g5oaMFQVDLPibSTVrTQ.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.29702",
@@ -69,7 +162,7 @@
      "name": "YijunShen"
     },
     "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6ae3054bd670fc6ea896c969",
     "projectPage": "https://causground.github.io/",
     "githubRepo": "https://github.com/Intelligent-Interaction/CausGround",
@@ -511,7 +604,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 3,
+    "upvotes": 13,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -538,7 +631,7 @@
    "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
    "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37230.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "661cb57f851baf948bca33a4",
     "avatarUrl": "/avatars/5077723bfe0b5600f0346cc995cc0dc1.svg",
@@ -616,7 +709,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 29,
+    "upvotes": 31,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -713,7 +806,7 @@
      "name": "JusperLee"
     },
     "summary": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
-    "upvotes": 144,
+    "upvotes": 146,
     "discussionId": "6ae29be1d670fc6ea896c7a3",
     "projectPage": "https://cslikai.cn/Falcon/",
     "githubRepo": "https://github.com/JusperLee/Falcon",
@@ -2193,7 +2286,7 @@
     "isHf": true,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4693,
+    "followerCount": 4695,
     "isUserFollowing": false
    },
    "organization": {
@@ -3808,7 +3901,7 @@
      "name": "hyunw3"
     },
     "summary": "Safe household navigation requires robots to regulate clearance and speed according to what an obstacle is and how close it is, without unnecessary conservatism. Yet existing evaluations do not test whether semantic safety distinctions are reflected in continuous motion. To that end, we introduce OSMA-Bench, an Obstacle-Conditioned Safe Motion Adaptation Benchmark built on spatially matched scenario sets that differ only in obstacle type. We also propose the Semantic Sensitivity Index (SSI), which measures whether clearance and distance-dependent speed and smoothness follow the caution ordering of obstacles. Evaluating VLM-based and vision-language-action (VLA) policies on the benchmark, we find that neither consistently adapts its motion to obstacle safety, even with explicit safety prompts. Our analysis shows that the policies can correctly distinguish obstacles by safety relevance but fail to reflect this distinction in the motion parameters or actions they produce. For VLM-based policies, which recognize the obstacle and then generate a navigation program, adding an explicit parameter-inference step between these two stages improves adaptation. These findings expose a gap in semantic-to-motion grounding, highlighting the need to translate semantic caution into appropriately safe motion.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae05165a5efa215400a7c0c",
     "projectPage": "https://osma-bench.github.io/",
     "githubRepo": "https://github.com/OSMA-Bench/OSMA-Bench",
@@ -6823,7 +6916,7 @@
      "name": "hexuan21"
     },
     "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
-    "upvotes": 147,
+    "upvotes": 148,
     "discussionId": "6ae00874a5efa215400a78f3",
     "projectPage": "https://hexuan21.github.io/MemoryTax/",
     "githubRepo": "https://github.com/hexuan21/MemoryTax",
@@ -6849,7 +6942,7 @@
    "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
    "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34073.png",
-   "numComments": 4,
+   "numComments": 5,
    "submittedBy": {
     "_id": "655c3953ce055ed40a7de0ba",
     "avatarUrl": "/avatars/ec5387d3892784407b88b93fa0e38f6f.svg",
@@ -6860,7 +6953,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 8,
+    "followerCount": 9,
     "isUserFollowing": false
    },
    "organization": {
@@ -7398,7 +7491,7 @@
      "name": "hollyming"
     },
     "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
-    "upvotes": 80,
+    "upvotes": 81,
     "discussionId": "6adae30255db1e682e582e99",
     "projectPage": "https://hollyming.github.io/habit-bench-site/",
     "githubRepo": "https://github.com/LUMIA-Group/habit-bench",
@@ -7433,7 +7526,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/mddQAwfELjuIx6mY9Hsip.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24520.png",
-   "numComments": 6,
+   "numComments": 7,
    "submittedBy": {
     "_id": "670a580ecee41905fb182b9f",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
@@ -7444,7 +7537,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 3,
+    "followerCount": 4,
     "isUserFollowing": false
    },
    "organization": {
@@ -7544,7 +7637,7 @@
      "FLOPs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 3,
     "organization": {
      "_id": "691d9d63284266ada1eb632a",
      "name": "UCSantaBarbara",
@@ -7922,7 +8015,7 @@
      "name": "weizhiwang"
     },
     "summary": "Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interaction turns. It generates variable-length segments conditioned on current inputs and cached history. Our central design aligns structured video captions with action-aware causal attention: descriptive context remains accessible across segments, while action instructions are restricted to their intended temporal windows. A vision-language Prompt Enhancer (PE) translates user requests and multimodal interaction histories into structured conditions for the next segment. A multi-stage curriculum progressively introduces causal generation, text interaction, camera control, and training on model-generated histories, followed by diffusion distillation. In human evaluation, Hy-Nomas shows superior performance over existing world models. We release model weights, code and benchmarks, together with a lightweight adaptation workflow, to support reproducible research on interactive world generation.",
-    "upvotes": 108,
+    "upvotes": 107,
     "discussionId": "6ae15718a5eb0647c290716f",
     "projectPage": "https://hy-nomas.hy.tencent.com/",
     "githubRepo": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
@@ -7972,92 +8065,6 @@
     "name": "Tencent-Hunyuan",
     "fullname": "Tencent Hunyuan",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/62d22496c58f969c152bcefd/woKSjt2wXvBNKussyYPsa.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37649",
-    "authors": [
-     {
-      "_id": "6ae1589aa5eb0647c29071a5",
-      "user": {
-       "_id": "63f58403fcf95ecac2b33d78",
-       "avatarUrl": "/avatars/fd520e077e9006641fb9b88ee0b339f4.svg",
-       "isPro": false,
-       "fullname": "Zhen Yang",
-       "user": "YZCS",
-       "type": "user",
-       "name": "YZCS"
-      },
-      "name": "Zhen Yang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.307Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1589aa5eb0647c29071a6",
-      "name": "Wen Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1589aa5eb0647c29071a7",
-      "name": "Xander Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1589aa5eb0647c29071a8",
-      "name": "Ying-Cong Chen",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-    "submittedOnDailyBy": {
-     "_id": "63f58403fcf95ecac2b33d78",
-     "avatarUrl": "/avatars/fd520e077e9006641fb9b88ee0b339f4.svg",
-     "isPro": false,
-     "fullname": "Zhen Yang",
-     "user": "YZCS",
-     "type": "user",
-     "name": "YZCS"
-    },
-    "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics. The evaluated LLMs act as explorers, manipulating objects and building tools to investigate their own questions without research tasks or hints about these laws. Separate LLM agents generate and review scenes, review tool designs, and evaluate reports for correctness and experimental support using the altered physical laws and exploration records. These records guide scene evolution for further exploration, allowing the full cycle to run without human intervention. Among 12 LLMs, GPT-6-Astra achieves a discovery rate of 16.7%, while the other 11 score 0%. The exploration records reveal uninvestigated anomalies and only partial identification of the altered physical laws.",
-    "upvotes": 7,
-    "discussionId": "6ae1589aa5eb0647c29071a9",
-    "projectPage": "https://zhenyangcs.github.io/LongChang-website/",
-    "githubRepo": "https://github.com/EnVision-Research/LongChang",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "LongChang evaluates whether LLMs can autonomously discover altered physical laws through simulated experimentation, finding that only one model achieved limited success.",
-    "ai_keywords": [
-     "large language models",
-     "LongChang",
-     "altered physics",
-     "simulated worlds",
-     "exploration records",
-     "discovery rate"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-   "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics. The evaluated LLMs act as explorers, manipulating objects and building tools to investigate their own questions without research tasks or hints about these laws. Separate LLM agents generate and review scenes, review tool designs, and evaluate reports for correctness and experimental support using the altered physical laws and exploration records. These records guide scene evolution for further exploration, allowing the full cycle to run without human intervention. Among 12 LLMs, GPT-6-Astra achieves a discovery rate of 16.7%, while the other 11 score 0%. The exploration records reveal uninvestigated anomalies and only partial identification of the altered physical laws.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37649.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "63f58403fcf95ecac2b33d78",
-    "avatarUrl": "/avatars/fd520e077e9006641fb9b88ee0b339f4.svg",
-    "fullname": "Zhen Yang",
-    "name": "YZCS",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": true
   }
