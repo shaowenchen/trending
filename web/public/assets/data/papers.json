@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T16:02:00.834Z",
+ "fetchedAt": "2026-10-29T18:31:10.703Z",
  "payload": [
   {
    "paper": {
@@ -161,7 +161,18 @@
     "authors": [
      {
       "_id": "6ae358e4d26ed0b25d0d4b4d",
+      "user": {
+       "_id": "66d35a7830d7ea0b2850e672",
+       "avatarUrl": "/avatars/50295dbc669dae160934df3b6124ef25.svg",
+       "isPro": false,
+       "fullname": "Anita Kriz",
+       "user": "anitakriz",
+       "type": "user",
+       "name": "anitakriz"
+      },
       "name": "Anita Kriz",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T16:45:05.009Z",
       "hidden": false
      },
      {
@@ -193,7 +204,7 @@
      "name": "antoninbrthn"
     },
     "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ae358e4d26ed0b25d0d4b51",
     "githubRepo": "https://github.com/anitakriz/ar-bed",
     "githubRepoAddedBy": "user",
@@ -477,7 +488,7 @@
      "name": "zhennan1"
     },
     "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae33e75d26ed0b25d0d4b01",
     "githubRepo": "https://github.com/zhennan1/LongZero",
     "githubRepoAddedBy": "user",
@@ -1022,7 +1033,7 @@
      "name": "yunfeixie"
     },
     "summary": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
-    "upvotes": 33,
+    "upvotes": 20,
     "discussionId": "6ae2c512d670fc6ea896c859",
     "projectPage": "https://yunfeixie233.github.io/s2/",
     "githubRepo": "https://github.com/yunfeixie233/sensorimotor-alignment",
@@ -1037,7 +1048,7 @@
      "physical motion"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
+    "githubStars": 8,
     "organization": {
      "_id": "674fce4ce838eaae7482802e",
      "name": "RiceUniversity",
@@ -1096,7 +1107,18 @@
      },
      {
       "_id": "6ae1d18da5eb0647c290774d",
+      "user": {
+       "_id": "67a26a8b366becf5b30f2283",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67a26a8b366becf5b30f2283/Ej1Mta_Lo_87ShE5ihmpH.png",
+       "isPro": false,
+       "fullname": "Shengdong Ye",
+       "user": "ysd1123",
+       "type": "user",
+       "name": "ysd1123"
+      },
       "name": "Shengdong Ye",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T16:45:04.994Z",
       "hidden": false
      },
      {
@@ -1233,7 +1255,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 40,
+    "upvotes": 41,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -1248,7 +1270,7 @@
      "camera trajectories"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 6,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -1330,7 +1352,7 @@
      "name": "JusperLee"
     },
     "summary": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
-    "upvotes": 146,
+    "upvotes": 147,
     "discussionId": "6ae29be1d670fc6ea896c7a3",
     "projectPage": "https://cslikai.cn/Falcon/",
     "githubRepo": "https://github.com/JusperLee/Falcon",
@@ -1380,130 +1402,6 @@
     "name": "thu-ml",
     "fullname": "Tsinghua Machine Learning Group",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1678587085174-633131798ef21f47308ce49b.jpeg"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.35201",
-    "authors": [
-     {
-      "_id": "6ae2a281d670fc6ea896c7ae",
-      "name": "Hongze Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7af",
-      "name": "Miao Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b0",
-      "name": "Lizhou Liang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b1",
-      "name": "Qinfeng Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b2",
-      "name": "Xinyin Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b3",
-      "name": "Yongliang Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b4",
-      "name": "Weishi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b5",
-      "name": "Daniel Dahlmeier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b6",
-      "name": "Xuhong Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2a281d670fc6ea896c7b7",
-      "name": "Wenqi Zhang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/-HwSwdNgn5m4Bx9b0Riez.mp4"
-    ],
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
-    "submittedOnDailyBy": {
-     "_id": "6485bd278d14bcd5cdbb7c8d",
-     "avatarUrl": "/avatars/18348cb2ef91757f3450c18debd11599.svg",
-     "isPro": false,
-     "fullname": "Wenqi Zhang",
-     "user": "zwq2018",
-     "type": "user",
-     "name": "zwq2018"
-    },
-    "summary": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across different generation budgets, with gains of up to 9.0 points on MATH500 and 5.3 points on GSM8K over the base model.",
-    "upvotes": 256,
-    "discussionId": "6ae2a281d670fc6ea896c7b8",
-    "projectPage": "https://zju-omniai.github.io/DTCA/",
-    "githubRepo": "https://github.com/ZJU-OmniAI/DTCA",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "DTCA improves reinforcement learning for diffusion language models by assigning token-level credit via confidence improvements and entropy calibration, boosting mathematical reasoning.",
-    "ai_keywords": [
-     "diffusion language models",
-     "reinforcement learning",
-     "token-level credit assignment",
-     "denoising token credit assignment",
-     "part-of-speech categories",
-     "denoising timesteps",
-     "token-level entropy"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 8,
-    "organization": {
-     "_id": "696461ab2d94e9a07cdb8efd",
-     "name": "OmniAI-ZJU",
-     "fullname": "ZJU-OmniAI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f2595830354d0ee043b25a/eEeRdHlGyJ148JQ6BAJ4O.png"
-    }
-   },
-   "publishedAt": "2026-10-25T20:00:00.000Z",
-   "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
-   "summary": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across different generation budgets, with gains of up to 9.0 points on MATH500 and 5.3 points on GSM8K over the base model.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/-HwSwdNgn5m4Bx9b0Riez.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35201.png",
-   "numComments": 5,
-   "submittedBy": {
-    "_id": "6485bd278d14bcd5cdbb7c8d",
-    "avatarUrl": "/avatars/18348cb2ef91757f3450c18debd11599.svg",
-    "fullname": "Wenqi Zhang",
-    "name": "zwq2018",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 16,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "696461ab2d94e9a07cdb8efd",
-    "name": "OmniAI-ZJU",
-    "fullname": "ZJU-OmniAI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f2595830354d0ee043b25a/eEeRdHlGyJ148JQ6BAJ4O.png"
    },
    "isAuthorParticipating": false
   },
@@ -1568,7 +1466,7 @@
      "name": "atharva-naik-1"
     },
     "summary": "Data science agents can automate end-to-end machine learning workflows, yet they remain far from competitive on human leaderboards. Agents make process errors such as insufficient exploration, unsound validation, coding bugs, and poor use of a fixed budget (re-running the same exploratory data analysis and baseline models in every attempt). We propose AdaPRA to address these issues: a persistent coding agent harness that accumulates knowledge across attempts on the same task, with rubric-guided process supervision that identifies and corrects errors. Our process reward agent audits the agent's trajectory and workspace by executing checks, and adapts its rubrics to each task. We find that rubrics seeded from easier tasks generalize to harder tasks, with rubric adaptation further improving performance. With five attempts per task, AdaPRA improves an 80B Qwen model's leaderboard percentile by 24.5 points on DSPredict-Easy and 14.8 points on DSPredict-Hard while reducing process errors. We also show that supervision with rubrics mined from one base model's runs improves another (DeepSeek-V3.2), and that AdaPRA beats DataPRM, a competitive PRM for data science. We also share our code for reproducibility.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae291b6d670fc6ea896c780",
     "projectPage": "https://atharva-naik.github.io/AdaPRA",
     "ai_summary": "AdaPRA improves data science agents via persistent knowledge accumulation and adaptive rubric-guided process supervision, reducing errors and boosting leaderboard performance.",
@@ -1842,7 +1740,7 @@
      "name": "liqinye"
     },
     "summary": "Forecasting an unresolved event requires finding relevant evidence and deciding how strongly it supports each outcome. Yet outcome-based training of Large Language Model (LLM) forecasters often begins with preassembled evidence at a single prediction date, leaving evidence acquisition outside the learning loop. We introduce AlphaBet, an agentic reinforcement learning (RL) framework that trains a single LLM policy to search, reason, and report probabilities across multiple pre-resolution dates. Each dated forecast is scored by a proper scoring rule against the eventual outcome, allowing one resolved event to supervise decisions under different information states. We decompose forecasting regret into an evidence-acquisition gap and a probability-reporting gap, and show that Group Relative Policy Optimization (GRPO)'s standard-deviation normalization can distort the reporting target under multi-class proper scores. On GLM-4.5-Air, AlphaBet reduces the Brier score from 0.731 to 0.626 on Forecast-Dojo and from 0.612 to 0.528 on FutureX. Controlled ablations attribute these gains to multi-date training and show that they come from improvements in both information acquisition and probability reporting. Our empirical results validate that GRPO's std normalization degrades proper-scoring-rule performance while leaving top-outcome accuracy largely unchanged.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae25566d670fc6ea896c697",
     "projectPage": "https://alphabet-agent.github.io/",
     "githubRepo": "https://github.com/AlphaBet-Agent/AlphaBet",
@@ -2181,7 +2079,7 @@
      "statistical denoisers"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 9,
+    "githubStars": 10,
     "organization": {
      "_id": "6508ab2b349930913196378b",
      "name": "NationalUniversityofSingapore",
@@ -2340,7 +2238,7 @@
      "name": "jhzyu"
     },
     "summary": "Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own rollouts, but traditional OPD requires a strong external teacher, and on-policy self-distillation (OPSD) conditions on a full reference solution. We ask how much of that signal is necessary. We present Fin-SD, a localized hindsight self-distillation recipe for multi-step reasoning. Given a problem the student fails, the student itself identifies the first incorrect reasoning step and writes a short critique of that step. We truncate the student's trajectory immediately before the error (aiming to obtain a correct prefix), condition a frozen copy of the student on the same prefix plus the hint, and distill that hint-conditioned teacher into the student over a short rollout under reverse KL. No external model contributes a gradient. We apply Fin-SD to GPT-OSS-20B on a custom multi-step financial reasoning benchmark that requires deriving formula inputs from realistic scenarios via accounting conventions. We find: (i) replacing the critique with a generic-feedback control matches Fin-SD's entire 3.03 pp accuracy gain over the base model on the FinanceReasoning Hard subset, suggesting the gain comes from where supervision is applied, not hint content; (ii) the model writing the hint does not need to be stronger than the model receiving it: hints from same-family GPT-OSS-120B, at roughly 6x the parameters, yield no materially greater benefits than self-written hints; and (iii) Fin-SD matches on-policy self-distillation from full reference solutions on accuracy while generating 9.5% fewer tokens. With Fin-SD, general reasoning on MMLU-Pro and a fourteen-metric compliance audit on FinTrust show no material regression.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ae16938a5eb0647c2907455",
     "githubRepo": "https://github.com/johnnyhyu/fin-sd",
     "githubRepoAddedBy": "user",
@@ -2520,7 +2418,18 @@
      },
      {
       "_id": "6ae1622ba5eb0647c290726e",
+      "user": {
+       "_id": "681116562a78bb5bd6badb41",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/681116562a78bb5bd6badb41/Um9dIM1W6KGSBiOUL83eR.png",
+       "isPro": false,
+       "fullname": "Weiyi Wang",
+       "user": "shirakiin",
+       "type": "user",
+       "name": "shirakiin"
+      },
       "name": "Weiyi Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-29T16:45:04.982Z",
       "hidden": false
      },
      {
@@ -2772,7 +2681,7 @@
      "name": "tomaarsen"
     },
     "summary": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
-    "upvotes": 25,
+    "upvotes": 26,
     "discussionId": "6ae1622ba5eb0647c290729e",
     "ai_summary": "EmbeddingGemma 2 is an open multimodal embedding model that unifies text, images, audio, and video representations with efficient resource-flexible design and state-of-the-art benchmark performance.",
     "ai_keywords": [
@@ -3123,7 +3032,7 @@
      "name": "skandermoalla"
     },
     "summary": "While progress in informal mathematics has come largely from scaling the chain-of-thought and agentic reasoning of frontier language models, formal theorem proving has increasingly relied on human-designed workflows around these models, such as planning, decomposition, and orchestrating specialized provers. This raises a bitter-lesson question: can a simple agentic loop that scales test-time compute match these workflows? The answer matters as formal verification must scale to keep up with frontier models producing research mathematics, yet new workflows rarely settle it, as their gains are often confounded with stronger models or more compute. We study this question with h1, a simple harness that gives a model an efficient interface to Lean 4 and keeps it working through verifier feedback and self-reflection, without imposing a decomposition or search structure. h1 reaches state-of-the-art results on PutnamBench, FATE-X, and FormalConjectures100-Solved, settles eight open problems in FormalConjectures, and, at matched models, matches or outperforms specialized workflows such as Goedel-Architect and AlphaProof Nexus, surprisingly showing that a single attempt (pass@1) can often scale to solve open problems. Through ablations and matched-model comparisons with Claude Code and AxProverBase, we find that simplicity alone is not enough: an efficient Lean interface largely determines cost and solve rate. We thus recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6ae1d670717a45b73580b39b",
     "ai_summary": "A simple agentic loop with efficient Lean feedback achieves state-of-the-art formal theorem proving without structured workflows, showing that execution interfaces matter more than complex orchestration.",
     "ai_keywords": [
@@ -3226,7 +3135,7 @@
      "name": "PenPaperKeyCode"
     },
     "summary": "How much of zero-shot benchmark accuracy is captured by word-level alignment between a pre-training corpus and the benchmark target? We study this question through word-level unigram cross-entropy (UCE), a tokenizer-agnostic, model-free measure of lexical alignment between a reference corpus and a target benchmark. Likelihood training shapes the model's predictive distribution from the pre-training corpus, and zero-shot scores under likelihood-based evaluation depend in part on the lexical alignment between that corpus and the benchmark target. Cleanly tracing how the lexical imprint of pre-training data scales with corpus--benchmark alignment requires controlled from-scratch pre-training that varies corpus identity while holding the training recipe fixed. Across this controlled sweep, spanning 10 zero-shot benchmarks, 4 pre-training corpora, and 3 model scales, we find that corpus--benchmark lexical alignment, UCE, consistently tracks zero-shot accuracy on every benchmark, with corpora more aligned with the benchmark (lower UCE) achieving higher accuracy. The same signal extends from measurement to control at finer scopes. At the document level, strengthening the imprint by selecting training documents to maximize lexical alignment with the benchmark produces the accuracy gains predicted by the mechanism. At the prompt level, matching the imprint per prompt by routing each prompt to the drafter whose domain corpus is most lexically aligned with it produces measurable throughput gains over a generalist-drafter baseline. Taken together, pre-training corpora leave a measurable lexical imprint on base-model zero-shot behavior, and UCE provides a model-free probe of lexical alignment between reference and target data.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ae1c259a5eb0647c2907720",
     "githubRepo": "https://github.com/penpaperkeycode/lexical-imprint",
     "githubRepoAddedBy": "user",
@@ -3264,7 +3173,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 5,
+    "followerCount": 6,
     "isUserFollowing": false
    },
    "organization": {
@@ -3380,7 +3289,7 @@
      "name": "WaltonFuture"
     },
     "summary": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
-    "upvotes": 27,
+    "upvotes": 28,
     "discussionId": "6ae1a3aba5eb0647c2907621",
     "projectPage": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
     "githubRepo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
@@ -3496,7 +3405,7 @@
      "name": "yuezhengrong"
     },
     "summary": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal understanding. Trained on industrial-scale multimodal data, our model achieves state-of-the-art performance among discrete-representation models, outperforming UniAR and Emu3-Chat by 22.8% and 59.2%, respectively, on a nine-metric average. To our knowledge, it is also the first discrete-representation model competitive with strong continuous-representation models such as Qwen3-VL, including on fine-grained OCR tasks. We further identify the key principles and a practical recipe enabling this competitiveness. These results and insights support the potential of discrete visual representations to underpin large-scale native multimodal foundation models. Code and models are available at https://github.com/hustvl/FVQ",
-    "upvotes": 91,
+    "upvotes": 60,
     "discussionId": "6ae16423a5eb0647c29072b3",
     "projectPage": "https://doctor-james.github.io/FVQ-Page/",
     "githubRepo": "https://github.com/hustvl/FVQ",
@@ -3616,7 +3525,7 @@
      "name": "xjxyys"
     },
     "summary": "Looped transformers reuse a shared block of layers to increase computational depth without increasing the number of trainable parameters. They are trained with backpropagation through time (BPTT). To save training compute, BPTT is often truncated to the last few loops, but truncation yields biased gradients that may weaken the benefit of looping. In this work, we study the value of truncation in looped transformer training in a systematic way: we jointly vary model size, training tokens, and forward and backward loop counts across nearly 600 training runs and fit a unified scaling law that captures the effects of looping and truncation through effective parameters. Despite the training-compute savings of truncation, our fitted law favors full BPTT when forward and backward loop counts are jointly optimized. In matched-compute runs, full BPTT through fewer loops consistently outperforms truncated settings of the same compute. The law further shows that at fixed model size, the compute-optimal loop count and training-token budget both grow with compute. When model size is also free, the law identifies two fully trained loops as the best looped setting. Experimentally, this setting achieves lower validation loss than the compute-optimal non-looped model with about 27% fewer non-embedding parameters and only 8% more training compute.",
-    "upvotes": 28,
+    "upvotes": 29,
     "discussionId": "6ad82abcefdc4c3bd8229ea1",
     "projectPage": "https://xjxyys.github.io/truncate-or-not/",
     "githubRepo": "https://github.com/xjxyys/Truncate-or-Not",
@@ -3886,7 +3795,7 @@
      "name": "diaomuxi"
     },
     "summary": "Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. We introduce VibeVideoBench, a benchmark for evaluating agents on code-driven video generation. Its 239 self-contained tasks in English and Chinese span 12 categories, from data stories and music-driven pieces to classroom lessons and paper explainers; each asks an agent, running in its native harness inside a sandbox with no image or video generation model, to deliver a finished MP4 with sound within one hour. Evaluation is hierarchical and evidence-based: program checks of the delivery spec, about 13k task-specific rubric checks traced to the requirements they enforce, and five quality dimensions anchored per task, scored by three VLM judge panels. Across nine frontier agent systems and 2,151 scored rollouts, GPT-6 Astra and Claude Opus 5.5 rank first and second with both the judges and human annotators, and the strongest system satisfies every core requirement on 76.3% of tasks. Delivery is a second axis: counting missing videos as zero changes the ranking, and three quarters of the lost videos are final renders that started too late, ran too slowly or never started, a failure of how agents plan their hour. Agents build their own rendering pipelines and inspect their own frames, yet how much they look does not predict quality. The judges' ranking of the systems closely matches blind human preferences.",
-    "upvotes": 175,
+    "upvotes": 89,
     "discussionId": "6ae1740fa5eb0647c2907508",
     "projectPage": "https://vibevideobench.github.io/",
     "ai_summary": "VibeVideoBench evaluates multimodal agents that generate videos via code, finding that top systems meet core requirements on most tasks but frequently fail due to poor time management.",
@@ -4223,7 +4132,7 @@
      "name": "lin5547"
     },
     "summary": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
-    "upvotes": 145,
+    "upvotes": 146,
     "discussionId": "6ae15d0fa5eb0647c2907230",
     "ai_summary": "PDRVLA improves robot action generation by integrating a lightweight physical dynamics module that predicts future visual features with world-model supervision, avoiding online video generation latency.",
     "ai_keywords": [
@@ -4425,7 +4334,7 @@
      "name": "hyunw3"
     },
     "summary": "Safe household navigation requires robots to regulate clearance and speed according to what an obstacle is and how close it is, without unnecessary conservatism. Yet existing evaluations do not test whether semantic safety distinctions are reflected in continuous motion. To that end, we introduce OSMA-Bench, an Obstacle-Conditioned Safe Motion Adaptation Benchmark built on spatially matched scenario sets that differ only in obstacle type. We also propose the Semantic Sensitivity Index (SSI), which measures whether clearance and distance-dependent speed and smoothness follow the caution ordering of obstacles. Evaluating VLM-based and vision-language-action (VLA) policies on the benchmark, we find that neither consistently adapts its motion to obstacle safety, even with explicit safety prompts. Our analysis shows that the policies can correctly distinguish obstacles by safety relevance but fail to reflect this distinction in the motion parameters or actions they produce. For VLM-based policies, which recognize the obstacle and then generate a navigation program, adding an explicit parameter-inference step between these two stages improves adaptation. These findings expose a gap in semantic-to-motion grounding, highlighting the need to translate semantic caution into appropriately safe motion.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ae05165a5efa215400a7c0c",
     "projectPage": "https://osma-bench.github.io/",
     "githubRepo": "https://github.com/OSMA-Bench/OSMA-Bench",
@@ -4618,7 +4527,7 @@
      "name": "IntJudge"
     },
     "summary": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
-    "upvotes": 543,
+    "upvotes": 384,
     "discussionId": "6ae17a9aa5eb0647c2907534",
     "projectPage": "https://trinity-rsi.github.io/",
     "githubRepo": "https://github.com/InfRec-Cardinal/The-Trinity",
@@ -4993,7 +4902,7 @@
      "name": "y0urOy"
     },
     "summary": "The vision-language-action (VLA) and world-action model (WAM) communities debate whether control policies should inherit pretrained knowledge from vision-language models or from visual generators. The debate, however, bundles three separable choices: backbone initialization, the objective applied to future observations, and whether the machinery for that future loss is kept at inference. A gap between a VLA and a WAM therefore cannot simply be attributed to any one of them. We show that decoupling these choices yields a common framework for both families, which we term Just Action Model (JAM): a pretrained visual backbone with an action expert, trained with an action loss and a foresight loss. The foresight loss trains current-observation features to predict frozen encodings of the recorded future through a prediction head discarded after training, so no visual generation is involved in either training or inference, and the backbone can be chosen freely. We first compare objectives within fixed policy architectures, then evaluate the foresight recipe across backbone families. The resulting JAM policies outperform their matched FastWAM and ImageWAM counterparts on LIBERO and LIBERO-Plus, and achieve similar or slightly higher success rates on RoboTwin. Compared with FastWAM, JAM improves the success rates from 97.0%/55.3%/91.2% to 98.2%/64.5%/91.4%, respectively. With cached foresight targets, JAM reduces estimated online training FLOPs per sample per update by 73% relative to FastWAM. Our results show that future supervision improves control without visual generation or additional inference machinery, and strong foresight performance is attainable with either generator-initialized or vision-language backbones. Project Page: https://y0uroy.github.io/JAM",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6ae1647ca5eb0647c29072ba",
     "projectPage": "https://y0uroy.github.io/JAM/",
     "githubRepo": "https://github.com/y0urOy/JAM",
@@ -6835,7 +6744,7 @@
      "name": "taesiri"
     },
     "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ae167dea5eb0647c2907445",
     "ai_summary": "Timestral is a family of time series foundation models that achieves state-of-the-art probabilistic forecasting through decoupled horizon forecasting, native future covariate support, and synthetic pretraining followed by mixed post-training.",
     "ai_keywords": [
@@ -7896,6 +7805,181 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg"
    },
    "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.24520",
+    "authors": [
+     {
+      "_id": "6adae30255db1e682e582e8f",
+      "user": {
+       "_id": "670a580ecee41905fb182b9f",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
+       "isPro": false,
+       "fullname": "Junming Zhang",
+       "user": "hollyming",
+       "type": "user",
+       "name": "hollyming"
+      },
+      "name": "Junming Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-27T08:45:04.856Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e90",
+      "user": {
+       "_id": "6609a53bd81d611249ef5266",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6609a53bd81d611249ef5266/h31hdQFl-jhRnO8R6Gr4C.png",
+       "isPro": false,
+       "fullname": "Rubin Wei",
+       "user": "Rubin-Wei",
+       "type": "user",
+       "name": "Rubin-Wei"
+      },
+      "name": "Rubin Wei",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-28T08:45:05.207Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e91",
+      "user": {
+       "_id": "671a1ef0c673da43e8368b40",
+       "avatarUrl": "/avatars/362365e5a164929ba9fc85a80bbf994f.svg",
+       "isPro": false,
+       "fullname": "xucheng",
+       "user": "cheese1010",
+       "type": "user",
+       "name": "cheese1010"
+      },
+      "name": "Xu Cheng",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-28T08:45:05.214Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e92",
+      "name": "Hao Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e93",
+      "name": "Jiarui Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e94",
+      "user": {
+       "_id": "66e3939711e4f40aa75df2ff",
+       "avatarUrl": "/avatars/26fb0a1c6355f0f47afd580251bed6ed.svg",
+       "isPro": false,
+       "fullname": "Cheng",
+       "user": "RosyCheng",
+       "type": "user",
+       "name": "RosyCheng"
+      },
+      "name": "Ruoxi Cheng",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-26T13:32:18.858Z",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e95",
+      "name": "Xiquan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e96",
+      "name": "Peisong Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e97",
+      "name": "Mingsong Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6adae30255db1e682e582e98",
+      "name": "Zhouhan Lin",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/dphUJb8pG4XvpZ8oS1dDy.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/e6Gl7oM6nVPr-kO50ofjC.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/8z8wEIUxc90XjSaICLMpG.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/mddQAwfELjuIx6mY9Hsip.png"
+    ],
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
+    "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+    "submittedOnDailyBy": {
+     "_id": "670a580ecee41905fb182b9f",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
+     "isPro": false,
+     "fullname": "Junming Zhang",
+     "user": "hollyming",
+     "type": "user",
+     "name": "hollyming"
+    },
+    "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
+    "upvotes": 84,
+    "discussionId": "6adae30255db1e682e582e99",
+    "projectPage": "https://hollyming.github.io/habit-bench-site/",
+    "githubRepo": "https://github.com/LUMIA-Group/habit-bench",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "HABIT-Bench evaluates whether LLM agent memory systems can infer implicit user habits from sparse dialogue evidence and apply them correctly across long-term interactions.",
+    "ai_keywords": [
+     "large language model agents",
+     "habit inference",
+     "agent memory systems",
+     "HABIT-Bench",
+     "task-oriented dialogue",
+     "habit graphs",
+     "temporary exceptions",
+     "macro accuracy"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 4,
+    "organization": {
+     "_id": "63e5ef7bf2e9a8f22c515654",
+     "name": "SJTU",
+     "fullname": "Shanghai Jiao Tong University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676013394657-63e5ee22b6a40bf941da0928.png"
+    }
+   },
+   "publishedAt": "2026-10-19T20:00:00.000Z",
+   "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+   "summary": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/dphUJb8pG4XvpZ8oS1dDy.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/e6Gl7oM6nVPr-kO50ofjC.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/8z8wEIUxc90XjSaICLMpG.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/670a580ecee41905fb182b9f/mddQAwfELjuIx6mY9Hsip.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.24520.png",
+   "numComments": 7,
+   "submittedBy": {
+    "_id": "670a580ecee41905fb182b9f",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/V6gXI4L6ciw2AMx0I6aFY.png",
+    "fullname": "Junming Zhang",
+    "name": "hollyming",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "63e5ef7bf2e9a8f22c515654",
+    "name": "SJTU",
+    "fullname": "Shanghai Jiao Tong University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676013394657-63e5ee22b6a40bf941da0928.png"
+   },
+   "isAuthorParticipating": true
   }
  ]
 }
