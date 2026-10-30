@@ -1,8 +1,1069 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-30T01:15:56.186Z",
+ "fetchedAt": "2026-10-30T03:31:13.468Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.39664",
+    "authors": [
+     {
+      "_id": "6ae40e7ec3b566b041f6c818",
+      "name": "Haiyang Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c819",
+      "name": "Tianyu Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81a",
+      "name": "Jialu Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81b",
+      "name": "Jiteng Mu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81c",
+      "name": "Yuanjun Xiong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81d",
+      "name": "Jianming Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81e",
+      "name": "Zhuowen Tu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae40e7ec3b566b041f6c81f",
+      "name": "Mingze Xu",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/632a994b4ee2960462ecbf7e/TxvbXSdulQPILjAQkPAnY.png"
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "EditAgent: Rethinking Agentic Image Editing",
+    "submittedOnDailyBy": {
+     "_id": "632a994b4ee2960462ecbf7e",
+     "avatarUrl": "/avatars/5b462ddc343e035c4d147b521180691b.svg",
+     "isPro": true,
+     "fullname": "Haiyang Xu",
+     "user": "xuhaiyang3110",
+     "type": "user",
+     "name": "xuhaiyang3110"
+    },
+    "summary": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
+    "upvotes": 2,
+    "discussionId": "6ae40e7ec3b566b041f6c820",
+    "ai_summary": "EditAgent broadens agentic image editing by routing steps to diverse editors and using verification records for listwise judging, improving reliability and efficiency.",
+    "ai_keywords": [
+     "agentic image editors",
+     "action space",
+     "observation space",
+     "VLM judges",
+     "verification records",
+     "listwise judging",
+     "reward models",
+     "open-weight editors"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "61e5d14f77496de0a6d95c6b",
+     "name": "adobe",
+     "fullname": "Adobe",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "EditAgent: Rethinking Agentic Image Editing",
+   "summary": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/632a994b4ee2960462ecbf7e/TxvbXSdulQPILjAQkPAnY.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39664.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "632a994b4ee2960462ecbf7e",
+    "avatarUrl": "/avatars/5b462ddc343e035c4d147b521180691b.svg",
+    "fullname": "Haiyang Xu",
+    "name": "xuhaiyang3110",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61e5d14f77496de0a6d95c6b",
+    "name": "adobe",
+    "fullname": "Adobe",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.38352",
+    "authors": [
+     {
+      "_id": "6ae3f93cc3b566b041f6c763",
+      "name": "Chenyu Mu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c764",
+      "name": "Wenming Weng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c765",
+      "name": "Qinrui Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c766",
+      "name": "Xingsong Ye",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c767",
+      "name": "Hao Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c768",
+      "name": "Jun He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c769",
+      "name": "Chong Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c76a",
+      "name": "Chen Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c76b",
+      "name": "Jing Lyu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c76c",
+      "name": "Erkun Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f93cc3b566b041f6c76d",
+      "name": "Cheng Deng",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/EPvuXyet_XWaE9a0yEUGt.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/xfvmV1KbAmbGilu2ktmtg.mp4"
+    ],
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video",
+    "submittedOnDailyBy": {
+     "_id": "674d092c6421c58761fc83eb",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
+     "isPro": false,
+     "fullname": "Xingsong Ye",
+     "user": "Yesianrohn",
+     "type": "user",
+     "name": "Yesianrohn"
+    },
+    "summary": "Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this supervision to train a single 9B policy that coordinates production and recovers from failures within the same harness. Moreover, we introduce a 100-task benchmark and five metrics assessing editing quality and delivery reliability. Under a shared tool environment, WeVisCut substantially outperforms its base model and achieves comparable performance to Claude Opus 5 while using nearly 33x fewer generated tokens per successful output minute. It also outperforms task-matched native editors on our proposed metrics.",
+    "upvotes": 7,
+    "discussionId": "6ae3f93dc3b566b041f6c76e",
+    "projectPage": "https://tencent.github.io/WeVisCut",
+    "githubRepo": "https://github.com/Tencent/WeVisCut",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "WeVisCut is a script-to-video system that trains a compact policy to coordinate video editing tools, recover from failures, and reduce token usage while maintaining quality.",
+    "ai_keywords": [
+     "agentic editors",
+     "policy learning",
+     "shared production state",
+     "editing inversion",
+     "verified replay",
+     "executable supervision",
+     "9B policy",
+     "100-task benchmark",
+     "token efficiency"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "66543b6e420092799d2f625c",
+     "name": "tencent",
+     "fullname": "Tencent",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+    }
+   },
+   "publishedAt": "2026-10-27T20:00:00.000Z",
+   "title": "WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video",
+   "summary": "Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this supervision to train a single 9B policy that coordinates production and recovers from failures within the same harness. Moreover, we introduce a 100-task benchmark and five metrics assessing editing quality and delivery reliability. Under a shared tool environment, WeVisCut substantially outperforms its base model and achieves comparable performance to Claude Opus 5 while using nearly 33x fewer generated tokens per successful output minute. It also outperforms task-matched native editors on our proposed metrics.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/EPvuXyet_XWaE9a0yEUGt.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/xfvmV1KbAmbGilu2ktmtg.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38352.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "674d092c6421c58761fc83eb",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
+    "fullname": "Xingsong Ye",
+    "name": "Yesianrohn",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "66543b6e420092799d2f625c",
+    "name": "tencent",
+    "fullname": "Tencent",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.38425",
+    "authors": [
+     {
+      "_id": "6ae407efc3b566b041f6c7e8",
+      "name": "Shaohan Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7e9",
+      "name": "Jie Qin",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7ea",
+      "name": "Wende Tan",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7eb",
+      "name": "Haiwen Diao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7ec",
+      "name": "Limeng Qiao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7ed",
+      "name": "Yueming Lyu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae407efc3b566b041f6c7ee",
+      "name": "Chenyang Si",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/68f59ae49315a06ad9a01464/PYZEmEPPaR8PFmfG5Ct5U.mp4"
+    ],
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation",
+    "submittedOnDailyBy": {
+     "_id": "68f59ae49315a06ad9a01464",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68f59ae49315a06ad9a01464/welpgtUr6TY9Qa7nPBigg.jpeg",
+     "isPro": true,
+     "fullname": "Sean Yu",
+     "user": "yushaohan",
+     "type": "user",
+     "name": "yushaohan"
+    },
+    "summary": "Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and images, multimodal interleaved generation remains largely underexplored. Progress in this area is hindered by two key limitations: (1) the lack of well-defined interleaved generation tasks and corresponding training data, and (2) the absence of fine-grained evaluation protocols that can reliably diagnose model performance across different capability dimensions. To this end, we present IntReal, comprising two complementary components: IntReal-100K, a real-world dataset of multimodal interleaved samples spanning four major categories, and the IntReal Evaluation Suite, which evaluates model performance across seven complementary dimensions using specialized expert models, enabling coarse-to-fine diagnosis. Extensive experiments validate our evaluation suite through low inter-metric redundancy (max pairwise absolute Spearman's ρleq 0.42 ), high agreement with human judgments (83.3% accuracy), and strong consistency across different expert evaluators (Spearman's ρ> 0.9 ), supporting the complementarity and reliability of our metrics. By benchmarking four families of UMMs, we show that IntReal Evaluation Suite reveals distinct strengths and weaknesses across models. Post-training experiments demonstrate the utility of IntReal-100K for improving interleaved generation and further show that training unimodal generation can also benefit interleaved generation. These findings suggest that interleaved generation can benefit from modality-specific optimization, rather than requiring joint text-image training at every stage.",
+    "upvotes": 7,
+    "discussionId": "6ae407efc3b566b041f6c7ef",
+    "projectPage": "https://yushaohan.github.io/IntReal/",
+    "githubRepo": "https://github.com/yushaohan/IntReal",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "IntReal introduces a real-world interleaved multimodal dataset and evaluation framework to diagnose unified model strengths and improve generation through targeted training.",
+    "ai_keywords": [
+     "Unified Multimodal Models",
+     "interleaved generation",
+     "IntReal-100K",
+     "IntReal Evaluation Suite",
+     "expert models",
+     "Spearman's correlation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "68b28d79a176a9beb30d2049",
+     "name": "meituan-longcat",
+     "fullname": "LongCat",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a2a29ab9d4c5698e02c747/CDCAx7X7rXDt7xjI-DoxG.png"
+    }
+   },
+   "publishedAt": "2026-10-27T20:00:00.000Z",
+   "title": "IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation",
+   "summary": "Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and images, multimodal interleaved generation remains largely underexplored. Progress in this area is hindered by two key limitations: (1) the lack of well-defined interleaved generation tasks and corresponding training data, and (2) the absence of fine-grained evaluation protocols that can reliably diagnose model performance across different capability dimensions. To this end, we present IntReal, comprising two complementary components: IntReal-100K, a real-world dataset of multimodal interleaved samples spanning four major categories, and the IntReal Evaluation Suite, which evaluates model performance across seven complementary dimensions using specialized expert models, enabling coarse-to-fine diagnosis. Extensive experiments validate our evaluation suite through low inter-metric redundancy (max pairwise absolute Spearman's ρleq 0.42 ), high agreement with human judgments (83.3% accuracy), and strong consistency across different expert evaluators (Spearman's ρ> 0.9 ), supporting the complementarity and reliability of our metrics. By benchmarking four families of UMMs, we show that IntReal Evaluation Suite reveals distinct strengths and weaknesses across models. Post-training experiments demonstrate the utility of IntReal-100K for improving interleaved generation and further show that training unimodal generation can also benefit interleaved generation. These findings suggest that interleaved generation can benefit from modality-specific optimization, rather than requiring joint text-image training at every stage.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/68f59ae49315a06ad9a01464/PYZEmEPPaR8PFmfG5Ct5U.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38425.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "68f59ae49315a06ad9a01464",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68f59ae49315a06ad9a01464/welpgtUr6TY9Qa7nPBigg.jpeg",
+    "fullname": "Sean Yu",
+    "name": "yushaohan",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "68b28d79a176a9beb30d2049",
+    "name": "meituan-longcat",
+    "fullname": "LongCat",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a2a29ab9d4c5698e02c747/CDCAx7X7rXDt7xjI-DoxG.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.33106",
+    "authors": [
+     {
+      "_id": "6ae1a17ea5eb0647c29075f9",
+      "name": "Wenbo Hu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075fa",
+      "name": "Ken Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075fb",
+      "name": "Jiazhe Wei",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075fc",
+      "name": "Yukang Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075fd",
+      "name": "Weiyi Hong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075fe",
+      "name": "Jiayi Dai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c29075ff",
+      "name": "Chenjun Bai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907600",
+      "name": "Jiajun Liang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907601",
+      "name": "Yucheng Liao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907602",
+      "name": "Ruichuan An",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907603",
+      "name": "Zeyu Lou",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907604",
+      "name": "Haofan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907605",
+      "name": "Yueming Lyu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907606",
+      "name": "Jingkang Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907607",
+      "name": "Ziwei Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae1a17ea5eb0647c2907608",
+      "name": "Chenyang Si",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6754f9eea4b0a4a71aeed438/OzwrI14ADhCGtWx7Uw--5.mp4"
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team",
+    "submittedOnDailyBy": {
+     "_id": "6754f9eea4b0a4a71aeed438",
+     "avatarUrl": "/avatars/442646a6acae514cebf30bb51681394c.svg",
+     "isPro": false,
+     "fullname": "Jiazhe Wei",
+     "user": "void-2024",
+     "type": "user",
+     "name": "void-2024"
+    },
+    "summary": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
+    "upvotes": 8,
+    "discussionId": "6ae1a17ea5eb0647c2907609",
+    "projectPage": "https://vibegame.tettet.org",
+    "githubRepo": "https://github.com/tettethu/VibeGame",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "VibeGame is a framework that uses specialized adversarial agents and an AI-native engine to build complete 2D games from natural-language prompts with interactive validation and self-evolving reusable components.",
+    "ai_keywords": [
+     "large language model agents",
+     "adversarial agent team",
+     "AI-native game engine",
+     "schema-validated structured text",
+     "frame-synchronous runtime control",
+     "self-evolution mechanism",
+     "skeletons",
+     "modules",
+     "collaboration contracts",
+     "PA2G",
+     "P2G"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 284,
+    "organization": {
+     "_id": "638f70e8f1256a80d4288555",
+     "name": "nanjinguniv",
+     "fullname": "Nanjing University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/638f706ef1256a80d42880f9/6M6-JzwJGiLxjIJzvCflf.png"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team",
+   "summary": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6754f9eea4b0a4a71aeed438/OzwrI14ADhCGtWx7Uw--5.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.33106.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6754f9eea4b0a4a71aeed438",
+    "avatarUrl": "/avatars/442646a6acae514cebf30bb51681394c.svg",
+    "fullname": "Jiazhe Wei",
+    "name": "void-2024",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "638f70e8f1256a80d4288555",
+    "name": "nanjinguniv",
+    "fullname": "Nanjing University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/638f706ef1256a80d42880f9/6M6-JzwJGiLxjIJzvCflf.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.37786",
+    "authors": [
+     {
+      "_id": "6ae3fbe1c3b566b041f6c78c",
+      "name": "Tianci Xie",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c78d",
+      "name": "Zikun Cai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c78e",
+      "name": "Chaoyun Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c78f",
+      "name": "Pinxue Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c790",
+      "name": "Bingxuan Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c791",
+      "name": "Rui Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3fbe1c3b566b041f6c792",
+      "name": "Hang Yan",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+    "submittedOnDailyBy": {
+     "_id": "654dbac9938fbf1e696be8aa",
+     "avatarUrl": "/avatars/185c57abc99caa4aedaaf342f4a65f75.svg",
+     "isPro": false,
+     "fullname": "Chaoyun Zhang",
+     "user": "vyokky",
+     "type": "user",
+     "name": "vyokky"
+    },
+    "summary": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.\n  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.\n  We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+    "upvotes": 6,
+    "discussionId": "6ae3fbe2c3b566b041f6c793",
+    "projectPage": "https://china-qijizhifeng.github.io/Web-Anything/",
+    "githubRepo": "https://github.com/china-qijizhifeng/Web-Anything",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "WebAnything automates the reconstruction of reusable, source-grounded web environments from real URLs, enabling scalable agent training and evaluation with verified fidelity.",
+    "ai_keywords": [
+     "WebAnything",
+     "Explorer-Builder",
+     "frozen candidates",
+     "source recapture",
+     "interaction trajectories",
+     "Qwen3.5-9B",
+     "REAL success",
+     "WebArena-Verified"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-10-26T20:00:00.000Z",
+   "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+   "summary": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.\n  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.\n  We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37786.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "654dbac9938fbf1e696be8aa",
+    "avatarUrl": "/avatars/185c57abc99caa4aedaaf342f4a65f75.svg",
+    "fullname": "Chaoyun Zhang",
+    "name": "vyokky",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.37161",
+    "authors": [
+     {
+      "_id": "6ae2afe2d670fc6ea896c7e6",
+      "name": "Ziyang Zeng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7e7",
+      "name": "Tingyang Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7e8",
+      "name": "Jia Deng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7e9",
+      "name": "Qiyao Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7ea",
+      "name": "Shuo Tang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7eb",
+      "name": "Yike Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7ec",
+      "name": "Tao Ren",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7ed",
+      "name": "Wayne Xin Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7ee",
+      "name": "Feng Chang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7ef",
+      "name": "Jujie He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7f0",
+      "name": "Chuan Hao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7f1",
+      "name": "Ran Tao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae2afe2d670fc6ea896c7f2",
+      "name": "Bryan Dai",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+    "submittedOnDailyBy": {
+     "_id": "68cb7d70de299da181a5ec4c",
+     "avatarUrl": "/avatars/793f4263e9d900299cfd59c99922e7dc.svg",
+     "isPro": false,
+     "fullname": "CHEN TINGYANG",
+     "user": "Tingyang-Chen",
+     "type": "user",
+     "name": "Tingyang-Chen"
+    },
+    "summary": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
+    "upvotes": 5,
+    "discussionId": "6ae2afe2d670fc6ea896c7f3",
+    "githubRepo": "https://github.com/IQuestLab/WorkFactory",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "WorkFactory builds coherent professional tasks via information planning and repair, yielding WorkPilot models that improve expert-level agent performance across benchmarks.",
+    "ai_keywords": [
+     "information support graph",
+     "probe executions",
+     "WorkFactory",
+     "WorkPilot",
+     "supervised training",
+     "fine-tune",
+     "Qwen",
+     "Elo",
+     "scaling analyses"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 5,
+    "organization": {
+     "_id": "6937e1578cd2568ba4c9d3f9",
+     "name": "IQuestLab",
+     "fullname": "IQuest",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+    }
+   },
+   "publishedAt": "2026-10-26T20:00:00.000Z",
+   "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+   "summary": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37161.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "68cb7d70de299da181a5ec4c",
+    "avatarUrl": "/avatars/793f4263e9d900299cfd59c99922e7dc.svg",
+    "fullname": "CHEN TINGYANG",
+    "name": "Tingyang-Chen",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6937e1578cd2568ba4c9d3f9",
+    "name": "IQuestLab",
+    "fullname": "IQuest",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.37695",
+    "authors": [
+     {
+      "_id": "6ae3f479c3b566b041f6c75e",
+      "name": "Bo Zou",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f479c3b566b041f6c75f",
+      "name": "Chao Xu",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/69b0cc94e29a0b14bf239920/xMUoGXNFKs6P50CwW_UT-.mp4"
+    ],
+    "publishedAt": "2026-10-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "After One-Click Video: The Inflow of Service-Type Content, the Failure of the Recommendation Pool Mechanism, and the BoLe System",
+    "submittedOnDailyBy": {
+     "_id": "69b0cc94e29a0b14bf239920",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69b0cc94e29a0b14bf239920/tHl5ZcGulvKtm8axVw5ja.png",
+     "isPro": false,
+     "fullname": "Bo Zou",
+     "user": "ZouBo",
+     "type": "user",
+     "name": "ZouBo"
+    },
+    "summary": "In September 2026, a new large language model was released. Soon after, a new way of making explainer videos became very popular: people asked the model to write a program, and the program produced the video. \"One-click video\" content then appeared in large amounts on many platforms. On the surface, this is a rise in creative power at the level of the individual. We argue that, at a deeper level, it changes the structure of the content industry. This judgment rests on two observations. First, this wave of content is service-type content. People watch it to meet a need, not to enjoy the content itself. The other kind is work-type content. AI makes both kinds faster to produce. But anyone can come in and make service-type content, while work-type content is limited by the number of people who have something to say. So the ratio between the two slowly becomes unbalanced. Second, free platforms choose content through layers of trial viewing, and this uses up user attention. The total amount of attention is fixed. The unbalanced ratio also dilutes good content. A simplified mathematical model shows that, as long as these conditions hold, the recommendation pool mechanism will fail once new content grows past a certain multiple. Based on this, we discuss one possible way out. Machines and entry rules judge whether service-type content passes the bar. Trusted people judge work-type content. We call this the BoLe system. At the end, we briefly imagine how the two kinds of content may develop from here.",
+    "upvotes": 0,
+    "discussionId": "6ae3f47ac3b566b041f6c760",
+    "projectPage": "https://huggingface.co/spaces/BreadStudio/recommendation-pool",
+    "ai_summary": "AI-generated video tools shift content production toward service-type material, unbalancing the industry and overwhelming recommendation systems, prompting a dual-judgment BoLe framework to protect work-type content.",
+    "ai_keywords": [
+     "large language model",
+     "recommendation pool mechanism",
+     "BoLe system"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "69b0d40a64a392f94806a497",
+     "name": "BreadStudio",
+     "fullname": "Bread Studio",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69b0cc94e29a0b14bf239920/4X5kmuAPqevfVXdfZH0wX.png"
+    }
+   },
+   "publishedAt": "2026-10-23T20:00:00.000Z",
+   "title": "After One-Click Video: The Inflow of Service-Type Content, the Failure of the Recommendation Pool Mechanism, and the BoLe System",
+   "summary": "In September 2026, a new large language model was released. Soon after, a new way of making explainer videos became very popular: people asked the model to write a program, and the program produced the video. \"One-click video\" content then appeared in large amounts on many platforms. On the surface, this is a rise in creative power at the level of the individual. We argue that, at a deeper level, it changes the structure of the content industry. This judgment rests on two observations. First, this wave of content is service-type content. People watch it to meet a need, not to enjoy the content itself. The other kind is work-type content. AI makes both kinds faster to produce. But anyone can come in and make service-type content, while work-type content is limited by the number of people who have something to say. So the ratio between the two slowly becomes unbalanced. Second, free platforms choose content through layers of trial viewing, and this uses up user attention. The total amount of attention is fixed. The unbalanced ratio also dilutes good content. A simplified mathematical model shows that, as long as these conditions hold, the recommendation pool mechanism will fail once new content grows past a certain multiple. Based on this, we discuss one possible way out. Machines and entry rules judge whether service-type content passes the bar. Trusted people judge work-type content. We call this the BoLe system. At the end, we briefly imagine how the two kinds of content may develop from here.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/69b0cc94e29a0b14bf239920/xMUoGXNFKs6P50CwW_UT-.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37695.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "69b0cc94e29a0b14bf239920",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69b0cc94e29a0b14bf239920/tHl5ZcGulvKtm8axVw5ja.png",
+    "fullname": "Bo Zou",
+    "name": "ZouBo",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 5,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69b0d40a64a392f94806a497",
+    "name": "BreadStudio",
+    "fullname": "Bread Studio",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69b0cc94e29a0b14bf239920/4X5kmuAPqevfVXdfZH0wX.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.33645",
+    "authors": [
+     {
+      "_id": "6ae3f1edc3b566b041f6c746",
+      "name": "Wenjun Hou",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f1edc3b566b041f6c747",
+      "name": "Kaishuai Xu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "PreView: Enhancing GUI Grounding with Preprocessed Views and Cues",
+    "submittedOnDailyBy": {
+     "_id": "60b71d036fc8763746a79ccb",
+     "avatarUrl": "/avatars/abe566c3c1f65beccc313d7a26a34eba.svg",
+     "isPro": false,
+     "fullname": "Wenjun Hou",
+     "user": "houwenjun060",
+     "type": "user",
+     "name": "houwenjun060"
+    },
+    "summary": "GUI grounding requires locating small controls in cluttered screenshots and identifying which control a natural-language instruction refers to. Cropping and enlargement can expose local detail, but the resulting image may still leave ambiguity about the intended target. We propose PreView, an auxiliary preprocessor that improves the inputs to an existing grounding model without further training that model. PreView prepares two complementary types of input features: task-relevant views for localization and candidate-specific cues for target understanding. A trained lightweight auxiliary model predicts and refines a center, crops the screenshot into a local view, and enlarges that view for zoomed-in grounding. It also prepares a visual cue (i.e., a red-circle marker with a location hint) and a textual cue describing the candidate's identity or function. The frozen grounding model uses the prepared inputs to predict the final click. Across five benchmarks, PreView improves the average grounding accuracy of Qwen3-VL-2B, OS-Atlas-4B, and Qwen3-VL-4B without further training these grounding models. Extensive analyses examine the contributions of views and cues, center refinement, and visual input budgets.",
+    "upvotes": 2,
+    "discussionId": "6ae3f1eec3b566b041f6c748",
+    "ai_summary": "PreView is an auxiliary preprocessor that enhances GUI grounding by providing localized zoomed views and visual-textual target cues to frozen grounding models, improving accuracy without retraining.",
+    "ai_keywords": [
+     "GUI grounding",
+     "PreView",
+     "auxiliary preprocessor",
+     "task-relevant views",
+     "candidate-specific cues",
+     "center refinement",
+     "visual cue",
+     "textual cue",
+     "frozen grounding model"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-23T20:00:00.000Z",
+   "title": "PreView: Enhancing GUI Grounding with Preprocessed Views and Cues",
+   "summary": "GUI grounding requires locating small controls in cluttered screenshots and identifying which control a natural-language instruction refers to. Cropping and enlargement can expose local detail, but the resulting image may still leave ambiguity about the intended target. We propose PreView, an auxiliary preprocessor that improves the inputs to an existing grounding model without further training that model. PreView prepares two complementary types of input features: task-relevant views for localization and candidate-specific cues for target understanding. A trained lightweight auxiliary model predicts and refines a center, crops the screenshot into a local view, and enlarges that view for zoomed-in grounding. It also prepares a visual cue (i.e., a red-circle marker with a location hint) and a textual cue describing the candidate's identity or function. The frozen grounding model uses the prepared inputs to predict the final click. Across five benchmarks, PreView improves the average grounding accuracy of Qwen3-VL-2B, OS-Atlas-4B, and Qwen3-VL-4B without further training these grounding models. Extensive analyses examine the contributions of views and cues, center refinement, and visual input budgets.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.33645.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "60b71d036fc8763746a79ccb",
+    "avatarUrl": "/avatars/abe566c3c1f65beccc313d7a26a34eba.svg",
+    "fullname": "Wenjun Hou",
+    "name": "houwenjun060",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 6,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.22990",
+    "authors": [
+     {
+      "_id": "6ae3f0dfc3b566b041f6c729",
+      "name": "Haoming Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72a",
+      "name": "Defu Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72b",
+      "name": "Xu Hu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72c",
+      "name": "Yingtao Luo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72d",
+      "name": "Yiyang Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72e",
+      "name": "Xianghe Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c72f",
+      "name": "Jiashu He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c730",
+      "name": "Wanting Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c731",
+      "name": "Yifan Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c732",
+      "name": "Yunhan Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c733",
+      "name": "Siyang Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c734",
+      "name": "Chen Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c735",
+      "name": "Haixin Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c736",
+      "name": "Zheyuan Deng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c737",
+      "name": "Taoran Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c738",
+      "name": "Jingwen Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c739",
+      "name": "Zhejian Peng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73a",
+      "name": "Shushu Liang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73b",
+      "name": "Yue Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73c",
+      "name": "Bingzhe Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73d",
+      "name": "Feng Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73e",
+      "name": "Yifan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c73f",
+      "name": "Jintao Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c740",
+      "name": "Yijun Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c741",
+      "name": "Yuexing Hao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3f0dfc3b566b041f6c742",
+      "name": "Xiaomin Li",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+    "submittedOnDailyBy": {
+     "_id": "6405915949a9869c858a1302",
+     "avatarUrl": "/avatars/69ff9d531cb9158bfd7d369607a2bf9b.svg",
+     "isPro": false,
+     "fullname": "Defu Cao",
+     "user": "idevede",
+     "type": "user",
+     "name": "idevede"
+    },
+    "summary": "Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench, which holds 74 tasks across 11 domains fixed and varies only who asks. A persona agent, playing one of 44 personas in four groups, rewrites each instruction in that user's own words and answers the CUA's questions, while the CUA sees only the dialogue, never the profile or the original instruction. Across nine backbones (3,330 runs), mean task completion falls by 36% relative to the original requests. The losses have two sources: in 59.9% of cells that lose points, the agent engages with what the user asked for and still gets it wrong, and 11.2% are stops the user requested that the checker scores as failures. Even when a persona request is fully completed, the user gives the top satisfaction rating in only 62.7% of cells, against 84.1% for the original requests. CUAs should therefore be evaluated not only on task completion but also on whether they meet the requirements and constraints users express. Code: https://github.com/MatrAIx-ai/PersonaCUABench. Project page: https://matraix.ai/research/persona-cua.html",
+    "upvotes": 14,
+    "discussionId": "6ae3f0dfc3b566b041f6c743",
+    "projectPage": "https://matraix.ai/research/persona-cua.html",
+    "githubRepo": "https://github.com/MatrAIx-ai/PersonaCUABench",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "PersonaCUABench reveals that computer-use agents frequently fail to satisfy real user requirements and constraints, reducing task completion and satisfaction compared to fixed benchmark instructions.",
+    "ai_keywords": [
+     "computer-use agents",
+     "PersonaCUABench",
+     "persona agent",
+     "dialogue evaluation",
+     "task completion",
+     "user satisfaction"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2
+   },
+   "publishedAt": "2026-10-15T20:00:00.000Z",
+   "title": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+   "summary": "Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench, which holds 74 tasks across 11 domains fixed and varies only who asks. A persona agent, playing one of 44 personas in four groups, rewrites each instruction in that user's own words and answers the CUA's questions, while the CUA sees only the dialogue, never the profile or the original instruction. Across nine backbones (3,330 runs), mean task completion falls by 36% relative to the original requests. The losses have two sources: in 59.9% of cells that lose points, the agent engages with what the user asked for and still gets it wrong, and 11.2% are stops the user requested that the checker scores as failures. Even when a persona request is fully completed, the user gives the top satisfaction rating in only 62.7% of cells, against 84.1% for the original requests. CUAs should therefore be evaluated not only on task completion but also on whether they meet the requirements and constraints users express. Code: https://github.com/MatrAIx-ai/PersonaCUABench. Project page: https://matraix.ai/research/persona-cua.html",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22990.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6405915949a9869c858a1302",
+    "avatarUrl": "/avatars/69ff9d531cb9158bfd7d369607a2bf9b.svg",
+    "fullname": "Defu Cao",
+    "name": "idevede",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.27100",
@@ -80,7 +1141,7 @@
      "name": "george-nigm"
     },
     "summary": "Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distributional comparison with historical data, leaving counterfactual response to an agent's own orders largely unexplored. Here, we show that market impact emerges naturally in neural LOB generators trained solely for next-token prediction. We inject execution-style metaorders into the generated message flow of five autoregressive models across five NASDAQ stocks and measure the response using estimators from the empirical impact literature, validated on baselines whose physics is known in advance. Our benchmark evaluates any message-level generator in three phases: free generation (reading order-flow persistence against price diffusivity); metaorder injection (yielding the impact law's exponent and amplitude); and a post-execution window (measuring relaxation). In addition, comparing each visible injection to a blind, simulator-only control isolates the model's learned response from standard book mechanics. For every model on every stock, we measure how the impact responds as a function of cumulative metaorder participation. Interestingly, we observe emergent impact in generative models of market data, with exponents in the range of 0.63 to 1.21, slightly above the traditional 0.5 of the square-root law of impact. In the family of models tested, we are so far unable to observe impact decay during relaxation. We tentatively attribute this to the still-short context windows of the models. We release the benchmark as open source to validate future generative models for market data.",
-    "upvotes": 0,
+    "upvotes": 2,
     "discussionId": "6ae3c4b8c3b566b041f6c681",
     "projectPage": "https://george-nigmatulin.github.io/lob_impact/",
     "githubRepo": "https://github.com/george-nigmatulin/lob_impact",
@@ -173,7 +1234,7 @@
      "name": "matthewmao"
     },
     "summary": "Visual generation requires both high-level semantic knowledge and fine-grained pixel details. We propose a learning paradigm that assigns these roles to autoregressive pretraining for knowledge acquisition and diffusion post-training for high-fidelity rendering. Within this framework, we study the objective, representation, and scaling of knowledge acquisition and rendering. Controlled comparisons identify autoregression as the stronger pretraining objective for downstream rendering, improving both learning efficiency and final generation quality. We further find that AR-only generation quality does not necessarily correlate with final performance; semantic quality matters more. This motivates a purely semantic tokenizer trained with language supervision alone, without an image decoder or reconstruction loss. We establish compute-optimal scaling laws for knowledge acquisition and rendering, and find that autoregressive pretraining lowers the fitted asymptotic rendering loss compared with pixel diffusion models trained from scratch. Guided by the laws, we train a 3B-parameter text-to-image model with only 6,600 H100 GPU-hours, achieving 86 on GenEval and 87 on DPG-Bench and validating the proposed paradigm at scale.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6ae3ce9dc3b566b041f6c6b5",
     "ai_summary": "A hybrid paradigm combining autoregressive pretraining for semantics and diffusion post-training for rendering achieves efficient, high-quality text-to-image generation with favorable scaling laws.",
     "ai_keywords": [
@@ -241,7 +1302,7 @@
      "name": "kutomanovhennadii"
     },
     "summary": "The quality with which language models follow instructions falls as the load grows, yet there is still no quantity that expresses the limit of a model in units of load with an uncertainty. We propose an instrument in which the load consists of rules that replace single-token words in a text without meaning: such an instruction is atomic, the rules are independent by the construction of the task, and the outcome of every application of a rule is determined by a computable reference answer. Every occurrence of a word to be replaced becomes a Bernoulli trial with a known position in the answer and a known rule number. The statistical model first measures the shape of the dependence of the probability of a right replacement on the text length, the word position, the replacement density, the number of rules and the rule number, then describes it by smooth laws and restores a reference level that does not depend on the choice of the coding. The model yields the instruction capacity - the number of rules held at a given share of right replacements - with an uncertainty. A measurement of GPT-4o mini (2958 requests, 642,430 trials) gave regular laws for every load factor and for the collapse of the answer; the instruction capacity was about 37-38 rules at a share of right replacements of 0.95, and about 18-19 rules at the full replacement density. The code of the instrument, the measurement data and the passport are open, and every number of the passport is recomputed from the published points. The passport of a model serves as the calibration of a future meter of the instruction load of prompts.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae39390c3b566b041f6c626",
     "projectPage": "https://huggingface.co/spaces/kutomanovhennadii/iec-instrument",
     "githubRepo": "https://github.com/kutomanovhennadii/instruction-capacity",
@@ -383,7 +1444,7 @@
      "name": "AdinaY"
     },
     "summary": "As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety risks. While closed-source releases are routinely accompanied by comprehensive system cards, open-weight models receive less scrutiny regarding frontier risks. To address this gap, we present an independent safety evaluation of DeepSeek V4.1 Flash-1017, the latest version of V4.1 Flash that departs from V4 with a new architecture, scaled-up training, and strong agentic capabilities. Drawing on the EU General-Purpose AI Code of Practice, we evaluate the model across 34 benchmarks, including 5 in-house suites, spanning evaluation integrity, loss of control, and harmful manipulation. Conforming to the AEF-1 standard, we compare V4.1 Flash-1017 against V4.1 Flash, earlier DeepSeek V4 models, and leading closed-source systems (GPT-6 Astra, GPT-5.6 Sol, and Gemini 3.8 Flash). Overall, V4.1 Flash-1017 shows substantial safety improvements over the V4 generation and approaches or matches leading closed-source baselines on several dimensions, while still exhibiting notable behaviors that warrant continued attention. Building on our findings, we highlight three key observations and recommendations. First, because safety can shift and even regress across minor updates, developers should integrate safety evaluation into incremental releases. Second, as final-turn outputs and end-state checks alone cannot reliably detect loss-of-control behaviors, deployments require process-level observability across both reasoning traces and action logs. Third, because public benchmarks elicit strong evaluation awareness and face data contamination risks, developing private benchmarks is essential for trustworthy frontier evaluation.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ae31bf6d670fc6ea896c9ef",
     "ai_summary": "Independent safety evaluation of DeepSeek V4.1 Flash-1017 reveals substantial improvements over prior versions and near-parity with leading closed-source models, while recommending process-level observability, incremental safety testing, and private benchmarks.",
     "ai_keywords": [
@@ -481,7 +1542,7 @@
      "name": "antoninbrthn"
     },
     "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6ae358e4d26ed0b25d0d4b51",
     "githubRepo": "https://github.com/anitakriz/ar-bed",
     "githubRepoAddedBy": "user",
@@ -679,7 +1740,7 @@
      "name": "csjiaya"
     },
     "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
-    "upvotes": 15,
+    "upvotes": 17,
     "discussionId": "6ae32c649ef630670c714c0a",
     "ai_summary": "REALCLI is a benchmark that jointly evaluates CLI agent task execution and human-agent collaboration quality, revealing major gaps in steerability, trust calibration, and safety management.",
     "ai_keywords": [
@@ -765,7 +1826,7 @@
      "name": "zhennan1"
     },
     "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ae33e75d26ed0b25d0d4b01",
     "githubRepo": "https://github.com/zhennan1/LongZero",
     "githubRepoAddedBy": "user",
@@ -856,7 +1917,7 @@
      "name": "KrishanuA"
     },
     "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ae2de81d670fc6ea896c8e1",
     "githubRepo": "https://github.com/npci/TauIndianBankBench",
     "githubRepoAddedBy": "user",
@@ -974,7 +2035,7 @@
      "name": "YijunShen"
     },
     "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ae3054bd670fc6ea896c969",
     "projectPage": "https://causground.github.io/",
     "githubRepo": "https://github.com/Intelligent-Interaction/CausGround",
@@ -1131,7 +2192,7 @@
      "name": "yliu-cs"
     },
     "summary": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae301c7d670fc6ea896c94d",
     "projectPage": "https://yliu-cs.github.io/HuGe",
     "githubRepo": "https://github.com/yliu-cs/HuGe",
@@ -1219,7 +2280,7 @@
      "name": "xiazeyu"
     },
     "summary": "Standard sequence models encode position by token rank rather than physical coordinate, typically forcing practitioners to destructively resample continuous physical signals such as spectra observed across heterogeneous instruments. We identify this coordinate mismatch as a structural limitation in cross-instrument representation learning, and propose OmniSpectra, a wavelength-native foundation model for spectral representation learning: a continuous-coordinate masked autoencoder that discards the integer pixel indexing of sequence modeling. Mapping physical coordinates to a logarithmic basis turns the multiplicative scaling induced by cosmological redshift into a uniform additive shift. In continuous rotary position embeddings, this shared shift cancels from relative token distances rather than producing grid-dependent positional distortion. We further counter the spectral bias inherent to implicit neural decoders with a physics-grounded, resolution-gated Fourier decoder that provides anti-aliasing. Pretrained on eight surveys and benchmarked against seven baselines, our model reaches state-of-the-art performance with only 12.2M parameters while outperforming substantially larger models, indicating that encoding physical structure can substitute for parameter scale.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae2e572d670fc6ea896c8e8",
     "ai_summary": "OmniSpectra is a wavelength-native spectral foundation model that uses continuous coordinates and physics-grounded decoders to learn cross-instrument representations without destructive resampling, achieving high performance with far fewer parameters.",
     "ai_keywords": [
@@ -1311,7 +2372,7 @@
      "name": "yunfeixie"
     },
     "summary": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6ae2c512d670fc6ea896c859",
     "projectPage": "https://yunfeixie233.github.io/s2/",
     "githubRepo": "https://github.com/yunfeixie233/sensorimotor-alignment",
@@ -1428,7 +2489,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -1533,7 +2594,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 44,
+    "upvotes": 47,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -1630,7 +2691,7 @@
      "name": "JusperLee"
     },
     "summary": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
-    "upvotes": 149,
+    "upvotes": 150,
     "discussionId": "6ae29be1d670fc6ea896c7a3",
     "projectPage": "https://cslikai.cn/Falcon/",
     "githubRepo": "https://github.com/JusperLee/Falcon",
@@ -3008,7 +4069,7 @@
     "isHf": true,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4698,
+    "followerCount": 4700,
     "isUserFollowing": false
    },
    "organization": {
@@ -3255,6 +4316,8 @@
     "summary": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
     "upvotes": 380,
     "discussionId": "6ae1d53f717a45b73580b393",
+    "githubRepo": "https://github.com/IQuestLab/Multiscale-Policy-Optimization",
+    "githubRepoAddedBy": "user",
     "ai_summary": "Multiscale Policy Optimization improves long-horizon agent training by aligning credit assignment and policy updates at the turn scale.",
     "ai_keywords": [
      "Multiscale Policy Optimization",
@@ -4487,7 +5550,7 @@
      "name": "lin5547"
     },
     "summary": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
-    "upvotes": 148,
+    "upvotes": 149,
     "discussionId": "6ae15d0fa5eb0647c2907230",
     "ai_summary": "PDRVLA improves robot action generation by integrating a lightweight physical dynamics module that predicts future visual features with world-model supervision, avoiding online video generation latency.",
     "ai_keywords": [
@@ -5133,2795 +6196,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37175",
-    "authors": [
-     {
-      "_id": "6ae169fca5eb0647c2907461",
-      "name": "Brian Ko",
-      "hidden": false
-     },
-     {
-      "_id": "6ae169fca5eb0647c2907462",
-      "name": "Han Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae169fca5eb0647c2907463",
-      "name": "Hejia Geng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae169fca5eb0647c2907464",
-      "name": "Li Erran Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae169fca5eb0647c2907465",
-      "name": "Sherry Yang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "MLE-World: Predicting Machine Learning Experiment Outcomes with a Learned World Model",
-    "submittedOnDailyBy": {
-     "_id": "6039478ab3ecf716b1a5fd4d",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-     "isPro": true,
-     "fullname": "taesiri",
-     "user": "taesiri",
-     "type": "user",
-     "name": "taesiri"
-    },
-    "summary": "AI research agents can propose, execute, and improve programs that solve machine learning tasks. However, executing each candidate program requires training and evaluating ML models, limiting how many candidates an agent can explore at each step. We introduce MLE-World, a world model finetuned from Qwen3.5-4B that predicts a program's terminal output (error traces, training logs, and validation scores) from its code and data description without executing it, together with a confidence score estimating the prediction's correctness. Because a prediction costs one inference call rather than a training run, MLE-World makes test time scaling (TTS) affordable for these agents. We build five TTS policies, guided by MLE-World, that compare several candidates per step by their predicted outputs: Sequential revision, Best-of-N, Pairwise judging, Fusion, and a UCB style rule that also adds an exploration bonus from this confidence score. Since predictions can be wrong, we run a candidate for real only when its confidence score is low. On 17 MLE-bench Lite tasks, MLE-World matches the real terminal output on 77.9% of held out programs, versus 41.1% for much larger prompted models. MLE-World guided TTS achieves up to 22.1% higher observed mean performance than the agent without a world model, with less real execution. Project webpage: https://mle-world.github.io/.",
-    "upvotes": 5,
-    "discussionId": "6ae169fca5eb0647c2907466",
-    "projectPage": "https://mle-world.github.io/",
-    "ai_summary": "A world model predicts machine learning program outcomes to enable affordable test-time scaling for AI research agents, improving performance with fewer real executions.",
-    "ai_keywords": [
-     "world model",
-     "Qwen3.5-4B",
-     "terminal output prediction",
-     "confidence score",
-     "test time scaling",
-     "sequential revision",
-     "best-of-N",
-     "pairwise judging",
-     "fusion",
-     "UCB",
-     "MLE-bench Lite"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "MLE-World: Predicting Machine Learning Experiment Outcomes with a Learned World Model",
-   "summary": "AI research agents can propose, execute, and improve programs that solve machine learning tasks. However, executing each candidate program requires training and evaluating ML models, limiting how many candidates an agent can explore at each step. We introduce MLE-World, a world model finetuned from Qwen3.5-4B that predicts a program's terminal output (error traces, training logs, and validation scores) from its code and data description without executing it, together with a confidence score estimating the prediction's correctness. Because a prediction costs one inference call rather than a training run, MLE-World makes test time scaling (TTS) affordable for these agents. We build five TTS policies, guided by MLE-World, that compare several candidates per step by their predicted outputs: Sequential revision, Best-of-N, Pairwise judging, Fusion, and a UCB style rule that also adds an exploration bonus from this confidence score. Since predictions can be wrong, we run a candidate for real only when its confidence score is low. On 17 MLE-bench Lite tasks, MLE-World matches the real terminal output on 77.9% of held out programs, versus 41.1% for much larger prompted models. MLE-World guided TTS achieves up to 22.1% higher observed mean performance than the agent without a world model, with less real execution. Project webpage: https://mle-world.github.io/.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37175.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6039478ab3ecf716b1a5fd4d",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-    "fullname": "taesiri",
-    "name": "taesiri",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 405,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.37219",
-    "authors": [
-     {
-      "_id": "6ae1647ca5eb0647c29072b6",
-      "user": {
-       "_id": "64c645ab9cff58f22c3fa570",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c645ab9cff58f22c3fa570/nmJLolIIngYRY73abO7t3.jpeg",
-       "isPro": false,
-       "fullname": "Yonghao Yu",
-       "user": "y0urOy",
-       "type": "user",
-       "name": "y0urOy"
-      },
-      "name": "Yonghao Yu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.435Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1647ca5eb0647c29072b7",
-      "name": "Lang Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1647ca5eb0647c29072b8",
-      "name": "Runyi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1647ca5eb0647c29072b9",
-      "name": "Toshihiko Yamasaki",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/64c645ab9cff58f22c3fa570/gQQXOOrPpYRp1uM3R79Ug.mp4"
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Vision-Language-Action or World-Action? Just Action Models",
-    "submittedOnDailyBy": {
-     "_id": "64c645ab9cff58f22c3fa570",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c645ab9cff58f22c3fa570/nmJLolIIngYRY73abO7t3.jpeg",
-     "isPro": false,
-     "fullname": "Yonghao Yu",
-     "user": "y0urOy",
-     "type": "user",
-     "name": "y0urOy"
-    },
-    "summary": "The vision-language-action (VLA) and world-action model (WAM) communities debate whether control policies should inherit pretrained knowledge from vision-language models or from visual generators. The debate, however, bundles three separable choices: backbone initialization, the objective applied to future observations, and whether the machinery for that future loss is kept at inference. A gap between a VLA and a WAM therefore cannot simply be attributed to any one of them. We show that decoupling these choices yields a common framework for both families, which we term Just Action Model (JAM): a pretrained visual backbone with an action expert, trained with an action loss and a foresight loss. The foresight loss trains current-observation features to predict frozen encodings of the recorded future through a prediction head discarded after training, so no visual generation is involved in either training or inference, and the backbone can be chosen freely. We first compare objectives within fixed policy architectures, then evaluate the foresight recipe across backbone families. The resulting JAM policies outperform their matched FastWAM and ImageWAM counterparts on LIBERO and LIBERO-Plus, and achieve similar or slightly higher success rates on RoboTwin. Compared with FastWAM, JAM improves the success rates from 97.0%/55.3%/91.2% to 98.2%/64.5%/91.4%, respectively. With cached foresight targets, JAM reduces estimated online training FLOPs per sample per update by 73% relative to FastWAM. Our results show that future supervision improves control without visual generation or additional inference machinery, and strong foresight performance is attainable with either generator-initialized or vision-language backbones. Project Page: https://y0uroy.github.io/JAM",
-    "upvotes": 6,
-    "discussionId": "6ae1647ca5eb0647c29072ba",
-    "projectPage": "https://y0uroy.github.io/JAM/",
-    "githubRepo": "https://github.com/y0urOy/JAM",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Just Action Model decouples backbone initialization, future observation objectives, and inference machinery to improve robot control with foresight training and reduced computation.",
-    "ai_keywords": [
-     "vision-language-action",
-     "world-action model",
-     "backbone initialization",
-     "foresight loss",
-     "prediction head",
-     "Just Action Model",
-     "JAM",
-     "FastWAM",
-     "ImageWAM",
-     "LIBERO",
-     "RoboTwin"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 5
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Vision-Language-Action or World-Action? Just Action Models",
-   "summary": "The vision-language-action (VLA) and world-action model (WAM) communities debate whether control policies should inherit pretrained knowledge from vision-language models or from visual generators. The debate, however, bundles three separable choices: backbone initialization, the objective applied to future observations, and whether the machinery for that future loss is kept at inference. A gap between a VLA and a WAM therefore cannot simply be attributed to any one of them. We show that decoupling these choices yields a common framework for both families, which we term Just Action Model (JAM): a pretrained visual backbone with an action expert, trained with an action loss and a foresight loss. The foresight loss trains current-observation features to predict frozen encodings of the recorded future through a prediction head discarded after training, so no visual generation is involved in either training or inference, and the backbone can be chosen freely. We first compare objectives within fixed policy architectures, then evaluate the foresight recipe across backbone families. The resulting JAM policies outperform their matched FastWAM and ImageWAM counterparts on LIBERO and LIBERO-Plus, and achieve similar or slightly higher success rates on RoboTwin. Compared with FastWAM, JAM improves the success rates from 97.0%/55.3%/91.2% to 98.2%/64.5%/91.4%, respectively. With cached foresight targets, JAM reduces estimated online training FLOPs per sample per update by 73% relative to FastWAM. Our results show that future supervision improves control without visual generation or additional inference machinery, and strong foresight performance is attainable with either generator-initialized or vision-language backbones. Project Page: https://y0uroy.github.io/JAM",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/64c645ab9cff58f22c3fa570/gQQXOOrPpYRp1uM3R79Ug.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37219.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "64c645ab9cff58f22c3fa570",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c645ab9cff58f22c3fa570/nmJLolIIngYRY73abO7t3.jpeg",
-    "fullname": "Yonghao Yu",
-    "name": "y0urOy",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37585",
-    "authors": [
-     {
-      "_id": "6ae167dda5eb0647c29072e1",
-      "name": "Adrien Petralia",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e2",
-      "name": "Alexandre Gavaudan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e3",
-      "name": "Artjom Joosen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e4",
-      "name": "Etienne Goffinet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e5",
-      "name": "Richard Kurle",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e6",
-      "name": "Yassine El Ouahidi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e7",
-      "name": "Yassir Bendou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e8",
-      "name": "Abdelaziz Bounhar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072e9",
-      "name": "Abhijeet Somani",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ea",
-      "name": "Aditi Kabra",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072eb",
-      "name": "Adrian Valente",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ec",
-      "name": "Adrien Sadé",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ed",
-      "name": "Ahmed Djermani",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ee",
-      "name": "Alan Jeffares",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ef",
-      "name": "Albert Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f0",
-      "name": "Alberto Bietti",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f1",
-      "name": "Aleksandr Timashov",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f2",
-      "name": "Alexandre Cahill",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f3",
-      "name": "Alexandre Laval",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f4",
-      "name": "Alexandre Sablayrolles",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f5",
-      "name": "Alexandros Sanchez Vassopoulos",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f6",
-      "name": "Amélie Héliou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f7",
-      "name": "Amos You",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f8",
-      "name": "André Jonasson",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072f9",
-      "name": "Andreas Fürst",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072fa",
-      "name": "Andrew Bai",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072fb",
-      "name": "Andrew Ehrenberg",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072fc",
-      "name": "Andrew Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072fd",
-      "name": "Andy Lo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072fe",
-      "name": "Angele Lenglemetz",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29072ff",
-      "name": "Anmol Agarwal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907300",
-      "name": "Antonia Calvi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907301",
-      "name": "Arata Suzuki",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907302",
-      "name": "Arjun Majumdar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907303",
-      "name": "Arthur Fournier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907304",
-      "name": "Ashwani Kumar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907305",
-      "name": "Augustin Lombard",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907306",
-      "name": "Avinash Sooriyarachchi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907307",
-      "name": "Aylin Guliz Akkus",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907308",
-      "name": "Aysenur Karaduman",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907309",
-      "name": "Baptiste Bout",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730a",
-      "name": "Baptiste Rozière",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730b",
-      "name": "Barna Pásztor",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730c",
-      "name": "Baudouin De Monicault",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730d",
-      "name": "Benjamin Holzschuh",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730e",
-      "name": "Benjamin Tibi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290730f",
-      "name": "Benno Stein",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907310",
-      "name": "Bernhard Stadlbauer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907311",
-      "name": "Bhargavi Bhaskar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907312",
-      "name": "Binbing Hou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907313",
-      "name": "Błażej Osiński",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907314",
-      "name": "Boris van Breugel",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907315",
-      "name": "Camille Le Scao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907316",
-      "name": "Chaoran Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907317",
-      "name": "Charlotte Cronjäger",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907318",
-      "name": "Chen-Yo Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907319",
-      "name": "Chris Bamford",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731a",
-      "name": "Christian Wallenwein",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731b",
-      "name": "Christophe Renaudin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731c",
-      "name": "Clémence Lanfranchi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731d",
-      "name": "Colin Bonatti",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731e",
-      "name": "Corentin Barreau",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290731f",
-      "name": "Corentin Sautier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907320",
-      "name": "Cristiana-Diana Diaconu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907321",
-      "name": "Cyprien Courtot",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907322",
-      "name": "Daniel Lopes",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907323",
-      "name": "Daniel Marczak",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907324",
-      "name": "Darius Dabert",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907325",
-      "name": "Diego de las Casas",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907326",
-      "name": "Dominik Nuss",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907327",
-      "name": "Dylan Rubini",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907328",
-      "name": "Dzmitry Soupel",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907329",
-      "name": "Elizaveta Demyanenko",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732a",
-      "name": "Elliot Chane-Sane",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732b",
-      "name": "Emilien Fugier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732c",
-      "name": "Emmanuel Gottlob",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732d",
-      "name": "Erik Aas",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732e",
-      "name": "Etienne Duchesne",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290732f",
-      "name": "Fabian Paischer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907330",
-      "name": "Fabian Schlager",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907331",
-      "name": "Faruk Ahmed",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907332",
-      "name": "Federico Baldassarre",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907333",
-      "name": "Félix Rosseeuw",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907334",
-      "name": "Filip Szatkowski",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907335",
-      "name": "Filippo Vicentini",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907336",
-      "name": "Florian Wiesner",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907337",
-      "name": "Gabrielle Berrada",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907338",
-      "name": "Gaëtan Ecrepont",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907339",
-      "name": "Gaspard Blanchet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733a",
-      "name": "Gaspard Donada-Vidal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733b",
-      "name": "Gaurav Mahajan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733c",
-      "name": "Gauthier Guinet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733d",
-      "name": "Genevieve Hayes",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733e",
-      "name": "Georgii Novikov",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290733f",
-      "name": "Georgios Christoglou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907340",
-      "name": "Giada Pistilli",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907341",
-      "name": "Gonzague de Carpentier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907342",
-      "name": "Graeme Nail",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907343",
-      "name": "Guillaume Breton",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907344",
-      "name": "Guillaume Kunsch",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907345",
-      "name": "Guillaume Lample",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907346",
-      "name": "Guillaume Martin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907347",
-      "name": "Guillaume Raille",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907348",
-      "name": "Guillaume Richard",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907349",
-      "name": "Guillem Simeon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734a",
-      "name": "Gunjan Dhanuka",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734b",
-      "name": "Gunshi Gupta",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734c",
-      "name": "Hamza Senhaji Rhazi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734d",
-      "name": "Han Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734e",
-      "name": "Hédi Hadiji",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290734f",
-      "name": "Himanshu Jaju",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907350",
-      "name": "Hope McGovern",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907351",
-      "name": "Hubert de Parseval",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907352",
-      "name": "Hugo Cisneros",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907353",
-      "name": "Hugo Germain",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907354",
-      "name": "Hugo Thimonier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907355",
-      "name": "Hugo Venturini",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907356",
-      "name": "Hyeonju Lee",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907357",
-      "name": "Hyunwoo Oh",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907358",
-      "name": "Iliass Lasri",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907359",
-      "name": "Ilyas Oulkadda",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735a",
-      "name": "Jacques Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735b",
-      "name": "Jan Ludziejewski",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735c",
-      "name": "Jason Rute",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735d",
-      "name": "Jean de Becdelièvre",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735e",
-      "name": "Jean Quentin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290735f",
-      "name": "Jean-Malo Delignon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907360",
-      "name": "Jessica Chudnovsky",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907361",
-      "name": "Jianchao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907362",
-      "name": "Jie Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907363",
-      "name": "Jin Bin Ou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907364",
-      "name": "Joachim Studnia",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907365",
-      "name": "Joep Barmentlo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907366",
-      "name": "Johannes Brandstetter",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907367",
-      "name": "John Harvill",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907368",
-      "name": "Jonas Amar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907369",
-      "name": "Jonas Schweizer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736a",
-      "name": "Jonathan Roberts",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736b",
-      "name": "Joséphine Delas",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736c",
-      "name": "Josselin Somerville",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736d",
-      "name": "Jules Depersin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736e",
-      "name": "Julien Denize",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290736f",
-      "name": "Julien Tauran",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907370",
-      "name": "Julien Verlaguet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907371",
-      "name": "Kartik Khandelwal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907372",
-      "name": "Khyathi Raghavi Chandu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907373",
-      "name": "Kilian Tep",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907374",
-      "name": "Konstantin Mishchenko",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907375",
-      "name": "Kris Szczepaniak",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907376",
-      "name": "Kush Jain",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907377",
-      "name": "Larissa Laich",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907378",
-      "name": "Laura Calem",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907379",
-      "name": "Laurence Aitchison",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737a",
-      "name": "Laurent Callot",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737b",
-      "name": "Laurent Fainsin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737c",
-      "name": "Léo Cotteleer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737d",
-      "name": "Léonard Blier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737e",
-      "name": "Loïc Chadoutaud",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290737f",
-      "name": "Loïck Chambon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907380",
-      "name": "Lorenzo Proietti",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907381",
-      "name": "Louis Faucon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907382",
-      "name": "Louis Martin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907383",
-      "name": "Louis Serrano",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907384",
-      "name": "Lu Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907385",
-      "name": "Luc Boudier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907386",
-      "name": "Lucas Fernandes Martins",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907387",
-      "name": "Lucas Mebille",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907388",
-      "name": "Lucile Saulnier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907389",
-      "name": "Ludovic Ho Fuh",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738a",
-      "name": "Luis Montero",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738b",
-      "name": "Łukasz Borchmann",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738c",
-      "name": "Maarten Buyl",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738d",
-      "name": "Malik Hassan Raza",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738e",
-      "name": "Manon Chossegros",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290738f",
-      "name": "Marcin Możejko",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907390",
-      "name": "Margaret Jennings",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907391",
-      "name": "Markus Hennerbichler",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907392",
-      "name": "Martin Alexandre",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907393",
-      "name": "Mathieu Poirée",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907394",
-      "name": "Mathieu Schmitt",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907395",
-      "name": "Mathilde Guillaumin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907396",
-      "name": "Mathis Felardos",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907397",
-      "name": "Matthieu André",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907398",
-      "name": "Matthieu Dinot",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907399",
-      "name": "Matthieu Futeral",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739a",
-      "name": "Maurits Bleeker",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739b",
-      "name": "Mauro Comi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739c",
-      "name": "Max Mynter",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739d",
-      "name": "Maxim Berman",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739e",
-      "name": "Maxime Darrin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290739f",
-      "name": "Maxime Langelier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a0",
-      "name": "Maxime Louis",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a1",
-      "name": "Maximilian Augustin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a2",
-      "name": "Maximilian Müller",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a3",
-      "name": "Mehdi Bouaziz",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a4",
-      "name": "Melina Jingting Laimon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a5",
-      "name": "Mert Unsal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a6",
-      "name": "Mia Chiquier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a7",
-      "name": "Michael Pilcer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a8",
-      "name": "Michał Pietruszka",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073a9",
-      "name": "Michał Zając",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073aa",
-      "name": "Mickaël Seznec",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ab",
-      "name": "Mikhail Biriuchinskii",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ac",
-      "name": "Minh-Quang Pham",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ad",
-      "name": "Minwoo Kang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ae",
-      "name": "Mircea Lica",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073af",
-      "name": "Morgane Rivière",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b0",
-      "name": "Namit Katariya",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b1",
-      "name": "Natasha Ørregaard Klingenbrunn",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b2",
-      "name": "Nathan Bout",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b3",
-      "name": "Nathan Grinsztajn",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b4",
-      "name": "Nathan Simpson",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b5",
-      "name": "Neeraj Aggarwal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b6",
-      "name": "Neil Ashton",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b7",
-      "name": "Neil Mallinar",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b8",
-      "name": "Nick Bührer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073b9",
-      "name": "Nicolas Moreau",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ba",
-      "name": "Nicolò Lucchesi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073bb",
-      "name": "Ola Mysiak",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073bc",
-      "name": "Oliver Leicht",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073bd",
-      "name": "Olivier Bousquet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073be",
-      "name": "Olivier Koch",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073bf",
-      "name": "Parag Jain",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c0",
-      "name": "Patricia Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c1",
-      "name": "Patrick Blies",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c2",
-      "name": "Patrick von Platen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c3",
-      "name": "Patryk Saffer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c4",
-      "name": "Paul Jacob",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c5",
-      "name": "Paul Teiletche",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c6",
-      "name": "Paul Wambergue",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c7",
-      "name": "Paula Kurylowicz",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c8",
-      "name": "Pavan Kumar Reddy",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073c9",
-      "name": "Pavel Kuksa",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ca",
-      "name": "Philippe Formont",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073cb",
-      "name": "Philippe Pinel",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073cc",
-      "name": "Philomène Chagniot",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073cd",
-      "name": "Pierre Glandon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ce",
-      "name": "Pierre Stock",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073cf",
-      "name": "Pierre-André Savalle",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d0",
-      "name": "Piotr Miłoś",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d1",
-      "name": "Poojan Shah",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d2",
-      "name": "Prateek Gupta",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d3",
-      "name": "Pravesh Agrawal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d4",
-      "name": "Pui Ki Chan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d5",
-      "name": "Quentin Desreumaux",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d6",
-      "name": "Quentin Selle",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d7",
-      "name": "Quentin Torroba",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d8",
-      "name": "Quentin Wargnier",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073d9",
-      "name": "Quercus Hernandez",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073da",
-      "name": "Ram Ramrakhya",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073db",
-      "name": "Randall Isenhour",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073dc",
-      "name": "Ranjit Parva",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073dd",
-      "name": "Raphaël Balouka",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073de",
-      "name": "Raphaël Rialland",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073df",
-      "name": "Raul Perez Pelaez",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e0",
-      "name": "Reinhard Sonnleitner",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e1",
-      "name": "Remi Delacourt",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e2",
-      "name": "Rishi Shah",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e3",
-      "name": "Rob Romijnders",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e4",
-      "name": "Rohan Shah",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e5",
-      "name": "Rohin Arora",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e6",
-      "name": "Romain Sauvestre",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e7",
-      "name": "Roman Soletskyi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e8",
-      "name": "Ronan Riochet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073e9",
-      "name": "Rosalie Millner",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ea",
-      "name": "Rupert Menneer",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073eb",
-      "name": "Sagar Vaze",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ec",
-      "name": "Samuel Barry",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ed",
-      "name": "Samuel Belkadi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ee",
-      "name": "Samuel Humeau",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ef",
-      "name": "Samuele Papa",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f0",
-      "name": "Sanchit Gandhi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f1",
-      "name": "Sandeep Cranganore",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f2",
-      "name": "Sandeep Subramanian",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f3",
-      "name": "Sarthak Mittal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f4",
-      "name": "Saskia Adaime",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f5",
-      "name": "Scott Matthews",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f6",
-      "name": "Sean Cha",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f7",
-      "name": "Sebastian Kaltenbach",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f8",
-      "name": "Seungjae Jung",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073f9",
-      "user": {
-       "_id": "675f283bc4dc0430aa1f3bfc",
-       "avatarUrl": "/avatars/215b0dbbb883cebcc777aa1796fd0514.svg",
-       "isPro": false,
-       "fullname": "Shashwat Verma",
-       "user": "shashwat14",
-       "type": "user",
-       "name": "shashwat14"
-      },
-      "name": "Shashwat Verma",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T00:45:04.512Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073fa",
-      "name": "Sherif Waly",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073fb",
-      "name": "Shrimai Prabhumoye",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073fc",
-      "name": "Siddhant Waghjale",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073fd",
-      "name": "Siddharth Gandhi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073fe",
-      "name": "Simon Lepage",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c29073ff",
-      "name": "Simon Sorg",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907400",
-      "name": "Soham Ghosh",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907401",
-      "name": "Sophie Marbach",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907402",
-      "name": "Srijan Mishra",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907403",
-      "name": "Stanislas Lange",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907404",
-      "name": "Steve Hong",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907405",
-      "name": "Sumukh Aithal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907406",
-      "name": "Szymon Antoniak",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907407",
-      "name": "Tarun Kumar Vangani",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907408",
-      "name": "Teddy Turquet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907409",
-      "name": "Teven Le Scao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740a",
-      "name": "Théo Cachet",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740b",
-      "name": "Thibaut Lavril",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740c",
-      "name": "Thomas Chabal",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740d",
-      "name": "Thomas Coste",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740e",
-      "name": "Thomas Defard",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290740f",
-      "name": "Thomas Foubert",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907410",
-      "name": "Thomas Loux",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907411",
-      "name": "Thomas Robert",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907412",
-      "name": "Thomas Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907413",
-      "name": "Tianyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907414",
-      "name": "Tim Lawson",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907415",
-      "name": "Timothée Lacroix",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907416",
-      "name": "Timothy Wallis",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907417",
-      "name": "Tobias Kronlachner",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907418",
-      "name": "Tom Bewley",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907419",
-      "name": "Tom Edwards",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741a",
-      "name": "Tomas Hodan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741b",
-      "name": "Triantafyllos Afouras",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741c",
-      "name": "Tuhin Das",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741d",
-      "name": "Tyler Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741e",
-      "name": "Udit Saxena",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290741f",
-      "name": "Ulrick Blé",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907420",
-      "name": "Umar Jamil",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907421",
-      "name": "Umberto Tomasini",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907422",
-      "name": "Valentin Macé",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907423",
-      "name": "Van Phung",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907424",
-      "name": "Venkata Reddy",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907425",
-      "name": "Vibha Masti",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907426",
-      "name": "Victor Jouault",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907427",
-      "name": "Victor Letzelter",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907428",
-      "name": "Victor Paltz",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907429",
-      "name": "Victor Poucheret",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742a",
-      "name": "Vincent Maladière",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742b",
-      "name": "Vincent Pfister",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742c",
-      "name": "Virgile Richard",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742d",
-      "name": "Vladislav Bataev",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742e",
-      "name": "Wassim Bouaziz",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290742f",
-      "name": "Wen Ding Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907430",
-      "name": "William Flanagan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907431",
-      "name": "William Havard",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907432",
-      "name": "William Marshall",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907433",
-      "name": "Witold Jędrzejewski",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907434",
-      "name": "Xinghui Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907435",
-      "name": "Xingran Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907436",
-      "name": "Xinyu Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907437",
-      "name": "Xuanyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907438",
-      "name": "Yann Dreze",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907439",
-      "name": "Yann Viegas",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743a",
-      "name": "Yannic Neuhaus",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743b",
-      "name": "Yassine Turki",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743c",
-      "name": "Yessin Moakher",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743d",
-      "name": "Yi He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743e",
-      "name": "Yihan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c290743f",
-      "name": "Yimu Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907440",
-      "name": "Yuying Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907441",
-      "name": "Yves Martin des Taillades",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907442",
-      "name": "Zaccharie Ramzi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907443",
-      "name": "Zhenlin Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae167dda5eb0647c2907444",
-      "name": "Zsófia Csákány",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Timestral",
-    "submittedOnDailyBy": {
-     "_id": "6039478ab3ecf716b1a5fd4d",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-     "isPro": true,
-     "fullname": "taesiri",
-     "user": "taesiri",
-     "type": "user",
-     "name": "taesiri"
-    },
-    "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-    "upvotes": 11,
-    "discussionId": "6ae167dea5eb0647c2907445",
-    "ai_summary": "Timestral is a family of time series foundation models that achieves state-of-the-art probabilistic forecasting through decoupled horizon forecasting, native future covariate support, and synthetic pretraining followed by mixed post-training.",
-    "ai_keywords": [
-     "probabilistic forecasting",
-     "time series foundation models",
-     "Decoupled Horizon Forecasting",
-     "known-future covariates",
-     "synthetic pretraining",
-     "post-training"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "64edf4004f42c35eea1b1632",
-     "name": "mistralai",
-     "fullname": "Mistral",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/634c17653d11eaedd88b314d/9OgyfKstSZtbmsmuG8MbU.png"
-    }
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Timestral",
-   "summary": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking context and each observed value is both a forecast target and context for later forecasts; a covariate framework that natively supports known-future covariates within a causal architecture; and a two-stage pipeline that pretrains exclusively on a diverse, large-scale synthetic corpus before post-training on a mix of real and synthetic data with extended context. This report describes the model design and its benchmark results. Weights for all four models are available on Hugging Face and inference code on GitHub.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37585.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6039478ab3ecf716b1a5fd4d",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
-    "fullname": "taesiri",
-    "name": "taesiri",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 405,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "64edf4004f42c35eea1b1632",
-    "name": "mistralai",
-    "fullname": "Mistral",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/634c17653d11eaedd88b314d/9OgyfKstSZtbmsmuG8MbU.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.36022",
-    "authors": [
-     {
-      "_id": "6ae164fba5eb0647c29072bd",
-      "user": {
-       "_id": "641d6c27c5f150c3af0bf879",
-       "avatarUrl": "/avatars/d4620bad938513cb0559d28250eb5452.svg",
-       "isPro": false,
-       "fullname": "Ray Yang",
-       "user": "rayruiyang",
-       "type": "user",
-       "name": "rayruiyang"
-      },
-      "name": "Rui Yang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T20:10:04.432Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae164fba5eb0647c29072be",
-      "name": "Yanwei Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae164fba5eb0647c29072bf",
-      "name": "Sili Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae164fba5eb0647c29072c0",
-      "name": "Jingjia Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae164fba5eb0647c29072c1",
-      "name": "Yi Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae164fba5eb0647c29072c2",
-      "name": "Hengshuang Zhao",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/641d6c27c5f150c3af0bf879/baapqp8CA20Jb6GG1xg8u.gif"
-    ],
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Learning and Reasoning with Geometry: How Generation Helps Spatial Understanding",
-    "submittedOnDailyBy": {
-     "_id": "641d6c27c5f150c3af0bf879",
-     "avatarUrl": "/avatars/d4620bad938513cb0559d28250eb5452.svg",
-     "isPro": false,
-     "fullname": "Ray Yang",
-     "user": "rayruiyang",
-     "type": "user",
-     "name": "rayruiyang"
-    },
-    "summary": "Image and video generators can produce spatially consistent visual content, but how to use this capability to improve spatial understanding remains underexplored. We study this problem from two perspectives: geometric supervision during training and explicit geometric evidence during inference. To this end, we introduce a unified geometric understanding and generation model (GeoUG) that integrates depth and multi-view generation with spatial understanding. First, we design a multi-scale depth codec that enables metric-depth generation using a pretrained visual autoencoder, and show that joint training yields task-dependent gains in spatial understanding. Second, we introduce 3DCueBench to control geometric difficulty while balancing selected 2D cues, and find that generated depth provides larger reasoning gains on questions requiring fine-grained geometric discrimination. Building on this finding, we develop adaptive interleaved reasoning, in which GeoUG first drafts an answer and then decides whether to generate geometric evidence to confirm or revise it. We train this decision through reinforcement learning, balancing accuracy gains over retaining the draft against generation cost. GeoUG achieves circular accuracies of 97.9%, 90.8%, and 94.2% on CV-Bench-3D, 3DCueBench, and DA-2K with fewer generation calls than always generating.",
-    "upvotes": 5,
-    "discussionId": "6ae164fba5eb0647c29072c3",
-    "projectPage": "https://yangr116.github.io/geoug-project-page/",
-    "githubRepo": "https://github.com/hku-sail/GeoUG",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "GeoUG improves spatial reasoning by combining depth and multi-view generation with adaptive geometric verification during inference.",
-    "ai_keywords": [
-     "geometric supervision",
-     "multi-scale depth codec",
-     "metric-depth generation",
-     "visual autoencoder",
-     "3DCueBench",
-     "adaptive interleaved reasoning",
-     "reinforcement learning",
-     "GeoUG"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 12
-   },
-   "publishedAt": "2026-10-25T20:00:00.000Z",
-   "title": "Learning and Reasoning with Geometry: How Generation Helps Spatial Understanding",
-   "summary": "Image and video generators can produce spatially consistent visual content, but how to use this capability to improve spatial understanding remains underexplored. We study this problem from two perspectives: geometric supervision during training and explicit geometric evidence during inference. To this end, we introduce a unified geometric understanding and generation model (GeoUG) that integrates depth and multi-view generation with spatial understanding. First, we design a multi-scale depth codec that enables metric-depth generation using a pretrained visual autoencoder, and show that joint training yields task-dependent gains in spatial understanding. Second, we introduce 3DCueBench to control geometric difficulty while balancing selected 2D cues, and find that generated depth provides larger reasoning gains on questions requiring fine-grained geometric discrimination. Building on this finding, we develop adaptive interleaved reasoning, in which GeoUG first drafts an answer and then decides whether to generate geometric evidence to confirm or revise it. We train this decision through reinforcement learning, balancing accuracy gains over retaining the draft against generation cost. GeoUG achieves circular accuracies of 97.9%, 90.8%, and 94.2% on CV-Bench-3D, 3DCueBench, and DA-2K with fewer generation calls than always generating.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/641d6c27c5f150c3af0bf879/baapqp8CA20Jb6GG1xg8u.gif"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36022.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "641d6c27c5f150c3af0bf879",
-    "avatarUrl": "/avatars/d4620bad938513cb0559d28250eb5452.svg",
-    "fullname": "Ray Yang",
-    "name": "rayruiyang",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37386",
-    "authors": [
-     {
-      "_id": "6ae15ad1a5eb0647c290721c",
-      "user": {
-       "_id": "69145dc4db6e336c26dcae9e",
-       "avatarUrl": "/avatars/3f08142e0ed3e9829233dc8ca51dd8ba.svg",
-       "isPro": false,
-       "fullname": "Aiden Kim",
-       "user": "AidenGG",
-       "type": "user",
-       "name": "AidenGG"
-      },
-      "name": "Geunhyoung Kim",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T20:10:17.152Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15ad1a5eb0647c290721d",
-      "name": "Sung Ju Hwang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/Z0DdCbSi1z3MsUqv6ePly.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/0_dgyPCaBvlKzv_dlyFJO.png"
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Channel Selection for Mixture-of-Experts Decoding Needs No Calibration Data",
-    "submittedOnDailyBy": {
-     "_id": "62e622d08e0b2dc6707f8794",
-     "avatarUrl": "/avatars/bc7c1d862ba571b95cedf55ed3c9f920.svg",
-     "isPro": false,
-     "fullname": "Heejun Lee",
-     "user": "gmlwns5176",
-     "type": "user",
-     "name": "gmlwns5176"
-    },
-    "summary": "Mixture-of-Experts (MoE) models are bottlenecked by loading routed-expert weights from memory during interactive decoding at small batch sizes. Because most intermediate channels in a routed expert contribute little to any single token, channel selectors predict which channels matter and read only their weights, typically keeping channels above a threshold calibrated on offline data. We show that channel selection needs no calibration data. First, a calibrated threshold does not fix how much a selector reads, because the number of channels passing it varies across inputs; Prox with thresholds calibrated for an 18% read budget actually reads only 12.9% on average across our benchmarks. Second, top-k keeps each token's k highest-scoring channels and needs no calibration data. At the calibrated budget, a selector's top-k version matches or beats its threshold version on the same score in 40 of 43 comparisons at 13% and 18% budgets, including all 23 on generation tasks. The top-k versions also avoid the repetition-loop collapse that calibrated thresholds cause on Gemma 4. Calibrating a threshold thus provides neither of the two things selectors use it for: a known read budget and a consistent accuracy gain at that budget. We furthermore introduce a reader built entirely from the model's weights, which screens channels with a ternary sketch and recovers the skipped ones with a low-rank map. Across three post-trained MoE models, our reader retains 98.1% of full-model accuracy at 17.8% of routed-expert reads, with Triton kernels running MoE blocks 1.60 to 1.90x faster than optimized vLLM at batch one and up to 2.69x at larger batches on the same three models.",
-    "upvotes": 21,
-    "discussionId": "6ae15ad1a5eb0647c290721e",
-    "githubRepo": "https://github.com/AidenGeunGeun/calibration-free-moe",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Prox replaces calibrated thresholds with top-k channel selection and a weight-derived reader to accelerate Mixture-of-Experts inference while preserving accuracy.",
-    "ai_keywords": [
-     "Mixture-of-Experts",
-     "MoE",
-     "routed-expert weights",
-     "channel selectors",
-     "top-k",
-     "threshold calibration",
-     "Prox",
-     "ternary sketch",
-     "low-rank map",
-     "Triton kernels",
-     "vLLM"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
-    "organization": {
-     "_id": "6475760c33192631bad2bb38",
-     "name": "kaist-ai",
-     "fullname": "KAIST AI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-    }
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Channel Selection for Mixture-of-Experts Decoding Needs No Calibration Data",
-   "summary": "Mixture-of-Experts (MoE) models are bottlenecked by loading routed-expert weights from memory during interactive decoding at small batch sizes. Because most intermediate channels in a routed expert contribute little to any single token, channel selectors predict which channels matter and read only their weights, typically keeping channels above a threshold calibrated on offline data. We show that channel selection needs no calibration data. First, a calibrated threshold does not fix how much a selector reads, because the number of channels passing it varies across inputs; Prox with thresholds calibrated for an 18% read budget actually reads only 12.9% on average across our benchmarks. Second, top-k keeps each token's k highest-scoring channels and needs no calibration data. At the calibrated budget, a selector's top-k version matches or beats its threshold version on the same score in 40 of 43 comparisons at 13% and 18% budgets, including all 23 on generation tasks. The top-k versions also avoid the repetition-loop collapse that calibrated thresholds cause on Gemma 4. Calibrating a threshold thus provides neither of the two things selectors use it for: a known read budget and a consistent accuracy gain at that budget. We furthermore introduce a reader built entirely from the model's weights, which screens channels with a ternary sketch and recovers the skipped ones with a low-rank map. Across three post-trained MoE models, our reader retains 98.1% of full-model accuracy at 17.8% of routed-expert reads, with Triton kernels running MoE blocks 1.60 to 1.90x faster than optimized vLLM at batch one and up to 2.69x at larger batches on the same three models.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/Z0DdCbSi1z3MsUqv6ePly.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/62e622d08e0b2dc6707f8794/0_dgyPCaBvlKzv_dlyFJO.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37386.png",
-   "numComments": 5,
-   "submittedBy": {
-    "_id": "62e622d08e0b2dc6707f8794",
-    "avatarUrl": "/avatars/bc7c1d862ba571b95cedf55ed3c9f920.svg",
-    "fullname": "Heejun Lee",
-    "name": "gmlwns5176",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 17,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6475760c33192631bad2bb38",
-    "name": "kaist-ai",
-    "fullname": "KAIST AI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.33066",
-    "authors": [
-     {
-      "_id": "6ae015b5a5efa215400a7985",
-      "user": {
-       "_id": "637aebed7ce76c3b834cea37",
-       "avatarUrl": "/avatars/230c94e946289bd651826a2e53a8bb98.svg",
-       "isPro": false,
-       "fullname": "Yu Xia",
-       "user": "xxyyy123",
-       "type": "user",
-       "name": "xxyyy123"
-      },
-      "name": "Yu Xia",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T08:45:04.989Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7986",
-      "user": {
-       "_id": "66842ad1eef2f5be9e113fb9",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/SaEuI2ddyT6jzz_i84Jzp.png",
-       "isPro": false,
-       "fullname": "Yinglun Li",
-       "user": "Geralt-Lee",
-       "type": "user",
-       "name": "Geralt-Lee"
-      },
-      "name": "Yinglun Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T08:45:04.770Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7987",
-      "name": "Yuhui Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7988",
-      "name": "Jinlong Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7989",
-      "name": "Yuyang Wanyan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798a",
-      "name": "Shengze Shi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798b",
-      "name": "Yifei Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798c",
-      "name": "Yue Duan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798d",
-      "name": "Shubo Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798e",
-      "name": "Jianshan Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a798f",
-      "name": "En Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7990",
-      "name": "Shiyin Lu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7991",
-      "name": "Qing-Guo Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7992",
-      "name": "Zhao Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae015b5a5efa215400a7993",
-      "name": "Weihua Luo",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "OvisOCR3 Technical Report",
-    "submittedOnDailyBy": {
-     "_id": "637aebed7ce76c3b834cea37",
-     "avatarUrl": "/avatars/230c94e946289bd651826a2e53a8bb98.svg",
-     "isPro": false,
-     "fullname": "Yu Xia",
-     "user": "xxyyy123",
-     "type": "user",
-     "name": "xxyyy123"
-    },
-    "summary": "We introduce OvisOCR3, a 0.8B model for a broad range of OCR-related tasks. OvisOCR3 unifies document parsing, general OCR, key information extraction (KIE), document figure captioning, and cross-page table reconstruction in a single model. We train the model on real and synthetic data through continued pretraining and use domain-balanced mid-training to balance supervision across tasks with different data volumes and response lengths. Multi-teacher on-policy distillation transfers expertise from five domain-specific 4B teachers into the shared model, followed by mixed-task reinforcement learning with domain-specific rewards. We compare OvisOCR3 with general-purpose vision-language models and specialized OCR models on public and in-house benchmarks covering all five task families. In these comparisons, it achieves an overall score of 96.74 on OmniDocBench v1.6 and the highest overall scores on PureDocBench, Real5-OmniDocBench, and MDPBench. On OCRBench v2, it ranks first, scoring 65.9 and 61.3 on the English and Chinese splits, respectively. It also outperforms the baselines on OCRBench and all four KIE benchmarks. On DocFigCapBench, it achieves the highest localization F1 and a caption score close to that of Qwen3.8-Max. For cross-page tables, it leads in Relation F1 on CrossTabBench and truncated-table TEDS on MPDocBench-Parse. These results demonstrate that a compact 0.8B model can achieve strong performance across diverse OCR-related tasks. OvisOCR3 is available at https://huggingface.co/ATH-MaaS/OvisOCR3.",
-    "upvotes": 29,
-    "discussionId": "6ae015b5a5efa215400a7994",
-    "ai_summary": "OvisOCR3 is a compact 0.8B vision-language model that unifies diverse OCR tasks through multi-teacher distillation and reinforcement learning, achieving state-of-the-art results across document parsing, general OCR, key information extraction, figure captioning, and cross-page table reconstruction.",
-    "ai_keywords": [
-     "vision-language models",
-     "multi-teacher on-policy distillation",
-     "reinforcement learning",
-     "domain-specific rewards",
-     "document parsing",
-     "key information extraction",
-     "cross-page table reconstruction"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "6662a91edd706a226d18cc5a",
-     "name": "ATH-MaaS",
-     "fullname": "ATH-MaaS",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/666a9d46a638e57bb7907929/CRc-9MCuH2q9hjTScyTPE.png"
-    }
-   },
-   "publishedAt": "2026-10-19T20:00:00.000Z",
-   "title": "OvisOCR3 Technical Report",
-   "summary": "We introduce OvisOCR3, a 0.8B model for a broad range of OCR-related tasks. OvisOCR3 unifies document parsing, general OCR, key information extraction (KIE), document figure captioning, and cross-page table reconstruction in a single model. We train the model on real and synthetic data through continued pretraining and use domain-balanced mid-training to balance supervision across tasks with different data volumes and response lengths. Multi-teacher on-policy distillation transfers expertise from five domain-specific 4B teachers into the shared model, followed by mixed-task reinforcement learning with domain-specific rewards. We compare OvisOCR3 with general-purpose vision-language models and specialized OCR models on public and in-house benchmarks covering all five task families. In these comparisons, it achieves an overall score of 96.74 on OmniDocBench v1.6 and the highest overall scores on PureDocBench, Real5-OmniDocBench, and MDPBench. On OCRBench v2, it ranks first, scoring 65.9 and 61.3 on the English and Chinese splits, respectively. It also outperforms the baselines on OCRBench and all four KIE benchmarks. On DocFigCapBench, it achieves the highest localization F1 and a caption score close to that of Qwen3.8-Max. For cross-page tables, it leads in Relation F1 on CrossTabBench and truncated-table TEDS on MPDocBench-Parse. These results demonstrate that a compact 0.8B model can achieve strong performance across diverse OCR-related tasks. OvisOCR3 is available at https://huggingface.co/ATH-MaaS/OvisOCR3.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.33066.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "637aebed7ce76c3b834cea37",
-    "avatarUrl": "/avatars/230c94e946289bd651826a2e53a8bb98.svg",
-    "fullname": "Yu Xia",
-    "name": "xxyyy123",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 8,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6662a91edd706a226d18cc5a",
-    "name": "ATH-MaaS",
-    "fullname": "ATH-MaaS",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/666a9d46a638e57bb7907929/CRc-9MCuH2q9hjTScyTPE.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37341",
-    "authors": [
-     {
-      "_id": "6ae15aa2a5eb0647c290720b",
-      "name": "Jiafu Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c290720c",
-      "name": "Yifan Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c290720d",
-      "name": "Eric Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c290720e",
-      "name": "Junjie Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c290720f",
-      "name": "Shipeng Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907210",
-      "name": "Te Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907211",
-      "name": "Haoxuan Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907212",
-      "name": "Yiyan Ji",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907213",
-      "name": "Xinlong Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907214",
-      "name": "Zihao Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907215",
-      "user": {
-       "_id": "673c7319d11b1c2e246ead9c",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-       "isPro": false,
-       "fullname": "Yang Shi",
-       "user": "DogNeverSleep",
-       "type": "user",
-       "name": "DogNeverSleep"
-      },
-      "name": "Yang Shi",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.381Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907216",
-      "name": "Yuanxing Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907217",
-      "name": "Pengfei Wan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15aa2a5eb0647c2907218",
-      "name": "Jiaheng Liu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
-    "submittedOnDailyBy": {
-     "_id": "673c7319d11b1c2e246ead9c",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-     "isPro": false,
-     "fullname": "Yang Shi",
-     "user": "DogNeverSleep",
-     "type": "user",
-     "name": "DogNeverSleep"
-    },
-    "summary": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experiments reveal that while leading proprietary MLLMs demonstrate promising code captioning capabilities, they still struggle to faithfully capture complex temporal dynamics, with open-source models lagging substantially behind.",
-    "upvotes": 51,
-    "discussionId": "6ae15aa3a5eb0647c2907219",
-    "projectPage": "https://codecap-bench.github.io/",
-    "ai_summary": "Executable code representations of video content improve reasoning and reconstruction over natural language, yet current multimodal models still struggle to generate faithful code captions for complex temporal dynamics.",
-    "ai_keywords": [
-     "multimodal large language models",
-     "code captioning",
-     "temporal dynamics",
-     "graphical primitives",
-     "video reconstruction",
-     "CodeCap-Bench"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
-   "summary": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experiments reveal that while leading proprietary MLLMs demonstrate promising code captioning capabilities, they still struggle to faithfully capture complex temporal dynamics, with open-source models lagging substantially behind.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37341.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "673c7319d11b1c2e246ead9c",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/673c7319d11b1c2e246ead9c/IjFIO--N7Hm_BOEafhEQv.jpeg",
-    "fullname": "Yang Shi",
-    "name": "DogNeverSleep",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 17,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.34073",
-    "authors": [
-     {
-      "_id": "6ae00873a5efa215400a78e8",
-      "user": {
-       "_id": "655c3953ce055ed40a7de0ba",
-       "avatarUrl": "/avatars/ec5387d3892784407b88b93fa0e38f6f.svg",
-       "isPro": true,
-       "fullname": "Xuan He",
-       "user": "hexuan21",
-       "type": "user",
-       "name": "hexuan21"
-      },
-      "name": "Xuan He",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.228Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78e9",
-      "name": "Sining Zhoubian",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78ea",
-      "name": "Ruozhen Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78eb",
-      "name": "Yuhao Wen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78ec",
-      "name": "Zhineng Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78ed",
-      "name": "Yuyang Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78ee",
-      "name": "Ke Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78ef",
-      "name": "Yuyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78f0",
-      "name": "Ping Nie",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78f1",
-      "name": "Jiawei Han",
-      "hidden": false
-     },
-     {
-      "_id": "6ae00873a5efa215400a78f2",
-      "name": "ChengXiang Zhai",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
-    "submittedOnDailyBy": {
-     "_id": "655c3953ce055ed40a7de0ba",
-     "avatarUrl": "/avatars/ec5387d3892784407b88b93fa0e38f6f.svg",
-     "isPro": true,
-     "fullname": "Xuan He",
-     "user": "hexuan21",
-     "type": "user",
-     "name": "hexuan21"
-    },
-    "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
-    "upvotes": 151,
-    "discussionId": "6ae00874a5efa215400a78f3",
-    "projectPage": "https://hexuan21.github.io/MemoryTax/",
-    "githubRepo": "https://github.com/hexuan21/MemoryTax",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Large-scale evaluation reveals that dedicated memory systems often underperform naive retrieval-augmented generation, introducing a framework of memory benefit and memory tax to assess net value.",
-    "ai_keywords": [
-     "memory benefit",
-     "memory tax",
-     "RAG",
-     "retrieval-augmented generation",
-     "long-horizon agents"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 10,
-    "organization": {
-     "_id": "65448bef5b5d9185ba3202b9",
-     "name": "UIUC-CS",
-     "fullname": "University of Illinois at Urbana-Champaign",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65448b21fcb96b8b48733729/ycqcXFayMTTD_KpE37067.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-24T20:00:00.000Z",
-   "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
-   "summary": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from standalone performance to the net value of memory, informing more reliable memory designs and evaluations. We will open-source the code and results to the community. Project Page: https://hexuan21.github.io/MemoryTax/",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34073.png",
-   "numComments": 5,
-   "submittedBy": {
-    "_id": "655c3953ce055ed40a7de0ba",
-    "avatarUrl": "/avatars/ec5387d3892784407b88b93fa0e38f6f.svg",
-    "fullname": "Xuan He",
-    "name": "hexuan21",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 9,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "65448bef5b5d9185ba3202b9",
-    "name": "UIUC-CS",
-    "fullname": "University of Illinois at Urbana-Champaign",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65448b21fcb96b8b48733729/ycqcXFayMTTD_KpE37067.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.37666",
-    "authors": [
-     {
-      "_id": "6ae15d93a5eb0647c2907233",
-      "name": "Chaehyun Kim",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907234",
-      "name": "Chi-Pin Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907235",
-      "name": "Jisoo Kim",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907236",
-      "user": {
-       "_id": "64ae22dd1aee69ece065cdcd",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ae22dd1aee69ece065cdcd/JG7QaHIrr4i2k4uwR4pZK.png",
-       "isPro": false,
-       "fullname": "Min-Hung Chen",
-       "user": "cmhungsteve",
-       "type": "user",
-       "name": "cmhungsteve"
-      },
-      "name": "Min-Hung Chen",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.422Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907237",
-      "name": "Yu-Chiang Frank Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907238",
-      "name": "Seungryong Kim",
-      "hidden": false
-     },
-     {
-      "_id": "6ae15d93a5eb0647c2907239",
-      "user": {
-       "_id": "6312cab05beb528b5c1500e3",
-       "avatarUrl": "/avatars/d521fbf6a85c3debbd741a660e34d9bb.svg",
-       "isPro": false,
-       "fullname": "Fu-En Yang",
-       "user": "FuEnYang",
-       "type": "user",
-       "name": "FuEnYang"
-      },
-      "name": "Fu-En Yang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.414Z",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/63f727b1bd28622c9b951114/upl0lRpybvBMpqUSl4LGv.mp4"
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-    "submittedOnDailyBy": {
-     "_id": "63f727b1bd28622c9b951114",
-     "avatarUrl": "/avatars/0b52ae1ff473615fdd665cdbc91f6db9.svg",
-     "isPro": true,
-     "fullname": "Chaehyun Kim",
-     "user": "chyun",
-     "type": "user",
-     "name": "chyun"
-    },
-    "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-    "upvotes": 53,
-    "discussionId": "6ae15d94a5eb0647c290723a",
-    "projectPage": "https://thinkworld-project.github.io/",
-    "ai_summary": "ThinkWorld improves robotic generalization by representing actions as dynamics chains and using world imagination to learn from unlabeled human videos.",
-    "ai_keywords": [
-     "Vision-Language-Action models",
-     "Chain-of-Dynamics",
-     "motion tokens",
-     "world dynamics",
-     "reinforcement learning",
-     "world imagination"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "60262b67268c201cdc8b7d43",
-     "name": "nvidia",
-     "fullname": "NVIDIA",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
-    }
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-   "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/63f727b1bd28622c9b951114/upl0lRpybvBMpqUSl4LGv.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37666.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "63f727b1bd28622c9b951114",
-    "avatarUrl": "/avatars/0b52ae1ff473615fdd665cdbc91f6db9.svg",
-    "fullname": "Chaehyun Kim",
-    "name": "chyun",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "60262b67268c201cdc8b7d43",
-    "name": "nvidia",
-    "fullname": "NVIDIA",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
