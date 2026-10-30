@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-10-30T21:31:05.391Z",
+ "fetchedAt": "2026-10-30T23:46:00.344Z",
  "payload": {
   "data": [
    {
@@ -4087,79 +4087,6 @@
     }
    },
    {
-    "id": "typesafe/jev-router",
-    "canonical_slug": "typesafe/jev-router",
-    "hugging_face_id": null,
-    "name": "TypeSafe: Jev Router",
-    "created": 1790363560,
-    "description": "Jev Router picks the best model and reasoning effort for each request, balancing quality, speed, and cost. It runs on [Jev](https://openrouter.ai/~typesafe/jev-latest), TypeSafe's first System One model, and adapts as your...",
-    "context_length": 1000000,
-    "architecture": {
-     "modality": "text+image+file+audio+video->text",
-     "input_modalities": [
-      "audio",
-      "file",
-      "image",
-      "text",
-      "video"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": 65536,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logit_bias",
-     "logprobs",
-     "max_completion_tokens",
-     "max_tokens",
-     "min_p",
-     "parallel_tool_calls",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_a",
-     "top_k",
-     "top_logprobs",
-     "top_p",
-     "verbosity"
-    ],
-    "default_parameters": {},
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/typesafe/jev-router/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
-   },
-   {
     "id": "perceptron/perceptron-mk1.5",
     "canonical_slug": "perceptron/perceptron-mk1.5-20260925",
     "hugging_face_id": null,
@@ -5820,50 +5747,6 @@
      ],
      "default_effort": "high"
     }
-   },
-   {
-    "id": "nvidia/switchyard",
-    "canonical_slug": "nvidia/switchyard",
-    "hugging_face_id": null,
-    "name": "NVIDIA: Switchyard",
-    "created": 1790025947,
-    "description": "Switchyard is an open-source model routing system that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most...",
-    "context_length": 1000000,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [],
-    "default_parameters": {},
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/nvidia/switchyard/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
    },
    {
     "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -10238,9 +10121,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000008",
-     "completion": "0.0000036",
-     "input_cache_read": "0.000000076"
+     "prompt": "0.000000104",
+     "completion": "0.000002769",
+     "input_cache_read": "0.000000099"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -14595,80 +14478,6 @@
     }
    },
    {
-    "id": "openrouter/auto-beta",
-    "canonical_slug": "openrouter/auto-beta",
-    "hugging_face_id": null,
-    "name": "Auto Router (Beta)",
-    "created": 1784311165,
-    "description": "The experimental version of our Auto Router where we test new improvements. Use it to get the latest and greatest version of our general purpose auto router, but expect beta...",
-    "context_length": 2000000,
-    "architecture": {
-     "modality": "text+image+file+audio+video->text+image",
-     "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "file",
-      "video"
-     ],
-     "output_modalities": [
-      "text",
-      "image"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": 65536,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logit_bias",
-     "logprobs",
-     "max_completion_tokens",
-     "max_tokens",
-     "min_p",
-     "parallel_tool_calls",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_a",
-     "top_k",
-     "top_logprobs",
-     "top_p",
-     "verbosity"
-    ],
-    "default_parameters": {},
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/auto-beta/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
-   },
-   {
     "id": "moonshotai/kimi-k3",
     "canonical_slug": "moonshotai/kimi-k3-20260715",
     "hugging_face_id": "moonshotai/Kimi-K3",
@@ -18091,57 +17900,6 @@
      ],
      "default_effort": "high"
     }
-   },
-   {
-    "id": "openrouter/fusion",
-    "canonical_slug": "openrouter/fusion",
-    "hugging_face_id": null,
-    "name": "OpenRouter: Fusion",
-    "created": 1781371647,
-    "description": "Fusion turns your prompt into a small multi-model deliberation. A panel of expert models (see below) analyzes your prompt in parallel with web search and web fetch enabled, then a...",
-    "context_length": 1000000,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [],
-    "default_parameters": {
-     "temperature": null,
-     "top_p": null,
-     "top_k": null,
-     "frequency_penalty": null,
-     "presence_penalty": null,
-     "repetition_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/fusion/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
    },
    {
     "id": "moonshotai/kimi-k2.7-code",
@@ -22539,9 +22297,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000001824",
-     "completion": "0.0000101522",
-     "input_cache_read": "0.00000018"
+     "prompt": "0.000000171",
+     "completion": "0.0000105572",
+     "input_cache_read": "0.00000017"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -24534,82 +24292,6 @@
      ],
      "default_effort": "high"
     }
-   },
-   {
-    "id": "openrouter/pareto-code",
-    "canonical_slug": "openrouter/pareto-code",
-    "hugging_face_id": "",
-    "name": "Pareto Code Router",
-    "created": 1776747900,
-    "description": "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
-    "context_length": 2000000,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logit_bias",
-     "logprobs",
-     "max_completion_tokens",
-     "max_tokens",
-     "min_p",
-     "parallel_tool_calls",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_a",
-     "top_k",
-     "top_logprobs",
-     "top_p",
-     "verbosity"
-    ],
-    "default_parameters": {
-     "temperature": null,
-     "top_p": null,
-     "top_k": null,
-     "frequency_penalty": null,
-     "presence_penalty": null,
-     "repetition_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/pareto-code/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
    },
    {
     "id": "moonshotai/kimi-k2.6",
@@ -30882,76 +30564,6 @@
     }
    },
    {
-    "id": "openrouter/free",
-    "canonical_slug": "openrouter/free",
-    "hugging_face_id": "",
-    "name": "Free Models Router",
-    "created": 1769917427,
-    "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that...",
-    "context_length": 200000,
-    "architecture": {
-     "modality": "text+image->text",
-     "input_modalities": [
-      "text",
-      "image"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0",
-     "completion": "0"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logprobs",
-     "max_completion_tokens",
-     "max_tokens",
-     "min_p",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_k",
-     "top_logprobs",
-     "top_p"
-    ],
-    "default_parameters": {
-     "temperature": null,
-     "top_p": null,
-     "frequency_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/free/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
-   },
-   {
     "id": "stepfun/step-3.5-flash",
     "canonical_slug": "stepfun/step-3.5-flash",
     "hugging_face_id": "stepfun-ai/Step-3.5-Flash",
@@ -33249,54 +32861,6 @@
     "reasoning": {
      "mandatory": false
     }
-   },
-   {
-    "id": "openrouter/bodybuilder",
-    "canonical_slug": "openrouter/bodybuilder",
-    "hugging_face_id": "",
-    "name": "Body Builder (beta)",
-    "created": 1764903653,
-    "description": "Transform your natural language requests into structured OpenRouter API request objects. Describe what you want to accomplish with AI models, and Body Builder will construct the appropriate API calls. Example:...",
-    "context_length": 128000,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [],
-    "default_parameters": {
-     "temperature": null,
-     "top_p": null,
-     "frequency_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/bodybuilder/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
    },
    {
     "id": "openai/gpt-5.1-codex-max",
@@ -46399,79 +45963,6 @@
     ]
    },
    {
-    "id": "openrouter/auto",
-    "canonical_slug": "openrouter/auto",
-    "hugging_face_id": null,
-    "name": "Auto Router",
-    "created": 1699401600,
-    "description": "The Auto Router automatically selects the best model for your prompt, powered by the wisdom of the market. It routes you based on what the OpenRouter community collectively spends on...",
-    "context_length": 2000000,
-    "architecture": {
-     "modality": "text+image+file+audio+video->text+image",
-     "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "file",
-      "video"
-     ],
-     "output_modalities": [
-      "text",
-      "image"
-     ],
-     "tokenizer": "Router",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "-1",
-     "completion": "-1"
-    },
-    "top_provider": {
-     "context_length": null,
-     "max_completion_tokens": null,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logit_bias",
-     "logprobs",
-     "max_tokens",
-     "min_p",
-     "prediction",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_a",
-     "top_k",
-     "top_logprobs",
-     "top_p",
-     "web_search_options"
-    ],
-    "default_parameters": {},
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/openrouter/auto/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ]
-   },
-   {
     "id": "openai/gpt-3.5-turbo-16k",
     "canonical_slug": "openai/gpt-3.5-turbo-16k",
     "hugging_face_id": null,
@@ -46777,6 +46268,515 @@
       "agentic_index": null
      }
     }
+   },
+   {
+    "id": "typesafe/jev-router",
+    "canonical_slug": "typesafe/jev-router",
+    "hugging_face_id": null,
+    "name": "TypeSafe: Jev Router",
+    "created": 1790363560,
+    "description": "Jev Router picks the best model and reasoning effort for each request, balancing quality, speed, and cost. It runs on [Jev](https://openrouter.ai/~typesafe/jev-latest), TypeSafe's first System One model, and adapts as your...",
+    "context_length": 1000000,
+    "architecture": {
+     "modality": "text+image+file+audio+video->text",
+     "input_modalities": [
+      "audio",
+      "file",
+      "image",
+      "text",
+      "video"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": 65536,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logit_bias",
+     "logprobs",
+     "max_completion_tokens",
+     "max_tokens",
+     "min_p",
+     "parallel_tool_calls",
+     "presence_penalty",
+     "reasoning",
+     "reasoning_effort",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_a",
+     "top_k",
+     "top_logprobs",
+     "top_p",
+     "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/typesafe/jev-router/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "nvidia/switchyard",
+    "canonical_slug": "nvidia/switchyard",
+    "hugging_face_id": null,
+    "name": "NVIDIA: Switchyard",
+    "created": 1790025947,
+    "description": "Switchyard is an open-source model routing system that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most...",
+    "context_length": 1000000,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/nvidia/switchyard/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/auto-beta",
+    "canonical_slug": "openrouter/auto-beta",
+    "hugging_face_id": null,
+    "name": "Auto Router (Beta)",
+    "created": 1784311165,
+    "description": "The experimental version of our Auto Router where we test new improvements. Use it to get the latest and greatest version of our general purpose auto router, but expect beta...",
+    "context_length": 2000000,
+    "architecture": {
+     "modality": "text+image+file+audio+video->text+image",
+     "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "file",
+      "video"
+     ],
+     "output_modalities": [
+      "text",
+      "image"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": 65536,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logit_bias",
+     "logprobs",
+     "max_completion_tokens",
+     "max_tokens",
+     "min_p",
+     "parallel_tool_calls",
+     "presence_penalty",
+     "reasoning",
+     "reasoning_effort",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_a",
+     "top_k",
+     "top_logprobs",
+     "top_p",
+     "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/auto-beta/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/fusion",
+    "canonical_slug": "openrouter/fusion",
+    "hugging_face_id": null,
+    "name": "OpenRouter: Fusion",
+    "created": 1781371647,
+    "description": "Fusion turns your prompt into a small multi-model deliberation. A panel of expert models (see below) analyzes your prompt in parallel with web search and web fetch enabled, then a...",
+    "context_length": 1000000,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [],
+    "default_parameters": {
+     "temperature": null,
+     "top_p": null,
+     "top_k": null,
+     "frequency_penalty": null,
+     "presence_penalty": null,
+     "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/fusion/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/pareto-code",
+    "canonical_slug": "openrouter/pareto-code",
+    "hugging_face_id": "",
+    "name": "Pareto Code Router",
+    "created": 1776747900,
+    "description": "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
+    "context_length": 2000000,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logit_bias",
+     "logprobs",
+     "max_completion_tokens",
+     "max_tokens",
+     "min_p",
+     "parallel_tool_calls",
+     "presence_penalty",
+     "reasoning",
+     "reasoning_effort",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_a",
+     "top_k",
+     "top_logprobs",
+     "top_p",
+     "verbosity"
+    ],
+    "default_parameters": {
+     "temperature": null,
+     "top_p": null,
+     "top_k": null,
+     "frequency_penalty": null,
+     "presence_penalty": null,
+     "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/pareto-code/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/free",
+    "canonical_slug": "openrouter/free",
+    "hugging_face_id": "",
+    "name": "Free Models Router",
+    "created": 1769917427,
+    "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that...",
+    "context_length": 200000,
+    "architecture": {
+     "modality": "text+image->text",
+     "input_modalities": [
+      "text",
+      "image"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "0",
+     "completion": "0"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logprobs",
+     "max_completion_tokens",
+     "max_tokens",
+     "min_p",
+     "presence_penalty",
+     "reasoning",
+     "reasoning_effort",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_k",
+     "top_logprobs",
+     "top_p"
+    ],
+    "default_parameters": {
+     "temperature": null,
+     "top_p": null,
+     "frequency_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/free/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/bodybuilder",
+    "canonical_slug": "openrouter/bodybuilder",
+    "hugging_face_id": "",
+    "name": "Body Builder (beta)",
+    "created": 1764903653,
+    "description": "Transform your natural language requests into structured OpenRouter API request objects. Describe what you want to accomplish with AI models, and Body Builder will construct the appropriate API calls. Example:...",
+    "context_length": 128000,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [],
+    "default_parameters": {
+     "temperature": null,
+     "top_p": null,
+     "frequency_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/bodybuilder/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
+   },
+   {
+    "id": "openrouter/auto",
+    "canonical_slug": "openrouter/auto",
+    "hugging_face_id": null,
+    "name": "Auto Router",
+    "created": 1699401600,
+    "description": "The Auto Router automatically selects the best model for your prompt, powered by the wisdom of the market. It routes you based on what the OpenRouter community collectively spends on...",
+    "context_length": 2000000,
+    "architecture": {
+     "modality": "text+image+file+audio+video->text+image",
+     "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "file",
+      "video"
+     ],
+     "output_modalities": [
+      "text",
+      "image"
+     ],
+     "tokenizer": "Router",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "-1",
+     "completion": "-1"
+    },
+    "top_provider": {
+     "context_length": null,
+     "max_completion_tokens": null,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logit_bias",
+     "logprobs",
+     "max_tokens",
+     "min_p",
+     "prediction",
+     "presence_penalty",
+     "reasoning",
+     "reasoning_effort",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_a",
+     "top_k",
+     "top_logprobs",
+     "top_p",
+     "web_search_options"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/openrouter/auto/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ]
    }
   ],
   "total_count": 456,
