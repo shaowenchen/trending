@@ -1,8 +1,197 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-30T12:31:15.721Z",
+ "fetchedAt": "2026-10-30T14:46:03.864Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.39302",
+    "authors": [
+     {
+      "_id": "6ae4a81cac2aed10b8c1c16f",
+      "name": "Randall Balestriero",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a81cac2aed10b8c1c170",
+      "name": "Yann LeCun",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6629cf0121e410e67c4de179/4bn-J1bzdBosBvP6xm47N.mp4"
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+    "submittedOnDailyBy": {
+     "_id": "6629cf0121e410e67c4de179",
+     "avatarUrl": "/avatars/e5421133e9ab7cbf1b87cd640ca374dc.svg",
+     "isPro": false,
+     "fullname": "Randall Balestriero",
+     "user": "RandallBalestriero",
+     "type": "user",
+     "name": "RandallBalestriero"
+    },
+    "summary": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a Platonic Representation Theorem: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--good views--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with bad views, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
+    "upvotes": 1,
+    "discussionId": "6ae4a81cac2aed10b8c1c171",
+    "projectPage": "https://github.com/galilai-group/prh-proof",
+    "githubRepo": "https://github.com/galilai-group/prh-proof",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Joint-embedding predictive architectures trained on aligned multi-modal observations converge to shared representations with far greater efficiency than next-token prediction, demonstrating that positive view design—not scale alone—drives cross-modal alignment.",
+    "ai_keywords": [
+     "Platonic Representation Hypothesis",
+     "Joint-Embedding Predictive Architectures",
+     "JEPAs",
+     "positive pairs",
+     "good views",
+     "next-token prediction",
+     "scaling law of alignment",
+     "DINOv2",
+     "CLIP",
+     "text JEPA"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "66d46fac30d7ea0b28a1b98a",
+     "name": "galilai-group",
+     "fullname": "galilai-group",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6629cf0121e410e67c4de179/Yf1a8X0mIW_TRVvGb0j6o.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+   "summary": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a Platonic Representation Theorem: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--good views--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with bad views, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6629cf0121e410e67c4de179/4bn-J1bzdBosBvP6xm47N.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39302.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "6629cf0121e410e67c4de179",
+    "avatarUrl": "/avatars/e5421133e9ab7cbf1b87cd640ca374dc.svg",
+    "fullname": "Randall Balestriero",
+    "name": "RandallBalestriero",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "66d46fac30d7ea0b28a1b98a",
+    "name": "galilai-group",
+    "fullname": "galilai-group",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6629cf0121e410e67c4de179/Yf1a8X0mIW_TRVvGb0j6o.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.38174",
+    "authors": [
+     {
+      "_id": "6ae4a548ac2aed10b8c1c15b",
+      "name": "Debargha Ganguly",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c15c",
+      "name": "Divya Raghunathan",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c15d",
+      "name": "Dejan Jovanović",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c15e",
+      "name": "Vikash Singh",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c15f",
+      "name": "Soonho Kong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c160",
+      "name": "Aaron Tomb",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c161",
+      "name": "Aman Goel",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c162",
+      "name": "Ferhat Erata",
+      "hidden": false
+     },
+     {
+      "_id": "6ae4a548ac2aed10b8c1c163",
+      "name": "Sam Bayless",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
+    "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
+    "submittedOnDailyBy": {
+     "_id": "61deb0a302496c6d78da4ade",
+     "avatarUrl": "/avatars/4930b46a1f5655a2fcf2f1172bcadca4.svg",
+     "isPro": false,
+     "fullname": "Debargha Ganguly",
+     "user": "Debargha",
+     "type": "user",
+     "name": "Debargha"
+    },
+    "summary": "We present EasyProver, a Lean proving system built from recursive agents with isolated contexts, asynchronous search, parallel tactic probing, and an elastic elaboration service. Using an off-the-shelf frontier model with no additional training, it proves 669/672 PutnamBench problems and all six IMO 2026 formalizations and resolves 597/600 NTP4VC verification conditions and all 189 VERINA tasks by proof or refutation. Because these benchmarks are close to saturation, we also introduce Aegis, which converts competitive programming problems into much harder verification tasks over real implementations. The pipeline writes safe Rust solutions, translates them into Lean with Aeneas, generates specifications, and labels each frozen statement with a kernel-checked proof or refutation. It produces 2,045 differentially validated Rust-Lean program pairs and 11,533 candidate specifications. Unlike hand-written benchmarks, these tasks carry implementation-level obligations from fixed-width arithmetic, explicit failure, generated loops, casts, and functionalized mutation. On a stratified sample of 2,000 statements, EasyProver proves 1,054 (52.7%) within a 30-minute budget per statement. The same tasks can also be used to benchmark other provers and as rewards for reinforcement learning.",
+    "upvotes": 1,
+    "discussionId": "6ae4a548ac2aed10b8c1c164",
+    "ai_summary": "EasyProver is a Lean proving system using recursive agents and asynchronous search that solves nearly all Putnam and IMO benchmark problems, while Aegis generates harder verification tasks from competitive programming to benchmark provers and support reinforcement learning.",
+    "ai_keywords": [
+     "reinforcement learning"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "65424e525bb41e82fba69276",
+     "name": "amazonwebservices",
+     "fullname": "Amazon Web Services (AWS)",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65424dd6afa1020a9c31759e/wt7-MpCfO2O8pVG8mISJS.png"
+    }
+   },
+   "publishedAt": "2026-10-27T20:00:00.000Z",
+   "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
+   "summary": "We present EasyProver, a Lean proving system built from recursive agents with isolated contexts, asynchronous search, parallel tactic probing, and an elastic elaboration service. Using an off-the-shelf frontier model with no additional training, it proves 669/672 PutnamBench problems and all six IMO 2026 formalizations and resolves 597/600 NTP4VC verification conditions and all 189 VERINA tasks by proof or refutation. Because these benchmarks are close to saturation, we also introduce Aegis, which converts competitive programming problems into much harder verification tasks over real implementations. The pipeline writes safe Rust solutions, translates them into Lean with Aeneas, generates specifications, and labels each frozen statement with a kernel-checked proof or refutation. It produces 2,045 differentially validated Rust-Lean program pairs and 11,533 candidate specifications. Unlike hand-written benchmarks, these tasks carry implementation-level obligations from fixed-width arithmetic, explicit failure, generated loops, casts, and functionalized mutation. On a stratified sample of 2,000 statements, EasyProver proves 1,054 (52.7%) within a 30-minute budget per statement. The same tasks can also be used to benchmark other provers and as rewards for reinforcement learning.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38174.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "61deb0a302496c6d78da4ade",
+    "avatarUrl": "/avatars/4930b46a1f5655a2fcf2f1172bcadca4.svg",
+    "fullname": "Debargha Ganguly",
+    "name": "Debargha",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "65424e525bb41e82fba69276",
+    "name": "amazonwebservices",
+    "fullname": "Amazon Web Services (AWS)",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65424dd6afa1020a9c31759e/wt7-MpCfO2O8pVG8mISJS.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.39423",
@@ -374,7 +563,7 @@
      "name": "shenyunhang"
     },
     "summary": "We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities. Its design rests on one encoder for every modality and one schema for every task. Youtu-Omni-Encoder, initialized from a pre-trained language model to strengthen text reading, encodes all modalities with shared weights in a unified space-time coordinate system, and a few fusion layers let video frames attend to concurrent audio, bringing cross-modal fusion and temporal alignment into perception itself. OmniSchema unifies the outputs of all ten parsing tasks, allowing a single self-evolving post-training procedure, OmniSchema-Aware On-Policy Distillation (OSAD), to provide a shared token-role-based objective across tasks. In each round, the model is trained on its own rollouts against token-level targets from a reference-conditioned copy of itself, which is then refreshed with the trained weights, so that the parser and its supervision co-evolve. With a single 5 B-parameter checkpoint, Youtu-Parsing-Omni achieves state-of-the-art performance on OmniDocBench v1.6 (96.96 Overall) and leads all open-weight models on OmniParsingBench (75.08 Avg.), with its advantage concentrated on audio and video. It also achieves the best overall chart-parsing score (95.02) and the highest exact chemical-fingerprint agreement among compared systems, and matches a dedicated optical-music model in character-level transcription of typeset sheet music while staying far ahead of general-purpose systems. Code and model weights are publicly available.",
-    "upvotes": 5,
+    "upvotes": 15,
     "discussionId": "6ae45f49c3b566b041f6ca9b",
     "projectPage": "https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni",
     "ai_summary": "Youtu-Parsing-Omni is a unified multi-modal parser that encodes documents, images, audio, and video into structured spatiotemporal records using shared weights and cross-modal fusion, achieving state-of-the-art results across parsing benchmarks through a self-evolving on-policy distillation procedure.",
@@ -503,7 +692,7 @@
      "name": "Ideallll"
     },
     "summary": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae45612c3b566b041f6ca3e",
     "projectPage": "https://ideal-ljl.github.io/AeroBrain/",
     "githubRepo": "https://github.com/Ideal-ljl/AeroBrain",
@@ -797,7 +986,7 @@
      "name": "JaydenTeoh"
     },
     "summary": "Multi-Token Prediction (MTP) is now a common ingredient in language-model pre-training, as it improves downstream performance and enables faster inference through speculative decoding. We identify a flaw in standard MTP training, in which a residual component of the MTP gradient interferes with both next-token and multi-token learning, increasingly so with scale. Specifically, the MTP cross-entropy gradient can be decomposed exactly into a KL self-distillation term that pulls each MTP head toward the model's own next-token prediction (NTP) distribution and improves speculative decoding, and a residual that has a low signal-to-noise ratio and buries the useful KL signal. We introduce the KL gradient-recovery trick: when two distributions share a linear output head, the gradient of their KL divergence can be recovered exactly by combining their cross-entropy gradients through straight-through gradient routing. Unlike minimizing the KL directly, this trick requires no vocabulary-sized logit matrices and is compatible with standard fused cross-entropy kernels. This enables Soft Multi-Token Prediction (Soft-MTP), a one-line code change to MTP that removes the noisy residual and backpropagates only the KL self-distillation signal by reusing the existing NTP and MTP cross-entropy computations. Soft-MTP supports both DeepSeek- and Meta-style MTP, adds no parameters, and incurs no measurable overhead. From 167M to 1.2B parameters, Soft-MTP improves over standard MTP with lower NTP perplexity, faster speculative decoding and higher zero-shot accuracy at every scale, lower MTP perplexity from 689M onward, and stronger math and code reasoning after fine-tuning at 1.2B. Soft-MTP also matches, if not exceeds, direct KL divergence minimization on most metrics. Soft-MTP is, in effect, a free lunch for MTP optimization. Our code can be found at https://github.com/JaydenTeoh/Soft-MTP.",
-    "upvotes": 3,
+    "upvotes": 5,
     "discussionId": "6ae43c86c3b566b041f6c933",
     "githubRepo": "https://github.com/JaydenTeoh/Soft-MTP",
     "githubRepoAddedBy": "user",
@@ -903,7 +1092,7 @@
      "name": "Gokottaw434"
     },
     "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost.",
-    "upvotes": 16,
+    "upvotes": 22,
     "discussionId": "6ae44231c3b566b041f6c956",
     "projectPage": "https://yangjiongfan.site/specslot/",
     "githubRepo": "https://github.com/JiongfanYang/SpecSlot",
@@ -1013,7 +1202,7 @@
      "name": "wlsgur1018"
     },
     "summary": "Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to 38.6times fewer 3D primitives, 3.2times faster memory updates, and 359times faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.",
-    "upvotes": 29,
+    "upvotes": 31,
     "discussionId": "6ae44367c3b566b041f6c96b",
     "projectPage": "https://cvlab-kaist.github.io/L3G-World/",
     "githubRepo": "https://github.com/cvlab-kaist/L3G-World",
@@ -1149,7 +1338,7 @@
      "name": "caiyuchen"
     },
     "summary": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and computation; a task taxonomy organized around professional analyst deliverables; and an expert-led framework linking scoring criteria to sources, calculations, and assumptions through financial dependency graphs. Evaluation spans 86 assignments and jointly assesses research quality, forecast accuracy, and simulated investment performance. GPT-6 Astra and Claude Opus 5.5 lead overall at 68.1 and 66.9 out of 100, yet even Astra scores only 52.5 on Forecast & Model. Our results show that even state-of-the-art models fail to translate overall research capability into predictive performance. ILE shifts the evaluation unit from isolated capabilities to the evidence--assumption--judgment chain, allowing researchers to locate where analytical advantages fail to translate into forecasts and investment judgments, and providing a traceable, diagnostic foundation for training and evaluating financial agents.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6ae438f9c3b566b041f6c91f",
     "projectPage": "https://prophet-lab.cn/benchmarks/investor-last-exam-v1/",
     "githubRepo": "https://github.com/Prophetlab/Investor-Last-Exam",
@@ -1231,7 +1420,7 @@
      "name": "peitongd"
     },
     "summary": "While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion. To effectively leverage this dual reward structure, we optimize the agent using Proximal Policy Optimization (PPO) with step-level advantage estimation. Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. To support this online training paradigm at scale, we introduce an efficient infrastructure that orchestrates hundreds of concurrent virtual iOS devices. Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence. Notably, our 8B RL agents achieve nearly a sevenfold improvement over the SFT baseline in out-of-distribution generalization to Android environments, while outperforming Gemini-3.5-Flash and tying with Gemini-3.1-Pro on real iOS applications.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6ae43845c3b566b041f6c912",
     "ai_summary": "An online reinforcement learning framework trains UI navigation agents on live mobile apps using a planning agent, UI grounding model, and a novel neighbor-conditioned value estimation method to improve robustness and reduce inference costs.",
     "ai_keywords": [
@@ -1526,7 +1715,7 @@
      "name": "zhshj0110"
     },
     "summary": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
-    "upvotes": 127,
+    "upvotes": 150,
     "discussionId": "6ae42126c3b566b041f6c890",
     "projectPage": "https://seerray-lab.github.io/A-RSI/",
     "ai_summary": "A-RSI improves recursive self-improvement by refreshing training tasks based on declining learning signals and using independently verifiable program-generated answers, raising benchmark performance without external labels.",
@@ -1553,7 +1742,7 @@
    "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
    "summary": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38568.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "664c4c2d37978db71bb2d7b5",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/664c4c2d37978db71bb2d7b5/4o60GexD_Dp81EquoKph0.jpeg",
@@ -1573,7 +1762,7 @@
     "fullname": "Xiaomi Research",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/673735e4373ad40af7f81ea1/DR4m0bz2Du1l0Z8Txg351.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -1638,7 +1827,7 @@
      "name": "hyeon9698"
     },
     "summary": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adaptive decision is needed rather than a fixed schedule. Without training or a tuned threshold, LOWN retains 99.6% of LLaDA-V's score on ten benchmarks at 35.3% of the decoding FLOPs on average. LOWN also generalizes across LLaDA-based DVLMs, composes orthogonally with visual token pruning, and runs under key-value caching for further efficiency gains. Code and project page are available at https://hyeon9698.github.io/LOWN/",
-    "upvotes": 75,
+    "upvotes": 85,
     "discussionId": "6ae43303c3b566b041f6c8f9",
     "projectPage": "https://hyeon9698.github.io/LOWN/",
     "githubRepo": "https://github.com/hyeon9698/LOWN",
@@ -2050,7 +2239,7 @@
      "name": "5hadytru"
     },
     "summary": "Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000), although simulation overestimates success. Across nine VLAs and world-action models, the best learned policies score near 61%, with spatial placement, unseen object classes and rotate-to-fit planning remaining open. An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model.",
-    "upvotes": 5,
+    "upvotes": 7,
     "discussionId": "6ae141cfa5eb0647c2907081",
     "projectPage": "https://so101-bench.github.io/",
     "githubRepo": "https://github.com/5hadytru/so101_bench",
@@ -2069,7 +2258,7 @@
      "SO-101 Bench"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 38
+    "githubStars": 40
    },
    "publishedAt": "2026-10-26T20:00:00.000Z",
    "title": "SO-101 Bench: Accessible Spatial Manipulation",
@@ -2170,7 +2359,7 @@
      "name": "SempraETY"
     },
     "summary": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM.",
-    "upvotes": 232,
+    "upvotes": 233,
     "discussionId": "6ae41e08c3b566b041f6c873",
     "projectPage": "https://www.inclusion-ai.org/IDM/?lang=zh",
     "githubRepo": "https://github.com/inclusionAI/IDM",
@@ -2380,7 +2569,7 @@
      "name": "MindscapeRAG"
     },
     "summary": "Locating relevant evidence in long inputs is a core capability of Multimodal Large Language Models. Prior studies attribute this capability to retrieval heads, a sparse set of attention heads that transfer information from the context to the output. However, these analyses are confined to a limited set of modalities and the corresponding models. Moreover, how retrieval heads can be leveraged to enhance the model calls for further exploration. In this paper, we ask whether this mechanism expands together with the input modalities of the model. Taking audio-visual input as a newly added modality, we construct paired inputs in which the same answer is either spoken or shown on screen. With the evidence content fixed, retrieval heads remain sparse in the new modality and are shared to a large extent across modalities. Across 18 language, vision-language, and omni-modal checkpoints, omni-modal models largely preserve the retrieval heads of their backbones. Ablating these heads eliminates nearly all audio-visual retrieval. The heads shared across modalities make up fewer than 2\\% of all heads, yet ablating them also degrades document understanding, spatial perception, and visual mathematics. Building on these findings, we turn retrieval heads into a target of optimization by training their attention with a ranking objective. This raises the page Recall@1 of Qwen3-VL-8B on MMDocIR by 6.03 points and improves document retrieval across three model families. Functional attention heads can thus serve both as a lens on multimodal models and as a target for improving them.",
-    "upvotes": 25,
+    "upvotes": 26,
     "discussionId": "6ae41676c3b566b041f6c85e",
     "projectPage": "https://qdcassie-li.github.io/MLLM-Retrieval-heads/",
     "ai_summary": "Retrieval heads remain sparse and shared across audio-visual modalities, and optimizing them improves document retrieval performance in multimodal models.",
@@ -2673,7 +2862,7 @@
    "title": "AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding",
    "summary": "Recent advances in multimodal large language models have increased interest in interaction paradigms for video understanding. The evolution from offline to streaming and proactive interaction has gradually shifted models from passive responders toward more proactive agents that can decide when to answer. However, existing proactive paradigms typically assume that the information required to answer a query is complete, leaving models to only wait or answer. In the real world, however, information is often incomplete due to uncertainty from either the video or the user. In proactive paradigms, such uncertainty can cause the model to wait forever or generate highly hallucinatory responses. We therefore argue that proactive interaction should be redefined with a third action: ask, allowing models to actively ask for missing information. To study when and what models should ask before answering, we introduce AskStream, the first multi-turn benchmark spanning video and user uncertainty for streaming video understanding, with four task categories and eight subtasks. It contains 438 videos with 2,714 manually annotated frame-level time windows across three types: wait, ask, and answer. Across both multiple-choice and open-ended settings, even the strongest model attains only 52.18% on our proposed Ask-F1 metric, highlighting substantial limitations in proactive information seeking under uncertainty.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38678.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "67d15f29bacfd19231a6e178",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67d15f29bacfd19231a6e178/nbm1rAJgnH-QdEZS2tF8Z.png",
@@ -3192,7 +3381,7 @@
      "name": "void-2024"
     },
     "summary": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6ae1a17ea5eb0647c2907609",
     "projectPage": "https://vibegame.tettet.org",
     "githubRepo": "https://github.com/tettethu/VibeGame",
@@ -3456,7 +3645,7 @@
      "name": "Tingyang-Chen"
     },
     "summary": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
-    "upvotes": 29,
+    "upvotes": 30,
     "discussionId": "6ae2afe2d670fc6ea896c7f3",
     "githubRepo": "https://github.com/IQuestLab/WorkFactory",
     "githubRepoAddedBy": "user",
@@ -5291,7 +5480,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -5659,180 +5848,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e396f2b5bb631e9b2fac9a/6I146aJvxxlRCEbYFFAeQ.png"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.30435",
-    "authors": [
-     {
-      "_id": "6ae28eebd670fc6ea896c757",
-      "name": "Taewhoo Lee",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c758",
-      "name": "Minju Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c759",
-      "name": "Jungwoo Park",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75a",
-      "name": "Chanwoong Yoon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75b",
-      "name": "Junha Jung",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75c",
-      "name": "Hyeon Hwang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75d",
-      "name": "Sanghoon Lee",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75e",
-      "name": "Minbyul Jeong",
-      "hidden": false
-     },
-     {
-      "_id": "6ae28eebd670fc6ea896c75f",
-      "name": "Jaewoo Kang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
-    "submittedOnDailyBy": {
-     "_id": "6225c3ddc201a0ad62fee53d",
-     "avatarUrl": "/avatars/13b8d31df0fd2a0362e7839a093e3432.svg",
-     "isPro": false,
-     "fullname": "Taewhoo Lee",
-     "user": "Taewhoo",
-     "type": "user",
-     "name": "Taewhoo"
-    },
-    "summary": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, despite operating as a standalone RL framework with no inference-time scaffolding. Beyond final performance, SARL maintains training stability under extended search horizons, a regime where existing methods consistently degrade, enabling sustained gains as task complexity grows.",
-    "upvotes": 3,
-    "discussionId": "6ae28eecd670fc6ea896c760",
-    "ai_summary": "Self-Assessment Reinforcement Learning trains search agents to recognize missing information and improve search efficiency without extra inference-time assessment.",
-    "ai_keywords": [
-     "Self-Assessment Reinforcement Learning",
-     "SARL",
-     "search-state awareness",
-     "dual reward design",
-     "multi-hop reasoning",
-     "deep research",
-     "reinforcement learning"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
-   "summary": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, despite operating as a standalone RL framework with no inference-time scaffolding. Beyond final performance, SARL maintains training stability under extended search horizons, a regime where existing methods consistently degrade, enabling sustained gains as task complexity grows.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30435.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6225c3ddc201a0ad62fee53d",
-    "avatarUrl": "/avatars/13b8d31df0fd2a0362e7839a093e3432.svg",
-    "fullname": "Taewhoo Lee",
-    "name": "Taewhoo",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2509.05512",
-    "authors": [
-     {
-      "_id": "6ae25953d670fc6ea896c6ae",
-      "user": {
-       "_id": "66982313fd52271e0bb0e530",
-       "avatarUrl": "/avatars/fbf8b34799cee2c41d4afc11223b26ca.svg",
-       "isPro": true,
-       "fullname": "Bryce",
-       "user": "bag100",
-       "type": "user",
-       "name": "bag100"
-      },
-      "name": "Bryce Grant",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T20:09:11.859Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae25953d670fc6ea896c6af",
-      "name": "Peng Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
-    "submittedOnDailyBy": {
-     "_id": "66982313fd52271e0bb0e530",
-     "avatarUrl": "/avatars/fbf8b34799cee2c41d4afc11223b26ca.svg",
-     "isPro": true,
-     "fullname": "Bryce",
-     "user": "bag100",
-     "type": "user",
-     "name": "bag100"
-    },
-    "summary": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
-    "upvotes": 2,
-    "discussionId": "6ae25953d670fc6ea896c6b0",
-    "projectPage": "https://cwru-aism.github.io/QUANpaper/",
-    "githubRepo": "https://github.com/bryceag11/QUAN_ultralytics",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "QUAN is a quaternion-based deep learning framework that approximates quaternion convolution with real-valued operations to achieve rotation-equivariant image classification and object detection with improved efficiency.",
-    "ai_keywords": [
-     "quaternion algebra",
-     "rotation equivariant",
-     "quaternion convolution",
-     "Hamilton product decomposition",
-     "Independent Quaternion Batch Normalization",
-     "spatial attention",
-     "quaternion neural networks",
-     "Convolutional Neural Networks"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
-   "summary": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2509.05512.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66982313fd52271e0bb0e530",
-    "avatarUrl": "/avatars/fbf8b34799cee2c41d4afc11223b26ca.svg",
-    "fullname": "Bryce",
-    "name": "bag100",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
