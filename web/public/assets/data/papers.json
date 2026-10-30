@@ -1,8 +1,135 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-29T23:02:00.784Z",
+ "fetchedAt": "2026-10-30T01:15:56.186Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.27100",
+    "authors": [
+     {
+      "_id": "6ae3c4b7c3b566b041f6c678",
+      "user": {
+       "_id": "6a8c4cc08139965f5faaa3ec",
+       "avatarUrl": "/avatars/5a9bd67ba14b70fca3c04d174a99d42e.svg",
+       "isPro": false,
+       "fullname": "George Nigmatulin",
+       "user": "george-nigm",
+       "type": "user",
+       "name": "george-nigm"
+      },
+      "name": "George Nigmatulin",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-30T00:45:04.539Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c679",
+      "name": "Valentin Mohl",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67a",
+      "name": "Sascha Frey",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67b",
+      "name": "Kang Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67c",
+      "name": "Aramis Marti-Shahandeh",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67d",
+      "name": "Mihai Cucuringu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67e",
+      "name": "Anisoara Calinescu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c67f",
+      "name": "Jakob Foerster",
+      "hidden": false
+     },
+     {
+      "_id": "6ae3c4b7c3b566b041f6c680",
+      "name": "Stefan Zohren",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6a8c4cc08139965f5faaa3ec/cP2bQKqD_G1US41VwCyC0.png"
+    ],
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
+    "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
+    "submittedOnDailyBy": {
+     "_id": "6a8c4cc08139965f5faaa3ec",
+     "avatarUrl": "/avatars/5a9bd67ba14b70fca3c04d174a99d42e.svg",
+     "isPro": false,
+     "fullname": "George Nigmatulin",
+     "user": "george-nigm",
+     "type": "user",
+     "name": "george-nigm"
+    },
+    "summary": "Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distributional comparison with historical data, leaving counterfactual response to an agent's own orders largely unexplored. Here, we show that market impact emerges naturally in neural LOB generators trained solely for next-token prediction. We inject execution-style metaorders into the generated message flow of five autoregressive models across five NASDAQ stocks and measure the response using estimators from the empirical impact literature, validated on baselines whose physics is known in advance. Our benchmark evaluates any message-level generator in three phases: free generation (reading order-flow persistence against price diffusivity); metaorder injection (yielding the impact law's exponent and amplitude); and a post-execution window (measuring relaxation). In addition, comparing each visible injection to a blind, simulator-only control isolates the model's learned response from standard book mechanics. For every model on every stock, we measure how the impact responds as a function of cumulative metaorder participation. Interestingly, we observe emergent impact in generative models of market data, with exponents in the range of 0.63 to 1.21, slightly above the traditional 0.5 of the square-root law of impact. In the family of models tested, we are so far unable to observe impact decay during relaxation. We tentatively attribute this to the still-short context windows of the models. We release the benchmark as open source to validate future generative models for market data.",
+    "upvotes": 0,
+    "discussionId": "6ae3c4b8c3b566b041f6c681",
+    "projectPage": "https://george-nigmatulin.github.io/lob_impact/",
+    "githubRepo": "https://github.com/george-nigmatulin/lob_impact",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Neural generative limit order book models trained for next-token prediction exhibit emergent market impact under metaorder injection, though relaxation decay remains unobserved due to limited context windows.",
+    "ai_keywords": [
+     "autoregressive models",
+     "next-token prediction",
+     "neural LOB generators",
+     "generative models",
+     "context windows"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 3,
+    "organization": {
+     "_id": "6a824ce6133e4a50d69b85cd",
+     "name": "oxford-lob",
+     "fullname": "BOLD-Quant-Team",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6669bf790fb5c7d1658df3ab/nhlbwQW2bKdtD-1Mc5ySa.png"
+    }
+   },
+   "publishedAt": "2026-10-18T20:00:00.000Z",
+   "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
+   "summary": "Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distributional comparison with historical data, leaving counterfactual response to an agent's own orders largely unexplored. Here, we show that market impact emerges naturally in neural LOB generators trained solely for next-token prediction. We inject execution-style metaorders into the generated message flow of five autoregressive models across five NASDAQ stocks and measure the response using estimators from the empirical impact literature, validated on baselines whose physics is known in advance. Our benchmark evaluates any message-level generator in three phases: free generation (reading order-flow persistence against price diffusivity); metaorder injection (yielding the impact law's exponent and amplitude); and a post-execution window (measuring relaxation). In addition, comparing each visible injection to a blind, simulator-only control isolates the model's learned response from standard book mechanics. For every model on every stock, we measure how the impact responds as a function of cumulative metaorder participation. Interestingly, we observe emergent impact in generative models of market data, with exponents in the range of 0.63 to 1.21, slightly above the traditional 0.5 of the square-root law of impact. In the family of models tested, we are so far unable to observe impact decay during relaxation. We tentatively attribute this to the still-short context windows of the models. We release the benchmark as open source to validate future generative models for market data.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6a8c4cc08139965f5faaa3ec/cP2bQKqD_G1US41VwCyC0.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.27100.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "6a8c4cc08139965f5faaa3ec",
+    "avatarUrl": "/avatars/5a9bd67ba14b70fca3c04d174a99d42e.svg",
+    "fullname": "George Nigmatulin",
+    "name": "george-nigm",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6a824ce6133e4a50d69b85cd",
+    "name": "oxford-lob",
+    "fullname": "BOLD-Quant-Team",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6669bf790fb5c7d1658df3ab/nhlbwQW2bKdtD-1Mc5ySa.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2610.37626",
@@ -65,7 +192,7 @@
    "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
    "summary": "Visual generation requires both high-level semantic knowledge and fine-grained pixel details. We propose a learning paradigm that assigns these roles to autoregressive pretraining for knowledge acquisition and diffusion post-training for high-fidelity rendering. Within this framework, we study the objective, representation, and scaling of knowledge acquisition and rendering. Controlled comparisons identify autoregression as the stronger pretraining objective for downstream rendering, improving both learning efficiency and final generation quality. We further find that AR-only generation quality does not necessarily correlate with final performance; semantic quality matters more. This motivates a purely semantic tokenizer trained with language supervision alone, without an image decoder or reconstruction loss. We establish compute-optimal scaling laws for knowledge acquisition and rendering, and find that autoregressive pretraining lowers the fitted asymptotic rendering loss compared with pixel diffusion models trained from scratch. Guided by the laws, we train a 3B-parameter text-to-image model with only 6,600 H100 GPU-hours, achieving 86 on GenEval and 87 on DPG-Bench and validating the proposed paradigm at scale.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37626.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65de9c6cf68c3d3bac330509",
     "avatarUrl": "/avatars/bf1d27da6a8cb08d9ddf243e19766fb6.svg",
@@ -137,7 +264,7 @@
    "title": "Instruction Capacity: Behavior and Degradation of Language Models under Controlled Load",
    "summary": "The quality with which language models follow instructions falls as the load grows, yet there is still no quantity that expresses the limit of a model in units of load with an uncertainty. We propose an instrument in which the load consists of rules that replace single-token words in a text without meaning: such an instruction is atomic, the rules are independent by the construction of the task, and the outcome of every application of a rule is determined by a computable reference answer. Every occurrence of a word to be replaced becomes a Bernoulli trial with a known position in the answer and a known rule number. The statistical model first measures the shape of the dependence of the probability of a right replacement on the text length, the word position, the replacement density, the number of rules and the rule number, then describes it by smooth laws and restores a reference level that does not depend on the choice of the coding. The model yields the instruction capacity - the number of rules held at a given share of right replacements - with an uncertainty. A measurement of GPT-4o mini (2958 requests, 642,430 trials) gave regular laws for every load factor and for the collapse of the answer; the instruction capacity was about 37-38 rules at a share of right replacements of 0.95, and about 18-19 rules at the full replacement density. The code of the instrument, the measurement data and the passport are open, and every number of the passport is recomputed from the published points. The passport of a model serves as the calibration of a future meter of the instruction load of prompts.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36095.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "631ef1d1c1a8269da392da6a",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ef1d1c1a8269da392da6a/FQVxB3VfpBYfszmMszEkT.png",
@@ -148,6 +275,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -282,7 +410,7 @@
    "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
    "summary": "As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety risks. While closed-source releases are routinely accompanied by comprehensive system cards, open-weight models receive less scrutiny regarding frontier risks. To address this gap, we present an independent safety evaluation of DeepSeek V4.1 Flash-1017, the latest version of V4.1 Flash that departs from V4 with a new architecture, scaled-up training, and strong agentic capabilities. Drawing on the EU General-Purpose AI Code of Practice, we evaluate the model across 34 benchmarks, including 5 in-house suites, spanning evaluation integrity, loss of control, and harmful manipulation. Conforming to the AEF-1 standard, we compare V4.1 Flash-1017 against V4.1 Flash, earlier DeepSeek V4 models, and leading closed-source systems (GPT-6 Astra, GPT-5.6 Sol, and Gemini 3.8 Flash). Overall, V4.1 Flash-1017 shows substantial safety improvements over the V4 generation and approaches or matches leading closed-source baselines on several dimensions, while still exhibiting notable behaviors that warrant continued attention. Building on our findings, we highlight three key observations and recommendations. First, because safety can shift and even regress across minor updates, developers should integrate safety evaluation into incremental releases. Second, as final-turn outputs and end-state checks alone cannot reliably detect loss-of-control behaviors, deployments require process-level observability across both reasoning traces and action logs. Third, because public benchmarks elicit strong evaluation awareness and face data contamination risks, developing private benchmarks is essential for trustworthy frontier evaluation.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35671.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63a369d98c0c89dcae3b8329",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a369d98c0c89dcae3b8329/AiH2zjy1cnt9OADAAZMLD.jpeg",
@@ -381,7 +509,7 @@
    "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
    "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20832.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6701d4e7eb760972bc1c0682",
     "avatarUrl": "/avatars/0478cbbc883d4cdf8bf9dbe3bc1f3459.svg",
@@ -576,7 +704,7 @@
    "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
    "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22507.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "66d82581b842183143b87da8",
     "avatarUrl": "/avatars/5766c928f517434ee0c88c2c251905aa.svg",
@@ -664,7 +792,7 @@
    "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
    "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30132.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65d73ac991dbd0f8b399ab73",
     "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
@@ -758,7 +886,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30161.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "68ad42bca1f07af43fcfcead",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
@@ -873,7 +1001,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/674d339d937bbd33958bb004/dF1PupdQO6AusnVxQto1e.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29702.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "674d339d937bbd33958bb004",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fcnYFN5C12VYWXiVQ_I7b.png",
@@ -1026,7 +1154,7 @@
    "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
    "summary": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34186.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6586817e509bcae23f3dfc60",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pwEStoey1XJYDi3F0Z930.png",
@@ -1110,7 +1238,7 @@
    "title": "OmniSpectra: A Unified Foundation Model for Universal Spectra Representation Learning",
    "summary": "Standard sequence models encode position by token rank rather than physical coordinate, typically forcing practitioners to destructively resample continuous physical signals such as spectra observed across heterogeneous instruments. We identify this coordinate mismatch as a structural limitation in cross-instrument representation learning, and propose OmniSpectra, a wavelength-native foundation model for spectral representation learning: a continuous-coordinate masked autoencoder that discards the integer pixel indexing of sequence modeling. Mapping physical coordinates to a logarithmic basis turns the multiplicative scaling induced by cosmological redshift into a uniform additive shift. In continuous rotary position embeddings, this shared shift cancels from relative token distances rather than producing grid-dependent positional distortion. We further counter the spectral bias inherent to implicit neural decoders with a physics-grounded, resolution-gated Fourier decoder that provides anti-aliasing. Pretrained on eight surveys and benchmarked against seven baselines, our model reaches state-of-the-art performance with only 12.2M parameters while outperforming substantially larger models, indicating that encoding physical structure can substitute for parameter scale.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.15351.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6461cc67ddb3aaa43c8afef3",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/wqPC4tHBrFRcxpqkJW3qD.png",
@@ -1213,7 +1341,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/65f6afa36ea40b9a29dd45ca/XSpr8GDMKI7TKNxxE1l2e.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31670.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65f6afa36ea40b9a29dd45ca",
     "avatarUrl": "/avatars/f8ece25687802cede4b23280325fb4c8.svg",
@@ -1300,7 +1428,7 @@
      "name": "lsh-algorithm"
     },
     "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6ae1d18ea5eb0647c2907751",
     "ai_summary": "TAO improves scheduling for LLM agent services by considering tool readiness and using dynamic programming to place sessions, reducing latency and increasing throughput.",
     "ai_keywords": [
@@ -1327,7 +1455,7 @@
    "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
    "summary": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37230.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "661cb57f851baf948bca33a4",
     "avatarUrl": "/avatars/5077723bfe0b5600f0346cc995cc0dc1.svg",
@@ -1405,7 +1533,7 @@
      "name": "Justin4AI"
     },
     "summary": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
-    "upvotes": 42,
+    "upvotes": 44,
     "discussionId": "6ae2bb71d670fc6ea896c82c",
     "projectPage": "https://justin4ai.github.io/OmniShowcase/",
     "githubRepo": "https://github.com/justin4ai/OmniShowcase",
@@ -1435,7 +1563,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/632872d5ed473b0259e482fa/eEUbC0NeLSc1fr70XJZGw.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35684.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "632872d5ed473b0259e482fa",
     "avatarUrl": "/avatars/f05033fdcc255b4d5eb15109f3043c22.svg",
@@ -1533,7 +1661,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6387676c23da90491eb9fb16/fyfAlyMRka4HqWEFfbAoN.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32749.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6387676c23da90491eb9fb16",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669818175965-noauth.jpeg",
@@ -4782,7 +4910,7 @@
      "Capability-Aware Harness Router"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 26,
+    "githubStars": 30,
     "organization": {
      "_id": "6508ab2b349930913196378b",
      "name": "NationalUniversityofSingapore",
@@ -6590,7 +6718,18 @@
      },
      {
       "_id": "6ae167dda5eb0647c29073f9",
+      "user": {
+       "_id": "675f283bc4dc0430aa1f3bfc",
+       "avatarUrl": "/avatars/215b0dbbb883cebcc777aa1796fd0514.svg",
+       "isPro": false,
+       "fullname": "Shashwat Verma",
+       "user": "shashwat14",
+       "type": "user",
+       "name": "shashwat14"
+      },
       "name": "Shashwat Verma",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-30T00:45:04.512Z",
       "hidden": false
      },
      {
@@ -7735,7 +7874,7 @@
      "name": "chyun"
     },
     "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
-    "upvotes": 52,
+    "upvotes": 53,
     "discussionId": "6ae15d94a5eb0647c290723a",
     "projectPage": "https://thinkworld-project.github.io/",
     "ai_summary": "ThinkWorld improves robotic generalization by representing actions as dynamics chains and using world imagination to learn from unlabeled human videos.",
@@ -7783,122 +7922,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.35724",
-    "authors": [
-     {
-      "_id": "6ae1609aa5eb0647c290724c",
-      "user": {
-       "_id": "69df73d051cf1a3591b7fdda",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69df73d051cf1a3591b7fdda/eHwHYMhPKJsm9Ug26RPS7.jpeg",
-       "isPro": false,
-       "fullname": "Shuyun Wang",
-       "user": "Shuyun-Wang",
-       "type": "user",
-       "name": "Shuyun-Wang"
-      },
-      "name": "Shuyun Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-28T08:45:05.428Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1609aa5eb0647c290724d",
-      "name": "Shangchen Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1609aa5eb0647c290724e",
-      "name": "Peiqing Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1609aa5eb0647c290724f",
-      "name": "Yuekun Dai",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1609aa5eb0647c2907250",
-      "name": "Xin Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae1609aa5eb0647c2907251",
-      "name": "Chen Change Loy",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/69df73d051cf1a3591b7fdda/xv9bXigtaMkt94Y06ct25.mp4"
-    ],
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-28T00:00:00.000Z",
-    "title": "MatAnyone-E: Sparse Memory Propagation for Efficient High-Resolution Video Matting",
-    "submittedOnDailyBy": {
-     "_id": "69df73d051cf1a3591b7fdda",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69df73d051cf1a3591b7fdda/eHwHYMhPKJsm9Ug26RPS7.jpeg",
-     "isPro": false,
-     "fullname": "Shuyun Wang",
-     "user": "Shuyun-Wang",
-     "type": "user",
-     "name": "Shuyun-Wang"
-    },
-    "summary": "High-resolution video matting requires preserving fine details, such as hair strands and soft transparency, while maintaining consistency across frames. Memory-based methods achieve strong matting quality by matching current-frame features with information stored from earlier frames, but this process becomes increasingly costly as resolution grows. We present MatAnyone-E, an efficient extension of MatAnyone 2 that focuses computation where it is most needed. Our approach first performs low-resolution propagation to identify uncertain regions that require closer inspection and the memory candidates most relevant to them. It then performs high-resolution matching only for these regions using the selected memory, while reusing low-resolution matching results elsewhere. This strategy reduces both the number of locations requiring detailed matching and the amount of memory searched, while preserving the information needed to produce a complete matte. We further reduce the cost of generating high-resolution mattes with a lightweight decoder designed around measured runtime bottlenecks and trained to reproduce the original decoder's representations. Experiments show that MatAnyone-E maintains matting quality comparable to MatAnyone 2 while achieving an estimated 7.4x inference speedup and reducing peak GPU memory usage to 7.6% of the usage of MatAnyone 2 at 4K. With compilation-enabled inference on a single NVIDIA H200 GPU, it reaches 73.07 FPS at 1080p and 28.62 FPS at 4K.",
-    "upvotes": 18,
-    "discussionId": "6ae1609aa5eb0647c2907252",
-    "projectPage": "https://shuyun-wang.github.io/projects/MatAnyone-E",
-    "githubRepo": "https://github.com/Shuyun-Wang/MatAnyone-E",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "MatAnyone-E accelerates high-resolution video matting by selectively applying high-resolution matching to uncertain regions and using a lightweight decoder, achieving large speedups with preserved quality.",
-    "ai_keywords": [
-     "video matting",
-     "memory-based methods",
-     "low-resolution propagation",
-     "high-resolution matching",
-     "memory candidates",
-     "lightweight decoder",
-     "inference speedup",
-     "GPU memory"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 76,
-    "organization": {
-     "_id": "62d55f243bf5e059f7ca25ba",
-     "name": "mmlab-ntu",
-     "fullname": "MMLab@NTU",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-    }
-   },
-   "publishedAt": "2026-10-25T20:00:00.000Z",
-   "title": "MatAnyone-E: Sparse Memory Propagation for Efficient High-Resolution Video Matting",
-   "summary": "High-resolution video matting requires preserving fine details, such as hair strands and soft transparency, while maintaining consistency across frames. Memory-based methods achieve strong matting quality by matching current-frame features with information stored from earlier frames, but this process becomes increasingly costly as resolution grows. We present MatAnyone-E, an efficient extension of MatAnyone 2 that focuses computation where it is most needed. Our approach first performs low-resolution propagation to identify uncertain regions that require closer inspection and the memory candidates most relevant to them. It then performs high-resolution matching only for these regions using the selected memory, while reusing low-resolution matching results elsewhere. This strategy reduces both the number of locations requiring detailed matching and the amount of memory searched, while preserving the information needed to produce a complete matte. We further reduce the cost of generating high-resolution mattes with a lightweight decoder designed around measured runtime bottlenecks and trained to reproduce the original decoder's representations. Experiments show that MatAnyone-E maintains matting quality comparable to MatAnyone 2 while achieving an estimated 7.4x inference speedup and reducing peak GPU memory usage to 7.6% of the usage of MatAnyone 2 at 4K. With compilation-enabled inference on a single NVIDIA H200 GPU, it reaches 73.07 FPS at 1080p and 28.62 FPS at 4K.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/69df73d051cf1a3591b7fdda/xv9bXigtaMkt94Y06ct25.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35724.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "69df73d051cf1a3591b7fdda",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/69df73d051cf1a3591b7fdda/eHwHYMhPKJsm9Ug26RPS7.jpeg",
-    "fullname": "Shuyun Wang",
-    "name": "Shuyun-Wang",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "62d55f243bf5e059f7ca25ba",
-    "name": "mmlab-ntu",
-    "fullname": "MMLab@NTU",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
