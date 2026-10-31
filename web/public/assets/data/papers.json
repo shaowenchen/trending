@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-31T02:01:05.908Z",
+ "fetchedAt": "2026-10-31T04:15:58.694Z",
  "payload": [
   {
    "paper": {
@@ -552,7 +552,7 @@
      "continual learning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 5,
+    "githubStars": 12,
     "organization": {
      "_id": "691d9a1012cc4d473e1c862f",
      "name": "CarnegieMellonU",
@@ -741,7 +741,7 @@
      "text JEPA"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 5,
+    "githubStars": 26,
     "organization": {
      "_id": "66d46fac30d7ea0b28a1b98a",
      "name": "galilai-group",
@@ -1274,7 +1274,7 @@
      "name": "shenyunhang"
     },
     "summary": "We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities. Its design rests on one encoder for every modality and one schema for every task. Youtu-Omni-Encoder, initialized from a pre-trained language model to strengthen text reading, encodes all modalities with shared weights in a unified space-time coordinate system, and a few fusion layers let video frames attend to concurrent audio, bringing cross-modal fusion and temporal alignment into perception itself. OmniSchema unifies the outputs of all ten parsing tasks, allowing a single self-evolving post-training procedure, OmniSchema-Aware On-Policy Distillation (OSAD), to provide a shared token-role-based objective across tasks. In each round, the model is trained on its own rollouts against token-level targets from a reference-conditioned copy of itself, which is then refreshed with the trained weights, so that the parser and its supervision co-evolve. With a single 5 B-parameter checkpoint, Youtu-Parsing-Omni achieves state-of-the-art performance on OmniDocBench v1.6 (96.96 Overall) and leads all open-weight models on OmniParsingBench (75.08 Avg.), with its advantage concentrated on audio and video. It also achieves the best overall chart-parsing score (95.02) and the highest exact chemical-fingerprint agreement among compared systems, and matches a dedicated optical-music model in character-level transcription of typeset sheet music while staying far ahead of general-purpose systems. Code and model weights are publicly available.",
-    "upvotes": 55,
+    "upvotes": 112,
     "discussionId": "6ae45f49c3b566b041f6ca9b",
     "projectPage": "https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni",
     "ai_summary": "Youtu-Parsing-Omni is a unified multi-modal parser that encodes documents, images, audio, and video into structured spatiotemporal records using shared weights and cross-modal fusion, achieving state-of-the-art results across parsing benchmarks through a self-evolving on-policy distillation procedure.",
@@ -1523,7 +1523,7 @@
      "name": "appletea2333"
     },
     "summary": "We present PhysInsert, a framework for physically plausible reference-based object insertion that jointly adapts objects and their surrounding scenes. Existing methods often rely on masked inputs, generation-based pairs, or training pairs with limited viewpoint variation, leaving pose and illumination adaptation and bidirectional object-scene interactions insufficiently constrained. We construct the Insert World dataset with strictly aligned Blender-rendered counterfactual pairs and object references across viewpoints and lighting conditions. Building on these data, Geometry-Guided Adaptation couples a VGGT geometry stream with image and text streams under target-scene feature supervision to guide spatially consistent insertion. Complementary 2D Object-Scene Spatial Supervision jointly supervises object occupancy and environmental changes while grounding spatial instructions in object regions through image-text attention. We introduce PhysInsert-Bench with dedicated cross-environment and cross-view cases requiring illumination and pose adaptation beyond appearance copying. Experiments on PhysInsert-Bench and DreamBooth demonstrate improved image fidelity; a user study further shows more accurate placement and improved lighting integration, perspective, and pose plausibility.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6ae433e2c3b566b041f6c904",
     "projectPage": "https://arthuring.github.io/PhysInsert/",
     "ai_summary": "PhysInsert enables physically plausible object insertion by jointly adapting objects and scenes using geometry-guided adaptation and spatial supervision on aligned counterfactual data.",
@@ -1814,7 +1814,7 @@
      "name": "Gokottaw434"
     },
     "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost.",
-    "upvotes": 31,
+    "upvotes": 35,
     "discussionId": "6ae44231c3b566b041f6c956",
     "projectPage": "https://yangjiongfan.site/specslot/",
     "githubRepo": "https://github.com/JiongfanYang/SpecSlot",
@@ -1836,7 +1836,7 @@
    "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
    "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40647.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "68370f225b8acaa67dfe76ff",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68370f225b8acaa67dfe76ff/ZlybZgEspZVfWxVx8iMK4.jpeg",
@@ -1956,7 +1956,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/640585571a3babee78e88941/HjT1mnQZZrQGpxGFAUX1v.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40614.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "640585571a3babee78e88941",
     "avatarUrl": "/avatars/2be3209394b820b3700b42bae493b6ac.svg",
@@ -1976,7 +1976,7 @@
     "fullname": "KAIST AI",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -2060,7 +2060,7 @@
      "name": "caiyuchen"
     },
     "summary": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and computation; a task taxonomy organized around professional analyst deliverables; and an expert-led framework linking scoring criteria to sources, calculations, and assumptions through financial dependency graphs. Evaluation spans 86 assignments and jointly assesses research quality, forecast accuracy, and simulated investment performance. GPT-6 Astra and Claude Opus 5.5 lead overall at 68.1 and 66.9 out of 100, yet even Astra scores only 52.5 on Forecast & Model. Our results show that even state-of-the-art models fail to translate overall research capability into predictive performance. ILE shifts the evaluation unit from isolated capabilities to the evidence--assumption--judgment chain, allowing researchers to locate where analytical advantages fail to translate into forecasts and investment judgments, and providing a traceable, diagnostic foundation for training and evaluating financial agents.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6ae438f9c3b566b041f6c91f",
     "projectPage": "https://prophet-lab.cn/benchmarks/investor-last-exam-v1/",
     "githubRepo": "https://github.com/Prophetlab/Investor-Last-Exam",
@@ -2437,7 +2437,7 @@
      "name": "zhshj0110"
     },
     "summary": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
-    "upvotes": 157,
+    "upvotes": 158,
     "discussionId": "6ae42126c3b566b041f6c890",
     "projectPage": "https://seerray-lab.github.io/A-RSI/",
     "ai_summary": "A-RSI improves recursive self-improvement by refreshing training tasks based on declining learning signals and using independently verifiable program-generated answers, raising benchmark performance without external labels.",
@@ -3092,7 +3092,7 @@
      "name": "SempraETY"
     },
     "summary": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM.",
-    "upvotes": 238,
+    "upvotes": 239,
     "discussionId": "6ae41e08c3b566b041f6c873",
     "projectPage": "https://www.inclusion-ai.org/IDM/?lang=zh",
     "githubRepo": "https://github.com/inclusionAI/IDM",
@@ -3468,7 +3468,7 @@
     "projectPage": "https://codesignbench.github.io/",
     "githubRepo": "https://github.com/Wiselnn570/Co-Design-Bench",
     "githubRepoAddedBy": "user",
-    "githubStars": 31,
+    "githubStars": 34,
     "organization": {
      "_id": "64c8b5837fe12ecd0a7e92eb",
      "name": "Qwen",
@@ -3689,7 +3689,7 @@
      "name": "xuhaiyang3110"
     },
     "summary": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae40e7ec3b566b041f6c820",
     "ai_summary": "EditAgent broadens agentic image editing by routing steps to diverse editors and using verification records for listwise judging, improving reliability and efficiency.",
     "ai_keywords": [
@@ -3856,7 +3856,7 @@
      "token efficiency"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13,
+    "githubStars": 15,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -4125,7 +4125,7 @@
      "name": "void-2024"
     },
     "summary": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ae1a17ea5eb0647c2907609",
     "projectPage": "https://vibegame.tettet.org",
     "githubRepo": "https://github.com/tettethu/VibeGame",
@@ -4145,7 +4145,7 @@
      "P2G"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 293,
+    "githubStars": 294,
     "organization": {
      "_id": "638f70e8f1256a80d4288555",
      "name": "nanjinguniv",
@@ -4262,7 +4262,7 @@
      "WebArena-Verified"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1
+    "githubStars": 2
    },
    "publishedAt": "2026-10-26T20:00:00.000Z",
    "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
