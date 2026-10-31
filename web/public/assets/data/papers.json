@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-10-31T20:01:10.549Z",
+ "fetchedAt": "2026-10-31T22:16:07.972Z",
  "payload": [
   {
    "paper": {
@@ -1068,7 +1068,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 32,
+    "followerCount": 33,
     "isUserFollowing": false
    },
    "organization": {
@@ -1408,7 +1408,7 @@
      "zero-shot sim-to-real transfer"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "66bada488c4119f92e6e8b81",
      "name": "IPEC-COMMUNITY",
@@ -1685,7 +1685,7 @@
      "name": "JaydenTeoh"
     },
     "summary": "Multi-Token Prediction (MTP) is now a common ingredient in language-model pre-training, as it improves downstream performance and enables faster inference through speculative decoding. We identify a flaw in standard MTP training, in which a residual component of the MTP gradient interferes with both next-token and multi-token learning, increasingly so with scale. Specifically, the MTP cross-entropy gradient can be decomposed exactly into a KL self-distillation term that pulls each MTP head toward the model's own next-token prediction (NTP) distribution and improves speculative decoding, and a residual that has a low signal-to-noise ratio and buries the useful KL signal. We introduce the KL gradient-recovery trick: when two distributions share a linear output head, the gradient of their KL divergence can be recovered exactly by combining their cross-entropy gradients through straight-through gradient routing. Unlike minimizing the KL directly, this trick requires no vocabulary-sized logit matrices and is compatible with standard fused cross-entropy kernels. This enables Soft Multi-Token Prediction (Soft-MTP), a one-line code change to MTP that removes the noisy residual and backpropagates only the KL self-distillation signal by reusing the existing NTP and MTP cross-entropy computations. Soft-MTP supports both DeepSeek- and Meta-style MTP, adds no parameters, and incurs no measurable overhead. From 167M to 1.2B parameters, Soft-MTP improves over standard MTP with lower NTP perplexity, faster speculative decoding and higher zero-shot accuracy at every scale, lower MTP perplexity from 689M onward, and stronger math and code reasoning after fine-tuning at 1.2B. Soft-MTP also matches, if not exceeds, direct KL divergence minimization on most metrics. Soft-MTP is, in effect, a free lunch for MTP optimization. Our code can be found at https://github.com/JaydenTeoh/Soft-MTP.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6ae43c86c3b566b041f6c933",
     "githubRepo": "https://github.com/JaydenTeoh/Soft-MTP",
     "githubRepoAddedBy": "user",
@@ -1700,7 +1700,7 @@
      "next-token prediction"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 32,
+    "githubStars": 48,
     "organization": {
      "_id": "62cf234c216602c3f3123382",
      "name": "Massachusetts-Institute-of-Technology",
@@ -1818,7 +1818,7 @@
      "text-to-image generation"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 31
+    "githubStars": 33
    },
    "publishedAt": "2026-10-28T20:00:00.000Z",
    "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
@@ -2693,7 +2693,7 @@
      "low-rate tokenization"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 12,
+    "githubStars": 13,
     "organization": {
      "_id": "640a887796aae649741a586f",
      "name": "CASIA",
@@ -3482,7 +3482,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 6,
+    "followerCount": 7,
     "isUserFollowing": false
    },
    "organization": {
@@ -5776,7 +5776,7 @@
      "embodied planning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1
+    "githubStars": 2
    },
    "publishedAt": "2026-10-20T20:00:00.000Z",
    "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
