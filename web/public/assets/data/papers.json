@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-01T11:46:03.520Z",
+ "fetchedAt": "2026-11-01T14:01:14.886Z",
  "payload": [
   {
    "paper": {
@@ -334,7 +334,7 @@
    "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
    "summary": "Language agents increasingly act through external tools and interactive environments, making the interface between the model and its executable capabilities part of the decision process. Model Context Protocol (MCP) and command-line interfaces (CLI) can expose the same semantic operations through markedly different model-facing representations. We study whether these representational differences change agent behavior when executable capabilities are matched. We introduce Matched Interface Comparison and Analysis (MICA), which renders MCP and CLI from a shared semantic action contract and routes decoded actions through the same runtime. Across six models and three interactive environments, matched interfaces produce substantial differences in task performance and interaction cost. These effects extend beyond surface validity to semantic action selection, failure pathways, and recovery. Matched-state probes localize sensitivity to capability presentation, realization, and feedback. Paired natural trajectories reveal structured divergence in 94.3% of 2,004 episodes and show that early differences propagate through subsequent interaction. This analysis identifies interface realization as a direct intervention boundary. We therefore introduce Decoupled Action Realization and Targeted Repair (DART), which preserves validated semantic commitments while repairing interface-specific realization. DART improves benchmark score in all six evaluated settings by up to 9.0 points and reduces MCP token cost in all three environments by up to 27.1k tokens per task. Together, these results establish interface representation as part of the closed-loop decision environment shaping agent behavior.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34298.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "673c593615bf70b248c1a487",
     "avatarUrl": "/avatars/8beee7deac9dba7cc8dfdd8cef7fe483.svg",
@@ -1053,7 +1053,7 @@
      "novel-view synthesis"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 20,
+    "githubStars": 22,
     "organization": {
      "_id": "627bbc28fbab61b048eba8b6",
      "name": "Oxford",
@@ -2559,7 +2559,7 @@
      "name": "hyeon9698"
     },
     "summary": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adaptive decision is needed rather than a fixed schedule. Without training or a tuned threshold, LOWN retains 99.6% of LLaDA-V's score on ten benchmarks at 35.3% of the decoding FLOPs on average. LOWN also generalizes across LLaDA-based DVLMs, composes orthogonally with visual token pruning, and runs under key-value caching for further efficiency gains. Code and project page are available at https://hyeon9698.github.io/LOWN/",
-    "upvotes": 100,
+    "upvotes": 101,
     "discussionId": "6ae43303c3b566b041f6c8f9",
     "projectPage": "https://hyeon9698.github.io/LOWN/",
     "githubRepo": "https://github.com/hyeon9698/LOWN",
@@ -2884,7 +2884,7 @@
      "name": "hyz317"
     },
     "summary": "The hair of stylized characters in games and avatars is built from hair cards: artist-placed ribbons whose geometry is the visible hair, animated by spring bones. Existing image-based methods produce realistic hair or a single fused mesh, while CHARM, the only generator of stylized hair cards, decodes a hairstyle autoregressively as a long sequence of control points. Observing that a card hairstyle is an unordered set of artist-defined primitives, we propose HairDeck, which generates it as one: each card is a single token, and a set diffusion transformer denoises all cards together. From a single image, HairDeck generates the cards and the spring-bone chains that drive them, yielding an animatable asset that exports to ready-to-use downstream formats. On CHARM's own test set, it lowers Chamfer distance by 44% and card-orientation error by more than half while running 33 times faster, and from single images it outperforms CHARM, image-to-3D pipelines and strand-based methods. Project page: https://hyzcluster.github.io/HairDeck",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6ae423d2c3b566b041f6c899",
     "projectPage": "https://hyzcluster.github.io/HairDeck/",
     "githubRepo": "https://github.com/hyz317/HairDeck",
@@ -2990,7 +2990,7 @@
      "SO-101 Bench"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 41
+    "githubStars": 42
    },
    "publishedAt": "2026-10-26T20:00:00.000Z",
    "title": "SO-101 Bench: Accessible Spatial Manipulation",
@@ -4901,7 +4901,7 @@
      "context windows"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "6a824ce6133e4a50d69b85cd",
      "name": "oxford-lob",
