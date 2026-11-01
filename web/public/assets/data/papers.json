@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-01T16:16:07.335Z",
+ "fetchedAt": "2026-11-01T18:31:14.033Z",
  "payload": [
   {
    "paper": {
@@ -302,7 +302,7 @@
      "name": "sznnzs"
     },
     "summary": "Language agents increasingly act through external tools and interactive environments, making the interface between the model and its executable capabilities part of the decision process. Model Context Protocol (MCP) and command-line interfaces (CLI) can expose the same semantic operations through markedly different model-facing representations. We study whether these representational differences change agent behavior when executable capabilities are matched. We introduce Matched Interface Comparison and Analysis (MICA), which renders MCP and CLI from a shared semantic action contract and routes decoded actions through the same runtime. Across six models and three interactive environments, matched interfaces produce substantial differences in task performance and interaction cost. These effects extend beyond surface validity to semantic action selection, failure pathways, and recovery. Matched-state probes localize sensitivity to capability presentation, realization, and feedback. Paired natural trajectories reveal structured divergence in 94.3% of 2,004 episodes and show that early differences propagate through subsequent interaction. This analysis identifies interface realization as a direct intervention boundary. We therefore introduce Decoupled Action Realization and Targeted Repair (DART), which preserves validated semantic commitments while repairing interface-specific realization. DART improves benchmark score in all six evaluated settings by up to 9.0 points and reduces MCP token cost in all three environments by up to 27.1k tokens per task. Together, these results establish interface representation as part of the closed-loop decision environment shaping agent behavior.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6ae420b9c3b566b041f6c879",
     "projectPage": "https://modalitydance.github.io/MICA/",
     "githubRepo": "https://github.com/ModalityDance/MICA",
@@ -710,7 +710,7 @@
      "name": "RandallBalestriero"
     },
     "summary": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a Platonic Representation Theorem: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--good views--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with bad views, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
-    "upvotes": 61,
+    "upvotes": 63,
     "discussionId": "6ae4a81cac2aed10b8c1c171",
     "projectPage": "https://github.com/galilai-group/prh-proof",
     "githubRepo": "https://github.com/galilai-group/prh-proof",
@@ -755,7 +755,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 4,
+    "followerCount": 5,
     "isUserFollowing": false
    },
    "organization": {
@@ -1696,7 +1696,7 @@
      "name": "JaydenTeoh"
     },
     "summary": "Multi-Token Prediction (MTP) is now a common ingredient in language-model pre-training, as it improves downstream performance and enables faster inference through speculative decoding. We identify a flaw in standard MTP training, in which a residual component of the MTP gradient interferes with both next-token and multi-token learning, increasingly so with scale. Specifically, the MTP cross-entropy gradient can be decomposed exactly into a KL self-distillation term that pulls each MTP head toward the model's own next-token prediction (NTP) distribution and improves speculative decoding, and a residual that has a low signal-to-noise ratio and buries the useful KL signal. We introduce the KL gradient-recovery trick: when two distributions share a linear output head, the gradient of their KL divergence can be recovered exactly by combining their cross-entropy gradients through straight-through gradient routing. Unlike minimizing the KL directly, this trick requires no vocabulary-sized logit matrices and is compatible with standard fused cross-entropy kernels. This enables Soft Multi-Token Prediction (Soft-MTP), a one-line code change to MTP that removes the noisy residual and backpropagates only the KL self-distillation signal by reusing the existing NTP and MTP cross-entropy computations. Soft-MTP supports both DeepSeek- and Meta-style MTP, adds no parameters, and incurs no measurable overhead. From 167M to 1.2B parameters, Soft-MTP improves over standard MTP with lower NTP perplexity, faster speculative decoding and higher zero-shot accuracy at every scale, lower MTP perplexity from 689M onward, and stronger math and code reasoning after fine-tuning at 1.2B. Soft-MTP also matches, if not exceeds, direct KL divergence minimization on most metrics. Soft-MTP is, in effect, a free lunch for MTP optimization. Our code can be found at https://github.com/JaydenTeoh/Soft-MTP.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6ae43c86c3b566b041f6c933",
     "githubRepo": "https://github.com/JaydenTeoh/Soft-MTP",
     "githubRepoAddedBy": "user",
@@ -2575,7 +2575,7 @@
      "decoding FLOPs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13,
+    "githubStars": 14,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -2900,7 +2900,7 @@
      "image-to-3D"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 379,
+    "githubStars": 563,
     "organization": {
      "_id": "628735cbc83a2d6ab8d14a66",
      "name": "Tsinghua",
@@ -3235,7 +3235,7 @@
      "difficulty-targeted item rewriting"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 51,
+    "githubStars": 54,
     "organization": {
      "_id": "65448bef5b5d9185ba3202b9",
      "name": "UIUC-CS",
