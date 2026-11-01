@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-01T07:16:02.149Z",
+ "fetchedAt": "2026-11-01T09:31:08.976Z",
  "payload": [
   {
    "paper": {
@@ -787,7 +787,18 @@
      },
      {
       "_id": "6ae4a548ac2aed10b8c1c15e",
+      "user": {
+       "_id": "6702352c547acbd64cddf31e",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6702352c547acbd64cddf31e/IWrsbjI1fGTCHbeY92QlF.jpeg",
+       "isPro": false,
+       "fullname": "Vikash Singh",
+       "user": "optimusPrimeBee",
+       "type": "user",
+       "name": "optimusPrimeBee"
+      },
       "name": "Vikash Singh",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-01T08:45:04.626Z",
       "hidden": false
      },
      {
@@ -1408,7 +1419,7 @@
      "zero-shot sim-to-real transfer"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
+    "githubStars": 7,
     "organization": {
      "_id": "66bada488c4119f92e6e8b81",
      "name": "IPEC-COMMUNITY",
@@ -1700,7 +1711,7 @@
      "next-token prediction"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 48,
+    "githubStars": 63,
     "organization": {
      "_id": "62cf234c216602c3f3123382",
      "name": "Massachusetts-Institute-of-Technology",
@@ -1818,7 +1829,7 @@
      "text-to-image generation"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 33
+    "githubStars": 43
    },
    "publishedAt": "2026-10-28T20:00:00.000Z",
    "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
@@ -1912,7 +1923,7 @@
      "name": "wlsgur1018"
     },
     "summary": "Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to 38.6times fewer 3D primitives, 3.2times faster memory updates, and 359times faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.",
-    "upvotes": 38,
+    "upvotes": 39,
     "discussionId": "6ae44367c3b566b041f6c96b",
     "projectPage": "https://cvlab-kaist.github.io/L3G-World/",
     "githubRepo": "https://github.com/cvlab-kaist/L3G-World",
@@ -1929,7 +1940,7 @@
      "spatial consistency"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 25,
+    "githubStars": 31,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -2764,7 +2775,7 @@
      "name": "CauchyLovesU"
     },
     "summary": "Weight-normalized (WN) training is emerging as a compelling alternative to conventional weight decay (WD), with recent studies reporting substantial pretraining loss gains. We show that these gains are driven primarily by the induced effective learning rate (ELR) trajectory rather than by normalization alone. Matching ELR trajectories largely collapses the training loss dynamics of WN and WD. Schedule design should therefore target ELR rather than the nominal learning rate (LR) alone. Building on this principle, we propose AIR (Affine Inverse-square-Root decay), which combines a theoretically derived 1/t decay with an affine adjustment to satisfy prescribed peak and terminal LRs over a finite training horizon. We further identify late-stage ELR scheduling as a key source of its gains, because a shared late schedule attenuates the effect of earlier LR choices. Experiments on 128 B-token Mixture-of-Experts pretraining demonstrate that AIR outperforms cosine and other candidate schedules in training loss, downstream performance, and hyperparameter robustness, reducing terminal training loss by approximately 0.01 relative to cosine at matched cumulative LR. Applying the same ELR trajectory to WD reproduces the corresponding training dynamics, showing that the benefits extend beyond fixed-norm training and establishing ELR as the principled scheduling object.",
-    "upvotes": 5,
+    "upvotes": 17,
     "discussionId": "6ae428cec3b566b041f6c8ac",
     "ai_summary": "Effective learning rate trajectories primarily drive weight-normalized training gains, motivating an affine inverse-square-root schedule that improves large-scale pretraining loss and robustness.",
     "ai_keywords": [
@@ -2873,7 +2884,7 @@
      "name": "hyz317"
     },
     "summary": "The hair of stylized characters in games and avatars is built from hair cards: artist-placed ribbons whose geometry is the visible hair, animated by spring bones. Existing image-based methods produce realistic hair or a single fused mesh, while CHARM, the only generator of stylized hair cards, decodes a hairstyle autoregressively as a long sequence of control points. Observing that a card hairstyle is an unordered set of artist-defined primitives, we propose HairDeck, which generates it as one: each card is a single token, and a set diffusion transformer denoises all cards together. From a single image, HairDeck generates the cards and the spring-bone chains that drive them, yielding an animatable asset that exports to ready-to-use downstream formats. On CHARM's own test set, it lowers Chamfer distance by 44% and card-orientation error by more than half while running 33 times faster, and from single images it outperforms CHARM, image-to-3D pipelines and strand-based methods. Project page: https://hyzcluster.github.io/HairDeck",
-    "upvotes": 20,
+    "upvotes": 22,
     "discussionId": "6ae423d2c3b566b041f6c899",
     "projectPage": "https://hyzcluster.github.io/HairDeck/",
     "githubRepo": "https://github.com/hyz317/HairDeck",
@@ -3451,7 +3462,7 @@
      "name": "Wiselnn"
     },
     "summary": "Evaluating human-AI co-design requires testing whether coding agents can translate real users' multimodal requests into working application revisions. We introduce Co-Design Bench, a reference-free benchmark of 273 tasks curated from 37,463 deduplicated queries across 26,314 real user coding sessions. Its two tracks, Multimodal Editing (ME) and Repository Editing (RE), cover localized edits with optional image, audio, video, or document inputs and coordinated repository revisions. Tasks span three capability dimensions: Grounded Understanding, UI Transformation, and Functional Implementation. The tasks pair normalized requests and runnable pre-edit applications with 2,331 hidden expert-authored acceptance criteria. Our judge-then-refute protocol grades criteria using source and browser evidence, challenges positive verdicts with a separate LLM verifier, and audits visual and interaction claims without gold code or target screenshots. Under a shared agentic harness, the strongest of ten model endpoints passes an average of 69.9% of criteria per task but fully satisfies only 26.4% of tasks. All ten endpoints achieve lower criterion completion on repository edits spanning three or four change types than on those spanning one or two. Co-Design Bench provides a testbed for studying the gap between partial requirement satisfaction and complete task success under agentic execution for real-user application revisions.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6ae1b2c5a5eb0647c2907684",
     "projectPage": "https://codesignbench.github.io/",
     "githubRepo": "https://github.com/Wiselnn570/Co-Design-Bench",
@@ -4634,7 +4645,18 @@
      },
      {
       "_id": "6ae3f0dfc3b566b041f6c72e",
+      "user": {
+       "_id": "67914cd438ff8747626293a6",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/d9XqWSnWm8qt1e0BC4Lf1.png",
+       "isPro": false,
+       "fullname": "Xianghe (Jade) Xu",
+       "user": "jade1st",
+       "type": "user",
+       "name": "jade1st"
+      },
       "name": "Xianghe Xu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-01T08:45:04.609Z",
       "hidden": false
      },
      {
@@ -5060,7 +5082,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
