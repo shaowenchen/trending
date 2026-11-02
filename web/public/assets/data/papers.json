@@ -1,8 +1,83 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-02T12:31:10.875Z",
+ "fetchedAt": "2026-11-02T14:46:17.203Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.42010",
+    "authors": [
+     {
+      "_id": "6ae885f2c45846c345677359",
+      "name": "Ahmet Tuğrul Bayrak",
+      "hidden": false
+     },
+     {
+      "_id": "6ae885f2c45846c34567735a",
+      "name": "Fatma Nur Korkmaz",
+      "hidden": false
+     },
+     {
+      "_id": "6ae885f2c45846c34567735b",
+      "name": "Nur Yağmur Tuncer",
+      "hidden": false
+     },
+     {
+      "_id": "6ae885f2c45846c34567735c",
+      "name": "Mustafa Sertaç Türkel",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "TurnTurk-GPT: Text-Based Turn-Taking Prediction for Turkish",
+    "submittedOnDailyBy": {
+     "_id": "6630eb15e65d0b18d0cfdbcb",
+     "avatarUrl": "/avatars/6c5fb8a7d12418bc6ea9493481561f19.svg",
+     "isPro": false,
+     "fullname": "Ahmet Tuğrul Bayrak",
+     "user": "tugrulbayrak",
+     "type": "user",
+     "name": "tugrulbayrak"
+    },
+    "summary": "This paper presents TurnTurk-GPT, a text-based turn-taking predictor for Turkish obtained by fine-tuning a Turkish GPT-2 model with the TurnGPT objective on synthetic and real dialogue, and evaluates it on real Turkish conversation against rule baselines, a zero-shot Turkish language model and a widely used multilingual end-of-turn detector. Evaluation uses word-level decision points on unpunctuated, lower-cased text approximating the output of streaming speech recognisers, recording-disjoint and speaker-disjoint folds, nested threshold selection and paired cluster bootstrap tests. TurnTurk-GPT outperforms the multilingual detector under both recording-disjoint and speaker-disjoint evaluation. It outperforms the zero-shot language model only when the test speakers occur in training; on unseen speakers the two are statistically indistinguishable. Removing the suffixes of the turn-final word reduces AP by up to 44%, against 2% for a sentence-internal word, locating the Turkish end-of-turn cue in verb-final morphology. Synthetic dialogue alone yields the weakest trained model, and when a speaker pauses the zero-shot and multilingual baselines remain close to chance. The model and the evaluation protocol are publicly released.",
+    "upvotes": 0,
+    "discussionId": "6ae885f3c45846c34567735d",
+    "ai_summary": "TurnTurk-GPT, a Turkish turn-taking predictor fine-tuned from GPT-2, outperforms multilingual detectors and reveals that Turkish end-of-turn cues rely on verb-final morphology.",
+    "ai_keywords": [
+     "TurnTurk-GPT",
+     "GPT-2",
+     "TurnGPT objective",
+     "turn-taking predictor",
+     "word-level decision points",
+     "recording-disjoint",
+     "speaker-disjoint",
+     "paired cluster bootstrap",
+     "average precision",
+     "verb-final morphology"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-29T20:00:00.000Z",
+   "title": "TurnTurk-GPT: Text-Based Turn-Taking Prediction for Turkish",
+   "summary": "This paper presents TurnTurk-GPT, a text-based turn-taking predictor for Turkish obtained by fine-tuning a Turkish GPT-2 model with the TurnGPT objective on synthetic and real dialogue, and evaluates it on real Turkish conversation against rule baselines, a zero-shot Turkish language model and a widely used multilingual end-of-turn detector. Evaluation uses word-level decision points on unpunctuated, lower-cased text approximating the output of streaming speech recognisers, recording-disjoint and speaker-disjoint folds, nested threshold selection and paired cluster bootstrap tests. TurnTurk-GPT outperforms the multilingual detector under both recording-disjoint and speaker-disjoint evaluation. It outperforms the zero-shot language model only when the test speakers occur in training; on unseen speakers the two are statistically indistinguishable. Removing the suffixes of the turn-final word reduces AP by up to 44%, against 2% for a sentence-internal word, locating the Turkish end-of-turn cue in verb-final morphology. Synthetic dialogue alone yields the weakest trained model, and when a speaker pauses the zero-shot and multilingual baselines remain close to chance. The model and the evaluation protocol are publicly released.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42010.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6630eb15e65d0b18d0cfdbcb",
+    "avatarUrl": "/avatars/6c5fb8a7d12418bc6ea9493481561f19.svg",
+    "fullname": "Ahmet Tuğrul Bayrak",
+    "name": "tugrulbayrak",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.40256",
@@ -61,7 +136,7 @@
      "name": "walkeralan123789"
     },
     "summary": "To succeed in real-world long-horizon software development, coding agents must satisfy multi-dimensional task specifications, such as interface compatibility and error handling, and do so without breaking existing dependencies. However, current works lack specification in both quantity and diversity, often emphasizing primary goals while ignoring complex constraints. Synthesizing tasks to bridge this gap presents two challenges: naively adding specifications risks reducing tasks to trivial checklists rather than compelling joint reasoning, and verifying these subtle interactions risks overlooking hidden flaws or rejecting valid alternatives. To address these challenges, we introduce CodeSpecWeave, a framework for synthesizing tasks with rich, interdependent specifications. Grounded in real developer seeds, a synthesis agent iteratively develops both coupled task requirements and executable tests, while a review agent audits solution trajectories from multiple models to guarantee test reliability. Using this pipeline, we construct 4,670 training tasks across 2,865 repositories. Applying Reinforcement learning on these tasks significantly improves performance over the base model on DeepSWE-v1.1, largely outperforming existing baselines. Furthermore, we curate CodeSpecWeave-Bench, a rigorous benchmark comprising 100 tasks and 1,044 specifications, which clearly separates frontier models and reveals significant headroom in handling interdependent engineering constraints.",
-    "upvotes": 2,
+    "upvotes": 5,
     "discussionId": "6ae86cb7c45846c345677311",
     "projectPage": "https://codespecweave.github.io/",
     "ai_summary": "CodeSpecWeave synthesizes complex, interdependent software development tasks with verified tests to train coding agents, improving performance on long-horizon benchmarks.",
@@ -535,7 +610,7 @@
      "name": "qcf568"
     },
     "summary": "Real-world forgery is inherently heterogeneous: it manifests not only as digital manipulation but also as physical spoofing, and is carried not only by images but also by videos. Despite substantial progress, a unified anti-forgery foundation model covering such a broad threat spectrum remains absent. In this paper, we present Venus-DefakerOne2, which substantially extends the forensic capability boundary along both the forgery-form and media-type dimensions. Trained on tens of millions of open-source and in-house samples, it incorporates two key designs. Tide-Style-Tuning alternates LoRA and full-parameter fine-tuning to balance computational efficiency, generalization, and hard-sample fitting while mitigating catastrophic forgetting. Entropy-based Test Adaptation determines the optimal prediction modality by analyzing prediction entropy. Venus-DefakerOne2 achieves new state-of-the-art performance across a comprehensive suite of benchmarks, including DeepFake faces (96.7%), AI-generated images (93.3%), tampered documents (87.6%), manipulated natural images (89.6%), physical spoofs (93.1%), and AI-generated videos (96.0%). It significantly outperforms both specialized expert models and its predecessor, DefakerOne, establishing itself as a powerful and versatile foundation model for binary-decision forensic tasks.",
-    "upvotes": 13,
+    "upvotes": 15,
     "discussionId": "6ae774d4ac2aed10b8c1cba9",
     "projectPage": "https://venus-guangjian.github.io/Venus-DeFakerOne2/",
     "githubRepo": "https://github.com/inclusionAI/DefakerOne2",
@@ -572,7 +647,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -648,7 +723,7 @@
      "name": "Skywalker0410"
     },
     "summary": "An effective agent memory system should adapt to a user's history and task requirements. Human-annotated supervision can guide this adaptation by providing feedback for evaluating and improving memory designs. Yet suitable labels are rarely available for new user histories, and manually constructing QA pairs and supporting evidence is costly. We introduce MemSteer, which turns unlabeled user histories into question-answer (QA) supervision with supporting evidence for memory-design optimization. MemSteer constructs an evidence-grounded answer plan that specifies how facts across related records jointly support a reference answer. The plan guides question generation, while source-grounded auditing and blind answer recovery check the resulting annotations. To study the utility of this supervision, we develop MemSteer-Opt, which combines QA-based design evaluation with evidence-guided failure diagnosis to revise memory store, retrieval, and context construction without updating model parameters. Experiments on ATM-Bench and RHELM show that this supervision is competitive with official-QA-guided optimization. Relative to Base-BM25, MemSteer-Opt improves ATM-Bench Question Score by 13.4 points and RHELM accuracy by 4.1 and 6.6 points without and with external data, respectively. The supervision also benefits two existing optimizers on ATM-Bench, while new-user experiments demonstrate continued design optimization using supervision generated from the target histories.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ae83937ac2aed10b8c1ceca",
     "ai_summary": "MemSteer generates evidence-grounded QA supervision from unlabeled user histories to optimize agent memory design without model updates, improving benchmark scores significantly.",
     "ai_keywords": [
@@ -859,7 +934,7 @@
       "_id": "6ae82f17ac2aed10b8c1ce8b",
       "user": {
        "_id": "672b104f7ec01ef4af5894d5",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/cvO8rs7Yr5UYld1TR1-yg.png",
+       "avatarUrl": "/avatars/9f13e32711454f4017fcf512f317ec79.svg",
        "isPro": false,
        "fullname": "Junha Park",
        "user": "tunatone",
@@ -900,7 +975,7 @@
     "title": "No Channels Left Behind: Understanding Diffusion Acceleration through Residual Gates",
     "submittedOnDailyBy": {
      "_id": "672b104f7ec01ef4af5894d5",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/cvO8rs7Yr5UYld1TR1-yg.png",
+     "avatarUrl": "/avatars/9f13e32711454f4017fcf512f317ec79.svg",
      "isPro": false,
      "fullname": "Junha Park",
      "user": "tunatone",
@@ -908,7 +983,7 @@
      "name": "tunatone"
     },
     "summary": "Training acceleration methods for diffusion transformers, such as REPA and dispersive regularization, are commonly explained by additional supervision, spatial-structure priors, or improved feature geometry. We revisit this view and uncover a striking internal change: the AdaLN-Zero residual gate α, which directly controls how conditioned updates enter the residual stream, is substantially reorganized by these methods. This observation motivates our hypothesis that acceleration arises, at least in part, from reshaping the residual gating pathway rather than solely from the feature structures explicitly imposed by auxiliary objectives. Supporting this view, accelerated models are markedly more sensitive to perturbations of α, and their gate geometry reflects semantic relationships among classes. We further introduce the normalized participation ratio (nPR) to characterize the channel-wise organization of the gates and find that, across REPA teachers, projector architectures, and radial-objective targets, broader gate participation accompanies better generation quality. Guided by this insight, we propose a simple teacher-free radial objective that promotes broader gate participation through feature-norm regularization, without pairwise feature comparisons. On ImageNet 256times256 with SiT-B/2, our method improves FID over dispersive loss while increasing mean gate participation over timesteps and classes, further supporting the link between gate organization and training acceleration. Our results identify residual-gate reorganization as a measurable axis of diffusion training acceleration and suggest a simple direction for further acceleration.",
-    "upvotes": 15,
+    "upvotes": 17,
     "discussionId": "6ae82f17ac2aed10b8c1ce90",
     "ai_summary": "Training acceleration in diffusion transformers is driven by reorganization of AdaLN-Zero residual gates, and a simple radial objective promoting broader gate participation improves generation quality without auxiliary teachers.",
     "ai_keywords": [
@@ -933,7 +1008,7 @@
    "numComments": 1,
    "submittedBy": {
     "_id": "672b104f7ec01ef4af5894d5",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/cvO8rs7Yr5UYld1TR1-yg.png",
+    "avatarUrl": "/avatars/9f13e32711454f4017fcf512f317ec79.svg",
     "fullname": "Junha Park",
     "name": "tunatone",
     "type": "user",
@@ -941,6 +1016,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -1100,7 +1176,7 @@
      "name": "YuvalH9"
     },
     "summary": "Low-light image enhancement (LLIE) aims to recover well-exposed and perceptually faithful images from severely degraded observations. Recent diffusion-based generative methods achieve strong perceptual quality by leveraging powerful image priors, but their iterative sampling incurs substantial computational cost, limiting practical deployment. Despite recent efficiency gains in generative LLIE, high-quality enhancement with a single function evaluation and low overall computation remains challenging, particularly under diverse real-world low-light conditions. We introduce GLOW-FM, a one-step latent flow-matching framework for efficient generative LLIE. GLOW-FM performs conditional transport in the latent space of a frozen Tiny-VAE and leverages Terminal Velocity Matching (TVM) to enable enhancement with a single function evaluation. Matched comparisons with alternative one-step objectives support TVM as an effective design choice, and, to the best of our knowledge, this is its first adaptation to image restoration and specifically to LLIE. Extensive experiments on challenging real-world benchmarks demonstrate that GLOW-FM achieves competitive image quality and state-of-the-art cross-dataset generalization while requiring only a single function evaluation and 34 GFLOPs for the small variant. These findings highlight the potential of GLOW-FM to bring generative LLIE closer to practical deployment through single-step inference and compact latent modeling. Code will be made publicly available upon publication.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae84522ac2aed10b8c1cf0e",
     "projectPage": "https://arm-research.github.io/AAIR-GLOW-FM",
     "githubRepo": "https://github.com/arm-research/AAIR-GLOW-FM",
@@ -1210,7 +1286,7 @@
      "name": "rooty2020"
     },
     "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space. To bridge this gap, we introduce a Latent Reasoning framework in Continuous space (LARC), which alleviates the token-level bottleneck by reasoning over continuous hidden states. Specifically, the training framework consists of two stages: (i) curriculum supervised fine-tuning (SFT), and (ii) information-gain reinforcement learning (RL). First, the curriculum SFT stage gradually converts token-level reasoning into latent reasoning. Subsequently, the information-gain RL stage self-evolves latent reasoning without ground truth supervision. Experiments across diverse text-to-image generation benchmarks show that LARC consistently improves generation quality, prompt following, and compositional fidelity. Notably, LARC achieves state-of-the-art performance on GenEval with a 7%p gain over BAGEL and demonstrates clear test-time scaling behavior, outperforming token-based generation under both parallel and sequential test-time scaling strategies.",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6ae84194ac2aed10b8c1cefd",
     "projectPage": "https://rootyjeon.github.io/larc-umm/",
     "githubRepo": "https://github.com/rootyJeon/LARC",
@@ -1507,7 +1583,7 @@
      "name": "assafsinger"
     },
     "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically learn these tasks jointly, a demanding objective given the scarcity of 4D supervision. We show that strong pretrained 2D trackers and 3D geometry models provide an effective foundation: lifted trajectories, with occluded segments simply interpolated, already rival dedicated 3D trackers using the same geometry. However, lifted trajectories inherit correspondence and depth errors, and under occlusion, their depth comes from the occluder rather than the tracked point. We introduce ReLift, an efficient feed-forward framework that recasts dense 3D tracking as geometric trajectory repair and completion. At its core, a trajectory corrector alternates attention along and across trajectories to preserve reliable observations, repair corrupted positions, and complete missing motion. Using only geometric inputs allows us to train directly on 3D trajectories with simulated lifting errors, decoupling training from images and from any specific tracker or geometry model. Concentrating 4D supervision on trajectory refinement yields a reusable model that consistently improves lifted trajectories across trackers and geometry providers without retraining, so it benefits directly from future advances in either component. On WorldTrack, ReLift achieves state-of-the-art mean accuracy, improving on the strongest baselines by 2.1 APD on all points and 3.0 on dynamic points, with faster configurations remaining competitive with leading 3D trackers while running faster than 4RC. Visit our supplementry page for more examples and code.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6ae8282eac2aed10b8c1ce6d",
     "projectPage": "https://relift3d.github.io/",
     "githubRepo": "https://github.com/ReLift3D/ReLift",
@@ -1868,7 +1944,7 @@
      "name": "amant555"
     },
     "summary": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on τ-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
-    "upvotes": 15,
+    "upvotes": 21,
     "discussionId": "6ae80da3ac2aed10b8c1ce06",
     "projectPage": "https://servicenow-ai-apriel.hf.space/home",
     "ai_summary": "Apriel Voice 27B Preview is an open speech-language model that integrates speech understanding, reasoning, and tool use within a shared backbone, achieving strong results on audio benchmarks through a two-stage training procedure with online distillation.",
@@ -2197,7 +2273,7 @@
      "name": "C0notSilly"
     },
     "summary": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.",
-    "upvotes": 16,
+    "upvotes": 18,
     "discussionId": "6ae80953ac2aed10b8c1cda9",
     "projectPage": "https://waltstephen.github.io/captain/",
     "githubRepo": "https://github.com/waltstephen/CaPtain",
@@ -2600,7 +2676,7 @@
      "name": "CoreloneH"
     },
     "summary": "Unified conditional image generation requires a single model to preserve different aspects of a visual input while producing a target image that follows textual guidance. Pretrained video models provide a promising foundation by encoding visual transformations across time, yet existing approaches typically assign the condition and target to fixed temporal positions. We observe that condition-target relationships vary substantially across generation tasks, while video models naturally encode visual transformations at different temporal scales. This motivates us to model conditional generation through input-adaptive virtual temporal relations. We propose FrameForge, which captures two complementary aspects of such relations. Mixture of Temporal Experts (MoTE) models how far the target lies from the condition by dynamically selecting temporal RoPE experts with different virtual intervals. Chain of Temporal Reasoning (CoTR) models how the condition is transformed into the target through a latent intermediate state, with a reasoning-bottleneck attention mask encouraging information propagation through this pathway. Experiments on DreamBench, COCO2017, and GEdit-Bench show that FrameForge achieves superior performance in subject-driven generation, canny-to-image generation, and image editing among the compared methods.",
-    "upvotes": 24,
+    "upvotes": 26,
     "discussionId": "6ae80519ac2aed10b8c1cd71",
     "projectPage": "https://lyne1.github.io/FrameForge-page/",
     "githubRepo": "https://github.com/Lyne1/FrameForge",
@@ -2632,7 +2708,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/630636bcd37ce67e0e4d1d42/IfZUSFrqbGdPyTtjfdSMa.jpeg"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36545.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "630636bcd37ce67e0e4d1d42",
     "avatarUrl": "/avatars/098a87fbb6c06d2b9387010f6354f15f.svg",
@@ -2722,7 +2798,7 @@
      "name": "jonghakim"
     },
     "summary": "Multi-agent systems (MAS) require both effective coordination and specialized task execution. Existing prompt optimization approaches typically couple these functions within agent-specific prompts. We introduce Coordinator-Executor Prompt Optimization (CEPO), a general framework for improving prompt optimization in MAS. CEPO separates system-level coordination from agent-level execution through a shared coordinator prompt and agent-specific executor prompts, and guides their updates according to their respective roles. This structure allows shared coordination rules to be refined consistently across agents while keeping execution instructions separately adjustable. CEPO provides the prompt structure and optimization guidance, while existing prompt optimizers perform the underlying search. Extensive experiments spanning 11 benchmarks across four domains demonstrate that applying CEPO to four existing prompt optimizers consistently improves their performance. Ablations and qualitative analyses support the proposed design, while controlled studies on a document-understanding MAS further demonstrate improved optimization budget efficiency and performance scaling with the number of agents.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ae2c422d670fc6ea896c847",
     "projectPage": "https://mlv.kaist.ac.kr/CEPO/",
     "githubRepo": "https://github.com/mlvlab/CEPO",
@@ -3103,7 +3179,7 @@
      "name": "Thu-zqc"
     },
     "summary": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R^2Orch consistently outperforms baselines across question answering, math, code, and interactive tasks. Our code is available at https://github.com/beita6969/R2Orch.",
-    "upvotes": 63,
+    "upvotes": 65,
     "discussionId": "6ae017dca5efa215400a79cf",
     "ai_summary": "R²Orch uses recursive self-play with learnable task selection and skill withdrawal to train orchestrators without hand-designed curricula, improving performance across reasoning and interactive tasks.",
     "ai_keywords": [
@@ -4074,7 +4150,7 @@
      "name": "RandallBalestriero"
     },
     "summary": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a Platonic Representation Theorem: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--good views--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with bad views, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
-    "upvotes": 67,
+    "upvotes": 69,
     "discussionId": "6ae4a81cac2aed10b8c1c171",
     "projectPage": "https://github.com/galilai-group/prh-proof",
     "githubRepo": "https://github.com/galilai-group/prh-proof",
@@ -5564,101 +5640,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1653390727490-5dd96eb166059660ed1ee413.jpeg"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.40454",
-    "authors": [
-     {
-      "_id": "6ae42a08c3b566b041f6c8b9",
-      "user": {
-       "_id": "65d7266b5b5a8c20669b47eb",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d7266b5b5a8c20669b47eb/09FVHlQR496hPbqL7y9iJ.jpeg",
-       "isPro": true,
-       "fullname": "Metinov Adilet",
-       "user": "metinovadilet",
-       "type": "user",
-       "name": "metinovadilet"
-      },
-      "name": "Adilet Metinov",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T08:45:05.118Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae42a08c3b566b041f6c8ba",
-      "name": "Chingiz Arziev",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/65d7266b5b5a8c20669b47eb/5aIhrppUdzEwwudD3U0PV.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/65d7266b5b5a8c20669b47eb/5dvFQIX_BRFeuqzZqlkB8.mp4"
-    ],
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "Glance: The Generator Is Its Own Reranker",
-    "submittedOnDailyBy": {
-     "_id": "65d7266b5b5a8c20669b47eb",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d7266b5b5a8c20669b47eb/09FVHlQR496hPbqL7y9iJ.jpeg",
-     "isPro": true,
-     "fullname": "Metinov Adilet",
-     "user": "metinovadilet",
-     "type": "user",
-     "name": "metinovadilet"
-    },
-    "summary": "Retrieval-augmented generation commonly serves separate models for reranking and answering, duplicating model residency and passage processing. We introduce Glance, which equips the generator with a lightweight decision adapter and pointer head to score candidate passages from a shared prefill. Short relevance probes branch from the cached context, producing one score per passage without separately prefilling each query-passage pair. A single resident 9B backbone supports generation, general decisions and reranking, with approximately 0.1 GiB of additional memory per decision skill. After 39 minutes of MS MARCO fine-tuning, Glance achieves nDCG@10 of 0.741 on SciFact and 0.345 on NFCorpus, compared with 0.721 and 0.326 for bge-reranker-v2-m3. On 300 HotpotQA questions, its selected context improves answer F1 by 0.045 over cross-encoder-selected context under the same base generator (paired bootstrap 95% CI [0.014, 0.076]). In a scaling study, reranking quality keeps rising up to 200 candidates (43k tokens) scored from one shared prefill, where it exceeds the cross-encoder by 0.058 nDCG@10, and a probe-only activated adapter lets generation continue from the original passage cache. These initial results demonstrate generator-based reranking with one resident backbone; evaluation currently covers two retrieval datasets, one QA dataset and one backbone family.",
-    "upvotes": 12,
-    "discussionId": "6ae42a08c3b566b041f6c8bb",
-    "projectPage": "https://huggingface.co/airun-ai/GlanceRAG-MiMo-9B-Reranker",
-    "ai_summary": "Glance integrates reranking and generation into a single backbone using lightweight adapters and pointer heads to score passages from shared context, reducing memory overhead while improving retrieval and answer quality.",
-    "ai_keywords": [
-     "retrieval-augmented generation",
-     "reranking",
-     "pointer head",
-     "decision adapter",
-     "shared prefill",
-     "cross-encoder",
-     "nDCG@10",
-     "answer F1"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "6a8834621e913a13bd4fc845",
-     "name": "airun-ai",
-     "fullname": "Airun Intelligence Labs ",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6a88335b7c2e089c5406d59a/aMXfNClvs-4s3E-xoGCJ7.png"
-    }
-   },
-   "publishedAt": "2026-10-28T20:00:00.000Z",
-   "title": "Glance: The Generator Is Its Own Reranker",
-   "summary": "Retrieval-augmented generation commonly serves separate models for reranking and answering, duplicating model residency and passage processing. We introduce Glance, which equips the generator with a lightweight decision adapter and pointer head to score candidate passages from a shared prefill. Short relevance probes branch from the cached context, producing one score per passage without separately prefilling each query-passage pair. A single resident 9B backbone supports generation, general decisions and reranking, with approximately 0.1 GiB of additional memory per decision skill. After 39 minutes of MS MARCO fine-tuning, Glance achieves nDCG@10 of 0.741 on SciFact and 0.345 on NFCorpus, compared with 0.721 and 0.326 for bge-reranker-v2-m3. On 300 HotpotQA questions, its selected context improves answer F1 by 0.045 over cross-encoder-selected context under the same base generator (paired bootstrap 95% CI [0.014, 0.076]). In a scaling study, reranking quality keeps rising up to 200 candidates (43k tokens) scored from one shared prefill, where it exceeds the cross-encoder by 0.058 nDCG@10, and a probe-only activated adapter lets generation continue from the original passage cache. These initial results demonstrate generator-based reranking with one resident backbone; evaluation currently covers two retrieval datasets, one QA dataset and one backbone family.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/65d7266b5b5a8c20669b47eb/5aIhrppUdzEwwudD3U0PV.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/65d7266b5b5a8c20669b47eb/5dvFQIX_BRFeuqzZqlkB8.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40454.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65d7266b5b5a8c20669b47eb",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d7266b5b5a8c20669b47eb/09FVHlQR496hPbqL7y9iJ.jpeg",
-    "fullname": "Metinov Adilet",
-    "name": "metinovadilet",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 10,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6a8834621e913a13bd4fc845",
-    "name": "airun-ai",
-    "fullname": "Airun Intelligence Labs ",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6a88335b7c2e089c5406d59a/aMXfNClvs-4s3E-xoGCJ7.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
