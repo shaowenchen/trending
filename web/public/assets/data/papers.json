@@ -1,8 +1,384 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-02T05:46:01.849Z",
+ "fetchedAt": "2026-11-02T08:01:23.031Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.42149",
+    "authors": [
+     {
+      "_id": "6ae84193ac2aed10b8c1cef8",
+      "name": "Byungwoo Jeon",
+      "hidden": false
+     },
+     {
+      "_id": "6ae84193ac2aed10b8c1cef9",
+      "name": "Yoonwoo Jeong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae84193ac2aed10b8c1cefa",
+      "name": "Hyunseok Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6ae84193ac2aed10b8c1cefb",
+      "name": "Minsu Cho",
+      "hidden": false
+     },
+     {
+      "_id": "6ae84193ac2aed10b8c1cefc",
+      "name": "Jinwoo Shin",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6638f1c6c9648d06123f38e6/cClrcZjQF4N9te8cPS2OM.png"
+    ],
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+    "submittedOnDailyBy": {
+     "_id": "6638f1c6c9648d06123f38e6",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6638f1c6c9648d06123f38e6/QZ-gS64IhwzmeERcMv6QF.jpeg",
+     "isPro": true,
+     "fullname": "Byungwoo Jeon",
+     "user": "rooty2020",
+     "type": "user",
+     "name": "rooty2020"
+    },
+    "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space. To bridge this gap, we introduce a Latent Reasoning framework in Continuous space (LARC), which alleviates the token-level bottleneck by reasoning over continuous hidden states. Specifically, the training framework consists of two stages: (i) curriculum supervised fine-tuning (SFT), and (ii) information-gain reinforcement learning (RL). First, the curriculum SFT stage gradually converts token-level reasoning into latent reasoning. Subsequently, the information-gain RL stage self-evolves latent reasoning without ground truth supervision. Experiments across diverse text-to-image generation benchmarks show that LARC consistently improves generation quality, prompt following, and compositional fidelity. Notably, LARC achieves state-of-the-art performance on GenEval with a 7%p gain over BAGEL and demonstrates clear test-time scaling behavior, outperforming token-based generation under both parallel and sequential test-time scaling strategies.",
+    "upvotes": 0,
+    "discussionId": "6ae84194ac2aed10b8c1cefd",
+    "projectPage": "https://rootyjeon.github.io/larc-umm/",
+    "githubRepo": "https://github.com/rootyJeon/LARC",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "LARC enables continuous latent reasoning for unified multimodal models, improving image generation quality and enabling test-time scaling without discrete token bottlenecks.",
+    "ai_keywords": [
+     "Unified Multimodal Models",
+     "chain-of-thought reasoning",
+     "latent reasoning",
+     "continuous hidden states",
+     "curriculum supervised fine-tuning",
+     "information-gain reinforcement learning",
+     "test-time scaling",
+     "GenEval"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6475760c33192631bad2bb38",
+     "name": "kaist-ai",
+     "fullname": "KAIST AI",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+    }
+   },
+   "publishedAt": "2026-10-29T20:00:00.000Z",
+   "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+   "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space. To bridge this gap, we introduce a Latent Reasoning framework in Continuous space (LARC), which alleviates the token-level bottleneck by reasoning over continuous hidden states. Specifically, the training framework consists of two stages: (i) curriculum supervised fine-tuning (SFT), and (ii) information-gain reinforcement learning (RL). First, the curriculum SFT stage gradually converts token-level reasoning into latent reasoning. Subsequently, the information-gain RL stage self-evolves latent reasoning without ground truth supervision. Experiments across diverse text-to-image generation benchmarks show that LARC consistently improves generation quality, prompt following, and compositional fidelity. Notably, LARC achieves state-of-the-art performance on GenEval with a 7%p gain over BAGEL and demonstrates clear test-time scaling behavior, outperforming token-based generation under both parallel and sequential test-time scaling strategies.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6638f1c6c9648d06123f38e6/cClrcZjQF4N9te8cPS2OM.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42149.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6638f1c6c9648d06123f38e6",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6638f1c6c9648d06123f38e6/QZ-gS64IhwzmeERcMv6QF.jpeg",
+    "fullname": "Byungwoo Jeon",
+    "name": "rooty2020",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6475760c33192631bad2bb38",
+    "name": "kaist-ai",
+    "fullname": "KAIST AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.29617",
+    "authors": [
+     {
+      "_id": "6ae83891ac2aed10b8c1cebc",
+      "name": "Zhuoyu Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae83891ac2aed10b8c1cebd",
+      "name": "Wenhui Ou",
+      "hidden": false
+     },
+     {
+      "_id": "6ae83891ac2aed10b8c1cebe",
+      "name": "Qiawei Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae83891ac2aed10b8c1cebf",
+      "name": "Xuhong Qiu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae83891ac2aed10b8c1cec0",
+      "name": "Wenqi Fang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae83891ac2aed10b8c1cec1",
+      "name": "Raphaël C. -W. Phan",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-21T11:56:23.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "TernScope: Model-Hardware Co-Design for Efficient Ternary Endoscopic Segmentation",
+    "submittedOnDailyBy": {
+     "_id": "66c4d1068252e96d0de651e1",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66c4d1068252e96d0de651e1/d8pY1-c-_V76nCuhq9ONF.png",
+     "isPro": false,
+     "fullname": "ReaganWU",
+     "user": "ReaganWZY",
+     "type": "user",
+     "name": "ReaganWZY"
+    },
+    "summary": "Edge medical segmentation must reconcile small model size, high accuracy, and fast inference. TernScope addresses this tradeoff through model--hardware co-design, learning a compact segmentation network whose low-bit operators also simplify hardware execution. Split-channel large-kernel blocks preserve spatial context with limited computation, while branch fusion removes redundant inference paths. Ternary Progressive Quantization-aware Training (TPQ) then adapts the fused network from deep to shallow layers, through the decoder, and finally to the input and prediction layers. All 25 convolutions use ternary weights and 8-bit activations, enabling packed storage and multiplier-free computation. The resulting model uses 0.2483 M parameters and 0.0949 GMACs while retaining competitive segmentation accuracy on in-domain and external datasets. Under the same 45 nm technology, TernScope reduces compute-array area by 88.46% compared with the original Gemmini, a systolic-array accelerator with 8-bit times 8-bit multipliers. These results demonstrate a path from accurate lightweight medical segmentation to compact low-bit hardware.",
+    "upvotes": 0,
+    "discussionId": "6ae83892ac2aed10b8c1cec2",
+    "githubRepo": "https://github.com/ReaganWu/TernScope",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "TernScope co-designs a compact ternary-weight segmentation network with simplified hardware to achieve high accuracy and fast inference for edge medical imaging.",
+    "ai_keywords": [
+     "model-hardware co-design",
+     "split-channel large-kernel blocks",
+     "branch fusion",
+     "Ternary Progressive Quantization-aware Training",
+     "ternary weights",
+     "8-bit activations",
+     "systolic-array accelerator"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "64f6e94bf277a413f3372478",
+     "name": "Monash",
+     "fullname": "Monash University",
+     "avatar": "https://www.gravatar.com/avatar/bec32f98e55de16c7d2df635b6191ccc?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-10-21T07:56:23.000Z",
+   "title": "TernScope: Model-Hardware Co-Design for Efficient Ternary Endoscopic Segmentation",
+   "summary": "Edge medical segmentation must reconcile small model size, high accuracy, and fast inference. TernScope addresses this tradeoff through model--hardware co-design, learning a compact segmentation network whose low-bit operators also simplify hardware execution. Split-channel large-kernel blocks preserve spatial context with limited computation, while branch fusion removes redundant inference paths. Ternary Progressive Quantization-aware Training (TPQ) then adapts the fused network from deep to shallow layers, through the decoder, and finally to the input and prediction layers. All 25 convolutions use ternary weights and 8-bit activations, enabling packed storage and multiplier-free computation. The resulting model uses 0.2483 M parameters and 0.0949 GMACs while retaining competitive segmentation accuracy on in-domain and external datasets. Under the same 45 nm technology, TernScope reduces compute-array area by 88.46% compared with the original Gemmini, a systolic-array accelerator with 8-bit times 8-bit multipliers. These results demonstrate a path from accurate lightweight medical segmentation to compact low-bit hardware.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29617.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66c4d1068252e96d0de651e1",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66c4d1068252e96d0de651e1/d8pY1-c-_V76nCuhq9ONF.png",
+    "fullname": "ReaganWU",
+    "name": "ReaganWZY",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "64f6e94bf277a413f3372478",
+    "name": "Monash",
+    "fullname": "Monash University",
+    "avatar": "https://www.gravatar.com/avatar/bec32f98e55de16c7d2df635b6191ccc?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.41260",
+    "authors": [
+     {
+      "_id": "6ae82cf2ac2aed10b8c1ce86",
+      "name": "Yiqi Liang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae82cf2ac2aed10b8c1ce87",
+      "name": "Xiaodong Cun",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-30T05:05:12.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "SketchDirector: Complex Scene Sketching via Agentic Layout Reasoning and Detail Refinement",
+    "submittedOnDailyBy": {
+     "_id": "63184c517ca1b876d99b7e0e",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
+     "isPro": false,
+     "fullname": "Xiaodong Cun",
+     "user": "vinthony",
+     "type": "user",
+     "name": "vinthony"
+    },
+    "summary": "Existing sketch generation methods often rely on image guidance and are largely limited to individual objects or simplified scenes, leaving text-guided complex scene sketching underexplored. We present SketchDirector, an agentic framework that mimics the human sketching workflow for automatic multi-concept scene sketching. Given a scene-level text prompt, SketchDirector first employs a large language model~(LLM) to decompose the scene into multiple draft assets, where each is represented by a set of Bézier curves. Then, an agentic reasoning loop iteratively plans and executes their spatial arrangement, guided by self-evolving memory. Finally, a detail refinement module leverages diffusion priors to enhance sketch quality while preserving geometric structure. To support future research and applications in multi-concept scene sketch generation, we further introduce the MCSketch8K dataset, comprising editable vector assets, compositional layouts, and object-level manipulation annotations. Extensive experiments show that SketchDirector outperforms state-of-the-art baselines in semantic and compositional quality while effectively preserving overall contour organization during refinement. The project page is: https://yiki77.github.io/SketchDirector/{https://yiki77.github.io/SketchDirector/}.",
+    "upvotes": 1,
+    "discussionId": "6ae82cf3ac2aed10b8c1ce88",
+    "projectPage": "https://yiki77.github.io/SketchDirector/",
+    "githubRepo": "https://github.com/GVCLab/SketchDirector",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "SketchDirector is an agentic framework that decomposes text prompts into draft vector assets, arranges them via iterative reasoning with self-evolving memory, and refines details using diffusion priors for complex scene sketching.",
+    "ai_keywords": [
+     "agentic framework",
+     "large language model",
+     "Bézier curves",
+     "self-evolving memory",
+     "diffusion priors",
+     "MCSketch8K",
+     "multi-concept scene sketch generation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "69402e7fa7c562569cd809c2",
+     "name": "GVCLab",
+     "fullname": "GVC Lab at Great Bay University",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/0mQ2Re10Y0HKnD878FGiU.png"
+    }
+   },
+   "publishedAt": "2026-10-30T01:05:12.000Z",
+   "title": "SketchDirector: Complex Scene Sketching via Agentic Layout Reasoning and Detail Refinement",
+   "summary": "Existing sketch generation methods often rely on image guidance and are largely limited to individual objects or simplified scenes, leaving text-guided complex scene sketching underexplored. We present SketchDirector, an agentic framework that mimics the human sketching workflow for automatic multi-concept scene sketching. Given a scene-level text prompt, SketchDirector first employs a large language model~(LLM) to decompose the scene into multiple draft assets, where each is represented by a set of Bézier curves. Then, an agentic reasoning loop iteratively plans and executes their spatial arrangement, guided by self-evolving memory. Finally, a detail refinement module leverages diffusion priors to enhance sketch quality while preserving geometric structure. To support future research and applications in multi-concept scene sketch generation, we further introduce the MCSketch8K dataset, comprising editable vector assets, compositional layouts, and object-level manipulation annotations. Extensive experiments show that SketchDirector outperforms state-of-the-art baselines in semantic and compositional quality while effectively preserving overall contour organization during refinement. The project page is: https://yiki77.github.io/SketchDirector/{https://yiki77.github.io/SketchDirector/}.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.41260.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "63184c517ca1b876d99b7e0e",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
+    "fullname": "Xiaodong Cun",
+    "name": "vinthony",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 347,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69402e7fa7c562569cd809c2",
+    "name": "GVCLab",
+    "fullname": "GVC Lab at Great Bay University",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/0mQ2Re10Y0HKnD878FGiU.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.42136",
+    "authors": [
+     {
+      "_id": "6ae8282dac2aed10b8c1ce68",
+      "name": "Assaf Singer",
+      "hidden": false
+     },
+     {
+      "_id": "6ae8282dac2aed10b8c1ce69",
+      "name": "Maroun Khriesh",
+      "hidden": false
+     },
+     {
+      "_id": "6ae8282dac2aed10b8c1ce6a",
+      "name": "Noam Rotstein",
+      "hidden": false
+     },
+     {
+      "_id": "6ae8282dac2aed10b8c1ce6b",
+      "name": "Yoni Kasten",
+      "hidden": false
+     },
+     {
+      "_id": "6ae8282dac2aed10b8c1ce6c",
+      "name": "Or Litany",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/65fc5407ec1f99ad1f462c45/oAx3vpYkMgmICAv2Nq9k2.mp4"
+    ],
+    "publishedAt": "2026-10-30T17:58:33.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
+    "submittedOnDailyBy": {
+     "_id": "65fc5407ec1f99ad1f462c45",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fc5407ec1f99ad1f462c45/fVMvxf40lagvZLykxafH6.jpeg",
+     "isPro": false,
+     "fullname": "Assaf Singer",
+     "user": "assafsinger",
+     "type": "user",
+     "name": "assafsinger"
+    },
+    "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically learn these tasks jointly, a demanding objective given the scarcity of 4D supervision. We show that strong pretrained 2D trackers and 3D geometry models provide an effective foundation: lifted trajectories, with occluded segments simply interpolated, already rival dedicated 3D trackers using the same geometry. However, lifted trajectories inherit correspondence and depth errors, and under occlusion, their depth comes from the occluder rather than the tracked point. We introduce ReLift, an efficient feed-forward framework that recasts dense 3D tracking as geometric trajectory repair and completion. At its core, a trajectory corrector alternates attention along and across trajectories to preserve reliable observations, repair corrupted positions, and complete missing motion. Using only geometric inputs allows us to train directly on 3D trajectories with simulated lifting errors, decoupling training from images and from any specific tracker or geometry model. Concentrating 4D supervision on trajectory refinement yields a reusable model that consistently improves lifted trajectories across trackers and geometry providers without retraining, so it benefits directly from future advances in either component. On WorldTrack, ReLift achieves state-of-the-art mean accuracy, improving on the strongest baselines by 2.1 APD on all points and 3.0 on dynamic points, with faster configurations remaining competitive with leading 3D trackers while running faster than 4RC. Visit our supplementry page for more examples and code.",
+    "upvotes": 7,
+    "discussionId": "6ae8282eac2aed10b8c1ce6d",
+    "projectPage": "https://relift3d.github.io/",
+    "githubRepo": "https://github.com/ReLift3D/ReLift",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "ReLift improves dense 3D tracking by repairing and completing lifted trajectories using geometric trajectory refinement without requiring image-based training.",
+    "ai_keywords": [
+     "dense 3D tracking",
+     "monocular video",
+     "point correspondences",
+     "depth estimation",
+     "trajectory interpolation",
+     "pretrained 2D trackers",
+     "3D geometry models",
+     "trajectory corrector",
+     "attention along and across trajectories",
+     "geometric trajectory repair",
+     "feed-forward framework",
+     "4D supervision"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "6393322be2364bc1eea56e45",
+     "name": "Technion",
+     "fullname": "Technion Israel institute of technology",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670591001944-63926124526c29d5b5011374.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-30T13:58:33.000Z",
+   "title": "ReLift: Dense 3D Tracking as Lifted Trajectory Repair",
+   "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically learn these tasks jointly, a demanding objective given the scarcity of 4D supervision. We show that strong pretrained 2D trackers and 3D geometry models provide an effective foundation: lifted trajectories, with occluded segments simply interpolated, already rival dedicated 3D trackers using the same geometry. However, lifted trajectories inherit correspondence and depth errors, and under occlusion, their depth comes from the occluder rather than the tracked point. We introduce ReLift, an efficient feed-forward framework that recasts dense 3D tracking as geometric trajectory repair and completion. At its core, a trajectory corrector alternates attention along and across trajectories to preserve reliable observations, repair corrupted positions, and complete missing motion. Using only geometric inputs allows us to train directly on 3D trajectories with simulated lifting errors, decoupling training from images and from any specific tracker or geometry model. Concentrating 4D supervision on trajectory refinement yields a reusable model that consistently improves lifted trajectories across trackers and geometry providers without retraining, so it benefits directly from future advances in either component. On WorldTrack, ReLift achieves state-of-the-art mean accuracy, improving on the strongest baselines by 2.1 APD on all points and 3.0 on dynamic points, with faster configurations remaining competitive with leading 3D trackers while running faster than 4RC. Visit our supplementry page for more examples and code.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/65fc5407ec1f99ad1f462c45/oAx3vpYkMgmICAv2Nq9k2.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42136.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65fc5407ec1f99ad1f462c45",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fc5407ec1f99ad1f462c45/fVMvxf40lagvZLykxafH6.jpeg",
+    "fullname": "Assaf Singer",
+    "name": "assafsinger",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6393322be2364bc1eea56e45",
+    "name": "Technion",
+    "fullname": "Technion Israel institute of technology",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670591001944-63926124526c29d5b5011374.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.39086",
@@ -61,7 +437,7 @@
      "name": "CedPei"
     },
     "summary": "Proactive agents must decide whether, when, and how far to assist without an explicit request. Existing evaluations often rely on automated scores or binary verdicts, offering limited human diagnosis of evidence use and intervention quality. To address these gaps, we introduce HALO, Human-Grounded GrAnular EvaLuation of PrOactive Agents. HALO-Arena covers 4 proactive need types, Dependency, Blockage, Risk, and Opportunity, across 10 everyday domains and 50 personal environments. Scenarios require agents to retrieve evidence from structured databases or unstructured documents before judging whether assistance is warranted and choosing its scope. On HALO-Arena, we construct HALO-8K, a dataset of 8,000 responses from 10 models across 400 scenarios, annotated by 20 experts for action level, acceptability verdicts, and human diagnosis. For rejected responses, human diagnosis covers timing, intensity, and other issues. Recorded reasoning tokens and retrieval rounds measure the effort behind these responses. The best proprietary and open-source models achieve 72.88% and 56.63% acceptability, respectively. Our central finding is that over-proactivity is the dominant observed failure mode, with Premature timing or Excessive intensity accounting for 61.20% of rejected responses. Further analyses yield complementary findings on the balance between intervention and restraint, evidence acquisition, and the calibration of timing and intensity.",
-    "upvotes": 2,
+    "upvotes": 5,
     "discussionId": "6ae42cedc3b566b041f6c8d6",
     "githubRepo": "https://github.com/CedricPei/HALO",
     "githubRepoAddedBy": "user",
@@ -78,6 +454,7 @@
      "retrieval rounds"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
     "organization": {
      "_id": "65dc4279ec3dc9ccf7525867",
      "name": "2077AIDataFoundation",
@@ -284,7 +661,7 @@
      "name": "amant555"
     },
     "summary": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on τ-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
-    "upvotes": 9,
+    "upvotes": 14,
     "discussionId": "6ae80da3ac2aed10b8c1ce06",
     "projectPage": "https://servicenow-ai-apriel.hf.space/home",
     "ai_summary": "Apriel Voice 27B Preview is an open speech-language model that integrates speech understanding, reasoning, and tool use within a shared backbone, achieving strong results on audio benchmarks through a two-stage training procedure with online distillation.",
@@ -397,7 +774,7 @@
      "name": "yinbq"
     },
     "summary": "An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual foundation models provide representations that support such a state? We study this question through four levels of spatial capability---spatial structure, object persistence, predictive spatial update, and actionability---using frozen-feature probes on ten representations under streaming egocentric observations of static indoor environments. The resulting capability profiles vary across tasks, network layers, and prefix lengths: strong readout of the visible scene does not ensure accurate object persistence or future-feature retrieval. Matched controls separate readout accuracy from reliance on visual history and motion. Native future prediction retains recoverable spatial structure, but a spatial reader trained on real features does not transfer to predicted features unchanged. Finally, goal-dependent candidate selection does not establish reliable continuous action utility: predicted actions respond to goal changes, yet supplying the correct goal does not reliably improve progress. Across the four levels, object persistence and actionability build on camera-pose readout, whereas feature prediction builds on visible-scene readout. Together, these findings motivate evaluating spatial representations not only by what can be decoded from them, but by whether that information is maintained beyond observation, updated predictively, and used for goal-directed action.",
-    "upvotes": 5,
+    "upvotes": 8,
     "discussionId": "6ae576adac2aed10b8c1c3b1",
     "projectPage": "https://yyyybq.github.io/probing-spatial-state/",
     "ai_summary": "Visual foundation models vary in supporting persistent spatial states across structure, persistence, prediction, and action, with readout accuracy not guaranteeing history-based updates or reliable goal-directed progress.",
@@ -439,6 +816,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "organization": {
@@ -579,7 +957,7 @@
      "name": "C0notSilly"
     },
     "summary": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.",
-    "upvotes": 9,
+    "upvotes": 14,
     "discussionId": "6ae80953ac2aed10b8c1cda9",
     "projectPage": "https://waltstephen.github.io/captain/",
     "githubRepo": "https://github.com/waltstephen/CaPtain",
@@ -874,7 +1252,7 @@
      "name": "An998"
     },
     "summary": "Short-video search needs compact query rewriters that recover users' personalized intent from ambiguous queries under strict latency constraints. Existing LLM-based methods have improved rewriting by using synthetic reasoning and subsequent consumption-behavioral feedback. However, overemphasizing subsequent consumption can favor engaging content over the user's immediate need, causing intent drift even when rewritten queries are grounded in behavioral history. We propose WeFair, Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in WeChat short-video search. WeFair uses human feedback according to how directly it reflects personalized intent, assigning feedback fidelity to a progression from demonstration to preference to verification. We first mine actual queries and user reformulations from search sessions, and then screen them for contextual support. In the demonstration stage, a supervised fine-tuning curriculum progresses from large-scale context-to-query learning to reasoning and direct prediction on human reformulation and preservation. In the preference stage, direct preference optimization learns relative preferences from subsequent consumption feedback. In the verification stage, group relative policy optimization rewards exact agreement with reformulation or preservation targets to constrain intent drift. Further analysis shows that broad supervision benefits the full curriculum supervised training, while strict verification achieves better performance than auxiliary rewards. In offline experiments, WeFair-2B outperforms strong rewriting baselines in overall accuracy and intent preservation. An online A/B test shows relative increases of 2.593% in effective video-view rate and a 2.350% relative reduction in query reformulation rate. WeFair-2B has been deployed in the WeChat short-video search system, which serves over 100 million queries per day.",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6ae805f7ac2aed10b8c1cd85",
     "ai_summary": "WeFair improves personalized query rewriting via fidelity-aware human feedback stages—demonstration, preference, and verification—to reduce intent drift and boost search effectiveness in short-video platforms.",
     "ai_keywords": [
@@ -971,7 +1349,7 @@
      "name": "CoreloneH"
     },
     "summary": "Unified conditional image generation requires a single model to preserve different aspects of a visual input while producing a target image that follows textual guidance. Pretrained video models provide a promising foundation by encoding visual transformations across time, yet existing approaches typically assign the condition and target to fixed temporal positions. We observe that condition-target relationships vary substantially across generation tasks, while video models naturally encode visual transformations at different temporal scales. This motivates us to model conditional generation through input-adaptive virtual temporal relations. We propose FrameForge, which captures two complementary aspects of such relations. Mixture of Temporal Experts (MoTE) models how far the target lies from the condition by dynamically selecting temporal RoPE experts with different virtual intervals. Chain of Temporal Reasoning (CoTR) models how the condition is transformed into the target through a latent intermediate state, with a reasoning-bottleneck attention mask encouraging information propagation through this pathway. Experiments on DreamBench, COCO2017, and GEdit-Bench show that FrameForge achieves superior performance in subject-driven generation, canny-to-image generation, and image editing among the compared methods.",
-    "upvotes": 11,
+    "upvotes": 18,
     "discussionId": "6ae80519ac2aed10b8c1cd71",
     "projectPage": "https://lyne1.github.io/FrameForge-page/",
     "githubRepo": "https://github.com/Lyne1/FrameForge",
@@ -1082,7 +1460,7 @@
      "name": "jonghakim"
     },
     "summary": "Multi-agent systems (MAS) require both effective coordination and specialized task execution. Existing prompt optimization approaches typically couple these functions within agent-specific prompts. We introduce Coordinator-Executor Prompt Optimization (CEPO), a general framework for improving prompt optimization in MAS. CEPO separates system-level coordination from agent-level execution through a shared coordinator prompt and agent-specific executor prompts, and guides their updates according to their respective roles. This structure allows shared coordination rules to be refined consistently across agents while keeping execution instructions separately adjustable. CEPO provides the prompt structure and optimization guidance, while existing prompt optimizers perform the underlying search. Extensive experiments spanning 11 benchmarks across four domains demonstrate that applying CEPO to four existing prompt optimizers consistently improves their performance. Ablations and qualitative analyses support the proposed design, while controlled studies on a document-understanding MAS further demonstrate improved optimization budget efficiency and performance scaling with the number of agents.",
-    "upvotes": 15,
+    "upvotes": 17,
     "discussionId": "6ae2c422d670fc6ea896c847",
     "projectPage": "https://mlv.kaist.ac.kr/CEPO/",
     "githubRepo": "https://github.com/mlvlab/CEPO",
@@ -1155,7 +1533,7 @@
      "name": "onepiece1999"
     },
     "summary": "Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scenes and 178 characters, incorporating skeleton and geometry information as structured representations. We leverage these representations as intermediate proxies to condition a video generation model, together with an adaptive masking mechanism that improves alignment between the conditioning signals and generated video rollouts. Furthermore, we introduce an agentic framework that explicitly maintains and updates game states, allowing players to freely configure their virtual worlds and exercise fine-grained control over character motions while preserving visual quality and gameplay consistency. By combining agentic control with structured proxy-based generation, our framework unlocks new possibilities for player-driven game creation with real-time, generalizable, and mechanically consistent world simulation.",
-    "upvotes": 12,
+    "upvotes": 19,
     "discussionId": "6ae80086ac2aed10b8c1cd4b",
     "projectPage": "https://wyzardwu.github.io/wizard/",
     "ai_summary": "Wizard is an agentic game world model that uses structured motion proxies and adaptive masking to enable real-time, generalizable video generation with precise character control across diverse scenes.",
@@ -1296,7 +1674,7 @@
      "name": "yunqu"
     },
     "summary": "Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with System-1, a lightweight, semantically aware predictor that evaluates candidate interactions before execution, so that System-2 acts only on those worth their cost. Our answer is a qualified yes. We study conditional interaction, a predict--gate--execute--update loop: System-1 estimates each candidate's utility, System-2 executes those admitted by an adaptive threshold, and the outcomes update System-1. The loop spans training, test-time reasoning, adaptive decision-making, and agentic tool use, with utility and cost defined by the application. Under ideal screening and equal execution costs, execution compute falls by a factor approaching 1/ρ_u, where ρ_u is the density of utility-relevant interactions (cost-weighted when costs differ); prediction errors, exploration, and distribution shift reduce the saving. We bound selection regret by predictor error and the utility margin. These results motivate our central hypothesis: ρ_u is a measurable coordinate of scaling efficiency and makes informative compute a better description of scaling than total compute.",
-    "upvotes": 33,
+    "upvotes": 41,
     "discussionId": "6ae43b39c3b566b041f6c92f",
     "projectPage": "https://cheemswang.github.io/blogs/sys1-sys2-codesign.html",
     "ai_summary": "Co-designing a resource-heavy reasoning system with a lightweight predictive evaluator can reduce execution costs by filtering interactions, with efficiency governed by the density of useful interactions.",
@@ -1430,7 +1808,7 @@
      "name": "Thu-zqc"
     },
     "summary": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R^2Orch consistently outperforms baselines across question answering, math, code, and interactive tasks. Our code is available at https://github.com/beita6969/R2Orch.",
-    "upvotes": 29,
+    "upvotes": 36,
     "discussionId": "6ae017dca5efa215400a79cf",
     "githubRepo": "https://github.com/beita6969/R2Orch",
     "githubRepoAddedBy": "user",
@@ -1562,7 +1940,7 @@
      "name": "jcenaa"
     },
     "summary": "Achieving the broad task generalization of embodied models in physical environments remains a central challenge in robot learning. We study this challenge in World Action Models (WAMs) through two complementary capabilities: video generalization, which predicts the visual evolution of new tasks, and action generalization, which translates these predictions into executable behavior through a video-to-action bridge. By varying video and action supervision for tasks outside an initial training set, we examine their respective contributions to task transfer. On RoboTwin 2.0, using only in-distribution video-action supervision yields a 25.07% success rate on out-of-distribution tasks. Introducing videos of these tasks without their action labels raises success to 55.90%, while adding just one action-labeled demonstration per task further improves it to 70.70%. These findings suggest that broader video coverage enables task transfer by leveraging existing inverse-dynamics capabilities, while even sparse action supervision further strengthens those capabilities. Guided by this perspective, we introduce WorldBridge, a WAM with separate video and action experts connected through structured attention and trained with joint flow matching. WorldBridge incorporates visual memory at two temporal scales and action forcing, alongside a unified data processing pipeline that standardizes and filters heterogeneous robot trajectories and egocentric hand-derived supervision. Across multiple manipulation benchmarks, WorldBridge achieves state-of-the-art performance among the compared methods, including 96.23% on RoboTwin 2.0 full data setting and 80.9% on clean to random setting, 82.8% on RoboCasa GR1 TableTop, and 57.6% on DOMINO Level-1. Our study highlights the complementary roles of video prediction and action grounding in developing robots that generalize across tasks.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae7f8c9ac2aed10b8c1cd01",
     "projectPage": "https://worldbridge-jd.github.io/",
     "ai_summary": "WorldBridge improves robot task generalization by combining video prediction with sparse action supervision via separate video and action experts, achieving state-of-the-art results across manipulation benchmarks.",
@@ -1653,7 +2031,7 @@
      "name": "quhongyu123"
     },
     "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
-    "upvotes": 14,
+    "upvotes": 17,
     "discussionId": "6ae7ee59ac2aed10b8c1ccd8",
     "ai_summary": "HiFOR improves robotic manipulation by hierarchically predicting future states and retrieving relevant future information to guide action generation.",
     "ai_keywords": [
@@ -3379,7 +3757,7 @@
      "name": "JaydenTeoh"
     },
     "summary": "Multi-Token Prediction (MTP) is now a common ingredient in language-model pre-training, as it improves downstream performance and enables faster inference through speculative decoding. We identify a flaw in standard MTP training, in which a residual component of the MTP gradient interferes with both next-token and multi-token learning, increasingly so with scale. Specifically, the MTP cross-entropy gradient can be decomposed exactly into a KL self-distillation term that pulls each MTP head toward the model's own next-token prediction (NTP) distribution and improves speculative decoding, and a residual that has a low signal-to-noise ratio and buries the useful KL signal. We introduce the KL gradient-recovery trick: when two distributions share a linear output head, the gradient of their KL divergence can be recovered exactly by combining their cross-entropy gradients through straight-through gradient routing. Unlike minimizing the KL directly, this trick requires no vocabulary-sized logit matrices and is compatible with standard fused cross-entropy kernels. This enables Soft Multi-Token Prediction (Soft-MTP), a one-line code change to MTP that removes the noisy residual and backpropagates only the KL self-distillation signal by reusing the existing NTP and MTP cross-entropy computations. Soft-MTP supports both DeepSeek- and Meta-style MTP, adds no parameters, and incurs no measurable overhead. From 167M to 1.2B parameters, Soft-MTP improves over standard MTP with lower NTP perplexity, faster speculative decoding and higher zero-shot accuracy at every scale, lower MTP perplexity from 689M onward, and stronger math and code reasoning after fine-tuning at 1.2B. Soft-MTP also matches, if not exceeds, direct KL divergence minimization on most metrics. Soft-MTP is, in effect, a free lunch for MTP optimization. Our code can be found at https://github.com/JaydenTeoh/Soft-MTP.",
-    "upvotes": 19,
+    "upvotes": 20,
     "discussionId": "6ae43c86c3b566b041f6c933",
     "githubRepo": "https://github.com/JaydenTeoh/Soft-MTP",
     "githubRepoAddedBy": "user",
@@ -3496,7 +3874,7 @@
      "name": "Gokottaw434"
     },
     "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assigned a disjoint band of DCT coefficients; this separates anchor density from spectral subdivision. Only the lowest-frequency slot from each anchor participates in global attention, while all slots interact locally. This allows the model to increase spectral detail without enlarging the global sequence. A spatial head further adds a local correction to the spectral prediction, while the generative state, target, and loss remain in pixel space. On ImageNet-256, SpecSlot achieves a comparable final FID to a FLOPs-matched JiT control while converging faster. On ImageNet-512, it improves FID by 2.84 over the control with 3.9% fewer FLOPs, and comes within only 0.69 FID of JiT-B/16 at 38.2% lower cost. On text-to-image generation, SpecSlot surpasses JiT-B/8 on DPG-Bench by 1.06 at 40.6% lower forward cost.",
-    "upvotes": 25,
+    "upvotes": 28,
     "discussionId": "6ae44231c3b566b041f6c956",
     "projectPage": "https://yangjiongfan.site/specslot/",
     "githubRepo": "https://github.com/JiongfanYang/SpecSlot",
@@ -3756,7 +4134,7 @@
      "evidence-assumption-judgment chain"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 128
+    "githubStars": 134
    },
    "publishedAt": "2026-10-27T20:00:00.000Z",
    "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
@@ -4242,7 +4620,7 @@
      "name": "hyeon9698"
     },
     "summary": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adaptive decision is needed rather than a fixed schedule. Without training or a tuned threshold, LOWN retains 99.6% of LLaDA-V's score on ten benchmarks at 35.3% of the decoding FLOPs on average. LOWN also generalizes across LLaDA-based DVLMs, composes orthogonally with visual token pruning, and runs under key-value caching for further efficiency gains. Code and project page are available at https://hyeon9698.github.io/LOWN/",
-    "upvotes": 108,
+    "upvotes": 109,
     "discussionId": "6ae43303c3b566b041f6c8f9",
     "projectPage": "https://hyeon9698.github.io/LOWN/",
     "githubRepo": "https://github.com/hyeon9698/LOWN",
@@ -4258,7 +4636,7 @@
      "decoding FLOPs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 14,
+    "githubStars": 15,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -4567,7 +4945,7 @@
      "name": "hyz317"
     },
     "summary": "The hair of stylized characters in games and avatars is built from hair cards: artist-placed ribbons whose geometry is the visible hair, animated by spring bones. Existing image-based methods produce realistic hair or a single fused mesh, while CHARM, the only generator of stylized hair cards, decodes a hairstyle autoregressively as a long sequence of control points. Observing that a card hairstyle is an unordered set of artist-defined primitives, we propose HairDeck, which generates it as one: each card is a single token, and a set diffusion transformer denoises all cards together. From a single image, HairDeck generates the cards and the spring-bone chains that drive them, yielding an animatable asset that exports to ready-to-use downstream formats. On CHARM's own test set, it lowers Chamfer distance by 44% and card-orientation error by more than half while running 33 times faster, and from single images it outperforms CHARM, image-to-3D pipelines and strand-based methods. Project page: https://hyzcluster.github.io/HairDeck",
-    "upvotes": 26,
+    "upvotes": 27,
     "discussionId": "6ae423d2c3b566b041f6c899",
     "projectPage": "https://hyzcluster.github.io/HairDeck/",
     "githubRepo": "https://github.com/hyz317/HairDeck",
@@ -4793,7 +5171,7 @@
      "LongText-Bench"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 134,
+    "githubStars": 169,
     "organization": {
      "_id": "67aea5c8f086ab0f70ed97c9",
      "name": "inclusionAI",
@@ -5186,515 +5564,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.38678",
-    "authors": [
-     {
-      "_id": "6ae41054c3b566b041f6c823",
-      "name": "Lu Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c824",
-      "name": "Zhuoran Jin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c825",
-      "name": "Longxiang Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c826",
-      "name": "Junhong Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c827",
-      "name": "Yupu Hao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c828",
-      "name": "Yao Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c829",
-      "name": "Daojian Zeng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c82a",
-      "name": "Yubo Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c82b",
-      "name": "Kang Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c82c",
-      "name": "Guang Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae41054c3b566b041f6c82d",
-      "name": "Jun Zhao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding",
-    "submittedOnDailyBy": {
-     "_id": "67d15f29bacfd19231a6e178",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67d15f29bacfd19231a6e178/nbm1rAJgnH-QdEZS2tF8Z.png",
-     "isPro": false,
-     "fullname": "Lu  Wang",
-     "user": "wanglucs",
-     "type": "user",
-     "name": "wanglucs"
-    },
-    "summary": "Recent advances in multimodal large language models have increased interest in interaction paradigms for video understanding. The evolution from offline to streaming and proactive interaction has gradually shifted models from passive responders toward more proactive agents that can decide when to answer. However, existing proactive paradigms typically assume that the information required to answer a query is complete, leaving models to only wait or answer. In the real world, however, information is often incomplete due to uncertainty from either the video or the user. In proactive paradigms, such uncertainty can cause the model to wait forever or generate highly hallucinatory responses. We therefore argue that proactive interaction should be redefined with a third action: ask, allowing models to actively ask for missing information. To study when and what models should ask before answering, we introduce AskStream, the first multi-turn benchmark spanning video and user uncertainty for streaming video understanding, with four task categories and eight subtasks. It contains 438 videos with 2,714 manually annotated frame-level time windows across three types: wait, ask, and answer. Across both multiple-choice and open-ended settings, even the strongest model attains only 52.18% on our proposed Ask-F1 metric, highlighting substantial limitations in proactive information seeking under uncertainty.",
-    "upvotes": 11,
-    "discussionId": "6ae41054c3b566b041f6c82e",
-    "projectPage": "https://askstream.top/",
-    "githubRepo": "https://github.com/wanglu-cs/AskStream",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Proactive video understanding should include asking for missing information under uncertainty, and the AskStream benchmark reveals current models struggle with this decision.",
-    "ai_keywords": [
-     "multimodal large language models",
-     "streaming video understanding",
-     "proactive interaction",
-     "AskStream",
-     "Ask-F1 metric",
-     "video uncertainty",
-     "user uncertainty"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13,
-    "organization": {
-     "_id": "640a887796aae649741a586f",
-     "name": "CASIA",
-     "fullname": "Chinese Academic of Science Institute of Automation",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1678411888885-6388984e8a5dbe2f3dc5afee.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-27T20:00:00.000Z",
-   "title": "AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding",
-   "summary": "Recent advances in multimodal large language models have increased interest in interaction paradigms for video understanding. The evolution from offline to streaming and proactive interaction has gradually shifted models from passive responders toward more proactive agents that can decide when to answer. However, existing proactive paradigms typically assume that the information required to answer a query is complete, leaving models to only wait or answer. In the real world, however, information is often incomplete due to uncertainty from either the video or the user. In proactive paradigms, such uncertainty can cause the model to wait forever or generate highly hallucinatory responses. We therefore argue that proactive interaction should be redefined with a third action: ask, allowing models to actively ask for missing information. To study when and what models should ask before answering, we introduce AskStream, the first multi-turn benchmark spanning video and user uncertainty for streaming video understanding, with four task categories and eight subtasks. It contains 438 videos with 2,714 manually annotated frame-level time windows across three types: wait, ask, and answer. Across both multiple-choice and open-ended settings, even the strongest model attains only 52.18% on our proposed Ask-F1 metric, highlighting substantial limitations in proactive information seeking under uncertainty.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38678.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "67d15f29bacfd19231a6e178",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67d15f29bacfd19231a6e178/nbm1rAJgnH-QdEZS2tF8Z.png",
-    "fullname": "Lu  Wang",
-    "name": "wanglucs",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "640a887796aae649741a586f",
-    "name": "CASIA",
-    "fullname": "Chinese Academic of Science Institute of Automation",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1678411888885-6388984e8a5dbe2f3dc5afee.jpeg"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.39664",
-    "authors": [
-     {
-      "_id": "6ae40e7ec3b566b041f6c818",
-      "name": "Haiyang Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c819",
-      "name": "Tianyu Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81a",
-      "name": "Jialu Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81b",
-      "name": "Jiteng Mu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81c",
-      "name": "Yuanjun Xiong",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81d",
-      "name": "Jianming Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81e",
-      "name": "Zhuowen Tu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae40e7ec3b566b041f6c81f",
-      "name": "Mingze Xu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/632a994b4ee2960462ecbf7e/TxvbXSdulQPILjAQkPAnY.png"
-    ],
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "EditAgent: Rethinking Agentic Image Editing",
-    "submittedOnDailyBy": {
-     "_id": "632a994b4ee2960462ecbf7e",
-     "avatarUrl": "/avatars/5b462ddc343e035c4d147b521180691b.svg",
-     "isPro": true,
-     "fullname": "Haiyang Xu",
-     "user": "xuhaiyang3110",
-     "type": "user",
-     "name": "xuhaiyang3110"
-    },
-    "summary": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
-    "upvotes": 11,
-    "discussionId": "6ae40e7ec3b566b041f6c820",
-    "projectPage": "https://editagent.github.io",
-    "ai_summary": "EditAgent broadens agentic image editing by routing steps to diverse editors and using verification records for listwise judging, improving reliability and efficiency.",
-    "ai_keywords": [
-     "agentic image editors",
-     "action space",
-     "observation space",
-     "VLM judges",
-     "verification records",
-     "listwise judging",
-     "reward models",
-     "open-weight editors"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "61e5d14f77496de0a6d95c6b",
-     "name": "adobe",
-     "fullname": "Adobe",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
-    }
-   },
-   "publishedAt": "2026-10-28T20:00:00.000Z",
-   "title": "EditAgent: Rethinking Agentic Image Editing",
-   "summary": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/632a994b4ee2960462ecbf7e/TxvbXSdulQPILjAQkPAnY.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39664.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "632a994b4ee2960462ecbf7e",
-    "avatarUrl": "/avatars/5b462ddc343e035c4d147b521180691b.svg",
-    "fullname": "Haiyang Xu",
-    "name": "xuhaiyang3110",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61e5d14f77496de0a6d95c6b",
-    "name": "adobe",
-    "fullname": "Adobe",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.38352",
-    "authors": [
-     {
-      "_id": "6ae3f93cc3b566b041f6c763",
-      "user": {
-       "_id": "66c7f331cc47b8e6e94d4297",
-       "avatarUrl": "/avatars/0065a0040774c1b0b9b41e3cff613763.svg",
-       "isPro": false,
-       "fullname": "cym",
-       "user": "XD-MU",
-       "type": "user",
-       "name": "XD-MU"
-      },
-      "name": "Chenyu Mu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T11:13:38.410Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c764",
-      "name": "Wenming Weng",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c765",
-      "name": "Qinrui Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c766",
-      "user": {
-       "_id": "674d092c6421c58761fc83eb",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
-       "isPro": false,
-       "fullname": "Xingsong Ye",
-       "user": "Yesianrohn",
-       "type": "user",
-       "name": "Yesianrohn"
-      },
-      "name": "Xingsong Ye",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T08:45:05.031Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c767",
-      "name": "Hao Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c768",
-      "name": "Jun He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c769",
-      "name": "Chong Sun",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c76a",
-      "name": "Chen Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c76b",
-      "name": "Jing Lyu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c76c",
-      "name": "Erkun Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3f93cc3b566b041f6c76d",
-      "name": "Cheng Deng",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/EPvuXyet_XWaE9a0yEUGt.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/xfvmV1KbAmbGilu2ktmtg.mp4"
-    ],
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video",
-    "submittedOnDailyBy": {
-     "_id": "674d092c6421c58761fc83eb",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
-     "isPro": false,
-     "fullname": "Xingsong Ye",
-     "user": "Yesianrohn",
-     "type": "user",
-     "name": "Yesianrohn"
-    },
-    "summary": "Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this supervision to train a single 9B policy that coordinates production and recovers from failures within the same harness. Moreover, we introduce a 100-task benchmark and five metrics assessing editing quality and delivery reliability. Under a shared tool environment, WeVisCut substantially outperforms its base model and achieves comparable performance to Claude Opus 5 while using nearly 33x fewer generated tokens per successful output minute. It also outperforms task-matched native editors on our proposed metrics.",
-    "upvotes": 21,
-    "discussionId": "6ae3f93dc3b566b041f6c76e",
-    "projectPage": "https://tencent.github.io/WeVisCut",
-    "githubRepo": "https://github.com/Tencent/WeVisCut",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "WeVisCut is a script-to-video system that trains a compact policy to coordinate video editing tools, recover from failures, and reduce token usage while maintaining quality.",
-    "ai_keywords": [
-     "agentic editors",
-     "policy learning",
-     "shared production state",
-     "editing inversion",
-     "verified replay",
-     "executable supervision",
-     "9B policy",
-     "100-task benchmark",
-     "token efficiency"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 48,
-    "organization": {
-     "_id": "66543b6e420092799d2f625c",
-     "name": "tencent",
-     "fullname": "Tencent",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-    }
-   },
-   "publishedAt": "2026-10-27T20:00:00.000Z",
-   "title": "WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video",
-   "summary": "Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this supervision to train a single 9B policy that coordinates production and recovers from failures within the same harness. Moreover, we introduce a 100-task benchmark and five metrics assessing editing quality and delivery reliability. Under a shared tool environment, WeVisCut substantially outperforms its base model and achieves comparable performance to Claude Opus 5 while using nearly 33x fewer generated tokens per successful output minute. It also outperforms task-matched native editors on our proposed metrics.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/EPvuXyet_XWaE9a0yEUGt.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/674d092c6421c58761fc83eb/xfvmV1KbAmbGilu2ktmtg.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38352.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "674d092c6421c58761fc83eb",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
-    "fullname": "Xingsong Ye",
-    "name": "Yesianrohn",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66543b6e420092799d2f625c",
-    "name": "tencent",
-    "fullname": "Tencent",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.38425",
-    "authors": [
-     {
-      "_id": "6ae407efc3b566b041f6c7e8",
-      "user": {
-       "_id": "68f59ae49315a06ad9a01464",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68f59ae49315a06ad9a01464/welpgtUr6TY9Qa7nPBigg.jpeg",
-       "isPro": true,
-       "fullname": "Sean Yu",
-       "user": "yushaohan",
-       "type": "user",
-       "name": "yushaohan"
-      },
-      "name": "Shaohan Yu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T11:13:33.946Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7e9",
-      "name": "Jie Qin",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7ea",
-      "name": "Wende Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7eb",
-      "name": "Haiwen Diao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7ec",
-      "name": "Limeng Qiao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7ed",
-      "name": "Yueming Lyu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae407efc3b566b041f6c7ee",
-      "name": "Chenyang Si",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/68f59ae49315a06ad9a01464/PYZEmEPPaR8PFmfG5Ct5U.mp4"
-    ],
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation",
-    "submittedOnDailyBy": {
-     "_id": "68f59ae49315a06ad9a01464",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68f59ae49315a06ad9a01464/welpgtUr6TY9Qa7nPBigg.jpeg",
-     "isPro": true,
-     "fullname": "Sean Yu",
-     "user": "yushaohan",
-     "type": "user",
-     "name": "yushaohan"
-    },
-    "summary": "Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and images, multimodal interleaved generation remains largely underexplored. Progress in this area is hindered by two key limitations: (1) the lack of well-defined interleaved generation tasks and corresponding training data, and (2) the absence of fine-grained evaluation protocols that can reliably diagnose model performance across different capability dimensions. To this end, we present IntReal, comprising two complementary components: IntReal-100K, a real-world dataset of multimodal interleaved samples spanning four major categories, and the IntReal Evaluation Suite, which evaluates model performance across seven complementary dimensions using specialized expert models, enabling coarse-to-fine diagnosis. Extensive experiments validate our evaluation suite through low inter-metric redundancy (max pairwise absolute Spearman's ρleq 0.42 ), high agreement with human judgments (83.3% accuracy), and strong consistency across different expert evaluators (Spearman's ρ> 0.9 ), supporting the complementarity and reliability of our metrics. By benchmarking four families of UMMs, we show that IntReal Evaluation Suite reveals distinct strengths and weaknesses across models. Post-training experiments demonstrate the utility of IntReal-100K for improving interleaved generation and further show that training unimodal generation can also benefit interleaved generation. These findings suggest that interleaved generation can benefit from modality-specific optimization, rather than requiring joint text-image training at every stage.",
-    "upvotes": 16,
-    "discussionId": "6ae407efc3b566b041f6c7ef",
-    "projectPage": "https://yushaohan.github.io/IntReal/",
-    "githubRepo": "https://github.com/yushaohan/IntReal",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "IntReal introduces a real-world interleaved multimodal dataset and evaluation framework to diagnose unified model strengths and improve generation through targeted training.",
-    "ai_keywords": [
-     "Unified Multimodal Models",
-     "interleaved generation",
-     "IntReal-100K",
-     "IntReal Evaluation Suite",
-     "expert models",
-     "Spearman's correlation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 9,
-    "organization": {
-     "_id": "68b28d79a176a9beb30d2049",
-     "name": "meituan-longcat",
-     "fullname": "LongCat",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a2a29ab9d4c5698e02c747/CDCAx7X7rXDt7xjI-DoxG.png"
-    }
-   },
-   "publishedAt": "2026-10-27T20:00:00.000Z",
-   "title": "IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation",
-   "summary": "Humans routinely consume multimodal content, where textual and visual information is naturally interleaved. Although Unified Multimodal Models (UMMs) can jointly generate text and images, multimodal interleaved generation remains largely underexplored. Progress in this area is hindered by two key limitations: (1) the lack of well-defined interleaved generation tasks and corresponding training data, and (2) the absence of fine-grained evaluation protocols that can reliably diagnose model performance across different capability dimensions. To this end, we present IntReal, comprising two complementary components: IntReal-100K, a real-world dataset of multimodal interleaved samples spanning four major categories, and the IntReal Evaluation Suite, which evaluates model performance across seven complementary dimensions using specialized expert models, enabling coarse-to-fine diagnosis. Extensive experiments validate our evaluation suite through low inter-metric redundancy (max pairwise absolute Spearman's ρleq 0.42 ), high agreement with human judgments (83.3% accuracy), and strong consistency across different expert evaluators (Spearman's ρ> 0.9 ), supporting the complementarity and reliability of our metrics. By benchmarking four families of UMMs, we show that IntReal Evaluation Suite reveals distinct strengths and weaknesses across models. Post-training experiments demonstrate the utility of IntReal-100K for improving interleaved generation and further show that training unimodal generation can also benefit interleaved generation. These findings suggest that interleaved generation can benefit from modality-specific optimization, rather than requiring joint text-image training at every stage.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/68f59ae49315a06ad9a01464/PYZEmEPPaR8PFmfG5Ct5U.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38425.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "68f59ae49315a06ad9a01464",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68f59ae49315a06ad9a01464/welpgtUr6TY9Qa7nPBigg.jpeg",
-    "fullname": "Sean Yu",
-    "name": "yushaohan",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68b28d79a176a9beb30d2049",
-    "name": "meituan-longcat",
-    "fullname": "LongCat",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a2a29ab9d4c5698e02c747/CDCAx7X7rXDt7xjI-DoxG.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
