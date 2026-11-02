@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-02T17:01:12.715Z",
+ "fetchedAt": "2026-11-02T19:16:10.873Z",
  "payload": {
   "data": [
    {
@@ -6194,10 +6194,12 @@
      "reasoning_effort",
      "response_format",
      "seed",
+     "stop",
      "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
+     "top_k",
      "top_logprobs",
      "top_p"
     ],
@@ -12487,7 +12489,7 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000058",
+     "prompt": "0.0000000514",
      "completion": "0.0000003",
      "input_cache_read": "0.000000035"
     },
@@ -12836,7 +12838,7 @@
     },
     "supported_voices": null,
     "knowledge_cutoff": null,
-    "expiration_date": null,
+    "expiration_date": "2026-11-04",
     "links": {
      "details": "/api/v1/models/thinkingmachines/inkling-small-20260730/endpoints"
     },
@@ -14331,7 +14333,7 @@
     },
     "supported_voices": null,
     "knowledge_cutoff": null,
-    "expiration_date": null,
+    "expiration_date": "2026-11-04",
     "links": {
      "details": "/api/v1/models/thinkingmachines/inkling-20260715/endpoints"
     },
@@ -16413,21 +16415,23 @@
     "pricing": {
      "prompt": "0.000002",
      "completion": "0.000006",
-     "web_search": "0.005",
+     "web_search": "0.01",
      "input_cache_read": "0.0000005",
+     "input_cache_write": "0",
      "overrides": [
       {
        "min_prompt_tokens": 200000,
        "prompt": "0.000004",
        "completion": "0.000012",
-       "input_cache_read": "0.000001"
+       "input_cache_read": "0.000001",
+       "input_cache_write": "0"
       }
      ]
     },
     "top_provider": {
      "context_length": 500000,
      "max_completion_tokens": 450000,
-     "is_moderated": false
+     "is_moderated": true
     },
     "per_request_limits": null,
     "supported_parameters": [
@@ -16438,10 +16442,12 @@
      "reasoning_effort",
      "response_format",
      "seed",
+     "stop",
      "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
+     "top_k",
      "top_logprobs",
      "top_p"
     ],
@@ -24836,13 +24842,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000096",
-     "completion": "0.000000289",
-     "input_cache_read": "0.000000048"
+     "prompt": "0.0000000765",
+     "completion": "0.000000255",
+     "input_cache_read": "0.0000000425"
     },
     "top_provider": {
      "context_length": 262144,
-     "max_completion_tokens": 32768,
+     "max_completion_tokens": 235929,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -38331,13 +38337,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000018",
-     "completion": "0.00000009",
-     "input_cache_read": "0.000000009"
+     "prompt": "0.00000003",
+     "completion": "0.00000013",
+     "input_cache_read": "0.00000003"
     },
     "top_provider": {
      "context_length": 131072,
-     "max_completion_tokens": 32768,
+     "max_completion_tokens": 117964,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -44349,12 +44355,12 @@
      "instruct_type": "llama3"
     },
     "pricing": {
-     "prompt": "0.0000000509",
-     "completion": "0.000000335"
+     "prompt": "0.00000005",
+     "completion": "0.00000033"
     },
     "top_provider": {
-     "context_length": 80000,
-     "max_completion_tokens": 72000,
+     "context_length": 131072,
+     "max_completion_tokens": 117964,
      "is_moderated": false
     },
     "per_request_limits": null,

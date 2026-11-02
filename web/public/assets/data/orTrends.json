@@ -1,7 +1,7 @@
 {
  "key": "orTrends",
  "name": "orTrends",
- "fetchedAt": "2026-11-02T17:01:12.752Z",
+ "fetchedAt": "2026-11-02T19:16:10.907Z",
  "payload": [
   {
    "data": {
@@ -4486,38 +4486,38 @@
      }
     },
     "videoRequests": {
-     "kwaivgi/kling-video-o1-20260420": 661,
+     "google/veo-3.1-20260320": 7676,
      "x-ai/grok-imagine-video-1.5-20260719": 8672,
      "tbc/mischief-1-20261023": 7452,
-     "kwaivgi/kling-v3.0-std-20260429": 10687,
      "minimax/hailuo-2.3-20260420": 314,
      "black-forest-labs/flux-3-video-20260804": 1348,
      "alibaba/wan-3.0-20260824": 26187,
-     "minimax/hailuo-3-max-20260901": 9846,
+     "heygen/heygen-video-1-20260930": 66753,
      "alibaba/happyhorse-1.1-20260624": 2382,
-     "google/veo-3.1-20260320": 7676,
      "minimax/hailuo-03-20260730": 10162,
-     "google/veo-3.1-fast-20260320": 23696,
-     "heygen/avatar-iv-20260625": 13688,
-     "bytedance/seedance-2.5-20260807": 33159,
-     "alibaba/wan-2.6-20260327": 643,
      "black-forest-labs/flux-video-edit-20260910": 1333,
      "x-ai/grok-imagine-video-1.5-lite-20261001": 29415,
-     "bytedance/seedance-2.0-20260414": 19115,
+     "kwaivgi/kling-video-o1-20260420": 661,
      "runway/aleph-2-20260729": 612,
-     "bytedance/seedance-2.0-mini-20260811": 9423,
-     "x-ai/grok-imagine-video-20260512": 11735,
-     "runway/gen-4.5-20260729": 1112,
-     "google/veo-3.1-lite-20260331": 44243,
-     "bytedance/seedance-2.0-fast-20260414": 31575,
      "alibaba/happyhorse-1.0-20260624": 134,
+     "runway/gen-4.5-20260729": 1112,
+     "heygen/avatar-iv-20260625": 13688,
+     "bytedance/seedance-2.5-20260807": 33159,
+     "minimax/hailuo-3-max-20260901": 9846,
+     "alibaba/wan-2.6-20260327": 643,
+     "google/veo-3.1-lite-20260331": 44243,
+     "bytedance/seedance-2.0-mini-20260811": 9423,
+     "bytedance/seedance-2.0-fast-20260414": 31575,
+     "google/veo-3.1-fast-20260320": 23696,
+     "x-ai/grok-imagine-video-20260512": 11735,
+     "kwaivgi/kling-v3.0-pro-20260429": 13250,
+     "bytedance/seedance-2.0-20260414": 19115,
      "alibaba/wan-2.7-20260414": 2402,
-     "alibaba/wan-3.0-prime-20260827": 6333,
-     "heygen/heygen-video-1-20260930": 66753,
      "bytedance/seedance-1-5-pro-20260320": 13375,
-     "kwaivgi/kling-v3.0-pro-20260429": 13250
+     "kwaivgi/kling-v3.0-std-20260429": 10687,
+     "alibaba/wan-3.0-prime-20260827": 6333
     },
-    "generatedAt": "2026-11-02T16:57:16.146Z",
+    "generatedAt": "2026-11-02T18:47:51.030Z",
     "routerTokens": {
      "openrouter/fusion": 224157906,
      "openrouter/auto": 757186350532,
@@ -10744,10 +10744,12 @@
       "reasoning_effort",
       "response_format",
       "seed",
+      "stop",
       "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
+      "top_k",
       "top_logprobs",
       "top_p"
      ],
@@ -17037,7 +17039,7 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.000000058",
+      "prompt": "0.0000000514",
       "completion": "0.0000003",
       "input_cache_read": "0.000000035"
      },
@@ -17386,7 +17388,7 @@
      },
      "supported_voices": null,
      "knowledge_cutoff": null,
-     "expiration_date": null,
+     "expiration_date": "2026-11-04",
      "links": {
       "details": "/api/v1/models/thinkingmachines/inkling-small-20260730/endpoints"
      },
@@ -18881,7 +18883,7 @@
      },
      "supported_voices": null,
      "knowledge_cutoff": null,
-     "expiration_date": null,
+     "expiration_date": "2026-11-04",
      "links": {
       "details": "/api/v1/models/thinkingmachines/inkling-20260715/endpoints"
      },
@@ -20963,21 +20965,23 @@
      "pricing": {
       "prompt": "0.000002",
       "completion": "0.000006",
-      "web_search": "0.005",
+      "web_search": "0.01",
       "input_cache_read": "0.0000005",
+      "input_cache_write": "0",
       "overrides": [
        {
         "min_prompt_tokens": 200000,
         "prompt": "0.000004",
         "completion": "0.000012",
-        "input_cache_read": "0.000001"
+        "input_cache_read": "0.000001",
+        "input_cache_write": "0"
        }
       ]
      },
      "top_provider": {
       "context_length": 500000,
       "max_completion_tokens": 450000,
-      "is_moderated": false
+      "is_moderated": true
      },
      "per_request_limits": null,
      "supported_parameters": [
@@ -20988,10 +20992,12 @@
       "reasoning_effort",
       "response_format",
       "seed",
+      "stop",
       "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
+      "top_k",
       "top_logprobs",
       "top_p"
      ],
@@ -29386,13 +29392,13 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.000000096",
-      "completion": "0.000000289",
-      "input_cache_read": "0.000000048"
+      "prompt": "0.0000000765",
+      "completion": "0.000000255",
+      "input_cache_read": "0.0000000425"
      },
      "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": 235929,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -42881,13 +42887,13 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.000000018",
-      "completion": "0.00000009",
-      "input_cache_read": "0.000000009"
+      "prompt": "0.00000003",
+      "completion": "0.00000013",
+      "input_cache_read": "0.00000003"
      },
      "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 32768,
+      "max_completion_tokens": 117964,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -48899,12 +48905,12 @@
       "instruct_type": "llama3"
      },
      "pricing": {
-      "prompt": "0.0000000509",
-      "completion": "0.000000335"
+      "prompt": "0.00000005",
+      "completion": "0.00000033"
      },
      "top_provider": {
-      "context_length": 80000,
-      "max_completion_tokens": 72000,
+      "context_length": 131072,
+      "max_completion_tokens": 117964,
       "is_moderated": false
      },
      "per_request_limits": null,
