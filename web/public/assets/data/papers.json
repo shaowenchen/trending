@@ -1,8 +1,572 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-02T01:16:08.336Z",
+ "fetchedAt": "2026-11-02T03:31:06.234Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.40339",
+    "authors": [
+     {
+      "_id": "6ae80086ac2aed10b8c1cd48",
+      "name": "Yuzhe Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae80086ac2aed10b8c1cd49",
+      "name": "Zijun Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6ae80086ac2aed10b8c1cd4a",
+      "name": "Yeying Jin",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+    "submittedOnDailyBy": {
+     "_id": "677e31bb114aeff62d62bc11",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/JA85qWXtPO_mnK7_Bu2HJ.png",
+     "isPro": false,
+     "fullname": "ZIJUN LIN",
+     "user": "onepiece1999",
+     "type": "user",
+     "name": "onepiece1999"
+    },
+    "summary": "Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scenes and 178 characters, incorporating skeleton and geometry information as structured representations. We leverage these representations as intermediate proxies to condition a video generation model, together with an adaptive masking mechanism that improves alignment between the conditioning signals and generated video rollouts. Furthermore, we introduce an agentic framework that explicitly maintains and updates game states, allowing players to freely configure their virtual worlds and exercise fine-grained control over character motions while preserving visual quality and gameplay consistency. By combining agentic control with structured proxy-based generation, our framework unlocks new possibilities for player-driven game creation with real-time, generalizable, and mechanically consistent world simulation.",
+    "upvotes": 6,
+    "discussionId": "6ae80086ac2aed10b8c1cd4b",
+    "projectPage": "https://wyzardwu.github.io/wizard/",
+    "ai_summary": "Wizard is an agentic game world model that uses structured motion proxies and adaptive masking to enable real-time, generalizable video generation with precise character control across diverse scenes.",
+    "ai_keywords": [
+     "video world models",
+     "agentic framework",
+     "video generation model",
+     "adaptive masking mechanism",
+     "structured representations",
+     "skeleton and geometry information",
+     "proxy-based generation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "66543b6e420092799d2f625c",
+     "name": "tencent",
+     "fullname": "Tencent",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+   "summary": "Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scenes and 178 characters, incorporating skeleton and geometry information as structured representations. We leverage these representations as intermediate proxies to condition a video generation model, together with an adaptive masking mechanism that improves alignment between the conditioning signals and generated video rollouts. Furthermore, we introduce an agentic framework that explicitly maintains and updates game states, allowing players to freely configure their virtual worlds and exercise fine-grained control over character motions while preserving visual quality and gameplay consistency. By combining agentic control with structured proxy-based generation, our framework unlocks new possibilities for player-driven game creation with real-time, generalizable, and mechanically consistent world simulation.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40339.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "677e31bb114aeff62d62bc11",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/JA85qWXtPO_mnK7_Bu2HJ.png",
+    "fullname": "ZIJUN LIN",
+    "name": "onepiece1999",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 7,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "66543b6e420092799d2f625c",
+    "name": "tencent",
+    "fullname": "Tencent",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.39497",
+    "authors": [
+     {
+      "_id": "6ae43b38c3b566b041f6c922",
+      "name": "Qi Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c923",
+      "name": "Yun Qu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c924",
+      "name": "Lizhou Cai",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c925",
+      "user": {
+       "_id": "672c668860bdd07053bc0544",
+       "avatarUrl": "/avatars/e1a77ab474a7ee1f8b30b913d5cc5497.svg",
+       "isPro": false,
+       "fullname": "Heming Zou",
+       "user": "gfyddha",
+       "type": "user",
+       "name": "gfyddha"
+      },
+      "name": "Heming Zou",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-30T08:45:05.148Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c926",
+      "name": "Haoang Chi",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c927",
+      "name": "Yiqin Lv",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c928",
+      "name": "Xiang Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c929",
+      "name": "Haiyan Feng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c92a",
+      "name": "Mengyu Ge",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c92b",
+      "name": "Yize Geng",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c92c",
+      "name": "Yuhang Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c92d",
+      "name": "Yixiu Mao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae43b38c3b566b041f6c92e",
+      "name": "Xiangyang Ji",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+    "submittedOnDailyBy": {
+     "_id": "671f4c16692c424f3a28399b",
+     "avatarUrl": "/avatars/90d53c49aed95e4a677152867948f5bf.svg",
+     "isPro": false,
+     "fullname": "Yun Qu",
+     "user": "yunqu",
+     "type": "user",
+     "name": "yunqu"
+    },
+    "summary": "Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with System-1, a lightweight, semantically aware predictor that evaluates candidate interactions before execution, so that System-2 acts only on those worth their cost. Our answer is a qualified yes. We study conditional interaction, a predict--gate--execute--update loop: System-1 estimates each candidate's utility, System-2 executes those admitted by an adaptive threshold, and the outcomes update System-1. The loop spans training, test-time reasoning, adaptive decision-making, and agentic tool use, with utility and cost defined by the application. Under ideal screening and equal execution costs, execution compute falls by a factor approaching 1/ρ_u, where ρ_u is the density of utility-relevant interactions (cost-weighted when costs differ); prediction errors, exploration, and distribution shift reduce the saving. We bound selection regret by predictor error and the utility margin. These results motivate our central hypothesis: ρ_u is a measurable coordinate of scaling efficiency and makes informative compute a better description of scaling than total compute.",
+    "upvotes": 18,
+    "discussionId": "6ae43b39c3b566b041f6c92f",
+    "projectPage": "https://cheemswang.github.io/blogs/sys1-sys2-codesign.html",
+    "ai_summary": "Co-designing a resource-heavy reasoning system with a lightweight predictive evaluator can reduce execution costs by filtering interactions, with efficiency governed by the density of useful interactions.",
+    "ai_keywords": [
+     "conditional interaction",
+     "predict-gate-execute-update loop",
+     "System-1",
+     "System-2",
+     "adaptive threshold",
+     "selection regret",
+     "utility margin",
+     "scaling efficiency",
+     "informative compute"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "628735cbc83a2d6ab8d14a66",
+     "name": "Tsinghua",
+     "fullname": "Tsinghua University",
+     "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+   "summary": "Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with System-1, a lightweight, semantically aware predictor that evaluates candidate interactions before execution, so that System-2 acts only on those worth their cost. Our answer is a qualified yes. We study conditional interaction, a predict--gate--execute--update loop: System-1 estimates each candidate's utility, System-2 executes those admitted by an adaptive threshold, and the outcomes update System-1. The loop spans training, test-time reasoning, adaptive decision-making, and agentic tool use, with utility and cost defined by the application. Under ideal screening and equal execution costs, execution compute falls by a factor approaching 1/ρ_u, where ρ_u is the density of utility-relevant interactions (cost-weighted when costs differ); prediction errors, exploration, and distribution shift reduce the saving. We bound selection regret by predictor error and the utility margin. These results motivate our central hypothesis: ρ_u is a measurable coordinate of scaling efficiency and makes informative compute a better description of scaling than total compute.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39497.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "671f4c16692c424f3a28399b",
+    "avatarUrl": "/avatars/90d53c49aed95e4a677152867948f5bf.svg",
+    "fullname": "Yun Qu",
+    "name": "yunqu",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "628735cbc83a2d6ab8d14a66",
+    "name": "Tsinghua",
+    "fullname": "Tsinghua University",
+    "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.22740",
+    "authors": [
+     {
+      "_id": "6ae017dca5efa215400a79c5",
+      "name": "Mingda Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79c6",
+      "name": "Yun Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79c7",
+      "name": "Qiang Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79c8",
+      "name": "Yanjin Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79c9",
+      "name": "Rui Qian",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79ca",
+      "user": {
+       "_id": "6821630a8986a3a939662159",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/gzqy8imrdKKkuSPCLGQB_.png",
+       "isPro": false,
+       "fullname": "Zhao Qichao",
+       "user": "Thu-zqc",
+       "type": "user",
+       "name": "Thu-zqc"
+      },
+      "name": "Qichao Zhao",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-27T08:45:05.013Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79cb",
+      "name": "Tiesunlong Shen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79cc",
+      "name": "Na Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79cd",
+      "name": "Jian Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae017dca5efa215400a79ce",
+      "name": "Xiaoying Tang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/rSvJnQVwTDUXTi0AgCIvc.mp4",
+     "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/YcjpM2xrYBJULo-RIR6VT.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/FusvaqSeZLtYgex1dlTU2.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/_H7Pw-se86agxZXR80_0m.png"
+    ],
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
+    "submittedOnDailyBy": {
+     "_id": "6821630a8986a3a939662159",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/gzqy8imrdKKkuSPCLGQB_.png",
+     "isPro": false,
+     "fullname": "Zhao Qichao",
+     "user": "Thu-zqc",
+     "type": "user",
+     "name": "Thu-zqc"
+    },
+    "summary": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R^2Orch consistently outperforms baselines across question answering, math, code, and interactive tasks. Our code is available at https://github.com/beita6969/R2Orch.",
+    "upvotes": 7,
+    "discussionId": "6ae017dca5efa215400a79cf",
+    "githubRepo": "https://github.com/beita6969/R2Orch",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "R²Orch uses recursive self-play with learnable task selection and skill withdrawal to train orchestrators without hand-designed curricula, improving performance across reasoning and interactive tasks.",
+    "ai_keywords": [
+     "agentic orchestration",
+     "recursive self-play",
+     "Recursive Learnability",
+     "Skill Withdrawal",
+     "Proposer",
+     "rollouts",
+     "zero-skill deployment"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0,
+    "organization": {
+     "_id": "6223644d0129f2097d69a407",
+     "name": "CUHKSZ",
+     "fullname": "Chinese University of Hong Kong, Shenzhen",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1646486592158-6108ae87823007eaf0c7bd1e.png"
+    }
+   },
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "title": "R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
+   "summary": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R^2Orch consistently outperforms baselines across question answering, math, code, and interactive tasks. Our code is available at https://github.com/beita6969/R2Orch.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/rSvJnQVwTDUXTi0AgCIvc.mp4",
+    "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/YcjpM2xrYBJULo-RIR6VT.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/FusvaqSeZLtYgex1dlTU2.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/_H7Pw-se86agxZXR80_0m.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22740.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6821630a8986a3a939662159",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/gzqy8imrdKKkuSPCLGQB_.png",
+    "fullname": "Zhao Qichao",
+    "name": "Thu-zqc",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6223644d0129f2097d69a407",
+    "name": "CUHKSZ",
+    "fullname": "Chinese University of Hong Kong, Shenzhen",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1646486592158-6108ae87823007eaf0c7bd1e.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2610.40748",
+    "authors": [
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccf5",
+      "name": "Jun Cen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccf6",
+      "name": "Yubo Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccf7",
+      "name": "Hao Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccf8",
+      "name": "Liangkai Li",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccf9",
+      "name": "Yaoxu Lyu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccfa",
+      "name": "Meng Wei",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccfb",
+      "name": "Zeqi Xiao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccfc",
+      "name": "Sizhe Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccfd",
+      "name": "Yuqiang Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccfe",
+      "name": "Yifan Ye",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1ccff",
+      "name": "Shanghang Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7f8c9ac2aed10b8c1cd00",
+      "name": "Duo Zheng",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+    "submittedOnDailyBy": {
+     "_id": "644493bb9c1bd83bd1a09860",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VNb6fnFYraR5R4vSwMYZz.jpeg",
+     "isPro": false,
+     "fullname": "Jun CEN",
+     "user": "jcenaa",
+     "type": "user",
+     "name": "jcenaa"
+    },
+    "summary": "Achieving the broad task generalization of embodied models in physical environments remains a central challenge in robot learning. We study this challenge in World Action Models (WAMs) through two complementary capabilities: video generalization, which predicts the visual evolution of new tasks, and action generalization, which translates these predictions into executable behavior through a video-to-action bridge. By varying video and action supervision for tasks outside an initial training set, we examine their respective contributions to task transfer. On RoboTwin 2.0, using only in-distribution video-action supervision yields a 25.07% success rate on out-of-distribution tasks. Introducing videos of these tasks without their action labels raises success to 55.90%, while adding just one action-labeled demonstration per task further improves it to 70.70%. These findings suggest that broader video coverage enables task transfer by leveraging existing inverse-dynamics capabilities, while even sparse action supervision further strengthens those capabilities. Guided by this perspective, we introduce WorldBridge, a WAM with separate video and action experts connected through structured attention and trained with joint flow matching. WorldBridge incorporates visual memory at two temporal scales and action forcing, alongside a unified data processing pipeline that standardizes and filters heterogeneous robot trajectories and egocentric hand-derived supervision. Across multiple manipulation benchmarks, WorldBridge achieves state-of-the-art performance among the compared methods, including 96.23% on RoboTwin 2.0 full data setting and 80.9% on clean to random setting, 82.8% on RoboCasa GR1 TableTop, and 57.6% on DOMINO Level-1. Our study highlights the complementary roles of video prediction and action grounding in developing robots that generalize across tasks.",
+    "upvotes": 2,
+    "discussionId": "6ae7f8c9ac2aed10b8c1cd01",
+    "projectPage": "https://worldbridge-jd.github.io/",
+    "ai_summary": "WorldBridge improves robot task generalization by combining video prediction with sparse action supervision via separate video and action experts, achieving state-of-the-art results across manipulation benchmarks.",
+    "ai_keywords": [
+     "World Action Models",
+     "video generalization",
+     "action generalization",
+     "inverse-dynamics",
+     "video-to-action bridge",
+     "flow matching",
+     "structured attention",
+     "visual memory",
+     "action forcing",
+     "WorldBridge"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+   "summary": "Achieving the broad task generalization of embodied models in physical environments remains a central challenge in robot learning. We study this challenge in World Action Models (WAMs) through two complementary capabilities: video generalization, which predicts the visual evolution of new tasks, and action generalization, which translates these predictions into executable behavior through a video-to-action bridge. By varying video and action supervision for tasks outside an initial training set, we examine their respective contributions to task transfer. On RoboTwin 2.0, using only in-distribution video-action supervision yields a 25.07% success rate on out-of-distribution tasks. Introducing videos of these tasks without their action labels raises success to 55.90%, while adding just one action-labeled demonstration per task further improves it to 70.70%. These findings suggest that broader video coverage enables task transfer by leveraging existing inverse-dynamics capabilities, while even sparse action supervision further strengthens those capabilities. Guided by this perspective, we introduce WorldBridge, a WAM with separate video and action experts connected through structured attention and trained with joint flow matching. WorldBridge incorporates visual memory at two temporal scales and action forcing, alongside a unified data processing pipeline that standardizes and filters heterogeneous robot trajectories and egocentric hand-derived supervision. Across multiple manipulation benchmarks, WorldBridge achieves state-of-the-art performance among the compared methods, including 96.23% on RoboTwin 2.0 full data setting and 80.9% on clean to random setting, 82.8% on RoboCasa GR1 TableTop, and 57.6% on DOMINO Level-1. Our study highlights the complementary roles of video prediction and action grounding in developing robots that generalize across tasks.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40748.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "644493bb9c1bd83bd1a09860",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VNb6fnFYraR5R4vSwMYZz.jpeg",
+    "fullname": "Jun CEN",
+    "name": "jcenaa",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 11,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.40373",
+    "authors": [
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd1",
+      "name": "Rongxing Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd2",
+      "name": "Hongyu Qu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd3",
+      "name": "Kehong Wu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd4",
+      "name": "Xudong Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd5",
+      "name": "Fan Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd6",
+      "name": "Xinguang Xiang",
+      "hidden": false
+     },
+     {
+      "_id": "6ae7ee59ac2aed10b8c1ccd7",
+      "name": "Xiangbo Shu",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+    "submittedOnDailyBy": {
+     "_id": "6a4358768ae6ed7930e6b72e",
+     "avatarUrl": "/avatars/202dd31c93cc49b2c58037cd22d6ed68.svg",
+     "isPro": false,
+     "fullname": "Qu Hongyu",
+     "user": "quhongyu123",
+     "type": "user",
+     "name": "quhongyu123"
+    },
+    "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
+    "upvotes": 9,
+    "discussionId": "6ae7ee59ac2aed10b8c1ccd8",
+    "ai_summary": "HiFOR improves robotic manipulation by hierarchically predicting future states and retrieving relevant future information to guide action generation.",
+    "ai_keywords": [
+     "Vision-Language-Action models",
+     "hierarchical foresight prediction",
+     "Hierarchical Dependency Mask",
+     "Structure-Aware Latent World Modeling",
+     "Action-Guided Factorized World Retrieval",
+     "denoising"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+   "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40373.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6a4358768ae6ed7930e6b72e",
+    "avatarUrl": "/avatars/202dd31c93cc49b2c58037cd22d6ed68.svg",
+    "fullname": "Qu Hongyu",
+    "name": "quhongyu123",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.38293",
@@ -525,7 +1089,7 @@
      "name": "AZH04"
     },
     "summary": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning. This work lays the groundwork for a unified science of foundation-model training, connecting mathematical principles, training infrastructure, and the development of model capabilities.",
-    "upvotes": 9,
+    "upvotes": 11,
     "discussionId": "6ae4b5b9ac2aed10b8c1c1b2",
     "projectPage": "https://yudasong.github.io/unified-training/",
     "githubRepo": "https://github.com/yudasong/unified-training",
@@ -729,7 +1293,7 @@
      "text JEPA"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 56,
+    "githubStars": 72,
     "organization": {
      "_id": "66d46fac30d7ea0b28a1b98a",
      "name": "galilai-group",
@@ -1273,7 +1837,7 @@
      "name": "shenyunhang"
     },
     "summary": "We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities. Its design rests on one encoder for every modality and one schema for every task. Youtu-Omni-Encoder, initialized from a pre-trained language model to strengthen text reading, encodes all modalities with shared weights in a unified space-time coordinate system, and a few fusion layers let video frames attend to concurrent audio, bringing cross-modal fusion and temporal alignment into perception itself. OmniSchema unifies the outputs of all ten parsing tasks, allowing a single self-evolving post-training procedure, OmniSchema-Aware On-Policy Distillation (OSAD), to provide a shared token-role-based objective across tasks. In each round, the model is trained on its own rollouts against token-level targets from a reference-conditioned copy of itself, which is then refreshed with the trained weights, so that the parser and its supervision co-evolve. With a single 5 B-parameter checkpoint, Youtu-Parsing-Omni achieves state-of-the-art performance on OmniDocBench v1.6 (96.96 Overall) and leads all open-weight models on OmniParsingBench (75.08 Avg.), with its advantage concentrated on audio and video. It also achieves the best overall chart-parsing score (95.02) and the highest exact chemical-fingerprint agreement among compared systems, and matches a dedicated optical-music model in character-level transcription of typeset sheet music while staying far ahead of general-purpose systems. Code and model weights are publicly available.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6ae45f49c3b566b041f6ca9b",
     "projectPage": "https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni",
     "ai_summary": "Youtu-Parsing-Omni is a unified multi-modal parser that encodes documents, images, audio, and video into structured spatiotemporal records using shared weights and cross-modal fusion, achieving state-of-the-art results across parsing benchmarks through a self-evolving on-policy distillation procedure.",
@@ -1696,7 +2260,7 @@
      "name": "JaydenTeoh"
     },
     "summary": "Multi-Token Prediction (MTP) is now a common ingredient in language-model pre-training, as it improves downstream performance and enables faster inference through speculative decoding. We identify a flaw in standard MTP training, in which a residual component of the MTP gradient interferes with both next-token and multi-token learning, increasingly so with scale. Specifically, the MTP cross-entropy gradient can be decomposed exactly into a KL self-distillation term that pulls each MTP head toward the model's own next-token prediction (NTP) distribution and improves speculative decoding, and a residual that has a low signal-to-noise ratio and buries the useful KL signal. We introduce the KL gradient-recovery trick: when two distributions share a linear output head, the gradient of their KL divergence can be recovered exactly by combining their cross-entropy gradients through straight-through gradient routing. Unlike minimizing the KL directly, this trick requires no vocabulary-sized logit matrices and is compatible with standard fused cross-entropy kernels. This enables Soft Multi-Token Prediction (Soft-MTP), a one-line code change to MTP that removes the noisy residual and backpropagates only the KL self-distillation signal by reusing the existing NTP and MTP cross-entropy computations. Soft-MTP supports both DeepSeek- and Meta-style MTP, adds no parameters, and incurs no measurable overhead. From 167M to 1.2B parameters, Soft-MTP improves over standard MTP with lower NTP perplexity, faster speculative decoding and higher zero-shot accuracy at every scale, lower MTP perplexity from 689M onward, and stronger math and code reasoning after fine-tuning at 1.2B. Soft-MTP also matches, if not exceeds, direct KL divergence minimization on most metrics. Soft-MTP is, in effect, a free lunch for MTP optimization. Our code can be found at https://github.com/JaydenTeoh/Soft-MTP.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6ae43c86c3b566b041f6c933",
     "githubRepo": "https://github.com/JaydenTeoh/Soft-MTP",
     "githubRepoAddedBy": "user",
@@ -1923,7 +2487,7 @@
      "name": "wlsgur1018"
     },
     "summary": "Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to 38.6times fewer 3D primitives, 3.2times faster memory updates, and 359times faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.",
-    "upvotes": 41,
+    "upvotes": 43,
     "discussionId": "6ae44367c3b566b041f6c96b",
     "projectPage": "https://cvlab-kaist.github.io/L3G-World/",
     "githubRepo": "https://github.com/cvlab-kaist/L3G-World",
@@ -2436,7 +3000,7 @@
      "name": "zhshj0110"
     },
     "summary": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
-    "upvotes": 72,
+    "upvotes": 73,
     "discussionId": "6ae42126c3b566b041f6c890",
     "projectPage": "https://seerray-lab.github.io/A-RSI/",
     "ai_summary": "A-RSI improves recursive self-improvement by refreshing training tasks based on declining learning signals and using independently verifiable program-generated answers, raising benchmark performance without external labels.",
@@ -2559,7 +3123,7 @@
      "name": "hyeon9698"
     },
     "summary": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adaptive decision is needed rather than a fixed schedule. Without training or a tuned threshold, LOWN retains 99.6% of LLaDA-V's score on ten benchmarks at 35.3% of the decoding FLOPs on average. LOWN also generalizes across LLaDA-based DVLMs, composes orthogonally with visual token pruning, and runs under key-value caching for further efficiency gains. Code and project page are available at https://hyeon9698.github.io/LOWN/",
-    "upvotes": 103,
+    "upvotes": 107,
     "discussionId": "6ae43303c3b566b041f6c8f9",
     "projectPage": "https://hyeon9698.github.io/LOWN/",
     "githubRepo": "https://github.com/hyeon9698/LOWN",
@@ -2884,7 +3448,7 @@
      "name": "hyz317"
     },
     "summary": "The hair of stylized characters in games and avatars is built from hair cards: artist-placed ribbons whose geometry is the visible hair, animated by spring bones. Existing image-based methods produce realistic hair or a single fused mesh, while CHARM, the only generator of stylized hair cards, decodes a hairstyle autoregressively as a long sequence of control points. Observing that a card hairstyle is an unordered set of artist-defined primitives, we propose HairDeck, which generates it as one: each card is a single token, and a set diffusion transformer denoises all cards together. From a single image, HairDeck generates the cards and the spring-bone chains that drive them, yielding an animatable asset that exports to ready-to-use downstream formats. On CHARM's own test set, it lowers Chamfer distance by 44% and card-orientation error by more than half while running 33 times faster, and from single images it outperforms CHARM, image-to-3D pipelines and strand-based methods. Project page: https://hyzcluster.github.io/HairDeck",
-    "upvotes": 24,
+    "upvotes": 26,
     "discussionId": "6ae423d2c3b566b041f6c899",
     "projectPage": "https://hyzcluster.github.io/HairDeck/",
     "githubRepo": "https://github.com/hyz317/HairDeck",
@@ -3838,7 +4402,7 @@
      "name": "Yesianrohn"
     },
     "summary": "Producing long-form videos from narration requires interdependent decisions that remain coherent across shots. Existing agentic editors often use multi-stage workflows driven by general models, leaving the quality-cost trade-off of compact, task-adapted policies unclear. We address this gap with WeVisCut, a long-form script-to-video system that connects tool execution with policy learning. Its agent harness maintains shared production state so that tool feedback informs subsequent decisions and repairs. Because finished videos do not expose these decisions, our four-stage data pipeline combines editing inversion with verified replay to turn recovered editing intent into executable supervision. Applied to 3,750 finished videos, this pipeline yields over 130K training examples. We use this supervision to train a single 9B policy that coordinates production and recovers from failures within the same harness. Moreover, we introduce a 100-task benchmark and five metrics assessing editing quality and delivery reliability. Under a shared tool environment, WeVisCut substantially outperforms its base model and achieves comparable performance to Claude Opus 5 while using nearly 33x fewer generated tokens per successful output minute. It also outperforms task-matched native editors on our proposed metrics.",
-    "upvotes": 19,
+    "upvotes": 21,
     "discussionId": "6ae3f93dc3b566b041f6c76e",
     "projectPage": "https://tencent.github.io/WeVisCut",
     "githubRepo": "https://github.com/Tencent/WeVisCut",
@@ -3856,7 +4420,7 @@
      "token efficiency"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 38,
+    "githubStars": 48,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -4145,7 +4709,7 @@
      "P2G"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 300,
+    "githubStars": 306,
     "organization": {
      "_id": "638f70e8f1256a80d4288555",
      "name": "nanjinguniv",
@@ -4262,7 +4826,7 @@
      "WebArena-Verified"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3
+    "githubStars": 4
    },
    "publishedAt": "2026-10-26T20:00:00.000Z",
    "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
@@ -4406,7 +4970,7 @@
      "scaling analyses"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 15,
+    "githubStars": 17,
     "organization": {
      "_id": "6937e1578cd2568ba4c9d3f9",
      "name": "IQuestLab",
@@ -5236,591 +5800,6 @@
     "name": "FangcunAI",
     "fullname": "Fangcun AI",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae31b4b9e2a17d198fc9f8b/heEA2NJqeZ1_GqZHPUUT0.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.20832",
-    "authors": [
-     {
-      "_id": "6ae358e4d26ed0b25d0d4b4d",
-      "user": {
-       "_id": "66d35a7830d7ea0b2850e672",
-       "avatarUrl": "/avatars/50295dbc669dae160934df3b6124ef25.svg",
-       "isPro": false,
-       "fullname": "Anita Kriz",
-       "user": "anitakriz",
-       "type": "user",
-       "name": "anitakriz"
-      },
-      "name": "Anita Kriz",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T16:45:05.009Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae358e4d26ed0b25d0d4b4e",
-      "name": "Antonin Berthon",
-      "hidden": false
-     },
-     {
-      "_id": "6ae358e4d26ed0b25d0d4b4f",
-      "name": "Nicolás Astorga",
-      "hidden": false
-     },
-     {
-      "_id": "6ae358e4d26ed0b25d0d4b50",
-      "name": "Mihaela van der Schaar",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-14T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
-    "submittedOnDailyBy": {
-     "_id": "6701d4e7eb760972bc1c0682",
-     "avatarUrl": "/avatars/0478cbbc883d4cdf8bf9dbe3bc1f3459.svg",
-     "isPro": false,
-     "fullname": "Antonin Berthon",
-     "user": "antoninbrthn",
-     "type": "user",
-     "name": "antoninbrthn"
-    },
-    "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
-    "upvotes": 9,
-    "discussionId": "6ae358e4d26ed0b25d0d4b51",
-    "githubRepo": "https://github.com/anitakriz/ar-bed",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Large language models learn adaptive information gathering by training reasoning with information-gain rewards, improving experimental design efficiency and generalizing across tasks.",
-    "ai_keywords": [
-     "sequential Bayesian experimental design",
-     "information-gain rewards",
-     "amortization",
-     "generative model",
-     "expected information gain",
-     "multi-step objectives",
-     "Twenty Questions",
-     "Medi-Q"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
-    "organization": {
-     "_id": "65f9e02087d1c912d985eebf",
-     "name": "CambUni",
-     "fullname": "University of Cambridge",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/gdCou-0KoYsLPYqPrz6xn.png"
-    }
-   },
-   "publishedAt": "2026-10-13T20:00:00.000Z",
-   "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
-   "summary": "Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasoning that guides action selection using information-gain rewards. Our approach specifies the experimental generative model independently of the LLM's own beliefs, allowing us to optimize expected information gain under a model of our choosing. We investigate the design choices for amortization, including alternative generative-model constructions, reward estimation, hypothesis-space specification, multi-step objectives, and computational costs relative to training- and inference-time BED baselines. On Twenty Questions, the resulting policies improve information acquisition and task performance, outperform inference- and training-time BED baselines at substantially lower computational cost, and generalize to unseen categories. We further demonstrate positive transfer from Twenty Questions training to Medi-Q, a real-world clinical dialogue benchmark. These results suggest that information gathering can be learned as a generalizable reasoning skill in LLMs.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20832.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6701d4e7eb760972bc1c0682",
-    "avatarUrl": "/avatars/0478cbbc883d4cdf8bf9dbe3bc1f3459.svg",
-    "fullname": "Antonin Berthon",
-    "name": "antoninbrthn",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "65f9e02087d1c912d985eebf",
-    "name": "CambUni",
-    "fullname": "University of Cambridge",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/gdCou-0KoYsLPYqPrz6xn.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.22507",
-    "authors": [
-     {
-      "_id": "6ae32c639ef630670c714bf2",
-      "name": "Yunqi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf3",
-      "user": {
-       "_id": "6523fea2563d19d78488de57",
-       "avatarUrl": "/avatars/841e4e2b540e78627ee8a35c8fa86cf4.svg",
-       "isPro": false,
-       "fullname": "pei wang",
-       "user": "wpei",
-       "type": "user",
-       "name": "wpei"
-      },
-      "name": "Peiyu Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T14:49:04.793Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf4",
-      "name": "Bingli Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf5",
-      "name": "Leo Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf6",
-      "name": "Xuanwu Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf7",
-      "name": "Xudong Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf8",
-      "name": "Hongxin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bf9",
-      "name": "Yaxin Du",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bfa",
-      "name": "Weicheng Gu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bfb",
-      "name": "Fanglin Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bfc",
-      "name": "Yi Xing",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bfd",
-      "name": "XiangLong Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bfe",
-      "name": "Jujie He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714bff",
-      "name": "Zhange Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c00",
-      "name": "Huatong Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c01",
-      "name": "Zhaoyi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c02",
-      "name": "Deyang Kong",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c03",
-      "name": "Chuan Hao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c04",
-      "name": "Peihao Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c05",
-      "name": "Mingjie Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c06",
-      "name": "Ran Tao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c07",
-      "name": "Jian Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c08",
-      "name": "Wayne Xin Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae32c639ef630670c714c09",
-      "name": "Bryan Dai",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-15T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
-    "submittedOnDailyBy": {
-     "_id": "66d82581b842183143b87da8",
-     "avatarUrl": "/avatars/5766c928f517434ee0c88c2c251905aa.svg",
-     "isPro": false,
-     "fullname": "Jian Yang",
-     "user": "csjiaya",
-     "type": "user",
-     "name": "csjiaya"
-    },
-    "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
-    "upvotes": 18,
-    "discussionId": "6ae32c649ef630670c714c0a",
-    "ai_summary": "REALCLI is a benchmark that jointly evaluates CLI agent task execution and human-agent collaboration quality, revealing major gaps in steerability, trust calibration, and safety management.",
-    "ai_keywords": [
-     "CLI agents",
-     "REALCLI",
-     "collaboration framework",
-     "progressive information",
-     "steerability",
-     "trust calibration",
-     "safety boundary management",
-     "joint collaboration score"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "6937e1578cd2568ba4c9d3f9",
-     "name": "IQuestLab",
-     "fullname": "IQuest",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
-    }
-   },
-   "publishedAt": "2026-10-14T20:00:00.000Z",
-   "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
-   "summary": "Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchmark that unifies the evaluation of task execution and human-agent collaboration quality on realistic CLI tasks. To comprehensively measure collaboration, REALCLI builds a five-dimensional framework, operationalized into 22 sub-dimensions and 51 interaction scenario templates. REALCLI provides two modes for paired comparison: REALCLI-EXEC supplies complete specifications upfront, whereas REALCLI-COLLAB introduces a scripted user that delivers progressive information, corrections, constraint revisions, and authorization decisions. Evaluations reveal profound capability gaps in frontier agents: the best configuration attains an average score of only 49.2%, and when evaluated by the joint collaboration score (J_{collab}), the peak performance reaches merely 37.6%. These results show that task effectiveness diverges sharply from collaboration quality, with models consistently struggling in steerability, trust calibration, and safety boundary management. REALCLI provides a rigorous, reproducible foundation for measuring and advancing collaborative CLI agents.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22507.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66d82581b842183143b87da8",
-    "avatarUrl": "/avatars/5766c928f517434ee0c88c2c251905aa.svg",
-    "fullname": "Jian Yang",
-    "name": "csjiaya",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6937e1578cd2568ba4c9d3f9",
-    "name": "IQuestLab",
-    "fullname": "IQuest",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c80cc3a1ca9a73c17d29f7/pjOEigZuk_UQ4dqyS482V.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.30132",
-    "authors": [
-     {
-      "_id": "6ae33e75d26ed0b25d0d4aff",
-      "user": {
-       "_id": "65d73ac991dbd0f8b399ab73",
-       "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
-       "isPro": false,
-       "fullname": "Zhennan Wan",
-       "user": "zhennan1",
-       "type": "user",
-       "name": "zhennan1"
-      },
-      "name": "Zhennan Wan",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T14:49:00.447Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae33e75d26ed0b25d0d4b00",
-      "name": "Jianfei Chen",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
-    "submittedOnDailyBy": {
-     "_id": "65d73ac991dbd0f8b399ab73",
-     "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
-     "isPro": false,
-     "fullname": "Zhennan Wan",
-     "user": "zhennan1",
-     "type": "user",
-     "name": "zhennan1"
-    },
-    "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
-    "upvotes": 8,
-    "discussionId": "6ae33e75d26ed0b25d0d4b01",
-    "githubRepo": "https://github.com/zhennan1/LongZero",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "LongZero enables large language models to self-improve long-context reasoning by synthesizing structured multi-hop and retrieval tasks and training with GRPO without external data.",
-    "ai_keywords": [
-     "reinforcement learning",
-     "long-context reasoning",
-     "large language models",
-     "GRPO",
-     "multi-hop reasoning",
-     "multi-round retrieval",
-     "self-synthesis"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
-    "organization": {
-     "_id": "628735cbc83a2d6ab8d14a66",
-     "name": "Tsinghua",
-     "fullname": "Tsinghua University",
-     "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
-   "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose LongZero, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30132.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "65d73ac991dbd0f8b399ab73",
-    "avatarUrl": "/avatars/30fbe54b67e9902e0a8ad01ea66d8d9c.svg",
-    "fullname": "Zhennan Wan",
-    "name": "zhennan1",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "628735cbc83a2d6ab8d14a66",
-    "name": "Tsinghua",
-    "fullname": "Tsinghua University",
-    "avatar": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.30161",
-    "authors": [
-     {
-      "_id": "6ae2de80d670fc6ea896c8df",
-      "user": {
-       "_id": "68ad42bca1f07af43fcfcead",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
-       "isPro": false,
-       "fullname": "Krishanu Adhikary",
-       "user": "KrishanuA",
-       "type": "user",
-       "name": "KrishanuA"
-      },
-      "name": "Krishanu Adhikary",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-29T08:45:04.847Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae2de80d670fc6ea896c8e0",
-      "name": "Prashant Devadiga",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
-    ],
-    "publishedAt": "2026-09-30T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
-    "submittedOnDailyBy": {
-     "_id": "68ad42bca1f07af43fcfcead",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
-     "isPro": false,
-     "fullname": "Krishanu Adhikary",
-     "user": "KrishanuA",
-     "type": "user",
-     "name": "KrishanuA"
-    },
-    "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
-    "upvotes": 11,
-    "discussionId": "6ae2de81d670fc6ea896c8e1",
-    "githubRepo": "https://github.com/npci/TauIndianBankBench",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "TauIndianBankBench evaluates language model assistants on Indian retail banking by verifying both procedural compliance and final outcomes across 1,000 simulated tasks.",
-    "ai_keywords": [
-     "TauIndianBankBench",
-     "action-oriented benchmark",
-     "procedure adherence",
-     "required steps",
-     "unrequested change",
-     "Indian retail banking",
-     "language models"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
-    "organization": {
-     "_id": "69842b03a289b72fb05279be",
-     "name": "NPCI",
-     "fullname": "National Payments Corporation of India",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/698429270765e1c471552aa5/c_g5oaMFQVDLPibSTVrTQ.png"
-    }
-   },
-   "publishedAt": "2026-09-29T20:00:00.000Z",
-   "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
-   "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of required steps, such as obtaining a closure quote before closing a deposit. Adapting models to this domain requires measuring how well they follow the procedure, before and after training. Benchmarks usually judge only the records left at the end of a conversation. Many required steps, however, leave the records unchanged, so an assistant that skips them can still be judged successful. We present TauIndianBankBench, an action-oriented benchmark of 1,000 Indian retail-banking tasks where an assistant helps a simulated customer. Besides the final records, it checks that the assistant took every required step and made no unrequested change. For every model, 6.5-12.0% of sessions are judged successful when only the final records are checked, although the assistant skipped a required step or made an unrequested change. Scoring both procedure and outcome shows more accurately how well language models perform in Indian retail banking.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/68ad42bca1f07af43fcfcead/T_p17-4yRuTCbj9m_lBVp.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.30161.png",
-   "numComments": 3,
-   "submittedBy": {
-    "_id": "68ad42bca1f07af43fcfcead",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qt678cJTjXSV_w30kgYQ4.png",
-    "fullname": "Krishanu Adhikary",
-    "name": "KrishanuA",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 3,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "69842b03a289b72fb05279be",
-    "name": "NPCI",
-    "fullname": "National Payments Corporation of India",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/698429270765e1c471552aa5/c_g5oaMFQVDLPibSTVrTQ.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.29702",
-    "authors": [
-     {
-      "_id": "6ae3054bd670fc6ea896c960",
-      "name": "Yijun Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c961",
-      "name": "Diqi He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c962",
-      "name": "Jinbang Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c963",
-      "name": "Wanyue Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c964",
-      "name": "Jiaming Mi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c965",
-      "name": "Huan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c966",
-      "name": "Zhongyuan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c967",
-      "name": "Zhiwei Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae3054bd670fc6ea896c968",
-      "name": "Kai Zhang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/674d339d937bbd33958bb004/dF1PupdQO6AusnVxQto1e.mp4"
-    ],
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-29T00:00:00.000Z",
-    "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
-    "submittedOnDailyBy": {
-     "_id": "674d339d937bbd33958bb004",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fcnYFN5C12VYWXiVQ_I7b.png",
-     "isPro": false,
-     "fullname": "Yijun Shen",
-     "user": "YijunShen",
-     "type": "user",
-     "name": "YijunShen"
-    },
-    "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
-    "upvotes": 4,
-    "discussionId": "6ae3054bd670fc6ea896c969",
-    "projectPage": "https://causground.github.io/",
-    "githubRepo": "https://github.com/Intelligent-Interaction/CausGround",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "CausGround extracts reusable action preconditions and effects from interaction experience to improve embodied planning and reasoning across diverse environments without model retraining.",
-    "ai_keywords": [
-     "multimodal large language models",
-     "causal interaction grounding",
-     "action preconditions",
-     "action effects",
-     "factorized world-state representation",
-     "backward reasoning",
-     "forward reasoning",
-     "high-level planning",
-     "embodied planning"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2
-   },
-   "publishedAt": "2026-10-20T20:00:00.000Z",
-   "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
-   "summary": "Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, making adaptation challenging. Yet existing approaches either require costly environment-specific training or rely on unstructured interaction experience that is difficult to reuse. Therefore, we introduce CausGround, a non-parametric causal interaction grounding framework that distills interaction experience into reusable action-centered causal knowledge. CausGround identifies action preconditions and effects and organizes them in a factorized world-state representation capturing object attributes and inter-object relations. At planning time, task-relevant causal dependencies are grounded in current observations to support backward reasoning over preconditions and forward reasoning over effects for action selection and multi-step planning. We evaluate CausGround on simulated high-level planning, interaction reasoning, and real-world robot manipulation. On adapted VirtualHome and RoboCasa benchmarks, CausGround improves vision-based high-level planning across MLLM backbones, increasing average task success from 24.9% to 53.3% on VirtualHome and closed-loop planning success from 43.0% to 57.0% on RoboCasa. On SWITCH, average interaction reasoning accuracy increases from 25.8% to 31.9%, indicating improved action selection, recovery, and verification. Moreover, real-world experiments show that CausGround reasons backward from MLLM-interpreted goals to derive executable high-level action sequences for sequential manipulation. These results demonstrate that reusable action preconditions and effects support long-horizon embodied planning across diverse environments without parameter updates.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/674d339d937bbd33958bb004/dF1PupdQO6AusnVxQto1e.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29702.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "674d339d937bbd33958bb004",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fcnYFN5C12VYWXiVQ_I7b.png",
-    "fullname": "Yijun Shen",
-    "name": "YijunShen",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": false
   }
