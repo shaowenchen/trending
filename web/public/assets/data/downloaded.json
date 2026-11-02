@@ -1,12 +1,12 @@
 {
  "key": "downloaded",
  "name": "downloaded",
- "fetchedAt": "2026-11-02T08:01:22.729Z",
+ "fetchedAt": "2026-11-02T10:16:08.626Z",
  "payload": [
   {
    "_id": "621ffdc136468d709f180294",
    "id": "sentence-transformers/all-MiniLM-L6-v2",
-   "likes": 6052,
+   "likes": 6055,
    "private": false,
    "downloads": 182509097,
    "tags": [
@@ -131,6 +131,24 @@
    "modelId": "BAAI/bge-small-en-v1.5"
   },
   {
+   "_id": "6a6bd1dc7034404148ec9107",
+   "id": "Comfy-Org/MiniMax-H3",
+   "likes": 2478,
+   "private": false,
+   "downloads": 31098855,
+   "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+   ],
+   "library_name": "diffusion-single-file",
+   "createdAt": "2026-07-30T22:36:12.000Z",
+   "modelId": "Comfy-Org/MiniMax-H3"
+  },
+  {
    "_id": "65b53851e602b6c2c96e78da",
    "id": "BAAI/bge-m3",
    "likes": 3958,
@@ -162,27 +180,9 @@
    "modelId": "BAAI/bge-m3"
   },
   {
-   "_id": "6a6bd1dc7034404148ec9107",
-   "id": "Comfy-Org/MiniMax-H3",
-   "likes": 2476,
-   "private": false,
-   "downloads": 30246865,
-   "tags": [
-    "diffusion-single-file",
-    "comfyui",
-    "base_model:MiniMaxAI/MiniMax-H3",
-    "base_model:finetune:MiniMaxAI/MiniMax-H3",
-    "license:other",
-    "region:us"
-   ],
-   "library_name": "diffusion-single-file",
-   "createdAt": "2026-07-30T22:36:12.000Z",
-   "modelId": "Comfy-Org/MiniMax-H3"
-  },
-  {
    "_id": "621ffdc036468d709f17434d",
    "id": "openai-community/gpt2",
-   "likes": 3909,
+   "likes": 3911,
    "private": false,
    "downloads": 29307840,
    "tags": [
@@ -345,31 +345,31 @@
    "modelId": "argmaxinc/whisperkit-coreml"
   },
   {
-   "_id": "680da718233834890aa01f51",
-   "id": "Qwen/Qwen3-0.6B",
-   "likes": 1867,
+   "_id": "68e41003885f21b4d7258fcf",
+   "id": "autogluon/chronos-2",
+   "likes": 94,
    "private": false,
-   "downloads": 23444902,
+   "downloads": 23513356,
    "tags": [
-    "transformers",
+    "chronos-forecasting",
     "safetensors",
-    "qwen3",
-    "text-generation",
-    "conversational",
-    "arxiv:2505.09388",
-    "base_model:Qwen/Qwen3-0.6B-Base",
-    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "t5",
+    "time series",
+    "forecasting",
+    "foundation models",
+    "pretrained models",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2403.07815",
+    "arxiv:2510.15821",
     "license:apache-2.0",
-    "text-generation-inference",
-    "endpoints_compatible",
-    "deploy:sagemaker",
-    "deploy:azure",
     "region:us"
    ],
-   "pipeline_tag": "text-generation",
-   "library_name": "transformers",
-   "createdAt": "2025-04-27T03:40:08.000Z",
-   "modelId": "Qwen/Qwen3-0.6B"
+   "pipeline_tag": "time-series-forecasting",
+   "library_name": "chronos-forecasting",
+   "createdAt": "2025-10-06T18:52:51.000Z",
+   "modelId": "autogluon/chronos-2"
   },
   {
    "_id": "621ffdc036468d709f174358",
@@ -415,31 +415,31 @@
    "modelId": "google-t5/t5-small"
   },
   {
-   "_id": "68e41003885f21b4d7258fcf",
-   "id": "autogluon/chronos-2",
-   "likes": 94,
+   "_id": "680da718233834890aa01f51",
+   "id": "Qwen/Qwen3-0.6B",
+   "likes": 1868,
    "private": false,
-   "downloads": 22724503,
+   "downloads": 23175586,
    "tags": [
-    "chronos-forecasting",
+    "transformers",
     "safetensors",
-    "t5",
-    "time series",
-    "forecasting",
-    "foundation models",
-    "pretrained models",
-    "time-series-forecasting",
-    "dataset:autogluon/chronos_datasets",
-    "dataset:Salesforce/GiftEvalPretrain",
-    "arxiv:2403.07815",
-    "arxiv:2510.15821",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
     "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
     "region:us"
    ],
-   "pipeline_tag": "time-series-forecasting",
-   "library_name": "chronos-forecasting",
-   "createdAt": "2025-10-06T18:52:51.000Z",
-   "modelId": "autogluon/chronos-2"
+   "pipeline_tag": "text-generation",
+   "library_name": "transformers",
+   "createdAt": "2025-04-27T03:40:08.000Z",
+   "modelId": "Qwen/Qwen3-0.6B"
   },
   {
    "_id": "621ffdc136468d709f180297",
@@ -657,7 +657,7 @@
    "id": "Qwen/Qwen3-14B",
    "likes": 530,
    "private": false,
-   "downloads": 13002507,
+   "downloads": 12988834,
    "tags": [
     "transformers",
     "safetensors",
@@ -717,7 +717,7 @@
    "id": "hexgrad/Kokoro-82M",
    "likes": 7323,
    "private": false,
-   "downloads": 11247512,
+   "downloads": 11366340,
    "tags": [
     "text-to-speech",
     "en",
@@ -736,9 +736,9 @@
   {
    "_id": "6aa99f552859827a8d89cb9d",
    "id": "Comfy-Org/Qwen-Image-2.1",
-   "likes": 1243,
+   "likes": 1244,
    "private": false,
-   "downloads": 10554957,
+   "downloads": 10607935,
    "tags": [
     "diffusion-single-file",
     "comfyui",
@@ -758,7 +758,7 @@
    "id": "prithivMLmods/Gender-Classifier-Mini",
    "likes": 19,
    "private": false,
-   "downloads": 10457455,
+   "downloads": 10265515,
    "tags": [
     "transformers",
     "safetensors",
@@ -787,7 +787,7 @@
    "id": "amazon/chronos-2",
    "likes": 563,
    "private": false,
-   "downloads": 10254494,
+   "downloads": 9968412,
    "tags": [
     "chronos-forecasting",
     "safetensors",
@@ -815,7 +815,7 @@
    "id": "Comfy-Org/Z-Image-Turbo",
    "likes": 1010,
    "private": false,
-   "downloads": 9441612,
+   "downloads": 9521322,
    "tags": [
     "diffusion-single-file",
     "comfyui",
@@ -827,6 +827,26 @@
    "library_name": "diffusion-single-file",
    "createdAt": "2025-11-26T01:00:52.000Z",
    "modelId": "Comfy-Org/Z-Image-Turbo"
+  },
+  {
+   "_id": "6885cd8c6963bab90aab7f6f",
+   "id": "Comfy-Org/Wan-2.2",
+   "likes": 989,
+   "private": false,
+   "downloads": 9326230,
+   "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-Animate-14B",
+    "base_model:finetune:Wan-AI/Wan2.2-Animate-14B",
+    "license:apache-2.0",
+    "region:us"
+   ],
+   "pipeline_tag": "image-to-video",
+   "library_name": "diffusion-single-file",
+   "createdAt": "2025-07-27T06:56:12.000Z",
+   "modelId": "Comfy-Org/Wan-2.2"
   },
   {
    "_id": "649e84b72ccae3ea1f35fb8b",
@@ -955,26 +975,6 @@
    "modelId": "intfloat/multilingual-e5-small"
   },
   {
-   "_id": "6885cd8c6963bab90aab7f6f",
-   "id": "Comfy-Org/Wan-2.2",
-   "likes": 988,
-   "private": false,
-   "downloads": 9185113,
-   "tags": [
-    "diffusion-single-file",
-    "comfyui",
-    "image-to-video",
-    "base_model:Wan-AI/Wan2.2-Animate-14B",
-    "base_model:finetune:Wan-AI/Wan2.2-Animate-14B",
-    "license:apache-2.0",
-    "region:us"
-   ],
-   "pipeline_tag": "image-to-video",
-   "library_name": "diffusion-single-file",
-   "createdAt": "2025-07-27T06:56:12.000Z",
-   "modelId": "Comfy-Org/Wan-2.2"
-  },
-  {
    "_id": "64fff5087f91f94040eee912",
    "id": "BAAI/bge-large-en-v1.5",
    "likes": 781,
@@ -1092,9 +1092,9 @@
   {
    "_id": "683f05dc98de733bf4c59f3d",
    "id": "Qwen/Qwen3-Embedding-0.6B",
-   "likes": 1319,
+   "likes": 1320,
    "private": false,
-   "downloads": 8802926,
+   "downloads": 8874546,
    "tags": [
     "sentence-transformers",
     "safetensors",
@@ -1140,9 +1140,9 @@
   {
    "_id": "680da769038897aa905586a7",
    "id": "Qwen/Qwen3-4B",
-   "likes": 779,
+   "likes": 780,
    "private": false,
-   "downloads": 8424710,
+   "downloads": 8417695,
    "tags": [
     "transformers",
     "safetensors",
@@ -1287,11 +1287,29 @@
    "modelId": "FacebookAI/xlm-roberta-base"
   },
   {
+   "_id": "621ffdc136468d709f17adc0",
+   "id": "facebook/contriever",
+   "likes": 132,
+   "private": false,
+   "downloads": 8280816,
+   "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "arxiv:2112.09118",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "library_name": "transformers",
+   "createdAt": "2022-03-02T23:29:05.000Z",
+   "modelId": "facebook/contriever"
+  },
+  {
    "_id": "69b1b2ec895b2d5026e6bc2e",
    "id": "google/gemma-4-31B-it",
-   "likes": 4268,
+   "likes": 4269,
    "private": false,
-   "downloads": 8301351,
+   "downloads": 8147734,
    "tags": [
     "transformers",
     "safetensors",
@@ -1312,24 +1330,6 @@
    "library_name": "transformers",
    "createdAt": "2026-03-11T18:22:36.000Z",
    "modelId": "google/gemma-4-31B-it"
-  },
-  {
-   "_id": "621ffdc136468d709f17adc0",
-   "id": "facebook/contriever",
-   "likes": 132,
-   "private": false,
-   "downloads": 8280816,
-   "tags": [
-    "transformers",
-    "pytorch",
-    "bert",
-    "arxiv:2112.09118",
-    "endpoints_compatible",
-    "region:us"
-   ],
-   "library_name": "transformers",
-   "createdAt": "2022-03-02T23:29:05.000Z",
-   "modelId": "facebook/contriever"
   },
   {
    "_id": "64ff2c767a4a6ae49afa72b5",
@@ -1371,7 +1371,7 @@
    "id": "audio-cpp/audio.cpp-gguf",
    "likes": 294,
    "private": false,
-   "downloads": 7908593,
+   "downloads": 8003097,
    "tags": [
     "audio.cpp",
     "gguf",
@@ -1397,9 +1397,9 @@
   {
    "_id": "6a72f2e302294c7d32dd278e",
    "id": "Qwen/Qwen3.8-27B",
-   "likes": 18952,
+   "likes": 18961,
    "private": false,
-   "downloads": 7892866,
+   "downloads": 7915637,
    "tags": [
     "transformers",
     "safetensors",
@@ -1419,43 +1419,11 @@
    "modelId": "Qwen/Qwen3.8-27B"
   },
   {
-   "_id": "6a9e86d1dab7f88030e2af20",
-   "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-   "likes": 1133,
-   "private": false,
-   "downloads": 7668149,
-   "tags": [
-    "gguf",
-    "gsq",
-    "rco",
-    "quantization",
-    "mixed-precision",
-    "ist-daslab",
-    "moe",
-    "multimodal",
-    "vision",
-    "image-text-to-text",
-    "arxiv:2604.18556",
-    "arxiv:2605.00649",
-    "base_model:Qwen/Qwen3.8-Flash-Next",
-    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
-    "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "imatrix",
-    "conversational"
-   ],
-   "pipeline_tag": "image-text-to-text",
-   "library_name": "gguf",
-   "createdAt": "2026-09-07T09:41:37.000Z",
-   "modelId": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF"
-  },
-  {
    "_id": "680da79d48c19d19cf82ab5e",
    "id": "Qwen/Qwen3-8B",
-   "likes": 2161,
+   "likes": 2162,
    "private": false,
-   "downloads": 7660335,
+   "downloads": 7540663,
    "tags": [
     "transformers",
     "safetensors",
@@ -1484,7 +1452,7 @@
    "id": "Serveurperso/YuE2-GGUF",
    "likes": 22,
    "private": false,
-   "downloads": 7365836,
+   "downloads": 7537625,
    "tags": [
     "gguf",
     "music-generation",
@@ -1508,6 +1476,38 @@
    ],
    "createdAt": "2026-09-12T19:35:19.000Z",
    "modelId": "Serveurperso/YuE2-GGUF"
+  },
+  {
+   "_id": "6a9e86d1dab7f88030e2af20",
+   "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "likes": 1136,
+   "private": false,
+   "downloads": 7426020,
+   "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+   ],
+   "pipeline_tag": "image-text-to-text",
+   "library_name": "gguf",
+   "createdAt": "2026-09-07T09:41:37.000Z",
+   "modelId": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF"
   },
   {
    "_id": "621ffdc036468d709f174353",
@@ -1544,7 +1544,7 @@
   {
    "_id": "6555d075325783cc791fb794",
    "id": "pyannote/speaker-diarization-3.1",
-   "likes": 4816,
+   "likes": 4822,
    "private": false,
    "downloads": 6918404,
    "tags": [
@@ -1576,7 +1576,7 @@
    "id": "Qwen/Qwen3-VL-8B-Instruct",
    "likes": 1235,
    "private": false,
-   "downloads": 6902450,
+   "downloads": 6915010,
    "tags": [
     "transformers",
     "safetensors",
@@ -1604,7 +1604,7 @@
    "id": "ibm-granite/granite-embedding-small-english-r2",
    "likes": 113,
    "private": false,
-   "downloads": 6794235,
+   "downloads": 6776901,
    "tags": [
     "sentence-transformers",
     "pytorch",
@@ -1758,37 +1758,11 @@
    "modelId": "intfloat/multilingual-e5-large"
   },
   {
-   "_id": "69a1adef9060862380ddaff7",
-   "id": "Qwen/Qwen3.5-4B",
-   "likes": 1180,
-   "private": false,
-   "downloads": 6588471,
-   "tags": [
-    "transformers",
-    "safetensors",
-    "qwen3_5",
-    "image-text-to-text",
-    "conversational",
-    "base_model:Qwen/Qwen3.5-4B-Base",
-    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
-    "license:apache-2.0",
-    "eval-results",
-    "endpoints_compatible",
-    "deploy:sagemaker",
-    "deploy:azure",
-    "region:us"
-   ],
-   "pipeline_tag": "image-text-to-text",
-   "library_name": "transformers",
-   "createdAt": "2026-02-27T14:45:03.000Z",
-   "modelId": "Qwen/Qwen3.5-4B"
-  },
-  {
    "_id": "692cfec93b25b81d09307b94",
    "id": "deepseek-ai/DeepSeek-V3.2",
    "likes": 1590,
    "private": false,
-   "downloads": 6580429,
+   "downloads": 6714508,
    "tags": [
     "transformers",
     "safetensors",
@@ -1809,11 +1783,37 @@
    "modelId": "deepseek-ai/DeepSeek-V3.2"
   },
   {
+   "_id": "63ee95d76349d1a6706e750f",
+   "id": "laion/clap-htsat-fused",
+   "likes": 176,
+   "private": false,
+   "downloads": 6415448,
+   "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "clap",
+    "feature-extraction",
+    "zero-shot audio classification",
+    "zero-shot audio retrieval",
+    "audio-classification",
+    "en",
+    "arxiv:2211.06687",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "pipeline_tag": "audio-classification",
+   "library_name": "transformers",
+   "createdAt": "2023-02-16T20:45:11.000Z",
+   "modelId": "laion/clap-htsat-fused"
+  },
+  {
    "_id": "69a194f2d29af86e5f085743",
    "id": "Qwen/Qwen3.5-9B",
-   "likes": 2289,
+   "likes": 2291,
    "private": false,
-   "downloads": 6471053,
+   "downloads": 6412961,
    "tags": [
     "transformers",
     "safetensors",
