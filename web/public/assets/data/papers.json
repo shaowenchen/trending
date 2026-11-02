@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-02T19:16:08.799Z",
+ "fetchedAt": "2026-11-02T21:31:13.393Z",
  "payload": [
   {
    "paper": {
@@ -41,7 +41,7 @@
      "name": "t-matea"
     },
     "summary": "Perceiving human body motion is critical for multimodal systems that understand and assist people. Yet current evaluations of Multimodal Large Language Models (MLLMs) largely focus on objects, scenes, and coarse actions, leaving their ability to reason about the body itself poorly assessed. This is especially challenging from the egocentric perspective, in which the body is only partially visible and motion must be inferred from occluded and temporally distributed cues. We introduce SOMA, a benchmark for fine-grained body-motion understanding from egocentric video, comprising 1,632 human-verified questions across three capability axes: body configuration, motion dynamics, and temporal reasoning. We evaluate 37 leading closed-source, open-source, and specialized egocentric MLLMs, complemented by an extensive human evaluation. We find that humans also find this task difficult from video alone (68.5% accuracy), yet clearly outperform the strongest MLLM (Qwen3.6-27B), which reaches 50.0% zero-shot accuracy. Our error analysis shows that MLLMs often misread the wearer's own body, misjudge events in time, and are prone to biases such as favoring the right hand or under-counting repetitions. To narrow the gap to human performance and support further progress, we introduce a training dataset of aligned video, body motion, and language supervision, and a multimodal baseline that jointly learns from these modalities. By identifying common failure modes and missing capabilities in current MLLMs, we hope SOMA will inspire future research on body-motion understanding and multimodal reasoning. Full benchmark, training data, and code will be released at: https://cnai.epfl.ch/soma",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6ae31052d670fc6ea896c9ac",
     "projectPage": "https://cnai.epfl.ch/soma/",
     "githubRepo": "https://github.com/amathislab/soma",
@@ -163,7 +163,7 @@
      "name": "nicholaslee"
     },
     "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance. We introduce GEPA-Curator, a framework that augments the prompt optimizer to select which agent experiences should shape prompt optimization. In particular, GEPA-Curator consists of two components: task curation, which filters out tasks that are likely to provide noisy or unreliable learning signals, and prior success retrieval, which selectively retrieves past successful trajectories for a task and provides them as additional context to the prompt optimizer. We evaluate GEPA-Curator on GoBrowse, ALFWorld, AppWorld, and τ-bench, using both Gemini 3.1 Pro and Claude Opus 5 as optimizer models. GEPA-Curator matches or exceeds the mean performance of both baselines, with gains of up to 20.7% over GEPA and 21.2% over ACE.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6ae8dbb54b63b3479c38a3ac",
     "ai_summary": "GEPA-Curator improves agentic prompt optimization by filtering unreliable failure signals and retrieving past successes, boosting performance across multiple benchmarks.",
     "ai_keywords": [
@@ -198,7 +198,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -377,7 +377,7 @@
      "name": "pratyushmaini"
     },
     "summary": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior. By simplifying a low-rank attribution method and restricting backpropagation to the final four transformer blocks, SimpleLoRIF can embed datasets on the order of a million examples, boosting gradient attribution from a small-scale analysis tool into a practical filter for full post-training datasets. We first validate it on emergent misalignment, where we find that gradients can connect insecure-code training data to the broadly harmful behaviors that appear after fine-tuning, with AUC as high as 0.865 in the gradient space of misaligned models. We then use SimpleLoRIF to build SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed. Training on SafeTulu reduces GCG attack success rate by up to 22% across Qwen, Llama, and Olmo, outperforming both LLM-as-a-judge and prior gradient-based filtering, while largely preserving or even improving capability. Finally, we analyzed the removed data and identify possibly under-studied sources of safety degradation, such as tool-execution failures and narrative arithmetic. We release SafeTulu along with a Hugging Face Space that lets researchers build their own customized versions of SafeTulu to fine-tune on, such as by changing the removal fraction or filtering only certain subsets.",
-    "upvotes": 14,
+    "upvotes": 23,
     "discussionId": "6ae8923dc45846c345677398",
     "projectPage": "https://www.datologyai.com/blog/follow-the-gradient",
     "ai_summary": "SimpleLoRIF uses gradient alignment to filter instruction data that silently degrades LLM safety, yielding a safer dataset that reduces adversarial success while preserving capabilities.",
@@ -450,6 +450,11 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/9Ie-cmnM9yb7Q4vBrv3MU.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/0JvWW0_43aQo1j2xfhx9M.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/7oAJpe-Ork-dECXd4sy5b.png"
+    ],
     "publishedAt": "2026-10-29T17:15:53.000Z",
     "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
     "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
@@ -481,6 +486,11 @@
    "publishedAt": "2026-10-29T13:15:53.000Z",
    "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
    "summary": "Do research agents have taste, the judgment of which experiments are worth running before their outcomes are known? We give six frontier models seven recent NLP papers. Each model, working as a research agent alone or as a team, proposes minimum viable experiments (MVEs), forecasts whether each will pass a threshold it sets and ranks them. A separate executor then attempts every MVE, including those ranked last, and three model auditors judge the results. Of 415 MVEs, 194 are judged sound, valuable and new, but fewer than half of these (73) are also judged beyond the seed paper and non obvious. The agents' first choices match the auditors' most valued experiment more often than a random pick, but are not shown to improve on choosing the experiment written first. Their forecasts beat a base rate but are not measurably more accurate than those of a fresh instance of the same model given only the paper and registrations. Teams cost more without a clear overall improvement in proposal quality. The agents produce many worthwhile experiments, but the evidence that their rankings improve the choice of which to run remains limited. The evaluation harness and a dataset of all 415 MVEs, with their forecasts and audited outcomes, are available at https://github.com/ArtKanke/rTaste.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/9Ie-cmnM9yb7Q4vBrv3MU.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/0JvWW0_43aQo1j2xfhx9M.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/7oAJpe-Ork-dECXd4sy5b.png"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40488.png",
    "numComments": 1,
    "submittedBy": {
@@ -1326,7 +1336,7 @@
      "foundation model"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 24,
+    "githubStars": 34,
     "organization": {
      "_id": "67aea5c8f086ab0f70ed97c9",
      "name": "inclusionAI",
@@ -1527,7 +1537,7 @@
      "algorithmic latency"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 85
+    "githubStars": 88
    },
    "publishedAt": "2026-10-29T06:16:03.000Z",
    "title": "VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step",
@@ -1607,7 +1617,7 @@
      "prior-only protocols"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 1
+    "githubStars": 2
    },
    "publishedAt": "2026-10-27T16:02:47.000Z",
    "title": "SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World",
@@ -1816,7 +1826,7 @@
    "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
    "summary": "Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While pairing a deliberative brain (foundation models) with a reactive cerebellum (fast policies) seems natural for embodied systems, two obstacles remain: methods are built and scored on incompatible stacks, and their asynchronous coordination is difficult. For example, an agent that calls the VLA in the agentic loop can stall the fast execution, while a VLA that calls the agent on errors tends to re-trigger fallbacks repeatedly or completely miss silent failures. To address this, we propose REA (Routed Embodied Agent), a unified runtime where a deliberative System 2, an embodied router System 1 and reactive System 0 policies cooperate under a single golden rule - no running policy waits on the brain. Instead of querying the brain at each failure, REA employs a route memory that stores each policy's measured success ahead of time, a boundary-triggered judge gate that consults the brain on policy execution, and a shared-budget escalation ladder for bounded recovery. Evaluated on 3,000 test episodes across 60 LIBERO-Pro tasks, REA reaches 95.9% success and beats the best single-agent baseline in its own policy pool (94.7%) while reducing control steps by 25% and control time by 17%. In a separate 100-episode RoboTwin 2.0 study, REA achieves 84% success with VLA policies and 86% with VLA+code, compared with 80% for the strongest single VLA baseline MEDex. These results demonstrate learned and programmatic policies operating within the same runtime. REA also transfers to BEHAVIOR-1K and a real Unitree G1 humanoid, achieving the highest observed success among the compared methods.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42053.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "648157807a741c7f33f5ebf5",
     "avatarUrl": "/avatars/3fe9cf3b7aca89b37f7d13503d4d093d.svg",
@@ -1905,7 +1915,7 @@
      "cross-dataset generalization"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
+    "githubStars": 9,
     "organization": {
      "_id": "6634f7d0923c0895ca959e5a",
      "name": "Arm",
@@ -2016,7 +2026,7 @@
      "GenEval"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 3,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -2296,7 +2306,7 @@
      "name": "assafsinger"
     },
     "summary": "Dense 3D tracking from monocular video requires establishing point correspondences over time, estimating their depth, and inferring their trajectories during occlusion. Existing methods typically learn these tasks jointly, a demanding objective given the scarcity of 4D supervision. We show that strong pretrained 2D trackers and 3D geometry models provide an effective foundation: lifted trajectories, with occluded segments simply interpolated, already rival dedicated 3D trackers using the same geometry. However, lifted trajectories inherit correspondence and depth errors, and under occlusion, their depth comes from the occluder rather than the tracked point. We introduce ReLift, an efficient feed-forward framework that recasts dense 3D tracking as geometric trajectory repair and completion. At its core, a trajectory corrector alternates attention along and across trajectories to preserve reliable observations, repair corrupted positions, and complete missing motion. Using only geometric inputs allows us to train directly on 3D trajectories with simulated lifting errors, decoupling training from images and from any specific tracker or geometry model. Concentrating 4D supervision on trajectory refinement yields a reusable model that consistently improves lifted trajectories across trackers and geometry providers without retraining, so it benefits directly from future advances in either component. On WorldTrack, ReLift achieves state-of-the-art mean accuracy, improving on the strongest baselines by 2.1 APD on all points and 3.0 on dynamic points, with faster configurations remaining competitive with leading 3D trackers while running faster than 4RC. Visit our supplementry page for more examples and code.",
-    "upvotes": 21,
+    "upvotes": 22,
     "discussionId": "6ae8282eac2aed10b8c1ce6d",
     "projectPage": "https://relift3d.github.io/",
     "githubRepo": "https://github.com/ReLift3D/ReLift",
@@ -2657,7 +2667,7 @@
      "name": "amant555"
     },
     "summary": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on τ-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
-    "upvotes": 32,
+    "upvotes": 33,
     "discussionId": "6ae80da3ac2aed10b8c1ce06",
     "projectPage": "https://servicenow-ai-apriel.hf.space/home",
     "ai_summary": "Apriel Voice 27B Preview is an open speech-language model that integrates speech understanding, reasoning, and tool use within a shared backbone, achieving strong results on audio benchmarks through a two-stage training procedure with online distillation.",
@@ -2861,7 +2871,7 @@
      "_id": "67fd0438e33d241c09837c03",
      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Q62z5O0uzq2KzPI6U3mmU.jpeg",
      "isPro": false,
-     "fullname": "yu li",
+     "fullname": "Yuu Li",
      "user": "yuli02gwu",
      "type": "user",
      "name": "yuli02gwu"
@@ -2899,7 +2909,7 @@
    "submittedBy": {
     "_id": "67fd0438e33d241c09837c03",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Q62z5O0uzq2KzPI6U3mmU.jpeg",
-    "fullname": "yu li",
+    "fullname": "Yuu Li",
     "name": "yuli02gwu",
     "type": "user",
     "isPro": false,
@@ -3389,7 +3399,7 @@
      "name": "CoreloneH"
     },
     "summary": "Unified conditional image generation requires a single model to preserve different aspects of a visual input while producing a target image that follows textual guidance. Pretrained video models provide a promising foundation by encoding visual transformations across time, yet existing approaches typically assign the condition and target to fixed temporal positions. We observe that condition-target relationships vary substantially across generation tasks, while video models naturally encode visual transformations at different temporal scales. This motivates us to model conditional generation through input-adaptive virtual temporal relations. We propose FrameForge, which captures two complementary aspects of such relations. Mixture of Temporal Experts (MoTE) models how far the target lies from the condition by dynamically selecting temporal RoPE experts with different virtual intervals. Chain of Temporal Reasoning (CoTR) models how the condition is transformed into the target through a latent intermediate state, with a reasoning-bottleneck attention mask encouraging information propagation through this pathway. Experiments on DreamBench, COCO2017, and GEdit-Bench show that FrameForge achieves superior performance in subject-driven generation, canny-to-image generation, and image editing among the compared methods.",
-    "upvotes": 110,
+    "upvotes": 111,
     "discussionId": "6ae80519ac2aed10b8c1cd71",
     "projectPage": "https://lyne1.github.io/FrameForge-page/",
     "githubRepo": "https://github.com/Lyne1/FrameForge",
@@ -4573,7 +4583,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6a98fc48a1cd458a22800a3f/mdJcewSrPRFUFNfFL_2De.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2609.05881.png",
-   "numComments": 6,
+   "numComments": 7,
    "submittedBy": {
     "_id": "6a98fc48a1cd458a22800a3f",
     "avatarUrl": "/avatars/a7d861498cb5d773fa5fd7c89a8c48ac.svg",
@@ -5583,7 +5593,7 @@
      "zero-shot sim-to-real transfer"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 14,
+    "githubStars": 15,
     "organization": {
      "_id": "66bada488c4119f92e6e8b81",
      "name": "IPEC-COMMUNITY",
