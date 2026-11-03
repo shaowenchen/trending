@@ -1,15 +1,143 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-02T23:46:06.234Z",
+ "fetchedAt": "2026-11-03T02:01:28.787Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.40901",
+    "authors": [
+     {
+      "_id": "6ae93a354b63b3479c38a5a4",
+      "name": "ChengAo Shen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5a5",
+      "name": "Yanjun Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5a6",
+      "name": "Haoxin Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5a7",
+      "name": "Bonnie Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5a8",
+      "name": "Miles Ma",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5a9",
+      "name": "Dongjin Song",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5aa",
+      "name": "Hanghang Tong",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5ab",
+      "name": "Qingsong Wen",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5ac",
+      "name": "Jingrui He",
+      "hidden": false
+     },
+     {
+      "_id": "6ae93a354b63b3479c38a5ad",
+      "name": "Jingchao Ni",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-02T00:00:00.000Z",
+    "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+    "submittedOnDailyBy": {
+     "_id": "66c2a909a9425c872d5213f4",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66c2a909a9425c872d5213f4/ToUKCsYVK0GzMEhvNtoNB.jpeg",
+     "isPro": false,
+     "fullname": "ChengAo Shen",
+     "user": "ChengAoShen",
+     "type": "user",
+     "name": "ChengAoShen"
+    },
+    "summary": "As publications and products on time series forecasting (TSF) proliferate, researchers face a growing burden of analyzing existing work. First, not all publications release code. For instance, only about 20% of arXiv TSF papers have a code link in the surveyed period. Second, released code also requires manual maintenance. Thus, TSF researchers must constantly adapt or implement existing works. However, independent implementations can differ in experimental settings and are difficult to maintain. We therefore propose to use AI agents for benchmarking TSF research and even supporting autoresearch, e.g., developing new TSF models. Yet directly applying existing coding agents, such as Claude Code and Codex, is suboptimal: prohibitive costs, limited scalability to large research projects (e.g., benchmarking), and lack of self-maintenance. To address these challenges, we propose TSFLab, a self-improving agent-agnostic \"workbench\" that equips compatible coding agents with shared resources and tools for low-cost TSF research and continuous maintenance of research resources. Our experiments cover reproduction, benchmarking, and new method development. In reproduction and benchmarking, TSFLab improves task completion by 20-163% and cuts fresh tokens per completed task by 11-66% across baselines. A pilot study of agent-driven method development also shows improved forecasting accuracy via TSFLab, with 32.8-73.6% fewer fresh tokens and 9.2-68.8% less development time than the other settings.",
+    "upvotes": 0,
+    "discussionId": "6ae93a354b63b3479c38a5ae",
+    "githubRepo": "https://github.com/D2I-Group/TSFLab",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "TSFLab is a self-improving agent-agnostic workbench that equips coding agents with shared resources to reduce costs and automate maintenance for time series forecasting research and benchmarking.",
+    "ai_keywords": [
+     "time series forecasting",
+     "AI agents",
+     "coding agents",
+     "TSFLab",
+     "autoresearch",
+     "benchmarking",
+     "self-maintenance",
+     "agent-agnostic workbench"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6aa0362c39ec121d028bce0a",
+     "name": "D2I-Group",
+     "fullname": "Data to Intelligence (D2I) Group @ UH",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67b5efbe38c175486e2869b9/-hXSWlDPili9FCvEWUT9e.png"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+   "summary": "As publications and products on time series forecasting (TSF) proliferate, researchers face a growing burden of analyzing existing work. First, not all publications release code. For instance, only about 20% of arXiv TSF papers have a code link in the surveyed period. Second, released code also requires manual maintenance. Thus, TSF researchers must constantly adapt or implement existing works. However, independent implementations can differ in experimental settings and are difficult to maintain. We therefore propose to use AI agents for benchmarking TSF research and even supporting autoresearch, e.g., developing new TSF models. Yet directly applying existing coding agents, such as Claude Code and Codex, is suboptimal: prohibitive costs, limited scalability to large research projects (e.g., benchmarking), and lack of self-maintenance. To address these challenges, we propose TSFLab, a self-improving agent-agnostic \"workbench\" that equips compatible coding agents with shared resources and tools for low-cost TSF research and continuous maintenance of research resources. Our experiments cover reproduction, benchmarking, and new method development. In reproduction and benchmarking, TSFLab improves task completion by 20-163% and cuts fresh tokens per completed task by 11-66% across baselines. A pilot study of agent-driven method development also shows improved forecasting accuracy via TSFLab, with 32.8-73.6% fewer fresh tokens and 9.2-68.8% less development time than the other settings.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40901.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66c2a909a9425c872d5213f4",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66c2a909a9425c872d5213f4/ToUKCsYVK0GzMEhvNtoNB.jpeg",
+    "fullname": "ChengAo Shen",
+    "name": "ChengAoShen",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 4,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6aa0362c39ec121d028bce0a",
+    "name": "D2I-Group",
+    "fullname": "Data to Intelligence (D2I) Group @ UH",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67b5efbe38c175486e2869b9/-hXSWlDPili9FCvEWUT9e.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2610.36384",
     "authors": [
      {
       "_id": "6ae31052d670fc6ea896c9a8",
+      "user": {
+       "_id": "66ec190a3e705c8c4b99cb09",
+       "avatarUrl": "/avatars/37fecab0dd44bd682393717533eb39e5.svg",
+       "isPro": false,
+       "fullname": "Matea Tashkovska",
+       "user": "t-matea",
+       "type": "user",
+       "name": "t-matea"
+      },
       "name": "Matea Tashkovska",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-03T00:45:04.650Z",
       "hidden": false
      },
      {
@@ -68,7 +196,7 @@
    "title": "SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding",
    "summary": "Perceiving human body motion is critical for multimodal systems that understand and assist people. Yet current evaluations of Multimodal Large Language Models (MLLMs) largely focus on objects, scenes, and coarse actions, leaving their ability to reason about the body itself poorly assessed. This is especially challenging from the egocentric perspective, in which the body is only partially visible and motion must be inferred from occluded and temporally distributed cues. We introduce SOMA, a benchmark for fine-grained body-motion understanding from egocentric video, comprising 1,632 human-verified questions across three capability axes: body configuration, motion dynamics, and temporal reasoning. We evaluate 37 leading closed-source, open-source, and specialized egocentric MLLMs, complemented by an extensive human evaluation. We find that humans also find this task difficult from video alone (68.5% accuracy), yet clearly outperform the strongest MLLM (Qwen3.6-27B), which reaches 50.0% zero-shot accuracy. Our error analysis shows that MLLMs often misread the wearer's own body, misjudge events in time, and are prone to biases such as favoring the right hand or under-counting repetitions. To narrow the gap to human performance and support further progress, we introduce a training dataset of aligned video, body motion, and language supervision, and a multimodal baseline that jointly learns from these modalities. By identifying common failure modes and missing capabilities in current MLLMs, we hope SOMA will inspire future research on body-motion understanding and multimodal reasoning. Full benchmark, training data, and code will be released at: https://cnai.epfl.ch/soma",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36384.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "66ec190a3e705c8c4b99cb09",
     "avatarUrl": "/avatars/37fecab0dd44bd682393717533eb39e5.svg",
@@ -88,7 +216,7 @@
     "fullname": "Mathis Group @ EPFL",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6291f83756fedc76e394493d/-4JZNZOUC88l6kpppZ31P.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -163,7 +291,7 @@
      "name": "nicholaslee"
     },
     "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance. We introduce GEPA-Curator, a framework that augments the prompt optimizer to select which agent experiences should shape prompt optimization. In particular, GEPA-Curator consists of two components: task curation, which filters out tasks that are likely to provide noisy or unreliable learning signals, and prior success retrieval, which selectively retrieves past successful trajectories for a task and provides them as additional context to the prompt optimizer. We evaluate GEPA-Curator on GoBrowse, ALFWorld, AppWorld, and τ-bench, using both Gemini 3.1 Pro and Claude Opus 5 as optimizer models. GEPA-Curator matches or exceeds the mean performance of both baselines, with gains of up to 20.7% over GEPA and 21.2% over ACE.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6ae8dbb54b63b3479c38a3ac",
     "ai_summary": "GEPA-Curator improves agentic prompt optimization by filtering unreliable failure signals and retrieving past successes, boosting performance across multiple benchmarks.",
     "ai_keywords": [
@@ -187,7 +315,7 @@
    "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
    "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance. We introduce GEPA-Curator, a framework that augments the prompt optimizer to select which agent experiences should shape prompt optimization. In particular, GEPA-Curator consists of two components: task curation, which filters out tasks that are likely to provide noisy or unreliable learning signals, and prior success retrieval, which selectively retrieves past successful trajectories for a task and provides them as additional context to the prompt optimizer. We evaluate GEPA-Curator on GoBrowse, ALFWorld, AppWorld, and τ-bench, using both Gemini 3.1 Pro and Claude Opus 5 as optimizer models. GEPA-Curator matches or exceeds the mean performance of both baselines, with gains of up to 20.7% over GEPA and 21.2% over ACE.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37651.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "656a4547996819a82836852d",
     "avatarUrl": "/avatars/774973dcd5b5b1c28a8db387043f1906.svg",
@@ -331,7 +459,18 @@
      },
      {
       "_id": "6ae8923dc45846c345677394",
+      "user": {
+       "_id": "647a1010ffe1b559f5418534",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/8rmJAf0C3lEyTBpIuwnBe.png",
+       "isPro": false,
+       "fullname": "Anshuman Suri",
+       "user": "iamgroot42",
+       "type": "user",
+       "name": "iamgroot42"
+      },
       "name": "Anshuman Suri",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-03T00:45:04.702Z",
       "hidden": false
      },
      {
@@ -377,7 +516,7 @@
      "name": "pratyushmaini"
     },
     "summary": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior. By simplifying a low-rank attribution method and restricting backpropagation to the final four transformer blocks, SimpleLoRIF can embed datasets on the order of a million examples, boosting gradient attribution from a small-scale analysis tool into a practical filter for full post-training datasets. We first validate it on emergent misalignment, where we find that gradients can connect insecure-code training data to the broadly harmful behaviors that appear after fine-tuning, with AUC as high as 0.865 in the gradient space of misaligned models. We then use SimpleLoRIF to build SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed. Training on SafeTulu reduces GCG attack success rate by up to 22% across Qwen, Llama, and Olmo, outperforming both LLM-as-a-judge and prior gradient-based filtering, while largely preserving or even improving capability. Finally, we analyzed the removed data and identify possibly under-studied sources of safety degradation, such as tool-execution failures and narrative arithmetic. We release SafeTulu along with a Hugging Face Space that lets researchers build their own customized versions of SafeTulu to fine-tune on, such as by changing the removal fraction or filtering only certain subsets.",
-    "upvotes": 25,
+    "upvotes": 26,
     "discussionId": "6ae8923dc45846c345677398",
     "projectPage": "https://www.datologyai.com/blog/follow-the-gradient",
     "ai_summary": "SimpleLoRIF uses gradient alignment to filter instruction data that silently degrades LLM safety, yielding a safer dataset that reduces adversarial success while preserving capabilities.",
@@ -407,7 +546,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/632c826d1d303f5f9acf5917/idrks80HUpZxLxZm5Pujd.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37481.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "632c826d1d303f5f9acf5917",
     "avatarUrl": "/avatars/7378868a1b58073cf4f1356a0fba8d41.svg",
@@ -492,7 +631,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/65ac0826cb5b4fb08e4e0c3a/7oAJpe-Ork-dECXd4sy5b.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40488.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65ac0826cb5b4fb08e4e0c3a",
     "avatarUrl": "/avatars/cc21eb5097f37aa4383fe764ebd7a3db.svg",
@@ -589,7 +728,7 @@
    "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
    "summary": "Direct-policy World Action Models (WAM) have demonstrated the benefits of decoupling action generation from explicit future visual prediction for efficient inference in autonomous driving and embodied control. However, they still require tens of denoising steps to achieve competitive action quality, incurring substantial latency and hindering real-time deployment. Simply reducing the number of denoising steps will collapse the nonlinear multi-step denoising trajectory into coarse updates, substantially degrading action quality. To reduce the denoising steps while enabling real-time action generation, we present an effective world action model with one-step action generation, namely OSWAM, for autonomous driving and embodied control. We argue that it is the absence of structured action priors in random noise initialization that forces direct-policy WAMs to recover coherent action sequences through iterative denoising. Hence, we construct imagination tokens to initialize the diffusion process, providing physical priors and action-conditioned representations. We further introduce privileged information distillation with future conditioning to enhance future-aware action generation. As a result, OSWAM can efficiently and effectively generate high quality actions in just one diffusion step. Our experiments demonstrate that OSWAM achieves comparable or even better results in both autonomous driving and embodied control than direct-policy WAM and Joint-WAM that require tens of steps. It obtains approximately 3times speedup over direct-policy WAM baselines and supports real-time compiled inference with latency as low as 40ms on an NVIDIA RTX 5090 GPU. The project page is available at https://gwenzhang.github.io/OSWAM/",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35850.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6509577eb5a04c8675bbc122",
     "avatarUrl": "/avatars/9b6481fa1f4a9c02e434ceb114cc2e86.svg",
@@ -682,7 +821,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6982f9173ea114b8ee0e436c/RZf6sIve23768tW7kqAjp.webp"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37903.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6982f9173ea114b8ee0e436c",
     "avatarUrl": "/avatars/c77dd99e6ed104d09da72b6d906947d5.svg",
@@ -753,7 +892,7 @@
      "name": "tugrulbayrak"
     },
     "summary": "This paper presents TurnTurk-GPT, a text-based turn-taking predictor for Turkish obtained by fine-tuning a Turkish GPT-2 model with the TurnGPT objective on synthetic and real dialogue, and evaluates it on real Turkish conversation against rule baselines, a zero-shot Turkish language model and a widely used multilingual end-of-turn detector. Evaluation uses word-level decision points on unpunctuated, lower-cased text approximating the output of streaming speech recognisers, recording-disjoint and speaker-disjoint folds, nested threshold selection and paired cluster bootstrap tests. TurnTurk-GPT outperforms the multilingual detector under both recording-disjoint and speaker-disjoint evaluation. It outperforms the zero-shot language model only when the test speakers occur in training; on unseen speakers the two are statistically indistinguishable. Removing the suffixes of the turn-final word reduces AP by up to 44%, against 2% for a sentence-internal word, locating the Turkish end-of-turn cue in verb-final morphology. Synthetic dialogue alone yields the weakest trained model, and when a speaker pauses the zero-shot and multilingual baselines remain close to chance. The model and the evaluation protocol are publicly released.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6ae885f3c45846c34567735d",
     "ai_summary": "TurnTurk-GPT, a Turkish turn-taking predictor fine-tuned from GPT-2, outperforms multilingual detectors and reveals that Turkish end-of-turn cues rely on verb-final morphology.",
     "ai_keywords": [
@@ -872,7 +1011,7 @@
    "title": "When Requirements Interact: Scaling Long-Horizon Coding via Interdependent Specifications",
    "summary": "To succeed in real-world long-horizon software development, coding agents must satisfy multi-dimensional task specifications, such as interface compatibility and error handling, and do so without breaking existing dependencies. However, current works lack specification in both quantity and diversity, often emphasizing primary goals while ignoring complex constraints. Synthesizing tasks to bridge this gap presents two challenges: naively adding specifications risks reducing tasks to trivial checklists rather than compelling joint reasoning, and verifying these subtle interactions risks overlooking hidden flaws or rejecting valid alternatives. To address these challenges, we introduce CodeSpecWeave, a framework for synthesizing tasks with rich, interdependent specifications. Grounded in real developer seeds, a synthesis agent iteratively develops both coupled task requirements and executable tests, while a review agent audits solution trajectories from multiple models to guarantee test reliability. Using this pipeline, we construct 4,670 training tasks across 2,865 repositories. Applying Reinforcement learning on these tasks significantly improves performance over the base model on DeepSWE-v1.1, largely outperforming existing baselines. Furthermore, we curate CodeSpecWeave-Bench, a rigorous benchmark comprising 100 tasks and 1,044 specifications, which clearly separates frontier models and reveals significant headroom in handling interdependent engineering constraints.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40256.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "66116ea674f830bc7decc06b",
     "avatarUrl": "/avatars/c5b9aa4d91c9f4dbc3528dbe54ae1e85.svg",
@@ -970,7 +1109,7 @@
      "name": "SinjaeKang"
     },
     "summary": "Robot policy evaluation often relies on a binary success signal for task completion. In real-world deployment, however, desired execution behaviors are also defined by quality attributes such as execution speed and motion smoothness, which need to be dynamically controlled according to task requirements. To address this, we introduce Quality-Controllable Policy (QCP), a robot policy that enables inference-time control over both individual quality attributes and their combinations. To extend the controllable quality range beyond initial demonstrations, we further propose an iterative hindsight relabeling loop: QCP collects online rollouts under target quality labels, adds successful trajectories to the dataset, relabels the accumulated trajectories in hindsight according to their measured quality, and fine-tunes the policy. Experiments on Robomimic and RoboEval demonstrate that QCP consistently improves both task execution quality and success rates across iterations, producing successful rollouts that exceed the quality of the initial demonstrations. Finally, we validate QCP on real-world manipulation tasks, where controlling speed increases throughput in conveyor operations and controlling transport stability improves success when carrying wine glasses, demonstrating that quality-controllable policies yield practical gains in physical deployment.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6ae1af2da5eb0647c2907646",
     "projectPage": "https://sinnnj.github.io/qcp/",
     "ai_summary": "Quality-Controllable Policy enables real-time adjustment of robot execution quality and improves performance through iterative hindsight relabeling of online rollouts.",
@@ -996,7 +1135,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/67c17e33fcbcc66c865197d1/gUbCJunjY9cJCm-BsxaxI.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37393.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "67c17e33fcbcc66c865197d1",
     "avatarUrl": "/avatars/81dbbb3b6abc840f87a4fbea4a8e5d47.svg",
@@ -1121,7 +1260,7 @@
    "title": "Supervising the Visible State: Separating Representation from View Selection in Streaming Video",
    "summary": "An action seen once and the same action seen three times receive the same action-recognition label, so that supervision does not require a model to count. Answers shared across histories that differ in event order, accumulation, or relations leave those distinctions unconstrained; we call this state under-specification. Visible-State Supervision (ViSS) addresses it by training on source-grounded probes of event identity, order, accumulation, relation change, and answer sufficiency; under the same recent-frame interface it improves OVO-Bench over a strict-matched generic temporal supervision baseline while remaining comparable on StreamingBench, with the largest gain in hallucination detection. Test-Time Causal View Search (TVS) then adapts evidence access while keeping the learned model fixed, expanding from recent frames to sparse event and compact history views on demand. The two interventions separate representation from view selection: supervision particularly benefits hallucination detection and causal reasoning, access particularly benefits event recall and forward reasoning. Together they reach the best reported accuracy among the published systems compared here on StreamingBench and OVO-Bench at a fraction of the processed frames of exhaustive selection, and strict replay shows that most of the remaining gap to a three-view oracle is a correct answer that was later replaced. Streaming accuracy depends on what supervision asks the model to keep, what evidence inference exposes, and whether the model keeps a correct answer once it has one.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34926.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "67e40cea6d0207b1fa43c826",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/_OzAJCjFC49dEkHZm4AQb.png",
@@ -1547,7 +1686,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6465e54d63e7e09dd02f01bc/AJhAcHL9edzg7AkBBQPKR.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40727.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "6465e54d63e7e09dd02f01bc",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6465e54d63e7e09dd02f01bc/6vXZh0IDBukImPsKCVgDL.png",
@@ -1623,7 +1762,7 @@
    "title": "SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World",
    "summary": "Large language model agents are increasingly used for scientific discovery. However, existing benchmarks mix law inference with programming, score data fitting instead of prediction on unseen inputs, and do not separate empirical evidence from pretrained priors. We introduce SciGame, a controlled benchmark that converts scientific literature into structured scientific cards. Each card yields a pair of Original and dimensionally consistent Counterfactual environments with the same task interface. SciGame contains a Historical collection of canonical laws and a live Temporal collection curated from papers published after model knowledge cutoffs. It evaluates agents in candidate-guided Identification and open-ended Discovery settings. Each setting runs under Prior-only, Fixed, and Adaptive protocols. Experiments on five frontier models yield three findings. First, familiar priors hurt performance once the governing relation is altered. Second, adaptive experimentation helps the strongest models but harms weaker ones under limited budgets. Third, good explanations can hide quantitative failures. Recovering the exact symbolic form remains the main bottleneck, even when agents interpret evidence correctly. Current agents can investigate systems actively, but inducing exact laws in unfamiliar settings remains an open challenge.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37919.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63457bb1abd499c80af15dcc",
     "avatarUrl": "/avatars/c6d582c9e641c7dd9b935b3ddec137f3.svg",
@@ -1728,7 +1867,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/672b104f7ec01ef4af5894d5/EKCy_DjQOD3YCgowJB-Av.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40914.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "672b104f7ec01ef4af5894d5",
     "avatarUrl": "/avatars/9f13e32711454f4017fcf512f317ec79.svg",
@@ -1826,7 +1965,7 @@
    "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
    "summary": "Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While pairing a deliberative brain (foundation models) with a reactive cerebellum (fast policies) seems natural for embodied systems, two obstacles remain: methods are built and scored on incompatible stacks, and their asynchronous coordination is difficult. For example, an agent that calls the VLA in the agentic loop can stall the fast execution, while a VLA that calls the agent on errors tends to re-trigger fallbacks repeatedly or completely miss silent failures. To address this, we propose REA (Routed Embodied Agent), a unified runtime where a deliberative System 2, an embodied router System 1 and reactive System 0 policies cooperate under a single golden rule - no running policy waits on the brain. Instead of querying the brain at each failure, REA employs a route memory that stores each policy's measured success ahead of time, a boundary-triggered judge gate that consults the brain on policy execution, and a shared-budget escalation ladder for bounded recovery. Evaluated on 3,000 test episodes across 60 LIBERO-Pro tasks, REA reaches 95.9% success and beats the best single-agent baseline in its own policy pool (94.7%) while reducing control steps by 25% and control time by 17%. In a separate 100-episode RoboTwin 2.0 study, REA achieves 84% success with VLA policies and 86% with VLA+code, compared with 80% for the strongest single VLA baseline MEDex. These results demonstrate learned and programmatic policies operating within the same runtime. REA also transfers to BEHAVIOR-1K and a real Unitree G1 humanoid, achieving the highest observed success among the compared methods.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42053.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "648157807a741c7f33f5ebf5",
     "avatarUrl": "/avatars/3fe9cf3b7aca89b37f7d13503d4d093d.svg",
@@ -1930,7 +2069,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/66f5d4c99ef08fe3c1ed5c2d/LrK1tIcmJ7T-niyVTR5pS.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.31222.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "66f5d4c99ef08fe3c1ed5c2d",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66f5d4c99ef08fe3c1ed5c2d/tftNb1JKDHrgMhr8PmN6A.jpeg",
@@ -2009,7 +2148,7 @@
      "name": "rooty2020"
     },
     "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space. To bridge this gap, we introduce a Latent Reasoning framework in Continuous space (LARC), which alleviates the token-level bottleneck by reasoning over continuous hidden states. Specifically, the training framework consists of two stages: (i) curriculum supervised fine-tuning (SFT), and (ii) information-gain reinforcement learning (RL). First, the curriculum SFT stage gradually converts token-level reasoning into latent reasoning. Subsequently, the information-gain RL stage self-evolves latent reasoning without ground truth supervision. Experiments across diverse text-to-image generation benchmarks show that LARC consistently improves generation quality, prompt following, and compositional fidelity. Notably, LARC achieves state-of-the-art performance on GenEval with a 7%p gain over BAGEL and demonstrates clear test-time scaling behavior, outperforming token-based generation under both parallel and sequential test-time scaling strategies.",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6ae84194ac2aed10b8c1cefd",
     "projectPage": "https://rootyjeon.github.io/larc-umm/",
     "githubRepo": "https://github.com/rootyJeon/LARC",
@@ -2041,7 +2180,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6638f1c6c9648d06123f38e6/cClrcZjQF4N9te8cPS2OM.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42149.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6638f1c6c9648d06123f38e6",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6638f1c6c9648d06123f38e6/QZ-gS64IhwzmeERcMv6QF.jpeg",
@@ -2138,7 +2277,7 @@
    "title": "TernScope: Model-Hardware Co-Design for Efficient Ternary Endoscopic Segmentation",
    "summary": "Edge medical segmentation must reconcile small model size, high accuracy, and fast inference. TernScope addresses this tradeoff through model--hardware co-design, learning a compact segmentation network whose low-bit operators also simplify hardware execution. Split-channel large-kernel blocks preserve spatial context with limited computation, while branch fusion removes redundant inference paths. Ternary Progressive Quantization-aware Training (TPQ) then adapts the fused network from deep to shallow layers, through the decoder, and finally to the input and prediction layers. All 25 convolutions use ternary weights and 8-bit activations, enabling packed storage and multiplier-free computation. The resulting model uses 0.2483 M parameters and 0.0949 GMACs while retaining competitive segmentation accuracy on in-domain and external datasets. Under the same 45 nm technology, TernScope reduces compute-array area by 88.46% compared with the original Gemmini, a systolic-array accelerator with 8-bit times 8-bit multipliers. These results demonstrate a path from accurate lightweight medical segmentation to compact low-bit hardware.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.29617.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "66c4d1068252e96d0de651e1",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66c4d1068252e96d0de651e1/d8pY1-c-_V76nCuhq9ONF.png",
@@ -2216,7 +2355,7 @@
    "title": "SketchDirector: Complex Scene Sketching via Agentic Layout Reasoning and Detail Refinement",
    "summary": "Existing sketch generation methods often rely on image guidance and are largely limited to individual objects or simplified scenes, leaving text-guided complex scene sketching underexplored. We present SketchDirector, an agentic framework that mimics the human sketching workflow for automatic multi-concept scene sketching. Given a scene-level text prompt, SketchDirector first employs a large language model~(LLM) to decompose the scene into multiple draft assets, where each is represented by a set of Bézier curves. Then, an agentic reasoning loop iteratively plans and executes their spatial arrangement, guided by self-evolving memory. Finally, a detail refinement module leverages diffusion priors to enhance sketch quality while preserving geometric structure. To support future research and applications in multi-concept scene sketch generation, we further introduce the MCSketch8K dataset, comprising editable vector assets, compositional layouts, and object-level manipulation annotations. Extensive experiments show that SketchDirector outperforms state-of-the-art baselines in semantic and compositional quality while effectively preserving overall contour organization during refinement. The project page is: https://yiki77.github.io/SketchDirector/{https://yiki77.github.io/SketchDirector/}.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.41260.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63184c517ca1b876d99b7e0e",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
@@ -2342,7 +2481,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/65fc5407ec1f99ad1f462c45/oAx3vpYkMgmICAv2Nq9k2.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42136.png",
-   "numComments": 4,
+   "numComments": 6,
    "submittedBy": {
     "_id": "65fc5407ec1f99ad1f462c45",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fc5407ec1f99ad1f462c45/fVMvxf40lagvZLykxafH6.jpeg",
@@ -2461,7 +2600,7 @@
    "title": "HALO: Human-Grounded Granular Evaluation of Proactive Agents",
    "summary": "Proactive agents must decide whether, when, and how far to assist without an explicit request. Existing evaluations often rely on automated scores or binary verdicts, offering limited human diagnosis of evidence use and intervention quality. To address these gaps, we introduce HALO, Human-Grounded GrAnular EvaLuation of PrOactive Agents. HALO-Arena covers 4 proactive need types, Dependency, Blockage, Risk, and Opportunity, across 10 everyday domains and 50 personal environments. Scenarios require agents to retrieve evidence from structured databases or unstructured documents before judging whether assistance is warranted and choosing its scope. On HALO-Arena, we construct HALO-8K, a dataset of 8,000 responses from 10 models across 400 scenarios, annotated by 20 experts for action level, acceptability verdicts, and human diagnosis. For rejected responses, human diagnosis covers timing, intensity, and other issues. Recorded reasoning tokens and retrieval rounds measure the effort behind these responses. The best proprietary and open-source models achieve 72.88% and 56.63% acceptability, respectively. Our central finding is that over-proactivity is the dominant observed failure mode, with Premature timing or Excessive intensity accounting for 61.20% of rejected responses. Further analyses yield complementary findings on the balance between intervention and restraint, evidence acquisition, and the calibration of timing and intensity.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39086.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65e7d63b14856e8859f1924c",
     "avatarUrl": "/avatars/a282b4d18dd352d821de8391cec10bb5.svg",
@@ -2696,7 +2835,7 @@
    "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
    "summary": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on τ-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40738.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "62d913739a5353eef9d7edf3",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62d913739a5353eef9d7edf3/pRgen2izGJle3ahupOdC7.jpeg",
@@ -2822,7 +2961,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/64b011856fa55c6ba9ab9df4/Sq1E9JG9jp41_ZAj7Pvub.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40636.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "64b011856fa55c6ba9ab9df4",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b011856fa55c6ba9ab9df4/vSo3Z9K23sgSNkTwOVX57.png",
@@ -3023,7 +3162,7 @@
    "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
    "summary": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40799.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6628ff775fc43f135b3ab940",
     "avatarUrl": "/avatars/5217abf7690d3ff29545a12ac605631f.svg",
@@ -3124,7 +3263,7 @@
    "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
    "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization and is evaluated on held-out scenes and tasks. Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tasks (3.2x), across multiple benchmarks and policies. The gains are largest where the benchmark is far from the policy's training data: wrapping a general-purpose policy, the evolved harness yields a specialist that often outperforms even the finetuned version. Intuitive control strategies are automatically designed, such as lifting a jammed arm clear or reaching in horizontally when an obstacle blocks the way from above. The harness also evolves its own persistent memory, carrying learned experience, such as effective grasp depths, into later decisions. These results suggest that substantial headroom in robotic manipulation lies in the agent harness, and its design can be effectively automated and optimized without weight updates.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42141.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "65222f97ef06bb99753cb829",
     "avatarUrl": "/avatars/07d65905c3786a2bfbbd965d48d56de7.svg",
@@ -3209,7 +3348,7 @@
    "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
    "summary": "World action models (WAMs) learn latent variables from observations and use these to both predict the evolution of the scene and to generate actions. The prediction has to be of the whole scene, whereas only a portion of the scene causes actions. WAMs fitted to demonstrations do not, in general, guarantee that they will generate actions solely from the latent causes of the demonstrated actions (the action-relevant latent variables), as the model could just as well learn to imitate in this way whilst entangling the action-relevant latent variables with the nuisance variables. We therefore separate out what causes action from what prediction depends on. We prove that under a sparsity constraint the latent variables used to generate actions are an invertible function of the action-relevant latent variables alone and the true structure is identified up to a permutation of the latent variables. This requires neither sufficient temporal dependence nor any assumptions on how the unobserved regimes evolve and holds even when the action-relevant latent variables are statistically dependent on the rest. We therefore propose CWAM (Causal WAM), which incorporates the constraint into a pretrained WAM by adding a sparse routing path to its action head, with the world modeling objective remaining unchanged. Experiments on both synthetic data and real-world robots validate the theory as well as showcase the improved efficiency in closed-loop success.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.42096.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6804a894ea0734d6b26f19c3",
     "avatarUrl": "/avatars/f5bcbcea2648bcf04672d60d209fc0ea.svg",
@@ -3330,7 +3469,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6848fb7a06b11989718d3923/fjzA51Pe3jrLKFZmApheI.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.16927.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6848fb7a06b11989718d3923",
     "avatarUrl": "/avatars/c8e3c28dd75b4be7cdee5d9509f32033.svg",
@@ -3431,7 +3570,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/630636bcd37ce67e0e4d1d42/IfZUSFrqbGdPyTtjfdSMa.jpeg"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.36545.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "630636bcd37ce67e0e4d1d42",
     "avatarUrl": "/avatars/098a87fbb6c06d2b9387010f6354f15f.svg",
@@ -3546,7 +3685,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/63e493a09db5da2dc1f66291/MiBO2UlKfmNNkbzKNDGml.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.34722.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63e493a09db5da2dc1f66291",
     "avatarUrl": "/avatars/fa183bf1d776d518afc304598dad2cdd.svg",
@@ -3641,7 +3780,7 @@
    "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
    "summary": "Recent advances in video world models have enabled the generation of increasingly realistic and interactive virtual environments, opening new possibilities for player-customizable gameplay. Agentic frameworks further advance this direction by decoupling explicit game logic and controllable world representations from visual generation. However, existing approaches support only simple game settings and predefined motion patterns, generalize poorly to unseen environments and characters, and offer limited real-time interactivity. In this paper, we introduce Wizard, an agentic game world model that enables real-time, precise control over character motions while generalizing zero-shot across novel scenes, characters, and actions. To achieve this, we construct a diverse dataset spanning 750 scenes and 178 characters, incorporating skeleton and geometry information as structured representations. We leverage these representations as intermediate proxies to condition a video generation model, together with an adaptive masking mechanism that improves alignment between the conditioning signals and generated video rollouts. Furthermore, we introduce an agentic framework that explicitly maintains and updates game states, allowing players to freely configure their virtual worlds and exercise fine-grained control over character motions while preserving visual quality and gameplay consistency. By combining agentic control with structured proxy-based generation, our framework unlocks new possibilities for player-driven game creation with real-time, generalizable, and mechanically consistent world simulation.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40339.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "677e31bb114aeff62d62bc11",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/JA85qWXtPO_mnK7_Bu2HJ.png",
@@ -3902,7 +4041,7 @@
      "name": "Thu-zqc"
     },
     "summary": "In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R^2Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R^2Orch consistently outperforms baselines across question answering, math, code, and interactive tasks. Our code is available at https://github.com/beita6969/R2Orch.",
-    "upvotes": 88,
+    "upvotes": 89,
     "discussionId": "6ae017dca5efa215400a79cf",
     "ai_summary": "R²Orch uses recursive self-play with learnable task selection and skill withdrawal to train orchestrators without hand-designed curricula, improving performance across reasoning and interactive tasks.",
     "ai_keywords": [
@@ -3932,7 +4071,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6821630a8986a3a939662159/_H7Pw-se86agxZXR80_0m.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22740.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6821630a8986a3a939662159",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/gzqy8imrdKKkuSPCLGQB_.png",
@@ -4150,7 +4289,7 @@
    "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
    "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40373.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6a4358768ae6ed7930e6b72e",
     "avatarUrl": "/avatars/202dd31c93cc49b2c58037cd22d6ed68.svg",
@@ -5216,7 +5355,7 @@
      "novel-view synthesis"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 26,
+    "githubStars": 27,
     "organization": {
      "_id": "627bbc28fbab61b048eba8b6",
      "name": "Oxford",
@@ -5497,135 +5636,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.39287",
-    "authors": [
-     {
-      "_id": "6ae45611c3b566b041f6ca32",
-      "name": "Junli Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca33",
-      "name": "Zhongrui You",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca34",
-      "name": "Chenhui Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca35",
-      "name": "Zhen Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca36",
-      "name": "Yuyang Tian",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca37",
-      "name": "Qizhen Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca38",
-      "name": "Delin Qu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca39",
-      "name": "Haoming Song",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca3a",
-      "name": "Dong Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca3b",
-      "name": "Xuelong Li",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca3c",
-      "name": "Zhigang Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae45611c3b566b041f6ca3d",
-      "name": "Bin Zhao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-10-30T00:00:00.000Z",
-    "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
-    "submittedOnDailyBy": {
-     "_id": "656850a60e4b5ff9d552e825",
-     "avatarUrl": "/avatars/691e86538943ee32015f23da63fd68e8.svg",
-     "isPro": false,
-     "fullname": "Junli Liu",
-     "user": "Ideallll",
-     "type": "user",
-     "name": "Ideallll"
-    },
-    "summary": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
-    "upvotes": 7,
-    "discussionId": "6ae45612c3b566b041f6ca3e",
-    "projectPage": "https://ideal-ljl.github.io/AeroBrain/",
-    "githubRepo": "https://github.com/Ideal-ljl/AeroBrain",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "OpenFlyV2 is a unified onboard vision-language-action model that enables real-time aerial navigation and reasoning on resource-constrained hardware using shared multimodal representations.",
-    "ai_keywords": [
-     "vision-language-action",
-     "vision-language representation",
-     "multimodal context",
-     "action expert",
-     "temporal memory",
-     "action priors",
-     "closed-loop execution",
-     "zero-shot sim-to-real transfer"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 15,
-    "organization": {
-     "_id": "66bada488c4119f92e6e8b81",
-     "name": "IPEC-COMMUNITY",
-     "fullname": "IPEC at Shanghai AI Laboratory",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66bad9725b3a757a7414fb83/m9eXMGXJj7VwhQYGJUmYb.png"
-    }
-   },
-   "publishedAt": "2026-10-28T20:00:00.000Z",
-   "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
-   "summary": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39287.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "656850a60e4b5ff9d552e825",
-    "avatarUrl": "/avatars/691e86538943ee32015f23da63fd68e8.svg",
-    "fullname": "Junli Liu",
-    "name": "Ideallll",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66bada488c4119f92e6e8b81",
-    "name": "IPEC-COMMUNITY",
-    "fullname": "IPEC at Shanghai AI Laboratory",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66bad9725b3a757a7414fb83/m9eXMGXJj7VwhQYGJUmYb.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
