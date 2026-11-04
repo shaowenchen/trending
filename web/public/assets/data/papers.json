@@ -1,8 +1,167 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-04T10:01:15.595Z",
+ "fetchedAt": "2026-11-04T12:16:05.096Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.40574",
+    "authors": [
+     {
+      "_id": "6aeb1fb6870269964d13a8e6",
+      "name": "Yifu Luo",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1fb6870269964d13a8e7",
+      "name": "Chuang Ma",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1fb6870269964d13a8e8",
+      "name": "Zeyu Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1fb6870269964d13a8e9",
+      "name": "Enkelejda Kasneci",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1fb6870269964d13a8ea",
+      "name": "Qi Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1fb6870269964d13a8eb",
+      "name": "Gjergji Kasneci",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+    "submittedOnDailyBy": {
+     "_id": "681d7bc1e36b83d25c8c4581",
+     "avatarUrl": "/avatars/1daaf80cfee8b5cbc2079ce8a09cd398.svg",
+     "isPro": false,
+     "fullname": "Happy AI",
+     "user": "happyiai",
+     "type": "user",
+     "name": "happyiai"
+    },
+    "summary": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to +5.9 over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
+    "upvotes": 2,
+    "discussionId": "6aeb1fb6870269964d13a8ec",
+    "githubRepo": "https://github.com/xingzhejun/MTA-OPSD",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Multi-teacher Adaptive On-policy Self-Distillation selects a preferred teacher for each token during training, improving mathematical reasoning performance over fixed-teacher methods.",
+    "ai_keywords": [
+     "On-policy Self-distillation",
+     "multi-teacher adaptive OPSD",
+     "token-level adaptive teacher selection",
+     "KL-based selection",
+     "teacher-intervention"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "61fae781e68759322b9767be",
+     "name": "TUM",
+     "fullname": "Technical University of Munich",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+   "summary": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to +5.9 over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40574.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "681d7bc1e36b83d25c8c4581",
+    "avatarUrl": "/avatars/1daaf80cfee8b5cbc2079ce8a09cd398.svg",
+    "fullname": "Happy AI",
+    "name": "happyiai",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "61fae781e68759322b9767be",
+    "name": "TUM",
+    "fullname": "Technical University of Munich",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.04785",
+    "authors": [
+     {
+      "_id": "6aeb0bb5870269964d13a84a",
+      "name": "Andrew Semenov",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb0bb5870269964d13a84b",
+      "name": "Svyatoslav Dorofeev",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
+    "submittedOnDailyBy": {
+     "_id": "64876798e2bc0e1c3f1451b0",
+     "avatarUrl": "/avatars/3f601c474cc9611782559aeab0c6dc33.svg",
+     "isPro": false,
+     "fullname": "C",
+     "user": "ovcompcase",
+     "type": "user",
+     "name": "ovcompcase"
+    },
+    "summary": "Large language models are candidates for collecting and analyzing records in criminal investigations and mass surveillance. Their capability and accuracy in this work cannot currently be measured. Real deployments lack the ground truth needed to score a model's conclusions, and no benchmark evaluates these capabilities in a simulated environment. We present Kierston, a city-scale simulation engine, and KierstonBench, a benchmark that tests these capabilities against known simulated events. Kierston models approximately 125,000 residents of Allentown, Pennsylvania, generating their daily activities and the telecommunications, financial, administrative and license-plate records that surveillance and investigative systems collect about them. These records derive from a common behavioral timeline and are distributed across sources representing separate providers. Models investigate through a restricted records interface, linking observations across sources without access to the underlying simulation. The benchmark comprises 32 task families covering record linkage, routine reconstruction, incident investigation and assessment of deceptive accounts. In an evaluation of sixteen language models, most could not perform records investigation and submitted identifications the records did not support. A small number of frontier models solved most of the tasks and abstained when evidence was insufficient. In some cases these models still fell for common deceptions and assumptions, and none replaced an investigator.",
+    "upvotes": 0,
+    "discussionId": "6aeb0bb5870269964d13a84c",
+    "githubRepo": "https://github.com/Kiz8-Team/kierston-oss",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Kierston and KierstonBench provide a simulated city-scale environment to evaluate large language models on criminal investigation tasks using linked surveillance records, revealing that only frontier models perform reliably while remaining vulnerable to deception.",
+    "ai_keywords": [
+     "large language models",
+     "record linkage",
+     "routine reconstruction",
+     "incident investigation",
+     "deceptive accounts",
+     "simulation engine",
+     "benchmark",
+     "surveillance records"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
+   "summary": "Large language models are candidates for collecting and analyzing records in criminal investigations and mass surveillance. Their capability and accuracy in this work cannot currently be measured. Real deployments lack the ground truth needed to score a model's conclusions, and no benchmark evaluates these capabilities in a simulated environment. We present Kierston, a city-scale simulation engine, and KierstonBench, a benchmark that tests these capabilities against known simulated events. Kierston models approximately 125,000 residents of Allentown, Pennsylvania, generating their daily activities and the telecommunications, financial, administrative and license-plate records that surveillance and investigative systems collect about them. These records derive from a common behavioral timeline and are distributed across sources representing separate providers. Models investigate through a restricted records interface, linking observations across sources without access to the underlying simulation. The benchmark comprises 32 task families covering record linkage, routine reconstruction, incident investigation and assessment of deceptive accounts. In an evaluation of sixteen language models, most could not perform records investigation and submitted identifications the records did not support. A small number of frontier models solved most of the tasks and abstained when evidence was insufficient. In some cases these models still fell for common deceptions and assumptions, and none replaced an investigator.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04785.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "64876798e2bc0e1c3f1451b0",
+    "avatarUrl": "/avatars/3f601c474cc9611782559aeab0c6dc33.svg",
+    "fullname": "C",
+    "name": "ovcompcase",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.05193",
@@ -44,7 +203,7 @@
      "name": "WJ0830"
     },
     "summary": "Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Models (MLLMs) have shown significant progress, we argue that the MLLM's compositional understanding remains underutilized. This stems from directly mapping composed queries into a retrieval embedding via contrastive supervision alone, without explicitly resolving the intended visual modifications. In this work, we introduce Factorized MLLM Embeddings (FactEmbed), which decouples compositional query comprehension from building discriminative embeddings. Rather than directly projecting the composed query into a single embedding without internal reasoning, FactEmbed employs a set of factorized latents that simulate the intended visual modifications via an intermediate target imagination objective. This process encourages the latents to ground into target semantics before forming discriminative representations for retrieval. Subsequently, to propagate these factorized representations throughout the model for retrieval, we optimize a factor-level contrastive loss while distilling the decomposed representations into a deeper attention layer of the MLLM. Finally, for efficient inference, we retain the [EOS] token to establish a global-level embedding on top of these factorized latents, while we exploit the mean-pooled factorized latents to rerank a short candidate list at negligible cost, as both are produced by the same forward pass. Extensive evaluations demonstrate that FactEmbed outperforms prior works across CIR benchmarks.",
-    "upvotes": 16,
+    "upvotes": 30,
     "discussionId": "6aeae6e7870269964d13a780",
     "projectPage": "https://cvlab-kaist.github.io/FactEmbed/",
     "githubRepo": "https://github.com/cvlab-kaist/FactEmbed",
@@ -62,6 +221,7 @@
      "mean-pooled factorized latents"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 7,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -150,7 +310,7 @@
      "name": "lxucs"
     },
     "summary": "Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. LoCo reduces completion length by 41.7\\%--45.4\\% on mathematics and 23.4\\%--36.3\\% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression. The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo.",
-    "upvotes": 2,
+    "upvotes": 42,
     "discussionId": "6aeae2d0870269964d13a765",
     "projectPage": "https://huggingface.co/MuyaoYuan/LoCo-7B",
     "githubRepo": "https://github.com/MuyaoYuan/LoCo",
@@ -177,7 +337,7 @@
    "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
    "summary": "Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. LoCo reduces completion length by 41.7\\%--45.4\\% on mathematics and 23.4\\%--36.3\\% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression. The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04814.png",
-   "numComments": 1,
+   "numComments": 5,
    "submittedBy": {
     "_id": "650f0fac11f3210cf7a8a849",
     "avatarUrl": "/avatars/e0dc8447874f91963c1aebe3a0949f24.svg",
@@ -306,7 +466,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/63e8cccddd2c4effdd6283cf/4xXumXKHMRyDHUIoRaCRe.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.05306.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63e8cccddd2c4effdd6283cf",
     "avatarUrl": "/avatars/0cf77630aa16079499d879784b835d4a.svg",
@@ -426,7 +586,7 @@
      "name": "yfyeung"
     },
     "summary": "Dialectal Arabic speech recognition remains constrained by the scarcity of dialect-resolved transcribed speech despite the abundance of web audio. We introduce GigaSpeech 3, a corpus of 39,000 hours and 10 million weakly transcribed speech segments covering Algerian, Egyptian, Iraqi, Saudi, and Syrian Arabic. Starting from 60 hours of manual transcription per dialect, we train labeling models using speech-recognition-biased self-supervised learning and apply them to dialect-matched web audio. Data selection and four rounds of noisy-student refinement for Saudi and Syrian Arabic yield the final corpus. We validate its utility through dialect-specific and multi-dialect speech recognition training and cross-domain evaluation. On GigaSpeechBench, the final dialect-specific models outperform their labeling models across all five dialects and achieve a macro-average word error rate of 23.86%, a 16.6% relative reduction from the strongest third-party system covering all five dialects, while outperforming the best third-party result on three dialects. A multi-dialect model using self-predicted dialect identities achieves a macro-average word error rate of 25.51% while also supporting Modern Standard Arabic. Across eight conditions from three external corpora, a GigaSpeech 3-trained Zipformer achieves the lowest word error rate among six evaluated models in every condition, while adapting the Qwen3 speech recognizer on GigaSpeech 3 improves performance across all eight conditions. We release the corpus and recipes as a foundation for dialect-aware Arabic speech processing.",
-    "upvotes": 1,
+    "upvotes": 0,
     "discussionId": "6aeaf085870269964d13a7c1",
     "projectPage": "https://huggingface.co/datasets/speechcolab/gigaspeech3",
     "githubRepo": "https://github.com/Antares-97/GigaSpeech3",
@@ -866,7 +1026,7 @@
      "name": "chyun"
     },
     "summary": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model's rich spatiotemporal features, compressing each latent video frame by 300times (1{,200 rightarrow 4} tokens). In addition, by leveraging the video model's generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies.",
-    "upvotes": 39,
+    "upvotes": 45,
     "discussionId": "6aeab991870269964d13a5ee",
     "projectPage": "https://cvlab-kaist.github.io/DreamX/",
     "ai_summary": "DreamX leverages a pretrained video diffusion model to learn compact, appearance-invariant latent actions that enable cross-embodiment transfer and efficient policy learning.",
@@ -1009,7 +1169,7 @@
      "name": "Lruca"
     },
     "summary": "The advancement of multimodal learning is heavily constrained by the scarcity and high annotation cost of high-quality instruction data. While raw videos offer an abundant and dynamic source of visual knowledge, transforming them into precise instruction data remains highly challenging. To bridge this gap, we present VidUEU-Agent, an automated pipeline that synthesizes instruction data from raw videos for multimodal understanding, editing, and unified tasks. VidUEU-Agent follows a four-stage pipeline: it performs global perception to filter low-quality shots, mines keyframes and multimodal signals, constructs metadata and routes the metadata to synthesize instruction samples. More importantly, our agent framework can autonomously iterate the data distribution based on downstream training results, thereby optimizing data quality, balance, and training effectiveness. Scaling this pipeline, we construct VidUEU-100K, a large-scale dataset of 100K training samples spanning multiple domains and tasks, providing a robust foundation for developing comprehensive multimodal capabilities. Extensive experiments demonstrate that fine-tuning baseline models on VidUEU-100K yields significant and consistent performance gains across diverse representative benchmarks, validating the effectiveness of our proposed agent framework and dataset.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6aeaa47d870269964d13a460",
     "githubRepo": "https://github.com/LRuca/VidUEU-Agent",
     "githubRepoAddedBy": "user",
@@ -1180,7 +1340,7 @@
      "name": "RyanL22"
     },
     "summary": "Robot foundation models have shown remarkable performance in robot control, yet adapting them to a new task still relies heavily on teleoperated demonstrations. Egocentric human videos offer a scalable substitute, but overlaying rendered robots on human videos or retargeting human poses into robot actions leaves significant visual or action gaps for high-DoF robot embodiments. To address this limitation, we propose RoboTryOn, which treats human-to-robot translation as virtual try-on: try-on keeps the person and swaps the garment, RoboTryOn keeps the demonstrated motion and swaps the human for the robot. Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background. To maintain visual consistency, we translate selected keyframes autoregressively and use them to guide video synthesis with motion conditioned on the human hand skeleton. Additionally, we use an inverse dynamics model (IDM) that incorporates depth features to infer action labels from synthesized videos for policy learning. Our experiments across multiple humanoid embodiments show that policies trained with our synthetic data improve the average success rate on novel tasks, including challenging bimanual manipulation, from 2% to 60%, without any real robot demonstration of those tasks. Moreover, training with our synthetic data matches the performance of policies trained solely on teleoperated demonstrations at approximately a third of the collection cost, demonstrating the cost efficiency of our approach.",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6aead2d8870269964d13a70b",
     "projectPage": "https://ryan-seungyong-lee.github.io/RoboTryOn",
     "githubRepo": "https://github.com/ryan-seungyong-lee/RoboTryOn",
@@ -1429,7 +1589,7 @@
      "name": "Qing145"
     },
     "summary": "LLM-based multi-agent systems (MAS) rely on collaboration among specialized agents to solve complex tasks. Existing methods improve MAS by refining the prompts, skills, and execution strategies of individual agents based on task feedback. However, improving individual agents does not necessarily lead to better team collaboration. Recent studies have therefore extended evolution to the collaboration level, using collective execution experience to adjust team organization, and inter-agent interactions. Nevertheless, evolving collaboration across heterogeneous tasks remains challenging, as existing approaches often constrain team reorganization within a shared structure and reuse interaction rules across incompatible team contexts. In this paper, we propose EvoTeam, a collaboration-centric evolution framework that jointly evolves team organization, interaction rules, and individual agent skills through execution experience. It maintains a library of reusable teams, selecting or creating agent teams and guiding collaboration through team-specific interaction rules. Collaboration experience accumulates within compatible team contexts, while individual skills remain reusable across teams. Experiments across four benchmarks demonstrate its effectiveness. Our code is available at https://github.com/DEEP-JLU/EvoTeam.",
-    "upvotes": 20,
+    "upvotes": 22,
     "discussionId": "6aeacefe870269964d13a6c6",
     "ai_summary": "EvoTeam evolves multi-agent collaboration by jointly adapting team organization, interaction rules, and agent skills through execution experience while maintaining reusable team libraries.",
     "ai_keywords": [
@@ -1759,7 +1919,7 @@
      "name": "dongguanting"
     },
     "summary": "Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are data-centric: they first synthesize a database and scenario, then derive tools and tasks from them. As a result, tool interfaces may not match real ones, tool compositions are not grounded in execution, and tasks rarely span more than one environment. We propose ToolSpace, a tool-centric framework that reverses this order. ToolSpace mines data, state, and retry dependencies from adjacent calls in execution traces of real MCP services and open agent corpora, using deterministic rules rather than LLM judgment, and clusters the resulting weighted tool-composition graph into environments. Databases are synthesized only for state-mutating environments, while query and stateless tools replay recorded returns. ToolSpace then performs state-aware random walks with rollback and decompiles each chain into a natural-language task with assertion-based checks, keeping only samples that replay successfully from the initial state. Applied to AutomationBench and tau3-Bench Banking, the pipeline produces harder Pro versions on which 7 frontier models drop by up to 38.2 points. Across seven long-horizon tool-use benchmarks, ToolSpace raises Qwen3.6-35B-A3B from 23.0 to 41.0 average score (43.2 with RL) and GLM-5.2 from 44.6 to 56.6, on par with Claude Opus 5. Ablations show that execution-witnessed edges clearly outperform LLM-judged ones, and performance keeps improving with data and environment scale.",
-    "upvotes": 30,
+    "upvotes": 31,
     "discussionId": "6aeacb88870269964d13a694",
     "projectPage": "https://toolspace-agent.github.io/",
     "githubRepo": "https://github.com/dongguanting/ToolSpace",
@@ -2323,7 +2483,7 @@
      "name": "ChilleD"
     },
     "summary": "GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-driven human-agent collaboration, where environments evolve as new tasks expand their functional scope, coding agents implement the required changes, and human contributors audit visual fidelity, functional correctness, and task validity. The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover. Beyond reliable evaluation, WebHarbor provides high-fidelity synthetic web environments for cost-efficient reinforcement learning (RL). We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks. The code and data are publicly available at https://github.com/aiming-lab/WebHarbor.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6ae9fbc54cf0affa1ca73203",
     "projectPage": "https://aiming-lab.github.io/WebHarbor/",
     "githubRepo": "https://github.com/aiming-lab/WebHarbor",
@@ -2483,7 +2643,7 @@
      "name": "yikuuun"
     },
     "summary": "Molecular discovery requires navigating vast combinatorial search spaces while balancing competing biological objectives. AI agents can automate expert-defined molecular design protocols, but automation alone does not address how to optimize workflows for new tasks or improve their development through experience. Here we introduce MoLRSI, an AI agent that combines systematic optimization of workflows and model architectures with persistent cross-task memory to recursively improve its search policy for molecular discovery. Workflow performance, refinement outcomes, and execution feedback guide subsequent searches, allowing the agent to improve both its workflows and its strategy for developing them. We evaluate MoLRSI in two challenging molecular discovery settings that require balancing competing properties. In antibiotic discovery, MoLRSI developed a screening workflow balancing antibacterial activity, cytotoxicity and structural novelty, achieving an experimental hit rate of 15.9%, compared with 8.7% for a previous expert-led workflow using the same training data and screening library. In de novo peptide-MHC binder design, MoLRSI developed workflows that jointly consider target binding and specificity, producing eight experimentally validated hits against MART-1 and SARS-CoV-1 pMHCs with preferential binding over tested off-targets while Claude Science completely failed. These findings demonstrate how experience-guided workflow optimization can address competing discovery objectives while improving the search strategies used in subsequent campaigns.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6aeab2eb870269964d13a586",
     "projectPage": "https://yikunpku.github.io/MolRSI/",
     "ai_summary": "MoLRSI is an AI agent that optimizes molecular design workflows and retains cross-task memory to improve search policies, achieving higher experimental hit rates in antibiotic and peptide binder discovery than expert-led methods.",
@@ -2749,7 +2909,7 @@
      "name": "ElsaShaw"
     },
     "summary": "Psychotherapy clients may experience distress before they can coherently describe it, and their expression changes with emotion, perceived safety, and trust. Large language model-based client simulators often rely on clinically organized case descriptions, which can encourage responses explaining the client's difficulties more clearly than their current understanding warrants. We propose Pandora, a psychotherapy client simulation framework that models how psychological experience becomes situated, individual expression. Pandora updates psychological and relational states in response to therapist interventions, constructs subjective appraisals and attributions, and plans response content and strategy. A separate expression planner combines these decisions with language patterns distilled from the client's utterances to guide linguistic realization. We evaluate Pandora against five baselines on 115 cases from four counseling and motivational interviewing datasets. It achieves the highest expression similarity and overall disclosure-alignment score among the compared systems. In a four-evaluator study of 45 matched disclosure items, Pandora receives AI-like judgments in 7.2% of ratings, compared with 43.3--67.2% for the baselines and 35.6% without expression planning. The ablation also reduces expression similarity. These results support explicit expression planning in client simulation to improve alignment with individual language patterns and reduce perceived AI-like expression in the evaluated setting.",
-    "upvotes": 45,
+    "upvotes": 51,
     "discussionId": "6aeabe8d870269964d13a607",
     "projectPage": "https://clain.org/Pandora/",
     "githubRepo": "https://github.com/whunextgen/Pandora",
@@ -2856,7 +3016,7 @@
      "name": "IntJudge"
     },
     "summary": "Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model to master every capability, a promising path toward AGI now is to orchestrate a heterogeneous ecosystem of specialized models, tools, and policies (candidates) into a unified AI system. At the heart of this vision lies a fundamental question: how can an AI system dynamically select and coordinate the most capable candidate for each task while balancing performance and computational cost? In this work, we present Route Anything, a unified framework for studying model and policy routing across general-purpose AI systems. We develop a unified theoretical foundation that characterizes optimal routing under quality--cost trade-offs and establishes how the information available to a router determines its attainable performance. To systematically investigate routing across diverse capabilities, we first construct an omni-modal trajectory matrix spanning 25 benchmarks across language understanding, image, video, and speech generation, coding and workplace agents, and robotic manipulation, comprising 374,401 scored runs from 452 candidate configurations. Building on this framework, we train and test different routers to investigate the potential of omni-modal model routing, the capabilities of learned routers, and the conditions under which routing improves efficiency. Our results reveal substantial opportunities for capability orchestration: per-input oracle routing outperforms the best fixed candidate by 5.4 points, and learned routers outperform it by 0.3 points across 16 benchmarks, by 2.1 points on video generation, and by 1.1 points on robot manipulation while using 24% less policy time. More importantly, routing raises efficiency by 8.82x on average compared with the reference model.",
-    "upvotes": 77,
+    "upvotes": 87,
     "discussionId": "6aeab787870269964d13a5c7",
     "projectPage": "https://mikeeeeeeeeeeeeee.github.io/RouteAnything",
     "githubRepo": "https://github.com/InfRec-Cardinal/route-anything",
@@ -2946,7 +3106,7 @@
      "name": "ChrisBullet"
     },
     "summary": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is open beyond model weights: we release the complete recipe, including data construction, generation, filtering, verification, prompts, and training code, enabling the entire development process to be reproduced and extended. Axion 1.0 demonstrates that strong agent foundation models can be both open and simple, offering a practical and reproducible path toward advancing open agentic intelligence.",
-    "upvotes": 33,
+    "upvotes": 34,
     "discussionId": "6aea40834cf0affa1ca73434",
     "projectPage": "https://axion1-0.github.io/",
     "githubRepo": "https://github.com/bytedance/axion1_0",
@@ -3983,7 +4143,7 @@
      "name": "LongoXC"
     },
     "summary": "Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report summarizes the observations and insights on multimodal understanding gained from successive generations of Kling. We argue that generation quality is the projection of multimodal understanding through the entire data--conditioning--alignment--evaluation chain, and we examine this chain module by module. Kling-MLLM, a shared multimodal foundation model that unifies image, video, audio, synchronized audio--video, and interleaved inputs, is specialized for each downstream module. Because a DiT is trained on far fewer training samples than a language model, we treat captioning as a semantic contract that maximizes description density, and extend it to reference-grounded captioning that makes reference bindings explicit. Prompt enhancement translates user intent into this caption distribution: basic PE is derived from captions of compelling videos and refined with text-level and generator-in-the-loop reinforcement learning, while agentic PE refines the story and retrieves compelling examples. We show that a reliable text encoder comes from perceptual training rather than from stronger language ability, and that candidates can be screened from text alone before end-to-end training. Reward modeling pairs a general reward model for explainable, localized critiques with a decision reward model for fast multidimensional scoring, treating perceptual bandwidth as a first-class design parameter. Finally, we review task-specific automatic evaluation, focusing on protocols that expose scoring shortcuts and help trace failures to their upstream source. We hope these lessons offer practical guidance for building the understanding stack behind controllable video generation.",
-    "upvotes": 45,
+    "upvotes": 47,
     "discussionId": "6aeaa8b5870269964d13a507",
     "projectPage": "https://klingai.com/app",
     "ai_summary": "Kling's multimodal understanding stack links caption density, perceptual text encoding, reward modeling, and evaluation protocols to improve controllable video generation.",
@@ -4741,7 +4901,7 @@
      "name": "stargazerx0"
     },
     "summary": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward pass. However, it remains unclear whether their released systems (stock) attain the full speedup that parallel drafting permits. We identify three challenges. First, with one request, each step accepts few tokens but reads every target weight. Second, with batching, per-request verification work roughly halves the speedup over autoregressive (AR) decoding. Third, speculative decoding is deployment-specific, and no universal optimization fits every serving regime, drafter, target model and GPU. To address these challenges, we present SpecPilot, an autonomous agentic loop that discovers algorithms and systems optimizations for each deployment. In each round, a cost model locates the largest gaps between the current system and its ceiling. Parallel agents explore directions and integrate the successful ones. Token forcing checks every output token against stock to detect reward hacking. A structured memory carries validated mechanisms to new rounds and deployments. SpecPilot discovered a general lossless 12-bit weight format, tree verification for hybrid recurrent targets, two-level verification and three batching mechanisms. We evaluate it across four target models, three drafters, two GPU platforms and five benchmarks. Without training or quality loss, it raises the speedup over AR from stock's 4.46times to 10.87times with one request, and from 1.94times to 3.93times with batching.",
-    "upvotes": 14,
+    "upvotes": 15,
     "discussionId": "6aeaa0b0870269964d13a44e",
     "projectPage": "https://stargazerx0.github.io/specpilot-project-page/",
     "githubRepo": "https://github.com/StargazerX0/SpecPilot",
@@ -5024,7 +5184,7 @@
      "name": "hyeonho-jeong-video"
     },
     "summary": "Long-form multi-shot video editing requires an intended edit to remain coherent across abrupt changes in scene, viewpoint, and subject appearance, while processing substantially longer visual context than conventional single-shot editors. We introduce MoviEdit, an end-to-end framework for scalable long-form multi-shot video editing that jointly addresses the challenges of data, modeling, and evaluation. To provide cross-shot supervision data at scale, we develop automatic data-generation pipelines spanning synchronized multi-view footage, real-world multi-shot videos, and generated multi-shot content, yielding 87K paired editing videos without manual annotation. Architecturally, MoviEdit employs a cascaded bidirectional-autoregressive design: a lightweight bidirectional stage first establishes a globally coherent editing draft over a spatiotemporally compressed representation, which is then autoregressively propagated and refined over the full video. We further introduce MoviEdit-Bench, a dedicated benchmark for systematic evaluation of long-form multi-shot video editing. Extensive experiments show that MoviEdit substantially outperforms existing open-source models and performs on par with industry frontier models across text-guided and image-guided editing. Visit our project page for complete results and to access the benchmark: https://multi-shot-edit.github.io/",
-    "upvotes": 40,
+    "upvotes": 53,
     "discussionId": "6aea9b97870269964d13a3f3",
     "projectPage": "https://multi-shot-edit.github.io/",
     "githubRepo": "https://github.com/adobe-research/MoviEdit-Bench",
@@ -5592,7 +5752,7 @@
      "long-range historical constraints"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 27,
+    "githubStars": 46,
     "organization": {
      "_id": "6345aadf5efccdc07f1365a5",
      "name": "ZhejiangUniversity",
@@ -5680,7 +5840,7 @@
      "name": "zhongshsh"
     },
     "summary": "Research taste, the judgment of what to read, which problems to pursue, and which methods to try, increasingly shapes the work of AI scientists, yet it remains far less understood than their ability to execute research. We introduce IdeaTaste, a benchmark that scores an LLM by how closely the research proposals it writes from a literature snapshot frozen at 2025 match the work the same communities published in 2026. Our experiments span six contemporary language models and four research areas from established to emerging fields, covering more than 90{,}000 proposals in total. LLM agents fall well short of human communities in both the literature they cite and the ideas they state, reaching about 26\\% of the human level on citation matching and only 18\\% on idea matching. Their populations can cite as diversely as a community and take up its tasks and methods, yet rarely arrive at the concrete approaches and research plans it pursues. Neither richer field context nor larger populations substantially close this gap. In blinded expert review, AI proposals trail the 2026 papers least in presentation and most in expected success, echoing their gap in concrete approaches, and those whose ideas no human paper shares fare worst, suggesting weaker directions rather than overlooked opportunities. These results indicate that the main bottleneck in AI research taste lies less in finding the directions a community works on than in turning them into the concrete approaches it goes on to pursue. We release IdeaTaste as an open, continuously updated leaderboard (https://cxcscmu.github.io/IdeaTaste) that benchmarks contemporary AI proposals against future publication cycles.",
-    "upvotes": 37,
+    "upvotes": 41,
     "discussionId": "6aea02474cf0affa1ca73264",
     "projectPage": "https://cxcscmu.github.io/IdeaTaste/",
     "githubRepo": "https://github.com/cxcscmu/IdeaTaste",
@@ -6164,181 +6324,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61568f37272f2d87a99ba884/7ihogcQZmRfnHUHaRWU5c.png"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.38623",
-    "authors": [
-     {
-      "_id": "6ae49ca1ac2aed10b8c1c11d",
-      "user": {
-       "_id": "6803713bb68db55af9e0569e",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-       "isPro": false,
-       "fullname": "Xu",
-       "user": "67L11",
-       "type": "user",
-       "name": "67L11"
-      },
-      "name": "Xu Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T16:09:10.068Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49ca1ac2aed10b8c1c11e",
-      "name": "Guikun Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49ca1ac2aed10b8c1c11f",
-      "name": "Kanzhi Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49ca1ac2aed10b8c1c120",
-      "name": "Wenguan Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "Cross-Primitive Consistency in Jev",
-    "submittedOnDailyBy": {
-     "_id": "6803713bb68db55af9e0569e",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-     "isPro": false,
-     "fullname": "Xu",
-     "user": "67L11",
-     "type": "user",
-     "name": "67L11"
-    },
-    "summary": "Jev enables efficient decision-making with large language models (LLMs) through typed querying primitives, allowing the same semantic state to be expressed in different formats, such as binary and multiple-choice queries. However, the consistency of decisions across primitives has not been systematically evaluated. This work introduces PrimaCons, a four-axis benchmark for assessing cross-primitive consistency while preserving the semantics of the query. Evaluations across three Jev sizes reveal consistency violations across all four axes. Our analysis shows that these violations follow systematic patterns and that cross-primitive discrepancies predict decision failure with a ROC-AUC of 0.91. To mitigate these inconsistencies, we propose the Cross-Primitive Residual Calibrator (CPRC), which attaches a lightweight residual network to a frozen backbone and jointly optimizes predictive accuracy and cross-primitive consistency. Under a leave-one-domain-out protocol, CPRC reduces cross-primitive inconsistency by 58.57% and improves accuracy by +2.97%., demonstrating its effectiveness in both in-domain and out-of-domain settings. Our findings establish cross-primitive consistency as a key dimension for evaluating Jev and provide a practical approach to improving the reliability of its decisions. Code and benchmark is available at https://github.com/67L1/PrimaCons-CRPR.",
-    "upvotes": 9,
-    "discussionId": "6ae49ca2ac2aed10b8c1c121",
-    "githubRepo": "https://github.com/67L1/PrimaCons-CRPR",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Jev's cross-primitive consistency is benchmarked and improved via a residual calibrator that reduces inconsistency and boosts decision accuracy.",
-    "ai_keywords": [
-     "typed querying primitives",
-     "cross-primitive consistency",
-     "PrimaCons",
-     "Cross-Primitive Residual Calibrator",
-     "residual network",
-     "frozen backbone",
-     "ROC-AUC"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
-   },
-   "publishedAt": "2026-10-27T20:00:00.000Z",
-   "title": "Cross-Primitive Consistency in Jev",
-   "summary": "Jev enables efficient decision-making with large language models (LLMs) through typed querying primitives, allowing the same semantic state to be expressed in different formats, such as binary and multiple-choice queries. However, the consistency of decisions across primitives has not been systematically evaluated. This work introduces PrimaCons, a four-axis benchmark for assessing cross-primitive consistency while preserving the semantics of the query. Evaluations across three Jev sizes reveal consistency violations across all four axes. Our analysis shows that these violations follow systematic patterns and that cross-primitive discrepancies predict decision failure with a ROC-AUC of 0.91. To mitigate these inconsistencies, we propose the Cross-Primitive Residual Calibrator (CPRC), which attaches a lightweight residual network to a frozen backbone and jointly optimizes predictive accuracy and cross-primitive consistency. Under a leave-one-domain-out protocol, CPRC reduces cross-primitive inconsistency by 58.57% and improves accuracy by +2.97%., demonstrating its effectiveness in both in-domain and out-of-domain settings. Our findings establish cross-primitive consistency as a key dimension for evaluating Jev and provide a practical approach to improving the reliability of its decisions. Code and benchmark is available at https://github.com/67L1/PrimaCons-CRPR.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38623.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6803713bb68db55af9e0569e",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-    "fullname": "Xu",
-    "name": "67L11",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2610.35219",
-    "authors": [
-     {
-      "_id": "6ae49c86ac2aed10b8c1c115",
-      "user": {
-       "_id": "6803713bb68db55af9e0569e",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-       "isPro": false,
-       "fullname": "Xu",
-       "user": "67L11",
-       "type": "user",
-       "name": "67L11"
-      },
-      "name": "Xu Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-30T16:09:12.835Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49c86ac2aed10b8c1c116",
-      "name": "Jungang Qiao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49c86ac2aed10b8c1c117",
-      "name": "Guikun Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49c86ac2aed10b8c1c118",
-      "name": "Xiaojuan Qi",
-      "hidden": false
-     },
-     {
-      "_id": "6ae49c86ac2aed10b8c1c119",
-      "name": "Wenguan Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "Multi-Agent Relay Thinking",
-    "submittedOnDailyBy": {
-     "_id": "6803713bb68db55af9e0569e",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-     "isPro": false,
-     "fullname": "Xu",
-     "user": "67L11",
-     "type": "user",
-     "name": "67L11"
-    },
-    "summary": "Existing multi-agent collaboration (MAC) methods have primarily explored a group thinking collaboration topology, where agents independently generate solutions and aggregate their outputs. In this work, we investigate an alternative relay thinking topology, where reasoning ownership is dynamically transferred across agents, allowing subsequent agents to inherit and refine an evolving reasoning trajectory. We introduce Multi-Agent Confidence-guided Relay (MACR), a framework that enables dynamical relay collaboration among agents. The key challenge is determining when reasoning should be relayed and which agent should continue the process. method addresses this challenge through confidence-guided relay triggering and a bidding mechanism that selects the next agent based on its confidence. Experiments on four benchmarks show that method outperforms the strongest single-model strategies in accuracy, e.g., +3.3% on MathVista and +3.9% on MMStar, and remains on par with multi-agent strategies while consuming 6.0x less token overhead on HallusionBench and MMStar. Further analysis demonstrates that relay collaboration enables heterogeneous agents to progressively integrate complementary insights, combining heterogeneous capabilities across reasoning stages. Our source code is available at https://github.com/67L1/MACR.",
-    "upvotes": 8,
-    "discussionId": "6ae49c86ac2aed10b8c1c11a",
-    "githubRepo": "https://github.com/67L1/MACR",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "MACR introduces a relay-based multi-agent framework that dynamically transfers reasoning between agents using confidence-guided triggering and bidding to improve accuracy with lower token overhead.",
-    "ai_keywords": [
-     "multi-agent collaboration",
-     "relay thinking topology",
-     "reasoning ownership",
-     "MACR",
-     "confidence-guided relay triggering",
-     "bidding mechanism",
-     "heterogeneous agents"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
-   },
-   "publishedAt": "2026-10-26T20:00:00.000Z",
-   "title": "Multi-Agent Relay Thinking",
-   "summary": "Existing multi-agent collaboration (MAC) methods have primarily explored a group thinking collaboration topology, where agents independently generate solutions and aggregate their outputs. In this work, we investigate an alternative relay thinking topology, where reasoning ownership is dynamically transferred across agents, allowing subsequent agents to inherit and refine an evolving reasoning trajectory. We introduce Multi-Agent Confidence-guided Relay (MACR), a framework that enables dynamical relay collaboration among agents. The key challenge is determining when reasoning should be relayed and which agent should continue the process. method addresses this challenge through confidence-guided relay triggering and a bidding mechanism that selects the next agent based on its confidence. Experiments on four benchmarks show that method outperforms the strongest single-model strategies in accuracy, e.g., +3.3% on MathVista and +3.9% on MMStar, and remains on par with multi-agent strategies while consuming 6.0x less token overhead on HallusionBench and MMStar. Further analysis demonstrates that relay collaboration enables heterogeneous agents to progressively integrate complementary insights, combining heterogeneous capabilities across reasoning stages. Our source code is available at https://github.com/67L1/MACR.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35219.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6803713bb68db55af9e0569e",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LM2F9BLWcUSjYp_ANGIW2.png",
-    "fullname": "Xu",
-    "name": "67L11",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
