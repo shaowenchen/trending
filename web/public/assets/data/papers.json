@@ -1,15 +1,191 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-04T19:01:18.404Z",
+ "fetchedAt": "2026-11-04T21:16:05.479Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.04414",
+    "authors": [
+     {
+      "_id": "6aeaa4f3870269964d13a47d",
+      "name": "Huihan Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a47e",
+      "name": "Juncheng Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a47f",
+      "name": "Yuxiang Feng",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a480",
+      "name": "Wenlong Hou",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a481",
+      "name": "Guoqi Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a482",
+      "name": "Chao Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a483",
+      "name": "Yang Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a484",
+      "name": "Baigui Sun",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaa4f3870269964d13a485",
+      "name": "Shujun Wang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere",
+    "submittedOnDailyBy": {
+     "_id": "6842d2f8668a1d103cca0b2b",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6842d2f8668a1d103cca0b2b/1GsZbBYtWQ-UX1_8TCDnd.jpeg",
+     "isPro": false,
+     "fullname": "Huihan Wang",
+     "user": "WTHH031230",
+     "type": "user",
+     "name": "WTHH031230"
+    },
+    "summary": "Missing modality imputation aims to synthesize unobserved modalities from observed ones. Existing methods treat each modality as living on its own latent manifold, forcing the generator to learn a long, unstructured jump between them. We present SphereFlow, which takes a fundamentally different view: by projecting all modalities into a shared hyperspherical latent space via a frozen self-supervised encoder, cross-modal imputation reduces to short-range geometric transport between nearby points on the sphere. Realizing this idea with flow matching, however, exposes two geometric conflicts: the standard Gaussian noise source is catastrophically mismatched with the unit-norm data manifold, and the linear interpolation path departs the sphere surface into a region where the decoder has no training signal. We resolve both with simple, geometry-aware modifications: replacing the noise source with the observed-modality latent so that the velocity field learns only the cross-modal displacement, and training the decoder with a time-weighted loss that extends its domain to the near-surface region traversed by the flow. We prove that this data-as-source formulation reduces the worst-case off-manifold deviation from a quantity that grows with the latent dimension to a small, dimension-independent bound governed by inter-modality similarity. Experiments on BraTS multi-modal MRI imputation and CT-MRI translation demonstrate state-of-the-art generation fidelity across all settings, while downstream brain tumor segmentation with our imputed data closes roughly eighty percent of the gap to the full-modality oracle. Code is available at https://github.com/WTHH031230/SphereFlow.",
+    "upvotes": 1,
+    "discussionId": "6aeaa4f3870269964d13a486",
+    "githubRepo": "https://github.com/WTHH031230/SphereFlow",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "SphereFlow projects modalities onto a shared hypersphere to enable short-range cross-modal imputation via flow matching with geometry-aware noise and decoder modifications.",
+    "ai_keywords": [
+     "missing modality imputation",
+     "hyperspherical latent space",
+     "self-supervised encoder",
+     "flow matching",
+     "cross-modal displacement",
+     "time-weighted loss",
+     "off-manifold deviation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere",
+   "summary": "Missing modality imputation aims to synthesize unobserved modalities from observed ones. Existing methods treat each modality as living on its own latent manifold, forcing the generator to learn a long, unstructured jump between them. We present SphereFlow, which takes a fundamentally different view: by projecting all modalities into a shared hyperspherical latent space via a frozen self-supervised encoder, cross-modal imputation reduces to short-range geometric transport between nearby points on the sphere. Realizing this idea with flow matching, however, exposes two geometric conflicts: the standard Gaussian noise source is catastrophically mismatched with the unit-norm data manifold, and the linear interpolation path departs the sphere surface into a region where the decoder has no training signal. We resolve both with simple, geometry-aware modifications: replacing the noise source with the observed-modality latent so that the velocity field learns only the cross-modal displacement, and training the decoder with a time-weighted loss that extends its domain to the near-surface region traversed by the flow. We prove that this data-as-source formulation reduces the worst-case off-manifold deviation from a quantity that grows with the latent dimension to a small, dimension-independent bound governed by inter-modality similarity. Experiments on BraTS multi-modal MRI imputation and CT-MRI translation demonstrate state-of-the-art generation fidelity across all settings, while downstream brain tumor segmentation with our imputed data closes roughly eighty percent of the gap to the full-modality oracle. Code is available at https://github.com/WTHH031230/SphereFlow.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04414.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6842d2f8668a1d103cca0b2b",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6842d2f8668a1d103cca0b2b/1GsZbBYtWQ-UX1_8TCDnd.jpeg",
+    "fullname": "Huihan Wang",
+    "name": "WTHH031230",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.04169",
+    "authors": [
+     {
+      "_id": "6aeb94f9870269964d13aad8",
+      "name": "Yinuo Liu",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6ae17ed0428a06451d6f8a7c/J2NJ9FUhrT7m8M182nUW4.png"
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+    "submittedOnDailyBy": {
+     "_id": "6ae17ed0428a06451d6f8a7c",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae17ed0428a06451d6f8a7c/RJPJjGyzjX5Gvxv3PWBSq.jpeg",
+     "isPro": false,
+     "fullname": "Yinuo Liu",
+     "user": "yliusci",
+     "type": "user",
+     "name": "yliusci"
+    },
+    "summary": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
+    "upvotes": 0,
+    "discussionId": "6aeb94f9870269964d13aad9",
+    "projectPage": "https://arxiv.org/html/2611.04169v1",
+    "githubRepo": "https://github.com/yliusci/length-is-cheap",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "In retrieval tasks, language model failure on long inputs stems from attention competition rather than sequence length, as rival evidence statements sharply reduce accuracy while neutral filler does not.",
+    "ai_keywords": [
+     "retrieval",
+     "attention mass",
+     "context rot",
+     "masked-filler protocol",
+     "rival value",
+     "open models",
+     "probe"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+   "summary": "Why do language models fail on long inputs? The common answer is length. We show that, for retrieval, length is cheap and competition is not. On five open models (0.5B to 3B parameters, four families), neutral filler costs nothing: accuracy stays at 0.97 to 1.00, up to 32K tokens on Qwen2.5-1.5B. Statements in the format of the evidence, placed at the same positions, drop it to 0.16 to 0.33. A single statement that gives the queried key a rival value multiplies the loss by 9 to 110, and every additional rival adds to it. Inside the model, one quantity tracks the failure: the attention mass left on the evidence. Across 126,473 trials it explains up to 58% of the variance in loss; log length explains at most 8%. The masked-filler protocol behind the claim that length alone hurts reproduces on MMLU (11 to 18 points lost at 30K tokens), but fails a visible control in retrieval: masking costs 45 accuracy points at 32K tokens, while the same filler left visible costs none. In retrieval, context rot is a competition for attention. We release the probe and all 126K trial-level measurements.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6ae17ed0428a06451d6f8a7c/J2NJ9FUhrT7m8M182nUW4.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04169.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6ae17ed0428a06451d6f8a7c",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ae17ed0428a06451d6f8a7c/RJPJjGyzjX5Gvxv3PWBSq.jpeg",
+    "fullname": "Yinuo Liu",
+    "name": "yliusci",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.01598",
     "authors": [
      {
       "_id": "6aeb7373870269964d13aa92",
+      "user": {
+       "_id": "669687d0baad0b91e6082285",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/669687d0baad0b91e6082285/IIL0EwpRro7eRYWAnYOei.jpeg",
+       "isPro": false,
+       "fullname": "Ayushman Bhattacharya",
+       "user": "elixpo",
+       "type": "user",
+       "name": "elixpo"
+      },
       "name": "Ayushman Bhattacharya",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:32:29.358Z",
       "hidden": false
      },
      {
@@ -81,7 +257,7 @@
     "fullname": "Elixpo",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/669687d0baad0b91e6082285/GIJVC5WIkvrXp-VGUSnIz.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -414,7 +590,7 @@
      "name": "shantanuacharya"
     },
     "summary": "We introduce Dory1.0-4B, a 4-billion-parameter looped (latent-recurrent) language model with elastic depth: a single checkpoint serves different inference compute budgets. Dory1.0-4B is built on a normalized Transformer (nGPT) backbone with interleaved sliding-window and full-attention layers, organized into an input block, a shared recurrent block, and an output block. At inference, the recurrent block can be applied a variable number of times. We pre-trained Dory1.0-4B on 6 trillion tokens. The first 4.5 trillion tokens were trained in NVFP4, and additional pre-training then extended the context length to 256K tokens. Next, we post-trained the model using Supervised Fine-Tuning (SFT) and Reinforcement Learning with Verifiable Rewards (RLVR), with a difficulty-aware loop curriculum that routes harder prompts to deeper loops. Increasing the loop count improves accuracy, with the largest gains on coding, agentic, and long-context benchmarks. With two or more loops, Dory1.0-4B outperforms larger models such as Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B on average across 12 benchmarks. Looping also makes Dory1.0-4B more token-efficient on agentic benchmarks: with four loops, it generates 1.3-2.5x fewer tokens than with one loop, as the extra computation is spent in latent space rather than on longer outputs. To reduce memory during looping, Dory1.0-4B caches keys and values only from the last loop, keeping its KV-cache footprint equal to that of a non-looped model at any loop count while retaining most of the accuracy gains. We open-source the BF16, MXFP8, NVFP4, and GGUF quantized checkpoints.",
-    "upvotes": 4,
+    "upvotes": 6,
     "discussionId": "6aeb3af5870269964d13a9ab",
     "ai_summary": "Dory1.0-4B is a 4-billion-parameter recurrent language model with elastic depth that improves accuracy and token efficiency by looping a shared block, outperforming larger models on multiple benchmarks.",
     "ai_keywords": [
@@ -786,7 +962,7 @@
      "name": "lxucs"
     },
     "summary": "Large reasoning models achieve strong performance on challenging tasks, but their long chain-of-thought often incurs substantial inference costs by continuing to deliberate after sufficient information has been obtained. Existing reasoning compression methods primarily operate on reasoning trajectories, paying less attention to the local decision of whether further reasoning is necessary given the current state. We propose LoCo, a local preference learning method for reasoning compression. LoCo detects candidate overthinking states from the model's own traces, freezes the corresponding reasoning prefixes, regenerates shorter verified continuations from the same states, and trains on the resulting state-conditioned preference pairs with DPO. This formulation teaches the model when to continue reasoning and when to conclude, rather than simply encouraging shorter trajectories overall. We construct training data entirely from self-generated mathematical traces and evaluate LoCo on five mathematical and three code generation benchmarks. LoCo reduces completion length by 41.7\\%--45.4\\% on mathematics and 23.4\\%--36.3\\% on code, while maintaining or improving accuracy and achieving the best AUC across all code benchmarks. LoCo consistently improves the accuracy-efficiency trade-off on mathematics and transfers effectively to code generation despite math-only training, demonstrating the cross-domain generality of local preference learning for reasoning compression. The code and model will be publicly released at https://github.com/MuyaoYuan/LoCo.",
-    "upvotes": 64,
+    "upvotes": 65,
     "discussionId": "6aeae2d0870269964d13a765",
     "projectPage": "https://huggingface.co/MuyaoYuan/LoCo-7B",
     "githubRepo": "https://github.com/MuyaoYuan/LoCo",
@@ -801,7 +977,7 @@
      "state-conditioned preference pairs"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 6,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -916,7 +1092,7 @@
      "name": "pbelcak"
     },
     "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
-    "upvotes": 5,
+    "upvotes": 8,
     "discussionId": "6aeaf3ea870269964d13a7eb",
     "projectPage": "https://research.nvidia.com/labs/lpr/lfi/",
     "ai_summary": "Frequent context compaction preserves task accuracy across long-horizon and long-input tasks, suggesting that long-context language models may be unnecessary and motivating semantic state space models.",
@@ -953,7 +1129,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 17,
+    "followerCount": 18,
     "isUserFollowing": false
    },
    "organization": {
@@ -1513,7 +1689,7 @@
      "name": "chyun"
     },
     "summary": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model's rich spatiotemporal features, compressing each latent video frame by 300times (1{,200 rightarrow 4} tokens). In addition, by leveraging the video model's generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies.",
-    "upvotes": 48,
+    "upvotes": 49,
     "discussionId": "6aeab991870269964d13a5ee",
     "projectPage": "https://cvlab-kaist.github.io/DreamX/",
     "ai_summary": "DreamX leverages a pretrained video diffusion model to learn compact, appearance-invariant latent actions that enable cross-embodiment transfer and efficient policy learning.",
@@ -1569,7 +1745,18 @@
     "authors": [
      {
       "_id": "6aeaa47d870269964d13a451",
+      "user": {
+       "_id": "688883172ea6b042aa69fb17",
+       "avatarUrl": "/avatars/85f1b80050c7f43a05552da98f4ad867.svg",
+       "isPro": false,
+       "fullname": "Tengju_Ru",
+       "user": "Lruca",
+       "type": "user",
+       "name": "Lruca"
+      },
       "name": "Tengju Ru",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:33:07.129Z",
       "hidden": false
      },
      {
@@ -1674,7 +1861,7 @@
      "fine-tuning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0
+    "githubStars": 15
    },
    "publishedAt": "2026-11-02T19:00:00.000Z",
    "title": "VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks",
@@ -1694,7 +1881,7 @@
     "followerCount": 1,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -1854,7 +2041,7 @@
      "policy learning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
+    "githubStars": 2,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -2211,7 +2398,7 @@
      "name": "Yesianrohn"
     },
     "summary": "In-image machine translation (IIMT) replaces text in an image with its translation while preserving the surrounding visual context. Existing task-specific models achieve convincing performance but require massive paired training images before and after translation. As advanced text-to-image (T2I) models have reached a practically usable level of multilingual text generation, we argue that this capability can be transferred to IIMT and present FlowTranslator. It is a training-free IIMT framework that first employs an OCR model and an LLM to generate the translation prompt, which is injected into the T2I-based diffusion model. To optimize the accurate and natural generation of translated text, we introduce two trajectory controls: Region Coupling Release (RCR) partially decorrelates target-branch noise inside the text region early in the trajectory, while Coupling Expansion (CE) amplifies the emerging edit displacement mid-trajectory. Under the EasyOCR read-back protocol, FlowTranslator achieves average PRIM BLEU and COMET scores of 20.6 and 57.2, respectively, substantially outperforming the strong training-based baseline UniTranslator. On the more challenging and realistic whole-image ScenePair photographs translated into Chinese, it reaches 40.1\\% exact-match accuracy and surpasses existing editing systems, some of which only address the text-rendering stage rather than the complete IIMT task. These results establish flow-based editing as a strong, fully training-free baseline for IIMT.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6aeacdce870269964d13a6aa",
     "ai_summary": "FlowTranslator is a training-free framework for in-image machine translation that uses diffusion trajectory controls to generate accurate translated text within images without paired training data.",
     "ai_keywords": [
@@ -2266,7 +2453,18 @@
     "authors": [
      {
       "_id": "6aeacb88870269964d13a67b",
+      "user": {
+       "_id": "61cd4b833dd34ba1985e0753",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61cd4b833dd34ba1985e0753/BfHfrwotoMESpXZOHiIe4.png",
+       "isPro": false,
+       "fullname": "KABI",
+       "user": "dongguanting",
+       "type": "user",
+       "name": "dongguanting"
+      },
       "name": "Guanting Dong",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:32:48.407Z",
       "hidden": false
      },
      {
@@ -2417,7 +2615,7 @@
      "name": "dongguanting"
     },
     "summary": "Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are data-centric: they first synthesize a database and scenario, then derive tools and tasks from them. As a result, tool interfaces may not match real ones, tool compositions are not grounded in execution, and tasks rarely span more than one environment. We propose ToolSpace, a tool-centric framework that reverses this order. ToolSpace mines data, state, and retry dependencies from adjacent calls in execution traces of real MCP services and open agent corpora, using deterministic rules rather than LLM judgment, and clusters the resulting weighted tool-composition graph into environments. Databases are synthesized only for state-mutating environments, while query and stateless tools replay recorded returns. ToolSpace then performs state-aware random walks with rollback and decompiles each chain into a natural-language task with assertion-based checks, keeping only samples that replay successfully from the initial state. Applied to AutomationBench and tau3-Bench Banking, the pipeline produces harder Pro versions on which 7 frontier models drop by up to 38.2 points. Across seven long-horizon tool-use benchmarks, ToolSpace raises Qwen3.6-35B-A3B from 23.0 to 41.0 average score (43.2 with RL) and GLM-5.2 from 44.6 to 56.6, on par with Claude Opus 5. Ablations show that execution-witnessed edges clearly outperform LLM-judged ones, and performance keeps improving with data and environment scale.",
-    "upvotes": 33,
+    "upvotes": 34,
     "discussionId": "6aeacb88870269964d13a694",
     "projectPage": "https://toolspace-agent.github.io/",
     "githubRepo": "https://github.com/dongguanting/ToolSpace",
@@ -2468,7 +2666,7 @@
     "fullname": "Renmin University of China",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/61ac8f8a00d01045fca0ad2f/670IAX9A2-BflqA5MiSBW.jpeg"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -2680,7 +2878,18 @@
     "authors": [
      {
       "_id": "6ae9fbc54cf0affa1ca731ca",
+      "user": {
+       "_id": "633122d3f242a8532b7a928d",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633122d3f242a8532b7a928d/lORQkkbNsTbYbVgAEcFLi.png",
+       "isPro": true,
+       "fullname": "Zhaoyang Wang",
+       "user": "ChilleD",
+       "type": "user",
+       "name": "ChilleD"
+      },
       "name": "Zhaoyang Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:33:19.556Z",
       "hidden": false
      },
      {
@@ -2775,7 +2984,18 @@
      },
      {
       "_id": "6ae9fbc54cf0affa1ca731dd",
+      "user": {
+       "_id": "670688ff871cde29c7cc9584",
+       "avatarUrl": "/avatars/e4f687fe8e813f436d2eb2ee4ec8655b.svg",
+       "isPro": false,
+       "fullname": "haoqingeric",
+       "user": "hqeric",
+       "type": "user",
+       "name": "hqeric"
+      },
       "name": "Haoqing Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:33:21.305Z",
       "hidden": false
      },
      {
@@ -3028,7 +3248,7 @@
     "fullname": "Microsoft",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -3036,7 +3256,18 @@
     "authors": [
      {
       "_id": "6aeab2eb870269964d13a574",
+      "user": {
+       "_id": "69cc969968dd23029a0f4e1a",
+       "avatarUrl": "/avatars/e25a1aae28eb0cfa785cdef926a3420f.svg",
+       "isPro": false,
+       "fullname": "Yikun",
+       "user": "yikuuun",
+       "type": "user",
+       "name": "yikuuun"
+      },
       "name": "Yikun Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:32:53.647Z",
       "hidden": false
      },
      {
@@ -3177,9 +3408,10 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -3514,7 +3746,7 @@
      "name": "IntJudge"
     },
     "summary": "Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model to master every capability, a promising path toward AGI now is to orchestrate a heterogeneous ecosystem of specialized models, tools, and policies (candidates) into a unified AI system. At the heart of this vision lies a fundamental question: how can an AI system dynamically select and coordinate the most capable candidate for each task while balancing performance and computational cost? In this work, we present Route Anything, a unified framework for studying model and policy routing across general-purpose AI systems. We develop a unified theoretical foundation that characterizes optimal routing under quality--cost trade-offs and establishes how the information available to a router determines its attainable performance. To systematically investigate routing across diverse capabilities, we first construct an omni-modal trajectory matrix spanning 25 benchmarks across language understanding, image, video, and speech generation, coding and workplace agents, and robotic manipulation, comprising 374,401 scored runs from 452 candidate configurations. Building on this framework, we train and test different routers to investigate the potential of omni-modal model routing, the capabilities of learned routers, and the conditions under which routing improves efficiency. Our results reveal substantial opportunities for capability orchestration: per-input oracle routing outperforms the best fixed candidate by 5.4 points, and learned routers outperform it by 0.3 points across 16 benchmarks, by 2.1 points on video generation, and by 1.1 points on robot manipulation while using 24% less policy time. More importantly, routing raises efficiency by 8.82x on average compared with the reference model.",
-    "upvotes": 83,
+    "upvotes": 84,
     "discussionId": "6aeab787870269964d13a5c7",
     "projectPage": "https://mikeeeeeeeeeeeeee.github.io/RouteAnything",
     "githubRepo": "https://github.com/InfRec-Cardinal/route-anything",
@@ -3604,7 +3836,7 @@
      "name": "ChrisBullet"
     },
     "summary": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is open beyond model weights: we release the complete recipe, including data construction, generation, filtering, verification, prompts, and training code, enabling the entire development process to be reproduced and extended. Axion 1.0 demonstrates that strong agent foundation models can be both open and simple, offering a practical and reproducible path toward advancing open agentic intelligence.",
-    "upvotes": 38,
+    "upvotes": 39,
     "discussionId": "6aea40834cf0affa1ca73434",
     "projectPage": "https://axion1-0.github.io/",
     "githubRepo": "https://github.com/bytedance/axion1_0",
@@ -4376,7 +4608,18 @@
      },
      {
       "_id": "6aeaa8b5870269964d13a4db",
+      "user": {
+       "_id": "630c32e3910e17bbfeb23ebf",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/630c32e3910e17bbfeb23ebf/f5I2Q9m5N9lhZREfU9nao.webp",
+       "isPro": false,
+       "fullname": "Guanlin He",
+       "user": "offthewallace",
+       "type": "user",
+       "name": "offthewallace"
+      },
       "name": "Guanlin He",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:32:55.317Z",
       "hidden": false
      },
      {
@@ -4386,7 +4629,18 @@
      },
      {
       "_id": "6aeaa8b5870269964d13a4dd",
+      "user": {
+       "_id": "61540338e5b9ae6774201e58",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61540338e5b9ae6774201e58/h_159VrXOlIgu0N0pNgXj.png",
+       "isPro": false,
+       "fullname": "jingyun",
+       "user": "hjy",
+       "type": "user",
+       "name": "hjy"
+      },
       "name": "Jingyun Hua",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:32:57.166Z",
       "hidden": false
      },
      {
@@ -4652,7 +4906,7 @@
      "name": "LongoXC"
     },
     "summary": "Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report summarizes the observations and insights on multimodal understanding gained from successive generations of Kling. We argue that generation quality is the projection of multimodal understanding through the entire data--conditioning--alignment--evaluation chain, and we examine this chain module by module. Kling-MLLM, a shared multimodal foundation model that unifies image, video, audio, synchronized audio--video, and interleaved inputs, is specialized for each downstream module. Because a DiT is trained on far fewer training samples than a language model, we treat captioning as a semantic contract that maximizes description density, and extend it to reference-grounded captioning that makes reference bindings explicit. Prompt enhancement translates user intent into this caption distribution: basic PE is derived from captions of compelling videos and refined with text-level and generator-in-the-loop reinforcement learning, while agentic PE refines the story and retrieves compelling examples. We show that a reliable text encoder comes from perceptual training rather than from stronger language ability, and that candidates can be screened from text alone before end-to-end training. Reward modeling pairs a general reward model for explainable, localized critiques with a decision reward model for fast multidimensional scoring, treating perceptual bandwidth as a first-class design parameter. Finally, we review task-specific automatic evaluation, focusing on protocols that expose scoring shortcuts and help trace failures to their upstream source. We hope these lessons offer practical guidance for building the understanding stack behind controllable video generation.",
-    "upvotes": 49,
+    "upvotes": 51,
     "discussionId": "6aeaa8b5870269964d13a507",
     "projectPage": "https://klingai.com/app",
     "ai_summary": "Kling's multimodal understanding stack links caption density, perceptual text encoding, reward modeling, and evaluation protocols to improve controllable video generation.",
@@ -5072,7 +5326,18 @@
      },
      {
       "_id": "6aea9f1c870269964d13a40b",
+      "user": {
+       "_id": "670688ff871cde29c7cc9584",
+       "avatarUrl": "/avatars/e4f687fe8e813f436d2eb2ee4ec8655b.svg",
+       "isPro": false,
+       "fullname": "haoqingeric",
+       "user": "hqeric",
+       "type": "user",
+       "name": "hqeric"
+      },
       "name": "Haoqing Wang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:33:09.325Z",
       "hidden": false
      },
      {
@@ -5298,7 +5563,7 @@
      "name": "niceirene"
     },
     "summary": "Foundation models in changing environments can encounter unfamiliar domain knowledge that their original training did not cover. However, new domains rarely provide large amounts of expert-created training data or reliable supervisory signals for further training. We introduce Recursa, a foundation model system that adapts to new domains by learning from its own experience without human experts or a stronger teacher model. Recursa uses a knowledge repository to store what it learns: domain-specific skills and instructions on when to apply them, along with memories of past task experiences and reflections on what to improve. Recursa bootstraps the repository from domain materials and then refines it through recursive self-improvement. It uses parallel learners to execute tasks and synthesize local improvements, then validates and merges the improvements into the knowledge repository. On Harvey LAB's Firm Knowledge benchmark, Recursa raises the all-pass rate on held-out test tasks from 30.0% to 55.0% with DeepSeek-V4.1-Flash and from 35.0% to 46.0% with Qwen3.8-Flash.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6aea9aa2870269964d13a3b3",
     "ai_summary": "Recursa is a self-improving foundation model system that adapts to new domains by recursively learning from its own experience, storing skills and reflections in a knowledge repository, and validating improvements without human supervision or stronger teachers.",
     "ai_keywords": [
@@ -5410,7 +5675,7 @@
      "name": "stargazerx0"
     },
     "summary": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward pass. However, it remains unclear whether their released systems (stock) attain the full speedup that parallel drafting permits. We identify three challenges. First, with one request, each step accepts few tokens but reads every target weight. Second, with batching, per-request verification work roughly halves the speedup over autoregressive (AR) decoding. Third, speculative decoding is deployment-specific, and no universal optimization fits every serving regime, drafter, target model and GPU. To address these challenges, we present SpecPilot, an autonomous agentic loop that discovers algorithms and systems optimizations for each deployment. In each round, a cost model locates the largest gaps between the current system and its ceiling. Parallel agents explore directions and integrate the successful ones. Token forcing checks every output token against stock to detect reward hacking. A structured memory carries validated mechanisms to new rounds and deployments. SpecPilot discovered a general lossless 12-bit weight format, tree verification for hybrid recurrent targets, two-level verification and three batching mechanisms. We evaluate it across four target models, three drafters, two GPU platforms and five benchmarks. Without training or quality loss, it raises the speedup over AR from stock's 4.46times to 10.87times with one request, and from 1.94times to 3.93times with batching.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6aeaa0b0870269964d13a44e",
     "projectPage": "https://stargazerx0.github.io/specpilot-project-page/",
     "githubRepo": "https://github.com/StargazerX0/SpecPilot",
@@ -5704,7 +5969,7 @@
      "name": "hyeonho-jeong-video"
     },
     "summary": "Long-form multi-shot video editing requires an intended edit to remain coherent across abrupt changes in scene, viewpoint, and subject appearance, while processing substantially longer visual context than conventional single-shot editors. We introduce MoviEdit, an end-to-end framework for scalable long-form multi-shot video editing that jointly addresses the challenges of data, modeling, and evaluation. To provide cross-shot supervision data at scale, we develop automatic data-generation pipelines spanning synchronized multi-view footage, real-world multi-shot videos, and generated multi-shot content, yielding 87K paired editing videos without manual annotation. Architecturally, MoviEdit employs a cascaded bidirectional-autoregressive design: a lightweight bidirectional stage first establishes a globally coherent editing draft over a spatiotemporally compressed representation, which is then autoregressively propagated and refined over the full video. We further introduce MoviEdit-Bench, a dedicated benchmark for systematic evaluation of long-form multi-shot video editing. Extensive experiments show that MoviEdit substantially outperforms existing open-source models and performs on par with industry frontier models across text-guided and image-guided editing. Visit our project page for complete results and to access the benchmark: https://multi-shot-edit.github.io/",
-    "upvotes": 60,
+    "upvotes": 61,
     "discussionId": "6aea9b97870269964d13a3f3",
     "projectPage": "https://multi-shot-edit.github.io/",
     "githubRepo": "https://github.com/adobe-research/MoviEdit-Bench",
@@ -5870,7 +6135,18 @@
      },
      {
       "_id": "6aea9857870269964d13a37a",
+      "user": {
+       "_id": "6677c003a845e4470f3ed78d",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6677c003a845e4470f3ed78d/Ijb5rYIAh7CHmrowkgT0d.png",
+       "isPro": false,
+       "fullname": "Shailesh",
+       "user": "shailes-h",
+       "type": "user",
+       "name": "shailes-h"
+      },
       "name": "Shailesh Shailesh",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T20:33:11.570Z",
       "hidden": false
      },
      {
@@ -6156,261 +6432,6 @@
     "name": "amaai-lab",
     "fullname": "AMAAI Lab",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/zrIzOdksqPZXB0QsnGL2H.jpeg"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.02782",
-    "authors": [
-     {
-      "_id": "6ae988c94b63b3479c38a86c",
-      "name": "Hangyi Kuang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a86d",
-      "name": "Chengzhi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a86e",
-      "name": "Yefei He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a86f",
-      "user": {
-       "_id": "66699aa8a33847217b5a49c7",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/u8Z-6U8U7ARXOpdBDI7Qm.png",
-       "isPro": false,
-       "fullname": "Weijie Wang",
-       "user": "lhmd",
-       "type": "user",
-       "name": "lhmd"
-      },
-      "name": "Weijie Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T08:45:05.186Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a870",
-      "name": "Yuke Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a871",
-      "name": "Zhuokun Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a872",
-      "name": "Zisu Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a873",
-      "name": "Yifan Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a874",
-      "name": "Xiaoxuan He",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a875",
-      "user": {
-       "_id": "64574380f3ef144c0e69d484",
-       "avatarUrl": "/avatars/3519ef01c30cfc850cc7f6786b59a285.svg",
-       "isPro": false,
-       "fullname": "Feng Chen",
-       "user": "chenfeng1271",
-       "type": "user",
-       "name": "chenfeng1271"
-      },
-      "name": "Feng Chen",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T00:45:04.717Z",
-      "hidden": false
-     },
-     {
-      "_id": "6ae988c94b63b3479c38a876",
-      "name": "Bohan Zhuang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/64574380f3ef144c0e69d484/ZJcpk2ofe9snI3vcGLv8C.mp4"
-    ],
-    "publishedAt": "2026-11-02T09:00:31.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "History Forcing: Distilling History-Dependent Continuations for Long-Horizon Video World Models",
-    "submittedOnDailyBy": {
-     "_id": "64574380f3ef144c0e69d484",
-     "avatarUrl": "/avatars/3519ef01c30cfc850cc7f6786b59a285.svg",
-     "isPro": false,
-     "fullname": "Feng Chen",
-     "user": "chenfeng1271",
-     "type": "user",
-     "name": "chenfeng1271"
-    },
-    "summary": "Few-step autoregressive video diffusion enables efficient generation, yet maintaining consistency over long rollouts remains challenging, especially when subjects or scenes reappear after going out of sight. Despite progress in fidelity and rollout robustness, existing distillation methods do not fully exploit richer historical information to constrain the student's current prediction. To address this gap, we introduce History Forcing, a unified on-policy distillation framework that strengthens historical supervision for few-step autoregressive video generators. The framework uses the residual between teacher predictions with and without informative historical context to decouple this supervision. Such a historical context can be obtained using earlier generated chunks with less accumulated drift or a fixed-view teacher rollout that keeps the scene visible while the student looks away. The residual is then weighted and added to the score or velocity prediction used for distillation, forming a corrected target. By aligning the student with this corrected target through distillation, History Forcing incorporates long-range historical constraints into autoregressive generation. Our method achieves state-of-the-art performance among 1.3B models, with a VBench quality score of 85.07 for 15s video generation and a VBench-Long aggregate score of 79.82 for 60s generation. For out-of-sight world modeling, evaluations further demonstrate more plausible scene evolution and more consistent states when the camera returns, with Evolution Quality improving from 2.35 to 2.70 on PlayWorld and Object Consistency from 58.43 to 62.18 on MemoBench.",
-    "upvotes": 15,
-    "discussionId": "6ae988c94b63b3479c38a877",
-    "projectPage": "https://ziplab.co/History-Forcing-Project-Page/",
-    "githubRepo": "https://github.com/ziplab/History-Forcing",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "History Forcing improves long-range consistency in few-step autoregressive video generation by using historical context residuals to correct distillation targets.",
-    "ai_keywords": [
-     "autoregressive video diffusion",
-     "on-policy distillation",
-     "History Forcing",
-     "score prediction",
-     "velocity prediction",
-     "long-range historical constraints"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 46,
-    "organization": {
-     "_id": "6345aadf5efccdc07f1365a5",
-     "name": "ZhejiangUniversity",
-     "fullname": "Zhejiang University",
-     "avatar": "https://www.gravatar.com/avatar/d1d414628877bec2958f95ad283c15e7?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-11-02T04:00:31.000Z",
-   "title": "History Forcing: Distilling History-Dependent Continuations for Long-Horizon Video World Models",
-   "summary": "Few-step autoregressive video diffusion enables efficient generation, yet maintaining consistency over long rollouts remains challenging, especially when subjects or scenes reappear after going out of sight. Despite progress in fidelity and rollout robustness, existing distillation methods do not fully exploit richer historical information to constrain the student's current prediction. To address this gap, we introduce History Forcing, a unified on-policy distillation framework that strengthens historical supervision for few-step autoregressive video generators. The framework uses the residual between teacher predictions with and without informative historical context to decouple this supervision. Such a historical context can be obtained using earlier generated chunks with less accumulated drift or a fixed-view teacher rollout that keeps the scene visible while the student looks away. The residual is then weighted and added to the score or velocity prediction used for distillation, forming a corrected target. By aligning the student with this corrected target through distillation, History Forcing incorporates long-range historical constraints into autoregressive generation. Our method achieves state-of-the-art performance among 1.3B models, with a VBench quality score of 85.07 for 15s video generation and a VBench-Long aggregate score of 79.82 for 60s generation. For out-of-sight world modeling, evaluations further demonstrate more plausible scene evolution and more consistent states when the camera returns, with Evolution Quality improving from 2.35 to 2.70 on PlayWorld and Object Consistency from 58.43 to 62.18 on MemoBench.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/64574380f3ef144c0e69d484/ZJcpk2ofe9snI3vcGLv8C.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02782.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "64574380f3ef144c0e69d484",
-    "avatarUrl": "/avatars/3519ef01c30cfc850cc7f6786b59a285.svg",
-    "fullname": "Feng Chen",
-    "name": "chenfeng1271",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 10,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6345aadf5efccdc07f1365a5",
-    "name": "ZhejiangUniversity",
-    "fullname": "Zhejiang University",
-    "avatar": "https://www.gravatar.com/avatar/d1d414628877bec2958f95ad283c15e7?d=retro&size=100"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.03424",
-    "authors": [
-     {
-      "_id": "6aea02464cf0affa1ca7325e",
-      "name": "Shanshan Zhong",
-      "hidden": false
-     },
-     {
-      "_id": "6aea02464cf0affa1ca7325f",
-      "name": "Chen Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea02464cf0affa1ca73260",
-      "name": "Jingjie Ning",
-      "hidden": false
-     },
-     {
-      "_id": "6aea02464cf0affa1ca73261",
-      "name": "Zhengzhong Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea02464cf0affa1ca73262",
-      "name": "Aviral Kumar",
-      "hidden": false
-     },
-     {
-      "_id": "6aea02464cf0affa1ca73263",
-      "name": "Chenyan Xiong",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/64311e8edd466752c73ab69a/W0cMZBholnlJ3m4Cb92cn.mp4"
-    ],
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
-    "submittedOnDailyBy": {
-     "_id": "64311e8edd466752c73ab69a",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64311e8edd466752c73ab69a/kwcSWWgAIUZYd_GT0pDzP.jpeg",
-     "isPro": false,
-     "fullname": "Shanshan Zhong",
-     "user": "zhongshsh",
-     "type": "user",
-     "name": "zhongshsh"
-    },
-    "summary": "Research taste, the judgment of what to read, which problems to pursue, and which methods to try, increasingly shapes the work of AI scientists, yet it remains far less understood than their ability to execute research. We introduce IdeaTaste, a benchmark that scores an LLM by how closely the research proposals it writes from a literature snapshot frozen at 2025 match the work the same communities published in 2026. Our experiments span six contemporary language models and four research areas from established to emerging fields, covering more than 90{,}000 proposals in total. LLM agents fall well short of human communities in both the literature they cite and the ideas they state, reaching about 26\\% of the human level on citation matching and only 18\\% on idea matching. Their populations can cite as diversely as a community and take up its tasks and methods, yet rarely arrive at the concrete approaches and research plans it pursues. Neither richer field context nor larger populations substantially close this gap. In blinded expert review, AI proposals trail the 2026 papers least in presentation and most in expected success, echoing their gap in concrete approaches, and those whose ideas no human paper shares fare worst, suggesting weaker directions rather than overlooked opportunities. These results indicate that the main bottleneck in AI research taste lies less in finding the directions a community works on than in turning them into the concrete approaches it goes on to pursue. We release IdeaTaste as an open, continuously updated leaderboard (https://cxcscmu.github.io/IdeaTaste) that benchmarks contemporary AI proposals against future publication cycles.",
-    "upvotes": 41,
-    "discussionId": "6aea02474cf0affa1ca73264",
-    "projectPage": "https://cxcscmu.github.io/IdeaTaste/",
-    "githubRepo": "https://github.com/cxcscmu/IdeaTaste",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "IdeaTaste benchmarks LLM research proposals against future publications, revealing that AI agents match human communities in broad directions but fall far behind in concrete approaches and expected success.",
-    "ai_keywords": [
-     "LLM",
-     "IdeaTaste",
-     "benchmark",
-     "research proposals",
-     "citation matching",
-     "idea matching",
-     "LLM agents",
-     "open leaderboard"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
-    "organization": {
-     "_id": "6362c6c180c1a705a6ed0d57",
-     "name": "CMU-SCS",
-     "fullname": "Carnegie Mellon University School of Computer Science",
-     "avatar": "https://www.gravatar.com/avatar/3178df24f569afc6497a1d64743d18ca?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-11-01T19:00:00.000Z",
-   "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
-   "summary": "Research taste, the judgment of what to read, which problems to pursue, and which methods to try, increasingly shapes the work of AI scientists, yet it remains far less understood than their ability to execute research. We introduce IdeaTaste, a benchmark that scores an LLM by how closely the research proposals it writes from a literature snapshot frozen at 2025 match the work the same communities published in 2026. Our experiments span six contemporary language models and four research areas from established to emerging fields, covering more than 90{,}000 proposals in total. LLM agents fall well short of human communities in both the literature they cite and the ideas they state, reaching about 26\\% of the human level on citation matching and only 18\\% on idea matching. Their populations can cite as diversely as a community and take up its tasks and methods, yet rarely arrive at the concrete approaches and research plans it pursues. Neither richer field context nor larger populations substantially close this gap. In blinded expert review, AI proposals trail the 2026 papers least in presentation and most in expected success, echoing their gap in concrete approaches, and those whose ideas no human paper shares fare worst, suggesting weaker directions rather than overlooked opportunities. These results indicate that the main bottleneck in AI research taste lies less in finding the directions a community works on than in turning them into the concrete approaches it goes on to pursue. We release IdeaTaste as an open, continuously updated leaderboard (https://cxcscmu.github.io/IdeaTaste) that benchmarks contemporary AI proposals against future publication cycles.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/64311e8edd466752c73ab69a/W0cMZBholnlJ3m4Cb92cn.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.03424.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "64311e8edd466752c73ab69a",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64311e8edd466752c73ab69a/kwcSWWgAIUZYd_GT0pDzP.jpeg",
-    "fullname": "Shanshan Zhong",
-    "name": "zhongshsh",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6362c6c180c1a705a6ed0d57",
-    "name": "CMU-SCS",
-    "fullname": "Carnegie Mellon University School of Computer Science",
-    "avatar": "https://www.gravatar.com/avatar/3178df24f569afc6497a1d64743d18ca?d=retro&size=100"
    },
    "isAuthorParticipating": false
   }

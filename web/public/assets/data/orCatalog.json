@@ -1,9 +1,68 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-04T19:01:20.635Z",
+ "fetchedAt": "2026-11-04T21:16:07.337Z",
  "payload": {
   "data": [
+   {
+    "id": "ricursiveai/ripple-65b-preview",
+    "canonical_slug": "ricursiveai/ripple-65b-preview-20261104",
+    "hugging_face_id": null,
+    "name": "ricursiveAI/Ripple-65B-Preview",
+    "created": 1793818990,
+    "description": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
+    "context_length": 16384,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Other",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.0000006",
+     "input_cache_read": "0.00000005"
+    },
+    "top_provider": {
+     "context_length": 16384,
+     "max_completion_tokens": 14745,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "logprobs",
+     "max_tokens",
+     "response_format",
+     "seed",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_logprobs",
+     "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/ricursiveai/ripple-65b-preview-20261104/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ],
+    "reasoning": {
+     "mandatory": false,
+     "default_enabled": false
+    }
+   },
    {
     "id": "tencent/hy4",
     "canonical_slug": "tencent/hy4-20261104",
@@ -9860,9 +9919,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000282",
-     "completion": "0.0000000937",
-     "input_cache_read": "0.0000000282"
+     "prompt": "0.0000000285",
+     "completion": "0.0000000923",
+     "input_cache_read": "0.0000000285"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -13142,9 +13201,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000005236",
-     "completion": "0.00000015708",
-     "input_cache_read": "0.000000001666"
+     "prompt": "0.00000004708",
+     "completion": "0.00000014124",
+     "input_cache_read": "0.000000001498"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -13221,7 +13280,7 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000527",
+     "prompt": "0.0000000474",
      "completion": "0.0000003",
      "input_cache_read": "0.000000035"
     },
@@ -22665,9 +22724,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000001824",
+     "prompt": "0.0000001539",
      "completion": "0.0000105539",
-     "input_cache_read": "0.00000018"
+     "input_cache_read": "0.00000015"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -25335,9 +25394,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000031",
-     "completion": "0.000000093",
-     "input_cache_read": "0.000000015"
+     "prompt": "0.000000035",
+     "completion": "0.000000104",
+     "input_cache_read": "0.000000017"
     },
     "top_provider": {
      "context_length": 262144,
@@ -38643,9 +38702,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000024",
-     "completion": "0.00000009",
-     "input_cache_read": "0.000000022"
+     "prompt": "0.000000023",
+     "completion": "0.000000084",
+     "input_cache_read": "0.00000002"
     },
     "top_provider": {
      "context_length": 131072,
@@ -40184,12 +40243,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000009",
-     "completion": "0.00000055"
+     "prompt": "0.00000014",
+     "completion": "0.0000008",
+     "input_cache_read": "0.00000005"
     },
     "top_provider": {
-     "context_length": 262144,
-     "max_completion_tokens": 16384,
+     "context_length": 131072,
+     "max_completion_tokens": 117964,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -47125,7 +47185,7 @@
     ]
    }
   ],
-  "total_count": 453,
+  "total_count": 454,
   "links": {
    "next": null
   }
