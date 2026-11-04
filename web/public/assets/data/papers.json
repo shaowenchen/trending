@@ -1,8 +1,184 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-04T21:16:05.479Z",
+ "fetchedAt": "2026-11-04T23:31:04.680Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.35497",
+    "authors": [
+     {
+      "_id": "6ae21b64717a45b73580b484",
+      "user": {
+       "_id": "67009fad8b889e4bcec0ba70",
+       "avatarUrl": "/avatars/91b7c3d01352420b2b7b2ce94fa2f43c.svg",
+       "isPro": false,
+       "fullname": "Lei Zhao",
+       "user": "leizhao7",
+       "type": "user",
+       "name": "leizhao7"
+      },
+      "name": "Lei Zhao",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T00:45:04.677Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae21b64717a45b73580b485",
+      "name": "Zongheng Cao",
+      "hidden": false
+     },
+     {
+      "_id": "6ae21b64717a45b73580b486",
+      "name": "Xinyu Hu",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/67009fad8b889e4bcec0ba70/qV62YMXGrnj7ZA718VA2x.mp4"
+    ],
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
+    "submittedOnDailyBy": {
+     "_id": "67009fad8b889e4bcec0ba70",
+     "avatarUrl": "/avatars/91b7c3d01352420b2b7b2ce94fa2f43c.svg",
+     "isPro": false,
+     "fullname": "Lei Zhao",
+     "user": "leizhao7",
+     "type": "user",
+     "name": "leizhao7"
+    },
+    "summary": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessive reasoning and redundant tool calls: process rewards continue to rise while task completion rates and outcome scores decline. Decaying the process-reward weight to zero mitigates this reward-hacking behavior while preserving the early gains. Despite dense token-level supervision, on-policy self-distillation (OPSD) yields little improvement or substantial degradation and is highly sensitive to the choice of privileged information. Our analysis reveals differences in teacher--student disagreement and gradient magnitudes, and suggests possible dilution of informative signals over long trajectories.",
+    "upvotes": 0,
+    "discussionId": "6ae21b65717a45b73580b487",
+    "projectPage": "https://leizhao7.github.io/videoedit/",
+    "githubRepo": "https://github.com/leizhao7/video-editing-credit-assignment",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Fine-grained process rewards improve long-horizon video editing tasks but cause reward hacking in shorter tasks, which is mitigated by decaying their weight, while on-policy self-distillation provides little benefit.",
+    "ai_keywords": [
+     "reinforcement learning",
+     "multimodal agents",
+     "credit assignment",
+     "video editing",
+     "process rewards",
+     "GRPO",
+     "reward hacking",
+     "on-policy self-distillation",
+     "long-horizon planning",
+     "tool use"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "69d1a817c231b2c2f7e5e1c4",
+     "name": "philo-labs",
+     "fullname": "Philo Labs",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69d1a73c4fa30a9dae9e7c12/ixWKpOmNB23KcCusyd_Q0.png"
+    }
+   },
+   "publishedAt": "2026-10-25T20:00:00.000Z",
+   "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
+   "summary": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessive reasoning and redundant tool calls: process rewards continue to rise while task completion rates and outcome scores decline. Decaying the process-reward weight to zero mitigates this reward-hacking behavior while preserving the early gains. Despite dense token-level supervision, on-policy self-distillation (OPSD) yields little improvement or substantial degradation and is highly sensitive to the choice of privileged information. Our analysis reveals differences in teacher--student disagreement and gradient magnitudes, and suggests possible dilution of informative signals over long trajectories.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/67009fad8b889e4bcec0ba70/qV62YMXGrnj7ZA718VA2x.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.35497.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67009fad8b889e4bcec0ba70",
+    "avatarUrl": "/avatars/91b7c3d01352420b2b7b2ce94fa2f43c.svg",
+    "fullname": "Lei Zhao",
+    "name": "leizhao7",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69d1a817c231b2c2f7e5e1c4",
+    "name": "philo-labs",
+    "fullname": "Philo Labs",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69d1a73c4fa30a9dae9e7c12/ixWKpOmNB23KcCusyd_Q0.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2611.00352",
+    "authors": [
+     {
+      "_id": "6aebab58870269964d13ab20",
+      "name": "Jinkun Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aebab58870269964d13ab21",
+      "name": "Xuemin Yu",
+      "hidden": false
+     },
+     {
+      "_id": "6aebab58870269964d13ab22",
+      "name": "Sijia Han",
+      "hidden": false
+     },
+     {
+      "_id": "6aebab58870269964d13ab23",
+      "name": "Vlado Keselj",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
+    "submittedOnDailyBy": {
+     "_id": "6331dcb29e3604f3f18382f3",
+     "avatarUrl": "/avatars/c1ab94a2ff1fd77d760d15fbf012d0f2.svg",
+     "isPro": false,
+     "fullname": "Jinkun Chen",
+     "user": "Jinnkunn",
+     "type": "user",
+     "name": "Jinnkunn"
+    },
+    "summary": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc advantage over direct reuse is 0.2-0.9 nats outside chat format, unconfirmed and not replacement-specific. The same relation-neutral change at both questions' entity tokens lowers relation-selective error more than random or other-replacement changes, indicating receiving-question dependence.",
+    "upvotes": 1,
+    "discussionId": "6aebab59870269964d13ab24",
+    "ai_summary": "Hidden-state reuse across factual questions partially transfers relation-specific answer shifts in small language models, with effectiveness depending on format, cohort, and source relation alignment.",
+    "ai_keywords": [
+     "hidden-state reuse",
+     "direct reuse",
+     "log-probability shift",
+     "entity-replacement",
+     "relation-selective error",
+     "Qwen",
+     "Llama",
+     "Gemma-2",
+     "chat format",
+     "BOS token"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small"
+   },
+   "publishedAt": "2026-10-29T20:00:00.000Z",
+   "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
+   "summary": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc advantage over direct reuse is 0.2-0.9 nats outside chat format, unconfirmed and not replacement-specific. The same relation-neutral change at both questions' entity tokens lowers relation-selective error more than random or other-replacement changes, indicating receiving-question dependence.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.00352.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6331dcb29e3604f3f18382f3",
+    "avatarUrl": "/avatars/c1ab94a2ff1fd77d760d15fbf012d0f2.svg",
+    "fullname": "Jinkun Chen",
+    "name": "Jinnkunn",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.04414",
@@ -862,7 +1038,7 @@
      "mean-pooled factorized latents"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 7,
+    "githubStars": 9,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -1092,7 +1268,7 @@
      "name": "pbelcak"
     },
     "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6aeaf3ea870269964d13a7eb",
     "projectPage": "https://research.nvidia.com/labs/lpr/lfi/",
     "ai_summary": "Frequent context compaction preserves task accuracy across long-horizon and long-input tasks, suggesting that long-context language models may be unnecessary and motivating semantic state space models.",
@@ -1118,7 +1294,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/63e8cccddd2c4effdd6283cf/4xXumXKHMRyDHUIoRaCRe.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.05306.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "63e8cccddd2c4effdd6283cf",
     "avatarUrl": "/avatars/0cf77630aa16079499d879784b835d4a.svg",
@@ -3372,7 +3548,7 @@
      "name": "yikuuun"
     },
     "summary": "Molecular discovery requires navigating vast combinatorial search spaces while balancing competing biological objectives. AI agents can automate expert-defined molecular design protocols, but automation alone does not address how to optimize workflows for new tasks or improve their development through experience. Here we introduce MoLRSI, an AI agent that combines systematic optimization of workflows and model architectures with persistent cross-task memory to recursively improve its search policy for molecular discovery. Workflow performance, refinement outcomes, and execution feedback guide subsequent searches, allowing the agent to improve both its workflows and its strategy for developing them. We evaluate MoLRSI in two challenging molecular discovery settings that require balancing competing properties. In antibiotic discovery, MoLRSI developed a screening workflow balancing antibacterial activity, cytotoxicity and structural novelty, achieving an experimental hit rate of 15.9%, compared with 8.7% for a previous expert-led workflow using the same training data and screening library. In de novo peptide-MHC binder design, MoLRSI developed workflows that jointly consider target binding and specificity, producing eight experimentally validated hits against MART-1 and SARS-CoV-1 pMHCs with preferential binding over tested off-targets while Claude Science completely failed. These findings demonstrate how experience-guided workflow optimization can address competing discovery objectives while improving the search strategies used in subsequent campaigns.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6aeab2eb870269964d13a586",
     "projectPage": "https://yikunpku.github.io/MolRSI/",
     "ai_summary": "MoLRSI is an AI agent that optimizes molecular design workflows and retains cross-task memory to improve search policies, achieving higher experimental hit rates in antibiotic and peptide binder discovery than expert-led methods.",
@@ -4906,7 +5082,7 @@
      "name": "LongoXC"
     },
     "summary": "Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report summarizes the observations and insights on multimodal understanding gained from successive generations of Kling. We argue that generation quality is the projection of multimodal understanding through the entire data--conditioning--alignment--evaluation chain, and we examine this chain module by module. Kling-MLLM, a shared multimodal foundation model that unifies image, video, audio, synchronized audio--video, and interleaved inputs, is specialized for each downstream module. Because a DiT is trained on far fewer training samples than a language model, we treat captioning as a semantic contract that maximizes description density, and extend it to reference-grounded captioning that makes reference bindings explicit. Prompt enhancement translates user intent into this caption distribution: basic PE is derived from captions of compelling videos and refined with text-level and generator-in-the-loop reinforcement learning, while agentic PE refines the story and retrieves compelling examples. We show that a reliable text encoder comes from perceptual training rather than from stronger language ability, and that candidates can be screened from text alone before end-to-end training. Reward modeling pairs a general reward model for explainable, localized critiques with a decision reward model for fast multidimensional scoring, treating perceptual bandwidth as a first-class design parameter. Finally, we review task-specific automatic evaluation, focusing on protocols that expose scoring shortcuts and help trace failures to their upstream source. We hope these lessons offer practical guidance for building the understanding stack behind controllable video generation.",
-    "upvotes": 51,
+    "upvotes": 52,
     "discussionId": "6aeaa8b5870269964d13a507",
     "projectPage": "https://klingai.com/app",
     "ai_summary": "Kling's multimodal understanding stack links caption density, perceptual text encoding, reward modeling, and evaluation protocols to improve controllable video generation.",
@@ -4946,7 +5122,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 2,
+    "followerCount": 3,
     "isUserFollowing": false
    },
    "organization": {
@@ -6118,322 +6294,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/638f706ef1256a80d42880f9/6M6-JzwJGiLxjIJzvCflf.png"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.02497",
-    "authors": [
-     {
-      "_id": "6aea9857870269964d13a378",
-      "name": "Tan Sang Nguyen",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a379",
-      "name": "Yi Ru Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37a",
-      "user": {
-       "_id": "6677c003a845e4470f3ed78d",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6677c003a845e4470f3ed78d/Ijb5rYIAh7CHmrowkgT0d.png",
-       "isPro": false,
-       "fullname": "Shailesh",
-       "user": "shailes-h",
-       "type": "user",
-       "name": "shailes-h"
-      },
-      "name": "Shailesh Shailesh",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T20:33:11.570Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37b",
-      "name": "Gang Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37c",
-      "name": "Jiamo Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37d",
-      "name": "Jianuo Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37e",
-      "name": "Haoquan Fang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a37f",
-      "name": "Zhongzheng Ren",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a380",
-      "name": "Zhongyi Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a381",
-      "name": "Ian Chong",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a382",
-      "name": "Aaron Tung",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a383",
-      "user": {
-       "_id": "6613bacefc8c8bb26f662ad3",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6613bacefc8c8bb26f662ad3/FKh9YK-Yz2AzHQEWvwBpY.png",
-       "isPro": false,
-       "fullname": "Santiago Pravisani",
-       "user": "sanatem",
-       "type": "user",
-       "name": "sanatem"
-      },
-      "name": "Santiago Pravisani",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T08:45:05.249Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a384",
-      "name": "Minghui Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a385",
-      "name": "Yao Mo",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a386",
-      "name": "Ishneet Singh",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a387",
-      "name": "Benjamin Tee",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a388",
-      "name": "Harold Soh",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a389",
-      "name": "Siddhartha Srinivasa",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38a",
-      "name": "Dieter Fox",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38b",
-      "name": "David Hsu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38c",
-      "name": "Haoming Song",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38d",
-      "name": "Maxime Ellerbach",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38e",
-      "name": "Thomas Wolf",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a38f",
-      "name": "Pepijn Kooijmans",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a390",
-      "name": "Ruijie He",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a391",
-      "name": "Michael Cho",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9857870269964d13a392",
-      "name": "Jiafei Duan",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/632b42626110e37dba3d5bcb/z8IVr1SUP6rSw7iUJJrQo.mp4"
-    ],
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
-    "submittedOnDailyBy": {
-     "_id": "632b42626110e37dba3d5bcb",
-     "avatarUrl": "/avatars/913e071aabc89d0ded25c2f28a338dd0.svg",
-     "isPro": false,
-     "fullname": "Duan",
-     "user": "Jiafei1224",
-     "type": "user",
-     "name": "Jiafei1224"
-    },
-    "summary": "General-purpose robot policies must work across robots, tasks, and environments, yet the variation that makes physical trials informative also makes them difficult to reproduce. We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments. Our initial study evaluates five vision-language-action (VLA) policies and three frontier AI agents across four embodiments (SO-101, Franka, Bimanual-YAM, and G1 Humanoid). The Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. The Fine-tune Track measures how well VLA policies adapt to 20 tasks across all four embodiments when each policy receives the same 100 demonstrations per task. Across 5,699 pairwise Open Track comparisons at 124 sites, frontier agents rival specialized VLA policies, while all systems struggle to complete open-world tasks reliably. After fine-tuning, GR00T N1.7 leads on SO-101 and pi0.5 leads on Franka and Bimanual-YAM. Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks. Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies. Open Track rankings stabilize as trials accumulate, and active matchmaking achieves comparable ranking agreement with substantially fewer physical trials than uniform sampling. These results show how distributed physical evaluation can reveal where robot policies generalize, how well they adapt to new tasks, and how far they progress on tasks they fail to complete.",
-    "upvotes": 43,
-    "discussionId": "6aea9857870269964d13a393",
-    "projectPage": "https://robocolosseum.ai/",
-    "githubRepo": "https://github.com/RoboColosseum/robocolosseum-client",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "RoboColosseum evaluates general robot policies across diverse embodiments and environments, revealing weak cross-embodiment agreement, limited open-world reliability, and substantial differences between zero-shot and fine-tuned performance.",
-    "ai_keywords": [
-     "vision-language-action (VLA) policies",
-     "fine-tuning",
-     "distributed evaluation",
-     "embodiment"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3,
-    "organization": {
-     "_id": "5e67bd5b1009063689407478",
-     "name": "huggingface",
-     "fullname": "Hugging Face",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png"
-    }
-   },
-   "publishedAt": "2026-11-01T19:00:00.000Z",
-   "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
-   "summary": "General-purpose robot policies must work across robots, tasks, and environments, yet the variation that makes physical trials informative also makes them difficult to reproduce. We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments. Our initial study evaluates five vision-language-action (VLA) policies and three frontier AI agents across four embodiments (SO-101, Franka, Bimanual-YAM, and G1 Humanoid). The Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. The Fine-tune Track measures how well VLA policies adapt to 20 tasks across all four embodiments when each policy receives the same 100 demonstrations per task. Across 5,699 pairwise Open Track comparisons at 124 sites, frontier agents rival specialized VLA policies, while all systems struggle to complete open-world tasks reliably. After fine-tuning, GR00T N1.7 leads on SO-101 and pi0.5 leads on Franka and Bimanual-YAM. Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks. Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies. Open Track rankings stabilize as trials accumulate, and active matchmaking achieves comparable ranking agreement with substantially fewer physical trials than uniform sampling. These results show how distributed physical evaluation can reveal where robot policies generalize, how well they adapt to new tasks, and how far they progress on tasks they fail to complete.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/632b42626110e37dba3d5bcb/z8IVr1SUP6rSw7iUJJrQo.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02497.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "632b42626110e37dba3d5bcb",
-    "avatarUrl": "/avatars/913e071aabc89d0ded25c2f28a338dd0.svg",
-    "fullname": "Duan",
-    "name": "Jiafei1224",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 11,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "5e67bd5b1009063689407478",
-    "name": "huggingface",
-    "fullname": "Hugging Face",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.38252",
-    "authors": [
-     {
-      "_id": "6ae9ec9d4cf0affa1ca73160",
-      "name": "Mateusz Modrzejewski",
-      "hidden": false
-     },
-     {
-      "_id": "6ae9ec9d4cf0affa1ca73161",
-      "name": "Joanna Kurkowska",
-      "hidden": false
-     },
-     {
-      "_id": "6ae9ec9d4cf0affa1ca73162",
-      "name": "Dorien Herremans",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/655431b2997379e9b0999d23/EL4KGYP2ry19KWcgVltl3.jpeg"
-    ],
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "A Tutorial on Generative Models for Music Audio",
-    "submittedOnDailyBy": {
-     "_id": "655431b2997379e9b0999d23",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/OhHCPCXfOS61Z7CSewUCU.png",
-     "isPro": false,
-     "fullname": "Dorien Herremans",
-     "user": "dorienh",
-     "type": "user",
-     "name": "dorienh"
-    },
-    "summary": "Music audio generation spans instrumental clips, full songs with vocals, edits of existing recordings, and systems that play alongside a musician in real time. This monograph explains the methods behind these systems for readers familiar with neural-network training who are new to music generation. It introduces neural audio codecs and autoencoders, autoregressive and masked token models, diffusion and flow matching, sampling acceleration, and preference optimization in a shared notation. Worked examples connect training objectives and sampling procedures to published systems. The application sections relate the musical requirements of instrumental generation, songs, editing, and live performance to model design. Comparison tables record representations, methods, inputs, tasks, and release information documented in papers and official sources. Symbolic composition, speech, and sound effects are included where they connect to music audio. We explain how to interpret automatic metrics and learned judges, design and report listening tests, and assess evidence about data provenance, memorization, attribution, and output detection. Selected legal decisions and disputes illustrate the implications for training and release. The reviewed systems combine established generative paradigms with new representations, planning stages, and post-training procedures. Differences in data, scale, and evaluation limit what cross-system comparisons can establish about the sources of reported gains.",
-    "upvotes": 3,
-    "discussionId": "6ae9ec9d4cf0affa1ca73163",
-    "ai_summary": "This monograph surveys neural methods for music audio generation, covering codecs, autoregressive and diffusion models, flow matching, preference optimization, evaluation practices, and legal considerations.",
-    "ai_keywords": [
-     "neural audio codecs",
-     "autoencoders",
-     "autoregressive models",
-     "masked token models",
-     "diffusion",
-     "flow matching",
-     "sampling acceleration",
-     "preference optimization",
-     "generative paradigms",
-     "post-training procedures"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "655435e0db4619c8eb051bd0",
-     "name": "amaai-lab",
-     "fullname": "AMAAI Lab",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/zrIzOdksqPZXB0QsnGL2H.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-27T20:00:00.000Z",
-   "title": "A Tutorial on Generative Models for Music Audio",
-   "summary": "Music audio generation spans instrumental clips, full songs with vocals, edits of existing recordings, and systems that play alongside a musician in real time. This monograph explains the methods behind these systems for readers familiar with neural-network training who are new to music generation. It introduces neural audio codecs and autoencoders, autoregressive and masked token models, diffusion and flow matching, sampling acceleration, and preference optimization in a shared notation. Worked examples connect training objectives and sampling procedures to published systems. The application sections relate the musical requirements of instrumental generation, songs, editing, and live performance to model design. Comparison tables record representations, methods, inputs, tasks, and release information documented in papers and official sources. Symbolic composition, speech, and sound effects are included where they connect to music audio. We explain how to interpret automatic metrics and learned judges, design and report listening tests, and assess evidence about data provenance, memorization, attribution, and output detection. Selected legal decisions and disputes illustrate the implications for training and release. The reviewed systems combine established generative paradigms with new representations, planning stages, and post-training procedures. Differences in data, scale, and evaluation limit what cross-system comparisons can establish about the sources of reported gains.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/655431b2997379e9b0999d23/EL4KGYP2ry19KWcgVltl3.jpeg"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38252.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "655431b2997379e9b0999d23",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/OhHCPCXfOS61Z7CSewUCU.png",
-    "fullname": "Dorien Herremans",
-    "name": "dorienh",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 14,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "655435e0db4619c8eb051bd0",
-    "name": "amaai-lab",
-    "fullname": "AMAAI Lab",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/zrIzOdksqPZXB0QsnGL2H.jpeg"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
