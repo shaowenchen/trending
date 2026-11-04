@@ -1,15 +1,164 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-04T14:31:07.913Z",
+ "fetchedAt": "2026-11-04T16:46:11.858Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.05345",
+    "authors": [
+     {
+      "_id": "6aeb5e4b870269964d13aa54",
+      "user": {
+       "_id": "62bc495016897fa76cdcda18",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1656506661693-noauth.jpeg",
+       "isPro": true,
+       "fullname": "Hongyin Luo",
+       "user": "luohy",
+       "type": "user",
+       "name": "luohy"
+      },
+      "name": "Hongyin Luo",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.694Z",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa55",
+      "name": "Wei Fang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa56",
+      "name": "Lijie Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa57",
+      "name": "Owen Stepan",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa58",
+      "user": {
+       "_id": "68506d7e7b366f9c64e3a276",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68506d7e7b366f9c64e3a276/YxAHobOUjUy3CmXsmnw8S.jpeg",
+       "isPro": false,
+       "fullname": "Daniel Suit",
+       "user": "danielsuit",
+       "type": "user",
+       "name": "danielsuit"
+      },
+      "name": "Daniel Suit",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.685Z",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa59",
+      "name": "Jeff Krapf",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa5a",
+      "user": {
+       "_id": "68d9611ff1bd7f5086d15663",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68d9611ff1bd7f5086d15663/0B_c6aIztNWr3WQSDf5dz.png",
+       "isPro": false,
+       "fullname": "Dana Wensberg",
+       "user": "pint-drinker",
+       "type": "user",
+       "name": "pint-drinker"
+      },
+      "name": "Dana Wensberg",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.702Z",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb5e4b870269964d13aa5b",
+      "name": "Jack O&#39;Brien",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
+    "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+    "submittedOnDailyBy": {
+     "_id": "62bc495016897fa76cdcda18",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1656506661693-noauth.jpeg",
+     "isPro": true,
+     "fullname": "Hongyin Luo",
+     "user": "luohy",
+     "type": "user",
+     "name": "luohy"
+    },
+    "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+    "upvotes": 4,
+    "discussionId": "6aeb5e4b870269964d13aa5c",
+    "ai_summary": "Speculative decoding can be trained to reject critical reasoning tokens so they are verified by the target model, reducing numerical noise and improving long-horizon agent accuracy without altering the target model.",
+    "ai_keywords": [
+     "speculative decoding",
+     "draft model",
+     "verification windows",
+     "numerical noise",
+     "agent reasoning",
+     "adversarial preference",
+     "critical reasoning tokens",
+     "long-horizon agents"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "683dffe37d0f9b494458671c",
+     "name": "SubconsciousDev",
+     "fullname": "Subconscious",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/635eef81cf0289e13c47a2ce/8yyK2BCSq4Dnv4qwvjnmL.png"
+    }
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+   "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.05345.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "62bc495016897fa76cdcda18",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1656506661693-noauth.jpeg",
+    "fullname": "Hongyin Luo",
+    "name": "luohy",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 15,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "683dffe37d0f9b494458671c",
+    "name": "SubconsciousDev",
+    "fullname": "Subconscious",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/635eef81cf0289e13c47a2ce/8yyK2BCSq4Dnv4qwvjnmL.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2611.03806",
     "authors": [
      {
       "_id": "6aeb2b49870269964d13a936",
+      "user": {
+       "_id": "664e33a12743db6709d487f2",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/664e33a12743db6709d487f2/JS55rwI6-FRHcFkwiNSMG.jpeg",
+       "isPro": false,
+       "fullname": "Andreas Bjerregaard",
+       "user": "yhsure",
+       "type": "user",
+       "name": "yhsure"
+      },
       "name": "Andreas Bjerregaard",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.651Z",
       "hidden": false
      },
      {
@@ -86,7 +235,8 @@
      "mutation interactions",
      "sequence design"
     ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2
    },
    "publishedAt": "2026-11-02T14:00:07.000Z",
    "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
@@ -108,7 +258,7 @@
     "isMod": false,
     "isUserFollowing": false
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -126,7 +276,18 @@
      },
      {
       "_id": "6aeb3af5870269964d13a9a4",
+      "user": {
+       "_id": "626c5978f451470f86251117",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/626c5978f451470f86251117/KgtS2aFEMsSF1z79T3sob.jpeg",
+       "isPro": false,
+       "fullname": "Shantanu Acharya",
+       "user": "shantanuacharya",
+       "type": "user",
+       "name": "shantanuacharya"
+      },
       "name": "Shantanu Acharya",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.669Z",
       "hidden": false
      },
      {
@@ -173,7 +334,7 @@
      "name": "shantanuacharya"
     },
     "summary": "We introduce Dory1.0-4B, a 4-billion-parameter looped (latent-recurrent) language model with elastic depth: a single checkpoint serves different inference compute budgets. Dory1.0-4B is built on a normalized Transformer (nGPT) backbone with interleaved sliding-window and full-attention layers, organized into an input block, a shared recurrent block, and an output block. At inference, the recurrent block can be applied a variable number of times. We pre-trained Dory1.0-4B on 6 trillion tokens. The first 4.5 trillion tokens were trained in NVFP4, and additional pre-training then extended the context length to 256K tokens. Next, we post-trained the model using Supervised Fine-Tuning (SFT) and Reinforcement Learning with Verifiable Rewards (RLVR), with a difficulty-aware loop curriculum that routes harder prompts to deeper loops. Increasing the loop count improves accuracy, with the largest gains on coding, agentic, and long-context benchmarks. With two or more loops, Dory1.0-4B outperforms larger models such as Qwen3.5-9B, Gemma 4 12B, and Gemma 4 26B-A4B on average across 12 benchmarks. Looping also makes Dory1.0-4B more token-efficient on agentic benchmarks: with four loops, it generates 1.3-2.5x fewer tokens than with one loop, as the extra computation is spent in latent space rather than on longer outputs. To reduce memory during looping, Dory1.0-4B caches keys and values only from the last loop, keeping its KV-cache footprint equal to that of a non-looped model at any loop count while retaining most of the accuracy gains. We open-source the BF16, MXFP8, NVFP4, and GGUF quantized checkpoints.",
-    "upvotes": 0,
+    "upvotes": 3,
     "discussionId": "6aeb3af5870269964d13a9ab",
     "ai_summary": "Dory1.0-4B is a 4-billion-parameter recurrent language model with elastic depth that improves accuracy and token efficiency by looping a shared block, outperforming larger models on multiple benchmarks.",
     "ai_keywords": [
@@ -225,7 +386,7 @@
     "fullname": "NVIDIA",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df9200dc3292a8983e5017/Vs5FPVCH-VZBipV3qKTuy.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -427,7 +588,7 @@
      "name": "WJ0830"
     },
     "summary": "Composed Image Retrieval (CIR) aims to retrieve a target image given a reference image and a modification text. Although recent approaches leveraging Multimodal Large Language Models (MLLMs) have shown significant progress, we argue that the MLLM's compositional understanding remains underutilized. This stems from directly mapping composed queries into a retrieval embedding via contrastive supervision alone, without explicitly resolving the intended visual modifications. In this work, we introduce Factorized MLLM Embeddings (FactEmbed), which decouples compositional query comprehension from building discriminative embeddings. Rather than directly projecting the composed query into a single embedding without internal reasoning, FactEmbed employs a set of factorized latents that simulate the intended visual modifications via an intermediate target imagination objective. This process encourages the latents to ground into target semantics before forming discriminative representations for retrieval. Subsequently, to propagate these factorized representations throughout the model for retrieval, we optimize a factor-level contrastive loss while distilling the decomposed representations into a deeper attention layer of the MLLM. Finally, for efficient inference, we retain the [EOS] token to establish a global-level embedding on top of these factorized latents, while we exploit the mean-pooled factorized latents to rerank a short candidate list at negligible cost, as both are produced by the same forward pass. Extensive evaluations demonstrate that FactEmbed outperforms prior works across CIR benchmarks.",
-    "upvotes": 37,
+    "upvotes": 40,
     "discussionId": "6aeae6e7870269964d13a780",
     "projectPage": "https://cvlab-kaist.github.io/FactEmbed/",
     "githubRepo": "https://github.com/cvlab-kaist/FactEmbed",
@@ -487,7 +648,18 @@
     "authors": [
      {
       "_id": "6aeae2d0870269964d13a75e",
+      "user": {
+       "_id": "65f5a92a1139c3cd6858e775",
+       "avatarUrl": "/avatars/f0340f36a7486ddf7ba1e34e82206171.svg",
+       "isPro": false,
+       "fullname": "MuyaoYuan",
+       "user": "MuyaoYuan",
+       "type": "user",
+       "name": "MuyaoYuan"
+      },
       "name": "Muyao Yuan",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.566Z",
       "hidden": false
      },
      {
@@ -664,7 +836,7 @@
      "name": "pbelcak"
     },
     "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6aeaf3ea870269964d13a7eb",
     "projectPage": "https://research.nvidia.com/labs/lpr/lfi/",
     "ai_summary": "Frequent context compaction preserves task accuracy across long-horizon and long-input tasks, suggesting that long-context language models may be unnecessary and motivating semantic state space models.",
@@ -728,7 +900,18 @@
      },
      {
       "_id": "6aeaf084870269964d13a7b3",
+      "user": {
+       "_id": "63999368636597492d720400",
+       "avatarUrl": "/avatars/268e08186155c8a657d6de13593446be.svg",
+       "isPro": false,
+       "fullname": "Yifan Yang",
+       "user": "yfyeung",
+       "type": "user",
+       "name": "yfyeung"
+      },
       "name": "Yifan Yang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.573Z",
       "hidden": false
      },
      {
@@ -859,7 +1042,7 @@
     "fullname": "SJTU Cross Media Language Intelligence Lab",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a6217e063f497473d7cab8/rJNiVNvlfd7S6IFO87TxM.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -1534,7 +1717,18 @@
      },
      {
       "_id": "6aead2d8870269964d13a708",
+      "user": {
+       "_id": "67041a46d1fb54bd91a478fd",
+       "avatarUrl": "/avatars/96bd3308d93a9fa29cd7102f21b5d90e.svg",
+       "isPro": true,
+       "fullname": "Suhyeok Jang",
+       "user": "glory-hyeok",
+       "type": "user",
+       "name": "glory-hyeok"
+      },
       "name": "Suhyeok Jang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.558Z",
       "hidden": false
      },
      {
@@ -2143,7 +2337,7 @@
      "name": "dongguanting"
     },
     "summary": "Large language models are deployed as long-horizon agents that compose diverse tools across MCP services into executable workflows. Existing MCP environment-scaling methods are data-centric: they first synthesize a database and scenario, then derive tools and tasks from them. As a result, tool interfaces may not match real ones, tool compositions are not grounded in execution, and tasks rarely span more than one environment. We propose ToolSpace, a tool-centric framework that reverses this order. ToolSpace mines data, state, and retry dependencies from adjacent calls in execution traces of real MCP services and open agent corpora, using deterministic rules rather than LLM judgment, and clusters the resulting weighted tool-composition graph into environments. Databases are synthesized only for state-mutating environments, while query and stateless tools replay recorded returns. ToolSpace then performs state-aware random walks with rollback and decompiles each chain into a natural-language task with assertion-based checks, keeping only samples that replay successfully from the initial state. Applied to AutomationBench and tau3-Bench Banking, the pipeline produces harder Pro versions on which 7 frontier models drop by up to 38.2 points. Across seven long-horizon tool-use benchmarks, ToolSpace raises Qwen3.6-35B-A3B from 23.0 to 41.0 average score (43.2 with RL) and GLM-5.2 from 44.6 to 56.6, on par with Claude Opus 5. Ablations show that execution-witnessed edges clearly outperform LLM-judged ones, and performance keeps improving with data and environment scale.",
-    "upvotes": 31,
+    "upvotes": 32,
     "discussionId": "6aeacb88870269964d13a694",
     "projectPage": "https://toolspace-agent.github.io/",
     "githubRepo": "https://github.com/dongguanting/ToolSpace",
@@ -2707,7 +2901,7 @@
      "name": "ChilleD"
     },
     "summary": "GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-driven human-agent collaboration, where environments evolve as new tasks expand their functional scope, coding agents implement the required changes, and human contributors audit visual fidelity, functional correctness, and task validity. The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover. Beyond reliable evaluation, WebHarbor provides high-fidelity synthetic web environments for cost-efficient reinforcement learning (RL). We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks. The code and data are publicly available at https://github.com/aiming-lab/WebHarbor.",
-    "upvotes": 16,
+    "upvotes": 19,
     "discussionId": "6ae9fbc54cf0affa1ca73203",
     "projectPage": "https://aiming-lab.github.io/WebHarbor/",
     "githubRepo": "https://github.com/aiming-lab/WebHarbor",
@@ -2867,7 +3061,7 @@
      "name": "yikuuun"
     },
     "summary": "Molecular discovery requires navigating vast combinatorial search spaces while balancing competing biological objectives. AI agents can automate expert-defined molecular design protocols, but automation alone does not address how to optimize workflows for new tasks or improve their development through experience. Here we introduce MoLRSI, an AI agent that combines systematic optimization of workflows and model architectures with persistent cross-task memory to recursively improve its search policy for molecular discovery. Workflow performance, refinement outcomes, and execution feedback guide subsequent searches, allowing the agent to improve both its workflows and its strategy for developing them. We evaluate MoLRSI in two challenging molecular discovery settings that require balancing competing properties. In antibiotic discovery, MoLRSI developed a screening workflow balancing antibacterial activity, cytotoxicity and structural novelty, achieving an experimental hit rate of 15.9%, compared with 8.7% for a previous expert-led workflow using the same training data and screening library. In de novo peptide-MHC binder design, MoLRSI developed workflows that jointly consider target binding and specificity, producing eight experimentally validated hits against MART-1 and SARS-CoV-1 pMHCs with preferential binding over tested off-targets while Claude Science completely failed. These findings demonstrate how experience-guided workflow optimization can address competing discovery objectives while improving the search strategies used in subsequent campaigns.",
-    "upvotes": 10,
+    "upvotes": 13,
     "discussionId": "6aeab2eb870269964d13a586",
     "projectPage": "https://yikunpku.github.io/MolRSI/",
     "ai_summary": "MoLRSI is an AI agent that optimizes molecular design workflows and retains cross-task memory to improve search policies, achieving higher experimental hit rates in antibiotic and peptide binder discovery than expert-led methods.",
@@ -3133,7 +3327,7 @@
      "name": "ElsaShaw"
     },
     "summary": "Psychotherapy clients may experience distress before they can coherently describe it, and their expression changes with emotion, perceived safety, and trust. Large language model-based client simulators often rely on clinically organized case descriptions, which can encourage responses explaining the client's difficulties more clearly than their current understanding warrants. We propose Pandora, a psychotherapy client simulation framework that models how psychological experience becomes situated, individual expression. Pandora updates psychological and relational states in response to therapist interventions, constructs subjective appraisals and attributions, and plans response content and strategy. A separate expression planner combines these decisions with language patterns distilled from the client's utterances to guide linguistic realization. We evaluate Pandora against five baselines on 115 cases from four counseling and motivational interviewing datasets. It achieves the highest expression similarity and overall disclosure-alignment score among the compared systems. In a four-evaluator study of 45 matched disclosure items, Pandora receives AI-like judgments in 7.2% of ratings, compared with 43.3--67.2% for the baselines and 35.6% without expression planning. The ablation also reduces expression similarity. These results support explicit expression planning in client simulation to improve alignment with individual language patterns and reduce perceived AI-like expression in the evaluated setting.",
-    "upvotes": 62,
+    "upvotes": 64,
     "discussionId": "6aeabe8d870269964d13a607",
     "projectPage": "https://clain.org/Pandora/",
     "githubRepo": "https://github.com/whunextgen/Pandora",
@@ -3240,7 +3434,7 @@
      "name": "IntJudge"
     },
     "summary": "Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model to master every capability, a promising path toward AGI now is to orchestrate a heterogeneous ecosystem of specialized models, tools, and policies (candidates) into a unified AI system. At the heart of this vision lies a fundamental question: how can an AI system dynamically select and coordinate the most capable candidate for each task while balancing performance and computational cost? In this work, we present Route Anything, a unified framework for studying model and policy routing across general-purpose AI systems. We develop a unified theoretical foundation that characterizes optimal routing under quality--cost trade-offs and establishes how the information available to a router determines its attainable performance. To systematically investigate routing across diverse capabilities, we first construct an omni-modal trajectory matrix spanning 25 benchmarks across language understanding, image, video, and speech generation, coding and workplace agents, and robotic manipulation, comprising 374,401 scored runs from 452 candidate configurations. Building on this framework, we train and test different routers to investigate the potential of omni-modal model routing, the capabilities of learned routers, and the conditions under which routing improves efficiency. Our results reveal substantial opportunities for capability orchestration: per-input oracle routing outperforms the best fixed candidate by 5.4 points, and learned routers outperform it by 0.3 points across 16 benchmarks, by 2.1 points on video generation, and by 1.1 points on robot manipulation while using 24% less policy time. More importantly, routing raises efficiency by 8.82x on average compared with the reference model.",
-    "upvotes": 89,
+    "upvotes": 93,
     "discussionId": "6aeab787870269964d13a5c7",
     "projectPage": "https://mikeeeeeeeeeeeeee.github.io/RouteAnything",
     "githubRepo": "https://github.com/InfRec-Cardinal/route-anything",
@@ -3933,7 +4127,7 @@
      "self-review"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 13
+    "githubStars": 14
    },
    "publishedAt": "2026-10-22T20:00:00.000Z",
    "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
@@ -4142,7 +4336,18 @@
      },
      {
       "_id": "6aeaa8b5870269964d13a4e3",
+      "user": {
+       "_id": "68fa12db3fea62443368a82e",
+       "avatarUrl": "/avatars/5b4b0bdfab5e497be672c7406d1bd450.svg",
+       "isPro": false,
+       "fullname": "jiaze li",
+       "user": "williamljz",
+       "type": "user",
+       "name": "williamljz"
+      },
       "name": "Jiaze Li",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.551Z",
       "hidden": false
      },
      {
@@ -4367,7 +4572,7 @@
      "name": "LongoXC"
     },
     "summary": "Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report summarizes the observations and insights on multimodal understanding gained from successive generations of Kling. We argue that generation quality is the projection of multimodal understanding through the entire data--conditioning--alignment--evaluation chain, and we examine this chain module by module. Kling-MLLM, a shared multimodal foundation model that unifies image, video, audio, synchronized audio--video, and interleaved inputs, is specialized for each downstream module. Because a DiT is trained on far fewer training samples than a language model, we treat captioning as a semantic contract that maximizes description density, and extend it to reference-grounded captioning that makes reference bindings explicit. Prompt enhancement translates user intent into this caption distribution: basic PE is derived from captions of compelling videos and refined with text-level and generator-in-the-loop reinforcement learning, while agentic PE refines the story and retrieves compelling examples. We show that a reliable text encoder comes from perceptual training rather than from stronger language ability, and that candidates can be screened from text alone before end-to-end training. Reward modeling pairs a general reward model for explainable, localized critiques with a decision reward model for fast multidimensional scoring, treating perceptual bandwidth as a first-class design parameter. Finally, we review task-specific automatic evaluation, focusing on protocols that expose scoring shortcuts and help trace failures to their upstream source. We hope these lessons offer practical guidance for building the understanding stack behind controllable video generation.",
-    "upvotes": 47,
+    "upvotes": 48,
     "discussionId": "6aeaa8b5870269964d13a507",
     "projectPage": "https://klingai.com/app",
     "ai_summary": "Kling's multimodal understanding stack links caption density, perceptual text encoding, reward modeling, and evaluation protocols to improve controllable video generation.",
@@ -4554,7 +4759,7 @@
      "visual reasoning"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 3
+    "githubStars": 4
    },
    "publishedAt": "2026-10-24T20:00:00.000Z",
    "title": "LOLPlay: Benchmarking Real-Time Visual Agents in League of Legends",
@@ -5142,7 +5347,7 @@
      "LLM decoding"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 29,
+    "githubStars": 82,
     "organization": {
      "_id": "66b1baeff10262fc4fa61961",
      "name": "UCBerkeley",
@@ -5182,7 +5387,18 @@
     "authors": [
      {
       "_id": "6aea9fdc870269964d13a423",
+      "user": {
+       "_id": "64764b7e8153ce2399486135",
+       "avatarUrl": "/avatars/265dada11f0caa2bf204539927972f30.svg",
+       "isPro": false,
+       "fullname": "Xingzhi Qian",
+       "user": "felixqxz",
+       "type": "user",
+       "name": "felixqxz"
+      },
       "name": "Xingzhi Qian",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T16:45:04.544Z",
       "hidden": false
      },
      {
@@ -5422,7 +5638,7 @@
      "MoviEdit-Bench"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2,
+    "githubStars": 7,
     "organization": {
      "_id": "61e5d14f77496de0a6d95c6b",
      "name": "adobe",
@@ -5522,7 +5738,7 @@
      "multimodal controllability"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 6,
+    "githubStars": 8,
     "organization": {
      "_id": "638f70e8f1256a80d4288555",
      "name": "nanjinguniv",
@@ -5725,7 +5941,7 @@
      "name": "Jiafei1224"
     },
     "summary": "General-purpose robot policies must work across robots, tasks, and environments, yet the variation that makes physical trials informative also makes them difficult to reproduce. We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments. Our initial study evaluates five vision-language-action (VLA) policies and three frontier AI agents across four embodiments (SO-101, Franka, Bimanual-YAM, and G1 Humanoid). The Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. The Fine-tune Track measures how well VLA policies adapt to 20 tasks across all four embodiments when each policy receives the same 100 demonstrations per task. Across 5,699 pairwise Open Track comparisons at 124 sites, frontier agents rival specialized VLA policies, while all systems struggle to complete open-world tasks reliably. After fine-tuning, GR00T N1.7 leads on SO-101 and pi0.5 leads on Franka and Bimanual-YAM. Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks. Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies. Open Track rankings stabilize as trials accumulate, and active matchmaking achieves comparable ranking agreement with substantially fewer physical trials than uniform sampling. These results show how distributed physical evaluation can reveal where robot policies generalize, how well they adapt to new tasks, and how far they progress on tasks they fail to complete.",
-    "upvotes": 37,
+    "upvotes": 40,
     "discussionId": "6aea9857870269964d13a393",
     "projectPage": "https://robocolosseum.ai/",
     "githubRepo": "https://github.com/RoboColosseum/robocolosseum-client",
@@ -5738,7 +5954,7 @@
      "embodiment"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 0,
+    "githubStars": 3,
     "organization": {
      "_id": "5e67bd5b1009063689407478",
      "name": "huggingface",
@@ -6174,7 +6390,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/63337b0073c07e8aebb3df0d/R32TB2C_sUP5Jiz8JEXz0.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02112.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "63337b0073c07e8aebb3df0d",
     "avatarUrl": "/avatars/701eba8a26a6d0347cbaaec8118ce3e7.svg",
@@ -6189,152 +6405,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.32878",
-    "authors": [
-     {
-      "_id": "6adf5a1f2c062a8c1911e0ec",
-      "user": {
-       "_id": "687f43ec04cf2012a79ef5f9",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/XjTc37nrXoNMV1M8KxKNH.png",
-       "isPro": false,
-       "fullname": "Moritz Thoma",
-       "user": "MoritzMo123",
-       "type": "user",
-       "name": "MoritzMo123"
-      },
-      "name": "Moritz Thoma",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-26T16:45:04.625Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0ed",
-      "name": "Maximilian Groezinger",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0ee",
-      "user": {
-       "_id": "692cd12377407861165c75f3",
-       "avatarUrl": "/avatars/4d82db683430ec2ce7dd2f0237a1d540.svg",
-       "isPro": false,
-       "fullname": "Maximilian Forstenhaeusler",
-       "user": "mforstenhaeusler",
-       "type": "user",
-       "name": "mforstenhaeusler"
-      },
-      "name": "Maximilian Forstenhäusler",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-10-27T14:30:55.292Z",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0ef",
-      "name": "Emad Aghajanzadeh",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f0",
-      "name": "Manoj Rohit Vemparala",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f1",
-      "name": "Christos Anagnostopoulos",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f2",
-      "name": "Pierpaolo Mori",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f3",
-      "name": "Nael Fasfous",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f4",
-      "name": "Alexander Frickenstein",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f5",
-      "name": "Daniel Mueller-Gritschneder",
-      "hidden": false
-     },
-     {
-      "_id": "6adf5a1f2c062a8c1911e0f6",
-      "name": "Ulf Schlichtmann",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-03T00:00:00.000Z",
-    "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
-    "submittedOnDailyBy": {
-     "_id": "687f43ec04cf2012a79ef5f9",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/XjTc37nrXoNMV1M8KxKNH.png",
-     "isPro": false,
-     "fullname": "Moritz Thoma",
-     "user": "MoritzMo123",
-     "type": "user",
-     "name": "MoritzMo123"
-    },
-    "summary": "Low-rank SVD-based compression offers a powerful strategy to reduce the computational costs of LLMs. However, existing methods face two key limitations: (i) global rank allocation, where uncalibrated error proxies fail to capture complex error propagation, and (ii) decomposition quality, where Fisher-based estimators suffer from severe rank collapse. In this work, we address these limitations by introducing Layer-wise Error Modeling Search (LEMS) and KFAC-SVD. LEMS advances rank allocation by introducing a layer-wise error surrogate that integrates local and global layer importance alongside a propagation bias, enabling effective global rank allocation via an ILP formulation. KFAC-SVD improves decomposition quality by utilizing token-wise statistics, mitigating the rank deficiency observed in prior Fisher-based SVD approaches. Across Mistral, Qwen3, and Llama 3 model families, we show that LEMS consistently outperforms existing search strategies, delivering significant zero-shot accuracy gains of up to 4.8 p.p. that generalize to model sizes of 70B parameters, while KFAC-SVD achieves an average perplexity improvement of 15%. Project page and code: https://lems-svd.github.io",
-    "upvotes": 4,
-    "discussionId": "6adf5a1f2c062a8c1911e0f7",
-    "projectPage": "https://lems-svd.github.io",
-    "githubRepo": "https://github.com/lems-svd/lems",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Layer-wise error modeling and token-wise Fisher statistics improve low-rank SVD compression of large language models by refining rank allocation and decomposition quality.",
-    "ai_keywords": [
-     "low-rank SVD",
-     "LLM compression",
-     "layer-wise error modeling",
-     "KFAC-SVD",
-     "Fisher-based estimators",
-     "rank collapse",
-     "ILP formulation",
-     "token-wise statistics"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4,
-    "organization": {
-     "_id": "61fae781e68759322b9767be",
-     "name": "TUM",
-     "fullname": "Technical University of Munich",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
-    }
-   },
-   "publishedAt": "2026-10-22T20:00:00.000Z",
-   "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
-   "summary": "Low-rank SVD-based compression offers a powerful strategy to reduce the computational costs of LLMs. However, existing methods face two key limitations: (i) global rank allocation, where uncalibrated error proxies fail to capture complex error propagation, and (ii) decomposition quality, where Fisher-based estimators suffer from severe rank collapse. In this work, we address these limitations by introducing Layer-wise Error Modeling Search (LEMS) and KFAC-SVD. LEMS advances rank allocation by introducing a layer-wise error surrogate that integrates local and global layer importance alongside a propagation bias, enabling effective global rank allocation via an ILP formulation. KFAC-SVD improves decomposition quality by utilizing token-wise statistics, mitigating the rank deficiency observed in prior Fisher-based SVD approaches. Across Mistral, Qwen3, and Llama 3 model families, we show that LEMS consistently outperforms existing search strategies, delivering significant zero-shot accuracy gains of up to 4.8 p.p. that generalize to model sizes of 70B parameters, while KFAC-SVD achieves an average perplexity improvement of 15%. Project page and code: https://lems-svd.github.io",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32878.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "687f43ec04cf2012a79ef5f9",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/XjTc37nrXoNMV1M8KxKNH.png",
-    "fullname": "Moritz Thoma",
-    "name": "MoritzMo123",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61fae781e68759322b9767be",
-    "name": "TUM",
-    "fullname": "Technical University of Munich",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661167219960-629521a0f937190946e15d7f.jpeg"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
