@@ -1,8 +1,795 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-05T01:46:10.681Z",
+ "fetchedAt": "2026-11-05T04:01:11.413Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2610.40516",
+    "authors": [
+     {
+      "_id": "6ae453a9c3b566b041f6ca2c",
+      "name": "Max Neuwinger",
+      "hidden": false
+     },
+     {
+      "_id": "6ae453a9c3b566b041f6ca2d",
+      "user": {
+       "_id": "650ed7adf141bc34f91a12ae",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/rZDwRiBcqeqlUQ7mThoyU.jpeg",
+       "isPro": true,
+       "fullname": "Hanna Yukhymenko",
+       "user": "hannayukhymenko",
+       "type": "user",
+       "name": "hannayukhymenko"
+      },
+      "name": "Hanna Yukhymenko",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-10-30T08:45:05.188Z",
+      "hidden": false
+     },
+     {
+      "_id": "6ae453a9c3b566b041f6ca2e",
+      "name": "Imanol Schlag",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/650ed7adf141bc34f91a12ae/01dVc7_MLs_vsRMgQH5mw.mp4"
+    ],
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+    "submittedOnDailyBy": {
+     "_id": "650ed7adf141bc34f91a12ae",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/rZDwRiBcqeqlUQ7mThoyU.jpeg",
+     "isPro": true,
+     "fullname": "Hanna Yukhymenko",
+     "user": "hannayukhymenko",
+     "type": "user",
+     "name": "hannayukhymenko"
+    },
+    "summary": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and benign. As a result, we release MSafeTemp, a validated corpus spanning 60 languages useful for multilingual safety alignment and evaluation. Using the dataset, we show that English-only evaluation misjudges multilingual safety: for several models, attacks that fail in English succeed once translated, while culturally localized variants expose further failures that translation alone misses. We also confirm that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English. MSafeTemp and the respective pipeline are aimed at facilitating research and development of safer and more responsible models for less-represented cultures.",
+    "upvotes": 5,
+    "discussionId": "6ae453a9c3b566b041f6ca2f",
+    "projectPage": "https://swiss-ai.github.io/msafetemp",
+    "githubRepo": "https://github.com/swiss-ai/msafetemp",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Researchers developed a scalable template-based pipeline to generate multilingual safety datasets, revealing that English-only evaluations misjudge multilingual model safety and that culturally localized training improves alignment across languages.",
+    "ai_keywords": [
+     "multilingual safety alignment",
+     "refusal corpora",
+     "template-based augmentation",
+     "culturally authentic entities",
+     "MSafeTemp",
+     "cross-lingual safety evaluation"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 1,
+    "organization": {
+     "_id": "6621203ba73c5d2e77c21ada",
+     "name": "swiss-ai",
+     "fullname": "Swiss AI Initiative",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/648211d39c44e3422ca7e4f3/gnfixzw9IqBziR6bzA6u8.png"
+    }
+   },
+   "publishedAt": "2026-10-28T20:00:00.000Z",
+   "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+   "summary": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and benign. As a result, we release MSafeTemp, a validated corpus spanning 60 languages useful for multilingual safety alignment and evaluation. Using the dataset, we show that English-only evaluation misjudges multilingual safety: for several models, attacks that fail in English succeed once translated, while culturally localized variants expose further failures that translation alone misses. We also confirm that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English. MSafeTemp and the respective pipeline are aimed at facilitating research and development of safer and more responsible models for less-represented cultures.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/650ed7adf141bc34f91a12ae/01dVc7_MLs_vsRMgQH5mw.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40516.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "650ed7adf141bc34f91a12ae",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/rZDwRiBcqeqlUQ7mThoyU.jpeg",
+    "fullname": "Hanna Yukhymenko",
+    "name": "hannayukhymenko",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 127,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6621203ba73c5d2e77c21ada",
+    "name": "swiss-ai",
+    "fullname": "Swiss AI Initiative",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/648211d39c44e3422ca7e4f3/gnfixzw9IqBziR6bzA6u8.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2611.05320",
+    "authors": [
+     {
+      "_id": "6aeb1201870269964d13a859",
+      "name": "Kewei Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85a",
+      "name": "Juncheng Ma",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85b",
+      "name": "Guodong Lv",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85c",
+      "name": "Duomin Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85d",
+      "name": "Feixiang Ruan",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85e",
+      "name": "Ruiyang Si",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a85f",
+      "name": "Chuanrui Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a860",
+      "name": "Yuxuan Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a861",
+      "name": "Hao Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a862",
+      "name": "Yichen Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a863",
+      "name": "Yintianrun Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a864",
+      "name": "Yufan Deng",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a865",
+      "name": "Enze Xie",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb1201870269964d13a866",
+      "name": "Daquan Zhou",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/659698e6f67e8fb2a5985445/vPUawp3ZEtkr5xArmMNTD.mp4"
+    ],
+    "publishedAt": "2026-11-03T18:25:14.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+    "submittedOnDailyBy": {
+     "_id": "659698e6f67e8fb2a5985445",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6jxohd_DsLVfSnWgKMGrn.jpeg",
+     "isPro": false,
+     "fullname": "Kewei Zhang",
+     "user": "xiwenyoumu",
+     "type": "user",
+     "name": "xiwenyoumu"
+    },
+    "summary": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot's actions, on which a policy can be trained directly and deployed on the real robot. Independent judges certify the expert and every rendered episode before admission. On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46. Adapting a task is fully automatic and costs \\21 of API usage on average, paid once per task, plus 5 for a render contract; every further episode costs \\0.80 on average for simulation, rendering, and review, with no robot or operator. One hour of three-view data for a task costs 107 on average, these costs included, slightly below a quote of \\117 for teleoperation in China and below 290 in labour alone in North America.",
+    "upvotes": 3,
+    "discussionId": "6aeb1201870269964d13a867",
+    "projectPage": "https://dagroup-pku.github.io/PyRUA-Lean/DataFarm/",
+    "ai_summary": "A coding agent automates robot demonstration generation by simulating tasks, rendering photorealistic videos, and producing deployable training data at lower cost than teleoperation.",
+    "ai_keywords": [
+     "coding agent",
+     "teleoperation",
+     "robot demonstrations",
+     "simulation",
+     "expert controller",
+     "success judge",
+     "video model",
+     "policy training",
+     "real-robot tasks"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "organization": {
+     "_id": "6953c657d2ff7b60c8527d3c",
+     "name": "DAGroup-PKU",
+     "fullname": "DAGroup-PKU",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/665c91e15b11dca02f0c5891/ek9KGIc02tiFfaYeDfLaU.png"
+    }
+   },
+   "publishedAt": "2026-11-03T13:25:14.000Z",
+   "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+   "summary": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot's actions, on which a policy can be trained directly and deployed on the real robot. Independent judges certify the expert and every rendered episode before admission. On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46. Adapting a task is fully automatic and costs \\21 of API usage on average, paid once per task, plus 5 for a render contract; every further episode costs \\0.80 on average for simulation, rendering, and review, with no robot or operator. One hour of three-view data for a task costs 107 on average, these costs included, slightly below a quote of \\117 for teleoperation in China and below 290 in labour alone in North America.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/659698e6f67e8fb2a5985445/vPUawp3ZEtkr5xArmMNTD.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.05320.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "659698e6f67e8fb2a5985445",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6jxohd_DsLVfSnWgKMGrn.jpeg",
+    "fullname": "Kewei Zhang",
+    "name": "xiwenyoumu",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6953c657d2ff7b60c8527d3c",
+    "name": "DAGroup-PKU",
+    "fullname": "DAGroup-PKU",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/665c91e15b11dca02f0c5891/ek9KGIc02tiFfaYeDfLaU.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.02857",
+    "authors": [
+     {
+      "_id": "6aebf2c2870269964d13abc1",
+      "name": "Jeong-gi Kwak",
+      "hidden": false
+     },
+     {
+      "_id": "6aebf2c2870269964d13abc2",
+      "name": "Andrea Tagliasacchi",
+      "hidden": false
+     },
+     {
+      "_id": "6aebf2c2870269964d13abc3",
+      "name": "Sho Kagami",
+      "hidden": false
+     },
+     {
+      "_id": "6aebf2c2870269964d13abc4",
+      "name": "Yuki Ono",
+      "hidden": false
+     },
+     {
+      "_id": "6aebf2c2870269964d13abc5",
+      "name": "Kwang Moo Yi",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-02T09:59:45.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+    "submittedOnDailyBy": {
+     "_id": "635035fedc10894a3f66ea79",
+     "avatarUrl": "/avatars/bcf0a00a7290b822e00fbe0930bd9160.svg",
+     "isPro": false,
+     "fullname": "Jeong-gi Kwak",
+     "user": "jgkwak",
+     "type": "user",
+     "name": "jgkwak"
+    },
+    "summary": "Classical structure-from-motion reconstruction proceeds iteratively, refining camera poses and scene geometry from a current estimate. This allows maps to easily expand without recomputing already computed views, or geometry estimates to improve as more observations are provided. Most geometric foundation models, however, predict entire geometry in a single forward pass or update a recurrent state as frames arrive sequentially, making this expansion and refinement non-trivial. We introduce Solv3R, a looped transformer that learns to continue solving multi-view geometry from its current state. Importantly, its update operator is independent of the iteration count, allowing previously refined and newly introduced views to be jointly updated regardless of how ``solved'' they are. We train the operator to preserve accurate reconstructions under continued iteration and correct inaccurate states, enabling refinement of fixed image collections and integration of new observations. Representations of solved views can also be cached once and reused as geometric context across iterations, enabling compact and efficient key-value caching. We analyze the solver dynamics and compare it with the state-of-the-art, demonstrating that a single learned solver supports offline reconstruction, incremental reconstruction, relocalization, and streaming without task-specific training or modules. The code and models will be made publicly available at https://ubc-vision.github.io/solv3r/.",
+    "upvotes": 8,
+    "discussionId": "6aebf2c2870269964d13abc6",
+    "projectPage": "https://ubc-vision.github.io/solv3r/",
+    "githubRepo": "https://github.com/ubc-vision/solv3r",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Solv3R is a looped transformer that iteratively refines multi-view geometry from its current state, supporting incremental updates, caching, and multiple reconstruction tasks without specialized modules.",
+    "ai_keywords": [
+     "structure-from-motion",
+     "multi-view geometry",
+     "looped transformer",
+     "update operator",
+     "key-value caching",
+     "relocalization",
+     "streaming reconstruction"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 102
+   },
+   "publishedAt": "2026-11-02T04:59:45.000Z",
+   "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+   "summary": "Classical structure-from-motion reconstruction proceeds iteratively, refining camera poses and scene geometry from a current estimate. This allows maps to easily expand without recomputing already computed views, or geometry estimates to improve as more observations are provided. Most geometric foundation models, however, predict entire geometry in a single forward pass or update a recurrent state as frames arrive sequentially, making this expansion and refinement non-trivial. We introduce Solv3R, a looped transformer that learns to continue solving multi-view geometry from its current state. Importantly, its update operator is independent of the iteration count, allowing previously refined and newly introduced views to be jointly updated regardless of how ``solved'' they are. We train the operator to preserve accurate reconstructions under continued iteration and correct inaccurate states, enabling refinement of fixed image collections and integration of new observations. Representations of solved views can also be cached once and reused as geometric context across iterations, enabling compact and efficient key-value caching. We analyze the solver dynamics and compare it with the state-of-the-art, demonstrating that a single learned solver supports offline reconstruction, incremental reconstruction, relocalization, and streaming without task-specific training or modules. The code and models will be made publicly available at https://ubc-vision.github.io/solv3r/.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02857.png",
+   "numComments": 2,
+   "submittedBy": {
+    "_id": "635035fedc10894a3f66ea79",
+    "avatarUrl": "/avatars/bcf0a00a7290b822e00fbe0930bd9160.svg",
+    "fullname": "Jeong-gi Kwak",
+    "name": "jgkwak",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.02846",
+    "authors": [
+     {
+      "_id": "6aeaae14870269964d13a549",
+      "name": "Tianyu Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54a",
+      "name": "Jun Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54b",
+      "name": "Wenjie Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54c",
+      "name": "Yuhao Shen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54d",
+      "name": "Tianqi Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54e",
+      "name": "Xinyue Hao",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a54f",
+      "name": "Hongyaoxing Gu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a550",
+      "name": "Xuyang Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a551",
+      "name": "Baolin Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a552",
+      "name": "Yating Zhu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a553",
+      "name": "Shuang Ge",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a554",
+      "name": "Jun Dai",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a555",
+      "name": "Lei Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a556",
+      "name": "Yue Li",
+      "hidden": false
+     },
+     {
+      "_id": "6aeaae14870269964d13a557",
+      "name": "Mingchen Wan",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/63fcb42c987f631186e554f2/rIrJgfmbqTNqZKkaN-LkD.mp4"
+    ],
+    "publishedAt": "2026-11-02T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding",
+    "submittedOnDailyBy": {
+     "_id": "63fcb42c987f631186e554f2",
+     "avatarUrl": "/avatars/e348040c62396bd356eb51fbe4cd81b7.svg",
+     "isPro": false,
+     "fullname": "Jun Zhang",
+     "user": "junzhang98",
+     "type": "user",
+     "name": "junzhang98"
+    },
+    "summary": "Speculative decoding (SD) accelerates large language model inference by reducing the sequential cost of token-by-token generation. Advanced SD methods reduce proposal cost with parallel drafters that predict entire blocks in one forward pass, but overall speedup still depends on acceptance length. On-policy distillation (OPD) can push well-trained drafters beyond acceptance-length plateaus, yet conventional pipelines collect supervision through sequential draft-and-verify rollouts. Our key insight is that on-policy supervision need not inherit these dependencies: a draft block can be supervised using only its reference prefix and draft-sampled history. We propose SpecOPD, a branch-parallel OPD framework that parallelizes draft sampling and target supervision across independent branches drawn from the evolving drafter policy at reference anchors. We pack these branches into proposal trees to share target-prefix computation, using tree masks for full attention, branch-consistent indexer groups for sparse attention, and indexed state replay for linear attention to preserve each branch's history. We train the drafter with an E2E-TV surrogate that directly targets acceptance length. Our study spans 8B full-attention (GQA), 27B full-linear (GQA--GDN), and 125B sparse-linear (QSA--GDN) targets, three parallel draft architectures (DFlash, DSpark, and DFlash V2), and four task domains (dialogue, coding, mathematics, and agentic). SpecOPD achieves up to 41.45% higher mean acceptance length, 16.09times supervised-token throughput over sequential-rollout OPD under native configurations, and up to 3.56times generation speedup over autoregressive decoding.",
+    "upvotes": 3,
+    "discussionId": "6aeaae14870269964d13a558",
+    "projectPage": "https://qwenapp.github.io/SpecOPD/en.html",
+    "githubRepo": "https://github.com/QwenApp/SpecOPD",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "SpecOPD accelerates speculative decoding by parallelizing on-policy draft supervision across independent branches, improving acceptance length and training throughput across diverse model architectures and tasks.",
+    "ai_keywords": [
+     "speculative decoding",
+     "on-policy distillation",
+     "parallel drafters",
+     "proposal trees",
+     "tree masks",
+     "sparse attention",
+     "linear attention",
+     "E2E-TV surrogate",
+     "acceptance length",
+     "GQA",
+     "GDN",
+     "QSA"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 18,
+    "organization": {
+     "_id": "64c8b5837fe12ecd0a7e92eb",
+     "name": "Qwen",
+     "fullname": "Qwen",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg"
+    }
+   },
+   "publishedAt": "2026-11-01T19:00:00.000Z",
+   "title": "SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding",
+   "summary": "Speculative decoding (SD) accelerates large language model inference by reducing the sequential cost of token-by-token generation. Advanced SD methods reduce proposal cost with parallel drafters that predict entire blocks in one forward pass, but overall speedup still depends on acceptance length. On-policy distillation (OPD) can push well-trained drafters beyond acceptance-length plateaus, yet conventional pipelines collect supervision through sequential draft-and-verify rollouts. Our key insight is that on-policy supervision need not inherit these dependencies: a draft block can be supervised using only its reference prefix and draft-sampled history. We propose SpecOPD, a branch-parallel OPD framework that parallelizes draft sampling and target supervision across independent branches drawn from the evolving drafter policy at reference anchors. We pack these branches into proposal trees to share target-prefix computation, using tree masks for full attention, branch-consistent indexer groups for sparse attention, and indexed state replay for linear attention to preserve each branch's history. We train the drafter with an E2E-TV surrogate that directly targets acceptance length. Our study spans 8B full-attention (GQA), 27B full-linear (GQA--GDN), and 125B sparse-linear (QSA--GDN) targets, three parallel draft architectures (DFlash, DSpark, and DFlash V2), and four task domains (dialogue, coding, mathematics, and agentic). SpecOPD achieves up to 41.45% higher mean acceptance length, 16.09times supervised-token throughput over sequential-rollout OPD under native configurations, and up to 3.56times generation speedup over autoregressive decoding.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/63fcb42c987f631186e554f2/rIrJgfmbqTNqZKkaN-LkD.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02846.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "63fcb42c987f631186e554f2",
+    "avatarUrl": "/avatars/e348040c62396bd356eb51fbe4cd81b7.svg",
+    "fullname": "Jun Zhang",
+    "name": "junzhang98",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "64c8b5837fe12ecd0a7e92eb",
+    "name": "Qwen",
+    "fullname": "Qwen",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6215ca5692c0ecfba9186921/hrRM50-6XcdWgg2AKpENG.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.04634",
+    "authors": [
+     {
+      "_id": "6aeac9e0870269964d13a665",
+      "name": "Yang Xiao",
+      "hidden": false
+     },
+     {
+      "_id": "6aeac9e0870269964d13a666",
+      "name": "Ting Dang",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6745863f8eebd2eaf7fef95f/gJ-v8Su86lt25uQgrOsey.mp4"
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
+    "submittedOnDailyBy": {
+     "_id": "6745863f8eebd2eaf7fef95f",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Co-bXna1xVMyJJi4M_L1S.png",
+     "isPro": true,
+     "fullname": "Yang Xiao",
+     "user": "AustinXiao",
+     "type": "user",
+     "name": "AustinXiao"
+    },
+    "summary": "A speech deepfake detector estimates whether a recording is synthetic, but a forensic analyst also asks which system produced it, whether recordings share a source, and what evidence supports each conclusion. We present VeriSpoof, an audio language model that unifies five tasks with shared weights: deepfake detection, generator attribution (generator, acoustic model and vocoder), recording-condition analysis, synthesized-span localisation, and source verification. Each decision is supported by grounded rationales whose statements can be independently verified. Answers are scored by sentence likelihood, allowing detection and source verification to be thresholded without separate heads. Rationale statements can be checked against waveform measurements, span labels, or generator metadata. Counterfactual examples train decisions to follow the stated evidence. Across the 14 Speech-DF-Arena test sets, VeriSpoof-Plus achieves 2.14% pooled EER, ranking third of 28 systems and first among open-weight systems. VeriSpoof-Base, trained only on official training splits of eight corpora, achieves 4.43% EER, less than half that of the next open-weight detector. With the same weights, VeriSpoof-Plus verifies whether recordings from generators unseen in training share a source at 6.2% EER. Controlled studies show that the audio representation governs detection, the LLM governs recording comparison, and source supervision is necessary for neural-codec fakes. Statement-checkable rationales catch partial fakes missed by one-step answers (99.6% vs. 78.4% on PartialEdit) and determine decisions under edits unseen in training (99.5%). Training updates only 29.7M of 2.85B parameters, fitting a single 24 GB GPU with gradient checkpointing. We release both models, inference code, a demo, and VeriSpoof-Bench, the evaluation suite covering these questions.",
+    "upvotes": 2,
+    "discussionId": "6aeac9e0870269964d13a667",
+    "projectPage": "https://swagshaw.github.io/verispoof/",
+    "githubRepo": "https://github.com/swagshaw/verispoof",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "VeriSpoof is an audio language model that unifies deepfake detection, generator attribution, source verification, and evidence-based rationale generation with minimal parameter updates.",
+    "ai_keywords": [
+     "audio language model",
+     "deepfake detection",
+     "generator attribution",
+     "source verification",
+     "synthesized-span localisation",
+     "cross-attention",
+     "gradient checkpointing",
+     "neural-codec fakes"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 3,
+    "organization": {
+     "_id": "6abc8f155706ac7d8205f5e3",
+     "name": "unimelb-hf",
+     "fullname": "The University of Melbourne",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6745863f8eebd2eaf7fef95f/L1esciXs9wKP0K4Y5MLKX.png"
+    }
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
+   "summary": "A speech deepfake detector estimates whether a recording is synthetic, but a forensic analyst also asks which system produced it, whether recordings share a source, and what evidence supports each conclusion. We present VeriSpoof, an audio language model that unifies five tasks with shared weights: deepfake detection, generator attribution (generator, acoustic model and vocoder), recording-condition analysis, synthesized-span localisation, and source verification. Each decision is supported by grounded rationales whose statements can be independently verified. Answers are scored by sentence likelihood, allowing detection and source verification to be thresholded without separate heads. Rationale statements can be checked against waveform measurements, span labels, or generator metadata. Counterfactual examples train decisions to follow the stated evidence. Across the 14 Speech-DF-Arena test sets, VeriSpoof-Plus achieves 2.14% pooled EER, ranking third of 28 systems and first among open-weight systems. VeriSpoof-Base, trained only on official training splits of eight corpora, achieves 4.43% EER, less than half that of the next open-weight detector. With the same weights, VeriSpoof-Plus verifies whether recordings from generators unseen in training share a source at 6.2% EER. Controlled studies show that the audio representation governs detection, the LLM governs recording comparison, and source supervision is necessary for neural-codec fakes. Statement-checkable rationales catch partial fakes missed by one-step answers (99.6% vs. 78.4% on PartialEdit) and determine decisions under edits unseen in training (99.5%). Training updates only 29.7M of 2.85B parameters, fitting a single 24 GB GPU with gradient checkpointing. We release both models, inference code, a demo, and VeriSpoof-Bench, the evaluation suite covering these questions.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6745863f8eebd2eaf7fef95f/gJ-v8Su86lt25uQgrOsey.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04634.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6745863f8eebd2eaf7fef95f",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Co-bXna1xVMyJJi4M_L1S.png",
+    "fullname": "Yang Xiao",
+    "name": "AustinXiao",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 6,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6abc8f155706ac7d8205f5e3",
+    "name": "unimelb-hf",
+    "fullname": "The University of Melbourne",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6745863f8eebd2eaf7fef95f/L1esciXs9wKP0K4Y5MLKX.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.04391",
+    "authors": [
+     {
+      "_id": "6aeb4d54870269964d13aa0a",
+      "name": "Junhyeong Park",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb4d54870269964d13aa0b",
+      "name": "Wook Jung",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb4d54870269964d13aa0c",
+      "name": "Taeyoung Kim",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb4d54870269964d13aa0d",
+      "name": "Huiwon Jang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeb4d54870269964d13aa0e",
+      "name": "Jinwoo Shin",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/65da0836d4cb1534ace2d175/riY8M4jwcmRee8vinZ5q9.mp4"
+    ],
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+    "submittedOnDailyBy": {
+     "_id": "65da0836d4cb1534ace2d175",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65da0836d4cb1534ace2d175/V4YZ8dLB1KUOP3GNZDpq4.jpeg",
+     "isPro": true,
+     "fullname": "jun_brro",
+     "user": "junbrro",
+     "type": "user",
+     "name": "junbrro"
+    },
+    "summary": "Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping. This design allows human demonstrations to provide useful behavioral supervision while retaining the rich visual, semantic, and control priors of the pretrained VLA. Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train baselines totally fail to transfer human-demonstrated skills. The benefit also persists under object-placement shifts, improving out-of-distribution transfer from 6.0 to 45.3. H2RB suggests a way for human demonstrations to serve as a scalable supervision source for adapting pretrained robotic policies, reducing the dependence on costly target-robot data collection.",
+    "upvotes": 4,
+    "discussionId": "6aeb4d55870269964d13aa0f",
+    "projectPage": "https://junhyeong-park.me/h2rb/",
+    "githubRepo": "https://github.com/jun-brro/h2rb-code",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "H2RB adapts pretrained vision-language-action policies to new robots using unpaired human demonstrations via geometry-anchored alignment and a decoupled-decoder tokenizer, substantially improving cross-embodiment skill transfer.",
+    "ai_keywords": [
+     "Vision-Language-Action",
+     "VLA",
+     "H2RB",
+     "geometry-anchored alignment",
+     "decoupled-decoder tokenizer",
+     "action latents",
+     "embodiment gap"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 2,
+    "organization": {
+     "_id": "6475760c33192631bad2bb38",
+     "name": "kaist-ai",
+     "fullname": "KAIST AI",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+    }
+   },
+   "publishedAt": "2026-11-02T19:00:00.000Z",
+   "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+   "summary": "Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping. This design allows human demonstrations to provide useful behavioral supervision while retaining the rich visual, semantic, and control priors of the pretrained VLA. Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train baselines totally fail to transfer human-demonstrated skills. The benefit also persists under object-placement shifts, improving out-of-distribution transfer from 6.0 to 45.3. H2RB suggests a way for human demonstrations to serve as a scalable supervision source for adapting pretrained robotic policies, reducing the dependence on costly target-robot data collection.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/65da0836d4cb1534ace2d175/riY8M4jwcmRee8vinZ5q9.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04391.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65da0836d4cb1534ace2d175",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65da0836d4cb1534ace2d175/V4YZ8dLB1KUOP3GNZDpq4.jpeg",
+    "fullname": "jun_brro",
+    "name": "junbrro",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6475760c33192631bad2bb38",
+    "name": "kaist-ai",
+    "fullname": "KAIST AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2610.37257",
+    "authors": [
+     {
+      "_id": "6aeab40b870269964d13a596",
+      "user": {
+       "_id": "621ebba3b4b193696d470642",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1646181255277-noauth.jpeg",
+       "isPro": false,
+       "fullname": "SII-Kang He",
+       "user": "Kangverse",
+       "type": "user",
+       "name": "Kangverse"
+      },
+      "name": "Kang He",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-04T08:45:05.359Z",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a597",
+      "name": "Wenshuo Peng",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a598",
+      "name": "Chuanhao Li",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a599",
+      "name": "Zihui Gao",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59a",
+      "name": "Xiaojie Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59b",
+      "name": "Zhengyuan Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59c",
+      "name": "Yuzhe Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59d",
+      "name": "Donghong Ji",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59e",
+      "name": "Kaipeng Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6aeab40b870269964d13a59f",
+      "name": "Yongtao Ge",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-10-31T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-05T00:00:00.000Z",
+    "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+    "submittedOnDailyBy": {
+     "_id": "621ebba3b4b193696d470642",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1646181255277-noauth.jpeg",
+     "isPro": false,
+     "fullname": "SII-Kang He",
+     "user": "Kangverse",
+     "type": "user",
+     "name": "Kangverse"
+    },
+    "summary": "Recent advances in interactive world models have made it possible to generate controllable, dynamic environments from action inputs. Yet current models struggle to maintain coherence beyond roughly one minute of rollout, a limitation rooted not in model capacity but in the scarcity of long-horizon training data. Existing gameplay video datasets typically consist of clips under ten seconds, with captions that describe whole clips in coarse and undifferentiated text, which is insufficient for controllable long-horizon generation. We address this with GameVerse, a minute-scale gameplay video dataset purpose-built for long-horizon interactive world modeling. GameVerse contains 69.7K clips spanning 1,655 hours and 349.6 million frames across diverse first- and third-person gameplay, including 1,358 hours of continuous two-minute sequences, an order of magnitude longer than prior datasets. Clips pass through a unified pipeline of scene-consistent segmentation, quality filtering, camera pose estimation, and event-based caption annotation. Each clip is paired with a temporally stable camera trajectory that remains coherent across minutes, together with captions that separate static scene context from dynamic foreground events and align to event boundaries rather than fixed time windows. Comprehensive analysis shows that GameVerse surpasses existing public datasets in scale, diversity, and annotation quality. Experiments further demonstrate that training on GameVerse substantially extends the temporal horizon of interactive world models.",
+    "upvotes": 11,
+    "discussionId": "6aeab40b870269964d13a5a0",
+    "projectPage": "https://kangverse.github.io/GameVerse/",
+    "githubRepo": "https://github.com/kangverse/GameVerse",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "GameVerse is a large-scale gameplay dataset with minute-long sequences and event-aligned annotations that improves long-horizon interactive world modeling.",
+    "ai_keywords": [
+     "interactive world models",
+     "long-horizon generation",
+     "scene-consistent segmentation",
+     "camera pose estimation",
+     "event-based caption annotation",
+     "temporally stable camera trajectory"
+    ],
+    "ai_summary_model": "thinkingmachines/Inkling-Small",
+    "githubStars": 7,
+    "organization": {
+     "_id": "689f08c50df4fcf7fddc0b08",
+     "name": "AlayaLab",
+     "fullname": "Alaya Lab",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63342778d92c5842ae728aef/dNCvNz9MMshksG2xspIbM.png"
+    }
+   },
+   "publishedAt": "2026-10-30T20:00:00.000Z",
+   "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+   "summary": "Recent advances in interactive world models have made it possible to generate controllable, dynamic environments from action inputs. Yet current models struggle to maintain coherence beyond roughly one minute of rollout, a limitation rooted not in model capacity but in the scarcity of long-horizon training data. Existing gameplay video datasets typically consist of clips under ten seconds, with captions that describe whole clips in coarse and undifferentiated text, which is insufficient for controllable long-horizon generation. We address this with GameVerse, a minute-scale gameplay video dataset purpose-built for long-horizon interactive world modeling. GameVerse contains 69.7K clips spanning 1,655 hours and 349.6 million frames across diverse first- and third-person gameplay, including 1,358 hours of continuous two-minute sequences, an order of magnitude longer than prior datasets. Clips pass through a unified pipeline of scene-consistent segmentation, quality filtering, camera pose estimation, and event-based caption annotation. Each clip is paired with a temporally stable camera trajectory that remains coherent across minutes, together with captions that separate static scene context from dynamic foreground events and align to event boundaries rather than fixed time windows. Comprehensive analysis shows that GameVerse surpasses existing public datasets in scale, diversity, and annotation quality. Experiments further demonstrate that training on GameVerse substantially extends the temporal horizon of interactive world models.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.37257.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "621ebba3b4b193696d470642",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1646181255277-noauth.jpeg",
+    "fullname": "SII-Kang He",
+    "name": "Kangverse",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "689f08c50df4fcf7fddc0b08",
+    "name": "AlayaLab",
+    "fullname": "Alaya Lab",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63342778d92c5842ae728aef/dNCvNz9MMshksG2xspIbM.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2611.04166",
@@ -896,7 +1683,7 @@
      "sequence design"
     ],
     "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 2
+    "githubStars": 3
    },
    "publishedAt": "2026-11-02T14:00:07.000Z",
    "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
@@ -1096,7 +1883,7 @@
      "name": "happyiai"
     },
     "summary": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to +5.9 over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6aeb1fb6870269964d13a8ec",
     "githubRepo": "https://github.com/xingzhejun/MTA-OPSD",
     "githubRepoAddedBy": "user",
@@ -2248,7 +3035,7 @@
      "name": "Lruca"
     },
     "summary": "The advancement of multimodal learning is heavily constrained by the scarcity and high annotation cost of high-quality instruction data. While raw videos offer an abundant and dynamic source of visual knowledge, transforming them into precise instruction data remains highly challenging. To bridge this gap, we present VidUEU-Agent, an automated pipeline that synthesizes instruction data from raw videos for multimodal understanding, editing, and unified tasks. VidUEU-Agent follows a four-stage pipeline: it performs global perception to filter low-quality shots, mines keyframes and multimodal signals, constructs metadata and routes the metadata to synthesize instruction samples. More importantly, our agent framework can autonomously iterate the data distribution based on downstream training results, thereby optimizing data quality, balance, and training effectiveness. Scaling this pipeline, we construct VidUEU-100K, a large-scale dataset of 100K training samples spanning multiple domains and tasks, providing a robust foundation for developing comprehensive multimodal capabilities. Extensive experiments demonstrate that fine-tuning baseline models on VidUEU-100K yields significant and consistent performance gains across diverse representative benchmarks, validating the effectiveness of our proposed agent framework and dataset.",
-    "upvotes": 23,
+    "upvotes": 24,
     "discussionId": "6aeaa47d870269964d13a460",
     "githubRepo": "https://github.com/LRuca/VidUEU-Agent",
     "githubRepoAddedBy": "user",
@@ -2679,7 +3466,7 @@
      "name": "Qing145"
     },
     "summary": "LLM-based multi-agent systems (MAS) rely on collaboration among specialized agents to solve complex tasks. Existing methods improve MAS by refining the prompts, skills, and execution strategies of individual agents based on task feedback. However, improving individual agents does not necessarily lead to better team collaboration. Recent studies have therefore extended evolution to the collaboration level, using collective execution experience to adjust team organization, and inter-agent interactions. Nevertheless, evolving collaboration across heterogeneous tasks remains challenging, as existing approaches often constrain team reorganization within a shared structure and reuse interaction rules across incompatible team contexts. In this paper, we propose EvoTeam, a collaboration-centric evolution framework that jointly evolves team organization, interaction rules, and individual agent skills through execution experience. It maintains a library of reusable teams, selecting or creating agent teams and guiding collaboration through team-specific interaction rules. Collaboration experience accumulates within compatible team contexts, while individual skills remain reusable across teams. Experiments across four benchmarks demonstrate its effectiveness. Our code is available at https://github.com/DEEP-JLU/EvoTeam.",
-    "upvotes": 23,
+    "upvotes": 24,
     "discussionId": "6aeacefe870269964d13a6c6",
     "ai_summary": "EvoTeam evolves multi-agent collaboration by jointly adapting team organization, interaction rules, and agent skills through execution experience while maintaining reusable team libraries.",
     "ai_keywords": [
@@ -3606,7 +4393,7 @@
      "name": "ChilleD"
     },
     "summary": "GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-driven human-agent collaboration, where environments evolve as new tasks expand their functional scope, coding agents implement the required changes, and human contributors audit visual fidelity, functional correctness, and task validity. The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover. Beyond reliable evaluation, WebHarbor provides high-fidelity synthetic web environments for cost-efficient reinforcement learning (RL). We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks. The code and data are publicly available at https://github.com/aiming-lab/WebHarbor.",
-    "upvotes": 19,
+    "upvotes": 21,
     "discussionId": "6ae9fbc54cf0affa1ca73203",
     "projectPage": "https://aiming-lab.github.io/WebHarbor/",
     "githubRepo": "https://github.com/aiming-lab/WebHarbor",
@@ -3912,7 +4699,7 @@
      "name": "HarrisonPENG"
     },
     "summary": "Unified Multimodal Models (UMMs) integrate visual understanding, generation, and editing within a single unified framework. However, existing unified multimodal datasets and benchmarks remain dominated by single-turn tasks. Even in recent multi-turn datasets, many turns can be solved independently without tracking information across turns. Consequently, they provide limited supervision and evaluation for multimodal stateful interaction, which requires models to understand, maintain, update, and faithfully realize evolving dialogue states across turns. To address this gap, we introduce YANAMI, the first large-scale multimodal dialogue dataset and benchmark for stateful interaction, comprising YANAMI-400K and YANAMI-Bench. YANAMI-400K contains 400K multi-turn multimodal dialogues, with more than 2M images and 2.6M dialogue turns. The dialogues span four representative scenarios: Multi-Image Fusion, Image Editing, World Modeling, and Visual Reasoning, and require models to continuously track, preserve, and revise evolving multimodal dialogue states across turns. YANAMI-Bench comprises 400 multi-turn dialogues for systematically evaluating multimodal stateful interaction. It jointly evaluates Dialogue State Understanding and Visual Realization, characterizing the gap between models' ability to understand evolving dialogue states and their ability to faithfully realize them in visual outputs. Experiments show that fine-tuning BAGEL on YANAMI-400K improves image editing, generation, and multimodal stateful interaction by 10.3%, 2.0%, and 13.23%, respectively, while preserving its general visual understanding capabilities. Evaluations on YANAMI-Bench further reveal that existing UMMs still struggle to maintain, update, and visually realize evolving multimodal dialogue states.",
-    "upvotes": 26,
+    "upvotes": 28,
     "discussionId": "6aeabfcd870269964d13a61e",
     "projectPage": "https://rowletqwq.github.io/YANAMI/",
     "ai_summary": "YANAMI introduces a large-scale multimodal dialogue dataset and benchmark for stateful interaction, requiring models to track and realize evolving dialogue states across turns, and reveals that current unified multimodal models still struggle with this task.",
@@ -4151,7 +4938,7 @@
      "name": "IntJudge"
     },
     "summary": "Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model to master every capability, a promising path toward AGI now is to orchestrate a heterogeneous ecosystem of specialized models, tools, and policies (candidates) into a unified AI system. At the heart of this vision lies a fundamental question: how can an AI system dynamically select and coordinate the most capable candidate for each task while balancing performance and computational cost? In this work, we present Route Anything, a unified framework for studying model and policy routing across general-purpose AI systems. We develop a unified theoretical foundation that characterizes optimal routing under quality--cost trade-offs and establishes how the information available to a router determines its attainable performance. To systematically investigate routing across diverse capabilities, we first construct an omni-modal trajectory matrix spanning 25 benchmarks across language understanding, image, video, and speech generation, coding and workplace agents, and robotic manipulation, comprising 374,401 scored runs from 452 candidate configurations. Building on this framework, we train and test different routers to investigate the potential of omni-modal model routing, the capabilities of learned routers, and the conditions under which routing improves efficiency. Our results reveal substantial opportunities for capability orchestration: per-input oracle routing outperforms the best fixed candidate by 5.4 points, and learned routers outperform it by 0.3 points across 16 benchmarks, by 2.1 points on video generation, and by 1.1 points on robot manipulation while using 24% less policy time. More importantly, routing raises efficiency by 8.82x on average compared with the reference model.",
-    "upvotes": 85,
+    "upvotes": 86,
     "discussionId": "6aeab787870269964d13a5c7",
     "projectPage": "https://mikeeeeeeeeeeeeee.github.io/RouteAnything",
     "githubRepo": "https://github.com/InfRec-Cardinal/route-anything",
@@ -4241,7 +5028,7 @@
      "name": "ChrisBullet"
     },
     "summary": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is open beyond model weights: we release the complete recipe, including data construction, generation, filtering, verification, prompts, and training code, enabling the entire development process to be reproduced and extended. Axion 1.0 demonstrates that strong agent foundation models can be both open and simple, offering a practical and reproducible path toward advancing open agentic intelligence.",
-    "upvotes": 39,
+    "upvotes": 40,
     "discussionId": "6aea40834cf0affa1ca73434",
     "projectPage": "https://axion1-0.github.io/",
     "githubRepo": "https://github.com/bytedance/axion1_0",
@@ -4703,7 +5490,7 @@
      "name": "MisakiWang"
     },
     "summary": "AI reviewers are increasingly used to assess scientific manuscripts, yet it remains unclear whether their judgments reflect the improvements authors make through revision. We investigate this question using PaperTrajectory-2026, the 2026 release of PaperTrajectory, a dataset of 6,959 paper trajectories across five AI conferences, with automatic annotations of changes along 14 dimensions and separate judgments of overall quality. The annotations show that major improvements emphasize empirical evidence and framing, while later revisions tend toward incremental improvement. Using independent assessments of manuscript versions from eight AI reviewers, we examine whether annotated major improvements receive higher scores, which revision dimensions are associated with score changes, and whether user opinions can outweigh observed revision gains. Every reviewer leaves scores unchanged on most major improvements, and agreement on the direction of score changes is weak. Revision dimensions show some reviewer-specific associations with score increases, but provide limited predictive discrimination and no consistent guide across reviewers. Even when a revision earns a higher neutral score, a brief negative user opinion can erase or reverse that advantage, with substantial variation across reviewers. These findings show that substantive revisions are not consistently reflected in review scores and that observed scoring gains can be vulnerable to user framing, motivating assessments that connect manuscript evidence to overall judgments and remain stable when no scientific evidence changes.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6ae9f4384cf0affa1ca731a3",
     "githubRepo": "https://github.com/c-steve-wang/PaperTrace",
     "githubRepoAddedBy": "user",
@@ -4825,7 +5612,7 @@
      "name": "Jethro37"
     },
     "summary": "A robot generalist must interpret a scene, act on it, and satisfy every condition of a task. How far do frontier vision-language models (VLMs) meet these demands? We introduce Embodied Agent Arena, evaluating ten VLM agents across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. Its 1,000 cases combine 32 established sources with GeoProbe, our 168-case benchmark for camera, motion, depth, and scale estimation. A minimal harness leaves task decisions to the model through source-native interfaces. Closed-weight models lead all five domains, whereas open-weight VLMs show useful spatial reasoning but substantially lower planning and manipulation success. Beneath these averages, similar geometric errors conceal different scale and shape distortions, and valid region estimates need not identify usable action points. During execution, agents can achieve early subgoals yet lose object control, bind an action to the wrong receiving region, or stop before the required physical state holds. Additional computation does not uniformly resolve these failures: code repair can restore execution without completing the task, while self-review can reverse correct judgments. Failure costs also differ: the strongest planners concentrate failed-token expenditure in prolonged body-control tasks, whereas other models fail broadly across procedures. Matched traces show how successful recovery uses feedback to restore a missing prerequisite and advance the remaining task.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6aeaa503870269964d13a493",
     "projectPage": "https://embodied-agent-arena.github.io/embodied-agent-arena/",
     "githubRepo": "https://github.com/embodied-agent-arena/embodied-agent-arena",
@@ -5311,7 +6098,7 @@
      "name": "LongoXC"
     },
     "summary": "Video generation has progressed from isolated clips to coherent short-form audiovisual sequences, and the bottleneck is shifting from rendering to semantic control. This report summarizes the observations and insights on multimodal understanding gained from successive generations of Kling. We argue that generation quality is the projection of multimodal understanding through the entire data--conditioning--alignment--evaluation chain, and we examine this chain module by module. Kling-MLLM, a shared multimodal foundation model that unifies image, video, audio, synchronized audio--video, and interleaved inputs, is specialized for each downstream module. Because a DiT is trained on far fewer training samples than a language model, we treat captioning as a semantic contract that maximizes description density, and extend it to reference-grounded captioning that makes reference bindings explicit. Prompt enhancement translates user intent into this caption distribution: basic PE is derived from captions of compelling videos and refined with text-level and generator-in-the-loop reinforcement learning, while agentic PE refines the story and retrieves compelling examples. We show that a reliable text encoder comes from perceptual training rather than from stronger language ability, and that candidates can be screened from text alone before end-to-end training. Reward modeling pairs a general reward model for explainable, localized critiques with a decision reward model for fast multidimensional scoring, treating perceptual bandwidth as a first-class design parameter. Finally, we review task-specific automatic evaluation, focusing on protocols that expose scoring shortcuts and help trace failures to their upstream source. We hope these lessons offer practical guidance for building the understanding stack behind controllable video generation.",
-    "upvotes": 51,
+    "upvotes": 53,
     "discussionId": "6aeaa8b5870269964d13a507",
     "projectPage": "https://klingai.com/app",
     "ai_summary": "Kling's multimodal understanding stack links caption density, perceptual text encoding, reward modeling, and evaluation protocols to improve controllable video generation.",
@@ -5458,844 +6245,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.03685",
-    "authors": [
-     {
-      "_id": "6aeaa734870269964d13a4b8",
-      "name": "Zhaojian Yu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "LOLPlay: Benchmarking Real-Time Visual Agents in League of Legends",
-    "submittedOnDailyBy": {
-     "_id": "646f3443c261dc413383b8a4",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/646f3443c261dc413383b8a4/7R2XX3VqQ6DmgQoMU7Un4.jpeg",
-     "isPro": false,
-     "fullname": "Zhaojian Yu",
-     "user": "zjy2001",
-     "type": "user",
-     "name": "zjy2001"
-    },
-    "summary": "Visual agents need to coordinate reasoning and action while their environment evolves during inference. We introduce LOLPlay, a benchmark in native League of Legends with 36 champion-specific tasks spanning resource management, combat, cooperation, and objectives. Agents interact through screenshots and mouse--keyboard actions; automated initialization and 82 executable subgoal checks distinguish partial progress from completion. Across 324 task evaluations of three models at three reasoning-effort settings, GPT-6 Astra achieves the highest task success rate of 25.0\\% at low and medium effort, and the highest subgoal success rate of 40.3\\% at medium effort. However, high effort improves neither metric over low effort for any model. For Astra, longer requests leave fewer interaction rounds, suggesting a cost to additional reasoning in real-time control. Trajectories reveal incomplete subgoal composition and actions executing after the observed scene changes, motivating agents that combine visual reasoning with timely action.",
-    "upvotes": 6,
-    "discussionId": "6aeaa734870269964d13a4b9",
-    "projectPage": "https://answers111.github.io/LOL-Play-homepage/",
-    "githubRepo": "https://github.com/answers111/LOLPlay",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "LOLPlay evaluates visual agents on real-time League of Legends tasks, finding that increased reasoning effort does not improve success and can reduce interaction time.",
-    "ai_keywords": [
-     "LOLPlay",
-     "visual agents",
-     "reasoning and action",
-     "subgoal checks",
-     "GPT-6 Astra",
-     "interaction rounds",
-     "visual reasoning"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 4
-   },
-   "publishedAt": "2026-10-24T20:00:00.000Z",
-   "title": "LOLPlay: Benchmarking Real-Time Visual Agents in League of Legends",
-   "summary": "Visual agents need to coordinate reasoning and action while their environment evolves during inference. We introduce LOLPlay, a benchmark in native League of Legends with 36 champion-specific tasks spanning resource management, combat, cooperation, and objectives. Agents interact through screenshots and mouse--keyboard actions; automated initialization and 82 executable subgoal checks distinguish partial progress from completion. Across 324 task evaluations of three models at three reasoning-effort settings, GPT-6 Astra achieves the highest task success rate of 25.0\\% at low and medium effort, and the highest subgoal success rate of 40.3\\% at medium effort. However, high effort improves neither metric over low effort for any model. For Astra, longer requests leave fewer interaction rounds, suggesting a cost to additional reasoning in real-time control. Trajectories reveal incomplete subgoal composition and actions executing after the observed scene changes, motivating agents that combine visual reasoning with timely action.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.03685.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "646f3443c261dc413383b8a4",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/646f3443c261dc413383b8a4/7R2XX3VqQ6DmgQoMU7Un4.jpeg",
-    "fullname": "Zhaojian Yu",
-    "name": "zjy2001",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 12,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.39251",
-    "authors": [
-     {
-      "_id": "6aeaa639870269964d13a4a8",
-      "name": "Yuxiang Chai",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa639870269964d13a4a9",
-      "name": "Quyu Kong",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa639870269964d13a4aa",
-      "name": "Panrong Tong",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa639870269964d13a4ab",
-      "name": "Steven Hoi",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa639870269964d13a4ac",
-      "name": "Yue Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
-    "submittedOnDailyBy": {
-     "_id": "6458ce236fa580137af5aa95",
-     "avatarUrl": "/avatars/d9927eeb6497fa49bd5edc8b9bfbfb97.svg",
-     "isPro": false,
-     "fullname": "Yuxiang Chai",
-     "user": "Yuxiang007",
-     "type": "user",
-     "name": "Yuxiang007"
-    },
-    "summary": "Trajectory-level GRPO is a common approach for training multi-step GUI agents, but repeatedly rolling out complete trajectories from the task root can be inefficient: task-level rewards provide coarse supervision over which intermediate decisions require improvement, while already-mastered prefixes are repeatedly re-executed before reaching difficult states. We introduce a two-stage adaptive training framework that jointly addresses where to learn and how far to roll out. We first construct reusable intermediate checkpoints from successful expert trajectories and select informative pivots using action disagreement, which measures uncertainty directly from sampled GUI actions. Stage I performs one-step RL at these pivots to improve uncertain local decisions. Stage II then progressively expands policy responsibility through adaptive Local, Suffix, and Root training according to task progress. Recoverable checkpoints enable repeated training from intermediate states without replaying the preceding trajectory. Across MobileGym and CUA-Gym-Hub, our method reduces environment interaction by 56-61% relative to Vanilla GRPO while improving task performance, demonstrating that jointly allocating training across states and rollout ranges can substantially improve GUI-agent RL efficiency.",
-    "upvotes": 2,
-    "discussionId": "6aeaa639870269964d13a4ad",
-    "ai_summary": "A two-stage adaptive framework improves multi-step GUI agent training by using intermediate checkpoints and selective rollout ranges to reduce environment interactions while boosting performance.",
-    "ai_keywords": [
-     "GRPO",
-     "trajectory-level RL",
-     "intermediate checkpoints",
-     "action disagreement",
-     "one-step RL",
-     "adaptive rollout",
-     "Local training",
-     "Suffix training",
-     "Root training",
-     "GUI agents"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-10-28T20:00:00.000Z",
-   "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
-   "summary": "Trajectory-level GRPO is a common approach for training multi-step GUI agents, but repeatedly rolling out complete trajectories from the task root can be inefficient: task-level rewards provide coarse supervision over which intermediate decisions require improvement, while already-mastered prefixes are repeatedly re-executed before reaching difficult states. We introduce a two-stage adaptive training framework that jointly addresses where to learn and how far to roll out. We first construct reusable intermediate checkpoints from successful expert trajectories and select informative pivots using action disagreement, which measures uncertainty directly from sampled GUI actions. Stage I performs one-step RL at these pivots to improve uncertain local decisions. Stage II then progressively expands policy responsibility through adaptive Local, Suffix, and Root training according to task progress. Recoverable checkpoints enable repeated training from intermediate states without replaying the preceding trajectory. Across MobileGym and CUA-Gym-Hub, our method reduces environment interaction by 56-61% relative to Vanilla GRPO while improving task performance, demonstrating that jointly allocating training across states and rollout ranges can substantially improve GUI-agent RL efficiency.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.39251.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6458ce236fa580137af5aa95",
-    "avatarUrl": "/avatars/d9927eeb6497fa49bd5edc8b9bfbfb97.svg",
-    "fullname": "Yuxiang Chai",
-    "name": "Yuxiang007",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.04870",
-    "authors": [
-     {
-      "_id": "6aeaa4c9870269964d13a46d",
-      "name": "Travis Davies",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a46e",
-      "name": "Wentao Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a46f",
-      "name": "Lihao Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a470",
-      "name": "Tengfei Ma",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a471",
-      "name": "Xiaowen Chang",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a472",
-      "name": "Jiafeng Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a473",
-      "name": "Shilong Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a474",
-      "name": "Yiqi Deng",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a475",
-      "name": "Shaowen He",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a476",
-      "name": "Xiaoqi Li",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a477",
-      "name": "Qian Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a478",
-      "name": "Ran Cheng",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa4c9870269964d13a479",
-      "name": "Hao Dong",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-03T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations",
-    "submittedOnDailyBy": {
-     "_id": "6808582cddf841838b58f1a0",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fhkTu3jWHuPkZvNH4uvOV.png",
-     "isPro": false,
-     "fullname": "Travis Davies",
-     "user": "travisddavies",
-     "type": "user",
-     "name": "travisddavies"
-    },
-    "summary": "A robot world model that serves as a simulator must do more than generate plausible videos: it must faithfully follow commanded actions, maintain consistency across camera views, and sustain coherent long-horizon rollouts. We present PrimeSim, an action-conditioned, multiview world model simulator that addresses these challenges through progressive midtraining and posttraining. Starting from a pretrained video generator, we midtrain on 30,110 hours of robot demonstrations spanning 22 platforms. To improve action following, we introduce a unified cross-embodiment action representation and frame-aligned dual-path conditioning to strengthen action-frame correspondence. To maintain multiview consistency, we develop view-aware interleaved attention with explicit camera identities, enabling cross-view information exchange while preserving view-specific representations. We further introduce a fast-video, slow-memory posttraining framework that transforms the bidirectional video generator into an efficient autoregressive simulator. By combining fast causal generation, self-rollout training, and hierarchical temporal memory, PrimeSim mitigates error accumulation from self-generated histories and supports coherent long-horizon simulation. PrimeSim runs at 10.1 FPS, remains stable over long-horizon rollouts on rigid and deformable manipulation tasks, and transfers to held-out platforms within 100 to 200 gradient steps where the pretrained backbone does not. Against five open-source action-conditioned world models it leads four of the five WorldSimProbe suites and posts the best overall EWMBench score, while fine-grained local calibration still trails the field; its rollouts are faithful enough to support GRPO-based policy optimization. We release the model weights, inference code, and training code.",
-    "upvotes": 9,
-    "discussionId": "6aeaa4c9870269964d13a47a",
-    "projectPage": "https://primebottech.github.io/PrimeSim-website/",
-    "ai_summary": "PrimeSim is an action-conditioned multiview world model that uses progressive training, unified action representations, view-aware attention, and hierarchical memory to enable consistent, long-horizon robot simulation and policy optimization.",
-    "ai_keywords": [
-     "action-conditioned world model",
-     "progressive midtraining",
-     "cross-embodiment action representation",
-     "dual-path conditioning",
-     "view-aware interleaved attention",
-     "autoregressive simulator",
-     "self-rollout training",
-     "hierarchical temporal memory",
-     "GRPO-based policy optimization"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small"
-   },
-   "publishedAt": "2026-11-02T19:00:00.000Z",
-   "title": "PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations",
-   "summary": "A robot world model that serves as a simulator must do more than generate plausible videos: it must faithfully follow commanded actions, maintain consistency across camera views, and sustain coherent long-horizon rollouts. We present PrimeSim, an action-conditioned, multiview world model simulator that addresses these challenges through progressive midtraining and posttraining. Starting from a pretrained video generator, we midtrain on 30,110 hours of robot demonstrations spanning 22 platforms. To improve action following, we introduce a unified cross-embodiment action representation and frame-aligned dual-path conditioning to strengthen action-frame correspondence. To maintain multiview consistency, we develop view-aware interleaved attention with explicit camera identities, enabling cross-view information exchange while preserving view-specific representations. We further introduce a fast-video, slow-memory posttraining framework that transforms the bidirectional video generator into an efficient autoregressive simulator. By combining fast causal generation, self-rollout training, and hierarchical temporal memory, PrimeSim mitigates error accumulation from self-generated histories and supports coherent long-horizon simulation. PrimeSim runs at 10.1 FPS, remains stable over long-horizon rollouts on rigid and deformable manipulation tasks, and transfers to held-out platforms within 100 to 200 gradient steps where the pretrained backbone does not. Against five open-source action-conditioned world models it leads four of the five WorldSimProbe suites and posts the best overall EWMBench score, while fine-grained local calibration still trails the field; its rollouts are faithful enough to support GRPO-based policy optimization. We release the model weights, inference code, and training code.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04870.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6808582cddf841838b58f1a0",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fhkTu3jWHuPkZvNH4uvOV.png",
-    "fullname": "Travis Davies",
-    "name": "travisddavies",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2610.40747",
-    "authors": [
-     {
-      "_id": "6aea9f1c870269964d13a40a",
-      "name": "Xiaoyi Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a40b",
-      "user": {
-       "_id": "670688ff871cde29c7cc9584",
-       "avatarUrl": "/avatars/e4f687fe8e813f436d2eb2ee4ec8655b.svg",
-       "isPro": false,
-       "fullname": "haoqingeric",
-       "user": "hqeric",
-       "type": "user",
-       "name": "hqeric"
-      },
-      "name": "Haoqing Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T20:33:09.325Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a40c",
-      "name": "Xinjie Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a40d",
-      "name": "Xiang Ming",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a40e",
-      "name": "Xing Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a40f",
-      "name": "Senqiao Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a410",
-      "name": "Kaichen Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a411",
-      "name": "Zhaoyang Jia",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a412",
-      "name": "Andong Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a413",
-      "name": "Xinjiang Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a414",
-      "name": "Jinghao Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a415",
-      "name": "Yifei Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a416",
-      "name": "Xiao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a417",
-      "name": "Peng Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a418",
-      "name": "Xun Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a419",
-      "name": "Jiahao Li",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41a",
-      "name": "Shicheng Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41b",
-      "name": "Jinglu Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41c",
-      "name": "Zongyu Guo",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41d",
-      "name": "Wenxuan Xie",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41e",
-      "name": "Bin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9f1c870269964d13a41f",
-      "name": "Yan Lu",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6582b79aafc6b50a2cbaa5c8/JoysxRx-nbXY9wgXgSTeR.png"
-    ],
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
-    "submittedOnDailyBy": {
-     "_id": "6582b79aafc6b50a2cbaa5c8",
-     "avatarUrl": "/avatars/73ad1c05ad945aee8e8003b69c0c14f7.svg",
-     "isPro": false,
-     "fullname": "Xiaoyi Zhang",
-     "user": "xyzhang626",
-     "type": "user",
-     "name": "xyzhang626"
-    },
-    "summary": "Effective computer-use agents (CUAs) should seamlessly combine visual GUI interaction with code and terminal execution within a single policy. We present Mage-VL-Cowork, a 4B hybrid CUA trained from a general multimodally aligned checkpoint through an end-to-end, progressive five-stage curriculum across midtraining, SFT, and RL. To power this curriculum at scale, Mage-CUA-Forge replaces per-task agent construction with reusable, skill-conditioned generation workflows and application-specific preparers, synthesizing 293,806 desktop and web tasks across 6,915 skills while reducing recurring per-task expenditure by 82.6%. Rather than directly distilling a default teacher, we evolve the teacher harness and instantiate specialized CUA harnesses to yield high-quality trajectories alongside stage-specific supervision. Mage-VL-Cowork-4B finally climbs to 66.0% on OSWorld-Verified through different training stages with more efficient reasoning cost, achieving state-of-the-art performance at its parameter size and pushing forward the frontier of on-device intelligence.",
-    "upvotes": 12,
-    "discussionId": "6aea9f1d870269964d13a420",
-    "projectPage": "https://microsoft.github.io/Mage/cowork/",
-    "ai_summary": "Mage-VL-Cowork is a 4B hybrid computer-use agent trained via a progressive curriculum and scalable synthetic data generation, achieving state-of-the-art performance on OSWorld-Verified with efficient reasoning.",
-    "ai_keywords": [
-     "computer-use agents",
-     "multimodal alignment",
-     "curriculum learning",
-     "supervised fine-tuning",
-     "reinforcement learning",
-     "skill-conditioned generation",
-     "trajectory synthesis",
-     "OSWorld-Verified",
-     "on-device intelligence"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "5e6485f787403103f9f1055e",
-     "name": "microsoft",
-     "fullname": "Microsoft",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
-    }
-   },
-   "publishedAt": "2026-10-28T20:00:00.000Z",
-   "title": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
-   "summary": "Effective computer-use agents (CUAs) should seamlessly combine visual GUI interaction with code and terminal execution within a single policy. We present Mage-VL-Cowork, a 4B hybrid CUA trained from a general multimodally aligned checkpoint through an end-to-end, progressive five-stage curriculum across midtraining, SFT, and RL. To power this curriculum at scale, Mage-CUA-Forge replaces per-task agent construction with reusable, skill-conditioned generation workflows and application-specific preparers, synthesizing 293,806 desktop and web tasks across 6,915 skills while reducing recurring per-task expenditure by 82.6%. Rather than directly distilling a default teacher, we evolve the teacher harness and instantiate specialized CUA harnesses to yield high-quality trajectories alongside stage-specific supervision. Mage-VL-Cowork-4B finally climbs to 66.0% on OSWorld-Verified through different training stages with more efficient reasoning cost, achieving state-of-the-art performance at its parameter size and pushing forward the frontier of on-device intelligence.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6582b79aafc6b50a2cbaa5c8/JoysxRx-nbXY9wgXgSTeR.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.40747.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6582b79aafc6b50a2cbaa5c8",
-    "avatarUrl": "/avatars/73ad1c05ad945aee8e8003b69c0c14f7.svg",
-    "fullname": "Xiaoyi Zhang",
-    "name": "xyzhang626",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "5e6485f787403103f9f1055e",
-    "name": "microsoft",
-    "fullname": "Microsoft",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.04035",
-    "authors": [
-     {
-      "_id": "6aea9aa2870269964d13a3ae",
-      "name": "Erkang Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9aa2870269964d13a3af",
-      "user": {
-       "_id": "6abd4e79540e134924400206",
-       "avatarUrl": "/avatars/6347faa9d47f15ad8d3b565fb0d5c96f.svg",
-       "isPro": false,
-       "fullname": "Yin Lin",
-       "user": "niceirene",
-       "type": "user",
-       "name": "niceirene"
-      },
-      "name": "Yin Lin",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T08:45:05.265Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9aa2870269964d13a3b0",
-      "name": "Xiaorong Shi",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9aa2870269964d13a3b1",
-      "name": "Xuanrui Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9aa2870269964d13a3b2",
-      "name": "Jingren Zhou",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "Recursa: Toward Recursively Self-Improving Foundation Model Systems",
-    "submittedOnDailyBy": {
-     "_id": "6abd4e79540e134924400206",
-     "avatarUrl": "/avatars/6347faa9d47f15ad8d3b565fb0d5c96f.svg",
-     "isPro": false,
-     "fullname": "Yin Lin",
-     "user": "niceirene",
-     "type": "user",
-     "name": "niceirene"
-    },
-    "summary": "Foundation models in changing environments can encounter unfamiliar domain knowledge that their original training did not cover. However, new domains rarely provide large amounts of expert-created training data or reliable supervisory signals for further training. We introduce Recursa, a foundation model system that adapts to new domains by learning from its own experience without human experts or a stronger teacher model. Recursa uses a knowledge repository to store what it learns: domain-specific skills and instructions on when to apply them, along with memories of past task experiences and reflections on what to improve. Recursa bootstraps the repository from domain materials and then refines it through recursive self-improvement. It uses parallel learners to execute tasks and synthesize local improvements, then validates and merges the improvements into the knowledge repository. On Harvey LAB's Firm Knowledge benchmark, Recursa raises the all-pass rate on held-out test tasks from 30.0% to 55.0% with DeepSeek-V4.1-Flash and from 35.0% to 46.0% with Qwen3.8-Flash.",
-    "upvotes": 11,
-    "discussionId": "6aea9aa2870269964d13a3b3",
-    "ai_summary": "Recursa is a self-improving foundation model system that adapts to new domains by recursively learning from its own experience, storing skills and reflections in a knowledge repository, and validating improvements without human supervision or stronger teachers.",
-    "ai_keywords": [
-     "foundation model",
-     "recursive self-improvement",
-     "knowledge repository",
-     "parallel learners",
-     "domain adaptation"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "68be41370a3fcebdcad6516a",
-     "name": "alibabagroup",
-     "fullname": "alibaba",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68be3ab7e52df040b2cf80dc/li4G29u_EGswyTN1Sm_Kq.png"
-    }
-   },
-   "publishedAt": "2026-11-01T19:00:00.000Z",
-   "title": "Recursa: Toward Recursively Self-Improving Foundation Model Systems",
-   "summary": "Foundation models in changing environments can encounter unfamiliar domain knowledge that their original training did not cover. However, new domains rarely provide large amounts of expert-created training data or reliable supervisory signals for further training. We introduce Recursa, a foundation model system that adapts to new domains by learning from its own experience without human experts or a stronger teacher model. Recursa uses a knowledge repository to store what it learns: domain-specific skills and instructions on when to apply them, along with memories of past task experiences and reflections on what to improve. Recursa bootstraps the repository from domain materials and then refines it through recursive self-improvement. It uses parallel learners to execute tasks and synthesize local improvements, then validates and merges the improvements into the knowledge repository. On Harvey LAB's Firm Knowledge benchmark, Recursa raises the all-pass rate on held-out test tasks from 30.0% to 55.0% with DeepSeek-V4.1-Flash and from 35.0% to 46.0% with Qwen3.8-Flash.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.04035.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6abd4e79540e134924400206",
-    "avatarUrl": "/avatars/6347faa9d47f15ad8d3b565fb0d5c96f.svg",
-    "fullname": "Yin Lin",
-    "name": "niceirene",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68be41370a3fcebdcad6516a",
-    "name": "alibabagroup",
-    "fullname": "alibaba",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68be3ab7e52df040b2cf80dc/li4G29u_EGswyTN1Sm_Kq.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.02501",
-    "authors": [
-     {
-      "_id": "6aeaa0af870269964d13a444",
-      "name": "Kunjun Li",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a445",
-      "name": "Wenhao Chai",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a446",
-      "name": "Yihao Liang",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a447",
-      "name": "Yuezhou Hu",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a448",
-      "name": "Shuyao Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a449",
-      "name": "Yi Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a44a",
-      "name": "William X. Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a44b",
-      "name": "Kannan Ramchandran",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a44c",
-      "name": "Kurt Keutzer",
-      "hidden": false
-     },
-     {
-      "_id": "6aeaa0af870269964d13a44d",
-      "name": "Jiantao Jiao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
-    "submittedOnDailyBy": {
-     "_id": "6540ef0e733c1ce6a6fc989a",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6540ef0e733c1ce6a6fc989a/lyDLbmJ-h4nUmkWZCvWtg.jpeg",
-     "isPro": false,
-     "fullname": "Kunjun Li",
-     "user": "stargazerx0",
-     "type": "user",
-     "name": "stargazerx0"
-    },
-    "summary": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward pass. However, it remains unclear whether their released systems (stock) attain the full speedup that parallel drafting permits. We identify three challenges. First, with one request, each step accepts few tokens but reads every target weight. Second, with batching, per-request verification work roughly halves the speedup over autoregressive (AR) decoding. Third, speculative decoding is deployment-specific, and no universal optimization fits every serving regime, drafter, target model and GPU. To address these challenges, we present SpecPilot, an autonomous agentic loop that discovers algorithms and systems optimizations for each deployment. In each round, a cost model locates the largest gaps between the current system and its ceiling. Parallel agents explore directions and integrate the successful ones. Token forcing checks every output token against stock to detect reward hacking. A structured memory carries validated mechanisms to new rounds and deployments. SpecPilot discovered a general lossless 12-bit weight format, tree verification for hybrid recurrent targets, two-level verification and three batching mechanisms. We evaluate it across four target models, three drafters, two GPU platforms and five benchmarks. Without training or quality loss, it raises the speedup over AR from stock's 4.46times to 10.87times with one request, and from 1.94times to 3.93times with batching.",
-    "upvotes": 16,
-    "discussionId": "6aeaa0b0870269964d13a44e",
-    "projectPage": "https://stargazerx0.github.io/specpilot-project-page/",
-    "githubRepo": "https://github.com/StargazerX0/SpecPilot",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "SpecPilot autonomously discovers deployment-specific algorithms and system optimizations to maximize speculative decoding speedups across diverse models, drafters, and serving regimes without quality loss.",
-    "ai_keywords": [
-     "speculative decoding",
-     "parallel drafters",
-     "token verification",
-     "batching mechanisms",
-     "weight quantization",
-     "tree verification",
-     "autonomous optimization",
-     "LLM decoding"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "githubStars": 82,
-    "organization": {
-     "_id": "66b1baeff10262fc4fa61961",
-     "name": "UCBerkeley",
-     "fullname": "University of California, Berkeley",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f425c3a096536aeab42dea/bxNKEkprdm5JI1wkjmNAL.png"
-    }
-   },
-   "publishedAt": "2026-11-01T19:00:00.000Z",
-   "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
-   "summary": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward pass. However, it remains unclear whether their released systems (stock) attain the full speedup that parallel drafting permits. We identify three challenges. First, with one request, each step accepts few tokens but reads every target weight. Second, with batching, per-request verification work roughly halves the speedup over autoregressive (AR) decoding. Third, speculative decoding is deployment-specific, and no universal optimization fits every serving regime, drafter, target model and GPU. To address these challenges, we present SpecPilot, an autonomous agentic loop that discovers algorithms and systems optimizations for each deployment. In each round, a cost model locates the largest gaps between the current system and its ceiling. Parallel agents explore directions and integrate the successful ones. Token forcing checks every output token against stock to detect reward hacking. A structured memory carries validated mechanisms to new rounds and deployments. SpecPilot discovered a general lossless 12-bit weight format, tree verification for hybrid recurrent targets, two-level verification and three batching mechanisms. We evaluate it across four target models, three drafters, two GPU platforms and five benchmarks. Without training or quality loss, it raises the speedup over AR from stock's 4.46times to 10.87times with one request, and from 1.94times to 3.93times with batching.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02501.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6540ef0e733c1ce6a6fc989a",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6540ef0e733c1ce6a6fc989a/lyDLbmJ-h4nUmkWZCvWtg.jpeg",
-    "fullname": "Kunjun Li",
-    "name": "stargazerx0",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66b1baeff10262fc4fa61961",
-    "name": "UCBerkeley",
-    "fullname": "University of California, Berkeley",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63f425c3a096536aeab42dea/bxNKEkprdm5JI1wkjmNAL.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.02079",
-    "authors": [
-     {
-      "_id": "6aea9fdc870269964d13a423",
-      "user": {
-       "_id": "64764b7e8153ce2399486135",
-       "avatarUrl": "/avatars/265dada11f0caa2bf204539927972f30.svg",
-       "isPro": false,
-       "fullname": "Xingzhi Qian",
-       "user": "felixqxz",
-       "type": "user",
-       "name": "felixqxz"
-      },
-      "name": "Xingzhi Qian",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T16:45:04.544Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a424",
-      "user": {
-       "_id": "648804a275e78c1ebb7755bf",
-       "avatarUrl": "/avatars/9454b050dd260dbb9ea04de028abf1e3.svg",
-       "isPro": false,
-       "fullname": "Sungho Park",
-       "user": "pshlego",
-       "type": "user",
-       "name": "pshlego"
-      },
-      "name": "Sungho Park",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-04T08:45:05.287Z",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a425",
-      "name": "Rongyuan Tan",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a426",
-      "name": "Jianbo Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a427",
-      "name": "Jue Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a428",
-      "name": "Lorenzo Cavallaro",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a429",
-      "name": "Menglin Xia",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42a",
-      "name": "Yanzhi Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42b",
-      "name": "Xinnuo Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42c",
-      "name": "Yu Kang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42d",
-      "name": "Xinran Zheng",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42e",
-      "name": "Gagan Somashekar",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a42f",
-      "name": "Xuchao Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a430",
-      "name": "Chetan Bansal",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a431",
-      "name": "Qingwei Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6aea9fdc870269964d13a432",
-      "name": "Victor Rühle",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-01T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-04T00:00:00.000Z",
-    "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
-    "submittedOnDailyBy": {
-     "_id": "65f40e43653c231cbaf7d1e4",
-     "avatarUrl": "/avatars/fd9bf59475294294e19f7eb273350368.svg",
-     "isPro": false,
-     "fullname": "Jue Zhang",
-     "user": "JueZhang",
-     "type": "user",
-     "name": "JueZhang"
-    },
-    "summary": "Harness optimization can substantially improve LLM agents without modifying model weights, but existing methods primarily optimize response quality. Extending them to joint quality--cost optimization introduces a challenge: applying the deployment preference during intermediate updates can prematurely reject candidates that are valuable for later improvements. We introduce ParetoSaddler, which addresses this mismatch by separating intermediate candidate promotion from final deployment selection. At each iteration, an optimizer updates a parent harness to produce a candidate, and then compares the two over repeated executions and uses Bayesian bootstrap Pareto support to promote candidates showing credible progress in either quality or cost. Promoted candidates receive broader development evaluation and remain available as parents for later optimization steps. We evaluate ParetoSaddler on ClawMark and GAIA2 using domain-disjoint splits. On ClawMark, ParetoSaddler improves quality from 70.86\\% to 81.35\\% while reducing cost from \\1.17 to 1.01 per task; on GAIA2, it improves quality from 56.22\\% to 62.89\\% while reducing cost from \\0.78 to 0.45 per task. The Pareto-selected harnesses also achieve higher quality at lower cost than quality-only harness optimization. Analysis shows that Pareto-aware optimization retains intermediate candidates that would be discarded by deployment preference but can support later improvements, while Bayesian bootstrap screening filters out candidates whose gains are weakly supported across runs.",
-    "upvotes": 16,
-    "discussionId": "6aea9fdd870269964d13a433",
-    "projectPage": "https://autosaddler-projectpage.github.io/ParetoSaddler/",
-    "ai_summary": "ParetoSaddler improves LLM agent harnesses by separately promoting intermediate candidates via Bayesian bootstrap Pareto support and selecting final deployments, boosting quality while reducing cost.",
-    "ai_keywords": [
-     "ParetoSaddler",
-     "harness optimization",
-     "LLM agents",
-     "Bayesian bootstrap",
-     "Pareto support",
-     "quality-cost optimization"
-    ],
-    "ai_summary_model": "thinkingmachines/Inkling-Small",
-    "organization": {
-     "_id": "5e6485f787403103f9f1055e",
-     "name": "microsoft",
-     "fullname": "Microsoft",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
-    }
-   },
-   "publishedAt": "2026-10-31T20:00:00.000Z",
-   "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
-   "summary": "Harness optimization can substantially improve LLM agents without modifying model weights, but existing methods primarily optimize response quality. Extending them to joint quality--cost optimization introduces a challenge: applying the deployment preference during intermediate updates can prematurely reject candidates that are valuable for later improvements. We introduce ParetoSaddler, which addresses this mismatch by separating intermediate candidate promotion from final deployment selection. At each iteration, an optimizer updates a parent harness to produce a candidate, and then compares the two over repeated executions and uses Bayesian bootstrap Pareto support to promote candidates showing credible progress in either quality or cost. Promoted candidates receive broader development evaluation and remain available as parents for later optimization steps. We evaluate ParetoSaddler on ClawMark and GAIA2 using domain-disjoint splits. On ClawMark, ParetoSaddler improves quality from 70.86\\% to 81.35\\% while reducing cost from \\1.17 to 1.01 per task; on GAIA2, it improves quality from 56.22\\% to 62.89\\% while reducing cost from \\0.78 to 0.45 per task. The Pareto-selected harnesses also achieve higher quality at lower cost than quality-only harness optimization. Analysis shows that Pareto-aware optimization retains intermediate candidates that would be discarded by deployment preference but can support later improvements, while Bayesian bootstrap screening filters out candidates whose gains are weakly supported across runs.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.02079.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "65f40e43653c231cbaf7d1e4",
-    "avatarUrl": "/avatars/fd9bf59475294294e19f7eb273350368.svg",
-    "fullname": "Jue Zhang",
-    "name": "JueZhang",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "5e6485f787403103f9f1055e",
-    "name": "microsoft",
-    "fullname": "Microsoft",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
