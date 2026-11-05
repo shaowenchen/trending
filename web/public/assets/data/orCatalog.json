@@ -1,84 +1,9 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-05T06:16:01.135Z",
+ "fetchedAt": "2026-11-05T08:31:08.712Z",
  "payload": {
   "data": [
-   {
-    "id": "inclusionai/ling-3.0-tiny",
-    "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
-    "hugging_face_id": "inclusionAI/Ling-3.0-tiny",
-    "name": "inclusionAI: Ling 3.0 Tiny",
-    "created": 1793858375,
-    "description": "Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable...",
-    "context_length": 262144,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Other",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0.000000015",
-     "completion": "0.000000045",
-     "input_cache_read": "0.000000003"
-    },
-    "top_provider": {
-     "context_length": 262144,
-     "max_completion_tokens": 250000,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logprobs",
-     "max_tokens",
-     "presence_penalty",
-     "reasoning",
-     "response_format",
-     "seed",
-     "stop",
-     "temperature",
-     "tools",
-     "top_logprobs",
-     "top_p"
-    ],
-    "default_parameters": {
-     "temperature": 1,
-     "top_p": 0.95,
-     "top_k": 20
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/inclusionai/ling-3.0-tiny-20260806/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ],
-    "benchmarks": {
-     "design_arena": [],
-     "artificial_analysis": {
-      "intelligence_index": null,
-      "coding_index": 26.5,
-      "agentic_index": 4.4
-     }
-    },
-    "reasoning": {
-     "mandatory": false,
-     "default_enabled": true
-    }
-   },
    {
     "id": "ricursiveai/ripple-65b-preview",
     "canonical_slug": "ricursiveai/ripple-65b-preview-20261104",
@@ -7120,9 +7045,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000963",
+     "prompt": "0.0000000927",
      "completion": "0.000008",
-     "input_cache_read": "0.0000000963"
+     "input_cache_read": "0.0000000927"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -11975,9 +11900,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000107",
-     "completion": "0.000004278",
-     "input_cache_read": "0.0000001023"
+     "prompt": "0.000000103",
+     "completion": "0.00000411",
+     "input_cache_read": "0.000000098"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -13096,6 +13021,83 @@
       "low"
      ],
      "default_effort": "medium"
+    }
+   },
+   {
+    "id": "inclusionai/ling-3.0-tiny",
+    "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
+    "hugging_face_id": "inclusionAI/Ling-3.0-tiny",
+    "name": "inclusionAI: Ling 3.0 Tiny",
+    "created": 1786034890,
+    "description": "Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable...",
+    "context_length": 262144,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Other",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "0.000000015",
+     "completion": "0.000000045",
+     "input_cache_read": "0.000000003"
+    },
+    "top_provider": {
+     "context_length": 262144,
+     "max_completion_tokens": 250000,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "include_reasoning",
+     "logprobs",
+     "max_tokens",
+     "presence_penalty",
+     "reasoning",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_logprobs",
+     "top_p"
+    ],
+    "default_parameters": {
+     "temperature": 1,
+     "top_p": 0.95,
+     "top_k": 20
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/inclusionai/ling-3.0-tiny-20260806/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ],
+    "benchmarks": {
+     "design_arena": [],
+     "artificial_analysis": {
+      "intelligence_index": null,
+      "coding_index": 26.5,
+      "agentic_index": 4.4
+     }
+    },
+    "reasoning": {
+     "mandatory": false,
+     "default_enabled": true
     }
    },
    {
@@ -22903,7 +22905,7 @@
     },
     "pricing": {
      "prompt": "0.0000001824",
-     "completion": "0.0000105572",
+     "completion": "0.0000105539",
      "input_cache_read": "0.00000018"
     },
     "top_provider": {
@@ -25572,9 +25574,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000023",
-     "completion": "0.00000007",
-     "input_cache_read": "0.000000012"
+     "prompt": "0.000000039",
+     "completion": "0.000000118",
+     "input_cache_read": "0.00000002"
     },
     "top_provider": {
      "context_length": 262144,
@@ -38880,9 +38882,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000011",
-     "completion": "0.000000041",
-     "input_cache_read": "0.00000001"
+     "prompt": "0.000000016",
+     "completion": "0.00000006",
+     "input_cache_read": "0.000000015"
     },
     "top_provider": {
      "context_length": 131072,
