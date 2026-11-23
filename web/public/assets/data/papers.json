@@ -1,8 +1,86 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-23T15:01:29.942Z",
+ "fetchedAt": "2026-11-23T17:16:08.226Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.26809",
+    "authors": [
+     {
+      "_id": "6b04531064735da7427895b9",
+      "name": "Kaustubh Ponkshe",
+      "hidden": false
+     },
+     {
+      "_id": "6b04531064735da7427895ba",
+      "name": "Gyung Hyun Je",
+      "hidden": false
+     },
+     {
+      "_id": "6b04531064735da7427895bb",
+      "name": "Stefan Taga",
+      "hidden": false
+     },
+     {
+      "_id": "6b04531064735da7427895bc",
+      "name": "Colin Raffel",
+      "hidden": false
+     },
+     {
+      "_id": "6b04531064735da7427895bd",
+      "name": "Martin Jaggi",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-23T00:00:00.000Z",
+    "title": "Search From the Start: Search-Native Pretraining for Language Models",
+    "submittedOnDailyBy": {
+     "_id": "66e9d3e9f9ce97866c0b29fe",
+     "avatarUrl": "/avatars/f21f1230c2d02b43cb452af3da6dccf9.svg",
+     "isPro": true,
+     "fullname": "Gyung Hyun Je",
+     "user": "jjee2",
+     "type": "user",
+     "name": "jjee2"
+    },
+    "summary": "Modern language models (LMs) are increasingly deployed with access to search tools at inference. Yet pretraining remains predominantly focused on predicting static text, with search capabilities typically introduced during post-training. We propose Search-Native Pretraining as a practical route to teach search capability during pretraining from ordinary text corpora. Specifically, we augment pretraining corpus at scale with web-search queries and retrieve web response using a local index. Training on this augmented corpus teaches models to generate search calls and incorporate retrieved evidence during language modeling. Across Wikipedia and DCLM-Edu corpora and 360M to 3.3B parameter scales, search-pretrained models (\"QueryLM\") show improved performance on knowledge-intensive tasks and higher steerability toward the retrieved evidence. Crucially, their advantage persists after supervised fine-tuning of both search-pretrained and conventionally pretrained models, indicating that the tested post-training procedures do not fully recover the capabilities developed during pretraining. Throughout our experiments, we find that a 1.4B QueryLM consistently beats or matches the performance of a FLOP-matched 3.3B baseline model across all knowledge intensive tasks. These results establish search-pretraining as a practical way to develop foundational search capabilities during pretraining. We release the training artifacts, including model checkpoints and data.",
+    "upvotes": 1,
+    "discussionId": "6b04531164735da7427895be",
+    "organization": {
+     "_id": "6a576b8869ba8959b34804a4",
+     "name": "epfl-ch",
+     "fullname": "EPFL",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64623812d9b49021880ebab1/W0HJnlYYzjvwRFn8hDC5h.png"
+    }
+   },
+   "publishedAt": "2026-11-18T19:00:00.000Z",
+   "title": "Search From the Start: Search-Native Pretraining for Language Models",
+   "summary": "Modern language models (LMs) are increasingly deployed with access to search tools at inference. Yet pretraining remains predominantly focused on predicting static text, with search capabilities typically introduced during post-training. We propose Search-Native Pretraining as a practical route to teach search capability during pretraining from ordinary text corpora. Specifically, we augment pretraining corpus at scale with web-search queries and retrieve web response using a local index. Training on this augmented corpus teaches models to generate search calls and incorporate retrieved evidence during language modeling. Across Wikipedia and DCLM-Edu corpora and 360M to 3.3B parameter scales, search-pretrained models (\"QueryLM\") show improved performance on knowledge-intensive tasks and higher steerability toward the retrieved evidence. Crucially, their advantage persists after supervised fine-tuning of both search-pretrained and conventionally pretrained models, indicating that the tested post-training procedures do not fully recover the capabilities developed during pretraining. Throughout our experiments, we find that a 1.4B QueryLM consistently beats or matches the performance of a FLOP-matched 3.3B baseline model across all knowledge intensive tasks. These results establish search-pretraining as a practical way to develop foundational search capabilities during pretraining. We release the training artifacts, including model checkpoints and data.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26809.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66e9d3e9f9ce97866c0b29fe",
+    "avatarUrl": "/avatars/f21f1230c2d02b43cb452af3da6dccf9.svg",
+    "fullname": "Gyung Hyun Je",
+    "name": "jjee2",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6a576b8869ba8959b34804a4",
+    "name": "epfl-ch",
+    "fullname": "EPFL",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/64623812d9b49021880ebab1/W0HJnlYYzjvwRFn8hDC5h.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.27398",
@@ -240,7 +318,7 @@
      "name": "CC3369"
     },
     "summary": "Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. Our deployment-style benchmark, NextUnit-Bench, covers 24 public datasets split into 58 folds that hold out units or operating conditions; each agent has two hours to deliver an executable predictor, then run on the hidden units. First, frontier agents outperform AutoML, which reaches less than half the best agent's score, and faithful implementations of published methods on four datasets, of which only 6 of 30 beat the strongest agent's own design; published accuracies, where reproducible, rest on the papers' own conventions, and a single convention, capping the remaining life of test engines, can halve the reported error. Second, the agents' advantage is a design made on each machine's data; once made, a plain-text plan of a few hundred words carries most of the gap between two frontier agents, and given a weaker agent's plan, the strongest agent falls to that agent's level, often to identical predictions. Before touching the data, however, it matters little whose plan an agent carries out, and domain toolkits appear to help neither: what sets the strongest apart is how much it learns from the data. Third, such designs reach only implementers that can execute them: given the strongest agent's designs, a locally deployable open-weight model delivers half as often, even when they are lightened, and scores no higher than without them. Generality, we argue, is not disappearing but moving, from the model to the modeler.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b017021ecb204ffe44e6cdf",
     "githubRepo": "https://github.com/JialingRichard/nextunit-bench",
     "githubRepoAddedBy": "user",
@@ -545,7 +623,7 @@
      "name": "zwang-devv"
     },
     "summary": "Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user's words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner's influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user's words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner's goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user's task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark's environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner's choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6afe7f6c36ccf7e1781f4b33",
     "githubRepo": "https://github.com/zwang-devv/intent-contracts",
     "githubRepoAddedBy": "user",
@@ -578,7 +656,7 @@
    "title": "Intent Contracts: Taking Tools Away from Agents",
    "summary": "Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user's words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner's influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user's words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner's goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user's task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark's environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner's choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.24025.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6af785697e6634231b603c52",
     "avatarUrl": "/avatars/03adfadc998db4c29c5ff07a96b1c9bf.svg",
@@ -635,7 +713,18 @@
      },
      {
       "_id": "6b03da64ecb204ffe44e750b",
+      "user": {
+       "_id": "66feab48651e00e22f33222e",
+       "avatarUrl": "/avatars/480ee88c1fdd4be6c86ebd3a076b1d37.svg",
+       "isPro": false,
+       "fullname": "Dan Xu",
+       "user": "danxuhk",
+       "type": "user",
+       "name": "danxuhk"
+      },
       "name": "Dan Xu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-23T16:45:04.940Z",
       "hidden": false
      }
     ],
@@ -753,7 +842,7 @@
      "name": "ClareNie"
     },
     "summary": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing challenges for existing architectures. Standard Transformers accumulate layer-wise, token-level KV caches, incurring linear GPU memory growth and quadratic computational complexity as the context expands. In contrast, linear-time architectures compress history into fixed-size states, but struggle to retain fine-grained details. We introduce MemOnce, a foundation architecture that learns scalable memory states for language models. MemOnce is based on two core designs: (a) Memory encoder-decoder: it caches only a small subset of final-layer hidden states as compact memory representations and dynamically decodes them back into KV caches for attention layers; (b) Memory sparse attention: for each continual input, MemOnce adaptively retrieves relevant memory representations, with the sparse indices computed only once across layers. Coupling these two designs enables efficient on-the-fly memory loading and KV cache decoding, drastically reducing the GPU memory footprint and achieving linear-time complexity. We conduct extensive experiments to show that MemOnce outperforms Transformers and other architectures across varying model sizes, context lengths, and training paradigms (pretraining and post-training adaptation). In particular, adapting Qwen3.5-4B with MemOnce reduces memory state cache by 1313times and prefill latency by 6.9times at 1M context, and improves throughput by 3.5times and overall memory performance by +5.77%. Finally, MemOnce generalizes zero-shot to downstream representation tasks, achieving competitive results against specialized models.",
-    "upvotes": 15,
+    "upvotes": 17,
     "discussionId": "6b03cfb7ecb204ffe44e74d4",
     "projectPage": "https://clare-nie.github.io/MemOnce/",
     "githubRepo": "https://github.com/Clare-Nie/MemOnce",
@@ -863,7 +952,7 @@
      "name": "yiyangd"
     },
     "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique framework in which the policy agent states a local intent alongside each action, and a critic evaluates the action's outcome and failure mode against this intent. Our action-level analysis demonstrates the promising capabilities of frontier agents on direct robot control, including closed-loop recovery from local execution failures, reliable semantic grounding across diverse scenes, and strong zero-shot manipulation without task-specific adaptation. It also identifies their current limitations, including task-relevant physical execution bottlenecks such as grasping and alignment, and uneven recovery across failure modes. Finally, we validate our critic on a 400-action human-annotated benchmark and release a dataset of 12,844 annotated actions alongside a fine-tuned open-source critic, Muse-Glimmer-30B, whose failure-mode accuracy rises from 32.58% to 74.24%, enabling low-cost action-level analysis.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6affcea28c0c69ddd0a94e0f",
     "projectPage": "https://adu2021.github.io/blog/AgentRoboCritic/",
     "githubRepo": "https://github.com/cxcscmu/AgentRoboCritic",
@@ -951,7 +1040,7 @@
      "name": "adamdad"
     },
     "summary": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
-    "upvotes": 51,
+    "upvotes": 53,
     "discussionId": "6b03bb26ecb204ffe44e7453",
     "projectPage": "https://nopeworld.github.io/",
     "githubRepo": "https://github.com/yuhangdai427/NoPeWorld",
@@ -970,7 +1059,7 @@
      "zero-shot generalization"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 3,
+    "githubStars": 20,
     "organization": {
      "_id": "646ecc368d316fde87b3b6e3",
      "name": "PolyUHK",
@@ -1101,7 +1190,7 @@
      "name": "Newiz430"
     },
     "summary": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
-    "upvotes": 81,
+    "upvotes": 83,
     "discussionId": "6b03c420ecb204ffe44e74a6",
     "githubRepo": "https://github.com/Newiz430/cmHC",
     "githubRepoAddedBy": "user",
@@ -1395,7 +1484,7 @@
     "projectPage": "https://jasonleex1995.github.io/TAISR_needs_Reasoning/",
     "githubRepo": "https://github.com/jasonleex1995/TAISR_needs_Reasoning",
     "githubRepoAddedBy": "user",
-    "githubStars": 0,
+    "githubStars": 4,
     "organization": {
      "_id": "6a714bec238b1ac1fdac6a1e",
      "name": "CIPLAB",
@@ -1456,7 +1545,7 @@
     "projectPage": "https://diffuspace.ai/blog/clover-35b/",
     "githubRepo": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
     "githubRepoAddedBy": "user",
-    "githubStars": 161,
+    "githubStars": 162,
     "organization": {
      "_id": "6ac9d1d1c4a07620ee7b5e35",
      "name": "Diffuspace",
@@ -1653,12 +1742,12 @@
      "name": "DavidWu1116"
     },
     "summary": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6afeae0f36ccf7e1781f4d60",
     "projectPage": "https://starsholic.github.io/AeroRSI/",
     "githubRepo": "https://github.com/starsholic/AeroRSI",
     "githubRepoAddedBy": "user",
-    "githubStars": 4,
+    "githubStars": 8,
     "organization": {
      "_id": "628735cbc83a2d6ab8d14a66",
      "name": "Tsinghua",
@@ -1810,7 +1899,7 @@
     "projectPage": "https://cychen2003.github.io/duopra/",
     "githubRepo": "https://github.com/cyChen2003/duopra",
     "githubRepoAddedBy": "user",
-    "githubStars": 35
+    "githubStars": 45
    },
    "publishedAt": "2026-11-18T19:00:00.000Z",
    "title": "Duopra: From Full-Duplex Conversation to Full-Duplex Agency",
@@ -1885,7 +1974,7 @@
      "name": "Yang1213112131"
     },
     "summary": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6b03aafdecb204ffe44e73ae",
     "organization": {
      "_id": "69719700e3846c07669d13ee",
@@ -2350,7 +2439,7 @@
      "name": "Xi8006"
     },
     "summary": "Image vectorization reconstructs raster images as compact scalable vector graph- ics (SVG), providing a structured and editable code representation of images. However, most existing vectorization methods optimize for pixel-level render- ing fidelity, often producing SVGs that lack alignment with human-perceived object-part hierarchies, making them difficult to manipulate. To address this, we propose Lang-SVG, which introduces an explicit tree structure to organize SVG primitives with semantic labels and parent-child relationships. Lang-SVG incorporates granularity-controllable and open-vocabulary segmentation priors to initialize object-part hierarchies and leverages multimodal large language models (MLLMs) with SVG tree context to assign semantic labels to unlabeled nodes. To reduce redundancy, we introduce depth-adaptive simplification to reduce shape complexity and Tree-Guided Pruning and Merging to eliminate redundant SVG nodes. L1-SAM-Prompting further recovers missing regions to improve recon- struction fidelity and structural completeness. Beyond reconstruction fidelity, we introduce a new evaluation protocol that measures structural quality and semantic part alignment. Experiments demonstrate that Lang-SVG achieves state-of-the-art performance in both rendering fidelity and structural quality. Project website: https://xiliu8006.github.io/Lang-SVG/.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b00abafecb204ffe44e6aec",
     "projectPage": "https://xiliu8006.github.io/Lang-SVG/",
     "organization": {
@@ -3066,7 +3155,7 @@
      "backward simulation"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 32,
+    "githubStars": 37,
     "organization": {
      "_id": "6683d6350b54a28aff6645fe",
      "name": "kyutai",
@@ -3304,7 +3393,7 @@
     "projectPage": "https://dreamtechai.github.io/Direct3D-V3/",
     "githubRepo": "https://github.com/DreamTechAI/Direct3D-V3",
     "githubRepoAddedBy": "user",
-    "githubStars": 63,
+    "githubStars": 76,
     "organization": {
      "_id": "6314524a5f47a1896274d586",
      "name": "NJU",
@@ -3412,7 +3501,18 @@
      },
      {
       "_id": "6b004007521eceac6cdcffd3",
+      "user": {
+       "_id": "68a6cb0333e6a6eabdce3fd9",
+       "avatarUrl": "/avatars/0b0ca11ba4446821bf4de2aade88d18f.svg",
+       "isPro": false,
+       "fullname": "Jiadong Zhang",
+       "user": "dereksodo",
+       "type": "user",
+       "name": "dereksodo"
+      },
       "name": "Jiadong Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-23T16:45:04.927Z",
       "hidden": false
      },
      {
@@ -3449,7 +3549,7 @@
      "name": "Ziruibest"
     },
     "summary": "Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo rejected valid executions, and both error types were common in RoboTwin 2.0. These findings suggest that validating success checkers requires testing both incomplete executions and valid alternatives to expert demonstrations, and motivate more rigorous evaluation protocols for future benchmarks.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6b004008521eceac6cdcffd8",
     "ai_summary": "An LLM-based pipeline audits simulated manipulation success checkers by recreating disagreement scenarios and visually verifying whether observed behavior satisfies task instructions, revealing phantom successes and silent failures.",
     "ai_keywords": [
@@ -3583,7 +3683,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/655ce1466a37ab8e1c3de260/r3KqSH8YWufdTW9pwbQpx.qt"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.19499.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "655ce1466a37ab8e1c3de260",
     "avatarUrl": "/avatars/853c77029662b91108d0392fa95ca8a8.svg",
@@ -3895,7 +3995,7 @@
      "name": "naghamo"
     },
     "summary": "Large language models (LLMs) are increasingly used as judges and graders to replace human annotators, raising the question of when such replacement is statistically justified. To support such decisions, the Alternative Annotator Test (Alt-Test) was introduced for dense settings where all items are annotated by the same annotators. However, in many large-scale annotation settings, items are annotated by different subsets of annotators. We therefore propose the Alternative Annotator Test with Resampled Annotations (AltRA-Test), a statistical test that does not require that all items are annotated by the same annotators. AltRA-Test uses a bootstrap that resamples items, draws k human annotations for each item, and substitutes one of them with an LLM annotation. This produces paired all-human and mixed human-LLM panels. A replacement is supported when the inter-annotator agreement (IAA) of the mixed panel is statistically non-inferior to the IAA of the all-human panel, i.e., when the LLM preserves the signal that the human annotators share. We establish that AltRA-Test is a consistent test of asymptotic level alpha. We then evaluate it through simulations and real-world experiments in which we test 18 LLMs and 5 prompting techniques on 20 datasets across text, image, audio, and video. Across these evaluations, about 100 items often suffice for the test. In simulations, where we know whether the LLM is a better or a worse annotator than the humans, AltRA-Test makes more correct replacement decisions than existing baselines. In real-world data experiments, LLMs pass the test in about half of the setups, depending mainly on the task. Since replacement is not always justified, we encourage researchers to test it for their task.",
-    "upvotes": 23,
+    "upvotes": 24,
     "discussionId": "6b001385622d2534c074ec81",
     "ai_summary": "A statistical test, AltRA-Test, determines when large language models can replace human annotators by comparing inter-annotator agreement in resampled mixed human-LLM panels, and evaluations show it often requires about 100 items and makes better replacement decisions than baselines.",
     "ai_keywords": [
@@ -5235,111 +5335,6 @@
     "isHfAdmin": false,
     "isMod": false,
     "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.20455",
-    "authors": [
-     {
-      "_id": "6afd490243cedf0e6abcebdc",
-      "name": "Siqiao Xue",
-      "hidden": false
-     },
-     {
-      "_id": "6afd490243cedf0e6abcebdd",
-      "user": {
-       "_id": "6430bdd8cd31d174a9f900fb",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Y9SPnRfpKSbYc7MhNdP-H.jpeg",
-       "isPro": false,
-       "fullname": "Ziyin Zhang",
-       "user": "Geralt-Targaryen",
-       "type": "user",
-       "name": "Geralt-Targaryen"
-      },
-      "name": "Ziyin Zhang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.151Z",
-      "hidden": false
-     },
-     {
-      "_id": "6afd490243cedf0e6abcebde",
-      "name": "Zihan Liao",
-      "hidden": false
-     },
-     {
-      "_id": "6afd490243cedf0e6abcebdf",
-      "name": "Jin Qin",
-      "hidden": false
-     },
-     {
-      "_id": "6afd490243cedf0e6abcebe0",
-      "name": "Yixiang Mu",
-      "hidden": false
-     },
-     {
-      "_id": "6afd490243cedf0e6abcebe1",
-      "user": {
-       "_id": "6837243353739ee0d588d04c",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6837243353739ee0d588d04c/QY5Rt6vrt36pxNrwAi9yx.jpeg",
-       "isPro": false,
-       "fullname": "Hang Yu",
-       "user": "fhlyhv",
-       "type": "user",
-       "name": "fhlyhv"
-      },
-      "name": "Hang Yu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-21T16:45:04.673Z",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-16T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-20T00:00:00.000Z",
-    "title": "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search",
-    "submittedOnDailyBy": {
-     "_id": "6430bdd8cd31d174a9f900fb",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Y9SPnRfpKSbYc7MhNdP-H.jpeg",
-     "isPro": false,
-     "fullname": "Ziyin Zhang",
-     "user": "Geralt-Targaryen",
-     "type": "user",
-     "name": "Geralt-Targaryen"
-    },
-    "summary": "Code-search benchmarks show dense encoders well ahead of BM25, yet coding agents do well with grep. What does this dense advantage measure? Existing benchmarks cannot tell: they use curated queries, old code and a handicapped BM25. To find out, we build Repo-Premium, a realistic repository-level code-search benchmark. It ranks files in real repositories, with curated and raw queries in Python, JavaScript, TypeScript, Go, Rust and Java, pull requests from 2022 to 2026, and a preregistered test pool over 91 repositories. Our experiments trace the advantage to two sources: evaluation choices that favor dense retrieval, such as splitting files into chunks for BM25 and counting edited tests as relevant, and queries that lack the code's rare identifiers. Expanding the query with LLM-written identifiers (generate-then-grep) helps BM25 far more than dense retrieval, letting it match dense retrieval in every Python pool, even on pull requests opened after the LLM was released. No method we tried predicts which retriever will win on a given query. From these results we derive three guidelines: measure dense gains against a fair lexical baseline, fuse dense retrieval with BM25, and add the code's words to queries that lack them.",
-    "upvotes": 13,
-    "discussionId": "6afd490243cedf0e6abcebe2",
-    "organization": {
-     "_id": "69b67aa01e662d7dbad6293c",
-     "name": "hq-bench",
-     "fullname": "high-quality llm benchmarks",
-     "avatar": "https://www.gravatar.com/avatar/3a6308fe52f03e3083fbd5b657d9268b?d=retro&size=100"
-    }
-   },
-   "publishedAt": "2026-11-15T19:00:00.000Z",
-   "title": "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search",
-   "summary": "Code-search benchmarks show dense encoders well ahead of BM25, yet coding agents do well with grep. What does this dense advantage measure? Existing benchmarks cannot tell: they use curated queries, old code and a handicapped BM25. To find out, we build Repo-Premium, a realistic repository-level code-search benchmark. It ranks files in real repositories, with curated and raw queries in Python, JavaScript, TypeScript, Go, Rust and Java, pull requests from 2022 to 2026, and a preregistered test pool over 91 repositories. Our experiments trace the advantage to two sources: evaluation choices that favor dense retrieval, such as splitting files into chunks for BM25 and counting edited tests as relevant, and queries that lack the code's rare identifiers. Expanding the query with LLM-written identifiers (generate-then-grep) helps BM25 far more than dense retrieval, letting it match dense retrieval in every Python pool, even on pull requests opened after the LLM was released. No method we tried predicts which retriever will win on a given query. From these results we derive three guidelines: measure dense gains against a fair lexical baseline, fuse dense retrieval with BM25, and add the code's words to queries that lack them.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.20455.png",
-   "numComments": 6,
-   "submittedBy": {
-    "_id": "6430bdd8cd31d174a9f900fb",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Y9SPnRfpKSbYc7MhNdP-H.jpeg",
-    "fullname": "Ziyin Zhang",
-    "name": "Geralt-Targaryen",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 17,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "69b67aa01e662d7dbad6293c",
-    "name": "hq-bench",
-    "fullname": "high-quality llm benchmarks",
-    "avatar": "https://www.gravatar.com/avatar/3a6308fe52f03e3083fbd5b657d9268b?d=retro&size=100"
    },
    "isAuthorParticipating": true
   }
