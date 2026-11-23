@@ -14,11 +14,16 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
-NODE="$HOME/.nvm/versions/node/v22.23.2/bin/node"
-[ -x "$NODE" ] || NODE=$(command -v node || true)
-[ -z "$NODE" ] && { echo "no node"; exit 0; }
+# node 路径不写死版本：nvm 升级后旧路径会消失，cron 的 PATH 又没有 nvm。
+NODE=$(command -v node 2>/dev/null || true)
+if [ -z "${NODE}" ]; then
+  for c in "$HOME"/.nvm/versions/node/*/bin/node /usr/local/bin/node /usr/bin/node; do
+    [ -x "$c" ] && NODE="$c"
+  done
+fi
+[ -z "${NODE:-}" ] && { echo "$(date -u +%FT%TZ) no node"; exit 0; }
 
-AGE=$(curl -sS -m 15 "https://www.chenshaowen.com/trend/assets/data/cn-hot.json" 2>/dev/null \
+AGE=$(curl -sS -m 15 "https://www.chenshaowen.com/trending/assets/data/cn-hot.json" 2>/dev/null \
   | "$NODE" -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{
       try { const j=JSON.parse(s); console.log(Math.round((Date.now()-Date.parse(j.fetchedAt))/60000)); }
       catch { console.log(9999); }
