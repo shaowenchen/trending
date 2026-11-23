@@ -1,8 +1,64 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-23T19:31:03.910Z",
+ "fetchedAt": "2026-11-23T21:46:01.158Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.27490",
+    "authors": [
+     {
+      "_id": "6b040f0c3039f182dac23544",
+      "name": "Turhan Can Kargin",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6262fb8e6f289e10ee04f83b/u3aQ4d80tbEZyd7nus7TQ.png"
+    ],
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-23T00:00:00.000Z",
+    "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
+    "submittedOnDailyBy": {
+     "_id": "6262fb8e6f289e10ee04f83b",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6262fb8e6f289e10ee04f83b/tuYGIgc_NeRgCRcW2MgNK.jpeg",
+     "isPro": false,
+     "fullname": "Turhan Can Kargın",
+     "user": "turhancan97",
+     "type": "user",
+     "name": "turhancan97"
+    },
+    "summary": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81.8% to 85.5% and also improves DINOv3. Comparing the two best candidates cuts DINOv2's false acceptance of unknown statues from 38.3% to 19.6% at 90% known acceptance.",
+    "upvotes": 0,
+    "discussionId": "6b040f0d3039f182dac23545",
+    "projectPage": "https://turhancan97.github.io/doppeldwarf-306/",
+    "githubRepo": "https://github.com/turhancan97/doppeldwarf-306",
+    "githubRepoAddedBy": "user",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-11-19T19:00:00.000Z",
+   "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
+   "summary": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81.8% to 85.5% and also improves DINOv3. Comparing the two best candidates cuts DINOv2's false acceptance of unknown statues from 38.3% to 19.6% at 90% known acceptance.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6262fb8e6f289e10ee04f83b/u3aQ4d80tbEZyd7nus7TQ.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.27490.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6262fb8e6f289e10ee04f83b",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6262fb8e6f289e10ee04f83b/tuYGIgc_NeRgCRcW2MgNK.jpeg",
+    "fullname": "Turhan Can Kargın",
+    "name": "turhancan97",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 12,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.26954",
@@ -58,6 +114,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/7Q2b_j4AtL0mipluftQe5.gif"
+    ],
     "publishedAt": "2026-11-20T00:00:00.000Z",
     "submittedOnDailyAt": "2026-11-23T00:00:00.000Z",
     "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
@@ -71,7 +130,7 @@
      "name": "jsun39"
     },
     "summary": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
-    "upvotes": 5,
+    "upvotes": 19,
     "discussionId": "6b03c37decb204ffe44e7496",
     "projectPage": "https://jingchensun.github.io/future-opsd/",
     "githubRepo": "https://github.com/Jingchensun/future-opsd",
@@ -93,11 +152,20 @@
      "video understanding"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 8
+    "githubStars": 8,
+    "organization": {
+     "_id": "69dd520b02105f7970643bae",
+     "name": "UniversityatBuffalo",
+     "fullname": "University at Buffalo",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69dd504182232b354b5f5f44/MMgPDnZGFB_lsMCCvPTA5.png"
+    }
    },
    "publishedAt": "2026-11-19T19:00:00.000Z",
    "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
    "summary": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/7Q2b_j4AtL0mipluftQe5.gif"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26954.png",
    "numComments": 1,
    "submittedBy": {
@@ -111,6 +179,12 @@
     "isHfAdmin": false,
     "isMod": false,
     "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69dd520b02105f7970643bae",
+    "name": "UniversityatBuffalo",
+    "fullname": "University at Buffalo",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69dd504182232b354b5f5f44/MMgPDnZGFB_lsMCCvPTA5.png"
    },
    "isAuthorParticipating": false
   },
@@ -368,7 +442,7 @@
      "name": "davidegarde"
     },
     "summary": "We introduce Transformation Tracking and Understanding (TTU), extending video object tracking to environments where objects undergo physical assemblies and disassemblies. TTU requires continuously tracking objects through transformations, identifying new entities, maintaining a state graph of their relationships, and assigning semantic labels to transformations. While foundation models (e.g., SAM 2/3) maintain tracklets through appearance changes, they cannot update semantic identities as objects physically evolve. Prior work addresses only disassemblies, relying on expensive searches triggered only when tracking fails. We propose Tracking Instances via Proposals and Overlaps (TIPO), a training-free framework that continuously infers transformations via a generate-evaluate-judge pipeline. TIPO generates split and merge proposals from disjoint mask components, scores them against mask-decoder priors using inner and external overlap, and queries an MLLM on the top proposal for visual verification and semantic labeling. To benchmark TTU, we curate Video Instances, States, and Transformation Annotations (VISTA), a dataset including state graphs with 124 assembly and 132 disassembly events across 50 sequences and over 26,000 frames. TIPO achieves state-of-the-art tracking and state-graph accuracy on VISTA, while operating 6times to 15times faster than prior methods. Project page: https://davidegardenal.github.io/tipo-tracking",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b03f398ecb204ffe44e76d2",
     "projectPage": "https://davidegardenal.github.io/tipo-tracking/",
     "ai_summary": "A training-free framework tracks objects through physical assemblies and disassemblies by generating and evaluating split/merge proposals and querying a multimodal large language model for verification and labeling, achieving state-of-the-art accuracy and faster performance on a new benchmark.",
@@ -660,7 +734,7 @@
      "real-time causal variant"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 5,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -982,7 +1056,7 @@
      "name": "yanchi3dv"
     },
     "summary": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene structure from one or more images without known camera calibration or cross-view geometric constraints. This makes metric 3D inference inherently ambiguous and leaves it unclear whether their spatial predictions are grounded in visual evidence or driven primarily by semantic priors. In contrast, calibrated stereo provides explicit cross-view geometry that resolves this ambiguity and offers a more reliable foundation for metric 3D perception and geometric generalization. We investigate how VLMs can learn transferable 3D representations directly from calibrated binocular observations. To this end, we introduce StereoVLM, the first geometry-aware binocular VLM for metric 3D spatial reasoning. StereoVLM follows a hierarchical learning paradigm spanning from cross-view correspondence and disparity estimation to calibration-conditioned metric depth perception and semantic spatial reasoning. We further find that disparity supervision generalizes substantially better than direct binocular depth supervision on unseen environments. To evaluate these capabilities, we introduce Stereo3D-Bench, a comprehensive benchmark across three levels, from point-level geometry to object-level spatial reasoning. StereoVLM-8B achieves 95.17% depth accuracy (δ_1) and a 66.98 average object-level score on Stereo3D-Bench. Intervention results further indicate that the model's performance on Stereo3D-Bench benefits from valid cross-view geometry and cannot be explained solely by additional visual tokens or semantic priors. Hierarchical geometric supervision also yields average gains of 3.54 points across five spatial benchmarks and 4.3 percentage points in RoboCasa manipulation success.",
-    "upvotes": 6,
+    "upvotes": 7,
     "discussionId": "6b03da64ecb204ffe44e750c",
     "projectPage": "https://xpeng-robotics.github.io/stereovlm/",
     "ai_summary": "StereoVLM is a geometry-aware binocular vision-language model trained with hierarchical supervision from calibrated stereo to enable metric 3D spatial reasoning, evaluated by Stereo3D-Bench.",
@@ -1193,7 +1267,7 @@
      "name": "yiyangd"
     },
     "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique framework in which the policy agent states a local intent alongside each action, and a critic evaluates the action's outcome and failure mode against this intent. Our action-level analysis demonstrates the promising capabilities of frontier agents on direct robot control, including closed-loop recovery from local execution failures, reliable semantic grounding across diverse scenes, and strong zero-shot manipulation without task-specific adaptation. It also identifies their current limitations, including task-relevant physical execution bottlenecks such as grasping and alignment, and uneven recovery across failure modes. Finally, we validate our critic on a 400-action human-annotated benchmark and release a dataset of 12,844 annotated actions alongside a fine-tuned open-source critic, Muse-Glimmer-30B, whose failure-mode accuracy rises from 32.58% to 74.24%, enabling low-cost action-level analysis.",
-    "upvotes": 7,
+    "upvotes": 8,
     "discussionId": "6affcea28c0c69ddd0a94e0f",
     "projectPage": "https://adu2021.github.io/blog/AgentRoboCritic/",
     "githubRepo": "https://github.com/cxcscmu/AgentRoboCritic",
@@ -1431,7 +1505,7 @@
      "name": "Newiz430"
     },
     "summary": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
-    "upvotes": 85,
+    "upvotes": 86,
     "discussionId": "6b03c420ecb204ffe44e74a6",
     "githubRepo": "https://github.com/Newiz430/cmHC",
     "githubRepoAddedBy": "user",
@@ -1639,7 +1713,7 @@
      "name": "Franck-Dernoncourt"
     },
     "summary": "Personalized long-form generation asks a language model to write new text the way a specific user would. The standard recipe, retrieval-augmented generation, places a few of the user's past texts in the prompt but leaves the model to decide what to take from them. We introduce StylePrism, a taxonomy of 28 stylistic aspects in seven categories, and SP-Refine, an inference-time method that makes style extraction an explicit step: the model first fills StylePrism with the user's patterns, quoted evidence, and habits to avoid, then drafts from the user's samples and revises the draft twice against this profile, guided by its own style scores. On the three long-form tasks of LongLaMP with three LLMs, SP-Refine outperforms LongLaMP's retrieval-augmented baseline in 25 of 27 ROUGE and METEOR comparisons, by 10.2% on average and by up to 35.8%. Annotating users' own texts with the extracted profiles shows that StylePrism captures concrete, checkable habits, from the order of rhetorical moves to a reviewer's sign-off. Ablations show that the profile helps as revision guidance, not as a replacement for the samples: writing from the profile alone is worse in all 27 comparisons, while a single implicit-inference call is a cheaper alternative that comes close. Oracle variants that let the reviser see the reference, together with reference-free controls, show that larger refinement gains require information unavailable at inference time.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b03c2b9ecb204ffe44e747b",
     "ai_summary": "A method that explicitly extracts a user's stylistic profile and uses it to guide drafting and revision improves personalized long-form text generation over retrieval-augmented baselines.",
     "ai_keywords": [
@@ -1994,7 +2068,7 @@
      "name": "DavidWu1116"
     },
     "summary": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
-    "upvotes": 5,
+    "upvotes": 7,
     "discussionId": "6afeae0f36ccf7e1781f4d60",
     "projectPage": "https://starsholic.github.io/AeroRSI/",
     "githubRepo": "https://github.com/starsholic/AeroRSI",
@@ -2226,7 +2300,7 @@
      "name": "Yang1213112131"
     },
     "summary": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6b03aafdecb204ffe44e73ae",
     "organization": {
      "_id": "69719700e3846c07669d13ee",
@@ -2239,7 +2313,7 @@
    "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
    "summary": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.21485.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "650115a0d522560505d8a47b",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/650115a0d522560505d8a47b/q-ELq1-lL6Isqw4WC8nwo.jpeg",
@@ -4001,7 +4075,7 @@
      "name": "IlyaGusev"
     },
     "summary": "Peer review relies on several readers finding different problems. We measure critique overlap in conference and journal reviews. At ICLR, measured overlap rose from 12.0% in 2026 to 21.3% in 2027, in reviews from the same stage of the review process, with year-on-year rises at NeurIPS, ICML and the F1000 and PLOS journals. A third ICLR review of a paper added 5.46 new problems to the other two in 2027, against 6.12 in 2026. We apply MELD, a detector of LLM-generated text, to all reviews. Within a paper, two reviews that MELD flags overlap more than two unflagged reviews: by 3.0 points at ICLR in 2024-2025, by 4.5 points in 2026-2027, and by 5.4 points across five journal sources. These results provide evidence that LLM-flagged reviews of one paper are less distinct from each other than unflagged reviews, and suggest that the diversity of critiques among reviews of a single paper is falling.",
-    "upvotes": 10,
+    "upvotes": 11,
     "discussionId": "6b002a20622d2534c074ed5a",
     "githubRepo": "https://github.com/IlyaGusev/twicetold",
     "githubRepoAddedBy": "user",
@@ -5055,379 +5129,6 @@
     "isMod": false,
     "followerCount": 22,
     "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.26444",
-    "authors": [
-     {
-      "_id": "6affe3928c0c69ddd0a94e9b",
-      "user": {
-       "_id": "675954dd8d452f14d20593fe",
-       "avatarUrl": "/avatars/38fd854379742b805a145213477c9c61.svg",
-       "isPro": false,
-       "fullname": "yuzhi huang",
-       "user": "yu2hi13",
-       "type": "user",
-       "name": "yu2hi13"
-      },
-      "name": "Yuzhi Huang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.435Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94e9c",
-      "name": "Jie Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94e9d",
-      "user": {
-       "_id": "666060eefff0e904a291c9ca",
-       "avatarUrl": "/avatars/24b8b85a2abb35c3939a7c2950265814.svg",
-       "isPro": false,
-       "fullname": "Fanding Huang",
-       "user": "Niugan",
-       "type": "user",
-       "name": "Niugan"
-      },
-      "name": "Fanding Huang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.457Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94e9e",
-      "name": "Junchao Lin",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94e9f",
-      "user": {
-       "_id": "6516aa09a546159af99efe58",
-       "avatarUrl": "/avatars/3b869b16c01a2ac1ebc1bb3870fe8c59.svg",
-       "isPro": false,
-       "fullname": "Vincent Zhang",
-       "user": "VincentZh23",
-       "type": "user",
-       "name": "VincentZh23"
-      },
-      "name": "Weichen Zhang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T17:05:37.817Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea0",
-      "user": {
-       "_id": "68dc8f8bc7fc381a7bb87b97",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/w_0lJtQPyyERL3vFmj6m2.png",
-       "isPro": false,
-       "fullname": "ZiYi Xiong",
-       "user": "Beazerrr",
-       "type": "user",
-       "name": "Beazerrr"
-      },
-      "name": "Ziyi Xiong",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.444Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea1",
-      "user": {
-       "_id": "653f15385e4f2c3e88a83ab3",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653f15385e4f2c3e88a83ab3/Nyia3XZF0UTUihKodQc-n.jpeg",
-       "isPro": false,
-       "fullname": "Yang Li",
-       "user": "Claire2003",
-       "type": "user",
-       "name": "Claire2003"
-      },
-      "name": "Yang Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.450Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea2",
-      "name": "Zhengwei Xie",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea3",
-      "user": {
-       "_id": "67b6ddb0038e44a8add07936",
-       "avatarUrl": "/avatars/cc1f04290751f8b0a33abea59422b1e3.svg",
-       "isPro": false,
-       "fullname": "Zhimin Wang",
-       "user": "specialsuzuka",
-       "type": "user",
-       "name": "specialsuzuka"
-      },
-      "name": "Zhimin Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T08:45:05.464Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea4",
-      "name": "Zhen Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea5",
-      "name": "Jiazhen Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea6",
-      "name": "Yuzheng Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea7",
-      "name": "Yuche Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea8",
-      "user": {
-       "_id": "697f94a2c87d0a98bc6e98dd",
-       "avatarUrl": "/avatars/ad2589f7c6a6b83422be3b4a3f4e784d.svg",
-       "isPro": false,
-       "fullname": "Hongyi Yang",
-       "user": "VinyYang",
-       "type": "user",
-       "name": "VinyYang"
-      },
-      "name": "Hongyi Yang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T16:45:04.797Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ea9",
-      "name": "Chen Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eaa",
-      "name": "Shixiang Tang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eab",
-      "name": "Hakan Aktas",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eac",
-      "name": "Adam Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ead",
-      "name": "Duo Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eae",
-      "user": {
-       "_id": "66249e13d4ac8f8fd26337b1",
-       "avatarUrl": "/avatars/d53fcefcedadeffcee9468d1a6db95ac.svg",
-       "isPro": false,
-       "fullname": "Kangye Ji",
-       "user": "Kerwin0001",
-       "type": "user",
-       "name": "Kerwin0001"
-      },
-      "name": "Kangye Ji",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-20T16:45:04.787Z",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eaf",
-      "name": "Shuzhao Xie",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb0",
-      "name": "Huanan Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb1",
-      "name": "Weijue Bu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb2",
-      "name": "Chenxin Li",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb3",
-      "name": "Xinyuan Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb4",
-      "name": "Tianyi Bai",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb5",
-      "name": "Yinan Mao",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb6",
-      "name": "Jiawei Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb7",
-      "name": "Minglei Li",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb8",
-      "name": "Heng Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eb9",
-      "name": "Ehsan Adeli",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94eba",
-      "name": "Minchen Li",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ebb",
-      "name": "Yong-Lu Li",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ebc",
-      "name": "Cengiz Öztireli",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ebd",
-      "name": "Huazhe Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ebe",
-      "name": "Chao Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ebf",
-      "name": "Jing Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec0",
-      "name": "Shanghang Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec1",
-      "name": "Weitao Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec2",
-      "name": "Wenwu Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec3",
-      "name": "Cheng Chi",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec4",
-      "name": "Jingyan Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6affe3928c0c69ddd0a94ec5",
-      "name": "Zhi Wang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-19T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-20T00:00:00.000Z",
-    "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
-    "submittedOnDailyBy": {
-     "_id": "666060eefff0e904a291c9ca",
-     "avatarUrl": "/avatars/24b8b85a2abb35c3939a7c2950265814.svg",
-     "isPro": false,
-     "fullname": "Fanding Huang",
-     "user": "Niugan",
-     "type": "user",
-     "name": "Niugan"
-    },
-    "summary": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
-    "upvotes": 57,
-    "discussionId": "6affe3928c0c69ddd0a94ec6",
-    "projectPage": "https://mind2act-world.com/",
-    "githubRepo": "https://github.com/Mind2Act/Mind2Act_World",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "A diagnostic benchmark of 180 simulated manipulation configurations evaluates whether embodied systems can combine history-based reasoning, precise execution, and closed-loop environmental feedback, revealing that single-view competence does not transfer to composed tasks.",
-    "ai_keywords": [
-     "embodied intelligence",
-     "multimodal agents",
-     "vision-language-action models (VLAs)",
-     "world-action models (WAMs)",
-     "end-to-end policies",
-     "closed-loop tasks",
-     "diagnosis harness",
-     "task state",
-     "simulated manipulation tasks"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 41,
-    "organization": {
-     "_id": "6afd89ce69ef8398d430ce24",
-     "name": "Mind2Act-World",
-     "fullname": "Mind2Act-World",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ad1b7dd5e2996562085e701/Jygf_X5jwz5OER2RvD5_M.png"
-    }
-   },
-   "publishedAt": "2026-11-18T19:00:00.000Z",
-   "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
-   "summary": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26444.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "666060eefff0e904a291c9ca",
-    "avatarUrl": "/avatars/24b8b85a2abb35c3939a7c2950265814.svg",
-    "fullname": "Fanding Huang",
-    "name": "Niugan",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6afd89ce69ef8398d430ce24",
-    "name": "Mind2Act-World",
-    "fullname": "Mind2Act-World",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6ad1b7dd5e2996562085e701/Jygf_X5jwz5OER2RvD5_M.png"
    },
    "isAuthorParticipating": true
   }
