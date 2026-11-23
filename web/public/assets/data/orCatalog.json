@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-23T08:22:57.768Z",
+ "fetchedAt": "2026-11-23T10:31:03.446Z",
  "payload": {
   "data": [
    {
@@ -4823,9 +4823,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000003",
-     "completion": "0.0000012",
-     "input_cache_read": "0.000000006",
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000003",
      "overrides": [
       {
        "utc_days": [
@@ -7582,7 +7582,7 @@
     "name": "inclusionAI: Ling 3.1 Flash",
     "created": 1790950024,
     "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
-    "context_length": 1000000,
+    "context_length": 1048576,
     "architecture": {
      "modality": "text->text",
      "input_modalities": [
@@ -7613,8 +7613,10 @@
      "presence_penalty",
      "reasoning",
      "repetition_penalty",
+     "response_format",
      "seed",
      "stop",
+     "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
@@ -32896,7 +32898,6 @@
      "frequency_penalty",
      "include_reasoning",
      "logit_bias",
-     "logprobs",
      "max_tokens",
      "min_p",
      "presence_penalty",
@@ -32911,7 +32912,6 @@
      "tool_choice",
      "tools",
      "top_k",
-     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {
@@ -45360,7 +45360,6 @@
     "supported_parameters": [
      "frequency_penalty",
      "logit_bias",
-     "logprobs",
      "max_tokens",
      "presence_penalty",
      "repetition_penalty",
@@ -45372,7 +45371,6 @@
      "tool_choice",
      "tools",
      "top_k",
-     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {},
