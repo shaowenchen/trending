@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-24T06:46:15.099Z",
+ "fetchedAt": "2026-11-24T09:02:07.953Z",
  "payload": {
   "data": [
    {
@@ -12266,9 +12266,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000498",
-     "completion": "0.0000001992",
-     "input_cache_read": "0.000000000996"
+     "prompt": "0.00000014",
+     "completion": "0.00000042",
+     "input_cache_read": "0.0000000042"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -14628,13 +14628,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000000356",
-     "completion": "0.0000000815",
-     "input_cache_read": "0.00000003"
+     "prompt": "0.00000012",
+     "completion": "0.00000038",
+     "input_cache_read": "0.00000002"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 131072,
+     "max_completion_tokens": 943718,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -18089,13 +18089,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000044",
-     "completion": "0.000000132",
-     "input_cache_read": "0.0000000014"
+     "prompt": "0.000000047",
+     "completion": "0.0000003",
+     "input_cache_read": "0.000000035"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 131072,
+     "max_completion_tokens": 943718,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -18168,7 +18168,7 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000045",
+     "prompt": "0.000000047",
      "completion": "0.0000003",
      "input_cache_read": "0.000000035"
     },
@@ -19196,7 +19196,7 @@
     "name": "inclusionAI: Ling 3.0 Flash",
     "created": 1784818580,
     "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
-    "context_length": 131072,
+    "context_length": 262144,
     "architecture": {
      "modality": "text->text",
      "input_modalities": [
@@ -19209,12 +19209,12 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000006",
-     "completion": "0.00000018",
-     "input_cache_read": "0.000000012"
+     "prompt": "0.000000021",
+     "completion": "0.000000063",
+     "input_cache_read": "0.0000000042"
     },
     "top_provider": {
-     "context_length": 131072,
+     "context_length": 262144,
      "max_completion_tokens": 32768,
      "is_moderated": false
     },
@@ -19223,6 +19223,7 @@
      "frequency_penalty",
      "include_reasoning",
      "logit_bias",
+     "logprobs",
      "max_tokens",
      "min_p",
      "presence_penalty",
@@ -19231,10 +19232,12 @@
      "response_format",
      "seed",
      "stop",
+     "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
      "top_k",
+     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {},
@@ -36559,11 +36562,8 @@
     "supported_parameters": [
      "frequency_penalty",
      "include_reasoning",
-     "logprobs",
      "max_tokens",
-     "presence_penalty",
      "reasoning",
-     "repetition_penalty",
      "response_format",
      "seed",
      "stop",
@@ -36572,7 +36572,6 @@
      "tool_choice",
      "tools",
      "top_k",
-     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {
@@ -42664,99 +42663,6 @@
       "cyber_index": null,
       "openness_index": 44.4,
       "multilingual_index": null,
-      "decision_index": null
-     }
-    }
-   },
-   {
-    "id": "moonshotai/kimi-k2-0905",
-    "canonical_slug": "moonshotai/kimi-k2-0905",
-    "hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
-    "name": "MoonshotAI: Kimi K2 0905",
-    "created": 1757021147,
-    "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...",
-    "context_length": 262144,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Other",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0.0000006",
-     "completion": "0.0000025"
-    },
-    "top_provider": {
-     "context_length": 262144,
-     "max_completion_tokens": 98304,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "logprobs",
-     "max_tokens",
-     "presence_penalty",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_k",
-     "top_logprobs",
-     "top_p"
-    ],
-    "default_parameters": {},
-    "supported_voices": null,
-    "knowledge_cutoff": "2024-12-31",
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ],
-    "benchmarks": {
-     "design_arena": [
-      {
-       "arena": "models",
-       "category": "codecategories",
-       "elo": 1139,
-       "win_rate": 48.5,
-       "rank": 115
-      },
-      {
-       "arena": "models",
-       "category": "website",
-       "elo": 1147,
-       "win_rate": 48.3,
-       "rank": 117
-      }
-     ],
-     "artificial_analysis": {
-      "intelligence_index": null,
-      "coding_index": null,
-      "agentic_index": null,
-      "finance_and_accounting_index": null,
-      "strategy_and_ops_index": null,
-      "legal_index": null,
-      "healthcare_and_medical_index": null,
-      "engineering_index": null,
-      "economics_index": null,
-      "cyber_index": null,
-      "openness_index": 27.8,
-      "multilingual_index": 0.808,
       "decision_index": null
      }
     }
@@ -52666,7 +52572,7 @@
     ]
    }
   ],
-  "total_count": 474,
+  "total_count": 473,
   "links": {
    "next": null
   }
