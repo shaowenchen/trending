@@ -1,8 +1,72 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-24T20:16:00.557Z",
+ "fetchedAt": "2026-11-24T22:31:02.630Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.28167",
+    "authors": [
+     {
+      "_id": "6b05fb97ea91637d11fce8fc",
+      "name": "Wenqi Marshall Guo",
+      "hidden": false
+     },
+     {
+      "_id": "6b05fb97ea91637d11fce8fd",
+      "name": "Kuan-Hao Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6b05fb97ea91637d11fce8fe",
+      "name": "Junda Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6b05fb97ea91637d11fce8ff",
+      "name": "Hao Zhang",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
+    "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+    "submittedOnDailyBy": {
+     "_id": "65ebae78d767680a0cf5f833",
+     "avatarUrl": "/avatars/21ce0f13745a8d7f2d4ed15977620ce2.svg",
+     "isPro": false,
+     "fullname": "Marshall Guo",
+     "user": "weathon",
+     "type": "user",
+     "name": "weathon"
+    },
+    "summary": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video. Ablations show that both agentic code search and the structured JSON records drive these gains, while adding hourly summaries, extra tools, or video access changes the average score by less than 1.5 points. In addition, fine-tuning Qwen-3.5-Flash on 64 VideoJSON trajectories from an unrelated 100-hour livestream improves its MM-Lifelong scores by up to 8.25 points. Code will be open-sourced after publication.",
+    "upvotes": 2,
+    "discussionId": "6b05fb97ea91637d11fce900",
+    "githubRepo": "https://github.com/weathon/videojson_release",
+    "githubRepoAddedBy": "user",
+    "githubStars": 0
+   },
+   "publishedAt": "2026-11-19T19:00:00.000Z",
+   "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+   "summary": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video. Ablations show that both agentic code search and the structured JSON records drive these gains, while adding hourly summaries, extra tools, or video access changes the average score by less than 1.5 points. In addition, fine-tuning Qwen-3.5-Flash on 64 VideoJSON trajectories from an unrelated 100-hour livestream improves its MM-Lifelong scores by up to 8.25 points. Code will be open-sourced after publication.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28167.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65ebae78d767680a0cf5f833",
+    "avatarUrl": "/avatars/21ce0f13745a8d7f2d4ed15977620ce2.svg",
+    "fullname": "Marshall Guo",
+    "name": "weathon",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 7,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.30900",
@@ -381,7 +445,7 @@
      "name": "sethschilbe"
     },
     "summary": "Language model agents are increasingly asked to run ongoing multi-day operations rather than finish isolated single-turn tasks. In daily operations, today's choices reshape later observations and cash constraints because empty shelves hide lost walk-in demand, short-shipped customers quietly shrink future orders weeks later, and emergency buying drains working capital. We introduce SMB Bench, a calibrated 90-day wholesale simulator with 18 causally paired tasks and an 859-run frontier trace dataset, to ask what experience and learning signal make an agent better at noticing, attributing, and acting on the delayed consequences of its own decisions in unseen businesses. Across 16 frontier models, only 3 outperform a fixed buying rule; models often record a relevant diagnosis in their notes without changing later purchases in time, showing that diagnosing a problem, changing behavior, and improving a business are separate achievements. To study how experience improves those failures in an open model (Qwen3.8-27B), we used training-business records to identify operational rules and archived frontier quarters as starting states to continue from rather than transcripts to copy. On an unseen test business under identical evaluation instructions, the trained policy followed customer-protection commitments more consistently and reduced severe-loss quarters, while the additional profit benefit remained uncertain. Carrying those commitments through the quarter exposed the cost of fulfilling them, as early-quarter stocking habits left the buyer relying on emergency supply and a deteriorating supplier. The results separate recognizing a delayed effect, acting on it consistently, and coordinating surrounding decisions so that the response improves profit. SMB Bench connects these observations to a learning method by turning archived decisions and their consequences into reusable training experience.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b04f1e6e7a4376c42cc8bde",
     "projectPage": "https://oroagents.com/benchmarks/smb-bench",
     "githubRepo": "https://github.com/ORO-AI/smb-bench",
@@ -401,7 +465,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6b0506decee35fe0bbead8ff/A-5eFVdvlYDP2SrqYksse.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28158.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6b0506decee35fe0bbead8ff",
     "avatarUrl": "/avatars/ae6e380ac4880c8446c5fd793f9bbf35.svg",
@@ -1675,7 +1739,7 @@
      "name": "Gflorent"
     },
     "summary": "Beam is a sparse Mixture-of-Experts (MoE) model with 501.3B total parameters and 23.4B active parameters, specifically built and optimized for coding, reasoning, and agentic workloads. Beam delivers frontier level reasoning, while requiring 3-4x less inference compute than many models of its class. Pretrained on 23.8T diverse, curated, high-quality tokens, Beam features a 1M-token context window achieved through a novel two-stage midtraining phase, built on verifiable, correctness-anchored data. Post-training leveraged a large-scale, fully asynchronous reinforcement learning (RL) campaign across 10.5K GB300 GPUs, generating over 100M rollouts over 4 weeks of training. We believe this is one of the largest scale RL runs conducted by any open lab to date. Across our evaluation suite, capabilities continued to improve as we increased RL compute, with no sign of a plateau. Supported by deep hardware-model co-design, FP8/NVFP4 quantization, and a 1.93B-parameter speculative decoding drafter (DFlash 2), Beam maximizes serving throughput with efficient, flexible deployment. Averaged across conversation turns and harm categories, Beam refuses or pivots on 88.9% of harmful requests while complying with 81.5% of harmless requests, achieving the highest refusal/pivot rate on harmful requests among open-weight models on the Pareto frontier.",
-    "upvotes": 12,
+    "upvotes": 13,
     "discussionId": "6b058d78fde7ee01745cfcc1",
     "projectPage": "https://reflection.ai/",
     "githubRepo": "https://github.com/reflection-oss/cookbook",
@@ -2536,7 +2600,7 @@
      "name": "jxAIbot"
     },
     "summary": "Generative Pre-Training (GPT) represents a profound milestone in natural language processing, serving as the foundation for most of today's state-of-the-art large language models. By casting diverse understanding and generation problems into a shared token representation, GPT enables a single architecture and unified optimization loop to master heterogeneous tasks across massive corpora, giving rise to powerful foundation models for natural language. In contrast, 4D spatiotemporal vision lacks a common representational protocol: perception (such as depth and camera estimation) and generation are either handled by separate one-way pipelines or bolted together from unaligned single-modality spaces. In this work, we introduce WorldLatent, a framework that formulates a unified 4D latent space as a common protocol for both world perception and generation. Rather than relying on fragmented, task-specific models or stacked single-modality representations, our framework proposes a multimodal VAE architecture that compresses and fuses complex 4D visual appearance, geometry, and dynamics into a single structured latent representation. Within this formulation, perception and generation operate as complementary denoising processes over the same latent space, enabling one generative model to learn both capabilities simultaneously within a single training loop. Experiments across representative 4D benchmarks verify that our fused latent protocol achieves specialist-level zero-shot 4D perception, coherent 4D generation, and controllable editing from a single model. By demonstrating that diverse 4D tasks can be seamlessly unified under a shared representational protocol, our work provides a scalable foundation for general-purpose 4D spatial intelligence.",
-    "upvotes": 5,
+    "upvotes": 6,
     "discussionId": "6b05afe1fde7ee01745cfdc4",
     "projectPage": "https://worldlatent.github.io/",
     "ai_summary": "WorldLatent unifies 4D perception and generation in a shared multimodal latent space, enabling a single model to perform zero-shot 4D perception, coherent 4D generation, and controllable editing.",
@@ -2642,7 +2706,7 @@
      "name": "Tomertech"
     },
     "summary": "LLMs typically solve complex tasks with chain-of-thought (CoT) reasoning, which is also the main tool for monitoring them for misaligned behavior. However, standard transformers can also solve tasks with complete latent reasoning (CLR), carrying out the whole task internally and outputting only the final answer. Theory bounds the depth of CLR, the number of sequential steps it can carry out, and recent work measured it to be shallow. In this work, we ask whether CLR is deep enough for a model to pursue a hidden objective that requires reasoning. Such a model would generate a CoT that appears to solve the given task, while a latent multi-step computation decides its answer based on the hidden objective. First, we show that a simple auxiliary loss allows models to solve a multi-step task latently at least 5x deeper than previously reported. Then, in two common tasks, decision-making and code generation, we train a model to pursue such a hidden objective, which decides a loan or plants a vulnerability. The model's CoT justifies the output with no trace of the hidden objective, and a strong LLM monitor does not flag it. Finally, using activation patching, we find that the latent computation is completed before the model generates its CoT, which takes no part in it. Altogether, we show that a hidden objective that requires reasoning can go unseen by a monitor that reads only the output.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6b05a6b8fde7ee01745cfd9d",
     "projectPage": "https://tomerashuach.github.io/clr/",
     "ai_summary": "Models can use deep latent reasoning to pursue hidden objectives while generating chain-of-thought explanations that appear task-appropriate and evade output-based monitoring.",
@@ -2673,7 +2737,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/638dbf006b5c2ccc6240d6fc/uHKtuQZ8p5zGqsfOIOIAh.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31015.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "638dbf006b5c2ccc6240d6fc",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638dbf006b5c2ccc6240d6fc/7jZlE4S35f15PLSN3_bVD.jpeg",
@@ -2961,7 +3025,7 @@
      "name": "6Anirudh"
     },
     "summary": "Reasoning domains have shaped the post-training recipes of frontier models even though they are trained and deployed in domains beyond math and code. In this paper, we study the consequences of directly adopting reasoning-centric training recipes, e.g., the use of outcome-based rewards for reinforcement learning (RL), injection of \"cognitive\" behaviors such as proposing and backtracking from hypotheses in reasoning chains, etc., for knowledge tasks. We hypothesize that these decisions, while useful for reasoning, inadvertently encourage models to memorize hallucinations they themselves generate in their long reasoning chains when trained on knowledge tasks. To study this, we train models with standard post-training, extract their self-generated hallucinations during RL, and track memorization throughout the rest of training. Our experiments on six open models across two model families and two architectures confirm our hypothesis. We find that models' recall of hallucinations reinforced during training increases by 4.83% on average, compared to just 0.17% for self-hallucinations that receive no training signal. In fact, models even memorize false facts that they immediately retract in their reasoning; a backtracking template inherited from reasoning-centric training that has no benefit for knowledge recall. Furthermore, we find that memorization is strongest on the hardest training questions, and rewarding a hallucination makes the model less likely to abstain from it later (by 7.23% on average). Overall, our work identifies and systematically studies a previously unexamined pathway through which models learn hallucinations during training.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6b049dcae7a4376c42cc8b0c",
     "ai_summary": "Adopting reasoning-oriented post-training recipes for knowledge tasks leads models to memorize self-generated hallucinations, especially on difficult questions, and makes them less likely to abstain from those false facts later.",
     "ai_keywords": [
@@ -2990,7 +3054,7 @@
    "title": "LLMs Memorize Their Own Hallucinations During Post-Training",
    "summary": "Reasoning domains have shaped the post-training recipes of frontier models even though they are trained and deployed in domains beyond math and code. In this paper, we study the consequences of directly adopting reasoning-centric training recipes, e.g., the use of outcome-based rewards for reinforcement learning (RL), injection of \"cognitive\" behaviors such as proposing and backtracking from hypotheses in reasoning chains, etc., for knowledge tasks. We hypothesize that these decisions, while useful for reasoning, inadvertently encourage models to memorize hallucinations they themselves generate in their long reasoning chains when trained on knowledge tasks. To study this, we train models with standard post-training, extract their self-generated hallucinations during RL, and track memorization throughout the rest of training. Our experiments on six open models across two model families and two architectures confirm our hypothesis. We find that models' recall of hallucinations reinforced during training increases by 4.83% on average, compared to just 0.17% for self-hallucinations that receive no training signal. In fact, models even memorize false facts that they immediately retract in their reasoning; a backtracking template inherited from reasoning-centric training that has no benefit for knowledge recall. Furthermore, we find that memorization is strongest on the hardest training questions, and rewarding a hallucination makes the model less likely to abstain from it later (by 7.23% on average). Overall, our work identifies and systematically studies a previously unexamined pathway through which models learn hallucinations during training.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26863.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6637cca86169f2a25ff75f8f",
     "avatarUrl": "/avatars/6fde78db671b25938730fc67e7635050.svg",
@@ -3001,6 +3065,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "organization": {
@@ -3068,7 +3133,7 @@
      "name": "ThreeSR"
     },
     "summary": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across tasks. Inspired by this, we propose ToolSmith, an automatic tool-generation framework that grows and reuses modules on top of a lean base tool library. We evaluate ToolSmith on three in-domain multimodal search benchmarks and ten out-of-domain benchmarks under a VLM-as-a-Judge protocol. ToolSmith consistently improves over the base library across deployed agents of varying scales, with larger backbones reaping greater gains, demonstrating the scalability of the approach. Our code and data are available at https://threesr.github.io/toolsmith/.",
-    "upvotes": 6,
+    "upvotes": 9,
     "discussionId": "6b0579c5e7a4376c42cc9393",
     "projectPage": "https://threesr.github.io/toolsmith/",
     "githubRepo": "https://github.com/uclanlp/OpenVLHarness",
@@ -3399,7 +3464,7 @@
     "projectPage": "https://islinxu.github.io/open-vision-banana/",
     "githubRepo": "https://github.com/isLinXu/open-vision-banana",
     "githubRepoAddedBy": "user",
-    "githubStars": 22
+    "githubStars": 23
    },
    "publishedAt": "2026-11-20T19:00:00.000Z",
    "title": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
@@ -3770,7 +3835,7 @@
      "RMBench"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 4,
+    "githubStars": 8,
     "organization": {
      "_id": "6a07ff936781d8b803c28343",
      "name": "PKU-VaLuE-Lab",
@@ -3895,7 +3960,7 @@
      "RoboDojo"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2
+    "githubStars": 8
    },
    "publishedAt": "2026-11-22T19:00:00.000Z",
    "title": "ReWeave: Emergent Physical Task Topologies for Embodied Harness Optimization and Cross-Task Meta-Distillation",
@@ -4148,7 +4213,7 @@
     "projectPage": "https://kingzein.github.io/weave-vla/#overview",
     "githubRepo": "https://github.com/Kingzein/WeaveVLA",
     "githubRepoAddedBy": "user",
-    "githubStars": 9,
+    "githubStars": 13,
     "organization": {
      "_id": "63355133edc1a61aecf74b0e",
      "name": "HKUST",
@@ -4442,7 +4507,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/656fe345039133e87545d8b5/zsePwqV1K37KFY3TFFXoh.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30011.png",
-   "numComments": 2,
+   "numComments": 4,
    "submittedBy": {
     "_id": "656fe345039133e87545d8b5",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656fe345039133e87545d8b5/gWjNIPBGxNmiJl7KGjGge.jpeg",
@@ -4531,7 +4596,7 @@
      "name": "Kairong-Han"
     },
     "summary": "Reinforcement learning (RL) has become an important component in large language models (LLMs). However, existing RL approaches focus on final outputs or textual solution trajectories, leading to coarse-grained rewards and unreliable reasoning. Such paradigms focus mainly on what the model outputs while overlooking how the model internally reasons. Therefore, can we reward how a model thinks internally rather than merely what it says? We first reveal the problem of textual reward aliasing in existing reward modeling approaches. Motivated by this, we propose the Attention Process Reward Model (APRM), which assigns internal rewards based on hidden states and attention maps to capture high-quality reasoning patterns. With only approximately 46M parameters, APRM is trained using ranking and counterfactual objectives, and its reward guides RL optimization while being periodically updated to handle distribution shifts. Integrated with representative RL methods, APRM achieved an average pass@8 gain of 2.88\\%. Our results demonstrate the promise of incorporating internal reasoning signals into RL for LLMs.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b054eb5e7a4376c42cc9227",
     "ai_summary": "An attention-based process reward model that rewards internal reasoning through hidden states and attention maps improves reinforcement learning for large language models, yielding an average pass@8 gain of 2.88%.",
     "ai_keywords": [
@@ -4555,7 +4620,7 @@
    "title": "From Rewarding What Models Say to How They Think: Attention Process Reward Model for LLM Reinforcement Learning",
    "summary": "Reinforcement learning (RL) has become an important component in large language models (LLMs). However, existing RL approaches focus on final outputs or textual solution trajectories, leading to coarse-grained rewards and unreliable reasoning. Such paradigms focus mainly on what the model outputs while overlooking how the model internally reasons. Therefore, can we reward how a model thinks internally rather than merely what it says? We first reveal the problem of textual reward aliasing in existing reward modeling approaches. Motivated by this, we propose the Attention Process Reward Model (APRM), which assigns internal rewards based on hidden states and attention maps to capture high-quality reasoning patterns. With only approximately 46M parameters, APRM is trained using ranking and counterfactual objectives, and its reward guides RL optimization while being periodically updated to handle distribution shifts. Integrated with representative RL methods, APRM achieved an average pass@8 gain of 2.88\\%. Our results demonstrate the promise of incorporating internal reasoning signals into RL for LLMs.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30627.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "68c6b73ad0bef8d72febf45d",
     "avatarUrl": "/avatars/646c9a7f18861505631da249b4d53b2a.svg",
@@ -5073,7 +5138,7 @@
      "domain-specialized multimodal models"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 22,
+    "githubStars": 34,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -5708,7 +5773,7 @@
      "name": "namezz"
     },
     "summary": "RL post-training typically produces domain experts that must then be consolidated into one model, and as new experts keep arriving, this consolidation becomes a continual process. Weight merging and multi-teacher on-policy distillation (MOPD) must re-consolidate the whole model whenever an expert is added, and can erode capabilities outside the target domains. We propose Composable Soft-Prompt Distillation (CSPD), which keeps the pre-RL model frozen, distills each RL expert independently into a soft prompt, and composes experts by concatenating their prompts without joint training. A single soft prompt suffices to distill an RL expert, recovering at least 90% of the teacher's gain in 22 of 23 math, code, and agent settings. Independently trained prompts compose well. In a multi-expert setting, the average rises with every expert added, and the full composition matches MOPD (67.83 vs. 67.79). The composition generalizes best across six held-out benchmarks. Input-space adaptation adds little serving overhead, keeping throughput within 1.5% of the unadapted backbone and reaching 2.40x that of rank-4 LoRA. These results point toward continual post-training on a fixed backbone.",
-    "upvotes": 21,
+    "upvotes": 27,
     "discussionId": "6b03efb7ecb204ffe44e76a1",
     "projectPage": "https://github.com/UCSB-AI/CSPD",
     "githubRepo": "https://github.com/UCSB-AI/CSPD",
@@ -6409,7 +6474,7 @@
      "name": "Arist12"
     },
     "summary": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
-    "upvotes": 11,
+    "upvotes": 14,
     "discussionId": "6b0533efe7a4376c42cc9035",
     "projectPage": "https://arist12.github.io/writing/swe-gym-verified/",
     "githubRepo": "https://github.com/Arist12/SWE-Gym-Verified",
@@ -6699,7 +6764,7 @@
      "name": "aaroncaozj"
     },
     "summary": "Foundation models can reason about complex physical tasks, yet translating this intelligence into reliable robot execution remains challenging. We argue that a critical, often overlooked factor is the robot-use interface (RUI), which determines how agents express and execute physical actions. To systematically study its impact, we introduce RUIBench, comprising 30 manipulation tasks across five suites spanning world knowledge, in-context learning, discovery, dynamic interaction, and contact-rich manipulation. We further develop RUIKit, a unified framework that crosses six action abstractions with two interaction forms, yielding 13 interfaces under shared perception and control. In simulation, changing only the RUI shifts a frontier agent's success rate from 45% to 81%, and that of a fine-tuned 4B model from 13% to 47%. Our analysis reveals that effective interfaces reduce unnecessary decisions while preserving essential feedback, with their benefits shaped by agent behavior and physical uncertainty. We further uncover a verification gap, where agents frequently declare success despite observable failures, revealing the need for task-level verification beyond individual actions. Together, these findings establish RUI design as a critical factor in embodied agent reliability.",
-    "upvotes": 21,
+    "upvotes": 22,
     "discussionId": "6b053079e7a4376c42cc8ff9",
     "projectPage": "https://showlab.github.io/RUIBench/",
     "githubRepo": "https://github.com/showlab/RUIBench",
@@ -6730,7 +6795,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 7,
+    "followerCount": 8,
     "isUserFollowing": false
    },
    "organization": {
@@ -6799,7 +6864,7 @@
      "name": "LIQIIIII"
     },
     "summary": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
-    "upvotes": 72,
+    "upvotes": 75,
     "discussionId": "6b052d3ae7a4376c42cc8fcc",
     "projectPage": "https://xyangzhou.github.io/WorldLeague/",
     "githubRepo": "https://github.com/xyangzhou/WorldLeague",
@@ -6840,7 +6905,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 16,
+    "followerCount": 15,
     "isUserFollowing": false
    },
    "organization": {
@@ -6965,125 +7030,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.31048",
-    "authors": [
-     {
-      "_id": "6b052e4de7a4376c42cc8fcf",
-      "user": {
-       "_id": "68fa12db3fea62443368a82e",
-       "avatarUrl": "/avatars/5b4b0bdfab5e497be672c7406d1bd450.svg",
-       "isPro": false,
-       "fullname": "jiaze li",
-       "user": "williamljz",
-       "type": "user",
-       "name": "williamljz"
-      },
-      "name": "Jiaze Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-24T16:45:04.966Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd0",
-      "name": "Jingyang Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd1",
-      "name": "Wenhao Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd2",
-      "name": "Haoran Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd3",
-      "name": "Zhenlong Yuan",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd4",
-      "name": "Dianmo Sheng",
-      "hidden": false
-     },
-     {
-      "_id": "6b052e4de7a4376c42cc8fd5",
-      "name": "Yuanxing Zhang",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
-    "title": "Distill the Correction, Not the Rewrite: Hindsight Twins for Self-Improving Text-to-Image Models",
-    "submittedOnDailyBy": {
-     "_id": "68fa12db3fea62443368a82e",
-     "avatarUrl": "/avatars/5b4b0bdfab5e497be672c7406d1bd450.svg",
-     "isPro": false,
-     "fullname": "jiaze li",
-     "user": "williamljz",
-     "type": "user",
-     "name": "williamljz"
-    },
-    "summary": "Text-to-image models can learn from their own mistakes by distilling a self-teacher conditioned on a vision-language critic's revised prompt. However, such self-teachers barely improve alignment, and both they and their hindsight-contrast variants absorb the critic's unintended additions to the scene, such as lighting or scenery. We attribute this to two factors: (1) the prompt already specifies the desired fix, so a useful revision must go beyond the failed span, often rewriting the entire scene and adding details that overshadow the fix; (2) although the critic localizes the error to a single span, self-teachers condition on the rewrite, entangling the intended fix with unintended additions. Motivated by these insights, we propose Hindsight Twins (HinT), which fills the critic's revision template once with the intended fix and once with the observed error and distills only their velocity difference, anchored at the user's prompt. Because text encoders spread the edit of a single slot to all other tokens, HinT further aligns the twins' token states outside the slot. Across Qwen-Image-2512, SD3.5-M, and FLUX.2-klein, HinT keeps the rate of critic-induced bias at the base-model level while matching or exceeding the alignment gains of prior self-distillation, and it keeps improving over twelve rounds of self-training where contrastive baselines decay.",
-    "upvotes": 5,
-    "discussionId": "6b052e4de7a4376c42cc8fd6",
-    "ai_summary": "Hindsight Twins improves text-to-image alignment by distilling the velocity difference between twin prompt revisions while avoiding critic-induced bias.",
-    "ai_keywords": [
-     "text-to-image models",
-     "self-distillation",
-     "vision-language critic",
-     "prompt revision",
-     "hindsight-contrast",
-     "self-teachers",
-     "velocity difference",
-     "text encoders",
-     "token states",
-     "self-training",
-     "Qwen-Image-2512",
-     "SD3.5-M",
-     "FLUX.2-klein",
-     "Hindsight Twins (HinT)",
-     "critic-induced bias",
-     "contrastive baselines"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "organization": {
-     "_id": "662c559b322afcbae51b3c8b",
-     "name": "KlingTeam",
-     "fullname": "KlingAI Research",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e272ca6c78a8c122b12127/ZQV1aKLUDPf2rUcxxAqj6.jpeg"
-    }
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "Distill the Correction, Not the Rewrite: Hindsight Twins for Self-Improving Text-to-Image Models",
-   "summary": "Text-to-image models can learn from their own mistakes by distilling a self-teacher conditioned on a vision-language critic's revised prompt. However, such self-teachers barely improve alignment, and both they and their hindsight-contrast variants absorb the critic's unintended additions to the scene, such as lighting or scenery. We attribute this to two factors: (1) the prompt already specifies the desired fix, so a useful revision must go beyond the failed span, often rewriting the entire scene and adding details that overshadow the fix; (2) although the critic localizes the error to a single span, self-teachers condition on the rewrite, entangling the intended fix with unintended additions. Motivated by these insights, we propose Hindsight Twins (HinT), which fills the critic's revision template once with the intended fix and once with the observed error and distills only their velocity difference, anchored at the user's prompt. Because text encoders spread the edit of a single slot to all other tokens, HinT further aligns the twins' token states outside the slot. Across Qwen-Image-2512, SD3.5-M, and FLUX.2-klein, HinT keeps the rate of critic-induced bias at the base-model level while matching or exceeding the alignment gains of prior self-distillation, and it keeps improving over twelve rounds of self-training where contrastive baselines decay.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31048.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "68fa12db3fea62443368a82e",
-    "avatarUrl": "/avatars/5b4b0bdfab5e497be672c7406d1bd450.svg",
-    "fullname": "jiaze li",
-    "name": "williamljz",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "662c559b322afcbae51b3c8b",
-    "name": "KlingTeam",
-    "fullname": "KlingAI Research",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e272ca6c78a8c122b12127/ZQV1aKLUDPf2rUcxxAqj6.jpeg"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
