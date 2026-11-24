@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-23T21:46:01.158Z",
+ "fetchedAt": "2026-11-24T00:01:50.246Z",
  "payload": [
   {
    "paper": {
@@ -29,7 +29,7 @@
      "name": "turhancan97"
     },
     "summary": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81.8% to 85.5% and also improves DINOv3. Comparing the two best candidates cuts DINOv2's false acceptance of unknown statues from 38.3% to 19.6% at 90% known acceptance.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6b040f0d3039f182dac23545",
     "projectPage": "https://turhancan97.github.io/doppeldwarf-306/",
     "githubRepo": "https://github.com/turhancan97/doppeldwarf-306",
@@ -115,7 +115,7 @@
      }
     ],
     "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/7Q2b_j4AtL0mipluftQe5.gif"
+     "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/c_hcKaKRcx-Z1CoCvwiIR.gif"
     ],
     "publishedAt": "2026-11-20T00:00:00.000Z",
     "submittedOnDailyAt": "2026-11-23T00:00:00.000Z",
@@ -130,7 +130,7 @@
      "name": "jsun39"
     },
     "summary": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
-    "upvotes": 19,
+    "upvotes": 21,
     "discussionId": "6b03c37decb204ffe44e7496",
     "projectPage": "https://jingchensun.github.io/future-opsd/",
     "githubRepo": "https://github.com/Jingchensun/future-opsd",
@@ -164,7 +164,7 @@
    "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
    "summary": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
    "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/7Q2b_j4AtL0mipluftQe5.gif"
+    "https://cdn-uploads.huggingface.co/production/uploads/6470f263be66c5bacd3018b1/c_hcKaKRcx-Z1CoCvwiIR.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26954.png",
    "numComments": 1,
@@ -1157,7 +1157,7 @@
      "name": "ClareNie"
     },
     "summary": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing challenges for existing architectures. Standard Transformers accumulate layer-wise, token-level KV caches, incurring linear GPU memory growth and quadratic computational complexity as the context expands. In contrast, linear-time architectures compress history into fixed-size states, but struggle to retain fine-grained details. We introduce MemOnce, a foundation architecture that learns scalable memory states for language models. MemOnce is based on two core designs: (a) Memory encoder-decoder: it caches only a small subset of final-layer hidden states as compact memory representations and dynamically decodes them back into KV caches for attention layers; (b) Memory sparse attention: for each continual input, MemOnce adaptively retrieves relevant memory representations, with the sparse indices computed only once across layers. Coupling these two designs enables efficient on-the-fly memory loading and KV cache decoding, drastically reducing the GPU memory footprint and achieving linear-time complexity. We conduct extensive experiments to show that MemOnce outperforms Transformers and other architectures across varying model sizes, context lengths, and training paradigms (pretraining and post-training adaptation). In particular, adapting Qwen3.5-4B with MemOnce reduces memory state cache by 1313times and prefill latency by 6.9times at 1M context, and improves throughput by 3.5times and overall memory performance by +5.77%. Finally, MemOnce generalizes zero-shot to downstream representation tasks, achieving competitive results against specialized models.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6b03cfb7ecb204ffe44e74d4",
     "projectPage": "https://clare-nie.github.io/MemOnce/",
     "githubRepo": "https://github.com/Clare-Nie/MemOnce",
@@ -1505,7 +1505,7 @@
      "name": "Newiz430"
     },
     "summary": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
-    "upvotes": 86,
+    "upvotes": 88,
     "discussionId": "6b03c420ecb204ffe44e74a6",
     "githubRepo": "https://github.com/Newiz430/cmHC",
     "githubRepoAddedBy": "user",
@@ -4474,7 +4474,7 @@
     "projectPage": "https://be2rlab.github.io/accord-website",
     "githubRepo": "https://github.com/be2rlab/ACCORD",
     "githubRepoAddedBy": "user",
-    "githubStars": 75,
+    "githubStars": 76,
     "organization": {
      "_id": "69f3649ba0e63db57e46aeaf",
      "name": "BE2R",
@@ -4587,7 +4587,7 @@
      "O2LaF"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 15,
+    "githubStars": 16,
     "organization": {
      "_id": "6508ab2b349930913196378b",
      "name": "NationalUniversityofSingapore",
