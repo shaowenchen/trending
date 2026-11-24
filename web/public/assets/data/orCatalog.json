@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-24T18:01:15.870Z",
+ "fetchedAt": "2026-11-24T20:16:02.265Z",
  "payload": {
   "data": [
    {
@@ -15025,13 +15025,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000002156",
-     "completion": "0.0000006468",
-     "input_cache_read": "0.00000000686"
+     "prompt": "0.00000044",
+     "completion": "0.00000132",
+     "input_cache_read": "0.000000028"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 262144,
+     "max_completion_tokens": 393216,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -29719,160 +29719,6 @@
     }
    },
    {
-    "id": "xiaomi/mimo-v2.5",
-    "canonical_slug": "xiaomi/mimo-v2.5-20260422",
-    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
-    "name": "Xiaomi: MiMo-V2.5",
-    "created": 1776874269,
-    "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
-    "context_length": 1000000,
-    "architecture": {
-     "modality": "text+image+audio+video->text",
-     "input_modalities": [
-      "text",
-      "audio",
-      "image",
-      "video"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Other",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0.0000004",
-     "completion": "0.000002",
-     "input_cache_read": "0.00000008"
-    },
-    "top_provider": {
-     "context_length": 1000000,
-     "max_completion_tokens": 65536,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "max_tokens",
-     "presence_penalty",
-     "reasoning",
-     "response_format",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_k",
-     "top_p"
-    ],
-    "default_parameters": {
-     "temperature": 1,
-     "top_p": 0.95,
-     "top_k": null,
-     "frequency_penalty": null,
-     "presence_penalty": null,
-     "repetition_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/xiaomi/mimo-v2.5-20260422/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/chat/completions",
-     "/api/v1/completions",
-     "/api/v1/messages",
-     "/api/v1/responses"
-    ],
-    "benchmarks": {
-     "design_arena": [
-      {
-       "arena": "agents",
-       "category": "pdf",
-       "elo": 1137,
-       "win_rate": 43.5,
-       "rank": 39
-      },
-      {
-       "arena": "models",
-       "category": "3d",
-       "elo": 1183,
-       "win_rate": 50.9,
-       "rank": 54
-      },
-      {
-       "arena": "models",
-       "category": "asciiart",
-       "elo": 1140,
-       "win_rate": 45.6,
-       "rank": 47
-      },
-      {
-       "arena": "models",
-       "category": "codecategories",
-       "elo": 1304,
-       "win_rate": 53.6,
-       "rank": 44
-      },
-      {
-       "arena": "models",
-       "category": "dataviz",
-       "elo": 1244,
-       "win_rate": 53.8,
-       "rank": 38
-      },
-      {
-       "arena": "models",
-       "category": "gamedev",
-       "elo": 1225,
-       "win_rate": 52.5,
-       "rank": 44
-      },
-      {
-       "arena": "models",
-       "category": "svg",
-       "elo": 1230,
-       "win_rate": 50.5,
-       "rank": 41
-      },
-      {
-       "arena": "models",
-       "category": "uicomponent",
-       "elo": 1242,
-       "win_rate": 53.6,
-       "rank": 48
-      },
-      {
-       "arena": "models",
-       "category": "website",
-       "elo": 1308,
-       "win_rate": 53.9,
-       "rank": 39
-      }
-     ],
-     "artificial_analysis": {
-      "intelligence_index": null,
-      "coding_index": null,
-      "agentic_index": null,
-      "finance_and_accounting_index": null,
-      "strategy_and_ops_index": null,
-      "legal_index": null,
-      "healthcare_and_medical_index": null,
-      "engineering_index": null,
-      "economics_index": null,
-      "cyber_index": null,
-      "openness_index": 38.9,
-      "multilingual_index": null,
-      "decision_index": null
-     }
-    },
-    "reasoning": {
-     "mandatory": false
-    }
-   },
-   {
     "id": "openai/gpt-5.4-image-2",
     "canonical_slug": "openai/gpt-5.4-image-2-20260421",
     "hugging_face_id": "",
@@ -30703,9 +30549,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000009",
-     "completion": "0.0000003",
-     "input_cache_read": "0.00000005"
+     "prompt": "0.0000000765",
+     "completion": "0.000000255",
+     "input_cache_read": "0.0000000425"
     },
     "top_provider": {
      "context_length": 262144,
@@ -35647,7 +35493,7 @@
     "name": "MiniMax: MiniMax M2.5",
     "created": 1770908502,
     "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
-    "context_length": 198000,
+    "context_length": 65536,
     "architecture": {
      "modality": "text->text",
      "input_modalities": [
@@ -35660,30 +35506,26 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000027",
-     "completion": "0.00000095",
-     "input_cache_read": "0.00000003"
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.00000006"
     },
     "top_provider": {
-     "context_length": 198000,
-     "max_completion_tokens": 32768,
+     "context_length": 65536,
+     "max_completion_tokens": 58982,
      "is_moderated": false
     },
     "per_request_limits": null,
     "supported_parameters": [
-     "frequency_penalty",
      "include_reasoning",
      "logprobs",
      "max_tokens",
-     "presence_penalty",
      "reasoning",
      "response_format",
-     "stop",
      "structured_outputs",
      "temperature",
      "tool_choice",
      "tools",
-     "top_k",
      "top_logprobs",
      "top_p"
     ],
@@ -52270,7 +52112,7 @@
     ]
    }
   ],
-  "total_count": 470,
+  "total_count": 469,
   "links": {
    "next": null
   }
