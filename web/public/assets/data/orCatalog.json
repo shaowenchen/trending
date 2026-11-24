@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-24T13:31:10.856Z",
+ "fetchedAt": "2026-11-24T15:46:06.294Z",
  "payload": {
   "data": [
    {
@@ -38,6 +38,7 @@
     "supported_parameters": [
      "frequency_penalty",
      "include_reasoning",
+     "logit_bias",
      "logprobs",
      "max_completion_tokens",
      "max_tokens",
@@ -4722,9 +4723,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000015",
-     "completion": "0.0000006",
-     "input_cache_read": "0.000000015",
+     "prompt": "0.000000075",
+     "completion": "0.0000003",
+     "input_cache_read": "0.0000000075",
      "overrides": [
       {
        "utc_start": 1500,
@@ -18089,13 +18090,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000047",
-     "completion": "0.0000003",
-     "input_cache_read": "0.000000035"
+     "prompt": "0.00000004532",
+     "completion": "0.00000013596",
+     "input_cache_read": "0.000000001442"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 943718,
+     "max_completion_tokens": 131072,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -18168,7 +18169,7 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000047",
+     "prompt": "0.0000000456",
      "completion": "0.0000003",
      "input_cache_read": "0.000000035"
     },
@@ -41329,7 +41330,6 @@
     "supported_parameters": [
      "frequency_penalty",
      "logit_bias",
-     "logprobs",
      "max_tokens",
      "min_p",
      "presence_penalty",
@@ -41342,7 +41342,6 @@
      "tool_choice",
      "tools",
      "top_k",
-     "top_logprobs",
      "top_p"
     ],
     "default_parameters": {
