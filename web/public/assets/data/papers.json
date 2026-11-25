@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-25T20:46:00.543Z",
+ "fetchedAt": "2026-11-25T23:01:27.162Z",
  "payload": [
   {
    "paper": {
@@ -56,6 +56,7 @@
     "projectPage": "https://werr.io",
     "githubRepo": "https://github.com/pCwOrM/fractal-neural-synthesis",
     "githubRepoAddedBy": "user",
+    "githubStars": 4,
     "organization": {
      "_id": "6b05f4fe6fb21a037e67f35b",
      "name": "werr-lab",
@@ -355,7 +356,7 @@
      "name": "jake-mercor"
     },
     "summary": "We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and designing an aircraft, to identifying the faults responsible for an earthquake. Each task requires significant domain knowledge and engineering work, with models averaging hundreds of millions of tokens per task. Solutions are scored on practical measures such as speed, cost and accuracy, both on provided cases the agent could test against and on hidden cases that an engineer would expect from the task description. The best-performing frontier model so far, Claude Fable 5.2, scores 54.6% and averages 211 million tokens per task. We highlight two findings. First, when models are given more time, they use more test-time compute and achieve higher scores. Models also scale differently with test-time compute: GPT-6 Astra achieves higher scores at shorter time limits and at equal token use, while Claude Fable 5.2 uses more tokens at longer limits to achieve the highest overall score. Second, each model scores lower on hidden cases than on the provided cases, by an average of 18 points, which we call the deployment gap. Models also fail to predict the deployment gap, overestimating their performance on hidden test cases by an average of 21 points. We hope that OWE-Bench grounds progress toward agents whose engineering solutions perform as well in deployment as they do in testing.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b060c36ea91637d11fce9d3",
     "organization": {
      "_id": "6531a6d5c93c85e11c82d495",
@@ -773,7 +774,7 @@
      "name": "FuxiaoLiu"
     },
     "summary": "Visual creation demands expressive imagery together with precise control over text, layout, and structure. We introduce Nemotron-Labs-VisualCreation, an agentic framework that connects these capabilities through Pixel as Code. Raster images are represented by learned discrete visual tokens, while structured artifacts use explicit programs. A shared generation-and-rendering interface connects these representations to visual feedback across images, vector graphics, webpages, and documents. A Nemotron-native harness coordinates planning and raster candidate selection, with targeted repair for editable structured and hybrid artifacts. To support this interface, we develop Nemotron-Labs-Image-Tokenizer, the autoregressive raster generator Nemotron-Labs-Image-30B-A3B, and the structured-code model family Nemotron-Labs-VisionCode. On approximately 178K images spanning six visual domains, our tokenizer improves reconstruction PSNR from 26.08 to 29.57 dB over Emu3.5 IBQ. It also provides 7.13x faster encoding and 10.93x faster decoding at batch size one on A100. In standalone evaluation, one Nemotron-Labs-VisionCode variant surpasses Kimi K3.1 Pro on the aggregate across Chart2Code, MMSVG, Design2Code, and Image2Struct. At the system level, the Nemotron-native configuration raises GenEval2 Soft-TIFA GM from 31.71 to 52.56 using the same raster generator. With our best setting, Nemotron-Labs-VisualCreation achieves performance competitive with GPT Image 2 and Nano Banana Pro across most benchmarks with available comparisons.",
-    "upvotes": 79,
+    "upvotes": 80,
     "discussionId": "6b0635a3ea91637d11fceab3",
     "projectPage": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
     "organization": {
@@ -1011,7 +1012,7 @@
      "name": "dnap512"
     },
     "summary": "Modern large language models (LLMs) keep the feed-forward network (FFN) intermediate width identical across every layer, a convention inherited from the original Transformer. Yet mechanistic work suggests layers at different depths do qualitatively different work, raising a natural question: are their capacity demands also non-uniform, and if so, can a fixed parameter budget be allocated more wisely than uniformly? To probe this, we apply principal component analysis (PCA) to the input of each FFN down-projection and measure, for every layer, its intrinsic dimensionality as the smallest number of principal components needed to reconstruct the activation up to a fixed cosine similarity. Scanning 58 open-weight LLMs spanning 14 families and 70M to 72B parameters, we find a recurring middle-heavy profile in which middle layers carry higher intrinsic dimensionality than edge layers; the profile is robust to the calibration corpus, even across English and Chinese, and is largely preserved through post-training fine-tuning. As a direct test that this signal is structurally meaningful, we use it to guide width pruning in a knowledge-distilled student under a matched parameter budget: the PCA-guided allocation outperforms the uniform-width convention by +2.3 points on Qwen3-8B and +2.5 on Qwen2.5-3B, while lower-dispersion teachers show smaller gaps (+0.9 on Gemma-3-4B, +0.5 on LLaMA-3-8B), and a budget-matched inverted control does worst on all four teachers. Across these four teachers, the size of the gap tracks how unevenly the teacher's intrinsic dimensionality is distributed across layers (a single-number summary we call σ_{99}), and the advantage persists through downstream supervised fine-tuning. Code is available at https://github.com/naver-ai/lidf.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b06d7ae0a42b5746a881478",
     "ai_summary": "Large language models exhibit a middle-heavy intrinsic-dimensionality profile in their feed-forward layers, and using this profile to guide width allocation improves pruning under a fixed parameter budget.",
     "ai_keywords": [
@@ -1147,7 +1148,7 @@
      "name": "Aoraku"
     },
     "summary": "In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline, rely on text or static images, and risk training-data contamination, while robot evaluations are limited to method-level ablations. We present ICLWorld, an online benchmark that evaluates the ICL of agents from digital to physical worlds, covering computer use and robot use, together with UIverse, a unified harness that turns every environment into a user interface. We build 30 environments, record 630 demonstration videos (10+ hours), and design 160 tasks with customized, often counter-intuitive rules that cannot be satisfied without learning from the context. Each task comes with three rule versions, given as text or video, and we test generalization at three levels, from replaying the demonstration to new instances and unseen environments. Across six frontier models, the strongest agents, Claude Opus 5.5 and GPT-6 Astra, succeed on 82% and 76% of computer-use runs but only 27% and 26% of robot-use runs, and a no-rule control reduces success to at most 8%. GPT-6 Astra succeeds under all three rule versions on only 38% of computer-use tasks, half its rate under a single rule, and answers 98% of robot rule questions correctly yet completes only 20% of these tasks. Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled. These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it.",
-    "upvotes": 19,
+    "upvotes": 20,
     "discussionId": "6b06aa04ea91637d11fcef1d",
     "projectPage": "https://iclworld.github.io",
     "githubRepo": "https://github.com/ICLWorld/ICLWorld",
@@ -1297,7 +1298,7 @@
      "name": "XiaofengAlg"
     },
     "summary": "Fine-tuning an instruction-tuned language model on new facts often erodes its general abilities. We find that standard fine-tuning lowers instruction-following, reasoning and coding benchmarks by 35 points on average, and that these losses track a collapse in answer length: fine-tuned models at least halve their responses, and the further a response drifts from the initial model's length, the more often it fails. We propose InstructReplay: the initial model answers a set of general instructions once, and during fine-tuning the model is kept close to the initial model on these answers. Across three model families and two domains, InstructReplay reduces the average decline on five general benchmarks from 28.1 to 2.4 points and keeps answer length close to the initial model's, while learning the new facts as well as standard fine-tuning. It balances learning and retention better than seven adaptation methods in all six settings. Controlled comparisons attribute the gain to replaying the model's own answers to general instructions rather than to the form of the loss.",
-    "upvotes": 1,
+    "upvotes": 3,
     "discussionId": "6b06b642ea91637d11fcef62",
     "projectPage": "https://xiaofengshi.github.io/InstructReplay/",
     "githubRepo": "https://github.com/xiaofengShi/InstructReplay",
@@ -1329,7 +1330,7 @@
    "title": "InstructReplay: Replaying Assistant Turns to Preserve General Behavior During Factual Fine-Tuning",
    "summary": "Fine-tuning an instruction-tuned language model on new facts often erodes its general abilities. We find that standard fine-tuning lowers instruction-following, reasoning and coding benchmarks by 35 points on average, and that these losses track a collapse in answer length: fine-tuned models at least halve their responses, and the further a response drifts from the initial model's length, the more often it fails. We propose InstructReplay: the initial model answers a set of general instructions once, and during fine-tuning the model is kept close to the initial model on these answers. Across three model families and two domains, InstructReplay reduces the average decline on five general benchmarks from 28.1 to 2.4 points and keeps answer length close to the initial model's, while learning the new facts as well as standard fine-tuning. It balances learning and retention better than seven adaptation methods in all six settings. Controlled comparisons attribute the gain to replaying the model's own answers to general instructions rather than to the form of the loss.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32918.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "642f6c64f945a8a5c9ee5b5d",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642f6c64f945a8a5c9ee5b5d/VSE1-89wT9uKSLPyqKqBW.png",
@@ -1557,7 +1558,7 @@
      "3D geometric transitions"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 3
+    "githubStars": 4
    },
    "publishedAt": "2026-11-22T19:00:00.000Z",
    "title": "Foresight Forcing: Learning Spatial Foresight for Robotic Manipulation",
@@ -1614,7 +1615,7 @@
      "name": "dakopi"
     },
     "summary": "Reasoning models become long-horizon agents through reinforcement learning or, more cheaply, through fine-tuning on a stronger teacher's trajectories, which contain the teacher's chain-of-thought as well as its actions. The standard fine-tuning approach imitates both, yet the strongest teachers are closed models whose chain-of-thought is hidden behind an API. We show that the chain-of-thought can be left out altogether and that the long-horizon policy can be distilled from the teacher's actions alone. The student is trained on these trajectories with its reasoning block left empty, while a KL loss on a replay buffer of its own generations limits drift from its initial model. Surprisingly, the policy learned from these trajectories with an empty reasoning block carries over to inference with thinking enabled, where the student reasons in its own style while acting like the teacher, an effect we call cross-format transfer. Distilling the actions of Qwen3.6-27B raises the task success of Qwen3-4B on AppWorld from 7% to 18% and that of Qwen3-32B from 12% to 25%. We further introduce CoT-proxies, short summaries of the teacher's reasoning placed after the empty reasoning block, which raise Qwen3-4B further, to 35%. Since neither actions nor CoT-proxies need the hidden chain-of-thought, the recipe applies unchanged to closed teachers. Distilling GPT-5.6 Luna from its visible outputs and the reasoning summaries its API returns raises Qwen3-4B from 7% to 48% on AppWorld and from 3% to 28% on SWE-bench Verified.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6b06a399ea91637d11fceef6"
    },
    "publishedAt": "2026-11-23T19:00:00.000Z",
@@ -1972,7 +1973,7 @@
      "name": "ShijianW01"
     },
     "summary": "Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects. However, existing benchmarks evaluate coding agents on explicitly specified test generation tasks, commonly providing an issue description, a designated test entry point, or files to inspect, leaving the ability to determine what to test and where to investigate insufficiently evaluated. Relying on such clues bypasses the challenge of mapping requirements to implementations and proactively uncovering unknown defects. We propose SpecEngineeringBench, comprising 100 instances from 78 open-source Python repositories across 16 application categories, with multiple recorded defects in each instance. Two independent tasks evaluate complementary capabilities: generating test suites and discovering defects through execution analysis. The evaluation combines test validity, defect detection, and coverage with localization precision and recall. Across seven frontier coding agents, results reveal that test validity and coverage decouple from defect exposure: agents achieve a 91.47% Head Pass Rate and 80.48% Change-focused Coverage alongside a 26.36% Fail-to-Pass Rate, while localization recall drops from 78.11% at the file level to 51.29% at the function level. Autonomous test generation improves file, function, and hunk localization recall by 4.99, 2.77, and 2.69 percentage points over relying solely on existing repository test suites.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6b067c86ea91637d11fced66",
     "projectPage": "https://tokenwave-ai.github.io/SpecEngineeringBench-Page/",
     "githubRepo": "https://github.com/TokenWave-AI/SpecEngineeringBench",
@@ -1992,7 +1993,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/67f5454e1f54f65efc9ce06b/9c3m-hnTG7IxDP9iJp_LJ.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32973.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "67f5454e1f54f65efc9ce06b",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/QTh1c-okqsl-NLHatc8Gu.png",
@@ -2206,7 +2207,7 @@
      "name": "Sssunset"
     },
     "summary": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the episodes on the three benchmarks, against 8%, 0.4% and 36% for the base model. Its accuracy gain therefore comes from answering more often at high levels of evidence. The belief line shows how the agent reaches this evidence: it acts on its own belief. It commits at only 0.1 to 2.2% of the turns at which the evidence is insufficient and its line still names several answers, against 3 to 68% for the base model.",
-    "upvotes": 87,
+    "upvotes": 88,
     "discussionId": "6b068db1ea91637d11fcee15",
     "projectPage": "https://declare-lab.github.io/RLVB/?case=tabletop_cups&m=rlvb_grpo&s=0",
     "githubRepo": "https://github.com/declare-lab/RLVB",
@@ -5072,7 +5073,7 @@
      "name": "xiaoda99"
     },
     "summary": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
-    "upvotes": 86,
+    "upvotes": 87,
     "discussionId": "6b0537d0e7a4376c42cc90b0",
     "githubRepo": "https://github.com/Caiyun-AI/LoomFormer",
     "githubRepoAddedBy": "user",
@@ -5408,7 +5409,7 @@
      "name": "Hirony111"
     },
     "summary": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
-    "upvotes": 100,
+    "upvotes": 101,
     "discussionId": "6affb4748c0c69ddd0a94ccf",
     "organization": {
      "_id": "68d4ae9941614425f8aa7490",
