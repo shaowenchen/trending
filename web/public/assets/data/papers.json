@@ -1,8 +1,144 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-25T12:01:39.207Z",
+ "fetchedAt": "2026-11-25T14:16:07.579Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.31752",
+    "authors": [
+     {
+      "_id": "6b06e2990a42b5746a8814a8",
+      "name": "Georgios Politis",
+      "hidden": false
+     },
+     {
+      "_id": "6b06e2990a42b5746a8814a9",
+      "name": "Evangelos Pappas",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
+    "title": "Separating Measurement Failures from Defence Failures in Split Language-Model Privacy",
+    "submittedOnDailyBy": {
+     "_id": "641f77c0863b87326f49a24f",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/0lmANHmUFcRvSUgVgCeM-.png",
+     "isPro": false,
+     "fullname": "Georgios Politis",
+     "user": "gpolitis",
+     "type": "user",
+     "name": "gpolitis"
+    },
+    "summary": "Split-training privacy evaluations fail through distinct mechanisms. Evaluators can overlook an exposed gradient channel, align reconstructions against shifted labels, or deploy uncalibrated probes before testing a candidate defence, while calibrated attacks can also refute real defences. Separating these failure modes alters which claims survive. We conduct a retrospective evidentiary reanalysis across four split-LLM campaigns and two cross-cutting scope checks covering host key custody and variational mutual-information bounds, mapping every recorded claim to one of five admissibility states (breach, non-detection, undetermined coverage, invalid measurement, or out-of-scope inference). Across a 19-configuration exploration, only four of 24 required probes qualified, yet those four calibrated probes still established qualified privacy breaches in 13 configurations, while utility or learning-gain failures eliminated the remaining 6. In a seven-cell defence-redesign pilot, 2 quantised configurations failed utility gates, calibrated next-byte structure probes breached the 0.02 gate on all 7 cells (0.097 to 0.112), and qualified punctuation-property probes reached 0.79 to 0.89, yielding 4 failed and 3 undetermined composite privacy assessments (the latter from marginal null-band excursions on punctuation bindings). Negative evidence against both defence families remains intact. Scope checks further show that shared-key orthogonal wrappers protect passive network captures without hiding activations from a compromised restoring host, and why near-zero variational lower bounds leave worst-case leakage unconstrained. Rerunnable scripts verify 1,522 checks across 122 SHA-256-pinned artifacts while preserving each campaign's native seed intervals and retrospective boundaries.",
+    "upvotes": 2,
+    "discussionId": "6b06e2990a42b5746a8814aa",
+    "projectPage": "https://setloop.io",
+    "githubRepo": "https://github.com/setloop-io/Separating-Measurement-Failures-from-Defence-Failures-in-Split-Language-Model-Privacy",
+    "githubRepoAddedBy": "user",
+    "githubStars": 0,
+    "organization": {
+     "_id": "6aa001b46ab3ddac3fcc9177",
+     "name": "Setloop",
+     "fullname": "Setloop",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/l8UIXIEloO6cxPWimFXT4.png"
+    }
+   },
+   "publishedAt": "2026-11-23T19:00:00.000Z",
+   "title": "Separating Measurement Failures from Defence Failures in Split Language-Model Privacy",
+   "summary": "Split-training privacy evaluations fail through distinct mechanisms. Evaluators can overlook an exposed gradient channel, align reconstructions against shifted labels, or deploy uncalibrated probes before testing a candidate defence, while calibrated attacks can also refute real defences. Separating these failure modes alters which claims survive. We conduct a retrospective evidentiary reanalysis across four split-LLM campaigns and two cross-cutting scope checks covering host key custody and variational mutual-information bounds, mapping every recorded claim to one of five admissibility states (breach, non-detection, undetermined coverage, invalid measurement, or out-of-scope inference). Across a 19-configuration exploration, only four of 24 required probes qualified, yet those four calibrated probes still established qualified privacy breaches in 13 configurations, while utility or learning-gain failures eliminated the remaining 6. In a seven-cell defence-redesign pilot, 2 quantised configurations failed utility gates, calibrated next-byte structure probes breached the 0.02 gate on all 7 cells (0.097 to 0.112), and qualified punctuation-property probes reached 0.79 to 0.89, yielding 4 failed and 3 undetermined composite privacy assessments (the latter from marginal null-band excursions on punctuation bindings). Negative evidence against both defence families remains intact. Scope checks further show that shared-key orthogonal wrappers protect passive network captures without hiding activations from a compromised restoring host, and why near-zero variational lower bounds leave worst-case leakage unconstrained. Rerunnable scripts verify 1,522 checks across 122 SHA-256-pinned artifacts while preserving each campaign's native seed intervals and retrospective boundaries.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31752.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "641f77c0863b87326f49a24f",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/0lmANHmUFcRvSUgVgCeM-.png",
+    "fullname": "Georgios Politis",
+    "name": "gpolitis",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6aa001b46ab3ddac3fcc9177",
+    "name": "Setloop",
+    "fullname": "Setloop",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/641f77c0863b87326f49a24f/l8UIXIEloO6cxPWimFXT4.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.32782",
+    "authors": [
+     {
+      "_id": "6b06d7ae0a42b5746a881477",
+      "name": "Daehee Kim",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
+    "title": "Measuring Layer-wise Intrinsic Dimensionality of FFNs in LLMs via PCA",
+    "submittedOnDailyBy": {
+     "_id": "63a1500145edac9f750d06dd",
+     "avatarUrl": "/avatars/7319d4751fd0d8297e6a2008011d46de.svg",
+     "isPro": false,
+     "fullname": "Daehee Kim",
+     "user": "dnap512",
+     "type": "user",
+     "name": "dnap512"
+    },
+    "summary": "Modern large language models (LLMs) keep the feed-forward network (FFN) intermediate width identical across every layer, a convention inherited from the original Transformer. Yet mechanistic work suggests layers at different depths do qualitatively different work, raising a natural question: are their capacity demands also non-uniform, and if so, can a fixed parameter budget be allocated more wisely than uniformly? To probe this, we apply principal component analysis (PCA) to the input of each FFN down-projection and measure, for every layer, its intrinsic dimensionality as the smallest number of principal components needed to reconstruct the activation up to a fixed cosine similarity. Scanning 58 open-weight LLMs spanning 14 families and 70M to 72B parameters, we find a recurring middle-heavy profile in which middle layers carry higher intrinsic dimensionality than edge layers; the profile is robust to the calibration corpus, even across English and Chinese, and is largely preserved through post-training fine-tuning. As a direct test that this signal is structurally meaningful, we use it to guide width pruning in a knowledge-distilled student under a matched parameter budget: the PCA-guided allocation outperforms the uniform-width convention by +2.3 points on Qwen3-8B and +2.5 on Qwen2.5-3B, while lower-dispersion teachers show smaller gaps (+0.9 on Gemma-3-4B, +0.5 on LLaMA-3-8B), and a budget-matched inverted control does worst on all four teachers. Across these four teachers, the size of the gap tracks how unevenly the teacher's intrinsic dimensionality is distributed across layers (a single-number summary we call σ_{99}), and the advantage persists through downstream supervised fine-tuning. Code is available at https://github.com/naver-ai/lidf.",
+    "upvotes": 0,
+    "discussionId": "6b06d7ae0a42b5746a881478",
+    "ai_summary": "Large language models exhibit a middle-heavy intrinsic-dimensionality profile in their feed-forward layers, and using this profile to guide width allocation improves pruning under a fixed parameter budget.",
+    "ai_keywords": [
+     "large language models (LLMs)",
+     "feed-forward network (FFN)",
+     "Transformer",
+     "FFN down-projection",
+     "principal component analysis (PCA)",
+     "intrinsic dimensionality",
+     "principal components",
+     "activation",
+     "cosine similarity",
+     "open-weight LLMs",
+     "post-training fine-tuning",
+     "width pruning",
+     "knowledge-distilled student",
+     "parameter budget",
+     "PCA-guided allocation",
+     "uniform-width convention",
+     "inverted control",
+     "supervised fine-tuning",
+     "σ99"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash"
+   },
+   "publishedAt": "2026-11-23T19:00:00.000Z",
+   "title": "Measuring Layer-wise Intrinsic Dimensionality of FFNs in LLMs via PCA",
+   "summary": "Modern large language models (LLMs) keep the feed-forward network (FFN) intermediate width identical across every layer, a convention inherited from the original Transformer. Yet mechanistic work suggests layers at different depths do qualitatively different work, raising a natural question: are their capacity demands also non-uniform, and if so, can a fixed parameter budget be allocated more wisely than uniformly? To probe this, we apply principal component analysis (PCA) to the input of each FFN down-projection and measure, for every layer, its intrinsic dimensionality as the smallest number of principal components needed to reconstruct the activation up to a fixed cosine similarity. Scanning 58 open-weight LLMs spanning 14 families and 70M to 72B parameters, we find a recurring middle-heavy profile in which middle layers carry higher intrinsic dimensionality than edge layers; the profile is robust to the calibration corpus, even across English and Chinese, and is largely preserved through post-training fine-tuning. As a direct test that this signal is structurally meaningful, we use it to guide width pruning in a knowledge-distilled student under a matched parameter budget: the PCA-guided allocation outperforms the uniform-width convention by +2.3 points on Qwen3-8B and +2.5 on Qwen2.5-3B, while lower-dispersion teachers show smaller gaps (+0.9 on Gemma-3-4B, +0.5 on LLaMA-3-8B), and a budget-matched inverted control does worst on all four teachers. Across these four teachers, the size of the gap tracks how unevenly the teacher's intrinsic dimensionality is distributed across layers (a single-number summary we call σ_{99}), and the advantage persists through downstream supervised fine-tuning. Code is available at https://github.com/naver-ai/lidf.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32782.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "63a1500145edac9f750d06dd",
+    "avatarUrl": "/avatars/7319d4751fd0d8297e6a2008011d46de.svg",
+    "fullname": "Daehee Kim",
+    "name": "dnap512",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 7,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.32649",
@@ -71,7 +207,7 @@
      "name": "Aoraku"
     },
     "summary": "In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline, rely on text or static images, and risk training-data contamination, while robot evaluations are limited to method-level ablations. We present ICLWorld, an online benchmark that evaluates the ICL of agents from digital to physical worlds, covering computer use and robot use, together with UIverse, a unified harness that turns every environment into a user interface. We build 30 environments, record 630 demonstration videos (10+ hours), and design 160 tasks with customized, often counter-intuitive rules that cannot be satisfied without learning from the context. Each task comes with three rule versions, given as text or video, and we test generalization at three levels, from replaying the demonstration to new instances and unseen environments. Across six frontier models, the strongest agents, Claude Opus 5.5 and GPT-6 Astra, succeed on 82% and 76% of computer-use runs but only 27% and 26% of robot-use runs, and a no-rule control reduces success to at most 8%. GPT-6 Astra succeeds under all three rule versions on only 38% of computer-use tasks, half its rate under a single rule, and answers 98% of robot rule questions correctly yet completes only 20% of these tasks. Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled. These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it.",
-    "upvotes": 14,
+    "upvotes": 17,
     "discussionId": "6b06aa04ea91637d11fcef1d",
     "projectPage": "https://iclworld.github.io",
     "githubRepo": "https://github.com/ICLWorld/ICLWorld",
@@ -88,7 +224,8 @@
      "frontier models",
      "no-rule control"
     ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash"
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 10
    },
    "publishedAt": "2026-11-23T19:00:00.000Z",
    "title": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
@@ -335,7 +472,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/662a75287181150b857245fb/imTSYgK_JLPhI62cd3nkZ.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31258.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "662a75287181150b857245fb",
     "avatarUrl": "/avatars/df9b4060eeb0af8f0bff08e213fcd58d.svg",
@@ -526,7 +663,7 @@
      "name": "dakopi"
     },
     "summary": "Reasoning models become long-horizon agents through reinforcement learning or, more cheaply, through fine-tuning on a stronger teacher's trajectories, which contain the teacher's chain-of-thought as well as its actions. The standard fine-tuning approach imitates both, yet the strongest teachers are closed models whose chain-of-thought is hidden behind an API. We show that the chain-of-thought can be left out altogether and that the long-horizon policy can be distilled from the teacher's actions alone. The student is trained on these trajectories with its reasoning block left empty, while a KL loss on a replay buffer of its own generations limits drift from its initial model. Surprisingly, the policy learned from these trajectories with an empty reasoning block carries over to inference with thinking enabled, where the student reasons in its own style while acting like the teacher, an effect we call cross-format transfer. Distilling the actions of Qwen3.6-27B raises the task success of Qwen3-4B on AppWorld from 7% to 18% and that of Qwen3-32B from 12% to 25%. We further introduce CoT-proxies, short summaries of the teacher's reasoning placed after the empty reasoning block, which raise Qwen3-4B further, to 35%. Since neither actions nor CoT-proxies need the hidden chain-of-thought, the recipe applies unchanged to closed teachers. Distilling GPT-5.6 Luna from its visible outputs and the reasoning summaries its API returns raises Qwen3-4B from 7% to 48% on AppWorld and from 3% to 28% on SWE-bench Verified.",
-    "upvotes": 3,
+    "upvotes": 10,
     "discussionId": "6b06a399ea91637d11fceef6"
    },
    "publishedAt": "2026-11-23T19:00:00.000Z",
@@ -1074,7 +1211,7 @@
      "name": "Sssunset"
     },
     "summary": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the episodes on the three benchmarks, against 8%, 0.4% and 36% for the base model. Its accuracy gain therefore comes from answering more often at high levels of evidence. The belief line shows how the agent reaches this evidence: it acts on its own belief. It commits at only 0.1 to 2.2% of the turns at which the evidence is insufficient and its line still names several answers, against 3 to 68% for the base model.",
-    "upvotes": 52,
+    "upvotes": 58,
     "discussionId": "6b068db1ea91637d11fcee15",
     "projectPage": "https://declare-lab.github.io/RLVB/?case=tabletop_cups&m=rlvb_grpo&s=0",
     "githubRepo": "https://github.com/declare-lab/RLVB",
@@ -1113,7 +1250,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/65f95363ca387c9d45a2d2ad/yD4XHl3Wt3O8CTYYDBuhv.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32884.png",
-   "numComments": 3,
+   "numComments": 5,
    "submittedBy": {
     "_id": "65f95363ca387c9d45a2d2ad",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f95363ca387c9d45a2d2ad/6VzOniOb4eFjOWuKLV32i.jpeg",
@@ -1124,7 +1261,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 5,
+    "followerCount": 6,
     "isUserFollowing": false
    },
    "organization": {
@@ -2650,7 +2787,7 @@
      "name": "vinthony"
     },
     "summary": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons. Existing game benchmarks primarily test language models as computer-use agents that query a language model throughout play, incurring repeated inference cost and, in real-time games, acting while the environment continues to evolve. We ask whether coding agents can learn from game interaction to develop standalone game-playing programs that run without language model inference. We thus introduce Coding4Games, a benchmark for evaluating whether coding agents can develop standalone programs that play modern games through visual observations and standard game inputs. Coding4Games has three defining features: 1) Diverse Modern Games, covering 15 games with diverse visual, strategic, and control demands; 2) Development-Test Separation, in which a coding agent uses a sandbox and the standard player interface to iteratively develop a program, after which the selected program is frozen and independently tested without language-model inference; and 3) Outcome and Process Evaluation, which measures not only game performance and reliability but also how agents use feedback, revise programs, and resolve problems during development. Across 15 games, the best program per game outscores the strongest GUI baseline on 13 and ties it on one. The human player outscores all agents on 10 games. We additionally examine the effects of development budgets. Coding4Games evaluates whether coding agents can turn their understanding of complex interactive environments into programs that work reliably on their own.",
-    "upvotes": 8,
+    "upvotes": 9,
     "discussionId": "6b066953ea91637d11fcebf4",
     "projectPage": "https://coding4game.github.io/",
     "githubRepo": "https://github.com/GVCLab/Coding4Games",
@@ -3249,7 +3386,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 18,
+    "followerCount": 20,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -3334,7 +3471,7 @@
      "name": "wwh0411"
     },
     "summary": "Computer-use agents (CUAs) are rapidly improving, yet their evaluation remains largely static. Existing benchmarks provide a strong foundation, but fixed difficulty ceilings, limited feature coverage, and coarse aggregate scores progressively weaken their discriminative and diagnostic value. We introduce CUA-SEE, a closed-loop evaluation environment that co-evolves tasks and executable verifiers from rollout evidence. It disentangles three objectives: benchmark evolution expands evaluation scope through cohort-calibrated difficulty and coverage growth; diagnostic evolution increases resolution through agent-conditional capability-boundary probes; and verifier evolution improves precision by translating changing requirements into state-grounded checkpoints with adversarial validation. Across multiple agents, applications, and rounds, CUA-SEE generates challenging, measurable tasks while preserving process-level evidence. Our results position adaptive evaluation as a scalable counterpart to self-evolving agents, continuously tracking what agents can do, where their boundaries lie, and how reliably progress is measured.",
-    "upvotes": 37,
+    "upvotes": 38,
     "discussionId": "6b065768ea91637d11fceb9a",
     "ai_summary": "CUA-SEE is a closed-loop evaluation environment that co-evolves tasks and executable verifiers to adaptively measure computer-use agents’ capabilities, boundaries, and progress reliability.",
     "ai_keywords": [
@@ -3797,7 +3934,7 @@
      "name": "nullptr04"
     },
     "summary": "Computer-use agents (CUAs) built on vision-language models are increasingly entrusted with long-horizon tasks in live desktop, web, and mobile environments, where the screen keeps changing on its own. However, current CUAs lack real-time situational awareness: they perceive the environment through discrete snapshots, and the substantial inference latency of VLMs, compounded by highly dynamic interfaces, opens a perception-action gap in which the observed state frequently becomes stale before the corresponding action is executed. To bridge this gap, we present NightWatch, a plug-and-play framework that endows any CUA with continuous, temporally grounded perception without changing the agent's model, prompt, or action space. NightWatch couples the VLM agent with NightWatch-0.8B, a lightweight System-1 model that performs streaming monitoring of the interface state and keeps the agent synchronized with the evolving environment at low computational cost and latency, thereby grounding each decision in the current state rather than an outdated snapshot and reducing both stale actions and idle waiting while preserving task success. Experiments on desktop and dynamic web environments (OSWorld-Verified and DynaCU-Bench) show that NightWatch, driven by a watcher of only 0.8B parameters, reduces non-reasoning wall-clock time by 33% and wasted time by 53% on OSWorld while keeping task success on par, raises success on DynaCU-Bench from 39.5% to 44.2% with the large VLM agent, and is more efficient than passive-watching baselines such as AOI and PUSV under the same screenshot-only input, as well as a System-1 decision model more than 30times its size. Overall, NightWatch demonstrates that the timing of perception is as critical as its content, marking a step toward agents that maintain continuous awareness of their environment rather than perceiving it turn by turn.",
-    "upvotes": 49,
+    "upvotes": 62,
     "discussionId": "6b0655a8ea91637d11fceb7d",
     "projectPage": "https://sujq0722.github.io/NightWatch/",
     "githubRepo": "https://github.com/SuJQ0722/NightWatch",
@@ -3826,7 +3963,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/668b71a9aafa84bf3c986a22/ipvmBq2nQaH81MAMYf7_W.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28947.png",
-   "numComments": 0,
+   "numComments": 1,
    "submittedBy": {
     "_id": "668b71a9aafa84bf3c986a22",
     "avatarUrl": "/avatars/3cad42b97f23a046e30ed3dd1b5378d2.svg",
@@ -3896,7 +4033,7 @@
      "name": "xiaoda99"
     },
     "summary": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
-    "upvotes": 72,
+    "upvotes": 77,
     "discussionId": "6b0537d0e7a4376c42cc90b0",
     "githubRepo": "https://github.com/Caiyun-AI/LoomFormer",
     "githubRepoAddedBy": "user",
@@ -4221,7 +4358,7 @@
      "name": "Hirony111"
     },
     "summary": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
-    "upvotes": 68,
+    "upvotes": 79,
     "discussionId": "6affb4748c0c69ddd0a94ccf",
     "organization": {
      "_id": "68d4ae9941614425f8aa7490",
@@ -4234,7 +4371,7 @@
    "title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
    "summary": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.25403.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "68594238c59797d19dfdef6c",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/fzJuprNSg69eaU-vCNwkb.png",
@@ -4583,7 +4720,7 @@
      "name": "greeky"
     },
     "summary": "Spatial intelligence, the ability to reason about 3D space from visual observations, becomes essential as multimodal large language models (MLLMs) move into the physical world. Beyond perceiving each view, it rests on two cornerstones of human cognition: fusing multiple views into one coherent 3D scene and mentally transforming that scene to new viewpoints as reasoning unfolds. Yet our spatial probes reveal that MLLMs largely lack both capabilities, even after spatial fine-tuning. We therefore present S-Mind, which internalizes multi-view geometry within the MLLM through a compact set of spatial tokens. It supervises these tokens to hold the fused 3D scene and re-emits them to re-express this scene from every viewpoint the reasoning adopts. Across four spatial benchmarks, S-Mind improves its Qwen3.5 backbones by up to 22.26 points and surpasses frontier general models such as GPT-6-Astra (+0.45), Kimi-K3.1-Pro (+1.97), and GLM-5.3-Flash (+7.80) in average accuracy. Moreover, the same probes confirm that it acquires both capabilities, reaching fusion and transformation accuracies of 65.11% and 82.17%, against at most 16.02% and 37.28% for the baselines. At inference, S-Mind also runs about 100x faster than a tool-based agent on the same backbone. Instilled through these spatial tokens during training, spatial capability becomes intrinsic to the backbone and persists even when the tokens are withheld, offering a promising path toward spatial intelligence in MLLMs.",
-    "upvotes": 33,
+    "upvotes": 35,
     "discussionId": "6b0645caea91637d11fceaef",
     "projectPage": "https://kanaboon1.github.io/S-Mind/",
     "githubRepo": "https://github.com/KANABOON1/S-Mind",
@@ -5164,7 +5301,7 @@
      "trajectory auditing and correction"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 0,
+    "githubStars": 1,
     "organization": {
      "_id": "67aea5c8f086ab0f70ed97c9",
      "name": "inclusionAI",
@@ -5196,288 +5333,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/662e1f9da266499277937d33/fyKuazRifqiaIO34xrhhm.jpeg"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.31237",
-    "authors": [
-     {
-      "_id": "6b0618dbea91637d11fce9de",
-      "name": "JB Kim",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9df",
-      "name": "Byungwoo Jeon",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e0",
-      "name": "Kyungmin Lee",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e1",
-      "name": "Hyeonmo Kang",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e2",
-      "name": "Cheonbok Park",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e3",
-      "name": "Shinyoung Joo",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e4",
-      "name": "Jinwoo Shin",
-      "hidden": false
-     },
-     {
-      "_id": "6b0618dbea91637d11fce9e5",
-      "name": "Jeonghoon Kim",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/66ac7a770e823468b7a2ed17/cvGzsAJdH9S6ahm-TmnSh.mp4"
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
-    "title": "Let Vision-Language Models Generate Images through Their Representations",
-    "submittedOnDailyBy": {
-     "_id": "66ac7a770e823468b7a2ed17",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66ac7a770e823468b7a2ed17/nlBQ8xGrvQHRAhgBKwW-4.png",
-     "isPro": true,
-     "fullname": "JB",
-     "user": "the-jb",
-     "type": "user",
-     "name": "the-jb"
-    },
-    "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
-    "upvotes": 10,
-    "discussionId": "6b0618dbea91637d11fce9e6",
-    "projectPage": "https://thejb.ai/integral/",
-    "githubRepo": "https://github.com/the-jb/integral",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Integral converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space, preserving understanding while enabling strong visual generation.",
-    "ai_keywords": [
-     "unified multimodal models",
-     "visual understanding",
-     "visual generation",
-     "pretrained vision-language models",
-     "heterogeneous visual representations",
-     "shared visual representation space",
-     "shared visual tokens",
-     "hierarchical representations",
-     "frozen vision encoder",
-     "Abstraction Fusion",
-     "Block-wise MoT",
-     "lightweight generative stream",
-     "block boundaries",
-     "generative learning",
-     "reconstruction fidelity"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 0,
-    "organization": {
-     "_id": "6475760c33192631bad2bb38",
-     "name": "kaist-ai",
-     "fullname": "KAIST AI",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-    }
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "Let Vision-Language Models Generate Images through Their Representations",
-   "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/66ac7a770e823468b7a2ed17/cvGzsAJdH9S6ahm-TmnSh.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31237.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "66ac7a770e823468b7a2ed17",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66ac7a770e823468b7a2ed17/nlBQ8xGrvQHRAhgBKwW-4.png",
-    "fullname": "JB",
-    "name": "the-jb",
-    "type": "user",
-    "isPro": true,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6475760c33192631bad2bb38",
-    "name": "kaist-ai",
-    "fullname": "KAIST AI",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.30235",
-    "authors": [
-     {
-      "_id": "6b054acce7a4376c42cc91e1",
-      "name": "Kanghui Tian",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e2",
-      "name": "Shuai Dong",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e3",
-      "user": {
-       "_id": "61bda7dda3082b8d007d6195",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
-       "isPro": false,
-       "fullname": "Yuhan Zhu",
-       "user": "ZhuYuhan",
-       "type": "user",
-       "name": "ZhuYuhan"
-      },
-      "name": "Yuhan Zhu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T00:45:04.530Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e4",
-      "name": "Congcong Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e5",
-      "name": "Ji Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e6",
-      "user": {
-       "_id": "6744754ff9940208b97a6a9a",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6744754ff9940208b97a6a9a/PRG6_0jAfsj0uoUJvKyWf.png",
-       "isPro": false,
-       "fullname": "Tianxiang Jiang",
-       "user": "Eurayka",
-       "type": "user",
-       "name": "Eurayka"
-      },
-      "name": "Tianxiang Jiang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T08:45:05.214Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e7",
-      "name": "Zhixiong Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e8",
-      "name": "Shengyuan Ding",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91e9",
-      "name": "Yi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91ea",
-      "name": "Jiaqi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b054acce7a4376c42cc91eb",
-      "name": "Yu Qiao",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
-    "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
-    "submittedOnDailyBy": {
-     "_id": "61bda7dda3082b8d007d6195",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
-     "isPro": false,
-     "fullname": "Yuhan Zhu",
-     "user": "ZhuYuhan",
-     "type": "user",
-     "name": "ZhuYuhan"
-    },
-    "summary": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
-    "upvotes": 3,
-    "discussionId": "6b054af7e7a4376c42cc91ec",
-    "projectPage": "https://tiankanghui.github.io/PixelOne/",
-    "githubRepo": "https://github.com/tiankanghui/PixelOne",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "PixelOne transfers spatial knowledge from a search teacher to a student to predict GUI clicks at native resolution in one forward pass, achieving high accuracy and low latency.",
-    "ai_keywords": [
-     "GUI grounding",
-     "one forward pass",
-     "fixed global bins",
-     "local refinement",
-     "screenshot downsampling",
-     "native resolution",
-     "search teacher",
-     "student",
-     "spatial knowledge transfer",
-     "VideoJEV text-option scorer",
-     "progressive zoom",
-     "candidate regions",
-     "spatial distillation",
-     "box supervision",
-     "decision head",
-     "visual token",
-     "lightweight pixel head",
-     "click-aligned loss",
-     "target box",
-     "single-forward grounders",
-     "PixelOne",
-     "PixelOne-Pro-35B-A3B"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 13,
-    "organization": {
-     "_id": "68cb7c874f4a1865540c455c",
-     "name": "jdopensource",
-     "fullname": "JD.com Open Source",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c0e2ab44ea28a974e3074b/g-4gTubd16qUtwmGZ0n4h.png"
-    }
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
-   "summary": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30235.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "61bda7dda3082b8d007d6195",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
-    "fullname": "Yuhan Zhu",
-    "name": "ZhuYuhan",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 14,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "68cb7c874f4a1865540c455c",
-    "name": "jdopensource",
-    "fullname": "JD.com Open Source",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c0e2ab44ea28a974e3074b/g-4gTubd16qUtwmGZ0n4h.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
