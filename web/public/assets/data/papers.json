@@ -1,8 +1,278 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-24T22:31:02.630Z",
+ "fetchedAt": "2026-11-25T00:46:04.521Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.31237",
+    "authors": [
+     {
+      "_id": "6b0618dbea91637d11fce9de",
+      "name": "JB Kim",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9df",
+      "name": "Byungwoo Jeon",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e0",
+      "name": "Kyungmin Lee",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e1",
+      "name": "Hyeonmo Kang",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e2",
+      "name": "Cheonbok Park",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e3",
+      "name": "Shinyoung Joo",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e4",
+      "name": "Jinwoo Shin",
+      "hidden": false
+     },
+     {
+      "_id": "6b0618dbea91637d11fce9e5",
+      "name": "Jeonghoon Kim",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/66ac7a770e823468b7a2ed17/cvGzsAJdH9S6ahm-TmnSh.mp4"
+    ],
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
+    "title": "Let Vision-Language Models Generate Images through Their Representations",
+    "submittedOnDailyBy": {
+     "_id": "66ac7a770e823468b7a2ed17",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66ac7a770e823468b7a2ed17/nlBQ8xGrvQHRAhgBKwW-4.png",
+     "isPro": true,
+     "fullname": "JB",
+     "user": "the-jb",
+     "type": "user",
+     "name": "the-jb"
+    },
+    "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
+    "upvotes": 1,
+    "discussionId": "6b0618dbea91637d11fce9e6",
+    "projectPage": "https://thejb.ai/integral/",
+    "githubRepo": "https://github.com/the-jb/integral",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Integral converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space, preserving understanding while enabling strong visual generation.",
+    "ai_keywords": [
+     "unified multimodal models",
+     "visual understanding",
+     "visual generation",
+     "pretrained vision-language models",
+     "heterogeneous visual representations",
+     "shared visual representation space",
+     "shared visual tokens",
+     "hierarchical representations",
+     "frozen vision encoder",
+     "Abstraction Fusion",
+     "Block-wise MoT",
+     "lightweight generative stream",
+     "block boundaries",
+     "generative learning",
+     "reconstruction fidelity"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "organization": {
+     "_id": "6475760c33192631bad2bb38",
+     "name": "kaist-ai",
+     "fullname": "KAIST AI",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+    }
+   },
+   "publishedAt": "2026-11-22T19:00:00.000Z",
+   "title": "Let Vision-Language Models Generate Images through Their Representations",
+   "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/66ac7a770e823468b7a2ed17/cvGzsAJdH9S6ahm-TmnSh.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31237.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66ac7a770e823468b7a2ed17",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66ac7a770e823468b7a2ed17/nlBQ8xGrvQHRAhgBKwW-4.png",
+    "fullname": "JB",
+    "name": "the-jb",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6475760c33192631bad2bb38",
+    "name": "kaist-ai",
+    "fullname": "KAIST AI",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/aaZFiyXe1qR-Dmy_xq67m.png"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.30235",
+    "authors": [
+     {
+      "_id": "6b054acce7a4376c42cc91e1",
+      "name": "Kanghui Tian",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e2",
+      "name": "Shuai Dong",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e3",
+      "user": {
+       "_id": "61bda7dda3082b8d007d6195",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
+       "isPro": false,
+       "fullname": "Yuhan Zhu",
+       "user": "ZhuYuhan",
+       "type": "user",
+       "name": "ZhuYuhan"
+      },
+      "name": "Yuhan Zhu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.530Z",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e4",
+      "name": "Congcong Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e5",
+      "name": "Ji Zhao",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e6",
+      "name": "Tianxiang Jiang",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e7",
+      "name": "Zhixiong Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e8",
+      "name": "Shengyuan Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91e9",
+      "name": "Yi Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91ea",
+      "name": "Jiaqi Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6b054acce7a4376c42cc91eb",
+      "name": "Yu Qiao",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
+    "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
+    "submittedOnDailyBy": {
+     "_id": "61bda7dda3082b8d007d6195",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
+     "isPro": false,
+     "fullname": "Yuhan Zhu",
+     "user": "ZhuYuhan",
+     "type": "user",
+     "name": "ZhuYuhan"
+    },
+    "summary": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
+    "upvotes": 1,
+    "discussionId": "6b054af7e7a4376c42cc91ec",
+    "projectPage": "https://tiankanghui.github.io/PixelOne/",
+    "githubRepo": "https://github.com/tiankanghui/PixelOne",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "PixelOne transfers spatial knowledge from a search teacher to a student to predict GUI clicks at native resolution in one forward pass, achieving high accuracy and low latency.",
+    "ai_keywords": [
+     "GUI grounding",
+     "one forward pass",
+     "fixed global bins",
+     "local refinement",
+     "screenshot downsampling",
+     "native resolution",
+     "search teacher",
+     "student",
+     "spatial knowledge transfer",
+     "VideoJEV text-option scorer",
+     "progressive zoom",
+     "candidate regions",
+     "spatial distillation",
+     "box supervision",
+     "decision head",
+     "visual token",
+     "lightweight pixel head",
+     "click-aligned loss",
+     "target box",
+     "single-forward grounders",
+     "PixelOne",
+     "PixelOne-Pro-35B-A3B"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 3,
+    "organization": {
+     "_id": "68cb7c874f4a1865540c455c",
+     "name": "jdopensource",
+     "fullname": "JD.com Open Source",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c0e2ab44ea28a974e3074b/g-4gTubd16qUtwmGZ0n4h.png"
+    }
+   },
+   "publishedAt": "2026-11-22T19:00:00.000Z",
+   "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
+   "summary": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30235.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "61bda7dda3082b8d007d6195",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61bda7dda3082b8d007d6195/5PC9bEYaDDKR6_mbmEy9x.jpeg",
+    "fullname": "Yuhan Zhu",
+    "name": "ZhuYuhan",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 13,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "68cb7c874f4a1865540c455c",
+    "name": "jdopensource",
+    "fullname": "JD.com Open Source",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/68c0e2ab44ea28a974e3074b/g-4gTubd16qUtwmGZ0n4h.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2611.28167",
@@ -51,7 +321,7 @@
    "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
    "summary": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video. Ablations show that both agentic code search and the structured JSON records drive these gains, while adding hourly summaries, extra tools, or video access changes the average score by less than 1.5 points. In addition, fine-tuning Qwen-3.5-Flash on 64 VideoJSON trajectories from an unrelated 100-hour livestream improves its MM-Lifelong scores by up to 8.25 points. Code will be open-sourced after publication.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28167.png",
-   "numComments": 1,
+   "numComments": 4,
    "submittedBy": {
     "_id": "65ebae78d767680a0cf5f833",
     "avatarUrl": "/avatars/21ce0f13745a8d7f2d4ed15977620ce2.svg",
@@ -73,7 +343,18 @@
     "authors": [
      {
       "_id": "6b05e056ea91637d11fce895",
+      "user": {
+       "_id": "63d54e47695c73ecef344ae3",
+       "avatarUrl": "/avatars/44f9d6e134af3c9d01d03d66c4472d4a.svg",
+       "isPro": false,
+       "fullname": "Anh Dao",
+       "user": "anhdao69",
+       "type": "user",
+       "name": "anhdao69"
+      },
       "name": "Anh Dao",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.742Z",
       "hidden": false
      },
      {
@@ -310,7 +591,18 @@
     "authors": [
      {
       "_id": "6b05cb3bdde2ccc7f1287dce",
+      "user": {
+       "_id": "69e3f89c389cab38b3c71f68",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/GroFhHwKZe7sLgcw7lna6.png",
+       "isPro": false,
+       "fullname": "Mohammad Hossein Moslemi",
+       "user": "mmoslem3",
+       "type": "user",
+       "name": "mmoslem3"
+      },
       "name": "Mohammad Hossein Moslemi",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.657Z",
       "hidden": false
      },
      {
@@ -646,7 +938,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfbeb",
+      "user": {
+       "_id": "67c7666cd51b75fc80596316",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67c7666cd51b75fc80596316/5l5x9PRzLuPwuauN-ZXDW.jpeg",
+       "isPro": false,
+       "fullname": "Thibaut Barroyer",
+       "user": "thibautbar",
+       "type": "user",
+       "name": "thibautbar"
+      },
       "name": "Thibaut Barroyer",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.589Z",
       "hidden": false
      },
      {
@@ -676,7 +979,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfbf1",
+      "user": {
+       "_id": "608cdba3b100878d75b155a0",
+       "avatarUrl": "/avatars/5d7070ee0b3fc232f1406cd58c5b7c02.svg",
+       "isPro": false,
+       "fullname": "Sanyam Bhutani",
+       "user": "Sanyam",
+       "type": "user",
+       "name": "Sanyam"
+      },
       "name": "Sanyam Bhutani",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.626Z",
       "hidden": false
      },
      {
@@ -932,7 +1246,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfc22",
+      "user": {
+       "_id": "668303427e757a105618be26",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/SUHH6vlLZdQogCB6kIgrN.jpeg",
+       "isPro": false,
+       "fullname": "Yoni Gozlan",
+       "user": "yonigozlan",
+       "type": "user",
+       "name": "yonigozlan"
+      },
       "name": "Yoni Gozlan",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.610Z",
       "hidden": false
      },
      {
@@ -977,7 +1302,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfc2b",
+      "user": {
+       "_id": "6880383a621de15f59e109e2",
+       "avatarUrl": "/avatars/e3d5edb0a1cbdbd928c987894fec594c.svg",
+       "isPro": false,
+       "fullname": "Ethan Hellman",
+       "user": "HellmanEthan",
+       "type": "user",
+       "name": "HellmanEthan"
+      },
       "name": "Ethan Hellman",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.634Z",
       "hidden": false
      },
      {
@@ -1032,7 +1368,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfc36",
+      "user": {
+       "_id": "639b895e34967bcf4557da29",
+       "avatarUrl": "/avatars/b63c7127a25aa5e8412986fb7b69d2c1.svg",
+       "isPro": false,
+       "fullname": "Aymen Kallala",
+       "user": "AymenKallala",
+       "type": "user",
+       "name": "AymenKallala"
+      },
       "name": "Aymen Kallala",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.596Z",
       "hidden": false
      },
      {
@@ -1632,7 +1979,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfcae",
+      "user": {
+       "_id": "660b40d048408366ccbe0769",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660b40d048408366ccbe0769/MyWwlqNMHXc9gb_ygYKHs.jpeg",
+       "isPro": false,
+       "fullname": "Kai Wu",
+       "user": "wukaixingxp",
+       "type": "user",
+       "name": "wukaixingxp"
+      },
       "name": "Kai Wu",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.604Z",
       "hidden": false
      },
      {
@@ -1657,7 +2015,18 @@
      },
      {
       "_id": "6b058d77fde7ee01745cfcb3",
+      "user": {
+       "_id": "66b69b92b4958a65e21b9db1",
+       "avatarUrl": "/avatars/133533efd1511bea997b1e07bff2c3e4.svg",
+       "isPro": false,
+       "fullname": "Xiaolan You",
+       "user": "xLany",
+       "type": "user",
+       "name": "xLany"
+      },
       "name": "Xiaolan You",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.619Z",
       "hidden": false
      },
      {
@@ -1739,7 +2108,7 @@
      "name": "Gflorent"
     },
     "summary": "Beam is a sparse Mixture-of-Experts (MoE) model with 501.3B total parameters and 23.4B active parameters, specifically built and optimized for coding, reasoning, and agentic workloads. Beam delivers frontier level reasoning, while requiring 3-4x less inference compute than many models of its class. Pretrained on 23.8T diverse, curated, high-quality tokens, Beam features a 1M-token context window achieved through a novel two-stage midtraining phase, built on verifiable, correctness-anchored data. Post-training leveraged a large-scale, fully asynchronous reinforcement learning (RL) campaign across 10.5K GB300 GPUs, generating over 100M rollouts over 4 weeks of training. We believe this is one of the largest scale RL runs conducted by any open lab to date. Across our evaluation suite, capabilities continued to improve as we increased RL compute, with no sign of a plateau. Supported by deep hardware-model co-design, FP8/NVFP4 quantization, and a 1.93B-parameter speculative decoding drafter (DFlash 2), Beam maximizes serving throughput with efficient, flexible deployment. Averaged across conversation turns and harm categories, Beam refuses or pivots on 88.9% of harmful requests while complying with 81.5% of harmless requests, achieving the highest refusal/pivot rate on harmful requests among open-weight models on the Pareto frontier.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6b058d78fde7ee01745cfcc1",
     "projectPage": "https://reflection.ai/",
     "githubRepo": "https://github.com/reflection-oss/cookbook",
@@ -1787,7 +2156,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 204,
+    "followerCount": 205,
     "isUserFollowing": false
    },
    "organization": {
@@ -1804,7 +2173,18 @@
     "authors": [
      {
       "_id": "6b05c010fde7ee01745cfe3d",
+      "user": {
+       "_id": "64f5937db6d7050b19c68fec",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64f5937db6d7050b19c68fec/4lWYw6-VxZsbl-1Rd9FSy.jpeg",
+       "isPro": false,
+       "fullname": "Xuanlei Zhao",
+       "user": "oahzxl",
+       "type": "user",
+       "name": "oahzxl"
+      },
       "name": "Xuanlei Zhao",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.649Z",
       "hidden": false
      },
      {
@@ -1927,7 +2307,7 @@
     "fullname": "National University of Singapore",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
    },
-   "isAuthorParticipating": false
+   "isAuthorParticipating": true
   },
   {
    "paper": {
@@ -2362,7 +2742,18 @@
      },
      {
       "_id": "6b05b41ffde7ee01745cfdf2",
+      "user": {
+       "_id": "61e52be53d6dbb1da842316a",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e52be53d6dbb1da842316a/gx0WGPcOCClXPymoKglc4.jpeg",
+       "isPro": false,
+       "fullname": "Börje Karlsson",
+       "user": "tellarin",
+       "type": "user",
+       "name": "tellarin"
+      },
       "name": "Börje F. Karlsson",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T00:45:04.641Z",
       "hidden": false
      },
      {
@@ -3065,7 +3456,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -3133,12 +3524,12 @@
      "name": "ThreeSR"
     },
     "summary": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across tasks. Inspired by this, we propose ToolSmith, an automatic tool-generation framework that grows and reuses modules on top of a lean base tool library. We evaluate ToolSmith on three in-domain multimodal search benchmarks and ten out-of-domain benchmarks under a VLM-as-a-Judge protocol. ToolSmith consistently improves over the base library across deployed agents of varying scales, with larger backbones reaping greater gains, demonstrating the scalability of the approach. Our code and data are available at https://threesr.github.io/toolsmith/.",
-    "upvotes": 9,
+    "upvotes": 11,
     "discussionId": "6b0579c5e7a4376c42cc9393",
     "projectPage": "https://threesr.github.io/toolsmith/",
     "githubRepo": "https://github.com/uclanlp/OpenVLHarness",
     "githubRepoAddedBy": "user",
-    "githubStars": 579,
+    "githubStars": 597,
     "organization": {
      "_id": "60b492a78e9589ce25930346",
      "name": "uclanlp",
@@ -3250,7 +3641,7 @@
     "projectPage": "https://rcl-robotics.github.io/Dexduet.io/",
     "githubRepo": "https://github.com/HaoranZhangumich/DexDuet",
     "githubRepoAddedBy": "user",
-    "githubStars": 1,
+    "githubStars": 10,
     "organization": {
      "_id": "61fb9e24dc607a42af5f193f",
      "name": "MBZUAI",
@@ -3935,7 +4326,7 @@
      "name": "xuyicheng-zju"
     },
     "summary": "Long-horizon embodied tasks involve physical dependencies that may only become clear through interaction. As task understanding deepens, past trials can reveal new information for adaptation and transfer. However, coarse progress feedback cannot identify which physical preconditions held, leaving search unguided, while task-specific optimization easily overfits to individual scenes, making cross-task transfer brittle. We introduce ReWeave, a framework that jointly optimizes an embodied agent harness and an emergent physical task topology from interaction without updating policy weights. Keeping execution policies and perception frozen, ReWeave co-optimizes coupled context, workflows, and control loops. As new evidence revises the topology, ReWeave reprojects past trials onto the updated task understanding, exposing retained progress, regressions, and bottlenecks that guide parent selection and search width. Across tasks, matching verified local mechanisms to unmet preconditions consolidates 72 specialist units into 44 reusable groups (0.34times full concatenation) within a compact shared harness capable of continual learning. ReWeave improves held-out success from 89.00% to 98.75% on LIBERO-PRO and from 25.50% to 58.25% on RoboDojo, while uncovering retained progress in 89% of 159 failed RoboDojo development trials and translating stronger offline reasoning into higher online performance. On eight unseen LIBERO-PRO tasks, the shared harness reaches 51.3% success versus 41.3% for direct distillation, rising to 75.0% after continual learning.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b05516be7a4376c42cc9257",
     "projectPage": "https://xuyicheng-zju.github.io/ReWeave/",
     "githubRepo": "https://github.com/xuyicheng-zju/ReWeave",
@@ -5773,7 +6164,7 @@
      "name": "namezz"
     },
     "summary": "RL post-training typically produces domain experts that must then be consolidated into one model, and as new experts keep arriving, this consolidation becomes a continual process. Weight merging and multi-teacher on-policy distillation (MOPD) must re-consolidate the whole model whenever an expert is added, and can erode capabilities outside the target domains. We propose Composable Soft-Prompt Distillation (CSPD), which keeps the pre-RL model frozen, distills each RL expert independently into a soft prompt, and composes experts by concatenating their prompts without joint training. A single soft prompt suffices to distill an RL expert, recovering at least 90% of the teacher's gain in 22 of 23 math, code, and agent settings. Independently trained prompts compose well. In a multi-expert setting, the average rises with every expert added, and the full composition matches MOPD (67.83 vs. 67.79). The composition generalizes best across six held-out benchmarks. Input-space adaptation adds little serving overhead, keeping throughput within 1.5% of the unadapted backbone and reaching 2.40x that of rank-4 LoRA. These results point toward continual post-training on a fixed backbone.",
-    "upvotes": 27,
+    "upvotes": 28,
     "discussionId": "6b03efb7ecb204ffe44e76a1",
     "projectPage": "https://github.com/UCSB-AI/CSPD",
     "githubRepo": "https://github.com/UCSB-AI/CSPD",
@@ -6474,7 +6865,7 @@
      "name": "Arist12"
     },
     "summary": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
-    "upvotes": 14,
+    "upvotes": 16,
     "discussionId": "6b0533efe7a4376c42cc9035",
     "projectPage": "https://arist12.github.io/writing/swe-gym-verified/",
     "githubRepo": "https://github.com/Arist12/SWE-Gym-Verified",
@@ -6805,231 +7196,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1671779505215-63a55320ce5763e06f78519c.png"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.30989",
-    "authors": [
-     {
-      "_id": "6b052d3ae7a4376c42cc8fc9",
-      "user": {
-       "_id": "6b02855c39f517a17614940a",
-       "avatarUrl": "/avatars/58f0bd2a31f98cefe724f79310af892c.svg",
-       "isPro": false,
-       "fullname": "Zhou Xinyang",
-       "user": "xyangzhou",
-       "type": "user",
-       "name": "xyangzhou"
-      },
-      "name": "Xinyang Zhou",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-24T08:45:05.354Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b052d3ae7a4376c42cc8fca",
-      "user": {
-       "_id": "6706ab1168e9971e91bad6f7",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/tWSXpBEAm0d8gTDWFRxTS.png",
-       "isPro": false,
-       "fullname": "Qi Li",
-       "user": "LIQIIIII",
-       "type": "user",
-       "name": "LIQIIIII"
-      },
-      "name": "Qi Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-24T08:45:05.362Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b052d3ae7a4376c42cc8fcb",
-      "name": "Xinchao Wang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6706ab1168e9971e91bad6f7/m1KBXMUNuBsaJWpMByiMn.mp4"
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
-    "title": "WorldLeague: Benchmarking Physical Agency",
-    "submittedOnDailyBy": {
-     "_id": "6706ab1168e9971e91bad6f7",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/tWSXpBEAm0d8gTDWFRxTS.png",
-     "isPro": false,
-     "fullname": "Qi Li",
-     "user": "LIQIIIII",
-     "type": "user",
-     "name": "LIQIIIII"
-    },
-    "summary": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
-    "upvotes": 75,
-    "discussionId": "6b052d3ae7a4376c42cc8fcc",
-    "projectPage": "https://xyangzhou.github.io/WorldLeague/",
-    "githubRepo": "https://github.com/xyangzhou/WorldLeague",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "WorldLeague benchmarks 13 AI systems on 60 simulated robot tasks spanning exploration, rearrangement, and adaptation, measuring progress and success to compare autonomous physical goal achievement.",
-    "ai_keywords": [
-     "vision-language models",
-     "vision-language-action models",
-     "world-action models",
-     "embodied AI",
-     "physical AI",
-     "agentic AI"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 18,
-    "organization": {
-     "_id": "6508ab2b349930913196378b",
-     "name": "NationalUniversityofSingapore",
-     "fullname": "National University of Singapore",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
-    }
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "WorldLeague: Benchmarking Physical Agency",
-   "summary": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6706ab1168e9971e91bad6f7/m1KBXMUNuBsaJWpMByiMn.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30989.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6706ab1168e9971e91bad6f7",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/tWSXpBEAm0d8gTDWFRxTS.png",
-    "fullname": "Qi Li",
-    "name": "LIQIIIII",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 15,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6508ab2b349930913196378b",
-    "name": "NationalUniversityofSingapore",
-    "fullname": "National University of Singapore",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.30573",
-    "authors": [
-     {
-      "_id": "6b05300ee7a4376c42cc8fe1",
-      "user": {
-       "_id": "6ac26e22fa530c33be6950a8",
-       "avatarUrl": "/avatars/45c43aafb20c5d43dbddec0789927cc2.svg",
-       "isPro": false,
-       "fullname": "ZiAn Wang",
-       "user": "ZiAnwang",
-       "type": "user",
-       "name": "ZiAnwang"
-      },
-      "name": "ZiAn Wang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-24T08:45:05.379Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe2",
-      "name": "Tianyi Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe3",
-      "name": "Zhihao Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe4",
-      "name": "Manni Cui",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe5",
-      "name": "Junkai Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe6",
-      "name": "ZhiJin Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe7",
-      "name": "Ruiqi Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe8",
-      "name": "Junfei Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fe9",
-      "name": "Huanyu Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b05300ee7a4376c42cc8fea",
-      "name": "Shu Wu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-24T00:00:00.000Z",
-    "title": "Write, Evolve, Read: Streaming Cameras into a Persistent World State for 4D Occupancy Forecasting",
-    "submittedOnDailyBy": {
-     "_id": "6ac26e22fa530c33be6950a8",
-     "avatarUrl": "/avatars/45c43aafb20c5d43dbddec0789927cc2.svg",
-     "isPro": false,
-     "fullname": "ZiAn Wang",
-     "user": "ZiAnwang",
-     "type": "user",
-     "name": "ZiAnwang"
-    },
-    "summary": "4D occupancy forecasting predicts the 3D semantic occupancy of a driving scene seconds ahead. Over a few seconds, the scene changes little while the vehicle moves, so most of the space ahead has already been seen. Sorting the future into unchanged, changed, and unseen space, we find that current camera-based world models fall short on the unchanged part: they fail to hold on to what they have already seen, rather than to forecast what will change. We therefore make what the model has seen its state. PersistWorld streams camera frames into a persistent 3D world state anchored in the scene, writing each frame once instead of rebuilding the state from past frames. The state is learned end to end with the forecast, and an evolver predicts it at any queried time along the ego trajectory. On Occ3D-nuScenes, PersistWorld raises the IoU of the best camera-based world model by 19 points at 1-3 s and by 18 to 24 points up to 8 s, while running more than twice as fast. Code and models: https://github.com/wangzian828/PersistWorld. Project page: https://wangzian828.github.io/PersistWorld",
-    "upvotes": 4,
-    "discussionId": "6b05300ee7a4376c42cc8feb",
-    "ai_summary": "PersistWorld maintains a scene-anchored 3D world state updated from camera streams and forecasts future semantic occupancy more accurately and faster than prior camera-based world models.",
-    "ai_keywords": [
-     "4D occupancy forecasting",
-     "3D semantic occupancy",
-     "camera-based world models",
-     "persistent 3D world state",
-     "ego trajectory",
-     "end-to-end learning",
-     "evolver",
-     "Occ3D-nuScenes",
-     "IoU"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash"
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "Write, Evolve, Read: Streaming Cameras into a Persistent World State for 4D Occupancy Forecasting",
-   "summary": "4D occupancy forecasting predicts the 3D semantic occupancy of a driving scene seconds ahead. Over a few seconds, the scene changes little while the vehicle moves, so most of the space ahead has already been seen. Sorting the future into unchanged, changed, and unseen space, we find that current camera-based world models fall short on the unchanged part: they fail to hold on to what they have already seen, rather than to forecast what will change. We therefore make what the model has seen its state. PersistWorld streams camera frames into a persistent 3D world state anchored in the scene, writing each frame once instead of rebuilding the state from past frames. The state is learned end to end with the forecast, and an evolver predicts it at any queried time along the ego trajectory. On Occ3D-nuScenes, PersistWorld raises the IoU of the best camera-based world model by 19 points at 1-3 s and by 18 to 24 points up to 8 s, while running more than twice as fast. Code and models: https://github.com/wangzian828/PersistWorld. Project page: https://wangzian828.github.io/PersistWorld",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30573.png",
-   "numComments": 0,
-   "submittedBy": {
-    "_id": "6ac26e22fa530c33be6950a8",
-    "avatarUrl": "/avatars/45c43aafb20c5d43dbddec0789927cc2.svg",
-    "fullname": "ZiAn Wang",
-    "name": "ZiAnwang",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
