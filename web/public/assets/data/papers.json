@@ -1,8 +1,221 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-25T18:43:03.127Z",
+ "fetchedAt": "2026-11-25T20:46:00.543Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.32393",
+    "authors": [
+     {
+      "_id": "6b068cbcea91637d11fcee0b",
+      "user": {
+       "_id": "65b69ae2791c522128f3b0e2",
+       "avatarUrl": "/avatars/9d748da858a9177b4f96439b3bfb4dd7.svg",
+       "isPro": false,
+       "fullname": "Volkan Dagli",
+       "user": "pCwOrM",
+       "type": "user",
+       "name": "pCwOrM"
+      },
+      "name": "Volkan Dagli",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T08:45:05.546Z",
+      "hidden": false
+     },
+     {
+      "_id": "6b068cbcea91637d11fcee0c",
+      "name": "Zerrin Dagli",
+      "hidden": false
+     },
+     {
+      "_id": "6b068cbcea91637d11fcee0d",
+      "name": "Daghan Dagli",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/65b69ae2791c522128f3b0e2/X9iqt5nmmIfRdeid0KgWe.mp4",
+     "https://cdn-uploads.huggingface.co/production/uploads/65b69ae2791c522128f3b0e2/QYxuXfYZ91UBMmpSA71VC.png"
+    ],
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
+    "title": "Fractal Neural Synthesis: Constant-Storage Procedural Weight Derivation via Complex Quadratic Boundary Dynamics",
+    "submittedOnDailyBy": {
+     "_id": "65b69ae2791c522128f3b0e2",
+     "avatarUrl": "/avatars/9d748da858a9177b4f96439b3bfb4dd7.svg",
+     "isPro": false,
+     "fullname": "Volkan Dagli",
+     "user": "pCwOrM",
+     "type": "user",
+     "name": "pCwOrM"
+    },
+    "summary": "Conventional neural networks store synaptic parameters as explicit tensors whose persistent Flash footprint scales linearly (O(W)) with parameter count, constraining resource-limited edge microcontrollers. We formulate and systematically evaluate Fractal Neural Synthesis (FNS), a procedural weight derivation architecture that replaces hidden-layer matrices with a constant 24-byte coordinate seed Theta = (c_x, c_y, ell) in F_64^3 anchored near the complex quadratic bifurcation boundary dM of f_c(z) = z^2 + c. We introduce a large-bailout (R = 256) smooth escape kernel, four zero-overhead geometric sampling apertures--Cartesian Grid, coprime 3x3 Rule-of-Thirds (Z/9Z), phi-Vogel spiral, and multi-scale Harmonic Tripod--and prove conditional Kolmogorov (K_Kolm <= 192 + c_0 bits) and Shannon entropy bounds. Across magnifications zeta in [10^0, 10^8], C^1 Fourier and lattice-noise bases collapse to post-standardization rank ~2.25 and SHA-256 PRNG exhibits avalanche discontinuity (rho ~ 0.019, 50.6% micro-step retention), whereas dM uniquely sustains both rank (~10.0) and local continuity (rho in [0.81, 0.97], 89.2% retention). Under leak-free 10-fold CV across four zero-scaler-byte non-linear benchmarks, FNS with an INT8 readout surpasses 0-hidden Linear-INT8 by +3.6 to +10.8 pp while delivering 10.7x-129x total Flash reduction (725x-2,773x hidden reduction) relative to converged Float32 MLPs (90.30% Ionosphere in 285 B; 97.22% Optical Digits in 2,598 B; 97.90% PenDigits in 2,598 B; 87.00% Satimage in 1,570 B).",
+    "upvotes": 1,
+    "discussionId": "6b068cbcea91637d11fcee0e",
+    "projectPage": "https://werr.io",
+    "githubRepo": "https://github.com/pCwOrM/fractal-neural-synthesis",
+    "githubRepoAddedBy": "user",
+    "organization": {
+     "_id": "6b05f4fe6fb21a037e67f35b",
+     "name": "werr-lab",
+     "fullname": "WERR Lab",
+     "avatar": "https://www.gravatar.com/avatar/3a92759708d0a1637bdaa3b5c9bce973?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-11-23T19:00:00.000Z",
+   "title": "Fractal Neural Synthesis: Constant-Storage Procedural Weight Derivation via Complex Quadratic Boundary Dynamics",
+   "summary": "Conventional neural networks store synaptic parameters as explicit tensors whose persistent Flash footprint scales linearly (O(W)) with parameter count, constraining resource-limited edge microcontrollers. We formulate and systematically evaluate Fractal Neural Synthesis (FNS), a procedural weight derivation architecture that replaces hidden-layer matrices with a constant 24-byte coordinate seed Theta = (c_x, c_y, ell) in F_64^3 anchored near the complex quadratic bifurcation boundary dM of f_c(z) = z^2 + c. We introduce a large-bailout (R = 256) smooth escape kernel, four zero-overhead geometric sampling apertures--Cartesian Grid, coprime 3x3 Rule-of-Thirds (Z/9Z), phi-Vogel spiral, and multi-scale Harmonic Tripod--and prove conditional Kolmogorov (K_Kolm <= 192 + c_0 bits) and Shannon entropy bounds. Across magnifications zeta in [10^0, 10^8], C^1 Fourier and lattice-noise bases collapse to post-standardization rank ~2.25 and SHA-256 PRNG exhibits avalanche discontinuity (rho ~ 0.019, 50.6% micro-step retention), whereas dM uniquely sustains both rank (~10.0) and local continuity (rho in [0.81, 0.97], 89.2% retention). Under leak-free 10-fold CV across four zero-scaler-byte non-linear benchmarks, FNS with an INT8 readout surpasses 0-hidden Linear-INT8 by +3.6 to +10.8 pp while delivering 10.7x-129x total Flash reduction (725x-2,773x hidden reduction) relative to converged Float32 MLPs (90.30% Ionosphere in 285 B; 97.22% Optical Digits in 2,598 B; 97.90% PenDigits in 2,598 B; 87.00% Satimage in 1,570 B).",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/65b69ae2791c522128f3b0e2/X9iqt5nmmIfRdeid0KgWe.mp4",
+    "https://cdn-uploads.huggingface.co/production/uploads/65b69ae2791c522128f3b0e2/QYxuXfYZ91UBMmpSA71VC.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32393.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65b69ae2791c522128f3b0e2",
+    "avatarUrl": "/avatars/9d748da858a9177b4f96439b3bfb4dd7.svg",
+    "fullname": "Volkan Dagli",
+    "name": "pCwOrM",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6b05f4fe6fb21a037e67f35b",
+    "name": "werr-lab",
+    "fullname": "WERR Lab",
+    "avatar": "https://www.gravatar.com/avatar/3a92759708d0a1637bdaa3b5c9bce973?d=retro&size=100"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2611.25946",
+    "authors": [
+     {
+      "_id": "6b06c25d5103a431161f7263",
+      "user": {
+       "_id": "6606cc34ec0a1670cd624269",
+       "avatarUrl": "/avatars/2969d44a8a68ab21f5da98dbeb209e86.svg",
+       "isPro": false,
+       "fullname": "Dong An",
+       "user": "ad2333",
+       "type": "user",
+       "name": "ad2333"
+      },
+      "name": "Dong An",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T16:36:15.824Z",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7264",
+      "name": "Tianyu Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7265",
+      "name": "Haoran Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7266",
+      "name": "Wen Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7267",
+      "name": "Anqing Duan",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7268",
+      "name": "Zhengzhong Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f7269",
+      "name": "Eric P. Xing",
+      "hidden": false
+     },
+     {
+      "_id": "6b06c25d5103a431161f726a",
+      "name": "Guangyi Liu",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6606cc34ec0a1670cd624269/57uQZWLVrlvNRtPy_vl2z.mp4"
+    ],
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
+    "title": "Point Dynamics as Proxy for Robotic World Models",
+    "submittedOnDailyBy": {
+     "_id": "6606cc34ec0a1670cd624269",
+     "avatarUrl": "/avatars/2969d44a8a68ab21f5da98dbeb209e86.svg",
+     "isPro": false,
+     "fullname": "Dong An",
+     "user": "ad2333",
+     "type": "user",
+     "name": "ad2333"
+    },
+    "summary": "Robotic world models predict future video frames from the current observation and a sequence of robot actions. While recent models follow the given actions closely, manipulated objects often collapse or move inconsistently with the action. We attribute this to the conditioning: an action, or a rendering of the robot, specifies where the robot goes but not how the scene responds, leaving a single video model to infer the interaction dynamics implicitly while also rendering appearance. We therefore separate dynamics prediction from visual rendering, with 3D point dynamics as the proxy between them. Specifically, we lift the first frame into 3D points, simulate how they respond to the robot's motion with a learned point dynamics model, and render the simulated points back into pixel-aligned videos that any video model can read. In controlled experiments on the DROID dataset with two video renderers of different architectures, this point dynamics proxy reduces object motion error by 8.6% and 6.2% without degrading image quality, and by 8.1% on a real bimanual robot. Moreover, the video follows the simulation: more accurate dynamics yield more accurate object motion, and editing the points steers the video. This suggests that advances in dynamics modeling can translate into more faithful robotic world models.",
+    "upvotes": 1,
+    "discussionId": "6b06c25e5103a431161f726b",
+    "projectPage": "https://marsaki.github.io/point-dynamics-proxy/",
+    "ai_summary": "Separating dynamics prediction from visual rendering using 3D point dynamics as an intermediate representation improves object motion accuracy in robotic video world models without sacrificing image quality.",
+    "ai_keywords": [
+     "robotic world models",
+     "video models",
+     "conditioning",
+     "interaction dynamics",
+     "visual rendering",
+     "3D point dynamics",
+     "point dynamics model",
+     "pixel-aligned videos",
+     "video renderers",
+     "dynamics prediction"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "organization": {
+     "_id": "681461e458434dafc0435dd3",
+     "name": "MBZUAI-IFM",
+     "fullname": "MBZUAI-IFM",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6087e598e2b7cc3a117b0dc5/gfx3la8w4stRquis2Y-fN.png"
+    }
+   },
+   "publishedAt": "2026-11-18T19:00:00.000Z",
+   "title": "Point Dynamics as Proxy for Robotic World Models",
+   "summary": "Robotic world models predict future video frames from the current observation and a sequence of robot actions. While recent models follow the given actions closely, manipulated objects often collapse or move inconsistently with the action. We attribute this to the conditioning: an action, or a rendering of the robot, specifies where the robot goes but not how the scene responds, leaving a single video model to infer the interaction dynamics implicitly while also rendering appearance. We therefore separate dynamics prediction from visual rendering, with 3D point dynamics as the proxy between them. Specifically, we lift the first frame into 3D points, simulate how they respond to the robot's motion with a learned point dynamics model, and render the simulated points back into pixel-aligned videos that any video model can read. In controlled experiments on the DROID dataset with two video renderers of different architectures, this point dynamics proxy reduces object motion error by 8.6% and 6.2% without degrading image quality, and by 8.1% on a real bimanual robot. Moreover, the video follows the simulation: more accurate dynamics yield more accurate object motion, and editing the points steers the video. This suggests that advances in dynamics modeling can translate into more faithful robotic world models.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6606cc34ec0a1670cd624269/57uQZWLVrlvNRtPy_vl2z.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.25946.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6606cc34ec0a1670cd624269",
+    "avatarUrl": "/avatars/2969d44a8a68ab21f5da98dbeb209e86.svg",
+    "fullname": "Dong An",
+    "name": "ad2333",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "681461e458434dafc0435dd3",
+    "name": "MBZUAI-IFM",
+    "fullname": "MBZUAI-IFM",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6087e598e2b7cc3a117b0dc5/gfx3la8w4stRquis2Y-fN.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2611.27404",
@@ -560,7 +773,7 @@
      "name": "FuxiaoLiu"
     },
     "summary": "Visual creation demands expressive imagery together with precise control over text, layout, and structure. We introduce Nemotron-Labs-VisualCreation, an agentic framework that connects these capabilities through Pixel as Code. Raster images are represented by learned discrete visual tokens, while structured artifacts use explicit programs. A shared generation-and-rendering interface connects these representations to visual feedback across images, vector graphics, webpages, and documents. A Nemotron-native harness coordinates planning and raster candidate selection, with targeted repair for editable structured and hybrid artifacts. To support this interface, we develop Nemotron-Labs-Image-Tokenizer, the autoregressive raster generator Nemotron-Labs-Image-30B-A3B, and the structured-code model family Nemotron-Labs-VisionCode. On approximately 178K images spanning six visual domains, our tokenizer improves reconstruction PSNR from 26.08 to 29.57 dB over Emu3.5 IBQ. It also provides 7.13x faster encoding and 10.93x faster decoding at batch size one on A100. In standalone evaluation, one Nemotron-Labs-VisionCode variant surpasses Kimi K3.1 Pro on the aggregate across Chart2Code, MMSVG, Design2Code, and Image2Struct. At the system level, the Nemotron-native configuration raises GenEval2 Soft-TIFA GM from 31.71 to 52.56 using the same raster generator. With our best setting, Nemotron-Labs-VisualCreation achieves performance competitive with GPT Image 2 and Nano Banana Pro across most benchmarks with available comparisons.",
-    "upvotes": 77,
+    "upvotes": 79,
     "discussionId": "6b0635a3ea91637d11fceab3",
     "projectPage": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
     "organization": {
@@ -632,7 +845,7 @@
      "name": "ShimaRinC"
     },
     "summary": "Looped transformers reuse one block of shared weights along the depth of the network. Recent looped diffusion transformers are trained from scratch, which repeats the full pretraining cost although strong pretrained non-looped diffusion transformers exist. We propose Distill to Loop (Dooop), which distills a pretrained non-looped diffusion transformer into a looped student whose blocks are initialized from the teacher's. We cast distillation as a fixed-point iteration toward the teacher, in which the output after every loop is trained toward the teacher, and each loop is one step of an ordinary differential equation in depth. As a result, one model runs any number of loops at test time without retraining, and the higher-order ODE solvers of diffusion model sampling can be applied along the depth dimension for better results. Meanwhile, because a looped model produces an output after every loop, we also construct loop guidance between the outputs of different loop counts, which improves the generated samples at little extra compute. On SD3-medium, a looped student with about 37% of the teacher's parameters matches the teacher on average over GenEval, ImageReward, PickScore and HPSv2.1 with two to four loops, and with two loops it uses about 58% of the teacher's compute. And on a four-step SD3-medium, loop guidance raises the average of the four metrics from 88.2 to 99.2.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b06ea270a42b5746a8814ca",
     "projectPage": "https://winterccc.github.io/dooop",
     "githubRepo": "https://github.com/WinterCCC/Distill-to-Loop",
@@ -1616,7 +1829,7 @@
      "name": "CeZhang1203"
     },
     "summary": "Despite strong performance on standard benchmarks, video reasoning models remain vulnerable to visual degradation, raising concerns about their reliability in safety-critical scenarios. Existing benchmarks address this concern in part by simulating visual degradation or probing model reasoning with challenging questions, leaving open how well models handle naturally degraded video and whether they can make the simpler judgments that matter for safe driving. To this end, we introduce GRAPE-Bench, which jointly evaluates video reasoning across visual degradation conditions and question difficulty. It combines a synthetic set spanning twelve corruption types across daily-life and driving videos with real-world footage of driving at night or in rain, snow, or fog. Each video is paired with three progressively challenging questions, from fundamental judgments with potential safety implications to demanding reasoning stress tests. Across open-weight and frontier models, we observe ranking reversals between synthetic and real-world conditions and level-specific weaknesses obscured by overall accuracy. Synthetic-data fine-tuning improves Qwen3.5-9B's real-world accuracy from 76.7% to 81.1%, while clean-privileged on-policy distillation reaches 80.4% in a separate reasoning-enabled setting. Through preference steering, we further demonstrate continuous control over a frozen model's trade-off between safety-relevant judgments and challenging reasoning, with little change in overall accuracy. Together, GRAPE-Bench provides a unified testbed for evaluating, improving, and controlling video reasoning under degraded visual conditions.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b069ff0ea91637d11fceeb1",
     "projectPage": "https://zhangce01.github.io/grape-bench/",
     "githubRepo": "https://github.com/zhangce01/GRAPE-Bench",
@@ -2017,7 +2230,7 @@
      "GPU-hours"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 16,
+    "githubStars": 26,
     "organization": {
      "_id": "6508b28cf36bb51c50faad98",
      "name": "NanyangTechnologicalUniversity",
@@ -2085,7 +2298,7 @@
     "projectPage": "https://huggingface.co/collections/inclusionAI/lingsante-medguard",
     "githubRepo": "https://github.com/inclusionAI/LingSante-MedGuard",
     "githubRepoAddedBy": "user",
-    "githubStars": 9,
+    "githubStars": 12,
     "organization": {
      "_id": "67aea5c8f086ab0f70ed97c9",
      "name": "inclusionAI",
@@ -3931,7 +4144,7 @@
      "name": "YangCaoCS"
     },
     "summary": "Segmenting a 3D object into semantically meaningful parts requires joint reasoning about geometric structure and semantic context. Pretrained 3D experts provide spatially grounded region proposals, while 2D experts provide semantic cues for identifying object parts. The challenge is to integrate these complementary capabilities into a framework that can both produce meaningful part segmentations and progressively refine them. We present PartAgent, a training-free agentic framework for 3D part segmentation built upon two complementary modules: (i) Structural-Semantic Expert Integration combines regions predicted by the 3D expert with multiview semantic evidence from the 2D expert through image-to-surface correspondences, constructing compositional part partitions at multiple granularities. (ii) Observation-Driven Closed-Loop Partition Refinement observes the current partition and its supporting evidence to select targeted inspection, evidence repair, composition, or reselection actions. It verifies proposed changes and uses the updated state and action outcomes to guide subsequent decisions. On PartObjaverse-Tiny-WT, PartAgent achieves 68.41 mIoU, outperforming the strongest competing method by 8.53 points. Across 3DCoMPaT200, PartNeXt, PartNetE, and PartObjaverse-Tiny, PartAgent achieves the highest mIoU on each dataset, averaging 69.36 across the four datasets, 7.28 points above the highest mean among competing methods.",
-    "upvotes": 32,
+    "upvotes": 33,
     "discussionId": "6b065b64ea91637d11fcebb0",
     "projectPage": "https://yangcaoai.github.io/PartAgent_ProjectPage/",
     "githubRepo": "https://github.com/yangcaoai/PartAgent_Agent_for_3D_Part_Seg",
@@ -4047,7 +4260,7 @@
      "name": "Lixiaoming"
     },
     "summary": "Representation alignment markedly accelerates diffusion training, but one-step generators raise a question that diffusion does not: which training path should receive the loss? A one-step generator sees two kinds of inputs. Corrupted real images come with their clean counterpart, which provides an instance-paired target. Samples generated from pure noise have no corresponding real image, yet this is where the final model operates. We study this question on Priming, which trains one-step generators from scratch by reconstructing corrupted images and then matching feature distributions with optimal transport. Aligning the generative path, the natural choice, collapses recall (0.45!to!0.15--0.25) in all 17 configurations we test, including five target constructions and loss weights down to 0.05. Aligning the paired reconstruction path with a frozen DINOv2 encoder instead helps in every setting we test. A short analysis explains this asymmetry: when the target carries no instance information about the input, the optimal aligned feature is constant within each class, so the loss pulls samples toward class prototypes. A control confirms this: aligning the paired path to a random same-class image instead of the input's own image removes most of the gain. Inside the generator, paired-path alignment creates an interface block through which post-training routes noise, and the image semantics carried through it predict sample quality across 16 models. The resulting recipe, \\method, accelerates both training stages on ImageNet 256!times!256: it matches the 160-epoch baseline with 2times fewer priming epochs, surpasses its final quality with 4times fewer post-training updates, and lowers FID to 1.30 (B) and 1.155 (L) at the standard budget. A joint single-stage variant trains native one-step generators and reaches FID 1.22 with 115M parameters.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b054265e7a4376c42cc9139",
     "projectPage": "https://mingxiao-li.github.io/RePrime/",
     "githubRepo": "https://github.com/Mingxiao-Li/RePrime",
@@ -4859,7 +5072,7 @@
      "name": "xiaoda99"
     },
     "summary": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
-    "upvotes": 85,
+    "upvotes": 86,
     "discussionId": "6b0537d0e7a4376c42cc90b0",
     "githubRepo": "https://github.com/Caiyun-AI/LoomFormer",
     "githubRepoAddedBy": "user",
@@ -5195,7 +5408,7 @@
      "name": "Hirony111"
     },
     "summary": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
-    "upvotes": 99,
+    "upvotes": 100,
     "discussionId": "6affb4748c0c69ddd0a94ccf",
     "organization": {
      "_id": "68d4ae9941614425f8aa7490",
@@ -5283,7 +5496,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/687570c1602bdfd2d11cba3d/GPfrgE6l76-j7Jjx91p3C.png"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.29874.png",
-   "numComments": 5,
+   "numComments": 6,
    "submittedBy": {
     "_id": "687570c1602bdfd2d11cba3d",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/687570c1602bdfd2d11cba3d/Pyw8XtBq7BcAVNyQ8KbqK.jpeg",
@@ -5298,314 +5511,6 @@
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.29184",
-    "authors": [
-     {
-      "_id": "6b05222fe7a4376c42cc8f1c",
-      "name": "Conghan Yue",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f1d",
-      "user": {
-       "_id": "6852c73028b927575448a889",
-       "avatarUrl": "/avatars/f82cf539145c20511f831b4eba17b892.svg",
-       "isPro": false,
-       "fullname": "Yuanjie Chen",
-       "user": "ccmoony",
-       "type": "user",
-       "name": "ccmoony"
-      },
-      "name": "Yuanjie Chen",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T08:45:05.184Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f1e",
-      "name": "Yunyan Xiao",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f1f",
-      "name": "Zeyu Peng",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f20",
-      "user": {
-       "_id": "674d092c6421c58761fc83eb",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/674d092c6421c58761fc83eb/lQSRWX_YyTzpRq2aJtwYT.png",
-       "isPro": false,
-       "fullname": "Xingsong Ye",
-       "user": "Yesianrohn",
-       "type": "user",
-       "name": "Yesianrohn"
-      },
-      "name": "Xingsong Ye",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T08:45:05.194Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f21",
-      "name": "Ya Gao",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f22",
-      "name": "Yanglin Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f23",
-      "name": "WeiYao Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f24",
-      "name": "Yue Han",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f25",
-      "name": "Zhineng Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b05222fe7a4376c42cc8f26",
-      "name": "Yu-Gang Jiang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6852c73028b927575448a889/t8hbwj4HaZ4Bd74z_chlb.mp4"
-    ],
-    "publishedAt": "2026-11-22T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
-    "title": "PhyCoVE: Benchmarking Physical Counterfactual Video Editing across Diverse Material Dynamics",
-    "submittedOnDailyBy": {
-     "_id": "6852c73028b927575448a889",
-     "avatarUrl": "/avatars/f82cf539145c20511f831b4eba17b892.svg",
-     "isPro": false,
-     "fullname": "Yuanjie Chen",
-     "user": "ccmoony",
-     "type": "user",
-     "name": "ccmoony"
-    },
-    "summary": "Physical counterfactual video editing turns a source video and a language-specified physical edit at a given execution frame into a counterfactual video that shows how the scene would evolve after the edit. Existing evaluations with counterfactual target videos mainly cover object removal or specific rigid-body motions, although real scenes also involve elastic deformation, fluid flow, and interactions among rigid bodies, elastic solids, and fluids. We introduce PhyCoVE, a benchmark of 533 cases on 110 source videos that covers rigid, elastic, and fluid dynamics in five interaction patterns, with edits that remove an object, change a physical quantity, or insert a new object. For the simulated cases, a language model proposes scene designs, coding agents build them with solvers suited to each material and physically based rendering and then simulate each edit from the source scene state, and humans check every stage. For the real cases, we record continuously from one camera position before and after each edit. We also propose counterfactual fidelity, a metric that applies across materials and their interactions and measures how much of the physical change from the source video to the target video a generated video reproduces. We evaluate seven open-source and commercial video editing models and find that counterfactual fidelity ranks them nearly as human preference does, but even the best model reproduces only about one seventh of the physical change. The models change how a scene looks but rarely how it evolves, whereas a physical edit requires understanding the dynamics that it changes. Physical counterfactual video editing thus remains far from solved, and PhyCoVE provides a foundation for developing and evaluating methods for it.",
-    "upvotes": 15,
-    "discussionId": "6b052230e7a4376c42cc8f27",
-    "projectPage": "https://phycove.github.io",
-    "githubRepo": "https://github.com/Hammour-steak/PhyCoVE",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "PhyCoVE, a 533-case benchmark, and counterfactual fidelity evaluate video editing models on physical counterfactual edits involving rigid, elastic, and fluid dynamics, showing that even the best model reproduces only about one seventh of the physical change.",
-    "ai_keywords": [
-     "physical counterfactual video editing",
-     "counterfactual fidelity",
-     "video editing models",
-     "language model",
-     "coding agents",
-     "physically based rendering",
-     "rigid-body motions",
-     "elastic deformation",
-     "fluid flow",
-     "interaction patterns"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 8,
-    "organization": {
-     "_id": "643cb0625fcffe09fb6ca688",
-     "name": "Fudan-University",
-     "fullname": "Fudan University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6437eca0819f3ab20d162e14/kWv0cGlAhAG3iNWVxowkJ.png"
-    }
-   },
-   "publishedAt": "2026-11-21T19:00:00.000Z",
-   "title": "PhyCoVE: Benchmarking Physical Counterfactual Video Editing across Diverse Material Dynamics",
-   "summary": "Physical counterfactual video editing turns a source video and a language-specified physical edit at a given execution frame into a counterfactual video that shows how the scene would evolve after the edit. Existing evaluations with counterfactual target videos mainly cover object removal or specific rigid-body motions, although real scenes also involve elastic deformation, fluid flow, and interactions among rigid bodies, elastic solids, and fluids. We introduce PhyCoVE, a benchmark of 533 cases on 110 source videos that covers rigid, elastic, and fluid dynamics in five interaction patterns, with edits that remove an object, change a physical quantity, or insert a new object. For the simulated cases, a language model proposes scene designs, coding agents build them with solvers suited to each material and physically based rendering and then simulate each edit from the source scene state, and humans check every stage. For the real cases, we record continuously from one camera position before and after each edit. We also propose counterfactual fidelity, a metric that applies across materials and their interactions and measures how much of the physical change from the source video to the target video a generated video reproduces. We evaluate seven open-source and commercial video editing models and find that counterfactual fidelity ranks them nearly as human preference does, but even the best model reproduces only about one seventh of the physical change. The models change how a scene looks but rarely how it evolves, whereas a physical edit requires understanding the dynamics that it changes. Physical counterfactual video editing thus remains far from solved, and PhyCoVE provides a foundation for developing and evaluating methods for it.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6852c73028b927575448a889/t8hbwj4HaZ4Bd74z_chlb.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.29184.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6852c73028b927575448a889",
-    "avatarUrl": "/avatars/f82cf539145c20511f831b4eba17b892.svg",
-    "fullname": "Yuanjie Chen",
-    "name": "ccmoony",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "643cb0625fcffe09fb6ca688",
-    "name": "Fudan-University",
-    "fullname": "Fudan University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6437eca0819f3ab20d162e14/kWv0cGlAhAG3iNWVxowkJ.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.28649",
-    "authors": [
-     {
-      "_id": "6b0645caea91637d11fceae0",
-      "user": {
-       "_id": "67bde7dec73e0b462c34d379",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67bde7dec73e0b462c34d379/q6-FeLyvYPlPJBq6MPIZu.jpeg",
-       "isPro": false,
-       "fullname": "Muxin Fu",
-       "user": "KANABOON1",
-       "type": "user",
-       "name": "KANABOON1"
-      },
-      "name": "Muxin Fu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T08:45:05.332Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae1",
-      "name": "Peike Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae2",
-      "name": "Guibin Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae3",
-      "name": "Wenrui Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae4",
-      "user": {
-       "_id": "667187ba9ab144eb3ac43a1b",
-       "avatarUrl": "/avatars/ed5208dd696e9ee75c92641ca387a7ff.svg",
-       "isPro": false,
-       "fullname": "Runze Liu",
-       "user": "RyanLiu112",
-       "type": "user",
-       "name": "RyanLiu112"
-      },
-      "name": "Runze Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T16:36:53.424Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae5",
-      "name": "Lang Feng",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae6",
-      "name": "Fuchao Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae7",
-      "name": "Feng Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae8",
-      "name": "Yixuan Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceae9",
-      "name": "Mengao Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceaea",
-      "name": "Shiying Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceaeb",
-      "name": "Wen Shen",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceaec",
-      "name": "Ling Pan",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceaed",
-      "name": "Shuicheng Yan",
-      "hidden": false
-     },
-     {
-      "_id": "6b0645caea91637d11fceaee",
-      "name": "Bo An",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-21T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
-    "title": "S-Mind: Internalizing Multi-View Geometry for Spatial Intelligence",
-    "submittedOnDailyBy": {
-     "_id": "6363a1fa123a5d5cd4a800e2",
-     "avatarUrl": "/avatars/1c9e3c9aa57115597a9eda76a30857f5.svg",
-     "isPro": false,
-     "fullname": "gbz",
-     "user": "greeky",
-     "type": "user",
-     "name": "greeky"
-    },
-    "summary": "Spatial intelligence, the ability to reason about 3D space from visual observations, becomes essential as multimodal large language models (MLLMs) move into the physical world. Beyond perceiving each view, it rests on two cornerstones of human cognition: fusing multiple views into one coherent 3D scene and mentally transforming that scene to new viewpoints as reasoning unfolds. Yet our spatial probes reveal that MLLMs largely lack both capabilities, even after spatial fine-tuning. We therefore present S-Mind, which internalizes multi-view geometry within the MLLM through a compact set of spatial tokens. It supervises these tokens to hold the fused 3D scene and re-emits them to re-express this scene from every viewpoint the reasoning adopts. Across four spatial benchmarks, S-Mind improves its Qwen3.5 backbones by up to 22.26 points and surpasses frontier general models such as GPT-6-Astra (+0.45), Kimi-K3.1-Pro (+1.97), and GLM-5.3-Flash (+7.80) in average accuracy. Moreover, the same probes confirm that it acquires both capabilities, reaching fusion and transformation accuracies of 65.11% and 82.17%, against at most 16.02% and 37.28% for the baselines. At inference, S-Mind also runs about 100x faster than a tool-based agent on the same backbone. Instilled through these spatial tokens during training, spatial capability becomes intrinsic to the backbone and persists even when the tokens are withheld, offering a promising path toward spatial intelligence in MLLMs.",
-    "upvotes": 41,
-    "discussionId": "6b0645caea91637d11fceaef",
-    "projectPage": "https://kanaboon1.github.io/S-Mind/",
-    "githubRepo": "https://github.com/KANABOON1/S-Mind",
-    "githubRepoAddedBy": "user",
-    "githubStars": 12,
-    "organization": {
-     "_id": "6508b28cf36bb51c50faad98",
-     "name": "NanyangTechnologicalUniversity",
-     "fullname": "Nanyang Technological University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZPD1fvei0bcIGeDXxeSkn.png"
-    }
-   },
-   "publishedAt": "2026-11-20T19:00:00.000Z",
-   "title": "S-Mind: Internalizing Multi-View Geometry for Spatial Intelligence",
-   "summary": "Spatial intelligence, the ability to reason about 3D space from visual observations, becomes essential as multimodal large language models (MLLMs) move into the physical world. Beyond perceiving each view, it rests on two cornerstones of human cognition: fusing multiple views into one coherent 3D scene and mentally transforming that scene to new viewpoints as reasoning unfolds. Yet our spatial probes reveal that MLLMs largely lack both capabilities, even after spatial fine-tuning. We therefore present S-Mind, which internalizes multi-view geometry within the MLLM through a compact set of spatial tokens. It supervises these tokens to hold the fused 3D scene and re-emits them to re-express this scene from every viewpoint the reasoning adopts. Across four spatial benchmarks, S-Mind improves its Qwen3.5 backbones by up to 22.26 points and surpasses frontier general models such as GPT-6-Astra (+0.45), Kimi-K3.1-Pro (+1.97), and GLM-5.3-Flash (+7.80) in average accuracy. Moreover, the same probes confirm that it acquires both capabilities, reaching fusion and transformation accuracies of 65.11% and 82.17%, against at most 16.02% and 37.28% for the baselines. At inference, S-Mind also runs about 100x faster than a tool-based agent on the same backbone. Instilled through these spatial tokens during training, spatial capability becomes intrinsic to the backbone and persists even when the tokens are withheld, offering a promising path toward spatial intelligence in MLLMs.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28649.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "6363a1fa123a5d5cd4a800e2",
-    "avatarUrl": "/avatars/1c9e3c9aa57115597a9eda76a30857f5.svg",
-    "fullname": "gbz",
-    "name": "greeky",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 8,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6508b28cf36bb51c50faad98",
-    "name": "NanyangTechnologicalUniversity",
-    "fullname": "Nanyang Technological University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZPD1fvei0bcIGeDXxeSkn.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
