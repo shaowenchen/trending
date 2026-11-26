@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-26T19:16:11.926Z",
+ "fetchedAt": "2026-11-26T21:31:18.344Z",
  "payload": [
   {
    "paper": {
@@ -228,6 +228,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "organization": {
@@ -619,6 +620,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
+    "followerCount": 1,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -1410,7 +1412,7 @@
      "LTX-2.3"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 4,
     "organization": {
      "_id": "681461e458434dafc0435dd3",
      "name": "MBZUAI-IFM",
@@ -1744,7 +1746,7 @@
      "name": "haowenhou"
     },
     "summary": "Fully online on-policy distillation (OPD) is costly for long-horizon agents because each update depends on fresh environment rollouts. Prefix replay offers an efficient alternative by sampling current-student responses from stored histories, reducing idle time for long-tail rollouts and allowing each collected trajectory to support multiple updates. However, our analysis of the complete prefix replay pipeline identifies two limitations in long-horizon settings. In trajectory collection, teacher-only trajectories miss student-induced histories, while broader history coverage can reduce teacher reliability. In trajectory reuse, fixed position-based schedules cannot identify critical decisions that may occur at any trajectory depth. We introduce CARE-OPD (Collect for coverAge, Replay with Evidence) to address both limitations. Student-seeded teacher completions and response-level confidence gating expand history coverage while filtering unreliable updates. Hindsight replay allocation then uses downstream execution evidence to select consequential turns. Across long-horizon tasks Software Engineering and Deep Research, CARE-OPD outperforms online OPD and prior prefix replay baselines. On SWE-bench Verified, it raises task success to 59.5% while reducing end-to-end training time by 45% and environment actions by 44% relative to asynchronous online OPD.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b07ef5f0a42b5746a881c00",
     "organization": {
      "_id": "63e5ef7bf2e9a8f22c515654",
@@ -1837,7 +1839,7 @@
     "projectPage": "https://memo-4d.github.io/",
     "githubRepo": "https://github.com/royorel/MEMO",
     "githubRepoAddedBy": "user",
-    "githubStars": 1
+    "githubStars": 3
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "A Mesh for Every Moment",
@@ -1933,7 +1935,7 @@
     "projectPage": "https://wongyun-yu.github.io/dexengine/",
     "githubRepo": "https://github.com/wongyun-yu/DexEngine",
     "githubRepoAddedBy": "user",
-    "githubStars": 4,
+    "githubStars": 6,
     "organization": {
      "_id": "6ae80b4b3b25c9315988037e",
      "name": "POSTECH-CVLab",
@@ -2372,7 +2374,7 @@
     "projectPage": "https://kaist-viclab.github.io/PanBase_site/",
     "githubRepo": "https://github.com/KAIST-VICLab/PanBase",
     "githubRepoAddedBy": "user",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "6ac4f509aa40a9786fc10f17",
      "name": "KAIST-VIClab",
@@ -2441,7 +2443,8 @@
      }
     ],
     "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/JHKLX2Nfpd8YP4dTicnvv.png"
+     "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/JHKLX2Nfpd8YP4dTicnvv.png",
+     "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/SS4RXA0m5CyNBlIN9vrdI.mp4"
     ],
     "publishedAt": "2026-11-24T00:00:00.000Z",
     "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
@@ -2471,7 +2474,7 @@
      "Play2Code"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 7,
+    "githubStars": 11,
     "organization": {
      "_id": "63a553c4ce5763e06f78669c",
      "name": "showlab",
@@ -2483,7 +2486,8 @@
    "title": "Playfulness as Feedback for Agentic Game Development",
    "summary": "Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playful game should provide 1) reliable core functionality, 2) appealing visual design and assets, and 3) rich gameplay that supports exploration and progression. How agents can improve these aspects of playfulness remains underexplored. In our work, we propose Play2Evolve, a recursive game development framework with three stages: Initialization, Refinement, and Evolution. Using playfulness as feedback, agents playtest the game and diagnose issues in its functionality, visual presentation, and gameplay. Their feedback guides bug fixes and asset improvements. It also helps agents propose new gameplay and aesthetic goals for continued game evolution. To enrich game materials, we combine a video generation model with code to create appealing static and dynamic assets and integrate them into interactive gameplay. Finally, Play2Evolve achieves state-of-the-art performance among the evaluated methods, scoring 60.05 on GameCraft-Bench compared with 50.81 after Game Initialization and 52.46 for Play2Code. Human overall-quality ratings reach 3.67, compared with 2.38 and 2.43, respectively. Our code will be released at https://github.com/showlab/Play2Evolve.",
    "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/JHKLX2Nfpd8YP4dTicnvv.png"
+    "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/JHKLX2Nfpd8YP4dTicnvv.png",
+    "https://cdn-uploads.huggingface.co/production/uploads/63f320ee0be81bdc5d8ecb88/SS4RXA0m5CyNBlIN9vrdI.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.33457.png",
    "numComments": 1,
@@ -2576,7 +2580,7 @@
      "cross-page span localization"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 9,
+    "githubStars": 19,
     "organization": {
      "_id": "62d55f243bf5e059f7ca25ba",
      "name": "mmlab-ntu",
@@ -2694,7 +2698,7 @@
      "MoL-Hybrid-2"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 44,
+    "githubStars": 69,
     "organization": {
      "_id": "67d1140985ea0644e2f14b99",
      "name": "ByteDance-Seed",
@@ -3956,7 +3960,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 24,
+    "followerCount": 25,
     "isUserFollowing": false
    },
    "organization": {
@@ -4422,7 +4426,7 @@
      "name": "sanaka87"
     },
     "summary": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We introduce Image-to-Video Transfer (I2VT), which improves pretrained video editors and expands them to new editing tasks using an image editor. It enables efficient post-training with no architectural changes and no new videos, using only individual images. Our key idea is to let the video editor role-play as an image editor: it edits an image as a one-frame video, with the image editor guiding the video editor's predictions at each denoising step. Although the video editor sees only single images during training, at test time it applies the improved and expanded capabilities to whole video clips while preserving temporal consistency. To push the boundaries of video editing, we introduce OpenVE++, an extension of OpenVE-Bench that adds four new editing tasks useful for video production, including action changes, expression changes, body movements, and scene relighting. Our experiments across three different video editors show that I2VT improves existing editing capabilities and expands them to new tasks, and our models achieve state-of-the-art (SOTA) performance on both OpenVE-Bench and OpenVE++.",
-    "upvotes": 41,
+    "upvotes": 43,
     "discussionId": "6b07be8d0a42b5746a881a2e",
     "projectPage": "https://i2v-transfer.github.io/",
     "githubRepo": "https://github.com/HorizonWind2004/i2v-transfer",
@@ -4535,7 +4539,7 @@
      "name": "XiaoBanni"
     },
     "summary": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b0686d1ea91637d11fcedd5",
     "projectPage": "https://xiaobanni.github.io/projects/nopo/",
     "organization": {
@@ -4560,7 +4564,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 3,
+    "followerCount": 4,
     "isUserFollowing": false
    },
    "organization": {
@@ -5768,7 +5772,7 @@
     "discussionId": "6b07b7930a42b5746a88194e",
     "githubRepo": "https://github.com/Kling-Keye/VibeVideoAgent",
     "githubRepoAddedBy": "user",
-    "githubStars": 2,
+    "githubStars": 5,
     "organization": {
      "_id": "685d2e9b7aa0388f4fcaf7b2",
      "name": "Kling-Keye",
