@@ -1,8 +1,110 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-26T21:31:18.344Z",
+ "fetchedAt": "2026-11-26T23:46:00.832Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.28231",
+    "authors": [
+     {
+      "_id": "6b08a75451a3cf3678af3688",
+      "name": "Suleman Khan",
+      "hidden": false
+     },
+     {
+      "_id": "6b08a75451a3cf3678af3689",
+      "name": "Rasa Rahnema",
+      "hidden": false
+     },
+     {
+      "_id": "6b08a75451a3cf3678af368a",
+      "name": "Tara Khani",
+      "hidden": false
+     },
+     {
+      "_id": "6b08a75451a3cf3678af368b",
+      "name": "Majid Fekri",
+      "hidden": false
+     },
+     {
+      "_id": "6b08a75451a3cf3678af368c",
+      "name": "Fattane Zarrinkalam",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/67376371a77bab097f9c1d0b/4rVa7_3Om7bSBw4n9gm6J.png"
+    ],
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "Evaluating Memanto on DolphinBench for AI Agents",
+    "submittedOnDailyBy": {
+     "_id": "67376371a77bab097f9c1d0b",
+     "avatarUrl": "/avatars/20dee7e53417270d6fce4ff75f42fdcc.svg",
+     "isPro": true,
+     "fullname": "Majid Fekri",
+     "user": "mjfk",
+     "type": "user",
+     "name": "mjfk"
+    },
+    "summary": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost (10.86, against 61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
+    "upvotes": 2,
+    "discussionId": "6b08a75451a3cf3678af368d",
+    "projectPage": "https://memanto.ai",
+    "githubRepo": "https://github.com/moorcheh-ai/memanto-benchmark",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Memanto, a memory agent using information-theoretic relevance scoring, completes more simulated workplace tasks at lower cost and latency than the strongest reported Mem0 configuration.",
+    "ai_keywords": [
+     "memory agent",
+     "information-theoretic relevance score",
+     "DolphinBench",
+     "Hermes agent harness",
+     "GPT-6-Luna",
+     "Mem0",
+     "GPT-5.6-Luna",
+     "tool call",
+     "memory benchmarks",
+     "question answering"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 2,
+    "organization": {
+     "_id": "691ba61d981e57c5f2ee5826",
+     "name": "moorcheh",
+     "fullname": "Moorcheh.ai",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67376371a77bab097f9c1d0b/qxaoavwNxUcghR4ucP5qk.png"
+    }
+   },
+   "publishedAt": "2026-11-19T19:00:00.000Z",
+   "title": "Evaluating Memanto on DolphinBench for AI Agents",
+   "summary": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost (10.86, against 61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/67376371a77bab097f9c1d0b/4rVa7_3Om7bSBw4n9gm6J.png"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28231.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "67376371a77bab097f9c1d0b",
+    "avatarUrl": "/avatars/20dee7e53417270d6fce4ff75f42fdcc.svg",
+    "fullname": "Majid Fekri",
+    "name": "mjfk",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "691ba61d981e57c5f2ee5826",
+    "name": "moorcheh",
+    "fullname": "Moorcheh.ai",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67376371a77bab097f9c1d0b/qxaoavwNxUcghR4ucP5qk.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.29259",
@@ -396,7 +498,7 @@
      "name": "yifAI"
     },
     "summary": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b08574476c8c78187f89c20",
     "projectPage": "https://github.com/frontiereval/AIChipBench",
     "githubRepo": "https://github.com/frontiereval/AIChipBench",
@@ -1283,7 +1385,7 @@
      "compaction timing"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2330,
+    "githubStars": 2332,
     "organization": {
      "_id": "60262b67268c201cdc8b7d43",
      "name": "nvidia",
@@ -2606,7 +2708,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 3,
+    "followerCount": 4,
     "isUserFollowing": false
    },
    "organization": {
@@ -4181,7 +4283,7 @@
      "name": "JadeHuang"
     },
     "summary": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to N times M integrations when evaluating N methods on M benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our research map of nearly 300 real-to-simulation papers, are open source, and we invite the Real2SimHub community to build them together.",
-    "upvotes": 101,
+    "upvotes": 102,
     "discussionId": "6b07b4d30a42b5746a881911",
     "projectPage": "https://real2simhub.github.io",
     "githubRepo": "https://github.com/Real2SimHub/Real2SimLab",
@@ -4474,7 +4576,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 94,
+    "followerCount": 95,
     "isUserFollowing": false
    },
    "organization": {
@@ -4539,7 +4641,7 @@
      "name": "XiaoBanni"
     },
     "summary": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b0686d1ea91637d11fcedd5",
     "projectPage": "https://xiaobanni.github.io/projects/nopo/",
     "organization": {
@@ -4553,7 +4655,7 @@
    "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
    "summary": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.17287.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "643120cf1e22a07ceb87ac23",
     "avatarUrl": "/avatars/5cdf6b7d9254ee5822a1413caeb84fec.svg",
@@ -5990,148 +6092,6 @@
     "avatar": "https://www.gravatar.com/avatar/4a4318de793d2c187cb6f312e9d0e7bc?d=retro&size=100"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.31895",
-    "authors": [
-     {
-      "_id": "6b07af770a42b5746a8818ce",
-      "user": {
-       "_id": "6627d5bfc1c302386e8dd1ea",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6627d5bfc1c302386e8dd1ea/n4v1sVYcAotbIEn8xMi6j.jpeg",
-       "isPro": false,
-       "fullname": "Kai Zeng",
-       "user": "MewtwoX23",
-       "type": "user",
-       "name": "MewtwoX23"
-      },
-      "name": "Kai Zeng",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-26T08:45:05.188Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818cf",
-      "name": "Ruichuan An",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d0",
-      "name": "Zhen Fang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d1",
-      "user": {
-       "_id": "65f7f16fb6941db5c2e7c4bf",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f7f16fb6941db5c2e7c4bf/Bkf0auPMqbWh81QuQrSeP.png",
-       "isPro": false,
-       "fullname": "Xi Fang",
-       "user": "AI4Industry",
-       "type": "user",
-       "name": "AI4Industry"
-      },
-      "name": "Xi Fang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-26T08:45:05.197Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d2",
-      "name": "Han Lyu",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d3",
-      "name": "Moran Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d4",
-      "name": "Yingchen Yu",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d5",
-      "name": "Yifan Dai",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d6",
-      "name": "Bohan Zeng",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d7",
-      "name": "Quanqing Xu",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d8",
-      "name": "Zhengzhou Zhu",
-      "hidden": false
-     },
-     {
-      "_id": "6b07af770a42b5746a8818d9",
-      "name": "Wentao Zhang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6627d5bfc1c302386e8dd1ea/PaHYJcMz0uwtWdUnwbfO1.mp4"
-    ],
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
-    "submittedOnDailyBy": {
-     "_id": "6627d5bfc1c302386e8dd1ea",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6627d5bfc1c302386e8dd1ea/n4v1sVYcAotbIEn8xMi6j.jpeg",
-     "isPro": false,
-     "fullname": "Kai Zeng",
-     "user": "MewtwoX23",
-     "type": "user",
-     "name": "MewtwoX23"
-    },
-    "summary": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building on RBC, RBC-SFT reweights assistant-token learning by step quality, while RBC-GRPO incorporates step-level credits alongside a final planning reward, without rendering videos during RL. To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow. Ablation experiments show that full RBC training outperforms standard SFT followed by trajectory-level GRPO by 5.27 points. Human evaluations and results on Sci-VBench and KIVI-Bench further demonstrate improved generation quality, scientific grounding, factual precision, and helpfulness. Our project page is available at https://zengkaiya.github.io/Loupe/.",
-    "upvotes": 8,
-    "discussionId": "6b07af780a42b5746a8818da",
-    "projectPage": "https://zengkaiya.github.io/Loupe/",
-    "organization": {
-     "_id": "61dcd8e344f59573371b5cb6",
-     "name": "PekingUniversity",
-     "fullname": "Peking University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/vavgrBsnkSejriUF4lXDE.png"
-    }
-   },
-   "publishedAt": "2026-11-23T19:00:00.000Z",
-   "title": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
-   "summary": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building on RBC, RBC-SFT reweights assistant-token learning by step quality, while RBC-GRPO incorporates step-level credits alongside a final planning reward, without rendering videos during RL. To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow. Ablation experiments show that full RBC training outperforms standard SFT followed by trajectory-level GRPO by 5.27 points. Human evaluations and results on Sci-VBench and KIVI-Bench further demonstrate improved generation quality, scientific grounding, factual precision, and helpfulness. Our project page is available at https://zengkaiya.github.io/Loupe/.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6627d5bfc1c302386e8dd1ea/PaHYJcMz0uwtWdUnwbfO1.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31895.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6627d5bfc1c302386e8dd1ea",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6627d5bfc1c302386e8dd1ea/n4v1sVYcAotbIEn8xMi6j.jpeg",
-    "fullname": "Kai Zeng",
-    "name": "MewtwoX23",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "61dcd8e344f59573371b5cb6",
-    "name": "PekingUniversity",
-    "fullname": "Peking University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/vavgrBsnkSejriUF4lXDE.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
