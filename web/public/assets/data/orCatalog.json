@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-26T17:01:13.095Z",
+ "fetchedAt": "2026-11-26T19:16:14.015Z",
  "payload": {
   "data": [
    {
@@ -5167,13 +5167,94 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000025",
-     "completion": "0.00000025",
-     "input_cache_read": "0.0000000015"
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000003",
+     "overrides": [
+      {
+       "utc_days": [
+        "saturday",
+        "sunday"
+       ],
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "utc_start": 0,
+       "utc_end": 100,
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "utc_start": 100,
+       "utc_end": 400,
+       "prompt": "0.0000003",
+       "completion": "0.0000012",
+       "input_cache_read": "0.000000006"
+      },
+      {
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "utc_start": 400,
+       "utc_end": 600,
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "utc_start": 600,
+       "utc_end": 1000,
+       "prompt": "0.0000003",
+       "completion": "0.0000012",
+       "input_cache_read": "0.000000006"
+      },
+      {
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "utc_start": 1000,
+       "utc_end": 0,
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      }
+     ]
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 943718,
+     "max_completion_tokens": 393216,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -11647,9 +11728,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000025",
-     "completion": "0.00000025",
-     "input_cache_read": "0.0000000015"
+     "prompt": "0.000000036",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000001"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -29589,9 +29670,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000799448",
-     "completion": "0.0000015593",
-     "input_cache_read": "0.0000002"
+     "prompt": "0.00000073698",
+     "completion": "0.0000015216",
+     "input_cache_read": "0.00000021"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -30727,9 +30808,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000009",
-     "completion": "0.0000003",
-     "input_cache_read": "0.00000005"
+     "prompt": "0.0000000765",
+     "completion": "0.000000255",
+     "input_cache_read": "0.0000000425"
     },
     "top_provider": {
      "context_length": 262144,
@@ -42956,6 +43037,99 @@
     }
    },
    {
+    "id": "moonshotai/kimi-k2-0905",
+    "canonical_slug": "moonshotai/kimi-k2-0905",
+    "hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
+    "name": "MoonshotAI: Kimi K2 0905",
+    "created": 1757021147,
+    "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...",
+    "context_length": 262144,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Other",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "0.0000006",
+     "completion": "0.0000025"
+    },
+    "top_provider": {
+     "context_length": 262144,
+     "max_completion_tokens": 98304,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "logprobs",
+     "max_tokens",
+     "presence_penalty",
+     "repetition_penalty",
+     "response_format",
+     "seed",
+     "stop",
+     "structured_outputs",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_k",
+     "top_logprobs",
+     "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-12-31",
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ],
+    "benchmarks": {
+     "design_arena": [
+      {
+       "arena": "models",
+       "category": "codecategories",
+       "elo": 1139,
+       "win_rate": 48.5,
+       "rank": 115
+      },
+      {
+       "arena": "models",
+       "category": "website",
+       "elo": 1147,
+       "win_rate": 48.3,
+       "rank": 117
+      }
+     ],
+     "artificial_analysis": {
+      "intelligence_index": null,
+      "coding_index": null,
+      "agentic_index": null,
+      "finance_and_accounting_index": null,
+      "strategy_and_ops_index": null,
+      "legal_index": null,
+      "healthcare_and_medical_index": null,
+      "engineering_index": null,
+      "economics_index": null,
+      "cyber_index": null,
+      "openness_index": 27.8,
+      "multilingual_index": 0.808,
+      "decision_index": null
+     }
+    }
+   },
+   {
     "id": "nousresearch/hermes-4-405b",
     "canonical_slug": "nousresearch/hermes-4-405b",
     "hugging_face_id": "NousResearch/Hermes-4-405B",
@@ -52891,7 +53065,7 @@
     ]
    }
   ],
-  "total_count": 476,
+  "total_count": 477,
   "links": {
    "next": null
   }

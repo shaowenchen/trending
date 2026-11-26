@@ -1,8 +1,130 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-26T17:01:10.977Z",
+ "fetchedAt": "2026-11-26T19:16:11.926Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.29259",
+    "authors": [
+     {
+      "_id": "6b0714d30a42b5746a8815b8",
+      "name": "Jinwoo Kim",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815b9",
+      "name": "Toghrul Abbasov",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815ba",
+      "name": "Lucius E. J. Bynum",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815bb",
+      "name": "Aahlad Puli",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815bc",
+      "name": "Stephanie Milani",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815bd",
+      "name": "Hyunwoo Ryu",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815be",
+      "name": "Seunghoon Hong",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815bf",
+      "name": "Kyunghyun Cho",
+      "hidden": false
+     },
+     {
+      "_id": "6b0714d30a42b5746a8815c0",
+      "name": "Rajesh Ranganath",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/65f5e94926f86cf33715c7d5/p7gNNpi3oWXh6elrrGJeI.mp4"
+    ],
+    "publishedAt": "2026-11-22T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
+    "submittedOnDailyBy": {
+     "_id": "65f5e94926f86cf33715c7d5",
+     "avatarUrl": "/avatars/77e4ab8da69f4fbabd04a35472010af8.svg",
+     "isPro": false,
+     "fullname": "Steph Milani",
+     "user": "smilani",
+     "type": "user",
+     "name": "smilani"
+    },
+    "summary": "Agents in complex, stochastic environments must contend with dynamics that can exceed their world models' predictive capacity and randomness that obscure the consequences of their actions. We hypothesize that, compared to imagining entirely new trajectories in such complex environments, it can be easier to transform observed trajectories with alternative actions. Counterfactual world models condition on observations to predict alternative outcomes under the same underlying environmental randomness, using experience as a reference for predicting action-dependent changes. We present a policy gradient estimator, REINFORCE Look Back (RLB), that uses counterfactual returns as baselines to distinguish action effects from environmental luck, and prove conditions for unbiasedness and variance reduction. In settings where environmental evolution is harder to predict than action-induced changes, we show that counterfactual world models are easier to learn and support better policy learning than ordinary world models. Our findings suggest that counterfactual thinking can help agents learn effective behavior without independently reproducing the full complexity of their worlds.",
+    "upvotes": 0,
+    "discussionId": "6b0714d30a42b5746a8815c1",
+    "githubRepo": "https://github.com/ToghrulAbbasov19/look-back",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Counterfactual world models that predict alternative outcomes from observed trajectories under the same environmental randomness enable a policy gradient estimator using counterfactual returns as baselines, improving policy learning when environmental dynamics are harder to predict than action effects.",
+    "ai_keywords": [
+     "counterfactual world models",
+     "world models",
+     "policy gradient estimator",
+     "REINFORCE Look Back (RLB)",
+     "counterfactual returns",
+     "baselines",
+     "unbiasedness",
+     "variance reduction",
+     "policy learning",
+     "stochastic environments",
+     "action effects",
+     "environmental randomness"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 4,
+    "organization": {
+     "_id": "65964267f8f4854a7788bdee",
+     "name": "nyucourant",
+     "fullname": "New York University",
+     "avatar": "https://www.gravatar.com/avatar/75cc8e5c45919b85a13d9422b4d03e5f?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-11-21T19:00:00.000Z",
+   "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
+   "summary": "Agents in complex, stochastic environments must contend with dynamics that can exceed their world models' predictive capacity and randomness that obscure the consequences of their actions. We hypothesize that, compared to imagining entirely new trajectories in such complex environments, it can be easier to transform observed trajectories with alternative actions. Counterfactual world models condition on observations to predict alternative outcomes under the same underlying environmental randomness, using experience as a reference for predicting action-dependent changes. We present a policy gradient estimator, REINFORCE Look Back (RLB), that uses counterfactual returns as baselines to distinguish action effects from environmental luck, and prove conditions for unbiasedness and variance reduction. In settings where environmental evolution is harder to predict than action-induced changes, we show that counterfactual world models are easier to learn and support better policy learning than ordinary world models. Our findings suggest that counterfactual thinking can help agents learn effective behavior without independently reproducing the full complexity of their worlds.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/65f5e94926f86cf33715c7d5/p7gNNpi3oWXh6elrrGJeI.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.29259.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65f5e94926f86cf33715c7d5",
+    "avatarUrl": "/avatars/77e4ab8da69f4fbabd04a35472010af8.svg",
+    "fullname": "Steph Milani",
+    "name": "smilani",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "65964267f8f4854a7788bdee",
+    "name": "nyucourant",
+    "fullname": "New York University",
+    "avatar": "https://www.gravatar.com/avatar/75cc8e5c45919b85a13d9422b4d03e5f?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.34363",
@@ -61,7 +183,7 @@
      "name": "LogicPalette"
     },
     "summary": "Reinforcement learning (RL) for text-to-SQL agents pays a query when its result matches the reference on one database. However, a wrong query can match by luck when the data lack the rows that expose its bug. We study a counterfactual-database (CF) reward that also runs the final query on a few hidden, code-generated copies of the database and pays only if all results match (strict form) or by the share matched (mean form). On 1,302 synthetic audit questions, the strict form lowers the share of buggy queries paid in full from 29.5% to 16.8% and of reward hacks from 54.1% to 1.9%, rejecting 0 of 2,847 correct queries; copies from a family-blind generator do about as well. In a controlled GRPO comparison on a 3.35B model with three seeds per arm, training on the mean form did not improve in-domain accuracy (8.4% vs 11.7%), because the two rewards disagreed on only 5-7% of rollouts; on Spider it gained 1.6 points. One seed reverses both signs, so single-seed reward comparisons mislead. Code: https://github.com/RishiiGamer2201/counterfactual-sql-rewards ; data, models, demo: https://huggingface.co/counterfactual-sql",
-    "upvotes": 2,
+    "upvotes": 4,
     "discussionId": "6b080fb00a42b5746a881cdb",
     "projectPage": "https://huggingface.co/spaces/counterfactual-sql/counterfactual-sql-demo",
     "githubRepo": "https://github.com/RishiiGamer2201/counterfactual-sql-rewards",
@@ -80,6 +202,7 @@
      "family-blind generator"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 0,
     "organization": {
      "_id": "6b05af13d0a9edb7f2daf151",
      "name": "counterfactual-sql",
@@ -272,7 +395,7 @@
      "name": "yifAI"
     },
     "summary": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b08574476c8c78187f89c20",
     "projectPage": "https://github.com/frontiereval/AIChipBench",
     "githubRepo": "https://github.com/frontiereval/AIChipBench",
@@ -373,7 +496,7 @@
      "name": "DavidYan2001"
     },
     "summary": "Generating coherent and explorable 3D worlds from scattered images with little or no visual overlap is a fundamental and long-standing challenge in computer vision, which existing geometry-aware methods fail to address. Meanwhile, existing image- and video-based methods may generate unseen regions but produce inconsistent geometry across views. To bridge this gap, we present WorldBridge, a framework for coherent and controllable 3D world generation under scattered images with little or no visual overlap. WorldBridge encodes scattered references into a global scene context to guide geometry and appearance generation across views. Our temporal and spatial reference attention mechanism further enhances the fidelity of temporal references along the target trajectory and supports flexible spatial references outside it. A plug-and-play latent-reference consistency strategy improves reference fidelity through reprojection-guided test-time optimization. We also introduce the WorldBridge benchmark suite to evaluate 3D world generation from scattered, low-overlap references, which is rarely explored by current benchmarks. Both qualitative and quantitative results demonstrate that our method enables controllable and coherent 3D world generation, surpassing the existing state-of-the-art solutions. Our project page is available at https://davidyan2001.github.io/WorldBridge/.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b084d4a67e0f9f483b61ecd",
     "projectPage": "https://davidyan2001.github.io/WorldBridge/?v=duke",
     "ai_summary": "WorldBridge generates coherent and controllable 3D worlds from scattered, low-overlap images by encoding references into a global scene context and using attention and latent-reference consistency optimization.",
@@ -418,7 +541,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 2,
+    "followerCount": 3,
     "isUserFollowing": false
    },
    "organization": {
@@ -533,7 +656,7 @@
      "name": "samyhaff"
     },
     "summary": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates where the paradigms disagree, while shift governs which is right when they do.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b083edb67e0f9f483b61e6d",
     "projectPage": "https://samyhaff.github.io/projects/",
     "githubRepo": "https://github.com/samyhaff/ed-study",
@@ -815,7 +938,7 @@
      "name": "StoneTZHENG"
     },
     "summary": "Autoresearch agents, which autonomously design, run, and refine experiments, are accelerating scientific progress, particularly in AI research. However, existing agents rely on harnesses that combine multiple mechanisms, making it difficult to determine how individual components contribute to performance. We systematically study harness design for long-horizon, self-evolving autoresearch agents along two dimensions: context management, which determines what an agent retains from its past attempts, and skill management, which governs how it stores and reuses lessons from those attempts. Across MLE-Bench and KernelBench with gpt-oss-120b, gpt-6-luna, and gpt-6-sol, we isolate the effects of individual harness design choices by evaluating each against a recency-truncation baseline within a shared agent framework. For context management, we find that preserving individually accessible records of past attempts is more effective than maintaining a rolling summary, with context folding performing best across all six settings and improving upon the baseline by up to 19.2%. For skill management, selectively discarding persistently unused lessons is more effective on average than consolidating them or promoting them to standing rules. Building on these findings, we combine context folding and skill deletion in MLEvolver, which achieves a 72.7% medal rate on MLE-Bench Lite and a 94% fast_1 score on KernelBench Level 3, substantially outperforming AIDE and OpenEvolve under the same inference budget. Overall, our study distills design principles for preserving experimental history and curating reusable lessons in autoresearch harnesses, paving the way for agents that turn accumulated experience into sustained progress.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6b08284a67e0f9f483b61dcf",
     "ai_summary": "A systematic study of harness design for long-horizon self-evolving autoresearch agents finds that context folding and selective skill deletion improve performance, enabling MLEvolver to achieve strong results on MLE-Bench Lite and KernelBench Level 3.",
     "ai_keywords": [
@@ -1378,7 +1501,7 @@
      "name": "Elfsong"
     },
     "summary": "Decision models are language models fine-tuned to return a probability for each option of a typed query, which routers and guardrails threshold directly. They are built on multilingual bases but ranked almost entirely in English. We evaluate 25 top-ranked open-weight decision models on 17 tasks in 14 languages, comparing each language with English on parallel items. Every model loses accuracy in every language, from about 2 points in high-resource languages to 8 in Tamil, while confidence falls only half as much: a threshold set for 95\\% accuracy in English yields 90% in Tamil. The size of the loss is set by the language and the base model rather than by leaderboard rank. In 81 controlled fine-tuning runs, task skill learned in English transfers to other languages and a few thousand target-language items narrow large losses, but neither more data nor full-parameter tuning closes them. Finally, the same test items are answered more accurately in all 23 benchmark--language pairs we compare when an LLM rather than a person translated them, so LLM-translated test sets understate the gap.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b07f55b0a42b5746a881c21",
     "organization": {
      "_id": "6508b28cf36bb51c50faad98",
@@ -1462,7 +1585,7 @@
      "name": "haowenhou"
     },
     "summary": "Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks: every sampled trajectory receives zero reward, leaving group-relative methods without a reward-based policy gradient. A common remedy supplies complete solutions from a stronger model, but full trajectories are expensive and expose the learner to long off-policy histories. We introduce SPLICE, which constructs local training targets from failed current-policy trajectories online. For each all-fail group, a proposal model selects a splice point in a current-policy trajectory and generates several bounded options from that point. We estimate each option's value using repeated current-policy continuations, convert positive estimates into a return-weighted local target, and fit the current policy on the options. We evaluate SPLICE across two policy families on two long-horizon agent tasks, Software Engineering with SWE-bench Verified and Deep Research with BrowseComp-Plus. SPLICE outperforms GRPO and full-trajectory guidance baselines in all four settings, improving over GRPO by 2.8--9.8 percentage points. On initially failed SWE tasks, it raises GRPO's graduation rate by 10.8 percentage points. Further experiments show that SPLICE improves performance while reducing costly proposal-model computation.",
-    "upvotes": 2,
+    "upvotes": 3,
     "discussionId": "6b07efb70a42b5746a881c07",
     "ai_summary": "SPLICE improves reinforcement learning on long-horizon agent tasks by constructing local training targets from failed trajectories using a proposal model to select splice points and generate bounded options, outperforming GRPO and full-trajectory guidance baselines.",
     "ai_keywords": [
@@ -1805,7 +1928,7 @@
      "name": "Wongyun"
     },
     "summary": "A growing body of recent work addresses the retargeting of human hand-object demonstrations to robotic hands. To train whole-robot policies, however, the retargeted motions must be kinematically feasible and physically executable, and be produced efficiently at scale. We present DexEngine, a simulation pipeline that turns human manipulation data into train-ready, physically executable arm-hand trajectories. DexEngine first places each clip's hand-object motion where the arms can reach it, finds an arm motion that follows the human hands, and then corrects the motion in physics simulation with residual reinforcement learning. From nine human hand-object datasets, we generate about 5,200 clips for each of four dexterous hands, augmented into 65,000 trajectories (116 h) and 325,000 episodes (578 h) in total. Even with arms attached, DexEngine tracks objects more accurately than prior floating-hand methods and runs over 10x faster than RL-based ones. Policies trained on our data far outperform those trained on the same clips without physics correction or with the arms attached after a floating-hand correction, showing that fine-tuning data need physics correction. Mid-training on our data further improves them at equal fine-tuning budget, in simulation and on a real robot.",
-    "upvotes": 17,
+    "upvotes": 18,
     "discussionId": "6b07902f0a42b5746a8817cb",
     "projectPage": "https://wongyun-yu.github.io/dexengine/",
     "githubRepo": "https://github.com/wongyun-yu/DexEngine",
@@ -2070,7 +2193,7 @@
      "name": "bhc6"
     },
     "summary": "Proactive assistants that guide people through physical tasks must decide, every few seconds, whether a step is complete and whether a mistake has occurred. We find that two benchmarks for this task largely reward knowing when rather than seeing what: a timer that never looks at the video, raising an alarm at 25 s and confirming each step at 30 s, reaches a mistake F1 of 0.373 on Ego-MC-Bench, above every published result (at most 0.27). We formalize this as the video-blind frontier, the best trade-off between completion accuracy and mistake F1 that policies reach from the elapsed time, the instruction and training statistics alone: every published per-step result on Ego-MC-Bench lies inside it, and so do all twelve zero-shot models we run on QICD. To move beyond it, we introduce Evidence-Contrastive Training (ECT): fine-tune on the benchmark's own questions, and pair its positives with negatives from the same recording at the same elapsed time, so that elapsed time cannot separate the two sides of a pair. Trained on 209 QICD videos in about 15 GPU-hours, a 2B model with ECT crosses the frontier on both benchmarks in all four seeds; transferred to Ego-MC-Bench without adaptation, it confirms 59% of mistake-free steps in time, against 30% for a published model with the same backbone trained on about 25k synthetic counterfactuals and real recordings. Its decisions follow the video beyond what timing explains: at equal elapsed time it tells a finished step from an unfinished one in 90-92% of test pairs, where the instruction's typical duration reaches 65%, rescaling the time stamps between the frames leaves it essentially unchanged, and swapping in another recording, of the same recipe where one exists, cuts its completion accuracy by two thirds. The code and model weights will be publicly released.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b05394ce7a4376c42cc90bd",
     "githubRepo": "https://github.com/bhc6/speak-when-you-see-it",
     "githubRepoAddedBy": "user",
@@ -2713,7 +2836,7 @@
      "real failure videos"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 12,
     "organization": {
      "_id": "6345aadf5efccdc07f1365a5",
      "name": "ZhejiangUniversity",
@@ -2871,7 +2994,7 @@
      "four-step distillation"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 9,
+    "githubStars": 12,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -2991,7 +3114,7 @@
     "projectPage": "https://livevae.github.io/",
     "githubRepo": "https://github.com/MeiGen-AI/LiveVAE",
     "githubRepoAddedBy": "user",
-    "githubStars": 5
+    "githubStars": 12
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
@@ -3070,12 +3193,12 @@
      "name": "yurun-chen"
     },
     "summary": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
-    "upvotes": 18,
+    "upvotes": 19,
     "discussionId": "6b07ceae0a42b5746a881b2a",
     "projectPage": "https://yurunchen.github.io/egousebench/",
     "githubRepo": "https://github.com/YurunChen/EgoUseBench",
     "githubRepoAddedBy": "user",
-    "githubStars": 9,
+    "githubStars": 26,
     "organization": {
      "_id": "6345aadf5efccdc07f1365a5",
      "name": "ZhejiangUniversity",
@@ -3169,7 +3292,7 @@
     "projectPage": "https://omnipersist.github.io/",
     "githubRepo": "https://github.com/cszhilu1998/OmniPersist",
     "githubRepoAddedBy": "user",
-    "githubStars": 5,
+    "githubStars": 10,
     "organization": {
      "_id": "6296f43820dc74838613d1ba",
      "name": "SingaporeManagementUniversity",
@@ -3289,12 +3412,12 @@
      "name": "WhiteYC"
     },
     "summary": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion models, whose compressed representations and VAE-based reconstruction introduce a mismatch with the high-frequency precision required for matting. We present PixelMatte, a framework that adapts pretrained pixel-space diffusion transformers for high-fidelity image matting. We show that strong image-conditioned matting capabilities can be acquired even from a pure text-to-image model without paired image-to-image pretraining. Our approach reuses the backbone's native patch embedding to jointly process the input image, trimap, and noisy alpha matte as spatially aligned tokens, enabling direct pixel-space prediction without additional condition encoders or adapters. With pixel-accurate synthetic supervision and real-image fine-tuning, PixelMatte predicts alpha mattes in a single forward pass. Two lightweight calibration modules, LayerShift and High-Pass Refiner, further improve regional opacity accuracy and boundary fidelity. Experiments across four benchmarks and two distinct pixel diffusion backbones demonstrate substantial improvements over existing methods, reducing SAD and gradient errors by 24-44% relative to RenderMatte on P3M-500-NP and AM-2K, while achieving competitive performance on AIM-500 and RenderMatte-2K. These results demonstrate the effectiveness of pixel-space generative priors for precision-sensitive image matting. Project page: https://white-yc.github.io/pixelmatte/.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6b07ca010a42b5746a881adf",
     "projectPage": "https://white-yc.github.io/pixelmatte/",
     "githubRepo": "https://github.com/White-YC/pixelmatte",
     "githubRepoAddedBy": "user",
-    "githubStars": 0
+    "githubStars": 13
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "High-Fidelity Image Matting with Pixel-Space Diffusion Transformers",
@@ -3314,7 +3437,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -3390,7 +3513,7 @@
      "name": "Uanu"
     },
     "summary": "Large language models (LLMs) that continue improving after deployment (e.g., recursive self-improvement) offer a promising path toward general intelligence. Current test-time methods pursue this goal on unlabeled questions, primarily relying on self-consistency: they generate independent solutions and use majority voting to select an answer or construct training targets. This leaves earlier reasoning unused at inference and can reinforce an incorrect majority during training. Humans instead build on earlier attempts to preserve useful reasoning, correct mistakes and improve their problem-solving strategies. Following this principle, we propose Test-Time Recursive Self-Improvement (TT-RSI), a label-free framework for improving LLMs at test time through two mutually reinforcing components: (1) In-Context RSI repeatedly re-solves each question using the full previous solution as a reference, letting the model decide whether and how to use it so that inference compute builds on earlier reasoning. (2) In-Weight RSI distills successive refinements into the model's weights, enabling progress beyond an initially wrong majority and theoretically bringing the first attempt toward the model's infinite-step refinement limit. The updated model answers better and refines more effectively, generating stronger references for subsequent training. Extensive experiments show that TT-RSI improves average accuracy by +13.89% over the base model and outperforms the strongest self-consistency-based method by +4.79% under the same test-time scaling budget.",
-    "upvotes": 12,
+    "upvotes": 14,
     "discussionId": "6b06e5830a42b5746a8814b7",
     "projectPage": "https://uanu2002.github.io/TT-RSI/",
     "githubRepo": "https://github.com/uanu2002/TT-RSI",
@@ -3414,7 +3537,7 @@
      "infinite-step refinement limit"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 0,
+    "githubStars": 1,
     "organization": {
      "_id": "6a4fb75a1c66dbf208e7ddb6",
      "name": "Shanghai-AI-Laboratory",
@@ -3807,7 +3930,7 @@
      "visually robust control"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 5,
     "organization": {
      "_id": "68def522f7fa0b3cc3db7dd1",
      "name": "ipplab",
@@ -3923,7 +4046,7 @@
      "edit tokens"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 1,
+    "githubStars": 2,
     "organization": {
      "_id": "630c3b594c0945d20b8d550f",
      "name": "SFU",
@@ -4059,7 +4182,7 @@
     "projectPage": "https://real2simhub.github.io",
     "githubRepo": "https://github.com/Real2SimHub/Real2SimLab",
     "githubRepoAddedBy": "user",
-    "githubStars": 9,
+    "githubStars": 21,
     "organization": {
      "_id": "6a07ff936781d8b803c28343",
      "name": "PKU-VaLuE-Lab",
@@ -4185,7 +4308,7 @@
     "projectPage": "https://airis-bench.github.io/",
     "githubRepo": "https://github.com/AIRIS-bench/AIRIS",
     "githubRepoAddedBy": "user",
-    "githubStars": 16,
+    "githubStars": 23,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -4299,7 +4422,7 @@
      "name": "sanaka87"
     },
     "summary": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We introduce Image-to-Video Transfer (I2VT), which improves pretrained video editors and expands them to new editing tasks using an image editor. It enables efficient post-training with no architectural changes and no new videos, using only individual images. Our key idea is to let the video editor role-play as an image editor: it edits an image as a one-frame video, with the image editor guiding the video editor's predictions at each denoising step. Although the video editor sees only single images during training, at test time it applies the improved and expanded capabilities to whole video clips while preserving temporal consistency. To push the boundaries of video editing, we introduce OpenVE++, an extension of OpenVE-Bench that adds four new editing tasks useful for video production, including action changes, expression changes, body movements, and scene relighting. Our experiments across three different video editors show that I2VT improves existing editing capabilities and expands them to new tasks, and our models achieve state-of-the-art (SOTA) performance on both OpenVE-Bench and OpenVE++.",
-    "upvotes": 40,
+    "upvotes": 41,
     "discussionId": "6b07be8d0a42b5746a881a2e",
     "projectPage": "https://i2v-transfer.github.io/",
     "githubRepo": "https://github.com/HorizonWind2004/i2v-transfer",
@@ -4321,7 +4444,7 @@
      "scene relighting"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 6,
+    "githubStars": 29,
     "organization": {
      "_id": "6362c6c180c1a705a6ed0d57",
      "name": "CMU-SCS",
@@ -4347,7 +4470,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 93,
+    "followerCount": 94,
     "isUserFollowing": false
    },
    "organization": {
@@ -4571,7 +4694,7 @@
      "Unitree G1-D"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 1
+    "githubStars": 3
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "RoboEvo^2: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
@@ -4675,7 +4798,7 @@
      "zero-shot generalization"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 0,
+    "githubStars": 3,
     "organization": {
      "_id": "646ecc368d316fde87b3b6e3",
      "name": "PolyUHK",
@@ -4907,7 +5030,7 @@
      "HiGLR"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 4,
+    "githubStars": 5,
     "organization": {
      "_id": "686cbcf7c08a3097554ee7be",
      "name": "UniversityofSeoul",
@@ -5514,12 +5637,12 @@
      "name": "xioamiyh"
     },
     "summary": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.",
-    "upvotes": 82,
+    "upvotes": 84,
     "discussionId": "6b07b8a10a42b5746a8819bd",
     "projectPage": "https://sage-med-preview.github.io/",
     "githubRepo": "https://github.com/Sage-Med/Sage-Med-Preview",
     "githubRepoAddedBy": "user",
-    "githubStars": 5,
+    "githubStars": 19,
     "organization": {
      "_id": "6a4fb75a1c66dbf208e7ddb6",
      "name": "Shanghai-AI-Laboratory",
@@ -5733,12 +5856,12 @@
      "name": "AaronHuangWei"
     },
     "summary": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark of 25 stories (857 shots) revealed one shot at a time, Agentic LongLive improves persistent-state accuracy of LongLive-2.0, its base generator, by 26.3 points, protagonist identity by 44.9, and revisited-place consistency by 40.4, at about 1% extra generation time on H100. The full system streams faster than real time on one 8xB200 node with the generator in BF16 (34.3 FPS), keeps image quality stable over 14-minute stories, and improves identity on two MiniMax-H3 generators, one of which, LongLive-H3, also runs in real time with it. To our knowledge, it is the first real-time video generator with text and image memory kept by an LLM agent.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6b07b5440a42b5746a881922",
     "projectPage": "https://nvlabs.github.io/LongLive/Agentic-LongLive/",
     "githubRepo": "https://github.com/NVlabs/LongLive",
     "githubRepoAddedBy": "user",
-    "githubStars": 2910,
+    "githubStars": 2912,
     "organization": {
      "_id": "60262b67268c201cdc8b7d43",
      "name": "nvidia",
@@ -6005,101 +6128,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/vavgrBsnkSejriUF4lXDE.png"
    },
    "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.30460",
-    "authors": [
-     {
-      "_id": "6b07ac720a42b5746a8818b5",
-      "name": "Ting Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b07ac720a42b5746a8818b6",
-      "name": "Geng Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b07ac720a42b5746a8818b7",
-      "name": "Guohao Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b07ac720a42b5746a8818b8",
-      "name": "Hanjia Lyu",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
-    "submittedOnDailyBy": {
-     "_id": "64c939307dba66c3a7e4d215",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c939307dba66c3a7e4d215/CFqVv4cS2-rCeDD8CG7A0.jpeg",
-     "isPro": false,
-     "fullname": "Hanjia Lyu",
-     "user": "brucelyu",
-     "type": "user",
-     "name": "brucelyu"
-    },
-    "summary": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength, which improves some methods while degrading others. These findings highlight the importance of evaluating the contrastive correction itself, rather than relying solely on final-output performance, and CONCOR provides a controlled and interpretable framework for understanding and improving CD methods for hallucination mitigation.",
-    "upvotes": 2,
-    "discussionId": "6b07ac720a42b5746a8818b9",
-    "ai_summary": "A controlled benchmark directly evaluates contrastive corrections in multimodal large language models to better understand and mitigate object hallucination beyond final task scores.",
-    "ai_keywords": [
-     "contrastive decoding",
-     "object hallucination",
-     "multimodal large language models",
-     "token distributions",
-     "token scores",
-     "generative benchmarks",
-     "discriminative benchmarks",
-     "candidate filtering",
-     "generation trajectories",
-     "response biases",
-     "contrastive adjustments",
-     "CONCOR",
-     "Contrastive Correction Evaluation",
-     "Contrastive Grounding Margin",
-     "directional consistency",
-     "contrastive corrections",
-     "contrast strength",
-     "hallucination mitigation"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "organization": {
-     "_id": "6296f43820dc74838613d1ba",
-     "name": "SingaporeManagementUniversity",
-     "fullname": "Singapore Management University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1654060072621-6296f3e0b493a00f946220de.png"
-    }
-   },
-   "publishedAt": "2026-11-24T19:00:00.000Z",
-   "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
-   "summary": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength, which improves some methods while degrading others. These findings highlight the importance of evaluating the contrastive correction itself, rather than relying solely on final-output performance, and CONCOR provides a controlled and interpretable framework for understanding and improving CD methods for hallucination mitigation.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30460.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "64c939307dba66c3a7e4d215",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c939307dba66c3a7e4d215/CFqVv4cS2-rCeDD8CG7A0.jpeg",
-    "fullname": "Hanjia Lyu",
-    "name": "brucelyu",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 1,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6296f43820dc74838613d1ba",
-    "name": "SingaporeManagementUniversity",
-    "fullname": "Singapore Management University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1654060072621-6296f3e0b493a00f946220de.png"
-   },
-   "isAuthorParticipating": false
   }
  ]
 }
