@@ -1,8 +1,442 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-26T12:31:08.525Z",
+ "fetchedAt": "2026-11-26T14:46:07.902Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.21155",
+    "authors": [
+     {
+      "_id": "6b0843c667e0f9f483b61e7f",
+      "name": "Daisuke Kikuta",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-16T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?",
+    "submittedOnDailyBy": {
+     "_id": "6528f3a590f06dd8a8e97572",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6528f3a590f06dd8a8e97572/_-mnMzoN6ouN7B_qzb3ab.png",
+     "isPro": false,
+     "fullname": "Daisuke Kikuta",
+     "user": "oookiku",
+     "type": "user",
+     "name": "oookiku"
+    },
+    "summary": "After a large language model (LLM) agent generates an artifact, users often send edit requests for it. This paper studies whether an LLM can anticipate these requests before they are sent. Such anticipation is useful in practice because it reduces the effort of user review and feedback. We formalize this task as edit recommendation and build EditRecBench, a benchmark for evaluating the performance of LLMs on this task, from real-world conversation logs in WildChat-4.8M. Through benchmarking and failure analysis, we identify a practical challenge that some cases are inherently difficult to predict in real-world settings. To address this, we introduce decision model-based gating to filter out cases where predictions are unlikely to be correct before they are presented to the user. Our trained model outperforms existing decision models and raises pass@5 among shown suggestions by 12--25 points at a gating threshold. Our code is available at https://github.com/ntt-dkiku/llm-edit-recommendation.",
+    "upvotes": 0,
+    "discussionId": "6b0843c667e0f9f483b61e80",
+    "projectPage": "https://ntt-dkiku.github.io/llm-edit-recommendation",
+    "githubRepo": "https://github.com/ntt-dkiku/llm-edit-recommendation",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "A benchmark and gated decision model enable large language model agents to anticipate user edit requests, improving the precision of shown recommendations.",
+    "ai_keywords": [
+     "large language model (LLM) agent",
+     "edit recommendation",
+     "EditRecBench",
+     "WildChat-4.8M",
+     "decision model-based gating",
+     "pass@5",
+     "gating threshold"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash"
+   },
+   "publishedAt": "2026-11-15T19:00:00.000Z",
+   "title": "Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?",
+   "summary": "After a large language model (LLM) agent generates an artifact, users often send edit requests for it. This paper studies whether an LLM can anticipate these requests before they are sent. Such anticipation is useful in practice because it reduces the effort of user review and feedback. We formalize this task as edit recommendation and build EditRecBench, a benchmark for evaluating the performance of LLMs on this task, from real-world conversation logs in WildChat-4.8M. Through benchmarking and failure analysis, we identify a practical challenge that some cases are inherently difficult to predict in real-world settings. To address this, we introduce decision model-based gating to filter out cases where predictions are unlikely to be correct before they are presented to the user. Our trained model outperforms existing decision models and raises pass@5 among shown suggestions by 12--25 points at a gating threshold. Our code is available at https://github.com/ntt-dkiku/llm-edit-recommendation.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.21155.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6528f3a590f06dd8a8e97572",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6528f3a590f06dd8a8e97572/_-mnMzoN6ouN7B_qzb3ab.png",
+    "fullname": "Daisuke Kikuta",
+    "name": "oookiku",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.30334",
+    "authors": [
+     {
+      "_id": "6b083eda67e0f9f483b61e6a",
+      "name": "Samy Haffoudhi",
+      "hidden": false
+     },
+     {
+      "_id": "6b083eda67e0f9f483b61e6b",
+      "name": "Fabian M Suchanek",
+      "hidden": false
+     },
+     {
+      "_id": "6b083eda67e0f9f483b61e6c",
+      "name": "Nils Holzenberger",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
+    "submittedOnDailyBy": {
+     "_id": "66e7ef9018ba399ea276dcc9",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e7ef9018ba399ea276dcc9/dqfGLQv7gLn68lCUm6kPm.jpeg",
+     "isPro": false,
+     "fullname": "Samy Haffoudhi",
+     "user": "samyhaff",
+     "type": "user",
+     "name": "samyhaff"
+    },
+    "summary": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates where the paradigms disagree, while shift governs which is right when they do.",
+    "upvotes": 1,
+    "discussionId": "6b083edb67e0f9f483b61e6d",
+    "githubRepo": "https://github.com/samyhaff/ed-study",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "Reasoning-based candidate selection in small language models for entity disambiguation yields negligible in-domain gains but becomes decisive under true zero-shot domain shift, with reranker uncertainty and shift explaining when the paradigms disagree.",
+    "ai_keywords": [
+     "large language models",
+     "reasoning LLMs",
+     "zero-shot",
+     "few-shot",
+     "reranking",
+     "pointwise",
+     "listwise",
+     "reasoning-based candidate selection",
+     "coarse-to-fine entity disambiguation pipeline",
+     "distillation",
+     "reinforcement learning",
+     "domain shift",
+     "reranker uncertainty"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "organization": {
+     "_id": "5fe0a3b39126717e4c356efa",
+     "name": "Telecom-Paris",
+     "fullname": "Telecom Paris",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608557374722-5fce3ed4e80c09ad2760251b.jpeg"
+    }
+   },
+   "publishedAt": "2026-11-22T19:00:00.000Z",
+   "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
+   "summary": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates where the paradigms disagree, while shift governs which is right when they do.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30334.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "66e7ef9018ba399ea276dcc9",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e7ef9018ba399ea276dcc9/dqfGLQv7gLn68lCUm6kPm.jpeg",
+    "fullname": "Samy Haffoudhi",
+    "name": "samyhaff",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 3,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "5fe0a3b39126717e4c356efa",
+    "name": "Telecom-Paris",
+    "fullname": "Telecom Paris",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608557374722-5fce3ed4e80c09ad2760251b.jpeg"
+   },
+   "isAuthorParticipating": false
+  },
+  {
+   "paper": {
+    "id": "2611.32335",
+    "authors": [
+     {
+      "_id": "6b06a87aea91637d11fcef05",
+      "user": {
+       "_id": "6affd74dc5d4fb4855bf8603",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6affd74dc5d4fb4855bf8603/2pB783mpsE3QSWiemaRaO.jpeg",
+       "isPro": false,
+       "fullname": "Weicong Zhang",
+       "user": "WeicongZhang",
+       "type": "user",
+       "name": "WeicongZhang"
+      },
+      "name": "Weicong Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-25T16:36:31.160Z",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef06",
+      "name": "Yuan Huang",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef07",
+      "name": "Yu Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef08",
+      "name": "Lin Chenxiao",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef09",
+      "name": "Yingying Li",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0a",
+      "name": "Lilong Fan",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0b",
+      "name": "Liangdong Zhuang",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0c",
+      "name": "Yufan Chen",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0d",
+      "name": "Ruiping Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0e",
+      "name": "Junwei Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6b06a87aea91637d11fcef0f",
+      "user": {
+       "_id": "643424fed55dea2d0ec1ac08",
+       "avatarUrl": "/avatars/a106702acc049d79a8506f217e2f8c2e.svg",
+       "isPro": false,
+       "fullname": "Jiaming Zhang",
+       "user": "JamyCheung",
+       "type": "user",
+       "name": "JamyCheung"
+      },
+      "name": "Jiaming Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-26T08:45:05.084Z",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6affd74dc5d4fb4855bf8603/q9khYE2d6N4y5D3u5-hwW.mp4"
+    ],
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
+    "submittedOnDailyBy": {
+     "_id": "6affd74dc5d4fb4855bf8603",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6affd74dc5d4fb4855bf8603/2pB783mpsE3QSWiemaRaO.jpeg",
+     "isPro": false,
+     "fullname": "Weicong Zhang",
+     "user": "WeicongZhang",
+     "type": "user",
+     "name": "WeicongZhang"
+    },
+    "summary": "Panoramic cameras capture nearly the entire spherical field of view in a single frame. However, the mismatch between this panoramic coverage and the field of view of LiDAR poses a substantial challenge for panoramic Gaussian splatting SLAM that relies on LiDAR depth priors. We introduce GOLD-SLAM, a Gaussian-splatting Omnidirectional LiDAR-Depth SLAM system that combines high-quality rendering with accurate geometric reconstruction. It performs tracking and mapping in the spherical domain and uses tracked visual features in regions without LiDAR coverage to improve pose estimation. To address insufficient coverage of newly observed surfaces and floating artifacts during incremental mapping, we introduce Depth-Aware Map Extension and Pruning (DAEP). To enable broader evaluation, we collect a new dataset, WHOLE, using a UAV platform across Weak-geometry, High-dynamic, Omnidirectional, Low-light, and Easy scenarios. Extensive experiments on public benchmarks and WHOLE demonstrate competitive rendering quality and improved geometric accuracy relative to perspective systems. Compared with existing panoramic baselines, GOLD-SLAM improves mean PSNR by 5.56-9.10 dB and reduces mean Depth-L1 by 71.9-83.9%. To assess deployment feasibility on resource-constrained platforms such as UAVs, we evaluate an embedded configuration of GOLD-SLAM on a Jetson Orin NX (16 GB), demonstrating online operation at the cost of reconstruction quality.",
+    "upvotes": 0,
+    "discussionId": "6b06a87aea91637d11fcef10",
+    "projectPage": "https://insailab.org/gold-slam",
+    "githubRepo": "https://github.com/InSAI-Lab/GOLD-SLAM",
+    "githubRepoAddedBy": "user",
+    "ai_summary": "GOLD-SLAM integrates panoramic Gaussian splatting with LiDAR depth priors for omnidirectional SLAM, improving pose estimation and geometric reconstruction while maintaining competitive rendering quality.",
+    "ai_keywords": [
+     "panoramic Gaussian splatting SLAM",
+     "LiDAR depth priors",
+     "Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
+     "spherical domain",
+     "tracking and mapping",
+     "Depth-Aware Map Extension and Pruning (DAEP)",
+     "floating artifacts",
+     "incremental mapping",
+     "pose estimation",
+     "Depth-L1"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "githubStars": 3,
+    "organization": {
+     "_id": "69d4c0ac129a84ef5526310d",
+     "name": "InSAI-Lab",
+     "fullname": "InSAI Lab",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69d4baff8e85a8e1ae8370a5/qqeGpW3kQ8GVDcazES1nW.png"
+    }
+   },
+   "publishedAt": "2026-11-23T19:00:00.000Z",
+   "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
+   "summary": "Panoramic cameras capture nearly the entire spherical field of view in a single frame. However, the mismatch between this panoramic coverage and the field of view of LiDAR poses a substantial challenge for panoramic Gaussian splatting SLAM that relies on LiDAR depth priors. We introduce GOLD-SLAM, a Gaussian-splatting Omnidirectional LiDAR-Depth SLAM system that combines high-quality rendering with accurate geometric reconstruction. It performs tracking and mapping in the spherical domain and uses tracked visual features in regions without LiDAR coverage to improve pose estimation. To address insufficient coverage of newly observed surfaces and floating artifacts during incremental mapping, we introduce Depth-Aware Map Extension and Pruning (DAEP). To enable broader evaluation, we collect a new dataset, WHOLE, using a UAV platform across Weak-geometry, High-dynamic, Omnidirectional, Low-light, and Easy scenarios. Extensive experiments on public benchmarks and WHOLE demonstrate competitive rendering quality and improved geometric accuracy relative to perspective systems. Compared with existing panoramic baselines, GOLD-SLAM improves mean PSNR by 5.56-9.10 dB and reduces mean Depth-L1 by 71.9-83.9%. To assess deployment feasibility on resource-constrained platforms such as UAVs, we evaluate an embedded configuration of GOLD-SLAM on a Jetson Orin NX (16 GB), demonstrating online operation at the cost of reconstruction quality.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6affd74dc5d4fb4855bf8603/q9khYE2d6N4y5D3u5-hwW.mp4"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32335.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6affd74dc5d4fb4855bf8603",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6affd74dc5d4fb4855bf8603/2pB783mpsE3QSWiemaRaO.jpeg",
+    "fullname": "Weicong Zhang",
+    "name": "WeicongZhang",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "69d4c0ac129a84ef5526310d",
+    "name": "InSAI-Lab",
+    "fullname": "InSAI Lab",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/69d4baff8e85a8e1ae8370a5/qqeGpW3kQ8GVDcazES1nW.png"
+   },
+   "isAuthorParticipating": true
+  },
+  {
+   "paper": {
+    "id": "2611.28244",
+    "authors": [
+     {
+      "_id": "6b08284a67e0f9f483b61dc4",
+      "name": "Kelvin Kiu-Wai Tam",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dc5",
+      "name": "Newt Hue-Nam K. Nguyen",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dc6",
+      "name": "Tianshi Zheng",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dc7",
+      "name": "Yunxiang Mo",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dc8",
+      "name": "Weihan Li",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dc9",
+      "name": "Zhongwei Xie",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dca",
+      "name": "Chiu Yeung Tang",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dcb",
+      "name": "Jui-Yu Ho",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dcc",
+      "name": "Yangqiu Song",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dcd",
+      "name": "Ginny Y. Wong",
+      "hidden": false
+     },
+     {
+      "_id": "6b08284a67e0f9f483b61dce",
+      "name": "Simon See",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
+    "title": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
+    "submittedOnDailyBy": {
+     "_id": "626fbdcca8dcec0066f4ae12",
+     "avatarUrl": "/avatars/a1ae4336dff49d62660ae1664a788068.svg",
+     "isPro": true,
+     "fullname": "Tianshi ZHENG",
+     "user": "StoneTZHENG",
+     "type": "user",
+     "name": "StoneTZHENG"
+    },
+    "summary": "Autoresearch agents, which autonomously design, run, and refine experiments, are accelerating scientific progress, particularly in AI research. However, existing agents rely on harnesses that combine multiple mechanisms, making it difficult to determine how individual components contribute to performance. We systematically study harness design for long-horizon, self-evolving autoresearch agents along two dimensions: context management, which determines what an agent retains from its past attempts, and skill management, which governs how it stores and reuses lessons from those attempts. Across MLE-Bench and KernelBench with gpt-oss-120b, gpt-6-luna, and gpt-6-sol, we isolate the effects of individual harness design choices by evaluating each against a recency-truncation baseline within a shared agent framework. For context management, we find that preserving individually accessible records of past attempts is more effective than maintaining a rolling summary, with context folding performing best across all six settings and improving upon the baseline by up to 19.2%. For skill management, selectively discarding persistently unused lessons is more effective on average than consolidating them or promoting them to standing rules. Building on these findings, we combine context folding and skill deletion in MLEvolver, which achieves a 72.7% medal rate on MLE-Bench Lite and a 94% fast_1 score on KernelBench Level 3, substantially outperforming AIDE and OpenEvolve under the same inference budget. Overall, our study distills design principles for preserving experimental history and curating reusable lessons in autoresearch harnesses, paving the way for agents that turn accumulated experience into sustained progress.",
+    "upvotes": 3,
+    "discussionId": "6b08284a67e0f9f483b61dcf",
+    "ai_summary": "A systematic study of harness design for long-horizon self-evolving autoresearch agents finds that context folding and selective skill deletion improve performance, enabling MLEvolver to achieve strong results on MLE-Bench Lite and KernelBench Level 3.",
+    "ai_keywords": [
+     "autoresearch agents",
+     "harness design",
+     "long-horizon self-evolving agents",
+     "context management",
+     "skill management",
+     "recency-truncation baseline",
+     "context folding",
+     "skill deletion",
+     "rolling summary",
+     "standing rules",
+     "MLEvolver",
+     "MLE-Bench",
+     "MLE-Bench Lite",
+     "KernelBench",
+     "KernelBench Level 3",
+     "gpt-oss-120b",
+     "gpt-6-luna",
+     "gpt-6-sol",
+     "AIDE",
+     "OpenEvolve",
+     "inference budget",
+     "medal rate",
+     "fast_1 score"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "organization": {
+     "_id": "63355133edc1a61aecf74b0e",
+     "name": "HKUST",
+     "fullname": "HKUST",
+     "avatar": "https://www.gravatar.com/avatar/4a4318de793d2c187cb6f312e9d0e7bc?d=retro&size=100"
+    }
+   },
+   "publishedAt": "2026-11-19T19:00:00.000Z",
+   "title": "Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents",
+   "summary": "Autoresearch agents, which autonomously design, run, and refine experiments, are accelerating scientific progress, particularly in AI research. However, existing agents rely on harnesses that combine multiple mechanisms, making it difficult to determine how individual components contribute to performance. We systematically study harness design for long-horizon, self-evolving autoresearch agents along two dimensions: context management, which determines what an agent retains from its past attempts, and skill management, which governs how it stores and reuses lessons from those attempts. Across MLE-Bench and KernelBench with gpt-oss-120b, gpt-6-luna, and gpt-6-sol, we isolate the effects of individual harness design choices by evaluating each against a recency-truncation baseline within a shared agent framework. For context management, we find that preserving individually accessible records of past attempts is more effective than maintaining a rolling summary, with context folding performing best across all six settings and improving upon the baseline by up to 19.2%. For skill management, selectively discarding persistently unused lessons is more effective on average than consolidating them or promoting them to standing rules. Building on these findings, we combine context folding and skill deletion in MLEvolver, which achieves a 72.7% medal rate on MLE-Bench Lite and a 94% fast_1 score on KernelBench Level 3, substantially outperforming AIDE and OpenEvolve under the same inference budget. Overall, our study distills design principles for preserving experimental history and curating reusable lessons in autoresearch harnesses, paving the way for agents that turn accumulated experience into sustained progress.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28244.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "626fbdcca8dcec0066f4ae12",
+    "avatarUrl": "/avatars/a1ae4336dff49d62660ae1664a788068.svg",
+    "fullname": "Tianshi ZHENG",
+    "name": "StoneTZHENG",
+    "type": "user",
+    "isPro": true,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 1,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "63355133edc1a61aecf74b0e",
+    "name": "HKUST",
+    "fullname": "HKUST",
+    "avatar": "https://www.gravatar.com/avatar/4a4318de793d2c187cb6f312e9d0e7bc?d=retro&size=100"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.32938",
@@ -791,7 +1225,7 @@
      "name": "royorel"
     },
     "summary": "We present MEMO (a Mesh for Every MOment), a method that reconstructs the geometry of complete dynamic scenes, captured by multiple synchronized cameras, and extracts a mesh at every frame. Existing dynamic Gaussian splatting methods either model appearance alone or target isolated objects segmented by foreground masks, and all of them recover meshes by TSDF fusion or Poisson reconstruction, whose fixed grids limit the detail they can capture. At the core of MEMO is a per-Gaussian motion model inspired by Gaussian processes, which represents each Gaussian's position and rotation over time as a combination of temporal Gaussian kernels. The model keeps every Gaussian a valid surface element throughout the sequence and carries an implicit representation of the dynamic geometry, so a mesh can be derived at any time from a field defined by the Gaussians. Although common in real captures, large and fast motion poses a challenge that dynamic Gaussian splatting methods usually overlook. To account for it, we design a track-based initialization scheme that fits each Gaussian's initial trajectory to point tracks in closed form. We evaluate MEMO on Blender-Moments, a new benchmark of nine animated scenes with ground-truth meshes at every frame, and on two real-world datasets. MEMO reconstructs the most accurate geometry among state-of-the-art methods, and remains competitive in novel-view synthesis and training time. Project page: https://memo-4d.github.io",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6b07c15d0a42b5746a881a66",
     "projectPage": "https://memo-4d.github.io/",
     "githubRepo": "https://github.com/royorel/MEMO",
@@ -986,7 +1420,7 @@
      "name": "the-jb"
     },
     "summary": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
-    "upvotes": 23,
+    "upvotes": 24,
     "discussionId": "6b0618dbea91637d11fce9e6",
     "projectPage": "https://thejb.ai/integral/",
     "githubRepo": "https://github.com/the-jb/integral",
@@ -1497,7 +1931,7 @@
      "name": "mossbee"
     },
     "summary": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language model must reason over these page representations formed in isolation. We introduce DocSEAM (Document Selective Enrichment via Anchored Masking), a lightweight module inserted between a pretrained vision encoder and the language model that injects the inductive bias of local cross-page context into visual representations. For each page, DocSEAM forms a local triplet with its two neighbors, applies center-anchored masked self-attention with directional salience gates to fuse information from neighbor pages, and returns only the enriched center-page tokens, leaving the visual token count unchanged. After a supervised cross-page warm-up and multi-page fine-tuning with DocSEAM frozen, our 9B-parameter model achieves state-of-the-art results among the evaluated open-weight models of up to 10B parameters on five multi-page document VQA benchmarks. We further show that under controlled re-pagination, DocSEAM reduces sensitivity to boundary placement and improves cross-page span localization",
-    "upvotes": 24,
+    "upvotes": 25,
     "discussionId": "6b07dd0f0a42b5746a881b74",
     "projectPage": "https://mossbee.github.io/projects/DocSEAM/",
     "githubRepo": "https://github.com/mossbee/DocSEAM",
@@ -1608,7 +2042,7 @@
      "name": "LianghuiZhu"
     },
     "summary": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-    "upvotes": 54,
+    "upvotes": 56,
     "discussionId": "6b07dd220a42b5746a881b7d",
     "projectPage": "https://github.com/hustvl/MoLT",
     "githubRepo": "https://github.com/hustvl/MoLT",
@@ -1743,7 +2177,7 @@
      "name": "ToexploreAI"
     },
     "summary": "Robot world models are increasingly used to evaluate and plan policies, yet robot training data are dominated by successful demonstrations. Off the happy path, when a grasp is misaligned or mistimed and the object is pushed, tilted, or slips, their predictions break down. Across five pretrained action-conditioned models, object-motion error is at most 10.4% lower than that of a static baseline that copies the first frame, and two models are worse than this baseline. We present WorldReforge, which teaches world models what happens when manipulation goes wrong. We construct the Reforge dataset of 62k simulated trajectories by perturbing reference grasps in position, orientation, and closure timing, recording each resulting push, slip, or failed pickup with ground-truth object pose, contact, and surface points. WorldReforge turns this ground truth into two training signals without additional inference cost. Interaction Alignment focuses reconstruction on the small object and contact regions that a global loss underweights, and Surface Correspondence trains backbone features to follow the same physical surface points across frames. On Cosmos3 Nano, WorldReforge reduces object trajectory error by 28.2% overall and by 35.0% on unseen objects, and it lowers the error in predicting how two actions' outcomes diverge by 43.3%. Although trained only in simulation, it also improves reconstruction on DROID and on real failure videos. Controlled data studies show that failed contact and successful holding teach complementary physics: failed contact teaches how objects respond, and holding teaches how a grasped state persists. Our code, data, and models are available at aim-uofa.github.io/WorldReforge/.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6b07d5d50a42b5746a881b65",
     "projectPage": "https://aim-uofa.github.io/WorldReforge/",
     "githubRepo": "https://github.com/aim-uofa/WorldReforge",
@@ -2113,6 +2547,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6747285ed34bd6f05080ddda/ypDvw7HsJlq-tLTzNfNB5.mp4"
+    ],
     "publishedAt": "2026-11-25T00:00:00.000Z",
     "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
     "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
@@ -2126,7 +2563,7 @@
      "name": "yurun-chen"
     },
     "summary": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
-    "upvotes": 16,
+    "upvotes": 17,
     "discussionId": "6b07ceae0a42b5746a881b2a",
     "projectPage": "https://yurunchen.github.io/egousebench/",
     "githubRepo": "https://github.com/YurunChen/EgoUseBench",
@@ -2142,6 +2579,9 @@
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
    "summary": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6747285ed34bd6f05080ddda/ypDvw7HsJlq-tLTzNfNB5.mp4"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34466.png",
    "numComments": 1,
    "submittedBy": {
@@ -2342,7 +2782,7 @@
      "name": "WhiteYC"
     },
     "summary": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion models, whose compressed representations and VAE-based reconstruction introduce a mismatch with the high-frequency precision required for matting. We present PixelMatte, a framework that adapts pretrained pixel-space diffusion transformers for high-fidelity image matting. We show that strong image-conditioned matting capabilities can be acquired even from a pure text-to-image model without paired image-to-image pretraining. Our approach reuses the backbone's native patch embedding to jointly process the input image, trimap, and noisy alpha matte as spatially aligned tokens, enabling direct pixel-space prediction without additional condition encoders or adapters. With pixel-accurate synthetic supervision and real-image fine-tuning, PixelMatte predicts alpha mattes in a single forward pass. Two lightweight calibration modules, LayerShift and High-Pass Refiner, further improve regional opacity accuracy and boundary fidelity. Experiments across four benchmarks and two distinct pixel diffusion backbones demonstrate substantial improvements over existing methods, reducing SAD and gradient errors by 24-44% relative to RenderMatte on P3M-500-NP and AM-2K, while achieving competitive performance on AIM-500 and RenderMatte-2K. These results demonstrate the effectiveness of pixel-space generative priors for precision-sensitive image matting. Project page: https://white-yc.github.io/pixelmatte/.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6b07ca010a42b5746a881adf",
     "projectPage": "https://white-yc.github.io/pixelmatte/",
     "githubRepo": "https://github.com/White-YC/pixelmatte",
@@ -2840,7 +3280,7 @@
      "name": "whyu"
     },
     "summary": "World-action models jointly predict future observations and actions, yet visual corruption can disrupt the resulting policies. We introduce HOG-WAM, which adds future Histograms of Oriented Gradients (HOG) as structural supervision derived directly from demonstration images. An auxiliary HOG diffusion transformer (DiT) module reads RGB features through asymmetric attention, allowing its objective to shape the visual representation used for control. The module is used only during training and removed at inference, preserving FastWAM's RGB-to-action architecture. We evaluate four controlled observation corruptions through a visual-corruption extension of RoboTwin, termed RoboTwin-Plus; HOG-WAM achieves the highest success among the compared policies under all four. Mixed-noise success increases from 78.86% to 82.86% relative to FastWAM, with comparable performance on clean scenes. On LIBERO Plus, overall success increases from 74.49% to 75.26%, with the largest gain under sensor noise, from 74.14% to 78.89%. Across four Franka tasks, average success increases from 40% to 59% under clean observations and from 17% to 24% under noisy observations. A representation ablation favors combining RGB observations with auxiliary HOG prediction over replacing RGB with HOG. These findings support future-gradient prediction as complementary supervision for visually robust control, with larger absolute gains on physical tasks than in simulation. Code is available at https://github.com/iPPLab/HOG-WAM.",
-    "upvotes": 21,
+    "upvotes": 22,
     "discussionId": "6b07c3c30a42b5746a881a88",
     "githubRepo": "https://github.com/iPPLab/HOG-WAM",
     "githubRepoAddedBy": "user",
@@ -3107,7 +3547,7 @@
      "name": "JadeHuang"
     },
     "summary": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to N times M integrations when evaluating N methods on M benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our research map of nearly 300 real-to-simulation papers, are open source, and we invite the Real2SimHub community to build them together.",
-    "upvotes": 83,
+    "upvotes": 99,
     "discussionId": "6b07b4d30a42b5746a881911",
     "projectPage": "https://real2simhub.github.io",
     "githubRepo": "https://github.com/Real2SimHub/Real2SimLab",
@@ -3352,7 +3792,7 @@
      "name": "sanaka87"
     },
     "summary": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We introduce Image-to-Video Transfer (I2VT), which improves pretrained video editors and expands them to new editing tasks using an image editor. It enables efficient post-training with no architectural changes and no new videos, using only individual images. Our key idea is to let the video editor role-play as an image editor: it edits an image as a one-frame video, with the image editor guiding the video editor's predictions at each denoising step. Although the video editor sees only single images during training, at test time it applies the improved and expanded capabilities to whole video clips while preserving temporal consistency. To push the boundaries of video editing, we introduce OpenVE++, an extension of OpenVE-Bench that adds four new editing tasks useful for video production, including action changes, expression changes, body movements, and scene relighting. Our experiments across three different video editors show that I2VT improves existing editing capabilities and expands them to new tasks, and our models achieve state-of-the-art (SOTA) performance on both OpenVE-Bench and OpenVE++.",
-    "upvotes": 37,
+    "upvotes": 39,
     "discussionId": "6b07be8d0a42b5746a881a2e",
     "projectPage": "https://i2v-transfer.github.io/",
     "githubRepo": "https://github.com/HorizonWind2004/i2v-transfer",
@@ -3691,7 +4131,7 @@
      "name": "vLAR"
     },
     "summary": "Accurate 3D surface reconstruction from unposed images remains a fundamental challenge in computer vision. Recent feed-forward pointmap methods eliminate the need for camera poses but inherently produce discrete, sparse representations. In this paper, we present a generalizable pipeline that directly recovers continuous, high-fidelity 3D surfaces from unposed images by seamlessly integrating pointmap- and ray-based representations. Our approach first extracts explicit geometric priors using a pre-trained pointmap model. A query-view-centric selection module then identifies geometrically relevant reference views via a robust surfel voting mechanism. Next, a cross-attention regressor bridges target query rays with reference features to estimate a continuous coarse surface. Lastly, a raylet-based module aggregates local 3D features to carve out high-frequency details and analytical normals. Trained as a single foundation model on 9 diverse datasets, our method demonstrates exceptional zero-shot generalization on 6 unseen datasets, clearly surpassing state-of-the-art baselines in geometric accuracy and detail preservation.",
-    "upvotes": 15,
+    "upvotes": 16,
     "discussionId": "6b07bc260a42b5746a8819f6",
     "projectPage": "https://vlar-group.github.io/FoundSurface.html",
     "githubRepo": "https://github.com/vLAR-group/FoundSurface",
@@ -3919,7 +4359,7 @@
      "name": "dslisleedh"
     },
     "summary": "Multi-scale architectures are widely adopted in all-in-one image restoration (AIO-IR) to capture larger-scale context at low-resolution stages and refine details at high-resolution (HR) stages. However, processing spatially large feature maps at HR stages incurs substantial computational costs and memory traffic, making efficient HR processing challenging. To address this challenge, we propose High-resolution Global-Local Restoration (HiGLR), an efficient multi-scale AIO-IR network grounded in an analysis of spatial redundancy in self-attention and convolutional feed-forward networks (ConvFFNs). Specifically, this analysis identifies three key redundancies: per-query readout at the finest-scale stage, key routing across neighboring queries at intermediate stages, and spatial mixing in the expanded feature spaces of ConvFFNs. Accordingly, HiGLR replaces costly self-attention at the finest-scale stage with a learned input-independent kernel. At intermediate stages, we propose a Block-Routed Hybrid Attention, which combines coarse-scale dense attention with fine-scale block-sparse attention over value residuals relative to coarse summaries, and shares routing indices across neighboring queries. We further introduce a Dual-Space FFN that performs spatial mixing in a compact space and pointwise nonlinear transformation in an expanded space, enabling efficient kernel fusion. Combining these designs, HiGLR achieves state-of-the-art performance while delivering up to a 4.24times inference speedup over existing methods.",
-    "upvotes": 13,
+    "upvotes": 14,
     "discussionId": "6b07b8ab0a42b5746a8819c7",
     "githubRepo": "https://github.com/dslisleedh/HiGLR",
     "githubRepoAddedBy": "user",
@@ -4545,7 +4985,7 @@
      "name": "xioamiyh"
     },
     "summary": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.",
-    "upvotes": 78,
+    "upvotes": 81,
     "discussionId": "6b07b8a10a42b5746a8819bd",
     "projectPage": "https://sage-med-preview.github.io/",
     "githubRepo": "https://github.com/Sage-Med/Sage-Med-Preview",
@@ -4672,7 +5112,7 @@
      "name": "Kling-Keye-Official"
     },
     "summary": "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, a camera aimed away from its subject, broken object interactions, or narration that drifts out of sync, and none of these raise a runtime error. Feeding rendered frames and audio back into the coding session bloats its long-horizon context, while critiquing only the finished full-resolution render turns early design mistakes into costly rewrites. We introduce VibeVideoAgent, a training-free framework that lets coding agents inspect their drafts throughout production. Multimodal perception runs in short-lived contexts kept apart from the coder and returns compact, grounded Findings. Seven primitives operate on a unified multi-clock representation of assets and drafts: they explore media from coarse to fine, verify quoted requirements with evidence from every required modality, compare a draft with a reference or an earlier revision on separate clocks, and measure stream signals locally. A lightweight staged protocol has the agent test its riskiest decision on a minimal preview first. On all 239 VibeVideoBench tasks, with matched agent runtimes and a fixed perception model, VibeVideoAgent improves holistic audiovisual quality (L3) for Claude Opus 5.5 (4.03 -> 4.43, while L2 rubric compliance rises from 98.87% to 99.35%), GPT-6 Astra (4.03 -> 4.27), and Claude Sonnet 5.5 (3.97 -> 4.10), with the largest gains in audio-visual synchronization (up to +0.56). Controlled ablations show that each component contributes, and trajectory audits show that the granularity of code edits governs the trade-off between rubric adherence and perceptual quality.",
-    "upvotes": 52,
+    "upvotes": 54,
     "discussionId": "6b07b7930a42b5746a88194e",
     "githubRepo": "https://github.com/Kling-Keye/VibeVideoAgent",
     "githubRepoAddedBy": "user",
@@ -4849,7 +5289,7 @@
      "name": "William422"
     },
     "summary": "Generating PPTX presentations is a structured task that requires semantic planning, visual composition, precise layout, and editability, motivating collaboration among specialized agents. However, programmatic methods offer editability but often produce rigid designs, while image-based methods provide visual richness but flatten content into difficult-to-edit pixels. A hybrid system can combine these strengths, but must coordinate interdependent decisions across content, layout, and appearance. To address this challenge, we propose SlidesWeaver, a hybrid multi-agent system that coordinates language and vision agents through shared deck- and slide-level states. Specifically, it uses staged multimodal commitment, diffusion-based composition planning, and two generation schedules for different priorities between composition freedom and accurate text preservation, while preserving native text and geometry. Across 1,728 generations spanning 24 system-model configurations, SlidesWeaver achieves consistently superior overall quality across all evaluated dimensions while maintaining structural control, editability, and practical generation efficiency.",
-    "upvotes": 7,
+    "upvotes": 9,
     "discussionId": "6b07b5060a42b5746a881919",
     "ai_summary": "SlidesWeaver combines language and vision agents with diffusion-based planning and shared state to generate editable, high-quality PPTX presentations while preserving native text and layout.",
     "ai_keywords": [
@@ -5675,7 +6115,7 @@
      "name": "xiwenyoumu"
     },
     "summary": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations. The programmatic policy is developed in two stages: during exploration, multiple agents explore in parallel for task skills and ways to compose them, and a distilling agent condenses the successful attempts into a task library and one program. During refinement, this program is improved through randomized layouts for enhanced robustness and execution efficiency. In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks. In real world experiments on a bimanual platform with two 22-DoF hands, PyRUA-Dex learns to play piano, write calligraphy, and other tasks efficiently: learning a new piece from sheet music takes as little as 30 minutes. These results suggest that PyRUA-Dex is an effective framework for developing dexterous manipulation policies with coding agents in the absence of high quality dexterous manipulation demonstrations.",
-    "upvotes": 41,
+    "upvotes": 43,
     "discussionId": "6b07a2c30a42b5746a88185b",
     "projectPage": "https://vme0522.github.io/PyRUA-Dex/",
     "ai_summary": "A framework enables coding agents to develop dexterous manipulation policies without demonstrations by exploring and distilling successful attempts into a program, then refining it for strong simulated and real-world results.",
@@ -5728,434 +6168,6 @@
     "name": "DAGroup-PKU",
     "fullname": "DAGroup-PKU",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/665c91e15b11dca02f0c5891/ek9KGIc02tiFfaYeDfLaU.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.30844",
-    "authors": [
-     {
-      "_id": "6b055810e7a4376c42cc92a5",
-      "user": {
-       "_id": "66b9f670088299999adf3925",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b9f670088299999adf3925/WTVS-LsYr8miZSB6y8zqx.jpeg",
-       "isPro": false,
-       "fullname": "Lernie Li",
-       "user": "OneCreamBox",
-       "type": "user",
-       "name": "OneCreamBox"
-      },
-      "name": "Lernie Li",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-24T16:45:05.103Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b055810e7a4376c42cc92a6",
-      "name": "Yuanliu Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6b055810e7a4376c42cc92a7",
-      "name": "Pengfei Xiong",
-      "hidden": false
-     },
-     {
-      "_id": "6b055810e7a4376c42cc92a8",
-      "name": "Wei Zhang",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/66b9f670088299999adf3925/Huotc-2D62dOnMlz6f6b0.mp4"
-    ],
-    "publishedAt": "2026-11-23T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
-    "submittedOnDailyBy": {
-     "_id": "66b9f670088299999adf3925",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b9f670088299999adf3925/WTVS-LsYr8miZSB6y8zqx.jpeg",
-     "isPro": false,
-     "fullname": "Lernie Li",
-     "user": "OneCreamBox",
-     "type": "user",
-     "name": "OneCreamBox"
-    },
-    "summary": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we propose Dynamic Looped MoE DiT (DyLoMo-DiT), which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. This design deepens the network without adding parameters, freeing the parameter budget for other uses, such as more experts or more distinct layers. It also allocates compute dynamically, varying the number of passes across noise levels. Experiments show that DyLoMo-DiT makes more effective use of parameter and compute budgets, with further gains from assigning more passes to low-noise steps. On ImageNet 256times256, DyLoMo-DiT reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets. For text-to-image generation, a scaled DyLoMo-DiT achieves a higher GenEval score than FLUX.1 (0.714 vs. 0.673), with less than one tenth of its active parameters (1.05B vs. 12B).",
-    "upvotes": 33,
-    "discussionId": "6b055810e7a4376c42cc92a9",
-    "projectPage": "https://oneboxcream.github.io/DyLoMo-DiT/",
-    "githubRepo": "https://github.com/OneBoxCream/DyLoMo-DiT",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "A dynamic looped mixture-of-experts diffusion transformer reuses shared parameters and varies compute across noise levels, improving image generation quality under matched budgets.",
-    "ai_keywords": [
-     "Diffusion Transformers",
-     "DiT",
-     "Mixture-of-Experts",
-     "MoE",
-     "DiT-MoE",
-     "Dynamic Looped MoE DiT",
-     "DyLoMo-DiT",
-     "weight-shared loop",
-     "sparse experts",
-     "per-token computation",
-     "noise levels",
-     "low-noise steps",
-     "FID",
-     "text-to-image generation",
-     "GenEval",
-     "FLUX.1",
-     "active parameters"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 35
-   },
-   "publishedAt": "2026-11-22T19:00:00.000Z",
-   "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
-   "summary": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we propose Dynamic Looped MoE DiT (DyLoMo-DiT), which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. This design deepens the network without adding parameters, freeing the parameter budget for other uses, such as more experts or more distinct layers. It also allocates compute dynamically, varying the number of passes across noise levels. Experiments show that DyLoMo-DiT makes more effective use of parameter and compute budgets, with further gains from assigning more passes to low-noise steps. On ImageNet 256times256, DyLoMo-DiT reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets. For text-to-image generation, a scaled DyLoMo-DiT achieves a higher GenEval score than FLUX.1 (0.714 vs. 0.673), with less than one tenth of its active parameters (1.05B vs. 12B).",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/66b9f670088299999adf3925/Huotc-2D62dOnMlz6f6b0.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30844.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "66b9f670088299999adf3925",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b9f670088299999adf3925/WTVS-LsYr8miZSB6y8zqx.jpeg",
-    "fullname": "Lernie Li",
-    "name": "OneCreamBox",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.27962",
-    "authors": [
-     {
-      "_id": "6b0726b90a42b5746a881682",
-      "user": {
-       "_id": "6611644885c0fba509d29b25",
-       "avatarUrl": "/avatars/83e23af78534d5ad2e71a873f501f2e2.svg",
-       "isPro": false,
-       "fullname": "Kaden Zheng",
-       "user": "kzheng",
-       "type": "user",
-       "name": "kzheng"
-      },
-      "name": "Kaden Zheng",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-26T00:45:04.811Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b0726b90a42b5746a881683",
-      "name": "Pratyusha Sharma",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/28AIDd1vbownK-wPGiEMT.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/NzJy8kmpL28FMbWP7EOwO.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/pNhjX1qXgoeGOapwwR4QJ.mp4",
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/xga2PT-AQqaRJNSNGPJ0_.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/UBLJmdQWHl_fnAKBxetrh.png",
-     "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/r5Q8swpzEnaO-TjbxFyMG.png"
-    ],
-    "publishedAt": "2026-11-20T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
-    "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
-    "submittedOnDailyBy": {
-     "_id": "6611644885c0fba509d29b25",
-     "avatarUrl": "/avatars/83e23af78534d5ad2e71a873f501f2e2.svg",
-     "isPro": false,
-     "fullname": "Kaden Zheng",
-     "user": "kzheng",
-     "type": "user",
-     "name": "kzheng"
-    },
-    "summary": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer, in the same order, and optimizes the weights within. This uniformity is a convention rather than a principled design choice, and it is likely suboptimal: the best architecture for a given task may be smaller, more efficient, and far from uniform. We believe that, ideally, training itself should shape the model's topology. To this end, we introduce Model Carving, which learns both a Transformer's weights and its architecture in a single run. By applying learnable, scalar gates to each sublayer, we allow the training loss to remove the model's own components during training -- freeing a smaller heterogeneous network inside. We evaluate Model Carving by pre-training standard Transformers from 140M to 2.7B parameters and looped Transformers from 140M to 1.3B. At equal training compute, carved models reach a lower validation loss than dense models trained with up to 1.7 times more compute. Furthermore, carved models also outperform size-matched models produced by pruning or distillation, suggesting that the best way to obtain small models for edge devices is to carve them during training, not to compress a large one afterwards. This advantage both grows with scale and carries over to downstream tasks such as few-shot evaluation and generation. Because the removed sublayers no longer run, carved models also cost up to 34% fewer FLOPs per token and decode up to 1.6 times faster without cost in quality. Our results show that architecture, like weights, should be learned and not fixed in advance, and that inside every large transformer is a smaller, faster, stronger one waiting to be carved out.",
-    "upvotes": 2,
-    "discussionId": "6b0726b90a42b5746a881684",
-    "projectPage": "https://kadenzheng.com/model-carving/",
-    "githubRepo": "https://github.com/KadenZheng/model-carving",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "Model Carving jointly learns a Transformer's weights and architecture by gating sublayers during training, producing smaller, faster, and stronger models than dense, pruned, or distilled alternatives.",
-    "ai_keywords": [
-     "Transformer",
-     "attention sublayers",
-     "MLP sublayers",
-     "learnable scalar gates",
-     "Model Carving",
-     "heterogeneous network",
-     "looped Transformers",
-     "validation loss",
-     "dense models",
-     "pruning",
-     "distillation",
-     "few-shot evaluation",
-     "FLOPs per token",
-     "decoding"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 13,
-    "organization": {
-     "_id": "63663038361a96184dbad334",
-     "name": "Harvard",
-     "fullname": "Harvard University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667641389305-6366110f575c93cedafde54e.jpeg"
-    }
-   },
-   "publishedAt": "2026-11-19T19:00:00.000Z",
-   "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
-   "summary": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer, in the same order, and optimizes the weights within. This uniformity is a convention rather than a principled design choice, and it is likely suboptimal: the best architecture for a given task may be smaller, more efficient, and far from uniform. We believe that, ideally, training itself should shape the model's topology. To this end, we introduce Model Carving, which learns both a Transformer's weights and its architecture in a single run. By applying learnable, scalar gates to each sublayer, we allow the training loss to remove the model's own components during training -- freeing a smaller heterogeneous network inside. We evaluate Model Carving by pre-training standard Transformers from 140M to 2.7B parameters and looped Transformers from 140M to 1.3B. At equal training compute, carved models reach a lower validation loss than dense models trained with up to 1.7 times more compute. Furthermore, carved models also outperform size-matched models produced by pruning or distillation, suggesting that the best way to obtain small models for edge devices is to carve them during training, not to compress a large one afterwards. This advantage both grows with scale and carries over to downstream tasks such as few-shot evaluation and generation. Because the removed sublayers no longer run, carved models also cost up to 34% fewer FLOPs per token and decode up to 1.6 times faster without cost in quality. Our results show that architecture, like weights, should be learned and not fixed in advance, and that inside every large transformer is a smaller, faster, stronger one waiting to be carved out.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/28AIDd1vbownK-wPGiEMT.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/NzJy8kmpL28FMbWP7EOwO.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/pNhjX1qXgoeGOapwwR4QJ.mp4",
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/xga2PT-AQqaRJNSNGPJ0_.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/UBLJmdQWHl_fnAKBxetrh.png",
-    "https://cdn-uploads.huggingface.co/production/uploads/6611644885c0fba509d29b25/r5Q8swpzEnaO-TjbxFyMG.png"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.27962.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6611644885c0fba509d29b25",
-    "avatarUrl": "/avatars/83e23af78534d5ad2e71a873f501f2e2.svg",
-    "fullname": "Kaden Zheng",
-    "name": "kzheng",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "63663038361a96184dbad334",
-    "name": "Harvard",
-    "fullname": "Harvard University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667641389305-6366110f575c93cedafde54e.jpeg"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.32199",
-    "authors": [
-     {
-      "_id": "6b064c79ea91637d11fceb22",
-      "name": "Henry Castillo",
-      "hidden": false
-     },
-     {
-      "_id": "6b064c79ea91637d11fceb23",
-      "user": {
-       "_id": "624e9aac94078e6b99e87d51",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670708382147-624e9aac94078e6b99e87d51.png",
-       "isPro": false,
-       "fullname": "Yanchen Liu",
-       "user": "liuyanchen1015",
-       "type": "user",
-       "name": "liuyanchen1015"
-      },
-      "name": "Yanchen Liu",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-26T00:45:04.778Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b064c79ea91637d11fceb24",
-      "name": "Claudio Mayrink Verdun",
-      "hidden": false
-     },
-     {
-      "_id": "6b064c79ea91637d11fceb25",
-      "name": "Dylan Hadfield-Menell",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/624e9aac94078e6b99e87d51/HnpwlDhYNZUWWxSLjN6il.mp4"
-    ],
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
-    "title": "Steerable by Design: Conditional Pretraining for Robust Control of Language Models",
-    "submittedOnDailyBy": {
-     "_id": "624e9aac94078e6b99e87d51",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670708382147-624e9aac94078e6b99e87d51.png",
-     "isPro": false,
-     "fullname": "Yanchen Liu",
-     "user": "liuyanchen1015",
-     "type": "user",
-     "name": "liuyanchen1015"
-    },
-    "summary": "Our goal is to build language models that are steerable by design. Today's language models are pretrained with next-token prediction, which relegates alignment and control to the final 1% of training tokens or inference-time interventions. These models repurpose a single input channel for both instructions and data, leading to common failure modes where the model mistakenly treats data as instructions such as intentional jailbreaks and unintentional in-context alignment drift. To correct this, we propose a pretraining method and architecture that separates the two from the very start, producing Mancelle-3B. An encoder processes high-level semantic features of upcoming text with cross-attention that prevents the token stream from writing back into this control channel. During pretraining, the model learns to rely on these features to predict the next token, turning the channel into an effective handle for steering the model. Mancelle-3B steers more strongly than prompt- and activation-based methods on comparable open models while maintaining fluency, and it withstands adversarial black-box and soft-prompt counter-steering that defeats those baselines. We reproduce this against a more controlled baseline with Mancelle-400M. Our results show that robust control can be built into language models if we do so early and intentionally.",
-    "upvotes": 8,
-    "discussionId": "6b064c7aea91637d11fceb26",
-    "projectPage": "https://mancelle.com/",
-    "organization": {
-     "_id": "63728bde14d543d507ae970d",
-     "name": "MIT",
-     "fullname": "Massachusetts Institute of Technology",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/S90qoeEJeEYaYf-c7Zs8g.png"
-    }
-   },
-   "publishedAt": "2026-11-23T19:00:00.000Z",
-   "title": "Steerable by Design: Conditional Pretraining for Robust Control of Language Models",
-   "summary": "Our goal is to build language models that are steerable by design. Today's language models are pretrained with next-token prediction, which relegates alignment and control to the final 1% of training tokens or inference-time interventions. These models repurpose a single input channel for both instructions and data, leading to common failure modes where the model mistakenly treats data as instructions such as intentional jailbreaks and unintentional in-context alignment drift. To correct this, we propose a pretraining method and architecture that separates the two from the very start, producing Mancelle-3B. An encoder processes high-level semantic features of upcoming text with cross-attention that prevents the token stream from writing back into this control channel. During pretraining, the model learns to rely on these features to predict the next token, turning the channel into an effective handle for steering the model. Mancelle-3B steers more strongly than prompt- and activation-based methods on comparable open models while maintaining fluency, and it withstands adversarial black-box and soft-prompt counter-steering that defeats those baselines. We reproduce this against a more controlled baseline with Mancelle-400M. Our results show that robust control can be built into language models if we do so early and intentionally.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/624e9aac94078e6b99e87d51/HnpwlDhYNZUWWxSLjN6il.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32199.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "624e9aac94078e6b99e87d51",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670708382147-624e9aac94078e6b99e87d51.png",
-    "fullname": "Yanchen Liu",
-    "name": "liuyanchen1015",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "63728bde14d543d507ae970d",
-    "name": "MIT",
-    "fullname": "Massachusetts Institute of Technology",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/S90qoeEJeEYaYf-c7Zs8g.png"
-   },
-   "isAuthorParticipating": true
-  },
-  {
-   "paper": {
-    "id": "2611.32351",
-    "authors": [
-     {
-      "_id": "6b067f23ea91637d11fced93",
-      "user": {
-       "_id": "6808cdb24e9f857bea343a92",
-       "avatarUrl": "/avatars/1a7bce77d46e287cc38ce414ca1afee6.svg",
-       "isPro": false,
-       "fullname": "Jiayu Tang",
-       "user": "JYT4chenxiyuxi",
-       "type": "user",
-       "name": "JYT4chenxiyuxi"
-      },
-      "name": "Jiayu Tang",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-25T08:45:05.496Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced94",
-      "name": "Yuchen Zhou",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced95",
-      "name": "Hongsheng Wu",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced96",
-      "name": "Hanjing Ye",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced97",
-      "name": "Ke Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced98",
-      "name": "Cheng Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced99",
-      "name": "Yuqin Dai",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced9a",
-      "name": "Yufei Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced9b",
-      "name": "Yonggen Ling",
-      "hidden": false
-     },
-     {
-      "_id": "6b067f23ea91637d11fced9c",
-      "name": "Chao Gou",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6808cdb24e9f857bea343a92/4p4ug9eOH5JKtZywDkXT5.mp4"
-    ],
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-25T00:00:00.000Z",
-    "title": "LookAnything: A Foundation Model for Holistic Gaze Following",
-    "submittedOnDailyBy": {
-     "_id": "6808cdb24e9f857bea343a92",
-     "avatarUrl": "/avatars/1a7bce77d46e287cc38ce414ca1afee6.svg",
-     "isPro": false,
-     "fullname": "Jiayu Tang",
-     "user": "JYT4chenxiyuxi",
-     "type": "user",
-     "name": "JYT4chenxiyuxi"
-    },
-    "summary": "Human gaze provides a rich window into attention and intent, making its understanding essential for applications ranging from social signal analysis to human-robot interaction. Existing methods typically employ highly customized architectures relying on auxiliary inputs like head crops or depth maps, causing cascading errors and inference overhead. Trained on single domains and confined to isolated gaze following with heatmap outputs, they lack flexibility and generalization for diverse interactive scenarios. To bridge this gap, we present LookAnything, a foundation model that unifies diverse gaze-centric tasks for holistic gaze following. Benefiting from large-scale multi-task and cross-domain training, LookAnything flexibly adapts to various settings, generating diverse outputs (points, boxes, heatmaps, and language) and supporting broad gaze-centric localization, description, and reasoning. At its core, we introduce learnable gaze-prior queries to promote gaze-aware representation learning, eliminating the need for auxiliary external inputs. To facilitate this paradigm, we construct HoliGaze, a comprehensive corpus and benchmark comprising 311K question-answer pairs across 5 capability dimensions and 9 distinct tasks. Experiments demonstrate that LookAnything consistently outperforms 33 leading vision-language models on holistic gaze following, while remaining highly competitive with dedicated specialists across 5 conventional target detection benchmarks. Evaluation on unseen datasets and deployment on a real robot further validate its strong out-of-domain generalization and flexible adaptation in real-world scenarios.",
-    "upvotes": 1,
-    "discussionId": "6b067f23ea91637d11fced9d",
-    "projectPage": "https://look-anything.github.io/",
-    "githubRepo": "https://github.com/Look-Anything/LookAnything",
-    "githubRepoAddedBy": "user",
-    "githubStars": 2,
-    "organization": {
-     "_id": "6223135d0129f2097d69a3d3",
-     "name": "SYSU",
-     "fullname": "Sun Yat-sen University",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/622312ccdba62bf9f86090bd/8yTUv7PAm8UlwRcuVObN8.jpeg"
-    }
-   },
-   "publishedAt": "2026-11-23T19:00:00.000Z",
-   "title": "LookAnything: A Foundation Model for Holistic Gaze Following",
-   "summary": "Human gaze provides a rich window into attention and intent, making its understanding essential for applications ranging from social signal analysis to human-robot interaction. Existing methods typically employ highly customized architectures relying on auxiliary inputs like head crops or depth maps, causing cascading errors and inference overhead. Trained on single domains and confined to isolated gaze following with heatmap outputs, they lack flexibility and generalization for diverse interactive scenarios. To bridge this gap, we present LookAnything, a foundation model that unifies diverse gaze-centric tasks for holistic gaze following. Benefiting from large-scale multi-task and cross-domain training, LookAnything flexibly adapts to various settings, generating diverse outputs (points, boxes, heatmaps, and language) and supporting broad gaze-centric localization, description, and reasoning. At its core, we introduce learnable gaze-prior queries to promote gaze-aware representation learning, eliminating the need for auxiliary external inputs. To facilitate this paradigm, we construct HoliGaze, a comprehensive corpus and benchmark comprising 311K question-answer pairs across 5 capability dimensions and 9 distinct tasks. Experiments demonstrate that LookAnything consistently outperforms 33 leading vision-language models on holistic gaze following, while remaining highly competitive with dedicated specialists across 5 conventional target detection benchmarks. Evaluation on unseen datasets and deployment on a real robot further validate its strong out-of-domain generalization and flexible adaptation in real-world scenarios.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6808cdb24e9f857bea343a92/4p4ug9eOH5JKtZywDkXT5.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.32351.png",
-   "numComments": 1,
-   "submittedBy": {
-    "_id": "6808cdb24e9f857bea343a92",
-    "avatarUrl": "/avatars/1a7bce77d46e287cc38ce414ca1afee6.svg",
-    "fullname": "Jiayu Tang",
-    "name": "JYT4chenxiyuxi",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "6223135d0129f2097d69a3d3",
-    "name": "SYSU",
-    "fullname": "Sun Yat-sen University",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/622312ccdba62bf9f86090bd/8yTUv7PAm8UlwRcuVObN8.jpeg"
    },
    "isAuthorParticipating": true
   }

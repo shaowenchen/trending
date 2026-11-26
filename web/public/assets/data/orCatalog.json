@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-26T12:31:10.039Z",
+ "fetchedAt": "2026-11-26T14:46:09.816Z",
  "payload": {
   "data": [
    {
@@ -3982,7 +3982,7 @@
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 131072,
+     "max_completion_tokens": 943718,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -4061,7 +4061,7 @@
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 131072,
+     "max_completion_tokens": 943718,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -12454,9 +12454,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000014",
-     "completion": "0.00000042",
-     "input_cache_read": "0.0000000042"
+     "prompt": "0.0000000507",
+     "completion": "0.0000002028",
+     "input_cache_read": "0.000000001014"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -29602,8 +29602,8 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000888188",
-     "completion": "0.0000015082",
+     "prompt": "0.000000855302",
+     "completion": "0.0000015228",
      "input_cache_read": "0.0000002"
     },
     "top_provider": {
@@ -46035,6 +46035,116 @@
     }
    },
    {
+    "id": "moonshotai/kimi-k2",
+    "canonical_slug": "moonshotai/kimi-k2",
+    "hugging_face_id": "moonshotai/Kimi-K2-Instruct",
+    "name": "MoonshotAI: Kimi K2 0711",
+    "created": 1752263252,
+    "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for...",
+    "context_length": 131072,
+    "architecture": {
+     "modality": "text->text",
+     "input_modalities": [
+      "text"
+     ],
+     "output_modalities": [
+      "text"
+     ],
+     "tokenizer": "Other",
+     "instruct_type": null
+    },
+    "pricing": {
+     "prompt": "0.00000057",
+     "completion": "0.0000023"
+    },
+    "top_provider": {
+     "context_length": 131072,
+     "max_completion_tokens": 98304,
+     "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+     "frequency_penalty",
+     "max_tokens",
+     "presence_penalty",
+     "repetition_penalty",
+     "seed",
+     "stop",
+     "temperature",
+     "tool_choice",
+     "tools",
+     "top_k",
+     "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-12-31",
+    "expiration_date": null,
+    "links": {
+     "details": "/api/v1/models/moonshotai/kimi-k2/endpoints"
+    },
+    "endpoints": [
+     "/api/v1/chat/completions",
+     "/api/v1/completions",
+     "/api/v1/messages",
+     "/api/v1/responses"
+    ],
+    "benchmarks": {
+     "design_arena": [
+      {
+       "arena": "models",
+       "category": "codecategories",
+       "elo": 1075,
+       "win_rate": 51.7,
+       "rank": 125
+      },
+      {
+       "arena": "models",
+       "category": "dataviz",
+       "elo": 1018,
+       "win_rate": 49.4,
+       "rank": 123
+      },
+      {
+       "arena": "models",
+       "category": "gamedev",
+       "elo": 945,
+       "win_rate": 46.4,
+       "rank": 135
+      },
+      {
+       "arena": "models",
+       "category": "uicomponent",
+       "elo": 1015,
+       "win_rate": 55.1,
+       "rank": 122
+      },
+      {
+       "arena": "models",
+       "category": "website",
+       "elo": 1090,
+       "win_rate": 53.1,
+       "rank": 128
+      }
+     ],
+     "artificial_analysis": {
+      "intelligence_index": null,
+      "coding_index": null,
+      "agentic_index": null,
+      "finance_and_accounting_index": null,
+      "strategy_and_ops_index": null,
+      "legal_index": null,
+      "healthcare_and_medical_index": null,
+      "engineering_index": null,
+      "economics_index": null,
+      "cyber_index": null,
+      "openness_index": 88.9,
+      "multilingual_index": 0.786,
+      "decision_index": null
+     }
+    }
+   },
+   {
     "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
     "canonical_slug": "venice/uncensored",
     "hugging_face_id": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
@@ -52794,7 +52904,7 @@
     ]
    }
   ],
-  "total_count": 474,
+  "total_count": 475,
   "links": {
    "next": null
   }
