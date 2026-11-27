@@ -1,7 +1,7 @@
 {
  "key": "orTrends",
  "name": "orTrends",
- "fetchedAt": "2026-11-27T19:54:43.747Z",
+ "fetchedAt": "2026-11-27T22:01:17.188Z",
  "payload": [
   {
    "data": {
@@ -4614,41 +4614,41 @@
      }
     },
     "videoRequests": {
-     "black-forest-labs/flux-3-video-20260804": 1380,
-     "heygen/avatar-iv-20260625": 8790,
+     "heygen/heygen-avatar-6-turbo-20261117": 7381,
+     "minimax/hailuo-03-20260730": 1926,
+     "minimax/hailuo-3-max-20260901": 1805,
+     "bytedance/seedance-2.0-20260414": 12334,
      "x-ai/grok-imagine-video-20260512": 12417,
-     "google/gemini-omni-1.1-flash-20260911": 6423,
-     "alibaba/happyhorse-1.1-20260624": 1647,
-     "x-ai/grok-imagine-video-1.5-20260719": 11583,
      "bytedance/seedance-2.5-20260807": 30461,
-     "bytedance/seedance-2.5-flash-20261115": 7730,
+     "bytedance/seedance-2.0-mini-20260811": 15741,
+     "google/gemini-omni-1.1-flash-20260911": 6423,
+     "x-ai/grok-imagine-video-1.5-20260719": 11583,
+     "google/veo-3.1-fast-20260320": 32179,
      "bytedance/seedance-2.0-fast-20260414": 12080,
+     "black-forest-labs/flux-3-video-20260804": 1380,
+     "heygen/heygen-avatar-6-20261117": 3287,
+     "alibaba/wan-3.0-prime-20260827": 7134,
+     "alibaba/wan-3.0-20260824": 57853,
+     "heygen/heygen-video-1-20260930": 54351,
+     "heygen/avatar-iv-20260625": 8790,
      "black-forest-labs/flux-video-edit-20260910": 3146,
      "x-ai/grok-imagine-video-1.5-lite-20261001": 41567,
-     "google/veo-3.1-20260320": 8108,
-     "minimax/hailuo-3-max-20260901": 1805,
-     "heygen/heygen-avatar-6-turbo-20261117": 7381,
-     "runway/gen-4.5-20260729": 1415,
-     "alibaba/wan-3.0-20260824": 57853,
-     "minimax/hailuo-03-20260730": 1926,
-     "bytedance/seedance-2.0-20260414": 12334,
-     "google/veo-3.1-fast-20260320": 32179,
-     "tbc/mischief-1-20261023": 9645,
-     "bytedance/seedance-2.0-mini-20260811": 15741,
-     "alibaba/happyhorse-1.0-20260624": 112,
-     "heygen/heygen-avatar-6-20261117": 3287,
      "google/gemini-omni-1.2-flash-20261105": 36290,
-     "alibaba/wan-3.0-prime-20260827": 7134,
+     "google/veo-3.1-20260320": 8108,
+     "tbc/mischief-1-20261023": 9645,
+     "alibaba/happyhorse-1.0-20260624": 112,
+     "runway/gen-4.5-20260729": 1415,
      "google/veo-3.1-lite-20260331": 59039,
-     "heygen/heygen-video-1-20260930": 54351,
+     "bytedance/seedance-2.5-flash-20261115": 7730,
+     "alibaba/happyhorse-1.1-20260624": 1647,
      "minimax/hailuo-2.3-20260420": 55,
-     "kwaivgi/kling-v3.0-std-20260429": 4186,
      "kwaivgi/kling-v3.0-pro-20260429": 6488,
      "kwaivgi/kling-video-o1-20260420": 162,
+     "kwaivgi/kling-v3.0-std-20260429": 4186,
      "alibaba/wan-2.7-20260414": 540,
      "alibaba/wan-2.6-20260327": 69
     },
-    "generatedAt": "2026-11-27T19:32:26.189Z",
+    "generatedAt": "2026-11-27T21:37:17.267Z",
     "routerTokens": {
      "openrouter/auto-beta": 49556044296,
      "openrouter/auto": 378097270958,
@@ -34350,9 +34350,9 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.00000066431",
-      "completion": "0.0000015651",
-      "input_cache_read": "0.00000021"
+      "prompt": "0.00000059333",
+      "completion": "0.0000015228",
+      "input_cache_read": "0.00000022"
      },
      "top_provider": {
       "context_length": 1048576,
@@ -37677,12 +37677,13 @@
       "instruct_type": null
      },
      "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.00000025"
+      "prompt": "0.000000085",
+      "completion": "0.000000125",
+      "input_cache_read": "0.0000000765"
      },
      "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 235929,
+      "max_completion_tokens": 40960,
       "is_moderated": false
      },
      "per_request_limits": null,
@@ -50359,130 +50360,6 @@
      }
     },
     {
-     "id": "qwen/qwen3-235b-a22b-thinking-2507",
-     "canonical_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-     "hugging_face_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-     "name": "Qwen: Qwen3 235B A22B Thinking 2507",
-     "created": 1753449557,
-     "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144...",
-     "context_length": 128000,
-     "architecture": {
-      "modality": "text->text",
-      "input_modalities": [
-       "text"
-      ],
-      "output_modalities": [
-       "text"
-      ],
-      "tokenizer": "Qwen3",
-      "instruct_type": "qwen3"
-     },
-     "pricing": {
-      "prompt": "0.00000045",
-      "completion": "0.0000035"
-     },
-     "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 16384,
-      "is_moderated": false
-     },
-     "per_request_limits": null,
-     "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-     ],
-     "default_parameters": {
-      "temperature": null,
-      "top_p": null,
-      "frequency_penalty": null
-     },
-     "supported_voices": null,
-     "knowledge_cutoff": "2025-06-30",
-     "expiration_date": null,
-     "links": {
-      "details": "/api/v1/models/qwen/qwen3-235b-a22b-thinking-2507/endpoints"
-     },
-     "endpoints": [
-      "/api/v1/chat/completions",
-      "/api/v1/completions",
-      "/api/v1/messages",
-      "/api/v1/responses"
-     ],
-     "benchmarks": {
-      "design_arena": [
-       {
-        "arena": "models",
-        "category": "3d",
-        "elo": 962,
-        "win_rate": 40.4,
-        "rank": 124
-       },
-       {
-        "arena": "models",
-        "category": "codecategories",
-        "elo": 1074,
-        "win_rate": 40.8,
-        "rank": 126
-       },
-       {
-        "arena": "models",
-        "category": "dataviz",
-        "elo": 950,
-        "win_rate": 32.6,
-        "rank": 131
-       },
-       {
-        "arena": "models",
-        "category": "gamedev",
-        "elo": 928,
-        "win_rate": 34.2,
-        "rank": 140
-       },
-       {
-        "arena": "models",
-        "category": "uicomponent",
-        "elo": 928,
-        "win_rate": 34,
-        "rank": 135
-       },
-       {
-        "arena": "models",
-        "category": "website",
-        "elo": 1093,
-        "win_rate": 42,
-        "rank": 127
-       }
-      ],
-      "artificial_analysis": {
-       "intelligence_index": null,
-       "coding_index": null,
-       "agentic_index": null,
-       "finance_and_accounting_index": null,
-       "strategy_and_ops_index": null,
-       "legal_index": null,
-       "healthcare_and_medical_index": null,
-       "engineering_index": null,
-       "economics_index": null,
-       "cyber_index": null,
-       "openness_index": 44.4,
-       "multilingual_index": 0.853,
-       "decision_index": null
-      }
-     },
-     "reasoning": {
-      "mandatory": true
-     }
-    },
-    {
      "id": "qwen/qwen3-coder",
      "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
      "hugging_face_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
@@ -57741,7 +57618,7 @@
      ]
     }
    ],
-   "total_count": 477,
+   "total_count": 476,
    "links": {
     "next": null
    }
