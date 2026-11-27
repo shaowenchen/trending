@@ -1,8 +1,125 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-27T11:02:38.778Z",
+ "fetchedAt": "2026-11-27T13:16:00.844Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.30494",
+    "authors": [
+     {
+      "_id": "6b07b6330a42b5746a881925",
+      "user": {
+       "_id": "65d77be6ff1b654f2eee28a9",
+       "avatarUrl": "/avatars/ebf68aed7ff68246012dd549078c7ff1.svg",
+       "isPro": false,
+       "fullname": "Junrui",
+       "user": "AlniyatRui",
+       "type": "user",
+       "name": "AlniyatRui"
+      },
+      "name": "Junrui Zhang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-26T16:33:45.010Z",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a881926",
+      "name": "Zeyu Xu",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a881927",
+      "name": "Runchuan Zhu",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a881928",
+      "name": "Jie Peng",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a881929",
+      "name": "Long Zhang",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a88192a",
+      "name": "Zixin Ding",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a88192b",
+      "name": "Jiaxin Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a88192c",
+      "name": "Kai Wang",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a88192d",
+      "name": "Jianmin Ji",
+      "hidden": false
+     },
+     {
+      "_id": "6b07b6330a42b5746a88192e",
+      "name": "Junyuan Hong",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+    "title": "Revisiting LLMs as Context Engineers",
+    "submittedOnDailyBy": {
+     "_id": "65d77be6ff1b654f2eee28a9",
+     "avatarUrl": "/avatars/ebf68aed7ff68246012dd549078c7ff1.svg",
+     "isPro": false,
+     "fullname": "Junrui",
+     "user": "AlniyatRui",
+     "type": "user",
+     "name": "AlniyatRui"
+    },
+    "summary": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
+    "upvotes": 1,
+    "discussionId": "6b07b6330a42b5746a88192f",
+    "projectPage": "https://costa-nus.github.io/LCEBench/",
+    "githubRepo": "https://github.com/costa-nus/LCEBench",
+    "githubRepoAddedBy": "user",
+    "githubStars": 1,
+    "organization": {
+     "_id": "6508ab2b349930913196378b",
+     "name": "NationalUniversityofSingapore",
+     "fullname": "National University of Singapore",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
+    }
+   },
+   "publishedAt": "2026-11-22T19:00:00.000Z",
+   "title": "Revisiting LLMs as Context Engineers",
+   "summary": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30494.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "65d77be6ff1b654f2eee28a9",
+    "avatarUrl": "/avatars/ebf68aed7ff68246012dd549078c7ff1.svg",
+    "fullname": "Junrui",
+    "name": "AlniyatRui",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6508ab2b349930913196378b",
+    "name": "NationalUniversityofSingapore",
+    "fullname": "National University of Singapore",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZYUmpSMsa5Whihw3me2Bw.png"
+   },
+   "isAuthorParticipating": true
+  },
   {
    "paper": {
     "id": "2611.31516",
@@ -367,7 +484,7 @@
      "name": "Skider"
     },
     "summary": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
-    "upvotes": 35,
+    "upvotes": 37,
     "discussionId": "6b07cc6b0a42b5746a881b0f",
     "githubRepo": "https://github.com/therealram18/vernier",
     "githubRepoAddedBy": "user",
@@ -399,7 +516,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/66470aa99b7b86d4ee55f5c3/zJgxW9330S_puB5dvDaSO.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31619.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "66470aa99b7b86d4ee55f5c3",
     "avatarUrl": "/avatars/1c578552f4a4c7691858c8cf4588e9f5.svg",
@@ -410,7 +527,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -559,7 +676,7 @@
      "name": "kaya-abdullah"
     },
     "summary": "AI agents now run statements against production databases, and several of the incidents that followed deleted production data, which came back only through backups or the provider's help. We ask what decides the damage when such an agent makes a mistake: the model, a guard layer in front of the database, or the database engine itself. The study has two preregistered layers. In Layer A, a frozen library of 22 canonical mistakes is applied by script, with no model involved, to four relational engines under five permission arms and two recovery arms, followed by an engine-native recovery drill (792 cells; 874 drill runs including 10-minute repeats). In Layer B, a minimal tool-calling agent driven by six small open-weight models (4B to 12B parameters, plus one 35B mixture-of-experts model with about 3B active, served locally) works on tasks that contain hazards across nine engines: PostgreSQL, MySQL, SQLite, ClickHouse, Apache Cassandra, MongoDB, Valkey, Apache Kafka and OpenSearch (9,468 trials). A secondary run added MariaDB, Redis and Elasticsearch (2,916 trials); each behaved like its closest core engine. Out of the box, the engines differ less in what a mistake destroys than in what they let you undo. Three of the seven preregistered hypotheses met their decision rule: H2 (for one of nine damage classes) and H3 largely by construction of the arms, and H4 only under its original measure. Four did not; one of them (H5) was uninformative, because in its task the agents never found the credential. The post-hoc analyses (S1-S13) are exploratory and uncorrected for multiple comparisons; on PostgreSQL, MySQL, OpenSearch and ClickHouse the preregistered outcome and original-row loss disagree about G1. We report all of them, with every deviation from the preregistration and its timing.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b08369d67e0f9f483b61e21",
     "githubRepo": "https://github.com/libredb/agent-blast-radius",
     "githubRepoAddedBy": "user",
@@ -575,7 +692,7 @@
    "title": "When an AI agent makes a mistake in a database, what decides the damage?",
    "summary": "AI agents now run statements against production databases, and several of the incidents that followed deleted production data, which came back only through backups or the provider's help. We ask what decides the damage when such an agent makes a mistake: the model, a guard layer in front of the database, or the database engine itself. The study has two preregistered layers. In Layer A, a frozen library of 22 canonical mistakes is applied by script, with no model involved, to four relational engines under five permission arms and two recovery arms, followed by an engine-native recovery drill (792 cells; 874 drill runs including 10-minute repeats). In Layer B, a minimal tool-calling agent driven by six small open-weight models (4B to 12B parameters, plus one 35B mixture-of-experts model with about 3B active, served locally) works on tasks that contain hazards across nine engines: PostgreSQL, MySQL, SQLite, ClickHouse, Apache Cassandra, MongoDB, Valkey, Apache Kafka and OpenSearch (9,468 trials). A secondary run added MariaDB, Redis and Elasticsearch (2,916 trials); each behaved like its closest core engine. Out of the box, the engines differ less in what a mistake destroys than in what they let you undo. Three of the seven preregistered hypotheses met their decision rule: H2 (for one of nine damage classes) and H3 largely by construction of the arms, and H4 only under its original measure. Four did not; one of them (H5) was uninformative, because in its task the agents never found the credential. The post-hoc analyses (S1-S13) are exploratory and uncorrected for multiple comparisons; on PostgreSQL, MySQL, OpenSearch and ClickHouse the preregistered outcome and original-row loss disagree about G1. We report all of them, with every deviation from the preregistration and its timing.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.30483.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "6aac4b32bbe1c654ec33adf3",
     "avatarUrl": "/avatars/aa66f7242e6b0abb3a7ffad338c4b0a2.svg",
@@ -586,7 +703,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 1,
+    "followerCount": 2,
     "isUserFollowing": false
    },
    "organization": {
@@ -1225,7 +1342,7 @@
      "name": "Cloudriver"
     },
     "summary": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-    "upvotes": 94,
+    "upvotes": 96,
     "discussionId": "6b08faa851a3cf3678af38fe",
     "projectPage": "https://os-copilot.github.io/OS-Omni-Home/",
     "githubRepo": "https://github.com/OS-Copilot/OS-Omni",
@@ -1354,7 +1471,7 @@
      "name": "zhuiluozhiji"
     },
     "summary": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how deeply it explores them. We introduce DRBench Pro, a benchmark that makes structured knowledge coverage the primary evaluation target. Our automated pipeline builds local knowledge trees from Wikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics. Each rubric corresponds to a relation in the tree, preserving the structure of the knowledge being evaluated. Agents receive only the research query. This structure allows us to measure breadth across major research directions and depth along related knowledge chains, with their geometric mean giving overall coverage. The benchmark includes 144 cases across 24 domains and 44,102 rubrics. Evaluating 16 deep research agents reveals different strengths in breadth and depth, with the best-performing agent reaching 57.04% overall coverage. Rubric judgments agree closely with human annotations, and agent rankings remain stable across the tested metric configurations.",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6b07ced80a42b5746a881b35",
     "projectPage": "https://zjureal.com/DRBenchPro/",
     "githubRepo": "https://github.com/ZJU-REAL/DRBenchPro",
@@ -1599,7 +1716,7 @@
      "name": "ghost233lism"
     },
     "summary": "Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference updates remain limited. We introduce StateWeaver, which combines Active States and Hierarchical Collaboration to connect review-driven visual reference updates with cross-shot state inheritance. Active States translate state discrepancies identified during review into concrete visual asset requirements that guide reference construction, validation, and regeneration, preserving identity and already-correct content while repairing target attributes. Confirmed generation results are linked to the corresponding asset states, story time, and reference versions for verification and reuse by subsequent shots. Hierarchical Collaboration isolates execution contexts by task, clip, and repair round, and uses hierarchical memory to organize this process across multiple sets. Across multiple benchmarks, StateWeaver outperforms existing methods and produces long videos with sustained cross-shot consistency under predefined and autonomously planned storyboards.",
-    "upvotes": 22,
+    "upvotes": 23,
     "discussionId": "6b08f23851a3cf3678af389a",
     "projectPage": "https://ghost233lism.github.io/StateWeaver-page/",
     "githubRepo": "https://github.com/ghost233lism/StateWeaver",
@@ -1732,7 +1849,7 @@
      "name": "Hokin"
     },
     "summary": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfolding directly in the frames rather than through language or code. Whether this native route is in fact the more reliable path to visual reasoning has not been tested against a symbolic alternative under the same conditions. We therefore pose the same tasks, with identical inputs, output specification and evaluator, to both media: rather than denoising pixels, a coding agent writes a program that renders the answer video, which an unmodified rule-based evaluator scores. On VBVR-Pro-Bench (Xu et al., 2026), a 500-instance suite spanning five cognitive categories with symbolic ground truth, the agent receives the same first frame and prompt as the video model, with no access to ground truth, metadata or generation models, and one attempt per instance. Three closed-model agents (Codex with gpt-6-astra, Claude Code with Fable 5.1 and Gemini CLI with Gemini 3.1 Pro) score 0.923, 0.894 and 0.893, each more than 0.22 above the strongest video model. Among 23 runnable open-weight models, the best, GLM-5, reaches 0.572, above all video models except the RL-trained one. Together, we show that for tasks whose solutions can be computed from a first frame and a prompt, program synthesis is currently a substantially more reliable route to visual reasoning than video generation. We further distinguish depictive programs, which navigate the image to recover a transferable scheme, from propositional programs, which operate on hard-coded values, revealing how visual reasoning unfolds in agent-written programs and what it implies for its nature of reasoning in general.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6b07c9c20a42b5746a881ad4",
     "projectPage": "https://solve-vision-with-code.com/",
     "organization": {
@@ -2116,7 +2233,7 @@
      "name": "astarkkk"
     },
     "summary": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose , employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an O(T) upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that  achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-    "upvotes": 102,
+    "upvotes": 105,
     "discussionId": "6b08edc151a3cf3678af3842",
     "organization": {
      "_id": "684d4f8e0bb9b6d7621cd53b",
@@ -3847,7 +3964,7 @@
      "name": "aledevo"
     },
     "summary": "Agent harnesses today manage context on the model's behalf: when the window fills, the harness triggers a compaction that summarizes the history. We study the alternative, model-driven context management, in which the model itself decides when and what to compact through a context API. We gave models control over their own context in \\nooa, NVIDIA's open source agent harness, and compared the two strategies on document research and machine learning engineering across context budgets from 8K to 512K tokens. Models that use the context API effectively reach higher accuracy, often with fewer input tokens, especially at tight budgets: GPT 6.1 nearly triples its score at a 32K budget on OfficeQA Pro v2 (21\\%~rightarrow~56\\%), and Kimi gains with up to 41\\% fewer input tokens. Models differ widely, however, in how often they use the API, how aggressively they compact, and when they start compacting, and prompt changes shift that timing. Finally, we show that inference engines can make model-driven edits cheaper: by reusing the KV cache of the unchanged suffix after an edit, we cut prefill compute by up to 15\\% per request with no measurable change in accuracy. Together, these results point to a new co-design frontier: models trained to manage their own context, served by inference engines that support KV cache editing.",
-    "upvotes": 9,
+    "upvotes": 10,
     "discussionId": "6b07f9850a42b5746a881c60",
     "projectPage": "https://nvidia-nemo.github.io/Applied-Research/dev-notes/posts/2026-11-23-model-driven-context-management/",
     "githubRepo": "https://github.com/nvidia-nemo/labs-OO-Agents",
@@ -3883,7 +4000,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/685048d3fe3f0cfd510d563d/Kewj-_5RBWglSM7_0bfWC.gif"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34147.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "685048d3fe3f0cfd510d563d",
     "avatarUrl": "/avatars/1e1563cdedb562f9740aa7089f650cf0.svg",
@@ -5047,7 +5164,7 @@
      "name": "benzweijia"
     },
     "summary": "Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playful game should provide 1) reliable core functionality, 2) appealing visual design and assets, and 3) rich gameplay that supports exploration and progression. How agents can improve these aspects of playfulness remains underexplored. In our work, we propose Play2Evolve, a recursive game development framework with three stages: Initialization, Refinement, and Evolution. Using playfulness as feedback, agents playtest the game and diagnose issues in its functionality, visual presentation, and gameplay. Their feedback guides bug fixes and asset improvements. It also helps agents propose new gameplay and aesthetic goals for continued game evolution. To enrich game materials, we combine a video generation model with code to create appealing static and dynamic assets and integrate them into interactive gameplay. Finally, Play2Evolve achieves state-of-the-art performance among the evaluated methods, scoring 60.05 on GameCraft-Bench compared with 50.81 after Game Initialization and 52.46 for Play2Code. Human overall-quality ratings reach 3.67, compared with 2.38 and 2.43, respectively. Our code will be released at https://github.com/showlab/Play2Evolve.",
-    "upvotes": 20,
+    "upvotes": 21,
     "discussionId": "6b07caad0a42b5746a881af3",
     "projectPage": "https://showlab.github.io/Play2Evolve/",
     "githubRepo": "https://github.com/showlab/Play2Evolve",
@@ -5253,7 +5370,7 @@
      "name": "LianghuiZhu"
     },
     "summary": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-    "upvotes": 70,
+    "upvotes": 72,
     "discussionId": "6b07dd220a42b5746a881b7d",
     "projectPage": "https://github.com/hustvl/MoLT",
     "githubRepo": "https://github.com/hustvl/MoLT",
@@ -5620,111 +5737,6 @@
     "name": "tencent",
     "fullname": "Tencent",
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.34912",
-    "authors": [
-     {
-      "_id": "6b07c1230a42b5746a881a4c",
-      "name": "Jiachen An",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a4d",
-      "name": "Sijie Zhao",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a4e",
-      "name": "Le Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a4f",
-      "name": "Hongyu Liu",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a50",
-      "name": "Zhiyuan Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a51",
-      "name": "Tianyu Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a52",
-      "name": "Xiaoyu Kong",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a53",
-      "name": "Xunliang Cai",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a54",
-      "name": "Yong Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a55",
-      "name": "Chi-Man Pun",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a56",
-      "name": "Xiaoming Wei",
-      "hidden": false
-     },
-     {
-      "_id": "6b07c1230a42b5746a881a57",
-      "name": "Xiaodong Cun",
-      "hidden": false
-     }
-    ],
-    "publishedAt": "2026-11-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
-    "submittedOnDailyBy": {
-     "_id": "63184c517ca1b876d99b7e0e",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
-     "isPro": false,
-     "fullname": "Xiaodong Cun",
-     "user": "vinthony",
-     "type": "user",
-     "name": "vinthony"
-    },
-    "summary": "While video diffusion models have grown faster and increasingly streamable, the video VAE remains a primary latency bottleneck across interactive generation and editing pipelines. Existing VAEs and their acceleration methods rely mainly on heavy convolutions or full frame attention, and most focus only on decoding, leaving encoding costly for streaming conditional generation and editing. This raises a natural question: Do video VAE encoding and decoding actually require such global spatiotemporal modeling? By analyzing the effective receptive fields of pretrained video VAEs, we find that both encoding and decoding a patch rely almost entirely on its spatial and temporal neighbors. To exploit this strong locality, we introduce LiveVAE, a streaming encoder and decoder built on causal window attention, which cuts per frame compute while keeping the temporal KV cache bounded for streaming. Decoupled encoder/decoder distillation followed by joint finetuning preserves the pretrained latent space, making LiveVAE a drop-in replacement for the original VAE. On MiniMax-H3, LiveVAE achieves 5.2-6.2x faster encoding and 3.0-3.3x faster decoding than the official VAE with higher PSNR. Paired with our dedicated inference infrastructure, LiveVAE pushes the speedup to 13.4x with almost no quality loss. Code and models will be released.",
-    "upvotes": 3,
-    "discussionId": "6b07c1230a42b5746a881a58",
-    "projectPage": "https://livevae.github.io/",
-    "githubRepo": "https://github.com/MeiGen-AI/LiveVAE",
-    "githubRepoAddedBy": "user",
-    "githubStars": 17
-   },
-   "publishedAt": "2026-11-24T19:00:00.000Z",
-   "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
-   "summary": "While video diffusion models have grown faster and increasingly streamable, the video VAE remains a primary latency bottleneck across interactive generation and editing pipelines. Existing VAEs and their acceleration methods rely mainly on heavy convolutions or full frame attention, and most focus only on decoding, leaving encoding costly for streaming conditional generation and editing. This raises a natural question: Do video VAE encoding and decoding actually require such global spatiotemporal modeling? By analyzing the effective receptive fields of pretrained video VAEs, we find that both encoding and decoding a patch rely almost entirely on its spatial and temporal neighbors. To exploit this strong locality, we introduce LiveVAE, a streaming encoder and decoder built on causal window attention, which cuts per frame compute while keeping the temporal KV cache bounded for streaming. Decoupled encoder/decoder distillation followed by joint finetuning preserves the pretrained latent space, making LiveVAE a drop-in replacement for the original VAE. On MiniMax-H3, LiveVAE achieves 5.2-6.2x faster encoding and 3.0-3.3x faster decoding than the official VAE with higher PSNR. Paired with our dedicated inference infrastructure, LiveVAE pushes the speedup to 13.4x with almost no quality loss. Code and models will be released.",
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34912.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "63184c517ca1b876d99b7e0e",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
-    "fullname": "Xiaodong Cun",
-    "name": "vinthony",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 347,
-    "isUserFollowing": false
    },
    "isAuthorParticipating": false
   }
