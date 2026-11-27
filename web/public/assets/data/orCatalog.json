@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-27T06:31:07.406Z",
+ "fetchedAt": "2026-11-27T08:46:08.237Z",
  "payload": {
   "data": [
    {
@@ -252,9 +252,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000005",
-     "completion": "0.000001",
-     "input_cache_read": "0.00000005"
+     "prompt": "0.00000035",
+     "completion": "0.0000007",
+     "input_cache_read": "0.000000035"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -322,9 +322,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000075",
-     "completion": "0.0000003",
-     "input_cache_read": "0.000000015"
+     "prompt": "0.00000006",
+     "completion": "0.00000024",
+     "input_cache_read": "0.000000012"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -2201,10 +2201,13 @@
      "/api/v1/responses"
     ],
     "reasoning": {
-     "mandatory": true,
+     "mandatory": false,
      "default_enabled": true,
      "supported_efforts": [
-      "high"
+      "high",
+      "medium",
+      "low",
+      "none"
      ],
      "default_effort": "high"
     }
@@ -16640,7 +16643,7 @@
     "name": "Qwen: Qwen3.8 2.4T A95B",
     "created": 1786551702,
     "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
-    "context_length": 1048576,
+    "context_length": 1000000,
     "architecture": {
      "modality": "text->text",
      "input_modalities": [
@@ -34161,7 +34164,6 @@
      "max_tokens",
      "presence_penalty",
      "reasoning",
-     "repetition_penalty",
      "response_format",
      "seed",
      "stop",
