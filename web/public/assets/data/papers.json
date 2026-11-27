@@ -1,8 +1,60 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-27T13:16:00.844Z",
+ "fetchedAt": "2026-11-27T15:31:09.302Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.27112",
+    "authors": [
+     {
+      "_id": "6b09951c8168b9f3bc5bd910",
+      "name": "Sandeep Dhuri",
+      "hidden": false
+     }
+    ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6aa7641ba45118e0f77dddd9/EgKKtQfcF6MGbpbyLkZ4x.gif"
+    ],
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+    "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+    "submittedOnDailyBy": {
+     "_id": "6aa7641ba45118e0f77dddd9",
+     "avatarUrl": "/avatars/85adf79507d5b1caf0cad20b4eaf77b5.svg",
+     "isPro": false,
+     "fullname": "Sandeep Dhuri",
+     "user": "sandeepdhuriauthor",
+     "type": "user",
+     "name": "sandeepdhuriauthor"
+    },
+    "summary": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+    "upvotes": 0,
+    "discussionId": "6b09951c8168b9f3bc5bd911",
+    "projectPage": "https://acuity.press/papers/markdown-is-not-a-firewall/"
+   },
+   "publishedAt": "2026-11-19T19:00:00.000Z",
+   "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+   "summary": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6aa7641ba45118e0f77dddd9/EgKKtQfcF6MGbpbyLkZ4x.gif"
+   ],
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.27112.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6aa7641ba45118e0f77dddd9",
+    "avatarUrl": "/avatars/85adf79507d5b1caf0cad20b4eaf77b5.svg",
+    "fullname": "Sandeep Dhuri",
+    "name": "sandeepdhuriauthor",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "isUserFollowing": false
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.30494",
@@ -82,7 +134,7 @@
      "name": "AlniyatRui"
     },
     "summary": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b07b6330a42b5746a88192f",
     "projectPage": "https://costa-nus.github.io/LCEBench/",
     "githubRepo": "https://github.com/costa-nus/LCEBench",
@@ -290,7 +342,7 @@
      "name": "marcusinthesky"
     },
     "summary": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
-    "upvotes": 0,
+    "upvotes": 1,
     "discussionId": "6b092f2f51a3cf3678af396a",
     "githubRepo": "https://github.com/marcusinthesky/free-foundations",
     "githubRepoAddedBy": "user",
@@ -332,7 +384,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 11,
+    "followerCount": 12,
     "isUserFollowing": false
    },
    "organization": {
@@ -396,7 +448,7 @@
      "name": "Devin6666"
     },
     "summary": "When visual context makes an ordinary request unsafe to answer as asked, a blanket refusal may leave the user's need unresolved. Choosing how to help requires distinguishing an established hazard from a condition that still needs verification, a distinction that binary safety labels leave unspecified. We formulate this decision through four actions: allow, warn, review, and refuse. To ground these decisions in verifiable evidence, we build a corpus of 20,126 training audits and the JudiBench benchmark, connecting each action to diagnostic judgments, source evidence, and controlled context changes. Our guard, JudiAct, separately states what the source establishes, what condition governs the help, and how the rules apply. It then checks these three brief review items against the original inputs to predict diagnostic labels and a handling action. Supervised training learns individual judgments while comparing label assignments across related cases. A second stage swaps one review item at a time, using the resulting audit feedback to refine review generation. On JudiBench, JudiAct improves request and answer Macro-F1 by more than 28 percentage points over its 4B backbone. Across nine public benchmarks, it outperforms state-of-the-art guards on the mean delivered-answer score in both pre-generation and post-generation settings, cutting MM-SafetyBench attack success from 40.78% to 25.30%.",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b0521f8e7a4376c42cc8f19",
     "organization": {
      "_id": "622177ac43826d6f261f8208",
@@ -484,7 +536,7 @@
      "name": "Skider"
     },
     "summary": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
-    "upvotes": 37,
+    "upvotes": 52,
     "discussionId": "6b07cc6b0a42b5746a881b0f",
     "githubRepo": "https://github.com/therealram18/vernier",
     "githubRepoAddedBy": "user",
@@ -516,7 +568,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/66470aa99b7b86d4ee55f5c3/zJgxW9330S_puB5dvDaSO.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.31619.png",
-   "numComments": 3,
+   "numComments": 4,
    "submittedBy": {
     "_id": "66470aa99b7b86d4ee55f5c3",
     "avatarUrl": "/avatars/1c578552f4a4c7691858c8cf4588e9f5.svg",
@@ -527,7 +579,7 @@
     "isHf": false,
     "isHfAdmin": false,
     "isMod": false,
-    "followerCount": 2,
+    "followerCount": 3,
     "isUserFollowing": false
    },
    "isAuthorParticipating": true
@@ -580,7 +632,7 @@
      "name": "chengshi0612"
     },
     "summary": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet 256 times 256, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
-    "upvotes": 1,
+    "upvotes": 2,
     "discussionId": "6b091b7d51a3cf3678af394b",
     "ai_summary": "A generative framework reuses a frozen encoder’s intermediate representations as staged targets and shares a DiT backbone to reduce training and sampling cost while preserving image quality.",
     "ai_keywords": [
@@ -1342,7 +1394,7 @@
      "name": "Cloudriver"
     },
     "summary": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-    "upvotes": 96,
+    "upvotes": 98,
     "discussionId": "6b08faa851a3cf3678af38fe",
     "projectPage": "https://os-copilot.github.io/OS-Omni-Home/",
     "githubRepo": "https://github.com/OS-Copilot/OS-Omni",
@@ -1476,7 +1528,7 @@
     "projectPage": "https://zjureal.com/DRBenchPro/",
     "githubRepo": "https://github.com/ZJU-REAL/DRBenchPro",
     "githubRepoAddedBy": "user",
-    "githubStars": 19,
+    "githubStars": 21,
     "organization": {
      "_id": "6345aadf5efccdc07f1365a5",
      "name": "ZhejiangUniversity",
@@ -1716,7 +1768,7 @@
      "name": "ghost233lism"
     },
     "summary": "Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference updates remain limited. We introduce StateWeaver, which combines Active States and Hierarchical Collaboration to connect review-driven visual reference updates with cross-shot state inheritance. Active States translate state discrepancies identified during review into concrete visual asset requirements that guide reference construction, validation, and regeneration, preserving identity and already-correct content while repairing target attributes. Confirmed generation results are linked to the corresponding asset states, story time, and reference versions for verification and reuse by subsequent shots. Hierarchical Collaboration isolates execution contexts by task, clip, and repair round, and uses hierarchical memory to organize this process across multiple sets. Across multiple benchmarks, StateWeaver outperforms existing methods and produces long videos with sustained cross-shot consistency under predefined and autonomously planned storyboards.",
-    "upvotes": 23,
+    "upvotes": 24,
     "discussionId": "6b08f23851a3cf3678af389a",
     "projectPage": "https://ghost233lism.github.io/StateWeaver-page/",
     "githubRepo": "https://github.com/ghost233lism/StateWeaver",
@@ -1736,7 +1788,7 @@
      "cross-shot consistency"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 38
+    "githubStars": 46
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
@@ -1849,7 +1901,7 @@
      "name": "Hokin"
     },
     "summary": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfolding directly in the frames rather than through language or code. Whether this native route is in fact the more reliable path to visual reasoning has not been tested against a symbolic alternative under the same conditions. We therefore pose the same tasks, with identical inputs, output specification and evaluator, to both media: rather than denoising pixels, a coding agent writes a program that renders the answer video, which an unmodified rule-based evaluator scores. On VBVR-Pro-Bench (Xu et al., 2026), a 500-instance suite spanning five cognitive categories with symbolic ground truth, the agent receives the same first frame and prompt as the video model, with no access to ground truth, metadata or generation models, and one attempt per instance. Three closed-model agents (Codex with gpt-6-astra, Claude Code with Fable 5.1 and Gemini CLI with Gemini 3.1 Pro) score 0.923, 0.894 and 0.893, each more than 0.22 above the strongest video model. Among 23 runnable open-weight models, the best, GLM-5, reaches 0.572, above all video models except the RL-trained one. Together, we show that for tasks whose solutions can be computed from a first frame and a prompt, program synthesis is currently a substantially more reliable route to visual reasoning than video generation. We further distinguish depictive programs, which navigate the image to recover a transferable scheme, from propositional programs, which operate on hard-coded values, revealing how visual reasoning unfolds in agent-written programs and what it implies for its nature of reasoning in general.",
-    "upvotes": 10,
+    "upvotes": 27,
     "discussionId": "6b07c9c20a42b5746a881ad4",
     "projectPage": "https://solve-vision-with-code.com/",
     "organization": {
@@ -1863,7 +1915,7 @@
    "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
    "summary": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfolding directly in the frames rather than through language or code. Whether this native route is in fact the more reliable path to visual reasoning has not been tested against a symbolic alternative under the same conditions. We therefore pose the same tasks, with identical inputs, output specification and evaluator, to both media: rather than denoising pixels, a coding agent writes a program that renders the answer video, which an unmodified rule-based evaluator scores. On VBVR-Pro-Bench (Xu et al., 2026), a 500-instance suite spanning five cognitive categories with symbolic ground truth, the agent receives the same first frame and prompt as the video model, with no access to ground truth, metadata or generation models, and one attempt per instance. Three closed-model agents (Codex with gpt-6-astra, Claude Code with Fable 5.1 and Gemini CLI with Gemini 3.1 Pro) score 0.923, 0.894 and 0.893, each more than 0.22 above the strongest video model. Among 23 runnable open-weight models, the best, GLM-5, reaches 0.572, above all video models except the RL-trained one. Together, we show that for tasks whose solutions can be computed from a first frame and a prompt, program synthesis is currently a substantially more reliable route to visual reasoning than video generation. We further distinguish depictive programs, which navigate the image to recover a transferable scheme, from propositional programs, which operate on hard-coded values, revealing how visual reasoning unfolds in agent-written programs and what it implies for its nature of reasoning in general.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34813.png",
-   "numComments": 1,
+   "numComments": 3,
    "submittedBy": {
     "_id": "6793f65033629a5fa8ae47b5",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/h11aIy3Yuw0kLCil5yeOt.png",
@@ -1950,7 +2002,7 @@
      "long-horizon consistency"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 3,
+    "githubStars": 9,
     "organization": {
      "_id": "63a553c4ce5763e06f78669c",
      "name": "showlab",
@@ -2091,7 +2143,7 @@
      "name": "EddieYang428"
     },
     "summary": "Recent video generators produce realistic videos, yet controlling how scenes unfold remains challenging. Structural proxies, such as animated 3D blockouts, guide generation by specifying scene layout, motion, camera behavior, and event order. However, these coarse inputs leave details unspecified and may contain artifacts that should not be reproduced. Successful proxy-guided generation must therefore Preserve intended structure, Complete missing content and correct proxy artifacts, and Bind text, image, and audio conditions to the right entities and events. We introduce ProxyGenBench to study these interacting requirements, with 312 evaluation cases from 60 scenes across three scene tasks and controlled variations in proxy fidelity, text detail, and multimodal inputs. We evaluate five video generators using verified, case-specific checklists. Experiments show that proxies improve spatiotemporal control, but greater proxy detail can coincide with poorer completion, while strong structural adherence does not ensure correct binding.",
-    "upvotes": 35,
+    "upvotes": 36,
     "discussionId": "6b08edfd51a3cf3678af3854",
     "projectPage": "https://2kxx.github.io/ProxyGenBench/",
     "githubRepo": "https://github.com/2kxx/ProxyGenBench",
@@ -2111,7 +2163,7 @@
      "ProxyGenBench"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 7,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
@@ -2233,7 +2285,7 @@
      "name": "astarkkk"
     },
     "summary": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose , employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an O(T) upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that  achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-    "upvotes": 105,
+    "upvotes": 124,
     "discussionId": "6b08edc151a3cf3678af3842",
     "organization": {
      "_id": "684d4f8e0bb9b6d7621cd53b",
@@ -2456,7 +2508,7 @@
    "title": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
    "summary": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verification gate cancels most of the judge's own flags, which fall on licit transactions. Testing the judge alone over 76 evidence bundles, four backbones and two prompts, we find that it follows an injected risk score on the anonymous transaction features it is given, although stronger models decide correctly when the facts are explicit; that a context too short for the system prompt leaves it with no verdict at all; and that it cites regulatory clauses that do not apply, which a substring-based citation check accepts. Hiding the score does not fix the judge, because evidence gathered with the score visible still encodes it. For illicit-activity monitoring, an LLM's justification should therefore not be read as evidence of which component flagged a transaction.",
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.29829.png",
-   "numComments": 1,
+   "numComments": 2,
    "submittedBy": {
     "_id": "63a4754927f1f64ed7238dac",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
@@ -3012,7 +3064,7 @@
      "name": "Xiang-cd"
     },
     "summary": "In-context learning (ICL) enables foundation models to perform unseen tasks from context without parameter updates. In robotic manipulation, a human video provides the context that specifies how a task should be performed. However, scaling human-video ICL on world-action models (WAMs) faces two challenges: task-level human-robot pairs are not temporally aligned with robot actions, and standard action losses allow policies to rely on initial-scene or task-identity shortcuts rather than tracking the context. We present Entangle, an in-context world-action model that maps a single human video and current robot observations to future visual states and executable actions. To scale temporally aligned training data, we convert recorded robot videos into matched human contexts via video-to-video generation, supplemented by real paired recordings. For model training, we combine variable-length video windows with an intra-task contrastive objective that distinguishes the paired action trajectory from other executions of the same task, preventing task-identity shortcuts. Without task-specific fine-tuning, Entangle improves steadily as aligned training data scales, reaching an average score of 83.5/100 across six unseen tasks on an Astribot S1 robot, and achieves a 69.5% average success rate on seven unseen RoboTwin tasks, outperforming Zero-WAM by 22.6 percentage points. Under Context-OOD, although trained only on scene-aligned pairs, Entangle transfers context-specified behaviors across rearranged layouts and substituted tools. Project page at https://entangle-robotics.github.io/",
-    "upvotes": 28,
+    "upvotes": 34,
     "discussionId": "6b083a0467e0f9f483b61e54",
     "projectPage": "https://entangle-robotics.github.io/"
    },
@@ -3023,7 +3075,7 @@
     "https://cdn-uploads.huggingface.co/production/uploads/6329bdbbde087eac2921e6a9/bdhI9AA8mQSWCDXjszN53.mp4"
    ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.28732.png",
-   "numComments": 2,
+   "numComments": 3,
    "submittedBy": {
     "_id": "6329bdbbde087eac2921e6a9",
     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1663679904323-noauth.jpeg",
@@ -3533,7 +3585,7 @@
      "Depth-L1"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 4,
+    "githubStars": 5,
     "organization": {
      "_id": "69d4c0ac129a84ef5526310d",
      "name": "InSAI-Lab",
@@ -4755,7 +4807,7 @@
      "reconstruction fidelity"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 3,
+    "githubStars": 4,
     "organization": {
      "_id": "6475760c33192631bad2bb38",
      "name": "kaist-ai",
@@ -5370,7 +5422,7 @@
      "name": "LianghuiZhu"
     },
     "summary": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-    "upvotes": 72,
+    "upvotes": 73,
     "discussionId": "6b07dd220a42b5746a881b7d",
     "projectPage": "https://github.com/hustvl/MoLT",
     "githubRepo": "https://github.com/hustvl/MoLT",
@@ -5576,167 +5628,6 @@
     "name": "ZhejiangUniversity",
     "fullname": "Zhejiang University",
     "avatar": "https://www.gravatar.com/avatar/d1d414628877bec2958f95ad283c15e7?d=retro&size=100"
-   },
-   "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.34064",
-    "authors": [
-     {
-      "_id": "6b07d2a10a42b5746a881b44",
-      "name": "Zesong Yang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b45",
-      "name": "Weikai Chen",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b46",
-      "name": "Liyuan Cui",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b47",
-      "name": "Yuan Li",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b48",
-      "name": "Jiaxin Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b49",
-      "name": "Lutao Jiang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4a",
-      "name": "Runze Zhang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4b",
-      "name": "Yingda Yin",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4c",
-      "name": "Xiaoyang Huang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4d",
-      "name": "Kai Yan",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4e",
-      "name": "Keyang Luo",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b4f",
-      "name": "Xin Wang",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b50",
-      "name": "Hujun Bao",
-      "hidden": false
-     },
-     {
-      "_id": "6b07d2a10a42b5746a881b51",
-      "name": "Zhaopeng Cui",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/666830ef15929be31e37b0f1/iojIDKbQQHQjIz6Wk_qA0.mp4"
-    ],
-    "publishedAt": "2026-11-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "SPARC: Geometry-Guided Attention Pruning for Long-Horizon Camera-Controlled Video Generation",
-    "submittedOnDailyBy": {
-     "_id": "666830ef15929be31e37b0f1",
-     "avatarUrl": "/avatars/4324fe4668b5257a94833fe80fa4b371.svg",
-     "isPro": false,
-     "fullname": "Zesong Yang",
-     "user": "YZsZY",
-     "type": "user",
-     "name": "YZsZY"
-    },
-    "summary": "We present SPARC, a geometry-guided attention pruning framework that turns the native self-attention of pretrained video diffusion transformers into a unified mechanism for camera control and persistent scene memory. Our key insight is that attention connectivity can simultaneously serve as geometric conditioning for camera control and spatial addressing for historical memory retrieval. Motivated by the asymmetric contextual requirements of reconstructing observed content and synthesizing novel regions, SPARC restricts observed tokens to geometrically corresponding historical tokens and local spatiotemporal context, while preserving dense attention for unobserved regions. Correspondence-aware attention biasing and order-invariant historical positioning further enable stable retrieval across long temporal gaps. Without introducing additional learnable control or memory modules, SPARC achieves precise camera adherence and faithful scene revisitation while substantially reducing attention computation. Extensive experiments demonstrate the effectiveness of aggressive attention pruning in improving camera adherence, revisit consistency, and visual fidelity, with an inference speedup of over 50x when combined with four-step distillation. Project page is available at https://zju3dv.github.io/SPARC.",
-    "upvotes": 2,
-    "discussionId": "6b07d2a20a42b5746a881b52",
-    "projectPage": "https://zju3dv.github.io/SPARC/",
-    "githubRepo": "https://github.com/zju3dv/SPARC",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "SPARC uses geometry-guided pruning of self-attention in pretrained video diffusion transformers to unify camera control and persistent scene memory, improving camera adherence and revisit consistency while greatly reducing computation.",
-    "ai_keywords": [
-     "geometry-guided attention pruning",
-     "self-attention",
-     "pretrained video diffusion transformers",
-     "camera control",
-     "persistent scene memory",
-     "attention connectivity",
-     "geometric conditioning",
-     "spatial addressing",
-     "historical memory retrieval",
-     "observed tokens",
-     "local spatiotemporal context",
-     "dense attention",
-     "unobserved regions",
-     "correspondence-aware attention biasing",
-     "order-invariant historical positioning",
-     "long temporal gaps",
-     "learnable control modules",
-     "memory modules",
-     "attention computation",
-     "aggressive attention pruning",
-     "revisit consistency",
-     "visual fidelity",
-     "inference speedup",
-     "four-step distillation"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 14,
-    "organization": {
-     "_id": "66543b6e420092799d2f625c",
-     "name": "tencent",
-     "fullname": "Tencent",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
-    }
-   },
-   "publishedAt": "2026-11-24T19:00:00.000Z",
-   "title": "SPARC: Geometry-Guided Attention Pruning for Long-Horizon Camera-Controlled Video Generation",
-   "summary": "We present SPARC, a geometry-guided attention pruning framework that turns the native self-attention of pretrained video diffusion transformers into a unified mechanism for camera control and persistent scene memory. Our key insight is that attention connectivity can simultaneously serve as geometric conditioning for camera control and spatial addressing for historical memory retrieval. Motivated by the asymmetric contextual requirements of reconstructing observed content and synthesizing novel regions, SPARC restricts observed tokens to geometrically corresponding historical tokens and local spatiotemporal context, while preserving dense attention for unobserved regions. Correspondence-aware attention biasing and order-invariant historical positioning further enable stable retrieval across long temporal gaps. Without introducing additional learnable control or memory modules, SPARC achieves precise camera adherence and faithful scene revisitation while substantially reducing attention computation. Extensive experiments demonstrate the effectiveness of aggressive attention pruning in improving camera adherence, revisit consistency, and visual fidelity, with an inference speedup of over 50x when combined with four-step distillation. Project page is available at https://zju3dv.github.io/SPARC.",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/666830ef15929be31e37b0f1/iojIDKbQQHQjIz6Wk_qA0.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34064.png",
-   "numComments": 2,
-   "submittedBy": {
-    "_id": "666830ef15929be31e37b0f1",
-    "avatarUrl": "/avatars/4324fe4668b5257a94833fe80fa4b371.svg",
-    "fullname": "Zesong Yang",
-    "name": "YZsZY",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 2,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "66543b6e420092799d2f625c",
-    "name": "tencent",
-    "fullname": "Tencent",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
    },
    "isAuthorParticipating": false
   }
