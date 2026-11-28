@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-28T02:31:11.851Z",
+ "fetchedAt": "2026-11-28T04:46:09.225Z",
  "payload": [
   {
    "paper": {
@@ -831,7 +831,7 @@
      "name": "Skider"
     },
     "summary": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
-    "upvotes": 57,
+    "upvotes": 58,
     "discussionId": "6b07cc6b0a42b5746a881b0f",
     "githubRepo": "https://github.com/therealram18/vernier",
     "githubRepoAddedBy": "user",
@@ -1712,7 +1712,7 @@
      "durable final-state changes"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 102,
+    "githubStars": 106,
     "organization": {
      "_id": "6a579500cebc5776cd28be99",
      "name": "touchstone-ai",
@@ -1823,7 +1823,7 @@
     "projectPage": "https://zjureal.com/DRBenchPro/",
     "githubRepo": "https://github.com/ZJU-REAL/DRBenchPro",
     "githubRepoAddedBy": "user",
-    "githubStars": 21,
+    "githubStars": 22,
     "organization": {
      "_id": "6345aadf5efccdc07f1365a5",
      "name": "ZhejiangUniversity",
@@ -2083,7 +2083,7 @@
      "cross-shot consistency"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 46
+    "githubStars": 49
    },
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
@@ -2196,7 +2196,7 @@
      "name": "Hokin"
     },
     "summary": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfolding directly in the frames rather than through language or code. Whether this native route is in fact the more reliable path to visual reasoning has not been tested against a symbolic alternative under the same conditions. We therefore pose the same tasks, with identical inputs, output specification and evaluator, to both media: rather than denoising pixels, a coding agent writes a program that renders the answer video, which an unmodified rule-based evaluator scores. On VBVR-Pro-Bench (Xu et al., 2026), a 500-instance suite spanning five cognitive categories with symbolic ground truth, the agent receives the same first frame and prompt as the video model, with no access to ground truth, metadata or generation models, and one attempt per instance. Three closed-model agents (Codex with gpt-6-astra, Claude Code with Fable 5.1 and Gemini CLI with Gemini 3.1 Pro) score 0.923, 0.894 and 0.893, each more than 0.22 above the strongest video model. Among 23 runnable open-weight models, the best, GLM-5, reaches 0.572, above all video models except the RL-trained one. Together, we show that for tasks whose solutions can be computed from a first frame and a prompt, program synthesis is currently a substantially more reliable route to visual reasoning than video generation. We further distinguish depictive programs, which navigate the image to recover a transferable scheme, from propositional programs, which operate on hard-coded values, revealing how visual reasoning unfolds in agent-written programs and what it implies for its nature of reasoning in general.",
-    "upvotes": 59,
+    "upvotes": 60,
     "discussionId": "6b07c9c20a42b5746a881ad4",
     "projectPage": "https://solve-vision-with-code.com/",
     "organization": {
@@ -2279,7 +2279,7 @@
      "name": "Enderfga"
     },
     "summary": "Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grained speculative streaming framework that uses computation available during playback to prepare action-conditioned futures before input arrives. Single-latent commitment enables frequent decisions, while configurable preparation covers one to eight actions. We construct a matched multi-future dataset to train alternative continuations from a common state; shared-history tree execution and fused commitment make their preparation efficient. On a single H100, our 5B model sustains 480p generation at 16 fps with eight prepared futures. In ViZDoom, the complete ShowNow deployment reduces median input-to-display latency from 620 to 208 ms relative to the native-block SolarWM-FT deployment. Matched-policy experiments reduce restart empty ticks from 1.56% to 0.09% (94%) and improve on-time responses to action changes. These results establish complementary roles for fine-grained commitment and advance preparation, with measured trade-offs in visual fidelity and long-horizon consistency. ShowNow turns playback-time computation into responsive visual interaction. Project: https://github.com/showlab/ShowNow.",
-    "upvotes": 19,
+    "upvotes": 20,
     "discussionId": "6b07d3b30a42b5746a881b58",
     "projectPage": "https://github.com/showlab/ShowNow",
     "githubRepo": "https://github.com/showlab/ShowNow",
@@ -2297,7 +2297,7 @@
      "long-horizon consistency"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 9,
+    "githubStars": 10,
     "organization": {
      "_id": "63a553c4ce5763e06f78669c",
      "name": "showlab",
@@ -2458,7 +2458,7 @@
      "ProxyGenBench"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 7,
+    "githubStars": 8,
     "organization": {
      "_id": "66543b6e420092799d2f625c",
      "name": "tencent",
