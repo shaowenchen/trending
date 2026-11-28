@@ -1,7 +1,7 @@
 {
  "key": "orCatalog",
  "name": "orCatalog",
- "fetchedAt": "2026-11-28T07:01:13.974Z",
+ "fetchedAt": "2026-11-28T09:15:58.293Z",
  "payload": {
   "data": [
    {
@@ -5639,13 +5639,13 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000025",
+     "prompt": "0.0000003",
      "completion": "0.000001",
-     "input_cache_read": "0.00000005"
+     "input_cache_read": "0.00000004"
     },
     "top_provider": {
      "context_length": 1048576,
-     "max_completion_tokens": 131072,
+     "max_completion_tokens": 943718,
      "is_moderated": false
     },
     "per_request_limits": null,
@@ -18370,7 +18370,7 @@
     },
     "pricing": {
      "prompt": "0.0000000456",
-     "completion": "0.0000003",
+     "completion": "0.00000027",
      "input_cache_read": "0.000000035"
     },
     "top_provider": {
@@ -23618,238 +23618,6 @@
     }
    },
    {
-    "id": "z-ai/glm-5.2:batch",
-    "canonical_slug": "z-ai/glm-5.2-20260616",
-    "hugging_face_id": "zai-org/GLM-5.2",
-    "name": "Z.ai: GLM 5.2 (batch)",
-    "created": 1781631930,
-    "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-    "context_length": 1048576,
-    "architecture": {
-     "modality": "text->text",
-     "input_modalities": [
-      "text"
-     ],
-     "output_modalities": [
-      "text"
-     ],
-     "tokenizer": "Other",
-     "instruct_type": null
-    },
-    "pricing": {
-     "prompt": "0.000000322",
-     "completion": "0.000000989",
-     "input_cache_read": "0.000000109"
-    },
-    "top_provider": {
-     "context_length": 1048576,
-     "max_completion_tokens": 943718,
-     "is_moderated": false
-    },
-    "per_request_limits": null,
-    "supported_parameters": [
-     "frequency_penalty",
-     "include_reasoning",
-     "logit_bias",
-     "logprobs",
-     "max_tokens",
-     "min_p",
-     "presence_penalty",
-     "reasoning",
-     "reasoning_effort",
-     "repetition_penalty",
-     "response_format",
-     "seed",
-     "stop",
-     "structured_outputs",
-     "temperature",
-     "tool_choice",
-     "tools",
-     "top_k",
-     "top_logprobs",
-     "top_p"
-    ],
-    "default_parameters": {
-     "temperature": 1,
-     "top_p": 0.95,
-     "top_k": null,
-     "frequency_penalty": null,
-     "presence_penalty": null,
-     "repetition_penalty": null
-    },
-    "supported_voices": null,
-    "knowledge_cutoff": null,
-    "expiration_date": null,
-    "links": {
-     "details": "/api/v1/models/z-ai/glm-5.2-20260616/endpoints"
-    },
-    "endpoints": [
-     "/api/v1/batches"
-    ],
-    "benchmarks": {
-     "design_arena": [
-      {
-       "arena": "agents",
-       "category": "agenticgamedev",
-       "elo": 1156,
-       "win_rate": 49.7,
-       "rank": 9
-      },
-      {
-       "arena": "agents",
-       "category": "androidnative",
-       "elo": 1168,
-       "win_rate": 52.7,
-       "rank": 23
-      },
-      {
-       "arena": "agents",
-       "category": "blender3d",
-       "elo": 983,
-       "win_rate": 36.1,
-       "rank": 20
-      },
-      {
-       "arena": "agents",
-       "category": "fullstack",
-       "elo": 1287,
-       "win_rate": 59.9,
-       "rank": 17
-      },
-      {
-       "arena": "agents",
-       "category": "godotgamedev",
-       "elo": 1142,
-       "win_rate": 40.1,
-       "rank": 19
-      },
-      {
-       "arena": "agents",
-       "category": "htmlslides",
-       "elo": 1076,
-       "win_rate": 49.5,
-       "rank": 15
-      },
-      {
-       "arena": "agents",
-       "category": "mobileapps",
-       "elo": 1156,
-       "win_rate": 47.5,
-       "rank": 34
-      },
-      {
-       "arena": "agents",
-       "category": "pdf",
-       "elo": 1247,
-       "win_rate": 59.5,
-       "rank": 12
-      },
-      {
-       "arena": "agents",
-       "category": "python-pptxslides",
-       "elo": 1158,
-       "win_rate": 48.3,
-       "rank": 18
-      },
-      {
-       "arena": "agents",
-       "category": "spreadsheet",
-       "elo": 1029,
-       "win_rate": 46,
-       "rank": 27
-      },
-      {
-       "arena": "agents",
-       "category": "webapps",
-       "elo": 1192,
-       "win_rate": 55.6,
-       "rank": 21
-      },
-      {
-       "arena": "models",
-       "category": "3d",
-       "elo": 1250,
-       "win_rate": 52.6,
-       "rank": 27
-      },
-      {
-       "arena": "models",
-       "category": "asciiart",
-       "elo": 1182,
-       "win_rate": 46.9,
-       "rank": 33
-      },
-      {
-       "arena": "models",
-       "category": "codecategories",
-       "elo": 1328,
-       "win_rate": 50.4,
-       "rank": 29
-      },
-      {
-       "arena": "models",
-       "category": "dataviz",
-       "elo": 1277,
-       "win_rate": 51.6,
-       "rank": 22
-      },
-      {
-       "arena": "models",
-       "category": "gamedev",
-       "elo": 1238,
-       "win_rate": 49,
-       "rank": 36
-      },
-      {
-       "arena": "models",
-       "category": "svg",
-       "elo": 1244,
-       "win_rate": 47,
-       "rank": 33
-      },
-      {
-       "arena": "models",
-       "category": "uicomponent",
-       "elo": 1278,
-       "win_rate": 55.1,
-       "rank": 27
-      },
-      {
-       "arena": "models",
-       "category": "website",
-       "elo": 1325,
-       "win_rate": 49.8,
-       "rank": 27
-      }
-     ],
-     "artificial_analysis": {
-      "intelligence_index": null,
-      "coding_index": null,
-      "agentic_index": null,
-      "finance_and_accounting_index": 32.1,
-      "strategy_and_ops_index": 30,
-      "legal_index": 28.5,
-      "healthcare_and_medical_index": 28.7,
-      "engineering_index": null,
-      "economics_index": 32.1,
-      "cyber_index": null,
-      "openness_index": 44.4,
-      "multilingual_index": null,
-      "decision_index": null
-     }
-    },
-    "reasoning": {
-     "mandatory": false,
-     "default_enabled": true,
-     "supported_efforts": [
-      "xhigh",
-      "high",
-      "none"
-     ],
-     "default_effort": "high"
-    }
-   },
-   {
     "id": "moonshotai/kimi-k2.7-code",
     "canonical_slug": "moonshotai/kimi-k2.7-code-20260612",
     "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
@@ -28452,9 +28220,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.0000001824",
-     "completion": "0.0000106722",
-     "input_cache_read": "0.00000018"
+     "prompt": "0.0000001453",
+     "completion": "0.0000122894",
+     "input_cache_read": "0.00000014"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -29672,9 +29440,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.00000029927",
-     "completion": "0.0000015358",
-     "input_cache_read": "0.00000024"
+     "prompt": "0.00000089",
+     "completion": "0.0000015791",
+     "input_cache_read": "0.0000002"
     },
     "top_provider": {
      "context_length": 1048576,
@@ -32999,9 +32767,9 @@
      "instruct_type": null
     },
     "pricing": {
-     "prompt": "0.000000085",
-     "completion": "0.000000125",
-     "input_cache_read": "0.0000000765"
+     "prompt": "0.000000066",
+     "completion": "0.000000097",
+     "input_cache_read": "0.00000006"
     },
     "top_provider": {
      "context_length": 262144,
@@ -52941,7 +52709,7 @@
     ]
    }
   ],
-  "total_count": 476,
+  "total_count": 475,
   "links": {
    "next": null
   }

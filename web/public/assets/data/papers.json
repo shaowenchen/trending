@@ -1,7 +1,7 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-28T07:01:12.539Z",
+ "fetchedAt": "2026-11-28T09:15:56.349Z",
  "payload": [
   {
    "paper": {
@@ -19,7 +19,18 @@
      },
      {
       "_id": "6b0a0eb5eb603bd10fd370d7",
+      "user": {
+       "_id": "65f9810533f524e4044b123f",
+       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f9810533f524e4044b123f/wiCReBlbx5Sr91qGnlr5S.jpeg",
+       "isPro": false,
+       "fullname": "Baihan Yang",
+       "user": "WhiteYC",
+       "type": "user",
+       "name": "WhiteYC"
+      },
       "name": "Baihan Yang",
+      "status": "claimed_verified",
+      "statusLastChangedAt": "2026-11-28T08:45:04.689Z",
       "hidden": false
      },
      {
@@ -49,6 +60,9 @@
       "hidden": false
      }
     ],
+    "mediaUrls": [
+     "https://cdn-uploads.huggingface.co/production/uploads/6719d7b6248e67e1a915d9b8/v7JEZmB9pW7fEjC0IViKO.mp4"
+    ],
     "publishedAt": "2026-11-25T00:00:00.000Z",
     "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
     "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
@@ -62,7 +76,7 @@
      "name": "Yuheng02"
     },
     "summary": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
-    "upvotes": 3,
+    "upvotes": 4,
     "discussionId": "6b0a0eb5eb603bd10fd370db",
     "projectPage": "https://ykchizs.github.io/layoutrecall.github.io/",
     "ai_summary": "LayoutRecall is a multi-round 3D layout-controlled image editor that preserves object appearance across edits by storing and retrieving latents in 3D box coordinate systems and conditioning a FLUX.2 editor with geometry-aligned memory.",
@@ -94,6 +108,9 @@
    "publishedAt": "2026-11-24T19:00:00.000Z",
    "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
    "summary": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+   "mediaUrls": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6719d7b6248e67e1a915d9b8/v7JEZmB9pW7fEjC0IViKO.mp4"
+   ],
    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.33885.png",
    "numComments": 2,
    "submittedBy": {
@@ -418,7 +435,7 @@
      "name": "AlniyatRui"
     },
     "summary": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear when and how LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated (r=-0.5, ple 0.05) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6b07b6330a42b5746a88192f",
     "projectPage": "https://costa-nus.github.io/LCEBench/",
     "githubRepo": "https://github.com/costa-nus/LCEBench",
@@ -854,7 +871,7 @@
      "Vernier"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 10
+    "githubStars": 11
    },
    "publishedAt": "2026-11-22T19:00:00.000Z",
    "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
@@ -1689,7 +1706,7 @@
      "name": "Cloudriver"
     },
     "summary": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-    "upvotes": 105,
+    "upvotes": 109,
     "discussionId": "6b08faa851a3cf3678af38fe",
     "projectPage": "https://os-copilot.github.io/OS-Omni-Home/",
     "githubRepo": "https://github.com/OS-Copilot/OS-Omni",
@@ -2580,7 +2597,7 @@
      "name": "astarkkk"
     },
     "summary": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose , employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an O(T) upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that  achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-    "upvotes": 128,
+    "upvotes": 131,
     "discussionId": "6b08edc151a3cf3678af3842",
     "organization": {
      "_id": "684d4f8e0bb9b6d7621cd53b",
@@ -3127,7 +3144,7 @@
      "environmental randomness"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 9,
+    "githubStars": 10,
     "organization": {
      "_id": "65964267f8f4854a7788bdee",
      "name": "nyucourant",
@@ -4221,7 +4238,7 @@
      "name": "Ray368"
     },
     "summary": "Recent self-improving coding agents have achieved strong benchmark performance by iteratively modifying their own executable implementations. A common pattern uses downstream task-derived evidence to decide which candidates or lineages continue evolving, which we term evaluate-and-select. Obtaining this signal requires repeatedly executing evolved agents on downstream tasks, so broader exploration incurs increasing evaluation cost, while repeated optimization against a fixed evaluation distribution may encourage benchmark-specific adaptation. We ask: can coding agents self-improve without downstream task evaluation inside the evolution loop? We introduce Explore-then-Integrate (ELITE), which integrates implementation mechanisms rather than selecting a single exploratory child to continue the lineage. At each generation, ELITE proposes diverse focused improvements, implements them independently from the same parent, and inspects the resulting programs to identify complementary, redundant, and conflicting mechanisms before reimplementing a compatible subset as one coherent descendant. No downstream task outcomes or task-solving trajectories of evolved candidates are used to guide evolution; only deterministic checks of structural and operational validity are used inside the loop. On SWE-bench Pro, ELITE improves the initial agent from 60.0% to 85.6%, compared with 86.7% for the Darwin Godel Machine (DGM) and 88.3% for the Huxley-Godel Machine (HGM), while using zero candidate task evaluations and reducing observed wall-clock evolution time by 8.8x and 3.2x, respectively, under the evaluated configurations. In cross-benchmark transfer without further adaptation, ELITE averages 73.3% on SWE-bench Verified and 69.3% on Polyglot. Together, these results demonstrate the feasibility of coding-agent self-improvement without downstream candidate task evaluation in our setting.",
-    "upvotes": 4,
+    "upvotes": 5,
     "discussionId": "6b080b8a0a42b5746a881ccb",
     "ai_summary": "ELITE enables coding agents to self-improve by integrating complementary implementation mechanisms from independently generated improvements without using downstream task evaluations in the evolution loop, achieving strong SWE-bench performance and transfer.",
     "ai_keywords": [
@@ -4333,7 +4350,7 @@
      "name": "aledevo"
     },
     "summary": "Agent harnesses today manage context on the model's behalf: when the window fills, the harness triggers a compaction that summarizes the history. We study the alternative, model-driven context management, in which the model itself decides when and what to compact through a context API. We gave models control over their own context in \\nooa, NVIDIA's open source agent harness, and compared the two strategies on document research and machine learning engineering across context budgets from 8K to 512K tokens. Models that use the context API effectively reach higher accuracy, often with fewer input tokens, especially at tight budgets: GPT 6.1 nearly triples its score at a 32K budget on OfficeQA Pro v2 (21\\%~rightarrow~56\\%), and Kimi gains with up to 41\\% fewer input tokens. Models differ widely, however, in how often they use the API, how aggressively they compact, and when they start compacting, and prompt changes shift that timing. Finally, we show that inference engines can make model-driven edits cheaper: by reusing the KV cache of the unchanged suffix after an edit, we cut prefill compute by up to 15\\% per request with no measurable change in accuracy. Together, these results point to a new co-design frontier: models trained to manage their own context, served by inference engines that support KV cache editing.",
-    "upvotes": 11,
+    "upvotes": 12,
     "discussionId": "6b07f9850a42b5746a881c60",
     "projectPage": "https://nvidia-nemo.github.io/Applied-Research/dev-notes/posts/2026-11-23-model-driven-context-management/",
     "githubRepo": "https://github.com/nvidia-nemo/labs-OO-Agents",
@@ -5448,7 +5465,7 @@
     "projectPage": "https://kaist-viclab.github.io/PanBase_site/",
     "githubRepo": "https://github.com/KAIST-VICLab/PanBase",
     "githubRepoAddedBy": "user",
-    "githubStars": 4,
+    "githubStars": 5,
     "organization": {
      "_id": "6ac4f509aa40a9786fc10f17",
      "name": "KAIST-VIClab",
