@@ -1,8 +1,111 @@
 {
  "key": "papers",
  "name": "papers",
- "fetchedAt": "2026-11-27T22:01:15.098Z",
+ "fetchedAt": "2026-11-28T00:15:57.149Z",
  "payload": [
+  {
+   "paper": {
+    "id": "2611.33885",
+    "authors": [
+     {
+      "_id": "6b0a0eb5eb603bd10fd370d5",
+      "name": "Yankuan Chi",
+      "hidden": false
+     },
+     {
+      "_id": "6b0a0eb5eb603bd10fd370d6",
+      "name": "Xin Lin",
+      "hidden": false
+     },
+     {
+      "_id": "6b0a0eb5eb603bd10fd370d7",
+      "name": "Baihan Yang",
+      "hidden": false
+     },
+     {
+      "_id": "6b0a0eb5eb603bd10fd370d8",
+      "name": "Yuheng Liu",
+      "hidden": false
+     },
+     {
+      "_id": "6b0a0eb5eb603bd10fd370d9",
+      "name": "Jason Li",
+      "hidden": false
+     },
+     {
+      "_id": "6b0a0eb5eb603bd10fd370da",
+      "name": "Truong Nguyen",
+      "hidden": false
+     }
+    ],
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "submittedOnDailyAt": "2026-11-27T00:00:00.000Z",
+    "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+    "submittedOnDailyBy": {
+     "_id": "6719d7b6248e67e1a915d9b8",
+     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6719d7b6248e67e1a915d9b8/XcxMnbh_y-yZ-eH3au6LW.jpeg",
+     "isPro": false,
+     "fullname": "YuhengLiu",
+     "user": "Yuheng02",
+     "type": "user",
+     "name": "Yuheng02"
+    },
+    "summary": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+    "upvotes": 0,
+    "discussionId": "6b0a0eb5eb603bd10fd370db",
+    "projectPage": "https://ykchizs.github.io/layoutrecall.github.io/",
+    "ai_summary": "LayoutRecall is a multi-round 3D layout-controlled image editor that preserves object appearance across edits by storing and retrieving latents in 3D box coordinate systems and conditioning a FLUX.2 editor with geometry-aligned memory.",
+    "ai_keywords": [
+     "3D layout-controlled image editing",
+     "multi-round editor",
+     "local coordinate systems of 3D boxes",
+     "Box-Surface Latent Memory",
+     "image latents",
+     "Geometry-Aligned Memory Conditioning",
+     "retrieved tokens",
+     "FLUX.2 editor",
+     "target-view positions",
+     "shared box-local embeddings",
+     "object-wise attention",
+     "correspondence loss",
+     "denoising",
+     "LayoutRecall",
+     "LayoutLoop benchmark"
+    ],
+    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "organization": {
+     "_id": "6a377ac0539cf0e2e8f02877",
+     "name": "lllab",
+     "fullname": "LL Lab",
+     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6719d7b6248e67e1a915d9b8/5QhTXTUfpcVk-aE1fHxsV.png"
+    }
+   },
+   "publishedAt": "2026-11-24T19:00:00.000Z",
+   "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+   "summary": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.33885.png",
+   "numComments": 1,
+   "submittedBy": {
+    "_id": "6719d7b6248e67e1a915d9b8",
+    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6719d7b6248e67e1a915d9b8/XcxMnbh_y-yZ-eH3au6LW.jpeg",
+    "fullname": "YuhengLiu",
+    "name": "Yuheng02",
+    "type": "user",
+    "isPro": false,
+    "isHf": false,
+    "isHfAdmin": false,
+    "isMod": false,
+    "followerCount": 2,
+    "isUserFollowing": false
+   },
+   "organization": {
+    "_id": "6a377ac0539cf0e2e8f02877",
+    "name": "lllab",
+    "fullname": "LL Lab",
+    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6719d7b6248e67e1a915d9b8/5QhTXTUfpcVk-aE1fHxsV.png"
+   },
+   "isAuthorParticipating": false
+  },
   {
    "paper": {
     "id": "2611.30025",
@@ -1575,7 +1678,7 @@
      "name": "Cloudriver"
     },
     "summary": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-    "upvotes": 102,
+    "upvotes": 103,
     "discussionId": "6b08faa851a3cf3678af38fe",
     "projectPage": "https://os-copilot.github.io/OS-Omni-Home/",
     "githubRepo": "https://github.com/OS-Copilot/OS-Omni",
@@ -2466,7 +2569,7 @@
      "name": "astarkkk"
     },
     "summary": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose , employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an O(T) upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that  achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-    "upvotes": 126,
+    "upvotes": 128,
     "discussionId": "6b08edc151a3cf3678af3842",
     "organization": {
      "_id": "684d4f8e0bb9b6d7621cd53b",
@@ -2879,7 +2982,7 @@
      "question answering"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2,
+    "githubStars": 3,
     "organization": {
      "_id": "691ba61d981e57c5f2ee5826",
      "name": "moorcheh",
@@ -4229,7 +4332,7 @@
      "compaction timing"
     ],
     "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 2335,
+    "githubStars": 2339,
     "organization": {
      "_id": "60262b67268c201cdc8b7d43",
      "name": "nvidia",
@@ -5460,111 +5563,6 @@
     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1671779505215-63a55320ce5763e06f78519c.png"
    },
    "isAuthorParticipating": false
-  },
-  {
-   "paper": {
-    "id": "2611.34420",
-    "authors": [
-     {
-      "_id": "6b07dd0f0a42b5746a881b72",
-      "user": {
-       "_id": "6565bffc459394ff719de453",
-       "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/lt25svLGaNXyVSDUPv5ZR.jpeg",
-       "isPro": false,
-       "fullname": "Hoang-Nhat Nguyen",
-       "user": "mossbee",
-       "type": "user",
-       "name": "mossbee"
-      },
-      "name": "Hoang-Nhat Nguyen",
-      "status": "claimed_verified",
-      "statusLastChangedAt": "2026-11-26T08:45:05.471Z",
-      "hidden": false
-     },
-     {
-      "_id": "6b07dd0f0a42b5746a881b73",
-      "name": "Chen Change Loy",
-      "hidden": false
-     }
-    ],
-    "mediaUrls": [
-     "https://cdn-uploads.huggingface.co/production/uploads/6565bffc459394ff719de453/O-PHtFMcuhG7GG1CH-gS8.mp4"
-    ],
-    "publishedAt": "2026-11-25T00:00:00.000Z",
-    "submittedOnDailyAt": "2026-11-26T00:00:00.000Z",
-    "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
-    "submittedOnDailyBy": {
-     "_id": "6565bffc459394ff719de453",
-     "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/lt25svLGaNXyVSDUPv5ZR.jpeg",
-     "isPro": false,
-     "fullname": "Hoang-Nhat Nguyen",
-     "user": "mossbee",
-     "type": "user",
-     "name": "mossbee"
-    },
-    "summary": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language model must reason over these page representations formed in isolation. We introduce DocSEAM (Document Selective Enrichment via Anchored Masking), a lightweight module inserted between a pretrained vision encoder and the language model that injects the inductive bias of local cross-page context into visual representations. For each page, DocSEAM forms a local triplet with its two neighbors, applies center-anchored masked self-attention with directional salience gates to fuse information from neighbor pages, and returns only the enriched center-page tokens, leaving the visual token count unchanged. After a supervised cross-page warm-up and multi-page fine-tuning with DocSEAM frozen, our 9B-parameter model achieves state-of-the-art results among the evaluated open-weight models of up to 10B parameters on five multi-page document VQA benchmarks. We further show that under controlled re-pagination, DocSEAM reduces sensitivity to boundary placement and improves cross-page span localization",
-    "upvotes": 28,
-    "discussionId": "6b07dd0f0a42b5746a881b74",
-    "projectPage": "https://mossbee.github.io/projects/DocSEAM/",
-    "githubRepo": "https://github.com/mossbee/DocSEAM",
-    "githubRepoAddedBy": "user",
-    "ai_summary": "DocSEAM is a lightweight module between a pretrained vision encoder and language model that enriches page visual tokens with neighboring-page context via center-anchored masked self-attention, improving multi-page document VQA and reducing boundary sensitivity.",
-    "ai_keywords": [
-     "vision-language models",
-     "vision encoder",
-     "language model",
-     "visual tokens",
-     "feature-level discontinuity",
-     "page representations",
-     "DocSEAM",
-     "center-anchored masked self-attention",
-     "directional salience gates",
-     "cross-page context",
-     "visual representations",
-     "enriched center-page tokens",
-     "supervised cross-page warm-up",
-     "multi-page fine-tuning",
-     "multi-page document VQA",
-     "boundary placement",
-     "cross-page span localization"
-    ],
-    "ai_summary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
-    "githubStars": 21,
-    "organization": {
-     "_id": "62d55f243bf5e059f7ca25ba",
-     "name": "mmlab-ntu",
-     "fullname": "MMLab@NTU",
-     "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-    }
-   },
-   "publishedAt": "2026-11-24T19:00:00.000Z",
-   "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
-   "summary": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on adjacent pages, and the language model must reason over these page representations formed in isolation. We introduce DocSEAM (Document Selective Enrichment via Anchored Masking), a lightweight module inserted between a pretrained vision encoder and the language model that injects the inductive bias of local cross-page context into visual representations. For each page, DocSEAM forms a local triplet with its two neighbors, applies center-anchored masked self-attention with directional salience gates to fuse information from neighbor pages, and returns only the enriched center-page tokens, leaving the visual token count unchanged. After a supervised cross-page warm-up and multi-page fine-tuning with DocSEAM frozen, our 9B-parameter model achieves state-of-the-art results among the evaluated open-weight models of up to 10B parameters on five multi-page document VQA benchmarks. We further show that under controlled re-pagination, DocSEAM reduces sensitivity to boundary placement and improves cross-page span localization",
-   "mediaUrls": [
-    "https://cdn-uploads.huggingface.co/production/uploads/6565bffc459394ff719de453/O-PHtFMcuhG7GG1CH-gS8.mp4"
-   ],
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34420.png",
-   "numComments": 4,
-   "submittedBy": {
-    "_id": "6565bffc459394ff719de453",
-    "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/lt25svLGaNXyVSDUPv5ZR.jpeg",
-    "fullname": "Hoang-Nhat Nguyen",
-    "name": "mossbee",
-    "type": "user",
-    "isPro": false,
-    "isHf": false,
-    "isHfAdmin": false,
-    "isMod": false,
-    "followerCount": 4,
-    "isUserFollowing": false
-   },
-   "organization": {
-    "_id": "62d55f243bf5e059f7ca25ba",
-    "name": "mmlab-ntu",
-    "fullname": "MMLab@NTU",
-    "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658151991971-62b5777f593a2c49da69dc02.png"
-   },
-   "isAuthorParticipating": true
   }
  ]
 }
